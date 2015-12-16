@@ -179,8 +179,8 @@ that include a link to more information.
 Company Logos
 ^^^^^^^^^^^^^
 
-Company logos sometimes appear on project pages under the following
-conditions"
+Company logos automatically appear on the _Who's Involved_ page under the following
+conditions:
 
 * The company must be a http://eclipse.org/membership/[member] of the
 Eclipse Foundation;
