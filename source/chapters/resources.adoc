@@ -4,8 +4,8 @@ Project Resources and Services
 Open source projects at the Eclipse Foundation are required to make use
 of certain Eclipse Foundation services:
 
-* All project issues must be tracked in the {bugzillaUrl}[{forgeName} Bugzilla]
-instance;
+* All project issues must be tracked in a the issue tracker assigned
+to the project;
 * Source code must be maintained in source code repositories assigned to the
 project (e.g. {aforgeName} {gitUrl}[Git] or {gerritUrl}[Gerrit] instance,
 or the {gitHubUrl}[{forgeName} Organization] on GitHub);
@@ -13,7 +13,7 @@ or the {gitHubUrl}[{forgeName} Organization] on GitHub);
 approved for use by the Eclipse IP Team;
 * Downloads must be distributed via a forge-specific downloads server;
 * Developer (committer) communication must occur in the _dev_ list
-provided to the project by the Eclipse; and
+provided to the project by the Eclipse Foundation; and
 * Projects must keep their <<pmi-metadata, Project Metadata>> up-to-date.
 
 [[resources-source]]
@@ -150,10 +150,8 @@ server.
 GitHub
 ^^^^^^
 Projects may opt to move some or all of their canonical source code repositories to the
-{gitHubUrl}[{forgeName} organization] on GitHub.
-
-NOTE: Projects that host source code on GitHub are not permitted to use GitHub
-Issues or Wiki.
+{gitHubUrl}[{forgeName} organization] on GitHub. Both GitHub Issues and Wiki may also
+be used.
 
 {gitHubRequestUrl}[Open a bug] to request that the Webmaster create a new, or move
 an existing, Git repository for your project. The Webmaster will install some 
@@ -184,6 +182,21 @@ required "Signed-off-by" statement in the footer.
 
 The Webmaster creates and maintains a mirror of all GitHub-hosted
 repositories on Eclipse Foundation hardware.
+
+[[resources-issues]]
+Issue Trackers
+~~~~~~~~~~~~~~
+{forgeName} projects must use an Eclipse Foundation-provided
+issue tracker. Project teams may opt to use either the {bugzillaUrl}[{forgeName} Bugzilla]
+instance or--for projects that use <<resources-github,GitHub>>--GitHub Issues instances associated
+with Eclipse Foundation-managed GitHub project repositories.
+
+NOTE: Per directive from the Eclipse Foundation's Board of Directors,
+you must obtain approval from your PMC to use GitHub Issues.
+
+To request _GitHub Issues_ access for your project, a bug against 
+{bugzillaGitHubUrl}[Community/GitHub] and send the link to your PMC's mailing list
+with a request for their approval.
 
 [[resources-libraries]]
 Third-party Libraries

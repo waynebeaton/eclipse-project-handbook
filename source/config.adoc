@@ -31,6 +31,8 @@
 :jarSigningUrl: https://wiki.eclipse.org/JAR_Signing
 :downloadsUrl: https://wiki.eclipse.org/IT_Infrastructure_Doc#Downloads
 
+:bugzillaGitHubUrl: https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Community&component=GitHub
+
 :linkcss:
 :stylesdir: ./resources
 :scriptsdir: ./resources
