@@ -23,7 +23,7 @@ in any Release or Graduation Review.
 
 [[h.b6kgqhfkzush]]
 Naming, Branding, and Trademarks
---------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Naming and branding are important issues for project teams to consider:
 both for the project's future success as well as to help support and
@@ -61,7 +61,7 @@ Management EMO.
 
 [[h.reywfp69spb]]
 Registered Trademarks
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^
 
 Project teams may request legal trademark registration for their project
 or product name. Since trademark registration requires a non-trivial
@@ -73,7 +73,7 @@ marks on the website and in products).
 
 [[h.146rbehl95bh]]
 Other Organization’s Trademarks
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Project teams must ensure that products names that include other
 organizations’ trademarks in names must be conform to those
@@ -84,7 +84,7 @@ would be "Eclipse Paho for Perl".
 
 [[h.962dim3i7th6]]
 Choosing a Name
----------------
+~~~~~~~~~~~~~~~
 
 Naming and branding are challenging issues that generally require some
 real investment in time and energy. The best project names are
@@ -110,7 +110,7 @@ have a candidate name.
 
 [[h.ti4570gzv58s]]
 Project Names
--------------
+~~~~~~~~~~~~~
 
 A project, as defined by the Eclipse Development Process, is the main
 operational unit at the Eclipse Foundation; all open source software
@@ -123,7 +123,7 @@ existing project is renamed.
 
 [[h.6pz6nm9c7q39]]
 Formal Name
-~~~~~~~~~~~
+^^^^^^^^^^^
 
 The primary branding for any project name is fully-qualified formal name
 which includes the “Eclipse” prefix (e.g. “Eclipse Woolsey Intellectual
@@ -136,7 +136,7 @@ to have both a formal and a nickname or commonly-used acronym.
 The formal name may include a brand name and/or a descriptive name.
 
 Brand Names
-~~~~~~~~~~~
+^^^^^^^^^^^
 
 Project teams should strongly consider choosing a brand name. “Woolsey”,
 “Apogy”, and “Whiskers” are examples of brand names that are distinctive
@@ -148,7 +148,7 @@ regard.
 
 [[h.x65x8wq641nq]]
 Descriptive Names
-~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^
 
 Projects are encouraged to use a descriptive name. Descriptive names
 provide context that can help a casual viewer appreciate the purpose of
@@ -171,7 +171,7 @@ things to different people and may be becoming overused.
 
 [[h.ubvtlm5grxk7]]
 Nicknames
-~~~~~~~~~
+^^^^^^^^^
 
 A project may have a nickname or common name that is a shorter form of
 the formal name (and will likely be the same as the brand name). The
@@ -181,7 +181,7 @@ nickname (e.g. “ECF” and “GMF”).
 
 [[h.wrd8rx2f8n4a]]
 Acronyms For Long Names
-~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Most descriptive names are sufficiently long that it can be convenient
 to abbreviate them in some way. For example, the “Eclipse Communication
@@ -191,7 +191,7 @@ NOTE: Acronyms often become brand names.
 
 [[h.m2cirixjfmha]]
 Existing Software Product Names
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To avoid confusion between Eclipse Projects and commercial products,
 Eclipse projects may not be named after commercial products and vice
@@ -202,7 +202,7 @@ reminiscent of a commercial product.
 
 [[h.z1hf5g76cu2l]]
 Short Names and Ids
-~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^
 
 Projects require a short name; this name is used to as an ID for the
 project in various parts of Eclipse Foundation infrastructure and should
@@ -232,7 +232,7 @@ Woolsey name as an adjective for software).
 
 [[h.wm8ruxb5m3zs]]
 Product Names
--------------
+~~~~~~~~~~~~~
 
 A product is a specific, downloadable software product that users or
 consumers might want to use in some way. Most projects release a product
@@ -256,7 +256,7 @@ to assert ownership of product trademarks.
 
 [[h.yapbxqmqhj65]]
 Project Descriptions
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
 All Eclipse Projects require a description. The project description must
 include a brief sentence or short paragraph (no bullets) that explains
@@ -281,7 +281,7 @@ use.
 
 [[h.ynnxj6b4xpu8]]
 Logos And Graphics
-------------------
+~~~~~~~~~~~~~~~~~~
 
 Logos are important to recognize as trademarks as well. For a project's
 official logo (if it has one, and especially if it uses the Eclipse
@@ -295,7 +295,7 @@ they must contact the EMO to request the Board's permission to do so.
 
 [[h.y7bttvnw7rhl]]
 Project Websites
-----------------
+~~~~~~~~~~~~~~~~
 
 The official project website is the primary means of learning about the
 project and getting involved: people who are interested in contributing
@@ -303,7 +303,7 @@ to the project come here to learn about technical details, and to
 observe the project's development process.
 
 Eclipse Projects must host all project content on an eclipse.org domain,
-expecially the official/primary website for project-related information,
+especially the official/primary website for project-related information,
 communications, access to source code, and downloads. This ensures both
 that the Eclipse Webmaster team can maintain the services, and informs
 consumers that the content comes from an Eclipse Project, and not a
@@ -316,7 +316,7 @@ to external sites or domains.
 
 [[h.1u0ktwuf08ij]]
 Names
-~~~~~
+^^^^^
 
 The first reference to a project or product on
 every web page—especially in page titles or headers—must use the formal
@@ -329,7 +329,7 @@ Woolsey” or “Woolsey”) as appropriate.
 
 [[h.b778fjf5ft8t]]
 Footers
-~~~~~~~
+^^^^^^^
 
 All project web pages must include a footer that prominently displays an
 approved Eclipse Logo, important links back to key pages, and a
@@ -352,7 +352,7 @@ infrastructure and the PMI.
 
 [[h.bz2cm9hgcd3w]]
 External Websites
------------------
+~~~~~~~~~~~~~~~~~
 
 Websites on external (non-eclipse.org) domains that
 use a project name trademark (e.g. www.mosquitto.com) but are not hosted
@@ -395,7 +395,7 @@ where to go.
 
 [[h.uta5gh156zpk]]
 Trademark Attributions
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 
 The external website must include a prominent trademark attribution of
 all applicable Eclipse Foundation marks.
@@ -411,7 +411,7 @@ This can appear anywhere on the website.
 
 [[h.6xxbwuuh99bj]]
 Project Metadata
-----------------
+~~~~~~~~~~~~~~~~
 
 All Projects must keep their metadata updated regularly in the central
 http://www.eclipse.org/projects/handbook#pmi[Eclipse
@@ -429,7 +429,7 @@ these teasers also conform to the guidelines.
 
 [[h.39dgz1gp8r8c]]
 Code Namespaces
----------------
+~~~~~~~~~~~~~~~
 
 Where applicable and supported by the programming languages and style
 used by the project, code namespaces must include the project’s short
@@ -446,7 +446,7 @@ request exceptions.
 
 [[h.ghk7e08e0moa]]
 Branding Checklist
-------------------
+~~~~~~~~~~~~~~~~~~
 
 All projects must conform to these branding guidelines before engaging
 in any Release or Graduation Review.
@@ -473,9 +473,9 @@ registered trademark symbols are used appropriately;
 
 [[h.qu3cv297t11o]]
 Important Note
---------------
+~~~~~~~~~~~~~~
 
-Nothing in this Eclipse Foundation policy statement shall be interpreted
+Nothing in this Eclipse Foundation document shall be interpreted
 to allow any third party to claim any association with the Eclipse
 Foundation or any of its projects or to imply any approval or support by
 the Eclipse Foundation for any third party products, services, or
