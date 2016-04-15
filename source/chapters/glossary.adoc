@@ -14,7 +14,7 @@ Architecture Council ::
 
 Architecture Council Mentor ::
 	The Eclipse Architecture Council (AC) is a body of battle-hardened Eclipse committers. 
-	All new projects are required to have a minimum of two mentors taken from the ranks 
+	All new projects are required to have at least one mentor taken from the ranks 
 	of the AC. Your project mentors will help you find answers to any questions you may 
 	have about the Eclipse Development Process and life-in-general within the Eclipse 
 	community. If your mentor doesn't have an answer to your question, they can draw 
@@ -125,7 +125,7 @@ IP Log ::
 Member Company ::
 	The Eclipse Foundation and Eclipse community is supported by our member organizations. 
 	Through this support, the Eclipse Foundation provides the open source community 
-	with IT, Intellectual Property, Mentors and Marketing services.
+	with IT, intellectual property, and marketing services.
 	
 Parallel IP ::
 	The <<ip-parallel-ip,Parallel IP Process>> allows {aForgeName} projects to make use of

@@ -67,7 +67,7 @@ days, or weeks depending on the circumstances surrounding the name).
 If you currently hold the trademark, you will be asked to complete a
 {trademarkTransferUrl}[Trademark Transfer Agreement].
 
-The proposal must list two mentors from the Architecture Council.
+The proposal must list at least one mentor from the Architecture Council.
 Members of the Architecture Council have considerable experience with 
 Eclipse Foundation practices, and the {edpUrl}[Eclipse Development Process].
 If you are already in contact with mentors who agree to help you with 
@@ -77,7 +77,7 @@ mentors as necessary. Mentors are available to the project through the
 incubation phase; they are released from their duties when the project 
 <<release-graduation,graduates>>.
 
-When the project name trademark has been secured, mentors have been
+When the project name trademark has been secured, a mentor has been
 identified, and the proposal contents are finalized, the EMO will schedule
 a 'creation review'. Reviews--which run for a minimum of one week--are 
 scheduled twice a month, generally concluding on the first and third 
