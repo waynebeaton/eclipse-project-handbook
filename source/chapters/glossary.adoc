@@ -72,7 +72,7 @@ Ecosystem ::
 	all work together for mutual benefit. There already exists a vast ecosystem of companies 
 	that base significant parts of their business on {forgeName} technology. This takes the 
 	form of including {forgeName} code in products, providing support, and other services.
-	You become part of an eco-system by filling the needs of commercial interests, being 
+	You become part of an ecosystem by filling the needs of commercial interests, being 
 	open and transparent, and being responsive to feedback.
 	Ultimately, being part of a commercial ecosystem is a great way to ensure the 
 	longevity of your project: companies that build their business around your project 
@@ -82,7 +82,7 @@ Eclipse ::
 	Now this is a tough one. For most people in the broader community, "Eclipse" refers to a
 	Java IDE based on the JDT project and assembled by the Eclipse Packaging Project. However, 
 	the term "Eclipse" is also used to refer to the Eclipse Foundation, the eclipse.org website, 
-	the community, the eco-system, and--of course--The Eclipse Project (which is just one of 
+	the community, the ecosystem, and--of course--The Eclipse Project (which is just one of 
 	the top-level projects hosted by the Eclipse Foundation). Confusing? Yes.
 
 EMO ::
