@@ -163,11 +163,11 @@ Eclipse Development Process, the project may opt to 'graduate' into
 the 'mature phase'.
 
 Most of the lifetime of {aForgeName} project is spent in the mature phase. 
-A mature project is one that is a good open source citizen with open, 
-transparent, and meritocractic behavior. The project is regularly 
-and predictably releasing IP clean extensible frameworks and 
-exemplary tools. The project is actively nurturing the three 
-communities: developers, adopters, and users.
+A mature project is one that:
+
+* Is a good open source citizen with open, transparent, and meritocractic behavior;
+* Regularly and predictably releases IP clean extensible frameworks and exemplary tools; and
+* Actively nurtures the three communities: developers, adopters, and users.
 
 [[starting-faq]]
 Frequently Asked Questions
