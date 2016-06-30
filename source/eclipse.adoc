@@ -36,6 +36,8 @@ include::chapters/release.adoc[]
 
 include::chapters/pmi.adoc[]
 
+include::chapters/trademarks.adoc[]
+
 // include::chapters/community.adoc[]
 
 // include::chapters/links.adoc[]

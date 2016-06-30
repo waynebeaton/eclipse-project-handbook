@@ -1,17 +1,17 @@
-Eclipse Project Branding Requirements
--------------------------------------
+[[trademarks]]
+== Branding
 
-These Eclipse Project Branding Requirements define how Eclipse Projects
+This section defines how {forgeName} Projects
 must use and display all Eclipse Foundation trademarks as well as how
-they showcase their project's website within the Eclipse Community and
+they showcase their project's website within the community and
 ecosystem. The requirements described here are a complement to the
 https://eclipse.org/legal/logo_guidelines.php[Guidelines
-for Eclipse Logos & Trademarks], targeting Eclipse open source project
+for Eclipse Logos & Trademarks], targeting {forgeName} open source project
 leads and committers specifically.
 
 These requirements are meant to promote and improve the image of all
-projects that are part of the Eclipse community, as well as to show that
-all Eclipse Projects are part of our community of developers, adopters
+projects that are part of the {forgeName} community, as well as to show that
+all {forgeName} Projects are part of our community of developers, adopters
 and users that we believe is an important factor in our mutual success.
 While every project manages their own development within the broader
 http://www.eclipse.org/projects/dev_process/development_process.php[Eclipse
@@ -21,13 +21,12 @@ ties all of our projects together benefits all of us.
 All projects must conform to these branding requirements before engaging
 in any Release or Graduation Review.
 
-[[h.b6kgqhfkzush]]
-Naming, Branding, and Trademarks
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[[trademarks-background]]
+=== Naming, Branding, and Trademarks
 
 Naming and branding are important issues for project teams to consider:
 both for the project's future success as well as to help support and
-share the good values from the Eclipse brand itself. Not only can a
+share the good values from the {forgeName} brand itself. Not only can a
 memorable name help new users and contributors find a project, having a
 distinctive name makes the trademark much stronger, and ensures that
 third parties will respect it.
@@ -39,10 +38,10 @@ no business infringing on
 pre-existing trademarks for the software products or services from other
 organizations, whether they are Member organizations or not.
 
-All Eclipse projects and corresponding software products are trademarks
+All {forgeName} projects and corresponding software products are trademarks
 of the Eclipse Foundation. As a legal entity, the Eclipse Foundation
-owns all Eclipse Project and corresponding product trademarks on behalf
-of the the Eclipse community. This prevents companies from misusing or
+owns all {forgeName} project and corresponding product trademarks on behalf
+of the the {forgeName} community. This prevents companies from misusing or
 misrepresenting their products as being the projects. The EMO will
 initiate a trademark review as part of the project creation or renaming
 process. Existing project name trademarks must be transferred to the
@@ -56,12 +55,9 @@ Who needs these requirements?
 * Project teams that want to rename their project; and
 * Anyone submitting a new project proposal
 
-All project and product names must be vetted and approved by the Eclipse
-Management EMO.
+All project and product names must be vetted and approved by the EMO.
 
-[[h.reywfp69spb]]
-Registered Trademarks
-^^^^^^^^^^^^^^^^^^^^^
+==== Registered Trademarks
 
 Project teams may request legal trademark registration for their project
 or product name. Since trademark registration requires a non-trivial
@@ -71,29 +67,26 @@ determine in which countries the trademark must be registered, and how
 that registration will impact the project (e.g. adding registration
 marks on the website and in products).
 
-[[h.146rbehl95bh]]
-Other Organization’s Trademarks
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[[trademarks-background-orgs]]
+==== Other Organization’s Trademarks
 
 Project teams must ensure that products names that include other
 organizations’ trademarks in names must be conform to those
-organizations’ trademark usage guidelines. For example, "Eclipse Paho
+organizations’ trademark usage guidelines. For example, "{forgeName} Foo
 Perl" is not appropriate, since it improperly uses the trademark "Perl"
 (which is a trademark of The Perl Foundation); a better project name
-would be "Eclipse Paho for Perl".
+would be "{forgeName} Foo for Perl".
 
-[[h.962dim3i7th6]]
-Choosing a Name
-~~~~~~~~~~~~~~~
+[[trademarks-background-name]]
+==== Choosing a Name
 
 Naming and branding are challenging issues that generally require some
 real investment in time and energy. The best project names are
 distinctive and memorable.
 
 Project teams should start the process of securing the trademark for a
-name as early as is practical. This is required to ensure the Eclipse
-Management Organization (EMO) has sufficient time to review and approve
-the name.
+name as early as is practical. This is required to ensure the EMO has 
+sufficient time to review and approve the name.
 
 A project team should start this process:
 
@@ -101,42 +94,39 @@ A project team should start this process:
 * As soon as their project wants to name a new software product; or
 * Before initiating a Restructuring Review to change a project name
 
-
 NOTE: Renaming projects (i.e. after a project has been created
 and provisioned) requires significant work on the part of the
 infrastructure team, and can be disruptive and confusing for consumers.
 Project teams should start the process as early as possible once they
 have a candidate name.
 
-[[h.ti4570gzv58s]]
-Project Names
-~~~~~~~~~~~~~
+[[trademarks-project]]
+=== Project Names
 
 A project, as defined by the Eclipse Development Process, is the main
-operational unit at the Eclipse Foundation; all open source software
-development at Eclipse occurs within the context of a project. The
-Eclipse Foundation holds the trademark for all Eclipse Projects.
+operational unit; all open source software development at {forgeName}
+occurs within the context of a project. The
+Eclipse Foundation holds the trademark for all {forgeName} Projects.
 
 All project names must be approved by the Eclipse Management
 Organization (EMO) either before a project is created or before an
 existing project is renamed.
 
-[[h.6pz6nm9c7q39]]
-Formal Name
-^^^^^^^^^^^
+[[trademarks-project-formal]]
+==== Formal Name
 
 The primary branding for any project name is fully-qualified formal name
-which includes the “Eclipse” prefix (e.g. “Eclipse Woolsey Intellectual
-Property Tools” or “Eclipse Communication Framework”). This ensures that
-the Project is associated with the Eclipse Foundation in the community,
+which includes the “{forgeName}” prefix (e.g. “{forgeName} Woolsey Intellectual
+Property Tools” or “{forgeName} Woolsey Framework”). This ensures that
+the project is associated with the Eclipse Foundation in the community,
 ecosystem, and the minds of users and adopters. However, Eclipse
-Projects are oftentimes known by any names: it is common for a project
+Projects are oftentimes known by many names: it is common for a project
 to have both a formal and a nickname or commonly-used acronym.
 
 The formal name may include a brand name and/or a descriptive name.
 
-Brand Names
-^^^^^^^^^^^
+[[trademarks-project-brand]]
+==== Brand Names
 
 Project teams should strongly consider choosing a brand name. “Woolsey”,
 “Apogy”, and “Whiskers” are examples of brand names that are distinctive
@@ -146,9 +136,8 @@ stand well on their own; combining a brand name with a descriptive name
 (e.g. “Eclipse Woolsey Intellectual Property Tools”) can help in this
 regard.
 
-[[h.x65x8wq641nq]]
-Descriptive Names
-^^^^^^^^^^^^^^^^^
+[[trademarks-project-descriptive]]
+==== Descriptive Names
 
 Projects are encouraged to use a descriptive name. Descriptive names
 provide context that can help a casual viewer appreciate the purpose of
@@ -169,9 +158,8 @@ more toward one or the other. When choosing to use these words, the team
 should consider that "Framework", “Platform”, and "Tools" mean different
 things to different people and may be becoming overused.
 
-[[h.ubvtlm5grxk7]]
-Nicknames
-^^^^^^^^^
+[[trademarks-project-nick]]
+==== Nicknames
 
 A project may have a nickname or common name that is a shorter form of
 the formal name (and will likely be the same as the brand name). The
@@ -179,9 +167,8 @@ the formal name (and will likely be the same as the brand name). The
 as “Eclipse Woosley” or simply “Woolsey”. An acronym may be used as a
 nickname (e.g. “ECF” and “GMF”).
 
-[[h.wrd8rx2f8n4a]]
-Acronyms For Long Names
-^^^^^^^^^^^^^^^^^^^^^^^
+[[trademarks-project-acronym]]
+==== Acronyms For Long Names
 
 Most descriptive names are sufficiently long that it can be convenient
 to abbreviate them in some way. For example, the “Eclipse Communication
@@ -189,9 +176,8 @@ Framework” shortens to “ECF”.
 
 NOTE: Acronyms often become brand names.
 
-[[h.m2cirixjfmha]]
-Existing Software Product Names
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[[trademarks-project-existing]]
+==== Existing Software Product Names
 
 To avoid confusion between Eclipse Projects and commercial products,
 Eclipse projects may not be named after commercial products and vice
@@ -200,9 +186,8 @@ products—i.e. from an Eclipse Foundation project, or from a third party
 vendor—the brand for an Eclipse project must not include or be directly
 reminiscent of a commercial product.
 
-[[h.z1hf5g76cu2l]]
-Short Names and Ids
-^^^^^^^^^^^^^^^^^^^
+[[trademarks-project-short]]
+==== Short Names and Ids
 
 Projects require a short name; this name is used to as an ID for the
 project in various parts of Eclipse Foundation infrastructure and should
@@ -230,9 +215,8 @@ used as an adjective (never as a noun or verb) like any trademark should
 be used (e.g. "Download Eclipse Woolsey software here", using the
 Woolsey name as an adjective for software).
 
-[[h.wm8ruxb5m3zs]]
-Product Names
-~~~~~~~~~~~~~
+[[trademarks-project-product]]
+==== Product Names
 
 A product is a specific, downloadable software product that users or
 consumers might want to use in some way. Most projects release a product
@@ -247,23 +231,22 @@ named “Dawn”; and the Eclipse Graphical Editing Framework project has a
 product named “Zest”.
 
 Product names should also be prefixed with “Eclipse” when used in any
-formal context (e.g. Eclipse Dawn or Eclipse Zest).
+formal context (e.g. _Eclipse Dawn_ or _Eclipse Zest_).
 
 Project teams should work with their PMC to determine whether or not to
 pursue assertion of ownership of the trademark for product names.
 Project teams should work with the Eclipse Management Organization (EMO)
 to assert ownership of product trademarks.
 
-[[h.yapbxqmqhj65]]
-Project Descriptions
-~~~~~~~~~~~~~~~~~~~~
+[[trademarks-project-description]]
+==== Project Descriptions
 
 All Eclipse Projects require a description. The project description must
 include a brief sentence or short paragraph (no bullets) that explains
 the primary function of the software deliverables provided. For example:
 
-The Eclipse C/C++ Development Tooling™ (CDT) project provides a fully
-functional C and C++ Integrated Development Environment based on the
+The Eclipse pass:[C/C++] Development Tooling™ (CDT) project provides a fully
+functional C and pass:[C++] Integrated Development Environment based on the
 Eclipse Platform.
 
 The complete description can certainly include much more information,
@@ -279,9 +262,8 @@ text is a proper trademark goods description; i.e. one that describes
 the specific functionality of the software available for download and
 use.
 
-[[h.ynnxj6b4xpu8]]
-Logos And Graphics
-~~~~~~~~~~~~~~~~~~
+[[trademarks-project-logo]]
+==== Logos And Graphics
 
 Logos are important to recognize as trademarks as well. For a project's
 official logo (if it has one, and especially if it uses the Eclipse
@@ -293,9 +275,8 @@ Projects may may request to use the Eclipse Logo within their project
 logo, or otherwise create a derivative of the Eclipse Logo. However,
 they must contact the EMO to request the Board's permission to do so.
 
-[[h.y7bttvnw7rhl]]
-Project Websites
-~~~~~~~~~~~~~~~~
+[[trademarks-website]]
+=== Project Websites
 
 The official project website is the primary means of learning about the
 project and getting involved: people who are interested in contributing
@@ -314,9 +295,8 @@ All primary links to the project (including, for example, the project’s
 contribution guide) must point directly to the official website, and not
 to external sites or domains.
 
-[[h.1u0ktwuf08ij]]
-Names
-^^^^^
+[[trademarks-website-name]]
+==== Name References
 
 The first reference to a project or product on
 every web page—especially in page titles or headers—must use the formal
@@ -327,9 +307,8 @@ product (e.g. in a callout), that reference should also use the formal
 name. Other references may use  the nickname or acronym (e.g. “Eclipse
 Woolsey” or “Woolsey”) as appropriate.
 
-[[h.b778fjf5ft8t]]
-Footers
-^^^^^^^
+[[trademarks-website-footer]]
+==== Footers
 
 All project web pages must include a footer that prominently displays an
 approved Eclipse Logo, important links back to key pages, and a
@@ -350,9 +329,8 @@ pages in the official project website:
 NOTE: An appropriate footer is included automatically by the default website
 infrastructure and the PMI.
 
-[[h.bz2cm9hgcd3w]]
-External Websites
-~~~~~~~~~~~~~~~~~
+[[trademarks-website-external]]
+==== External Websites
 
 Websites on external (non-eclipse.org) domains that
 use a project name trademark (e.g. www.mosquitto.com) but are not hosted
@@ -393,9 +371,8 @@ that points to the official project website, so that users interested in
 contributing or otherwise participating in the open source project know
 where to go.
 
-[[h.uta5gh156zpk]]
-Trademark Attributions
-^^^^^^^^^^^^^^^^^^^^^^
+[[trademarks-website-attribution]]
+==== Trademark Attributions
 
 The external website must include a prominent trademark attribution of
 all applicable Eclipse Foundation marks.
@@ -409,9 +386,8 @@ the United States and/or other countries.
 
 This can appear anywhere on the website.
 
-[[h.6xxbwuuh99bj]]
-Project Metadata
-~~~~~~~~~~~~~~~~
+[[trademarks-metadata]]
+=== Project Metadata
 
 All Projects must keep their metadata updated regularly in the central
 http://www.eclipse.org/projects/handbook#pmi[Eclipse
@@ -427,9 +403,8 @@ PMI must conform to the project naming guidelines.
 NOTE: The PMI supports teasers or summaries for many fields; ensure that 
 these teasers also conform to the guidelines.
 
-[[h.39dgz1gp8r8c]]
-Code Namespaces
-~~~~~~~~~~~~~~~
+[[trademarks-code]]
+=== Code Namespaces
 
 Where applicable and supported by the programming languages and style
 used by the project, code namespaces must include the project’s short
@@ -437,22 +412,22 @@ name.
 
 In Java, for example, package names must start with org.eclipse and use
 their short name in the third-segment  (i.e. follow the pattern
-org.eclipse.<shortname>.<component>), e.g. org.eclipse.ecf.core,
-org.eclipse.woolsey.ui, and org.eclipse.buckminster.connector. Component
+`org.eclipse.<shortname>.<component>`), e.g. `org.eclipse.ecf.core`,
+`org.eclipse.woolsey.ui`, and `org.eclipse.buckminster.connector`. Component
 names are left to the discretion of the project team.
 
 The project team must petition the Planning Council via their PMC to
 request exceptions.
 
-[[h.ghk7e08e0moa]]
-Branding Checklist
-~~~~~~~~~~~~~~~~~~
+[[trademarks-checklist]]
+=== Branding Checklist
 
 All projects must conform to these branding guidelines before engaging
 in any Release or Graduation Review.
 
 Project branding checklist:
 
+[square]
 * The primary development website is hosted on Eclipse
 Foundation-provided infrastructure;
 * The primary development website is accessible through
@@ -471,9 +446,8 @@ registered trademark symbols are used appropriately;
 * The product logo is used consistently; and
 * PMI metadata complete and up to date
 
-[[h.qu3cv297t11o]]
-Important Note
-~~~~~~~~~~~~~~
+[[trademarks-notes]]
+=== Important Notes
 
 Nothing in this Eclipse Foundation document shall be interpreted
 to allow any third party to claim any association with the Eclipse
@@ -482,16 +456,13 @@ the Eclipse Foundation for any third party products, services, or
 events, unless specifically covered by an Eclipse Membership agreement.
 
 Questions? Project participants who have questions about Eclipse
-Foundation trademarks either used here or at third party sites - should
-contact the EMO Trademarks. Other organizations looking for information
+Foundation trademarks either used here or at third party sites should
+contact the {legalEmail}[EMO Legal]. Other organizations looking for information
 on how to use or refer to any Eclipse Foundation project trademarks or
 logos should see the
-http://eclipse.org/legal/logo_guidelines.php[Guidelines
-for Eclipse Logos & Trademarks]. A list of Eclipse Foundation
-trademarks and guidelines for reporting potential misuses of marks are
-also available.
+{trademarkGuidelinesUrl}[Guidelines for Eclipse Logos & Trademarks].
 
 Thanks and credit to the Apache Software Foundation's
 http://www.apache.org/foundation/marks/pmcs[Project
-Branding Requirements], licensed under the Apache License, v2.0.
-
+Branding Requirements] (licensed under the Apache License, v2.0)
+for parts of this trademark section.
