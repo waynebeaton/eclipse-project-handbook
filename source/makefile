@@ -11,46 +11,49 @@ directories : ../output ../output/images
 ../output : 
 	mkdir -p ../output
 	
-../output/images : ../output
+../output/images : ../output images/*
 	mkdir -p ../output/images
 	cp ../images/* ../output/images/
 
 # IMAGES
 
 images : \
-	../output/images/project-creation.png \
-	../output/images/post-creation.png \
-	../output/images/release-cycle.png \
-	../output/images/release-review.png \
-	../output/images/paperwork.png \
-	../output/images/cq-workflow.png \
-	../output/images/project-lifecycle.png \
-	../output/images/ip-log-generator.png
+	images/project-creation.png \
+	images/post-creation.png \
+	images/release-cycle.png \
+	images/release-review.png \
+	images/paperwork.png \
+	images/cq-workflow.png \
+	images/project-lifecycle.png \
+	images/ip-log-generator.png
 .PHONY : all
 
-../output/images/project-creation.png : ../output/images images/project-creation.dot
-	dot -Tpng images/project-creation.dot > ../output/images/project-creation.png
+images/project-creation.png : dot/project-creation.dot
+	dot -Tpng dot/project-creation.dot > images/project-creation.png
 	
-../output/images/post-creation.png : ../output/images images/post-creation.dot
-	dot -Tpng images/post-creation.dot > ../output/images/post-creation.png
+images/post-creation.png : dot/post-creation.dot
+	dot -Tpng dot/post-creation.dot > images/post-creation.png
 
-../output/images/release-cycle.png : ../output/images images/release-cycle.dot
-	dot -Tpng images/release-cycle.dot > ../output/images/release-cycle.png
+images/release-cycle.png : dot/release-cycle.dot
+	dot -Tpng dot/release-cycle.dot > images/release-cycle.png
 
-../output/images/release-review.png : ../output/images images/release-review.dot
-	dot -Tpng images/release-review.dot > ../output/images/release-review.png
+images/release-review.png : dot/release-review.dot
+	dot -Tpng dot/release-review.dot > images/release-review.png
 	
-../output/images/paperwork.png : ../output/images images/paperwork.dot
-	dot -Tpng images/paperwork.dot > ../output/images/paperwork.png
+images/paperwork.png : dot/paperwork.dot
+	dot -Tpng dot/paperwork.dot > images/paperwork.png
 
-../output/images/cq-workflow.png : ../output/images images/cq-workflow.dot
-	dot -Tpng images/cq-workflow.dot > ../output/images/cq-workflow.png
+images/cq-workflow.png : dot/cq-workflow.dot
+	dot -Tpng dot/cq-workflow.dot > images/cq-workflow.png
 	
-../output/images/project-lifecycle.png : ../output/images images/project-lifecycle.dot
-	dot -Tpng images/project-lifecycle.dot > ../output/images/project-lifecycle.png
+images/project-lifecycle.png : dot/project-lifecycle.dot
+	dot -Tpng dot/project-lifecycle.dot > images/project-lifecycle.png
 	
-../output/images/ip-log-generator.png : ../output/images images/ip-log-generator.dot
-	dot -Tpng images/ip-log-generator.dot > ../output/images/ip-log-generator.png
+images/ip-log-generator.png : dot/ip-log-generator.dot
+	dot -Tpng dot/ip-log-generator.dot > images/ip-log-generator.png
+
+# TODO Generate the callouts?
+# for i in {1..5}; do convert -size 20x20 xc:none -fill black -draw 'translate 9,9 circle 0,0 9,0' -font "Helvetica" -pointSize 12 -weight normal -fill white -gravity center -strokewidth 0 -draw "text 0,0 \"$i\"" $i.png; done
 
 # ECLIPSE
 
@@ -58,7 +61,7 @@ images : \
 	asciidoctor -b docbook -d book -o ../output/eclipse.book.xml eclipse.adoc
 	
 ../output/eclipse.html : ../output eclipse.adoc config.adoc chapters/* images
-	asciidoctor -a stylesheet=handbook.css -b html5 -d book -o ../output/eclipse.html eclipse.adoc
+	asciidoctor -a data-uri -a icons -a stylesheet=handbook.css -b html5 -d book -o ../output/eclipse.html eclipse.adoc
 
 #../output/eclipse.html : ../output ../output/eclipse.book.xml
 #	xsltproc -o ../output/eclipse.html /usr/share/sgml/docbook/xsl-ns-stylesheets/xhtml-1_1/docbook.xsl ../output/eclipse.book.xml
@@ -96,8 +99,8 @@ images : \
 ../output/locationtech.book.xml : ../output locationtech.adoc config.adoc chapters/* images
 	asciidoctor -b docbook -d book -o ../output/locationtech.book.xml locationtech.adoc
 	
-../output/locationtech.html : ../output locationtech.adoc config.adoc chapters/* images
-	asciidoctor -a stylesheet=github.css -b html5 -d book -o ../output/locationtech.html locationtech.adoc
+../output/locationtech.html : ../output locationtech.adoc config.adoc chapters/* images/*
+	asciidoctor -a data-uri -a icons -a stylesheet=github.css -b html5 -d book -o ../output/locationtech.html locationtech.adoc
 
 ../output/locationtech.pdf : ../output ../output/locationtech.book.xml
 	xsltproc -xinclude -o ../output/locationtech.fo \
