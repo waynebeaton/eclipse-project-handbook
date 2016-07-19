@@ -1,7 +1,7 @@
 all : \
-	../output/eclipse.html ../output/eclipse.pdf \
-	../output/polarsys.html ../output/polarsys.pdf \
-	../output/locationtech.html ../output/locationtech.pdf \
+	../output/eclipse.html \
+	../output/polarsys.html \
+	../output/locationtech.html \
 	directories \
 	images
 .PHONY : all
@@ -57,8 +57,8 @@ images/ip-log-generator.png : dot/ip-log-generator.dot
 
 # ECLIPSE
 
-../output/eclipse.book.xml : ../output eclipse.adoc config.adoc chapters/* images
-	asciidoctor -b docbook -d book -o ../output/eclipse.book.xml eclipse.adoc
+#../output/eclipse.book.xml : ../output eclipse.adoc config.adoc chapters/* images
+#	asciidoctor -b docbook -d book -o ../output/eclipse.book.xml eclipse.adoc
 	
 ../output/eclipse.html : ../output eclipse.adoc config.adoc chapters/* images
 	asciidoctor -a data-uri -a icons -a stylesheet=handbook.css -b html5 -d book -o ../output/eclipse.html eclipse.adoc
@@ -66,47 +66,47 @@ images/ip-log-generator.png : dot/ip-log-generator.dot
 #../output/eclipse.html : ../output ../output/eclipse.book.xml
 #	xsltproc -o ../output/eclipse.html /usr/share/sgml/docbook/xsl-ns-stylesheets/xhtml-1_1/docbook.xsl ../output/eclipse.book.xml
 
-../output/eclipse.pdf : ../output ../output/eclipse.book.xml
-	xsltproc -xinclude -o ../output/eclipse.fo \
-		--param toc.section.depth 1 \
-		--param ulink.footnotes 1 \
-		--param admon.graphics 1 \
-		--xinclude \
-		/usr/share/sgml/docbook/xsl-ns-stylesheets/fo/docbook.xsl ../output/eclipse.book.xml
-	fop -v ../output/eclipse.fo -pdf ../output/eclipse.pdf
-	rm ../output/eclipse.fo
+#../output/eclipse.pdf : ../output ../output/eclipse.book.xml
+#	xsltproc -xinclude -o ../output/eclipse.fo \
+#		--param toc.section.depth 1 \
+#		--param ulink.footnotes 1 \
+#		--param admon.graphics 1 \
+#		--xinclude \
+#		/usr/share/sgml/docbook/xsl-ns-stylesheets/fo/docbook.xsl ../output/eclipse.book.xml
+#	fop -v ../output/eclipse.fo -pdf ../output/eclipse.pdf
+#	rm ../output/eclipse.fo
 
 
 # POLARSYS
 
-../output/polarsys.book.xml : ../output polarsys.adoc config.adoc chapters/* images
-	asciidoctor -b docbook -d book -o ../output/polarsys.book.xml polarsys.adoc
+#../output/polarsys.book.xml : ../output polarsys.adoc config.adoc chapters/* images
+#	asciidoctor -b docbook -d book -o ../output/polarsys.book.xml polarsys.adoc
 	
 ../output/polarsys.html : ../output polarsys.adoc config.adoc chapters/* images
-	asciidoctor -a stylesheet=github.css -b html5 -d book -o ../output/polarsys.html polarsys.adoc
+	asciidoctor -a data-uri -a icons -a stylesheet=handbook.css -b html5 -d book -o ../output/polarsys.html polarsys.adoc
 
-../output/polarsys.pdf : ../output ../output/polarsys.book.xml
-	xsltproc -xinclude -o ../output/polarsys.fo \
-		--param toc.section.depth 1 \
-		--param ulink.footnotes 1 \
-		--param admon.graphics 1 \
-		/usr/share/sgml/docbook/xsl-ns-stylesheets/fo/docbook.xsl ../output/polarsys.book.xml
-	fop -v ../output/polarsys.fo -pdf ../output/polarsys.pdf
-	rm ../output/polarsys.fo
+#../output/polarsys.pdf : ../output ../output/polarsys.book.xml
+#	xsltproc -xinclude -o ../output/polarsys.fo \
+#		--param toc.section.depth 1 \
+#		--param ulink.footnotes 1 \
+#		--param admon.graphics 1 \
+#		/usr/share/sgml/docbook/xsl-ns-stylesheets/fo/docbook.xsl ../output/polarsys.book.xml
+#	fop -v ../output/polarsys.fo -pdf ../output/polarsys.pdf
+#	rm ../output/polarsys.fo
 	
 # LOCATIONTECH
 
-../output/locationtech.book.xml : ../output locationtech.adoc config.adoc chapters/* images
-	asciidoctor -b docbook -d book -o ../output/locationtech.book.xml locationtech.adoc
+#../output/locationtech.book.xml : ../output locationtech.adoc config.adoc chapters/* images
+#	asciidoctor -b docbook -d book -o ../output/locationtech.book.xml locationtech.adoc
 	
 ../output/locationtech.html : ../output locationtech.adoc config.adoc chapters/* images/*
-	asciidoctor -a data-uri -a icons -a stylesheet=github.css -b html5 -d book -o ../output/locationtech.html locationtech.adoc
+	asciidoctor -a data-uri -a icons -a stylesheet=handbook.css -b html5 -d book -o ../output/locationtech.html locationtech.adoc
 
-../output/locationtech.pdf : ../output ../output/locationtech.book.xml
-	xsltproc -xinclude -o ../output/locationtech.fo \
-		--param toc.section.depth 1 \
-		--param ulink.footnotes 1 \
-		--param admon.graphics 1 \
-		/usr/share/sgml/docbook/xsl-ns-stylesheets/fo/docbook.xsl ../output/locationtech.book.xml
-	fop -v ../output/locationtech.fo -pdf ../output/locationtech.pdf
-	rm ../output/locationtech.fo
+#../output/locationtech.pdf : ../output ../output/locationtech.book.xml
+#	xsltproc -xinclude -o ../output/locationtech.fo \
+#		--param toc.section.depth 1 \
+#		--param ulink.footnotes 1 \
+#		--param admon.graphics 1 \
+#		/usr/share/sgml/docbook/xsl-ns-stylesheets/fo/docbook.xsl ../output/locationtech.book.xml
+#	fop -v ../output/locationtech.fo -pdf ../output/locationtech.pdf
+#	rm ../output/locationtech.fo

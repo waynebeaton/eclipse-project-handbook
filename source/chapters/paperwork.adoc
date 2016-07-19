@@ -77,7 +77,7 @@ Eclipse Committer Employer Consent Form.
 Individual Committer Agreement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The {icaUrl}[Individual Committer Agreement] (ICA) greement is used by committers 
+The {icaUrl}[Individual Committer Agreement] (ICA) is used by committers 
 who are not covered by an Member Committer Agreement.
 
 You will need to provide an ICA if:
