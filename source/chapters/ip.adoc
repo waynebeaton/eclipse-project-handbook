@@ -142,23 +142,30 @@ you may need to make a presentation to the Eclipse board of directors
 to request their approval. The presentation need only briefly describe 
 the project and why special licensing considerations are necessary.
 
+[[ip-ipzilla]]
+IPZilla
+~~~~~~~
+{ipzillaUrl}[IPZilla] is a modified instance of Bugzilla that tracks the progress 
+of the intellectual property due diligence review and approval process. 
+It is the main interaction point between committers and the
+Eclipse Foundation's Intellectual Property (IP) Team. You can review 
+both completed and ongoing reviews via IPZilla. 
+
+NOTE: IPZilla is accessible only by committers, Eclipse Foundation 
+member company representatives, and other specifically-designated individuals.
+
 [[ip-cq]]
 Contribution Questionnaires
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A Contribution Questionnaires (CQ) is the main interface 
 between {forgeName} committers and the IP Team.
 
 A CQ is started when a committer completes a 'questionnaire' regarding
 a contribution or third-party library. In literal terms, a CQ is a 
-record in a modified instance of Bugzilla, named 'IPZilla',
-that tracks the progress of the approval process. The CQ record is the
-primary communication channel between the submitting committer and the
-IP Team. CQ records persist indefinitely.
-
-NOTE: You can review existing CQs via {ipzillaUrl}[IPZilla]. Note that
-IPZilla is accessible only by committers, Eclipse Foundation member company
-represenatives, and other specifically-designated individuals.
+record in 'IPZilla', that tracks the progress of the approval process. 
+The CQ record is the primary communication channel between the submitting 
+committer and the IP Team. CQ records persist indefinitely.
 
 All significant contributions of code to be maintained by {aForgeName} project, as 
 defined by the Eclipse IP Due Diligence Process require a CQ.
