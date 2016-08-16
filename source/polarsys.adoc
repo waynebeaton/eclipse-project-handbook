@@ -3,6 +3,7 @@ include::config.adoc[]
 :forgeName: PolarSys
 :aforgeName: a PolarSys
 :namespace: org.polarsys
+:wwwUrl: https://www.polarsys.org
 :forgeUrl: https://www.polarsys.org
 :createUrl: https://www.polarsys.org/node/add/project-proposal
 :projectListUrl: http://www.polarsys.org/list-of-projects

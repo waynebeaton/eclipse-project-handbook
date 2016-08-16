@@ -3,6 +3,7 @@ include::config.adoc[]
 :forgeName: Eclipse
 :aforgeName: an Eclipse
 :namespace: org.eclipse
+:wwwUrl: https://www.eclipse.org
 :forgeUrl: https://projects.eclipse.org
 :createUrl: https://projects.eclipse.org/node/add/project-proposal
 :projectListUrl: http://projects.eclipse.org/list-of-projects

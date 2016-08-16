@@ -3,6 +3,7 @@ include::config.adoc[]
 :forgeName: LocationTech
 :aforgeName: a LocationTech
 :namespace: org.locationtech
+:wwwUrl: https://www.locationtech.org
 :forgeUrl: https://www.locationtech.org
 :createUrl: https://www.locationtech.org/node/add/project-proposal
 :projectListUrl: http://www.locationtech.org/list-of-projects
