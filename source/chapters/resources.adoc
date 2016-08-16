@@ -229,9 +229,9 @@ create a website for your project.
 
 NOTE: Alternative hosting services for project-specific websites are
 not permitted. Websites _not_ hosted by the Eclipse Foundation are
-considered third-party and so are subject to the
+considered <<trademark-external-community,community portals>> and so are subject to the
 {trademarkGuidelinesUrl}[Guidelines for Eclipse
-Logo & Trademarks] (the Eclipse foundation asserts ownership of the
+Logo & Trademarks] (the Eclipse Foundation asserts ownership of the
 project name trademark).
 
 [[resources-builds]]
@@ -261,3 +261,14 @@ downloads.
 
 Project committers can {downloadsUrl}[upload project artifacts] to the project's 
 directory on the download server.
+
+[[resources-faq]]
+Frequently Asked Questions
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[qanda]
+Can a project use the _gh-pages_ support from Github to host at _<project>.github.io_?::
+	The project's primary website must be hosted on Eclipse Foundation
+	infrastructure. GitHub's _gh-pages_ support can be used to host
+	supplementary content only as a <<trademark-external-community,Community
+	Portal>> (and is subject to the branding requirements).
