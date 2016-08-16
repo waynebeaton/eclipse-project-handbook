@@ -329,63 +329,6 @@ pages in the official project website:
 NOTE: An appropriate footer is included automatically by the default website
 infrastructure and the PMI.
 
-[[trademarks-website-external]]
-==== External Websites
-
-Websites on external (non-eclipse.org) domains that
-use a project name trademark (e.g. www.mosquitto.com) but are not hosted
-by the Eclipse Foundation, may be employed as user community portals.
-External websites may be appropriate for some forms of documentation,
-community-generated content, and pointers to community forums. The user
-portal may help the user find information about what the project
-software does and how to get it.
-
-Only existing, well-known domains that are already heavily linked and
-known by the community are permitted as external domains. For other
-historical domains that are not an important part of the project's
-brand, permanent (301) redirects should point to the official project
-website hosted on Eclipse Foundation infrastructure.
-
-The user portal is not a replacement for a developer portal which takes
-form in the official project website as described by this document.
-
-Projects with widely-used historical domain names may continue using the
-non-eclipse.org domain with these considerations:
-
-* Ownership of the domain name must be transferred to the Eclipse
-Foundation;
-* The domain must be regarded and treated as a user community portal;
-* The first and most prominent reference to an Eclipse Project or
-corresponding product name on every web page must use the formal name
-and must include the relevant trademark or registered trademark symbol
-(subsequent references may use  the nickname or acronym as appropriate);
-* All references to Eclipse Project names must be prefixed with
-“Eclipse”;
-* The website must include trademark attributions for all Eclipse
-Foundation trademarks used on the site (see below); and
-* Contributors must be directed to the eclipse.org site for information
-regarding contribution or related development activities.
-
-User-focused portals must include a prominent text paragraph or sidebar
-that points to the official project website, so that users interested in
-contributing or otherwise participating in the open source project know
-where to go.
-
-[[trademarks-website-attribution]]
-==== Trademark Attributions
-
-The external website must include a prominent trademark attribution of
-all applicable Eclipse Foundation marks.
-
-For example:
-
-Eclipse Woolsey Intellectual Property Tools, Eclipse Woolsey, Woolsey,
-Eclipse, the Eclipse logo, and the Eclipse Woolsey project logo are
-either registered trademarks or trademarks of The Eclipse Foundation in
-the United States and/or other countries.
-
-This can appear anywhere on the website.
-
 [[trademarks-metadata]]
 === Project Metadata
 
@@ -418,6 +361,115 @@ names are left to the discretion of the project team.
 
 The project team must petition the Planning Council via their PMC to
 request exceptions.
+
+[[trademarks-external]]
+=== Third-Party Use of Trademarks
+
+The use of Eclipse Foundation trademarks outside of the immediate scope of the
+open source project, including the use of project names, is subject to the terms
+of the {trademarkGuidelinesUrl}[Guidelines for Eclipse Logos & Trademarks].
+This includes third-party websites, books, publications, conferences, events, and
+more.
+
+[[trademarks-external-events]]
+==== Conferences and Events
+
+Use of the terms "Eclipse", "EclipseCon", and "Eclipse Day"
+are reserved for exclusive use by events authorized by the Eclipse Foundation. 
+
+Other Eclipse Foundation trademarks (e.g. project names) may be used in events, 
+but must be approved by the {emoEmail}[EMO] subject to the following considerations:
+
+* The name of the event must conform to the terms laid out in the Guidelines for 
+Eclipse Logos & Trademarks;
+* The event must include sessions that focus on content provided by the 
+corresponding open source projects;
+* Representatives from corresponding {forgeName} open source projects (e.g.
+committers, project leads, PMC members) must be directly involved in the event; and
+* Websites, printed materials, and other content associated with the event
+must provide pointers/links to the project website and trademark attribution.
+
+The trademark should not generally be concatenated with any other words. 
+Exceptions for established conventions (e.g. *WoolseyCon*) may be granted
+on a case-by-case basis.
+
+Trademark attribution must indicate that the trademarks are used with the permission
+of the Eclipse Foundation (e.g. "Woolsey is a trademark of the Eclipse Foundation, 
+Inc. and is used with permission.").
+
+NOTE: Permission is *not required* to present a talk on {aForgeName} project.
+
+[[trademark-external-community]]
+==== Community Portals
+
+Community portals are generally operated at "arms length" from the
+{forgeName} open source project. The community portal may help users 
+find information about what the project software does and how to get it,
+or provide a means for the community to contribute to related side projects
+that are not part of the {forgeName} open source project.
+
+The community portal is not a replacement for a developer portal which takes
+form in the official project website as described by this document.
+
+A community portal is operated with these considerations:
+
+* The name of the community portal must conform to the terms laid out in 
+the Guidelines for Eclipse Logos & Trademarks;
+* The first and most prominent reference to the {forgeName} open source
+project or corresponding product name on every web page must use the formal name
+and must include the relevant trademark or registered trademark symbol
+(subsequent references may use  the nickname or acronym as appropriate);
+* All references to {forgeName} open source project names must be prefixed with
+“{forgeName}”;
+* The website must include trademark attributions for all Eclipse
+Foundation trademarks used on the site; and
+* Contributors must be directed to the official project website for information
+regarding contribution or related development activities.
+
+Community portals must include a prominent text paragraph or sidebar
+that points to the official project website, so that users interested in
+contributing or otherwise participating in the open source project know
+where to go.
+
+NOTE: Naming exceptions may be granted for names that follow established
+conventions (e.g. *Woolsey(TM) Labs*). Contact {emoEmail}[EMO] to request an
+exception.
+
+[[trademarks-domains]]
+==== Domains
+
+Websites on external domains that use a project name trademark (e.g. 
+`www.mosquitto.com`) that point to servers that are not hosted by 
+the Eclipse Foundation, may be employed as community portals.
+External domains may be appropriate for some forms of documentation,
+community-generated content, and pointers to community forums. 
+
+Only existing, well-known domains that are already heavily linked and
+known by the community are permitted as external domains. For other
+historical domains that are not an important part of the project's
+brand, permanent (301) redirects should point to the official project
+website hosted on Eclipse Foundation infrastructure.
+
+Projects with widely-used historical domain names may continue using the
+domain with these considerations:
+
+* Ownership of the domain name must be transferred to the Eclipse
+Foundation; and
+* The domain must be regarded and used exclusively as a community portal
+(and not as an official project website).
+
+[[trademarks-external-attribution]]
+==== Trademark Attributions
+
+The external uses of Eclipse Foundation trademarks must include a prominent
+trademark attribution of all applicable Eclipse Foundation marks.
+
+For example:
+
+Eclipse Woolsey Intellectual Property Tools, Eclipse Woolsey, Woolsey,
+Eclipse, the Eclipse logo, and the Eclipse Woolsey project logo are
+either registered trademarks or trademarks of The Eclipse Foundation in
+the United States and/or other countries.
 
 [[trademarks-checklist]]
 === Branding Checklist
@@ -457,7 +509,7 @@ events, unless specifically covered by an Eclipse Membership agreement.
 
 Questions? Project participants who have questions about Eclipse
 Foundation trademarks either used here or at third party sites should
-contact the {legalEmail}[EMO Legal]. Other organizations looking for information
+contact the {emoEmail}[EMO]. Other organizations looking for information
 on how to use or refer to any Eclipse Foundation project trademarks or
 logos should see the
 {trademarkGuidelinesUrl}[Guidelines for Eclipse Logos & Trademarks].
