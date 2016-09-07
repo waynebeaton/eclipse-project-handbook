@@ -235,7 +235,28 @@ some _review_ type information as part of a release record. A project
 can have multiple review records; as release reviews are the most common
 form of review, most review records will be joined to a release record.
 
-image::images/ProjectsReleasesReviews.png["Releases and Reviews"]
+[graphviz, releases-and-reviews, svg]
+.The relationship between proposals, projects, releases, and reviews.
+----
+digraph {
+	bgcolor=transparent
+	graph [ranksep="0.25", nodesep="0.25"];
+	node [shape=box;style=filled;fillcolor=white;fontsize=12];
+
+	review[label="Review"]
+	proposal[label="Proposal"]
+	project[label="Project"]
+	release[label="Release"]
+
+	proposal -> review[label="1:1"]
+	project -> review[label="1:*"]
+	release -> review[label="1:0..1"]
+	proposal -> project[label="1:1"]
+	project -> release[label="1:*"]
+
+	{rank=same;proposal project release}
+}
+----
 
 A review record, however, does not require a release association. Some
 reviews are associated with proposals. Other have no other association
@@ -247,7 +268,7 @@ associated with a project are displayed on the project page. An existing
 release can be edited in much the same was as a project. Any logged in
 project member (committer or project lead) can click the "Edit" button.
 
-NOTE: _Create a single record for each release. *Do not create release records
+NOTE: Create a single record for each release. *Do not create release records
 for milestones.* Enter milestone information in the 'Plan' information
 for your release.
 

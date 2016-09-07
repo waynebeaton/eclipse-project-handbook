@@ -166,11 +166,13 @@ GitHub pull requests to ensure that the contributor has a valid CLA on file, and
 the commit has been "signed-off" as required. Project committers should only merge pull 
 _green_ requests:
 
+.Notification that the commit is properly structured and permissions are in place.
 image::images/Github-cla-success.png[]
 
 The GitHub API does not give us a means of absolutely denying a merge; all we can 
 do is warn you that the contributors have not signed a CLA:
 
+.Notification that there is something wrong with the commit.
 image::images/Github-cla-failure.png[]
 
 Do not merge unless you are absolutely certain that the contributer does have a 

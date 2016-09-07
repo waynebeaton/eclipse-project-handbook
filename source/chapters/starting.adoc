@@ -31,7 +31,47 @@ available to the community for review. At the end of the 'community
 review' period, we engage in a 'creation review', and then
 provision the project resources.
 
-image::images/project-creation.png["An overview of the Project Creation Process"]
+[graphviz, overview, svg]
+.An overview of the Project Creation Process
+----
+digraph {
+	// Graph properties
+	bgcolor=transparent
+	
+	// Nodes that define the key points in the process
+	node [shape=box;style=filled;fillcolor=white;fontsize=12];
+	proposal[label="Project Proposal", group=g1];
+	community[label="Community Review", group=g1];
+	review[label="Creation Review", group=g1];
+	provision[label="Provision", group=g1]
+	
+	// Nodes that define things that we need
+	node [shape=plaintext;fillcolor=transparent;fontsize=10]
+	approval [label="EMO\nApproval"]
+	trademark [label="Trademark\nReview"]
+	mentors [label="Mentors"]
+	paperwork [label="Committer\nPaperwork"]
+
+	// Stitch the key points together
+	proposal -> community -> review -> provision
+	
+	// Use grey lines to add in the things we need
+	edge [color=grey]
+	approval -> community
+	mentors -> review
+	trademark -> review
+	paperwork -> provision
+	
+	// Force the trademark and mentors boxes to
+	// be on either side of the main process points.
+	// Do this by creating invisible lines that would
+	// cross if they are on the same side.
+	node[style=invis] ic
+	edge [style=invis]
+	trademark -> ic
+	mentors->provision
+}
+----
 
 Use the {createurl}[web form] to create a new project proposal. 
 Instructions are provided on the form. All new proposals are created
@@ -118,7 +158,32 @@ process. Before you commit any code into your project repository, you must
 submit your project's <<ip-initial-contribution,'initial contribution'>> and
 list of third-party libraries for review by the IP team.
 
-image::images/post-creation.png["Post creation activities"] 
+[graphviz, post-creation, svg]
+.Post creation activities
+----
+digraph {
+	// Graph properties
+	bgcolor=transparent
+	
+	
+	// Nodes that define the key points in the process
+	node [shape=box;style=filled;fillcolor=white;fontsize=12];
+	ic[label="Submit\nInitial Contribution", group=g1];	
+	git[label="Push to Git", group=g1];		
+	build[label="Build and Distribute", group=g1];	
+	
+	// Nodes that define things that we need
+	node [shape=plaintext;fillcolor=transparent;fontsize=10]
+	ip_approval [label="IP Team\nApproval"]
+
+	// Stitch the key points together
+	ic -> git -> build;
+	
+	// Use grey lines to add in the things we need
+	edge [color=grey]
+	ip_approval-> git
+}
+----
 
 Do not commit any code to your project's source code repository until after
 you receive approval for the IP Team. Once you've received that approval,
@@ -138,7 +203,8 @@ project team's progress in practicing the open and public processes
 necessary to establish the three communities (developers, adopters, 
 and users) around the project.
 
-image::images/Egg-incubation.png["The Incubation Logo"]
+.The Incubation Logo
+image::images/Egg-incubation.png[]
 
 In order to alert potential consumers of the incubating nature,
 projects in the incubation phase must include 'incubation branding':

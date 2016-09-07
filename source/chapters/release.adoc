@@ -15,7 +15,30 @@ Releases are broadly categorized as:
 For all major and minor releases, you must engage in a 'release review'.
 Release reviews are not required for bug-fix/service releases.
 
-image::images/release-cycle.png["The release cycle"]
+[graphviz, release-cycle, svg]
+.The Release Cycle
+----
+digraph {
+	// Graph properties
+	bgcolor=transparent
+	rankdir=LR
+	
+	// Nodes that define the key points in the process
+	node [shape=box;style=filled;fillcolor=white;fontsize=12];
+	plan[label="Capture Plan", group=g1];
+	implement[label="Implement", group=g1];
+	milestone[label="Produce\nMilestone", group=g1];
+	release[label="Release"]
+	
+	plan-> implement 
+	milestone -> release
+	release->plan
+	
+	edge [splines=curved]
+	milestone -> implement
+	implement -> milestone
+}
+----
 
 [[releases-plan]]
 A project plan is 'required' for each major and minor project release.
@@ -86,7 +109,28 @@ A 'release review' requires review documentation and an intellectual
 property (IP) log check. The review process must be initiated at least
 two weeks in advance of the anticipated 'review' date.
 
-image::images/release-review.png["Release review work flow"]
+[graphviz, release-review, svg]
+.Release review work flow
+----
+digraph {
+	// Graph properties
+	bgcolor=transparent
+	
+	// Nodes that define the key points in the process
+	node [shape=box;style=filled;fillcolor=white;fontsize=12;width=2]
+	doc [label="Assemble\nReview Documentation", group=g1]
+	pmc [label="PMC Review\nDocumentation", group=g1]
+	iplog [label="Assemble\nIP Log", group=g2]
+	ipteam [label="IP Team Review\nIP Log", group=g2]
+	start [label="Start\nRelease Review", group=g3]
+	end [label="End\nRelease Review", group=g3]
+	publish [label="Publish Release", group=g3]
+	
+	doc -> pmc -> start
+	iplog -> ipteam -> start
+	start -> end -> publish
+}
+----
 
 Prepare the review documentation well in advance of the start of the
 review period. The release record which contains your project plan

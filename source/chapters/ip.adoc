@@ -288,7 +288,38 @@ pulls information out of source code repositories.
 
 The IP Log generator pulls information from multiple location to assemble the log:
 
-image::images/ip-log-generator.png[]
+[graphviz, ip-log-generator, svg]
+.Sources for the IP Log generator
+----
+digraph {
+	// Graph properties
+	bgcolor=transparent
+	
+    graph [ranksep="0.25", nodesep="0.25"];
+    
+	// Nodes that define the key points in the process
+	node [shape=box;style=filled;fillcolor=white;fontsize=12]
+	git [label="Git", group="g1"]
+	committer [label="Committer Activity\n(Git via Dash)", group="g2"]
+	pmi [label="Repositories\n(PMI)", group="g1"]
+	contributions [label="Git Contributions\n(Git via Dash)"]
+	licenses [label="Licenses\n(Foundation DB)", group="g2"]
+	generator [label="IP Log Generator", group="g1"]
+	contributions_bugzilla [label="Contributions\n(Bugzilla)"]
+	iplog [label="IP Log", group="g1"]
+	
+	git -> committer
+	git -> contributions
+	pmi -> generator
+	pmi -> committer
+	pmi -> contributions
+	committer -> generator
+	contributions -> generator
+	licenses -> generator
+	contributions_bugzilla ->generator
+	generator -> iplog
+}
+----
 
 * Third-party libraries used by the project come from _IPZilla_;
 * The _Dash_ process scans the project source code repositories to assess committer activity;
