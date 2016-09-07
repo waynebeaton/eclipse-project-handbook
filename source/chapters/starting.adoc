@@ -207,10 +207,11 @@ and users) around the project.
 image::images/Egg-incubation.png[]
 
 In order to alert potential consumers of the incubating nature,
-projects in the incubation phase must include 'incubation branding':
+projects in the incubation phase must include 'incubation branding'.
+The project team must:
 
 * Display the incubation logo on their project web page (if they have one);
-* Displays the incubation logo on their project's primary download page;
+* Display the incubation logo on their project's primary download page;
 * Include the word "incubation" in the filename of all downloadable 
 files (when technically feasible) for builds and milestones; 
 * When technically feasible, include the word "incubation" in features
@@ -219,10 +220,9 @@ files (when technically feasible) for builds and milestones;
 There are no incubation branding requirements for general
 user interface elements.
 
-For projects that produce OSGi artifacts, include the word 
+NOTE: For projects that produce OSGi artifacts, include the word 
 "incubation" in the 'Bundle-Name', feature names, and p2 repositories.
-
-NOTE: The word "incubation" should not be included in technical
+The word "incubation" should not be included in technical
 namespaces (especially when it may result in confusion when the project
 leaves incubation). e.g. an OSGi bundle's 'Bundle-SymbolicName', or a
 Java package name.

@@ -350,10 +350,10 @@ Where applicable and supported by the programming languages and style
 used by the project, code namespaces must include the project’s short
 name.
 
-In Java, for example, package names must start with `{namespace}` and use
+In Java, for example, package names must start with +{namespace}+ and use
 their short name in the third-segment  (i.e. follow the pattern
-`{namespace}.<shortname>.<component>`), e.g. `{namespace}.foo.core`,
-`{namespace}.woolsey.ui`, and `{namespace}.buckminster.connector`. Component
++{namespace}.<shortname>.<component>+), e.g. +{namespace}.foo.core+,
++{namespace}.foo.ui+, and +{namespace}.foo.connector+. Component
 names are left to the discretion of the project team.
 
 The project team must petition the Planning Council via their PMC to
@@ -375,7 +375,7 @@ Use of the terms "Eclipse", "EclipseCon", and "Eclipse Day"
 are reserved for exclusive use by events authorized by the Eclipse Foundation. 
 
 Other Eclipse Foundation trademarks (e.g. project names) may be used in events, 
-but must be approved by the {emoEmail}[EMO] subject to the following considerations:
+but must be approved by the EMO subject to the following considerations:
 
 * The name of the event must conform to the terms laid out in the Guidelines for 
 Eclipse Logos & Trademarks;
@@ -429,7 +429,7 @@ contributing or otherwise participating in the open source project know
 where to go.
 
 NOTE: Naming exceptions may be granted for names that follow established
-conventions (e.g. *Woolsey(TM) Labs*). Contact {emoEmail}[EMO] to request an
+conventions (e.g. *Woolsey(TM) Labs*). Contact the EMO to request an
 exception.
 
 [[trademarks-domains]]
@@ -506,7 +506,7 @@ events, unless specifically covered by an Eclipse Membership agreement.
 
 Questions? Project participants who have questions about Eclipse
 Foundation trademarks either used here or at third party sites should
-contact the {emoEmail}[EMO]. Other organizations looking for information
+contact the EMO. Other organizations looking for information
 on how to use or refer to any Eclipse Foundation project trademarks or
 logos should see the
 {trademarkGuidelinesUrl}[Guidelines for Eclipse Logos & Trademarks].
