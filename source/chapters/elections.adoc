@@ -1,6 +1,6 @@
 [[elections]]
-Elections
----------
+== Elections
+
 Roles in a project are assigned based on merit demonstrated in a
 publicly-accessible forum, in the form of an election. Elections
 start with a nomination that contains a statement of merit. The nature
@@ -13,14 +13,136 @@ in an open source project at {forgeName}. Employment does not, for example, guar
 committer status; committer status must be earned by everybody.
 
 [[elections-committer]]
-Committer Elections
-~~~~~~~~~~~~~~~~~~~
-A committer election starts with a statement of merit for the nominee.
-The statement of merit should, for example, include links to contributions
-made by the nominee (e.g. Git commits, Gerrit reviews, pull requests,
-or Bugzilla records).
+=== Committer Elections
+
+Contributors who have the trust of the project's committers can,
+through election, be promoted to _committer status_ for that project. The breadth of
+a committer's influence corresponds to the breadth of their
+contribution. A development team's contributors and committers may (and
+should) come from a diverse set of organizations. A committer gains
+voting rights allowing them to affect the future of the project.
+Becoming a committer is a privilege that is earned by contributing and
+showing discipline and good judgment. It is a responsibility that should
+be neither given nor taken lightly, nor is it a right based on
+employment by an Eclipse Foundation member company or any company employing
+existing committers.
+
+Being a {forgeName} Committer is more than just having
+write-access to the project resources: there are specific
+IP due diligence and record keeping activities that Committers _must_
+follow. New committers must ensure that they are familiar with the 
+{committerGuidelinesUrl}[Committer Guidelines].
+
+New committers should be encouraged to join the 
+{incubationListUrl}[Incubation Mailing List]; this list is a good place
+to ask questions about process, services available, and other aspects
+of working as a committer.
+
+[[elections-requirements]]
+==== What are the Requirements?
+
+There are only three requirements around nominating and electing new
+committers (note that there are additional <<paperwork>> requirements for 
+the new committer):
+
+* *Define Trust.* Each project is entitled to define how it
+evaluates "[people] who have the trust of the Project's Committers ...
+[through] contributing and showing discipline and good judgment". This
+definition needs to be a transparent and public document on the
+project's website (the top-level project charter may provide this). 
+It is extremely important to publish these criteria
+to avoid any issues around cliques or "the in-crowd" preventing others
+from joining a project. 
+* *Employment Neutral.* There must not be any hint of "we (company W)
+hired person X to work on project Y thus person X should elected a
+committer". Committer status is independent of employment; there
+are well-supported mechanisms for contributors without
+commit-rights and thus Committer status is not required for a team
+member to be effective. Additionally, the team will want to make sure
+that they have confidence in the candidate irrespective of employment
+and management because the committer status will continue even after
+moves to another job.
+* *Public and Archival Election.* The nomination and election process
+for a new Committer is for more than just the project team - it is also
+for the entire {forgeName} community, current and future. The larger 
+community uses the artifacts of elections as (one of many pieces of)
+evidence about the maturity of the project team, and thus quality of the
+frameworks.
+
+NOTE: Nominations such as "we all know Bob, vote for him" may work within
+the team, but actually harm the project's reputation in the larger
+{forgeName} community: that larger community does not know Bob and does
+not understand why the project team _trusts_ him with the source code.
+
+[[elections-nomination]]
+==== What Should a Nomination Look Like?
+
+A committer nomination should explain the candidate's contributions to
+the project and thus why they should be elected as a Committer. Cite the
+issues they have fixed via patches; cite the community forum postings they have
+answered; cite the _dev list_ design discussions to which they have
+contributed; etc. In all cases, provide urls to source material.
+
+[[elections-how]]
+==== How does an Election work?
 
 Use the {developerPortalUrl}[developer portal] to elect a committer.
+
+* Log in and navigate to the _Eclipse Projects_ section;
+* Expand your project by clicking the _[view]_ link on the right;
+* Click _[nominate] a new committer for <project>_; and
+* Follow the workflow.
+
+Project committers will be notified to participate in the election via
+the project's _dev list_.
+
+NOTE: Your project must have a _dev list_ specified in the project's
+<<pmi,metadata>> and existing project team members must be subscribed to
+the list.
+
+An election starts with a nomination by an existing committer.
+
+[graphviz, elections-overview, svg]
+.An overview of the Election Process
+----
+digraph {
+	// Graph properties
+	bgcolor=transparent
+	
+	// Decisions
+	node [shape=diamond;style=filled;fillcolor=white;fontsize=10];
+	time[label="", group=g1];
+	approval[label="PMC\nApproves", group=g1];
+	
+	// Notes
+	node [shape=plaintext;fillcolor=transparent;fontsize=10]
+	oneweek[label="One week passes or\nall committers\nhave voted"];
+	
+	node [shape=box;style=filled;fillcolor=white;fontsize=12];
+	start[label="Nominate", group=g1];
+	ongoing[label="Ongoing", group=g1];
+	timedout[label="Timed out"];
+	complete[label="Complete", group=g1];
+	approved[label="Approved"];
+	vetoed[label="Vetoed"];
+	rejected[label="Rejected"];
+	
+	edge [fontsize=10];
+	start->ongoing
+	ongoing->ongoing[label="Committers Vote"];
+	ongoing->time
+	time->timedout[xlabel="Not\nenough\nvotes"]
+	time->complete
+	time->rejected[xlabel="Vetoed\nby\ncommitter"]
+	complete->approval
+	approval->approved[xlabel="Yes"]
+	approval->vetoed[xlabel="No"]
+	
+	edge [color=grey]
+	oneweek->time
+}
+----
+
 
 Only project committers may vote in a committer election. To be successful, 
 the election must receive a minimum of three positive +pass:[+1]+ votes. 
@@ -38,8 +160,8 @@ The <<paperwork, paperwork>> process will automatically be initiated following
 PMC approval of an election. 
 
 [[elections-pl]]
-Project Lead Elections
-~~~~~~~~~~~~~~~~~~~~~~
+=== Project Lead Elections
+
 Similar to a committer election, a project lead election starts with a
 statement of merit. The merit statement should, rather than focus on
 specific code contributions, focus instad on the leadership qualities
@@ -78,8 +200,8 @@ A PMC-approved election will be referred to the EMO/ED as a recommendation
 for appointment. The final decision rests with the EMO/ED.
 
 [[elections-pmc-member]]
-PMC Member Elections
-~~~~~~~~~~~~~~~~~~~~
+=== PMC Member Elections
+
 The manner in which a top-level project's Project Management Committee 
 (PMC) 'Member' is appointed varies by PMC. Some PMCs are set up to have a 
 representative from each of the projects in the top-level project. Other
@@ -90,15 +212,27 @@ In all cases, the PMC Lead makes a recommendation to the EMO/ED to appoint
 a PMC Member. The final decision rests with the EMO/ED.
 
 [[elections-pmc-lead]]
-PMC Lead Appointments
-~~~~~~~~~~~~~~~~~~~~~
+=== PMC Lead Appointments
+
 PMC 'Leads' are are not elected. They are vetted by the EMO, approved by 
 the Eclipse Board of Directors, and appointed by the EMO/ED.
 
 [[elections-faq]]
-Frequently Asked Questions
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Frequently Asked Questions
 
 [qanda]
 Do we really need to do this? ::
 	Yes.
+
+Can I still be a committer if I change employers? ::
+	Yes. Your status as a committer is not tied to your employment status.
+	You may, however, require <<paperwork>> from your new employer (or if
+	you become self-employed). If you change employers, please contact 
+	emo-records@eclipse.org for help regarding paperwork requirements.
+	
+What happens if committers don't vote? ::
+	If a project has three or fewer committers, then all committers must
+	vote. If even one out of the three does not vote, then the election will
+	end in failure. If the non-voting committer is also not active, then
+	they can, perhaps, be retired by the project lead. Connect with
+	emo@eclipse.org for assistance.

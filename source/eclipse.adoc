@@ -27,11 +27,11 @@ include::chapters/starting.adoc[]
 
 include::chapters/resources.adoc[]
 
+include::chapters/elections.adoc[]
+
 include::chapters/paperwork.adoc[]
 
 include::chapters/ip.adoc[]
-
-include::chapters/elections.adoc[]
 
 include::chapters/release.adoc[]
 
