@@ -167,4 +167,8 @@
             -->
         </plugins>
     </build>
+    <name>Eclipse Dash</name>
+    <organization>
+    	<name>Eclipse Dash</name>
+    </organization>
 </project>
