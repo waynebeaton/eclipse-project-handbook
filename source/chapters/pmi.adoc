@@ -1,6 +1,6 @@
 [[pmi]]
-Project Management Infrastructure (PMI)
----------------------------------------
+== Project Management Infrastructure (PMI)
+
 The {forgeName} Project Management Infrastructure (PMI) consolidates 
 project management activities into a single consistent location and experience.
 
@@ -25,8 +25,7 @@ their own customized web presence. Setting up a project presence is a
 matter of configuration, not PHP programming against proprietary APIs.
 
 [[pmi-metadata]]
-Project Metadata?
-~~~~~~~~~~~~~~~~~
+=== Project Metadata
 
 Project committers and project leads are responsible for maintaining
 their project's metadata. This information is an important part of being
@@ -47,8 +46,7 @@ PMC members, and the Eclipse Foundation staff also have the ability to
 make changes on behalf of a project.
 
 [[pmi-viewing]]
-Viewing
-~~~~~~~
+=== Viewing
 
 The complete listing of all current
 {projectListUrl}[{forgeName} projects] provides
@@ -57,16 +55,14 @@ directly to a project information page. Navigation options are provided
 to help you move from one project to another.
 
 [[pmi-commands-and-tools]]
-Commands and Tools
-~~~~~~~~~~~~~~~~~~
+=== Commands and Tools
 
 Committers have access to several committer-specific
 commands and tools. The selection of commands available are context sensitive; only those
 commands that make sense for the logged in user are shown.
 
 [[pmi-editing]]
-Editing Project Metadata
-~~~~~~~~~~~~~~~~~~~~~~~~
+=== Editing Project Metadata
 
 Committers have the ability to edit the information managed and displayed
 on the project page.
@@ -78,8 +74,7 @@ rendered below the fields).
 Some of the fields are described below.
 
 [[pmi-description-and-scope]]
-Description and Scope
-^^^^^^^^^^^^^^^^^^^^^
+==== Description and Scope
 
 The 'description' should start with a concise paragraph of three to five 
 sentences (e.g. suitable for display with a collection of other projects). 
@@ -106,8 +101,7 @@ scope needs to change, the Project Management Committee (PMC) must be
 contacted regarding a potential restructuring review.
 
 [[pmi-downloads]]
-Downloads
-^^^^^^^^^
+==== Downloads
 
 You can provide download information for your project in the "Downloads"
 section.
@@ -131,8 +125,7 @@ presence._
 endif::[]
 
 [[source-repositories]]
-Source Repositories
-^^^^^^^^^^^^^^^^^^^
+==== Source Repositories
 
 The project can specify zero or more *source repositories*. These are
 displayed in the "Contribute to this Project" section.
@@ -176,8 +169,7 @@ that you limit this content to a single paragraph with a few sentences
 that include a link to more information.
 
 [[pmi-company-logos]]
-Company Logos
-^^^^^^^^^^^^^
+==== Company Logos
 
 Company logos automatically appear on the _Who's Involved_ page under the following
 conditions:
@@ -196,8 +188,7 @@ then it's possible that the project meta-data doesn't have the correct
 source code repository information specified.
 
 [[pmi-build-technology]]
-Build Technology
-^^^^^^^^^^^^^^^^
+==== Build Technology
 
 A project can specify a section of text, links, and a selection of the
 build technologies employed. Specifying this information makes it easier
@@ -207,8 +198,7 @@ instructions, or whatever else the project team feels will help the community bu
 the project.
 
 [[pmi-technology-types]]
-Technology Types
-^^^^^^^^^^^^^^^^
+==== Technology Types
 
 A project can specify the types of technology produced by the project.
 This is specified in rather broad terms like "OSGi" or "Runtime". The
@@ -222,8 +212,7 @@ technology, along with the summary of their description and project logo
 (if specified).
 
 [[pmi-releases]]
-Releases and Reviews
-~~~~~~~~~~~~~~~~~~~~
+=== Releases and Reviews
 
 Projects, Releases, and Reviews are presented as separate records. Each
 project record, obviously, represents information about a project. A
@@ -277,8 +266,7 @@ A project lead or committer can create a new release by clicking "Create a new r
 that a date and name be specified. Both of these values can be changed later. 
 
 [[pmi-release-description]]
-Description
-^^^^^^^^^^^
+==== Description
 
 Describe the release in the 'Description' section. The description
 should generally be a concise paragraph describing the focus of the
@@ -289,8 +277,7 @@ Simultaneous release). The description should provide enough information
 to encourage the reader to click the "find out more" link.
 
 [[pmi-release-issues]]
-Issues
-^^^^^^
+==== Issues
 
 The release record will automatically generate a list of targeted bugs.
 
@@ -310,8 +297,7 @@ The bugs for all projects participating in the release will be included.
 Bugs are grouped by Bugzilla product and component.
 
 [[pmi-release-plan]]
-Plan
-^^^^
+==== Plan
 
 <<releases-plan,Project plan>> information belongs in the 'Plan' section. This
 information *should* generally be provided early in the development
@@ -321,8 +307,7 @@ over time. Note that all projects are required to provide a plan for
 each major and minor release (plans are not required service releases).
 
 [[pmi-release-milestones]]
-Milestones
-^^^^^^^^^^
+==== Milestones
 
 Enter the name, date, and optional description for each milestone
 expected with the release. 
@@ -333,8 +318,7 @@ button. Note that milestones can be dragged into the desired order. To
 remove a milestone, leave the "Name" field blank.
 
 [[pmi-review]]
-Review
-^^^^^^
+==== Review
 
 The release has a <<release-review,'Review'>> section that can be used to provide
 information for the associated review. If you provide information here,
@@ -376,8 +360,7 @@ information for a release is stored in the release record.
 
 ifeval::["{forgeName}"=="Eclipse"]
 [[pmi-joining-a-simultaneous-release]]
-Joining a Simultaneous Release
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Joining a Simultaneous Release
 
 Projects cannot add themselves directly to a simultaneous release (e.g.
 https://projects.eclipse.org/releases/luna[Luna]), but rather must be

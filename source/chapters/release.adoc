@@ -1,6 +1,5 @@
 [[release]]
-Releases
---------
+== Releases
 
 Releases are formal for {forgeName} projects. They start with planning,
 and end with a community review. You can capture as many future releases as you'd like. It's 
@@ -41,6 +40,8 @@ digraph {
 ----
 
 [[releases-plan]]
+=== Release Plan
+
 A project plan is 'required' for each major and minor project release.
 The plan should lay out in broad terms what the goals are for the
 release. As plans are a valuable means
@@ -81,8 +82,7 @@ must be approved by the IP Team before you can release
 maintained by the project).
 
 [[release-review]]
-Release Review
-~~~~~~~~~~~~~~
+=== Release Review
 
 A 'release review' is a formal announcement of your release to the
 community and a request for feedback. In practical terms, experience
@@ -178,8 +178,7 @@ The EMO will conclude the review on the scheduled end date and advise the
 project team of the outcome.
 
 [[release-graduation]]
-Graduation Review
-~~~~~~~~~~~~~~~~~
+=== Graduation Review
 
 The purpose of a 'graduation review' is to confirm that the project has
 a working and demonstrable code base of sufficiently high quality
@@ -205,8 +204,7 @@ learned the ropes and logistics of being {aForgeName} project. That is,
 the project "gets the {forgeName} way".
 
 [[release-faq]]
-Frequently Asked Questions
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Frequently Asked Questions
 
 [qanda]
 Can a release review fail? ::
