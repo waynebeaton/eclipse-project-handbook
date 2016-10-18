@@ -352,7 +352,7 @@ name.
 
 In Java, for example, package names must start with +{namespace}+ and use
 their short name in the third-segment  (i.e. follow the pattern
-+{namespace}.<shortname>.<component>+), e.g. +{namespace}.foo.core+,
++{namespace}.<short-name>.<component>+), e.g. +{namespace}.foo.core+,
 +{namespace}.foo.ui+, and +{namespace}.foo.connector+. Component
 names are left to the discretion of the project team.
 
@@ -467,33 +467,6 @@ Eclipse Woolsey Intellectual Property Tools, Eclipse Woolsey, Woolsey,
 Eclipse, the Eclipse logo, and the Eclipse Woolsey project logo are
 either registered trademarks or trademarks of The Eclipse Foundation in
 the United States and/or other countries.
-
-[[trademarks-checklist]]
-=== Branding Checklist
-
-All projects must conform to these branding guidelines before engaging
-in any Release or Graduation Review.
-
-Project branding checklist:
-
-[square]
-* The primary development website is hosted on Eclipse
-Foundation-provided infrastructure;
-* The primary development website is accessible through
-www.eclipse.org/<short-name>;
-* The first occurrence of project name on all webpages uses the formal
-name and is prefixed with "Eclipse";
-* The project website includes a concise description of the project (and
-includes all necessary marks);
-* The required navigation links (e.g. www.eclipse.org) are included in
-the website footer;
-* Attributions for all Eclipse Foundation marks are included, and
-trademark and registered trademark symbols are used appropriately;
-* Attributions for all other marks are included, and trademark and
-registered trademark symbols are used appropriately;
-* Logos and graphics include the trademark symbol;
-* The product logo is used consistently; and
-* PMI metadata complete and up to date
 
 [[trademarks-notes]]
 === Important Notes

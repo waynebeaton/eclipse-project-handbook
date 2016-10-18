@@ -43,6 +43,8 @@ include::chapters/trademarks.adoc[]
 
 // include::chapters/links.adoc[]
 
+include::chapters/checklist.adoc[]
+
 include::chapters/glossary.adoc[]
 
 include::chapters/contact.adoc[]

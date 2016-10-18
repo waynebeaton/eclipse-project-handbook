@@ -1,0 +1,104 @@
+[[checklist]]
+== Project Checklist
+
+This checklist is provided as a convenience and is included primarily as 
+a guideline or tool to ensure that {forgeName} projects are doing the right
+sorts of things to attract community and grow. We've tried to strike a balance 
+between being concise while being comprehensive. 
+
+The Eclipse Foundation staff and Project Management Committee members will
+use this checklist as part of their evaluation during a <<release-review,Release Review>>.
+
+All projects must conform to the <<trademarks,branding guidelines>> before engaging
+in any Release or Graduation Review (specific examples are described below).
+
+=== Code
+
+* All project code is managed in source code repositories provided by The Eclipse Foundation;
+* All source files include a copyright and license header;
+* All project source code repositories include a https://wiki.eclipse.org/Architecture_Council/Contributor_Guide_Recommendation[CONTRIBUTING] file in the root;
+* Naming Conventions followed:
+** e.g. +{namespace}.<short-name>.<component>[.*]+ for Java packages and OSGi Bundles;
+* Provider information is set to the project's formal name:
+** e.g. the 'Bundle-Vendor' entry set to "Eclipse Foo" in OSGi Bundles; or
+** e.g. the 'project' and 'organization' names are set to "{forgeName} Foo" in Maven `pom.xml` files;
+* Every module contains an +about.html+ file as required by the {legalDocumentationUrl}[guide to the legal documentation]; and
+* Features names and descriptions are captured, are spelled correctly, use proper grammar, and contain content that is actually useful for the intended audience.
+
+=== Downloads
+
+Most projects provide binary/compiled 'downloads' of their software, intended
+for consumption by their various communities. If the project does not provide
+downloads, then that should be stated on the project's website.
+ 
+* All generated artifacts include only intellectual property that has been subject to the IP Due Diligence Process;
+* All distributed third-party code has been approved by the IP Team;
+* The project website and PMI page includes links for artifacts;
+* <<starting-project-phases,Incubation branding>> (if applicable) is included on distributed artifacts; and
+* Subject to limitations of specific technologies, the https://wiki.eclipse.org/Version_Numbering[Version numbering] rules are followed.
+
+=== Project Metadata
+
+Project metadata is specified and maintained using the <<pmi, Project Management Interface>>.
+
+* The formal name, e.g. '{forgeName} Foo(TM)', is used in the project title; 
+* The formal name including appropriate marks is used in the first mention in the text of the project description, and scope;
+* The project description starts with a single paragraph that can serve as an 'executive summary';
+* Source code repository references are up-to-date; and
+* Download links and information are up-to-date.
+
+=== Release Metadata
+
+Release metadata is specified and maintained using the <<pmi, Project Management Interface>>. Project teams
+are required to create a metadata entry for every official release (including major, minor, and service
+releases).
+
+* At least one release record describes a future release; and
+* The release record includes a description that starts with a single paragraph that can serve as an 'executive summary'.
+
+=== Development Website
+* Is hosted on Eclipse Foundation-provided infrastructure;
+* Uses the formal name including appropriate marks, e.g. '{forgeName} Foo(TM)', on the page title, first mention in the text, and on all prominent references to the project;
+* Project incubation status (if applicable) is correctly noted;
+* Includes a concise description of the project (with all necessary marks); and
+* The <<trademarks-website-footer,standard navigation>> links (e.g. {wwwUrl}) are included in the website footer.
+
+=== Logos and graphics
+* Project logo includes the trademark symbol; and
+* Are used consistently.
+
+=== Company Logos
+
+Company logos may optionally be included on a project website, but
+only if the following conditions are met.
+
+* The company is a http://eclipse.org/membership/[member] of the
+Eclipse Foundation;
+* At least one project committer is an employee of the company
+in question; and
+* The committer is active (i.e. they have made at least one commit in
+the last three months)
+
+=== Community Portals and Related Websites
+
+<<trademark-external-community,Community portals>>, regardless of who owns and maintains
+them must conform to the branding guidelines. If you discover a website that does not
+conform to these guidelines (and it is not within your power to effect the changes yourself),
+send a note to {emoEmail} to request assistance.
+
+* The formal name including appropriate marks, e.g. '{forgeName} Foo(TM)', is used on the page title, first mention in the text, and on all prominent references to the project;
+* <<trademarks-external-attribution,Attributions>> are provided for all Eclipse Foundation marks;
+* All references to {forgeName} open source projects use the formal name with appropriate marks;
+* Trademark and registered trademark symbols are used appropriately;
+* Developers are directed to the official project website for information regarding contribution or related development activities;
+* Ownership of the domain name (especially if it includes the project name) has been transferred to the Eclipse Foundation; and
+* The domain is regarded and used exclusively as a community portal (i.e. is is not presented as the official project website).
+
+=== Announcements, News items, Blog posts, ...
+
+All announcements regarding project milestones issued by the project must conform to the branding
+guidelines.
+
+* The formal name including appropriate marks, e.g. '{forgeName} Foo(TM)', is used in the title, first mention in the text, and on all prominent references to the project;
+* <<trademarks-external-attribution,Attributions>> are provided for all Eclipse Foundation marks; and
+* All references to {forgeName} open source projects use the formal name with appropriate marks.
