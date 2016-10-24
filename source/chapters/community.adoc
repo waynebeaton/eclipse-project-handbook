@@ -1,6 +1,5 @@
 [[community]]
-Community
----------
+== Community
 
 The Eclipse Development Process is mostly concerned with engaging in
 activities that grow community involvement. An Eclipse project is
@@ -23,8 +22,7 @@ that you will draw additional contributions and other helpful input to
 make your open source project a success.
 
 [[community-barriers]]
-Lower the Barriers
-~~~~~~~~~~~~~~~~~~
+=== Lower the Barriers
 
 One of the most critical aspects of running an open source project is 
 to grow user and adopter communities, invite contributions, and increase
@@ -57,8 +55,7 @@ Include support for the website, and regular updates to your project documentati
 and tutorials as part of your project planning.
 
 [[community-forums]]
-Forums
-~~~~~~
+=== Forums
 
 It is through {forumsUrl}[forums] that adopters tend communicate with a project.
 Very often, it is the only real support channel provided for those
@@ -100,8 +97,7 @@ The more welcome you make your community feel, the more likely it is
 that your project will be successful.
 
 [[community-bugzilla]]
-Bugzilla
-~~~~~~~~
+=== Bugzilla
 
 When your community reports a problem, fix it as soon as possible. Be
 sure to make a distinction between wish list items (I want more
@@ -124,8 +120,7 @@ understand why your code is implemented the way it is and give them a
 pre-existing place (i.e. the bug) to pose further questions.
 
 [[signs-of-success]]
-Signs of success
-~~~~~~~~~~~~~~~~
+=== Signs of success
 
 Ultimately, everything above is about making it possible for a community
 to find out about your project and provide opportunity to get involved.

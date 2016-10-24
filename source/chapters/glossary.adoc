@@ -1,6 +1,5 @@
 [[glossary]]
-Glossary
---------
+== Glossary
 
 [glossary]
 Architecture Council ::

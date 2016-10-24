@@ -16,32 +16,34 @@ in any Release or Graduation Review (specific examples are described below).
 
 * All project code is managed in source code repositories provided by The Eclipse Foundation;
 * All source files include a copyright and license header;
-* All project source code repositories include a https://wiki.eclipse.org/Architecture_Council/Contributor_Guide_Recommendation[CONTRIBUTING] file in the root;
+* All project source code repositories include a https://wiki.eclipse.org/Architecture_Council/Contributor_Guide_Recommendation[CONTRIBUTING] file
+(or equivalent) in the root;
 * Naming Conventions followed:
-** e.g. +{namespace}.<short-name>.<component>[.*]+ for Java packages and OSGi Bundles;
+** e.g. `{namespace}.<short-name>.<component>[.*]` for Java packages and OSGi Bundles;
 * Provider information is set to the project's formal name:
-** e.g. the 'Bundle-Vendor' entry set to "Eclipse Foo" in OSGi Bundles; or
-** e.g. the 'project' and 'organization' names are set to "{forgeName} Foo" in Maven `pom.xml` files;
-* Every module contains an +about.html+ file as required by the {legalDocumentationUrl}[guide to the legal documentation]; and
+** e.g. the `Bundle-Vendor` entry set to "Eclipse Foo" in OSGi Bundles; or
+** e.g. the `project` and `organization` names are set to "{forgeName} Foo" in Maven `pom.xml` files;
+* Every module contains an `about.html` file as required by the {legalDocumentationUrl}[guide to the legal documentation]; and
 * Features names and descriptions are captured, are spelled correctly, use proper grammar, and contain content that is actually useful for the intended audience.
 
 === Downloads
 
-Most projects provide binary/compiled 'downloads' of their software, intended
+Most projects provide binary/compiled _downloads_ of their software, intended
 for consumption by their various communities. If the project does not provide
 downloads, then that should be stated on the project's website.
  
 * All generated artifacts include only intellectual property that has been subject to the IP Due Diligence Process;
 * All distributed third-party code has been approved by the IP Team;
 * The project website and PMI page includes links for artifacts;
-* <<starting-project-phases,Incubation branding>> (if applicable) is included on distributed artifacts; and
-* Subject to limitations of specific technologies, the https://wiki.eclipse.org/Version_Numbering[Version numbering] rules are followed.
+* <<starting-project-phases,Incubation branding>> (if applicable) is included on distributed artifacts; 
+* All download artifacts are (if technical feasible) {jarSigningUrl}[signed]; and
+* Subject to limitations of specific technologies, the {versionNumberingUrl}[Version numbering] rules are followed.
 
 === Project Metadata
 
 Project metadata is specified and maintained using the <<pmi, Project Management Interface>>.
 
-* The formal name, e.g. '{forgeName} Foo(TM)', is used in the project title; 
+* The formal name, e.g. _{forgeName} Foo(TM)_, is used in the project title; 
 * The formal name including appropriate marks is used in the first mention in the text of the project description, and scope;
 * The project description starts with a single paragraph that can serve as an 'executive summary';
 * Source code repository references are up-to-date; and
@@ -58,10 +60,10 @@ releases).
 
 === Development Website
 * Is hosted on Eclipse Foundation-provided infrastructure;
-* Uses the formal name including appropriate marks, e.g. '{forgeName} Foo(TM)', on the page title, first mention in the text, and on all prominent references to the project;
+* Uses the formal name including appropriate marks, e.g. _{forgeName} Foo(TM)_, on the page title, first mention in the text, and on all prominent references to the project;
 * Project incubation status (if applicable) is correctly noted;
 * Includes a concise description of the project (with all necessary marks); and
-* The <<trademarks-website-footer,standard navigation>> links (e.g. {wwwUrl}) are included in the website footer.
+* The <<trademarks-website-footer,standard navigation>> links (e.g. `{wwwUrl}`) are included in the website footer.
 
 === Logos and graphics
 * Project logo includes the trademark symbol; and
@@ -86,7 +88,7 @@ them must conform to the branding guidelines. If you discover a website that doe
 conform to these guidelines (and it is not within your power to effect the changes yourself),
 send a note to {emoEmail} to request assistance.
 
-* The formal name including appropriate marks, e.g. '{forgeName} Foo(TM)', is used on the page title, first mention in the text, and on all prominent references to the project;
+* The formal name including appropriate marks, e.g. _{forgeName} Foo(TM)_, is used on the page title, first mention in the text, and on all prominent references to the project;
 * <<trademarks-external-attribution,Attributions>> are provided for all Eclipse Foundation marks;
 * All references to {forgeName} open source projects use the formal name with appropriate marks;
 * Trademark and registered trademark symbols are used appropriately;
@@ -99,6 +101,6 @@ send a note to {emoEmail} to request assistance.
 All announcements regarding project milestones issued by the project must conform to the branding
 guidelines.
 
-* The formal name including appropriate marks, e.g. '{forgeName} Foo(TM)', is used in the title, first mention in the text, and on all prominent references to the project;
+* The formal name including appropriate marks, e.g. _{forgeName} Foo(TM)_, is used in the title, first mention in the text, and on all prominent references to the project;
 * <<trademarks-external-attribution,Attributions>> are provided for all Eclipse Foundation marks; and
 * All references to {forgeName} open source projects use the formal name with appropriate marks.

@@ -32,8 +32,9 @@
 :dcoUrl: https://www.eclipse.org/legal/DCO.php
 :incubationListUrl: https://dev.eclipse.org/mailman/listinfo/incubation
 
-:jarSigningUrl: https://wiki.eclipse.org/JAR_Signing
+:jarSigningUrl: https://wiki.eclipse.org/IT_Infrastructure_Doc#Sign_my_plugins.2FZIP_files.3F
 :downloadsUrl: https://wiki.eclipse.org/IT_Infrastructure_Doc#Downloads
+:versionNumberingUrl: https://wiki.eclipse.org/Version_Numbering
 
 :bugzillaGitHubUrl: https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Community&component=GitHub
 

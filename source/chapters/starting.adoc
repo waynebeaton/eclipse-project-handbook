@@ -1,6 +1,5 @@
 [[starting]]
-Starting an Open Source Project at {forgeName}
-----------------------------------------------
+== Starting an Open Source Project at {forgeName}
 
 Before getting started, it's important to know what is required
 of {aForgeName} project. The Eclipse Foundation will take ownership 
@@ -152,8 +151,7 @@ instructions; please don't send any paperwork in until after you receive
 those instructions.
 
 [[starting-after-provisioning]]
-After Provisioning
-~~~~~~~~~~~~~~~~~~
+=== After Provisioning
 
 The Webmaster will send a note announcing the completion of the provisioning
 process. Before you commit any code into your project repository, you must
@@ -203,8 +201,7 @@ indicate check-in permission by adding the +checkin+ keyword and final
 approval by setting the state of the CQ to +approved+.
 
 [[starting-project-phases]]
-Project Phases
-~~~~~~~~~~~~~~
+=== Project Phases
 
 All new projects start in the 'incubation phase' (a project in the
 incubation phase is said to be 'incubating'). The classification of 
@@ -256,8 +253,7 @@ A mature project is one that:
 * Actively nurtures the three communities: developers, adopters, and users.
 
 [[starting-faq]]
-Frequently Asked Questions
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Frequently Asked Questions
 
 [qanda]
 How do I find Architecture Council mentors? ::

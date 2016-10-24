@@ -14,8 +14,7 @@ include::config.adoc[]
 :forumsUrl: http://www.locationtech.org/forums
 :mailingListsUrl: http://www.locationtech.org/mail/
 
-LocationTech Project Handbook
-=============================
+= LocationTech Project Handbook
 
 include::chapters/notices.adoc[]
 

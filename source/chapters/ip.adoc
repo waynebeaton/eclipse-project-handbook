@@ -1,6 +1,5 @@
 [[ip]]
-Intellectual Property
----------------------
+== Intellectual Property
 
 {forgeName} projects are expected to take necessary precautions to mitigate
 intellectual property (IP) risk to adopters. A company that integrates the code 
@@ -13,8 +12,7 @@ All {forgeName} committers must be familiar with the {ipPolicyUrl}[Eclipse IP
 Policy].
 
 [[ip-initial-contribution]]
-Initial Contribution
-~~~~~~~~~~~~~~~~~~~~
+=== Initial Contribution
 Code provenance tracking is critical (we need to know the source of all code
 that ends up in our repositories). To that end, all new projects are required to 
 make an 'initial contribution' before *any* code is committed to a project's 
@@ -41,8 +39,7 @@ that snapshot, the 'initial contribution', must be the first commit in the
 Webmaster team will help you obscure the the history into a hidden branch. 
 
 [[ip-project-code]]
-Project Code Contributions
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Project Code Contributions
 
 Some contributions of code to maintained by the project (i.e. committed to a
 project source code repository and maintained by the project team) must be
@@ -58,8 +55,7 @@ Create a <<ip-cq,contribution questionnaire>> to submit a project code
 contribution for review by the IP Team.
 
 [[ip-third-party]]
-Third-Party Libraries
-~~~~~~~~~~~~~~~~~~~~~
+=== Third-Party Libraries
 
 All third-party libraries required by project code will have to be checked 
 and approved by the IP Team. 
@@ -90,16 +86,14 @@ Create a <<ip-cq,contribution questionnaire>> to submit a third-party
 library for review by the IP Team.
 
 [[ip-ownership]]
-Ownership
-~~~~~~~~~
+=== Ownership
 
 The author of a contribution (or their employer) retains ownership of the
 intellectual property contained in the contribution. As part of the contribution
 process, the contributor licenses their contribution under the project license.
 
 [[ip-copyright-headers]]
-Copyright and License Headers
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Copyright and License Headers
 
 All source files must include a file header that describes the copyright and
 license terms of the software.
@@ -133,8 +127,7 @@ be listed as the copyright owner.
 For more information please see the {copyrightUrl}[Default Eclipse Foundation Copyright and License Notice].
 
 [[ip-licensing]] 
-Licensing
-~~~~~~~~~
+=== Licensing
 
 {forgeName} top level projects define the standard licensing for their
 projectsd. If your project has non standard licensing requirements,
@@ -143,8 +136,8 @@ to request their approval. The presentation need only briefly describe
 the project and why special licensing considerations are necessary.
 
 [[ip-ipzilla]]
-IPZilla
-~~~~~~~
+=== IPZilla
+
 {ipzillaUrl}[IPZilla] is a modified instance of Bugzilla that tracks the progress 
 of the intellectual property due diligence review and approval process. 
 It is the main interaction point between committers and the
@@ -155,8 +148,7 @@ NOTE: IPZilla is accessible only by committers, Eclipse Foundation
 member company representatives, and other specifically-designated individuals.
 
 [[ip-cq]]
-Contribution Questionnaires
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+==== Contribution Questionnaires
 
 A Contribution Questionnaires (CQ) is the main interface 
 between {forgeName} committers and the IP Team.
@@ -184,8 +176,7 @@ committers. Consult the IP Due Diligence Process document for
 more information.
 
 [[ip-parallel-ip]]
-Parallel IP
-^^^^^^^^^^^
+==== Parallel IP
 
 The 'Parallel IP Process' allows {forgeName} projects to make use of
 project code contributions and third-party libraries before they
@@ -217,8 +208,7 @@ to check-in the code start working on it.
 All IP must be fully approved before it is included in a release.
 
 [[ip-piggyback]]
-Piggyback CQs
-^^^^^^^^^^^^^
+==== Piggyback CQs
 
 Many third party libraries have already been approved for use in {forgeName} projects. 
 Many of those are immediately available via the http://www.eclipse.org/orbit[Orbit Project]. 
@@ -230,8 +220,7 @@ In this case, a 'piggyback CQ' can be created on top of an existing CQ. Piggybac
 are generally approved very quickly as the due diligence work has already been completed.
 
 [[ip-cq-workflow]]
-CQ Workflow
-^^^^^^^^^^^
+==== CQ Workflow
 
 The workflow for creating a CQ for a third-party library starts with a search of existing 
 CQs. If an existing CQ can be found that is concerned with the same library and version, 
@@ -256,8 +245,7 @@ to process a CQ depends on numerous factors including the size of the queue, and
 nature and size of the contribution.
 
 [[ip-iplog]]
-IP Logs
-~~~~~~~
+=== IP Logs
 
 An IP Log is a record of the intellectual property contributions to a project. 
 This includes such as a list of all committers, past and present, that have 
@@ -279,8 +267,8 @@ Specifically, the log tracks:
 * Contributions from outside the project (i.e. non-committers)
 
 [[ip-iplog-generator]]
-IP Log Generator
-^^^^^^^^^^^^^^^^
+==== IP Log Generator
+
 The Automated IP Log Tool automatically generates an IP Log using information 
 that is available to the Eclipse Foundation. The list of committers, for 
 example is generated using information provided by the Dash project which itself 
@@ -379,8 +367,7 @@ the log. If third party software is not appearing properly, contact the
 mailto:{ipTeamEmail}[EMO IP Team] to make corrections.
 
 [[ip-faq]]
-Frequently Asked Questions
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Frequently Asked Questions
 
 [qanda]
 Do we really need to do this? ::

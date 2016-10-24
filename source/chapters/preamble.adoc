@@ -1,6 +1,6 @@
 [[preamble]]
-Overview
---------
+== Overview
+
 This document provides you with the information that you need to
 create a new {forgeName} open source project or become a committer 
 on an existing one.
@@ -26,8 +26,8 @@ This document will elaborate on some key points of the Eclipse Development
 Process.
 
 [[preamble-principles]]
-Principles
-~~~~~~~~~~
+=== Principles
+
 Four basic principles lie at the heart of the Eclipse Development Process:
 
 * Transparency;

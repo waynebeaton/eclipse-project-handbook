@@ -14,8 +14,7 @@ include::config.adoc[]
 :forumsUrl: http://www.polarsys.org/forums
 :mailingListsUrl: http://www.polarsys.org/mail/
 
-PolarSys Project Handbook
-=========================
+= PolarSys Project Handbook
 
 include::chapters/notices.adoc[]
 

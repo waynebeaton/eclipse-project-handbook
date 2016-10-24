@@ -1,6 +1,6 @@
 [[project-resources-and-services]]
-Project Resources and Services
-------------------------------
+== Project Resources and Services
+
 Open source projects at the Eclipse Foundation are required to make use
 of certain Eclipse Foundation services:
 
@@ -17,8 +17,8 @@ provided to the project by the Eclipse Foundation; and
 * Projects must keep their <<pmi-metadata, Project Metadata>> up-to-date.
 
 [[resources-source]]
-Source Code Management
-~~~~~~~~~~~~~~~~~~~~~~
+=== Source Code Management
+
 Your project must maintain source code in the repositories assigned to the
 project by the Eclipse Foundation. These official repositories must be
 the exclusive source of all project code delivered via the project's assigned
@@ -30,8 +30,8 @@ form, so all ongoing development must be regularly pushed to these canonical
 repositories.
 
 [[resources-eca]]
-Eclipse Contributor Agreement (ECA)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== Eclipse Contributor Agreement (ECA)
+
 The Eclipse Foundation has implemented the {ecaUrl}[Eclipse Contributor Agreements] (ECA) 
 to improve <<ip,intellectual property>> (IP) management and workflow. All
 contributors, who are not committers on the {forgeName} project, must sign the ECA.
@@ -40,8 +40,8 @@ You do *not* require an ECA to contribute to a project on which you have committ
 status.
 
 [[resources-commit]]
-Git Commit Records
-^^^^^^^^^^^^^^^^^^
+=== Git Commit Records
+
 Git commit records are required to take a specific form. The credentials
 of the actual author must be used to populate the +Author+ field. The email 
 address used must match the email address that the Eclipse Foundation has
@@ -101,8 +101,8 @@ account and must have a signed <<resources-eca,Eclipse Contributor Agreement>> (
 on file.
 
 [[resources-git]]
-Git
-^^^
+=== Git
+
 Those projects that want to use Git on the {forgeName} forge, are assigned a 
 directory in which they may create as many Git repositories as required.
 {gitRequestUrl}[Open a bug] to request that the Webmaster create a new Git
@@ -127,8 +127,8 @@ that includes commits that do not conform to the required form will be rejected.
 You can {gitUrl}[browse {forgeName} repositories] directly on the Git server.
 
 [[resources-gerrit]]
-Gerrit Code Review
-^^^^^^^^^^^^^^^^^^
+=== Gerrit Code Review
+
 https://www.gerritcodereview.com/[Gerrit] provides web based code review and 
 repository management for the Git version control system. Many projects use
 Gerrit to reduce barriers and encourage contribution to the project.
@@ -147,8 +147,8 @@ You can {gerritUrl}[browse {forgeName} repositories] directly on the Gerrit
 server.
 
 [[resources-github]]
-GitHub
-^^^^^^
+=== GitHub
+
 Projects may opt to move some or all of their canonical source code repositories to the
 {gitHubUrl}[{forgeName} organization] on GitHub. Both GitHub Issues and Wiki may also
 be used.
@@ -184,8 +184,8 @@ NOTE: The Eclipse Webmaster creates and maintains a mirror of all GitHub-hosted
 repositories on Eclipse Foundation hardware.
 
 [[resources-issues]]
-Issue Trackers
-~~~~~~~~~~~~~~
+=== Issue Trackers
+
 {forgeName} projects must use an Eclipse Foundation-provided
 issue tracker. Project teams may opt to use either the {bugzillaUrl}[{forgeName} Bugzilla]
 instance or--for projects that use <<resources-github,GitHub>>--GitHub Issues instances associated
@@ -199,14 +199,14 @@ To request _GitHub Issues_ access for your project, a bug against
 with a request for their approval.
 
 [[resources-libraries]]
-Third-party Libraries
-~~~~~~~~~~~~~~~~~~~~~
+=== Third-party Libraries
+
 {forgeName} projects must register all of their <<ip-third-party,third-party library>> use with the
 IP Team.
 
 [[resources-forums]]
-Forums and Outbound Communication
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Forums and Outbound Communication
+
 All projects are assigned a {forumsUrl}[user forum] as a point of contact between
 the user and adopter communities, and the project developers.
 
@@ -215,8 +215,8 @@ connecting with the community: your project team knows your community and how
 to best connect with them.
 
 [[resources-website]]
-Project Websites
-~~~~~~~~~~~~~~~~
+=== Project Websites
+
 Project websites are an excellent way to connect your project with
 your community. Many projects opt to use the <<pmi,Project Management Infrastructure>>
 (PMI) as their project website,
@@ -235,25 +235,25 @@ Logo & Trademarks] (the Eclipse Foundation asserts ownership of the
 project name trademark).
 
 [[resources-builds]]
-Builds
-~~~~~~
+=== Builds
+
 Use of Eclipse Foundation-provided and hosted build services, the so-called
-{cbiUrl}[Common Build Infrastructure] (CBI) is strongly recommended, but n
-ot strictly required. 
+{cbiUrl}[Common Build Infrastructure] (CBI) is strongly recommended, but not 
+strictly required. 
 
 Whether or not your project chooses to make use of provided build resources, it must
 be possible for members of the community to build project artifacts from 
 source code with reasonable effort.
 
 [[resources-signing]]
-Signed Artifacts
-^^^^^^^^^^^^^^^^
+==== Signed Artifacts
+
 Where technically sensible, all downloadable artifacts should
 be {jarSigningUrl}[signed] by an Eclipse Foundation-provided certificate.
 
 [[resources-downloads]]
-Downloads
-~~~~~~~~~
+==== Downloads
+
 Project artifacts (e.g. downloads) can be distributed via third-party
 services (e.g. Maven Central), but the Eclipse Foundation-provided
 infrastructure must be considered the primary source of project
@@ -263,8 +263,7 @@ Project committers can {downloadsUrl}[upload project artifacts] to the project's
 directory on the download server.
 
 [[resources-faq]]
-Frequently Asked Questions
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Frequently Asked Questions
 
 [qanda]
 Can a project use the _gh-pages_ support from Github to host at _<project>.github.io_?::

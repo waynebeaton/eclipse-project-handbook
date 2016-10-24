@@ -16,8 +16,7 @@ include::config.adoc[]
 
 :pmiSampleImage: images/pmi-egit25.png
 
-Eclipse Project Handbook
-========================
+= Eclipse Project Handbook
 
 include::chapters/notices.adoc[]
 
