@@ -157,7 +157,7 @@ After Provisioning
 
 The Webmaster will send a note announcing the completion of the provisioning
 process. Before you commit any code into your project repository, you must
-submit your project's <<ip-initial-contribution,'initial contribution'>> and
+submit your project's <<ip-initial-contribution,_initial contribution_>> and
 list of third-party libraries for review by the IP team.
 
 [graphviz, post-creation, svg]
@@ -172,26 +172,35 @@ digraph {
 	node [shape=box;style=filled;fillcolor=white;fontsize=12];
 	ic[label="Submit\nInitial Contribution", group=g1];	
 	git[label="Push to Git", group=g1];		
-	build[label="Build and Distribute", group=g1];	
+	build[label="Build and Distribute\n(milestones)", group=g1];
+	release[label="Release", group=g1];
 	
 	// Nodes that define things that we need
 	node [shape=plaintext;fillcolor=transparent;fontsize=10]
+	ip_checkin [label="IP Team\n\"Check-in\""]
 	ip_approval [label="IP Team\nApproval"]
+	
 
 	// Stitch the key points together
-	ic -> git -> build;
+	ic -> git -> build -> release;
 	
 	// Use grey lines to add in the things we need
 	edge [color=grey]
-	ip_approval-> git
+	ip_checkin -> git
+	ip_approval -> release
 }
 ----
 
 Do not commit any code to your project's source code repository until after
-you receive approval for the IP Team. Once you've received that approval,
-you can do builds and produce milestones for your first release. You must
+you receive _check-in_ permission from the IP Team. Once you've received that permission,
+you can create and distribute _milestone_ builds for your first release. You must
 wait until after the IP Team has approved your initial contribution and use
 of third-party libraries before you do any official <<release,releases>>.
+
+NOTE: Project teams interact with the IP Team via the <<ip-ipzilla,IPZilla>>
+system using <<ip-cq,Contribution Questionnaires>> (CQs). The IP Team will
+indicate check-in permission by adding the +checkin+ keyword and final
+approval by setting the state of the CQ to +approved+.
 
 [[starting-project-phases]]
 Project Phases
