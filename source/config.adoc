@@ -27,9 +27,9 @@
 :gitHubRequestUrl: https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Community&component=GitHub
 :gerritRequestUrl: https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Community&component=Gerrit
 :websiteRequestUrl: https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Community&component=Website
-:claUrl: https://www.eclipse.org/legal/CLA.php
-:claSignUrl: https://projects.eclipse.org/user/sign/cla
-:cooUrl: https://eclipse.org/legal/CoO.php
+:ecaUrl: https://www.eclipse.org/legal/ECA.php
+:ecaSignUrl: https://dev.eclipse.org/site_login/myaccount.php#open_tab_cla
+:dcoUrl: https://www.eclipse.org/legal/DCO.php
 :incubationListUrl: https://dev.eclipse.org/mailman/listinfo/incubation
 
 :jarSigningUrl: https://wiki.eclipse.org/JAR_Signing

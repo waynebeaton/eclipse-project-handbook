@@ -29,14 +29,14 @@ for potential contributors to have access to the code base in its most current
 form, so all ongoing development must be regularly pushed to these canonical 
 repositories.
 
-[[resources-cla]]
-Contributor License Agreement (CLA)
+[[resources-eca]]
+Eclipse Contributor Agreement (ECA)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The Eclipse Foundation has implemented {claUrl}[Contributor License Agreements] (CLA) 
+The Eclipse Foundation has implemented the {ecaUrl}[Eclipse Contributor Agreements] (ECA) 
 to improve <<ip,intellectual property>> (IP) management and workflow. All
-contributors, who are not committers on the {forgeName} project, must sign the CLA.
+contributors, who are not committers on the {forgeName} project, must sign the ECA.
 
-You do *not* require a CLA to contribute to a project on which you have committer
+You do *not* require an ECA to contribute to a project on which you have committer
 status.
 
 [[resources-commit]]
@@ -97,7 +97,7 @@ is the result of collapsing multiple commits authored by multiple developers.
 Commits that are provided by non-committers must have a +Signed-off-by+ field in the 
 footer indicating that the author is aware of the terms by which the contribution has been
 provided to the project. The non-committer must additionally have an Eclipse Foundation
-account and must have a signed <<resources-cla,Contributor License Agreement>> (CLA)
+account and must have a signed <<resources-eca,Eclipse Contributor Agreement>> (ECA)
 on file.
 
 [[resources-git]]
@@ -161,28 +161,26 @@ The _Committers hook_ grants designated project committers write access to the
 GitHub-hosted project repositories. Project committers must use the email address they 
 provide to the Eclipse Foundation as their GitHub email address. 
 
-The <<resources-cla,Contributor License Agreement>> (CLA) hook will inspect incoming 
-GitHub pull requests to ensure that the contributor has a valid CLA on file, and that
+The <<resources-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect incoming 
+GitHub pull requests to ensure that the contributor has a valid ECA on file, and that
 the commit has been "signed-off" as required. Project committers should only merge pull 
 _green_ requests:
 
 .Notification that the commit is properly structured and permissions are in place.
 image::images/Github-cla-success.png[]
 
-The GitHub API does not give us a means of absolutely denying a merge; all we can 
-do is warn you that the contributors have not signed a CLA:
+Since the GitHub API does not provide a means of absolutely denying a merge the hook
+will merely warn you that the contributors have not signed a ECA or that the commit
+message is not correctly structured:
 
 .Notification that there is something wrong with the commit.
 image::images/Github-cla-failure.png[]
 
-Do not merge unless you are absolutely certain that the contributer does have a 
-valid CLA on file (e.g. the Contributor License Agreement Lookup Tool confirms 
-that they have a CLA).
+Click on the _Details_ link for more information. Do not merge unless you are absolutely 
+certain that the contributer does have a valid ECA on file and the commit message includes
+the required +Signed-off-by+ statement in the footer.
 
-You must manually check that the commit message includes the 
-required "Signed-off-by" statement in the footer.
-
-The Webmaster creates and maintains a mirror of all GitHub-hosted
+NOTE: The Eclipse Webmaster creates and maintains a mirror of all GitHub-hosted
 repositories on Eclipse Foundation hardware.
 
 [[resources-issues]]
