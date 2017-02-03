@@ -9,8 +9,8 @@ to the project;
 * Source code must be maintained in source code repositories assigned to the
 project (e.g. {aforgeName} {gitUrl}[Git] or {gerritUrl}[Gerrit] instance,
 or the {gitHubUrl}[{forgeName} Organization] on GitHub);
-* All third-party libraries used by the project must be tracked and
-approved for use by the Eclipse IP Team;
+* All third-party content used by the project must be <<ip-third-party,tracked and
+approved>> for use by the Eclipse IP Team;
 * Downloads must be distributed via a forge-specific downloads server;
 * Developer (committer) communication must occur in the _dev_ list
 provided to the project by the Eclipse Foundation; and
@@ -197,12 +197,6 @@ you must obtain approval from your PMC to use GitHub Issues.
 To request _GitHub Issues_ access for your project, a bug against 
 {bugzillaGitHubUrl}[Community/GitHub] and send the link to your PMC's mailing list
 with a request for their approval.
-
-[[resources-libraries]]
-=== Third-party Libraries
-
-{forgeName} projects must register all of their <<ip-third-party,third-party library>> use with the
-IP Team.
 
 [[resources-forums]]
 === Forums and Outbound Communication
