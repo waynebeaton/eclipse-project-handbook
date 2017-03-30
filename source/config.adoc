@@ -9,6 +9,7 @@
 :trademarkTransferUrl: http://eclipse.org/legal/Trademark_Transfer_Agreement.pdf
 :trademarkGuidelinesUrl: https://eclipse.org/legal/logo_guidelines.php
 :copyrightUrl: https://www.eclipse.org/legal/copyrightandlicensenotice.php
+:accountUrl: https://accounts.eclipse.org/
 
 :developerPortalUrl: http://portal.eclipse.org
 :committerQuestionnaireUrl: http://portal.eclipse.org
