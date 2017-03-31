@@ -88,9 +88,8 @@ to the mailto:{emoRecordsEmail}[EMO Records Team].
 ==== Member Committer Agreement
 
 The {mcaUrl}[Member Committer Agreement] (MCA) is used by organizations
-that are members of the Eclipse Foundation to 
-cover all of their employees who participate in Eclipse Foundation projects 
-as committers. 
+that are members of the Eclipse Foundation to cover all of their employees 
+who participate in Eclipse Foundation projects as committers. 
 
 [NOTE]
 ====
@@ -104,15 +103,14 @@ not your employer has an MCA, ask the mailto:{emoRecordsEmail}[EMO Records Team]
 ====
 
 If the committer's employer is a member of the Eclipse Foundation that 
-cannot provide a signed 
-MCA, then the committer will have to complete an Individual Committer Agreement and 
-Eclipse Committer Employer Consent Form.
+cannot provide a signed MCA, then the committer will have to complete an 
+_Individual Committer Agreement_ and _Eclipse Committer Employer Consent Form_.
 
 [[paperwork-ica]]
 ==== Individual Committer Agreement
 
 The {icaUrl}[Individual Committer Agreement] (ICA) is used by committers 
-who are not covered by a Member Committer Agreement.
+who are not covered by a _Member Committer Agreement_.
 
 An ICA is required if:
 
@@ -128,14 +126,14 @@ Consent Form_.
 [[paperwork-ececf]]
 ==== Eclipse Committer Employer Consent Form
 
-Committers covered by an Individual Committer Agreement must document 
+Committers covered by an _Individual Committer Agreement_ must document 
 the consent of their employer when participating in Eclipse Foundation 
 projects by providing an {ececfUrl}[Eclipse Committer Employer Consent Form] (ECECF).
 
 A committer will need to provide an ECECF if:
  
 * The committer works for a company that is not a member of the Eclipse Foundation;
-* The committer works for member company that has not signed a Member Committer Agreement; or
+* The committer works for member company that has not signed a _Member Committer Agreement_; or
 * The committer is self-employed.
 
 If the committer is self employed, an owner of their company, or
