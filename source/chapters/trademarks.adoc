@@ -41,8 +41,7 @@ organizations, whether they are Member organizations or not.
 All {forgeName} projects and corresponding software products are trademarks
 of the Eclipse Foundation. As a legal entity, the Eclipse Foundation
 owns all {forgeName} project and corresponding product trademarks on behalf
-of the the {forgeName} community. This prevents companies from misusing or
-misrepresenting their products as being the projects. The EMO will
+of the the {forgeName} community. The EMO will
 initiate a trademark review as part of the project creation or renaming
 process. Existing project name trademarks must be transferred to the
 Eclipse Foundation (please see the
