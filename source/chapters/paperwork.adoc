@@ -9,7 +9,7 @@ acting as change agents on the projects. To ensure that
 committers understand their role, and that the Eclipse Foundation has
 accurate records, committers must provide documentation asserting
 that they have read, understood, and will follow the committer guidelines.
-Committers must also their employers consent to their participation in 
+Committers must also gain their employers consent to their participation in 
 Eclipse Foundation open source projects.
 
 All committers must complete the _Committer Questionnaire_ and provide documentation
@@ -21,7 +21,7 @@ as described below.
 The {committerQuestionnaireUrl}[Committer Questionnaire] is an online form that
 must be completed by all new committers. This form offers two separate paths:
 one for committers who work for a member company that has provided a signed
-_Member Committer Agreement_, and one for everybody else.
+_Member Committer Agreement_, and one for everyone else.
 
 NOTE: The _Committer Questionnaire_ is accessible only after you have been elected as 
 a committer on a project, either as an initial committer on a new project, or 
@@ -112,12 +112,12 @@ Eclipse Committer Employer Consent Form.
 ==== Individual Committer Agreement
 
 The {icaUrl}[Individual Committer Agreement] (ICA) is used by committers 
-who are not covered by an Member Committer Agreement.
+who are not covered by a Member Committer Agreement.
 
 An ICA is required if:
 
 * The committer works for a company that is not a member of the Eclipse Foundation;
-* The committer for member company that has not signed a Member Committer Agreement;
+* The committer works for member company that has not signed a Member Committer Agreement;
 * The committer is self employed or not employed; or
 * The committer is a student.
 
@@ -138,8 +138,8 @@ A committer will need to provide an ECECF if:
 * The committer works for member company that has not signed a Member Committer Agreement; or
 * The committer is self-employed.
 
-If the committer is self employed, an owner of your their company, or
-have full ownership or part ownership in another company and have the
+If the committer is self employed, an owner of their company, or
+has full ownership or part ownership in another company and has the
 authority to sign and submit the ECECF
 on their own behalf, then they should do so.
 
@@ -165,7 +165,7 @@ the mailto:{emoRecordsEmail}[EMO Records Team] explaining their status.
 
 [qanda]
 What happens if I do not fill out the paperwork?::
-	If you do not fill out the paperwork, then you don't get your credentials for write-access to the
+	If you do not fill out the paperwork, then you do not get your credentials for write-access to the
 	source code repository(s) and other project resources.
 
 What happens if I cannot convince my employer to fill out the paperwork?::
