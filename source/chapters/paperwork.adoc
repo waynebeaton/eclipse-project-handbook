@@ -1,40 +1,26 @@
 [[paperwork]]
 == Committer Paperwork
 
-The Eclipse Foundation needs to ensure that all committers with write
-access to the code, websites, and issue tracking systems understand their role in
-the intellectual property process. The Eclipse Foundation also
-needs to ensure that we have accurate records of the people who are
-acting as change agents on the projects. To ensure that
-committers understand their role, and that the Eclipse Foundation has
-accurate records, committers must provide documentation asserting
-that they have read, understood, and will follow the committer guidelines.
-Committers must also gain their employers consent to their participation in 
-Eclipse Foundation open source projects.
+The Eclipse Foundation needs to ensure that all committers with write access to the code, websites, and issue tracking systems understand their role in the intellectual property process. The Eclipse Foundation also needs to ensure that we have accurate records of the people who are acting as change agents on the projects. To ensure that committers understand their role, and that the Eclipse Foundation has accurate records, committers must provide documentation asserting that they have read, understood, and will follow the committer guidelines. Committers must also gain their employers consent to their participation in Eclipse Foundation open source projects.
 
-All committers must complete the _Committer Questionnaire_ and provide documentation
-as described below.
+All committers must complete the _Committer Questionnaire_ and provide documentation as described below.
 
 [[paperwork-questionnaire]]
 === Committer Questionnaire
 
-The {committerQuestionnaireUrl}[Committer Questionnaire] is an online form that
-must be completed by all new committers. This form offers two separate paths:
-one for committers who work for a member company that has provided a signed
-_Member Committer Agreement_, and one for everyone else.
+The {committerQuestionnaireUrl}[Committer Questionnaire] is an online form that must be completed by all new committers. This form offers two separate paths: one for committers who work for a member company that has provided a signed _Member Committer Agreement_, and one for everyone else.
 
-NOTE: The _Committer Questionnaire_ is accessible only after you have been elected as 
-a committer on a project, either as an initial committer on a new project, or 
-via election on an existing project.
+[NOTE]
+====
+The _Committer Questionnaire_ is accessible only after you have been elected as a committer on a project, either as an initial committer on a new project, or via election on an existing project.
+====
 
-Only member companies that have provided a signed _Member Committer Agreement_
-will be listed as member companies in the _Committer Questionnaire_.
+Only member companies that have provided a signed _Member Committer Agreement_ will be listed as member companies in the _Committer Questionnaire_.
 
 [[paperwork-documents]]
 === Documents
 
-The exact nature of the documentation required is dependent upon
-employments status.
+The exact nature of the documentation required is dependent upon employments status.
 
 [graphviz, paperwork, svg]
 .What paperwork do you need?
@@ -80,37 +66,24 @@ digraph {
 }
 ----
 
-Documents must be printed, signed and then returned either by fax 
-(using the fax number on the form) or as scanned images via email 
-to the mailto:{emoRecordsEmail}[EMO Records Team].
+Documents must be printed, signed and then returned either by fax (using the fax number on the form) or as scanned images via email to the mailto:{emoRecordsEmail}[EMO Records Team].
 
 [[paperwork-mca]]
 ==== Member Committer Agreement
 
-The {mcaUrl}[Member Committer Agreement] (MCA) is used by organizations
-that are members of the Eclipse Foundation to cover all of their employees 
-who participate in Eclipse Foundation projects as committers. 
+The {mcaUrl}[Member Committer Agreement] (MCA) is used by organizations that are members of the Eclipse Foundation to cover all of their employees who participate in Eclipse Foundation projects as committers. 
 
 [NOTE]
 ====
-If your employer is a member of the Eclipse Foundation and 
-has not already provided an MCA, consult with your management
-team to determine who has the necessary authority to sign it on your company's
-behalf. Provide the MCA in advance of the completion of your committer election
-or new project creation to streamline the committer provisioning process. 
-If you and your management team are not sure whether or 
-not your employer has an MCA, ask the mailto:{emoRecordsEmail}[EMO Records Team].
+If your employer is a member of the Eclipse Foundation and  has not already provided an MCA, consult with your management team to determine who has the necessary authority to sign it on your company's behalf. Provide the MCA in advance of the completion of your committer election or new project creation to streamline the committer provisioning process. If you and your management team are not sure whether or not your employer has an MCA, ask the mailto:{emoRecordsEmail}[EMO Records Team].
 ====
 
-If the committer's employer is a member of the Eclipse Foundation that 
-cannot provide a signed MCA, then the committer will have to complete an 
-_Individual Committer Agreement_ and _Eclipse Committer Employer Consent Form_.
+If the committer's employer is a member of the Eclipse Foundation that cannot provide a signed MCA, then the committer will have to complete an _Individual Committer Agreement_ and _Eclipse Committer Employer Consent Form_.
 
 [[paperwork-ica]]
 ==== Individual Committer Agreement
 
-The {icaUrl}[Individual Committer Agreement] (ICA) is used by committers 
-who are not covered by a _Member Committer Agreement_.
+The {icaUrl}[Individual Committer Agreement] (ICA) is used by committers who are not covered by a _Member Committer Agreement_.
 
 An ICA is required if:
 
@@ -119,16 +92,12 @@ An ICA is required if:
 * The committer is self employed or not employed; or
 * The committer is a student.
 
-If the committer provides an _Individual Committer Agreement_, and is employed
-or self-employed, then they must also provide an _Eclipse Committer Employer
-Consent Form_.
+If the committer provides an _Individual Committer Agreement_, and is employed or self-employed, then they must also provide an _Eclipse Committer Employer Consent Form_.
  
 [[paperwork-ececf]]
 ==== Eclipse Committer Employer Consent Form
 
-Committers covered by an _Individual Committer Agreement_ must document 
-the consent of their employer when participating in Eclipse Foundation 
-projects by providing an {ececfUrl}[Eclipse Committer Employer Consent Form] (ECECF).
+Committers covered by an _Individual Committer Agreement_ must document the consent of their employer when participating in Eclipse Foundation projects by providing an {ececfUrl}[Eclipse Committer Employer Consent Form] (ECECF).
 
 A committer will need to provide an ECECF if:
  
@@ -136,61 +105,45 @@ A committer will need to provide an ECECF if:
 * The committer works for member company that has not signed a _Member Committer Agreement_; or
 * The committer is self-employed.
 
-If the committer is self employed, an owner of their company, or
-has full ownership or part ownership in another company and has the
-authority to sign and submit the ECECF
-on their own behalf, then they should do so.
+If the committer is self employed, an owner of their company, or has full ownership or part ownership in another company and has the authority to sign and submit the ECECF on their own behalf, then they should do so.
 
-Alternatively, the committer may arrange for the company that is
-their principal business customer to sign and submit the
-ECECF on their behalf.
+Alternatively, the committer may arrange for the company that is their principal business customer to sign and submit the ECECF on their behalf.
 
 [[paperwork-existing]]
 ==== Existing Committer
 
-If the individual is already a committer on an existing Eclipse Foundation project then 
-additional paperwork may or may not be necessary. The EMO Records Team will ask for
-additional documentation if required.
+If the individual is already a committer on an existing Eclipse Foundation project then additional paperwork may or may not be necessary. The EMO Records Team will ask for additional documentation if required.
 
 [[paperwork-not-employed]]
 ==== Not Employed or Student
 
-If the committer is not employed or is a student, they must send a note to 
-the mailto:{emoRecordsEmail}[EMO Records Team] explaining their status.
+If the committer is not employed or is a student, they must send a note to the mailto:{emoRecordsEmail}[EMO Records Team] explaining their status.
 
 [[paperwork-faq]]
 === Frequently Asked Questions
 
 [qanda]
 What happens if I do not fill out the paperwork?::
-	If you do not fill out the paperwork, then you do not get your credentials for write-access to the
-	source code repository(s) and other project resources.
+
+If you do not fill out the paperwork, then you do not get your credentials for write-access to the source code repository(s) and other project resources.
 
 What happens if I cannot convince my employer to fill out the paperwork?::
-	The Eclipse Board of Directors has taken a firm position that if you are
-	employed then you must meet one of the scenarios described above. If you cannot
-	convince your employer to fill out the necessary paperwork, then you cannot
-	have write-access to project resources. This is the
-	Board's position _even if_ you are working on {forgeName} projects on your
-	own time. We realize that this prevents some talented and desirable
-	people from being able to commit to the projects but this is our
-	IP risk reduction strategy. 
+
+The Eclipse Board of Directors has taken a firm position that if you are employed then you must meet one of the scenarios described above. If you cannot convince your employer to fill out the necessary paperwork, then you cannot have write-access to project resources. This is the Board's position _even if_ you are working on {forgeName} projects on your own time. We realize that this prevents some talented and desirable people from being able to commit to the projects but this is our IP risk reduction strategy. 
 
 Where can I get help to discuss these documents with my management team? ::
-	The EMO can talk to your management
-	and senior executives about these (and other) legal documents to
-	help them understand why these documents are the best risk reduction
-	solution for everyone involved; just contact us at license@eclipse.org.
+
+The EMO can talk to your management and senior executives about these (and other) legal documents to help them understand why these documents are the best risk reduction solution for everyone involved; just contact us at license@eclipse.org.
 
 What formats can be used to submit paper documentation? ::
-    The EMO Records Team prefers a scanned document delivered via email. The
-    documents may also be provided by fax or by post (the fax number and 
-    postal address are captured in the documents).
+
+The EMO Records Team prefers a scanned document delivered via email. The documents may also be provided by fax or by post (the fax number and postal address are captured in the documents).
 
 What Email address should I use to send completed documents? ::	
-	{emoRecordsEmail}
+
+{emoRecordsEmail}
 
 What if a I change employers? ::
-	Edit your {accountUrl}[Eclipse Account Profile] to update your employment
-	status.
+
+Edit your {accountUrl}[Eclipse Account Profile] to update your employment status.
 	
