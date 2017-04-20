@@ -56,8 +56,7 @@ Use the {createurl}[web form] to create a new project proposal. Instructions are
 Keep track of the URL of the proposal. We do not provide public links to the document until after the proposal is opened for community review.
 ====
 
-A proposal must minimally include a description of the project, a declaration of scope, and a list of prospective members (project leads and committers) before we make it accessible to the public
-for _community review_.
+A proposal must minimally include a description of the project, a declaration of scope, and a list of prospective members (project leads and committers) before we make it accessible to the public for _community review_.
 
 When you feel that the proposal is ready, send a note to the Eclipse Management Organization (EMO) at {emoEmail} requesting that the proposal be made available to the public for review. The EMO
 will review the proposal and may provide feedback before initiating the _community review_ period.
@@ -68,9 +67,7 @@ A proposal will be open for community review for a minimum of two weeks.
 
 The Eclipse Foundation holds the _trademark_ for all {forgeName} projects. Trademark assignment is undertaken prior to the creation of any new project. If you already have a trademark on your project name, that trademark must be assigned to the Eclipse Foundation. Be advised that trademark assignment can be a time-consuming process (it can take hours, days, or weeks depending on the circumstances surrounding the name). If you currently hold the trademark, you will be asked to complete a {trademarkTransferUrl}[Trademark Transfer Agreement].
 
-The proposal must list at least one mentor from the Architecture Council. Members of the Architecture Council have considerable experience with Eclipse Foundation practices, and the {edpUrl}[Eclipse Development Process]. If you are already in contact with mentors who agree to help you with 
-your project, please do list them in the proposal. Otherwise, the EMO will engage directly with the Architecture Council to identify mentors as necessary. Mentors are available to the project through the
-incubation phase; they are released from their duties when the project <<release-graduation,graduates>>.
+The proposal must list at least one mentor from the Architecture Council. Members of the Architecture Council have considerable experience with Eclipse Foundation practices, and the {edpUrl}[Eclipse Development Process]. If you are already in contact with mentors who agree to help you with your project, please do list them in the proposal. Otherwise, the EMO will engage directly with the Architecture Council to identify mentors as necessary. Mentors are available to the project through the incubation phase; they are released from their duties when the project <<release-graduation,graduates>>.
 
 When the project name trademark has been secured, a mentor has been identified, and the proposal contents are finalized, the EMO will schedule a _creation review_. Reviews--which run for a minimum of one week--are scheduled twice a month, generally concluding on the first and third Wednesday of each month. The creation review may overlap with the _community review_ period.
 
@@ -79,17 +76,35 @@ When the project name trademark has been secured, a mentor has been identified, 
 Creation reviews tend to always be successful. They should be considered low stress as the hard work has already been done in advance of the start of the review.
 ====
 
-Following the creation review, the EMO will initiate the provisioning process. To gain committer status, some <<paperwork,committer paperwork>> must be completed as part of the provisioning process. The exact nature of that paperwork depends on several factors, including the employment status of the individual and the Eclipse Foundation membership status of their employer.
+[[starting-provisioning]]
+=== Provisioning
+
+Following a successful creation review, the EMO will initiate the provisioning process. 
+
+Provisioning starts with an email message being sent to each of the committers listed on the project proposal with instructions on how to engage in the <<paperwork,committer paperwork>> process. The exact nature of that paperwork depends on several factors, including the employment status of the individual and the Eclipse Foundation membership status of their employer.
 
 [NOTE]
 ====
-If you can be ready with the paperwork in time for the completion of the creation review, then we can move quickly through the provisioning process. When we initiate provisioning, committers will be sent an email with instructions; please don't send any paperwork in until after you receive those instructions.
+The provisioning process will not start until after the paperwork for at least one project committer is received and processed by the EMO Records Team. If you can be ready with the paperwork in time for the completion of the creation review, then we can move quickly through the provisioning process. 
+
+When we initiate provisioning, committers will be sent an email with instructions; please don't send any paperwork in until after you receive those instructions.
 ====
+
+When the paperwork is received and processed for one committer, the Eclipse Webmaster will begin the resources provisioning process. When that process is complete, the Eclipse Webmaster will provide information regarding the nature and coordinates of the various  <<project-resources-and-services,resources and services>> available to the project.
 
 [[starting-after-provisioning]]
 === After Provisioning
 
-The Eclipse Webmaster will send a note announcing the completion of the provisioning process. Before you commit any code into your project repository, you must submit your project's <<ip-initial-contribution,_initial contribution_>> and list of third-party content for review by the IP team.
+Before you commit any code into your project repository, you must submit your project's <<ip-initial-contribution,_initial contribution_>> and third party content for review by the Eclipse Intellectual Property (IP) Team. 
+
+Project teams interact with the Eclipse IP Team via the <<ip-ipzilla,IPZilla>> system using <<ip-cq,Contribution Questionnaires>> (CQs). Those members of the project team that are included in the CQ's _CC_ list will be informed of progress via email.
+    
+[WARNING]
+====
+The IP Team will indicate check-in permission by adding the `checkin` keyword and final approval by setting the state of the CQ to `approved`. *Do not* push any code into the project repository until after the Eclipse IP Team has indicated that you are ready to do so.
+====
+
+<<ip-third-party,Third party content>> that is required by the project code must also be reviewed by the Eclipse IP Team. Project teams that are new to the process should start by raising no more than three CQs for third party content in order to gain an understanding of the third party review process before proceeding to enter all requests.
 
 [graphviz, post-creation, svg]
 .Post creation activities
@@ -122,12 +137,7 @@ digraph {
 }
 ----
 
-Do not commit any code to your project's source code repository until after you receive _check-in_ permission from the IP Team. Once you've received that permission, you can create and distribute _milestone_ builds for your first release. You must wait until after the IP Team has approved your initial contribution and use of third-party content before you do any official <<release,releases>>.
-
-[NOTE]
-====
-Project teams interact with the IP Team via the <<ip-ipzilla,IPZilla>> system using <<ip-cq,Contribution Questionnaires>> (CQs). The IP Team will indicate check-in permission by adding the +checkin+ keyword and final approval by setting the state of the CQ to +approved+.
-====
+After the project code is pushed into the project repository, the project team can create and distribute _milestone_ builds for the first release. However, all intellectual property must be approved by the Eclipse IP Team before the project team can issue any official <<release,releases>>.
 
 [[starting-project-phases]]
 === Project Phases
@@ -175,7 +185,7 @@ Yes. The proposal can be changed any time before the start of the start of the c
 
 When do I submit my code for review by the IP team? ::
 
-Submit your code (initial contribution) for review after the project has been provisioned. The Eclipse Webmaster will let you know via email when provisioning is complete.
+Submit your code (initial contribution) for review after the project has been provisioned. The Eclipse Webmaster will let you know when provisioning is complete.
 
 Does the new project have to use Git? ::
 
