@@ -385,6 +385,10 @@ When should I submit the IP Log for review? ::
 	The IP Log should be submitted for review by the IP Team two weeks before the planned
 	end date for a release review or (if code moves are involved) a restructuring review. 
 	Note that the date of your review may be different from the date of the actual release.
+	
+We submitted an IP Log for our release, but we've made some changes since then that will end up in the release, should we resubmit the IP Log? ::
+
+The purpose of the IP Log review is to checkpoint the IP Due Diligence Process and ensure that nothing is slipping through the cracks; an IP Log is not intended to be an accurate reflection of exactly what is in any particular release.
 
 Are there other reasons to submit the IP Log for review? ::
 	Generally no. If the IP Team requires an IP Log review outside of the context of
