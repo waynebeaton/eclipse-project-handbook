@@ -1,51 +1,47 @@
 [[project-resources-and-services]]
 == Project Resources and Services
 
-Open source projects at the Eclipse Foundation are required to make use
-of certain Eclipse Foundation services:
+Open source projects at the Eclipse Foundation are required to make use of certain Eclipse Foundation services:
 
-* All project issues must be tracked in a the issue tracker assigned
-to the project;
-* Source code must be maintained in source code repositories assigned to the
-project (e.g. {aforgeName} {gitUrl}[Git] or {gerritUrl}[Gerrit] instance,
-or the {gitHubUrl}[{forgeName} Organization] on GitHub);
-* All third-party content used by the project must be <<ip-third-party,tracked and
-approved>> for use by the Eclipse IP Team;
+* All project issues must be tracked in a the issue tracker assigned to the project;
+* Source code must be maintained in source code repositories assigned to the project (e.g. {aforgeName} {gitUrl}[Git] or {gerritUrl}[Gerrit] instance, or the {gitHubUrl}[{forgeName} Organization] on GitHub);
+* All third party content used by the project must be <<ip-third-party,tracked and approved>> for use by the Eclipse IP Team;
 * Downloads must be distributed via a forge-specific downloads server;
-* Developer (committer) communication must occur in the _dev_ list
-provided to the project by the Eclipse Foundation; and
+* Developer (committer) communication must occur in the _dev_ list provided to the project by the Eclipse Foundation; and
 * Projects must keep their <<pmi-metadata, Project Metadata>> up-to-date.
+
+[[resources-identifers]]
+=== Identifers
+Project resources make use of two sorts of ids:
+
+Short name::
+The short name is used project in various parts of Eclipse Foundation infrastructure (e.g. the name of the project's directory on the downloads and Git servers, and the URL for the project website). The short name may contain lowercase alphanumeric characters, dashes, and underlines; but does not contain periods.
+
+Qualified identifier::
+The project's short name is joined with the short name of the parent project(s) to form a qualified identifier (project id) for the project that is used as a key on services generated and/or maintained for the project by the Eclipse Foundation. 
+
+For example the "{forgeName} Woolsey" project has a short name of "woolsey"; its qualified name is "technology.dash.woolsey", indicating that it is a subproject of the {aForgeName} _Dash_ Project which is itself a subproject of the {forgeName} _Technology_ Top Level Project.
 
 [[resources-source]]
 === Source Code Management
 
-Your project must maintain source code in the repositories assigned to the
-project by the Eclipse Foundation. These official repositories must be
-the exclusive source of all project code delivered via the project's assigned
-distribution channel (e.g. the download server).
+{forgeName} projects must maintain source code in the repositories assigned to the project by the Eclipse Foundation. These official repositories must be the exclusive source of all project code delivered via the project's assigned distribution channel (e.g. the download server).
 
-In order for your project to operate in an _open_ manner, it must be possible
-for potential contributors to have access to the code base in its most current
-form, so all ongoing development must be regularly pushed to these canonical 
-repositories.
+// show the templates for Git/Gerrit/GitHub
+
+In order for the project to operate in an _open_ manner, it must be possible for potential contributors to have access to the code base in its most current form, so all ongoing development must be regularly pushed to these canonical repositories.
 
 [[resources-eca]]
 === Eclipse Contributor Agreement (ECA)
 
-The Eclipse Foundation has implemented the {ecaUrl}[Eclipse Contributor Agreements] (ECA) 
-to improve <<ip,intellectual property>> (IP) management and workflow. All
-contributors, who are not committers on the {forgeName} project, must sign the ECA.
+The Eclipse Foundation has implemented the {ecaUrl}[Eclipse Contributor Agreements] (ECA) to improve <<ip,intellectual property>> (IP) management and workflow. All contributors, who are not committers on the {forgeName} project, must sign the ECA.
 
-You do *not* require an ECA to contribute to a project on which you have committer
-status.
+You *do not* require an ECA to contribute to a project on which you have committer status.
 
 [[resources-commit]]
 === Git Commit Records
 
-Git commit records are required to take a specific form. The credentials
-of the actual author must be used to populate the +Author+ field. The email 
-address used must match the email address that the Eclipse Foundation has
-on file for the author (case-sensitive).
+Git commit records are required to take a specific form. The credentials of the actual author must be used to populate the `Author` field. The email address used must match the email address that the Eclipse Foundation has on file for the author (case-sensitive).
 
 The commit message is divided into three sections:
 
@@ -77,37 +73,20 @@ Date:   Wed May 29 16:17:36 2013 +0200
 <4> Additional authors can be added using +Also-by+ entries.
 <5> Non-committers must _sign-off_ the commit using the same email address as used in the author field.
 
-The _summary_ line is used in many places where Git commits are listed, ensure
-that this line is sensible by itself. The _description_ area should be used to provide
-more detail about the commit. The footer area is used for extra fields and values.
+The _summary_ line is used in many places where Git commits are listed, ensure that this line is sensible by itself. The _description_ area should be used to provide more detail about the commit. The footer area is used for extra fields and values.
 
-If the bug id is included in the summary line (using the form "Bug 12345 - xxx" or "[12345] xxx")
-Gerrit Code Review will automatically add a link in the 
-corresponding Bugzilla record back to the Gerrit record (this, of course, only 
-applies to commits pushed to Gerrit).
+If the bug id is included in the summary line (using the form "Bug 12345 - xxx" or "[12345] xxx") Gerrit Code Review will automatically add a link in the corresponding Bugzilla record back to the Gerrit record (this, of course, only applies to commits pushed to Gerrit).
 
-The +Change-Id+ is used by <<resources-gerrit,Gerrit Code Review>> to associate new versions 
-of a change back to its original review. This field need only be specified if the 
-repository is managed by Gerrit.
+The `Change-Id` is used by <<resources-gerrit,Gerrit Code Review>> to associate new versions of a change back to its original review. This field need only be specified if the repository is managed by Gerrit.
 
-Create a separate +Also-by+ field for each additional author of a commit. This might
-apply, for example, if a commit has been authored via pair-programming, or the commit
-is the result of collapsing multiple commits authored by multiple developers.
+Create a separate `Also-by` field for each additional author of a commit. This might apply, for example, if a commit has been authored via pair-programming, or the commit is the result of collapsing multiple commits authored by multiple developers.
 
-Commits that are provided by non-committers must have a +Signed-off-by+ field in the 
-footer indicating that the author is aware of the terms by which the contribution has been
-provided to the project. The non-committer must additionally have an Eclipse Foundation
-account and must have a signed <<resources-eca,Eclipse Contributor Agreement>> (ECA)
-on file.
+Commits that are provided by non-committers must have a `Signed-off-by` field in the footer indicating that the author is aware of the terms by which the contribution has been provided to the project. The non-committer must additionally have an Eclipse Foundation account and must have a signed <<resources-eca,Eclipse Contributor Agreement>> (ECA) on file.
 
 [[resources-git]]
 === Git
 
-Those projects that want to use Git on the {forgeName} forge, are assigned a 
-directory in which they may create as many Git repositories as required.
-{gitRequestUrl}[Open a bug] to request that the Webmaster create a new Git
-repository for your project. Alternatively, committers with shell accounts
-can create repositories themselves.
+Those projects that want to use Git on the {forgeName} forge, are assigned a directory in which they may create as many Git repositories as required. {gitRequestUrl}[Open a bug] to request that the Webmaster create a new Git repository for your project. Alternatively, committers with shell accounts can create repositories themselves.
 
 [subs="attributes"]
 .Create a new Git repository
@@ -115,153 +94,118 @@ can create repositories themselves.
 > initrepo /gitroot/project/{namespace}.repo.name.git
 -----------------------------------------------------
 
-For consistency, the name of the repository must end with +.git+.
+For consistency, the name of the repository must end with `.git`.
 
-To set the description of the repository, use +sftp+ or +scp+ to copy a text file to
-+/gitroot/project/{namespace}.repo.name.git/description+. Git repository 
-descriptions should be limited to a paragraph of one or two sentences.
+To set the description of the repository, use `sftp` or `scp` to copy a text file to `/gitroot/project/{namespace}.repo.name.git/description`. Git repository descriptions should be limited to a paragraph of one or two sentences.
 
-Only project committers can push to {aForgeName} Git repository. A push
-that includes commits that do not conform to the required form will be rejected.
+Only project committers can push to {aForgeName} Git repository. A push that includes commits that do not conform to the required form will be rejected.
 
 You can {gitUrl}[browse {forgeName} repositories] directly on the Git server.
 
 [[resources-gerrit]]
 === Gerrit Code Review
 
-https://www.gerritcodereview.com/[Gerrit] provides web based code review and 
-repository management for the Git version control system. Many projects use
-Gerrit to reduce barriers and encourage contribution to the project.
-{gerritRequestUrl}[Open a bug] to request that the Webmaster configure your
-Git repository for Gerrit. 
+https://www.gerritcodereview.com/[Gerrit] provides web based code review and repository management for the Git version control system. Many projects use Gerrit to reduce barriers and encourage contribution to the project. {gerritRequestUrl}[Open a bug] to request that the Webmaster configure your Git repository for Gerrit. 
 
-Commits may be pushed directly to the Git repository through Gerrit by 
-a project committer (e.g. to the +master+ branch).
+Commits may be pushed directly to the Git repository through Gerrit by a project committer (e.g. to the `master` branch).
 
-Anybody can push to a +refs/for/*+ branch for review in a Gerrit repository. A push
-that includes commits that do not conform to the required form will be rejected.
-Commits intended for review should have a 
-https://git.eclipse.org/r/Documentation/user-changeid.html[+Change-Id+]
+Anybody can push to a `refs/for/*` branch for review in a Gerrit repository. A push that includes commits that do not conform to the required form will be rejected. Commits intended for review should have a https://git.eclipse.org/r/Documentation/user-changeid.html[`Change-Id`]
 
-You can {gerritUrl}[browse {forgeName} repositories] directly on the Gerrit 
-server.
+You can {gerritUrl}[browse {forgeName} repositories] directly on the Gerrit server.
 
 [[resources-github]]
 === GitHub
 
-Projects may opt to move some or all of their canonical source code repositories to the
-{gitHubUrl}[{forgeName} organization] on GitHub. Both GitHub Issues and Wiki may also
-be used.
+Projects may opt to move some or all of their canonical source code repositories to the {gitHubUrl}[{forgeName} organization] on GitHub. Both GitHub Issues and Wiki may also be used.
 
-{gitHubRequestUrl}[Open a bug] to request that the Webmaster create a new, or move
-an existing, Git repository for your project. The Webmaster will install some 
-_hooks_ on your GitHub repository.
+{gitHubRequestUrl}[Open a bug] to request that the Webmaster create a new, or move an existing, Git repository for your project. The Webmaster will install some _hooks_ on your GitHub repository.
 
-The _Committers hook_ grants designated project committers write access to the 
-GitHub-hosted project repositories. Project committers must use the email address they 
-provide to the Eclipse Foundation as their GitHub email address. 
+The _Committers hook_ grants designated project committers write access to the GitHub-hosted project repositories. Project committers must use the email address they provide to the Eclipse Foundation as their GitHub email address. 
 
-The <<resources-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect incoming 
-GitHub pull requests to ensure that the contributor has a valid ECA on file, and that
-the commit has been "signed-off" as required. Project committers should only merge pull 
-_green_ requests:
+The <<resources-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect incoming GitHub pull requests to ensure that the contributor has a valid ECA on file, and that the commit has been "signed-off" as required. Project committers should only merge pull _green_ requests:
 
 .Notification that the commit is properly structured and permissions are in place.
 image::images/Github-cla-success.png[]
 
-Since the GitHub API does not provide a means of absolutely denying a merge the hook
-will merely warn you that the contributors have not signed a ECA or that the commit
-message is not correctly structured:
+Since the GitHub API does not provide a means of absolutely denying a merge the hook will merely warn you that the contributors have not signed a ECA or that the commit message is not correctly structured:
 
 .Notification that there is something wrong with the commit.
 image::images/Github-cla-failure.png[]
 
-Click on the _Details_ link for more information. Do not merge unless you are absolutely 
-certain that the contributer does have a valid ECA on file and the commit message includes
-the required +Signed-off-by+ statement in the footer.
+Click on the _Details_ link for more information. Do not merge unless you are absolutely certain that the contributer does have a valid ECA on file and the commit message includes the required `Signed-off-by` statement in the footer.
 
-NOTE: The Eclipse Webmaster creates and maintains a mirror of all GitHub-hosted
-repositories on Eclipse Foundation hardware.
+[NOTE]
+==== 
+The Eclipse Webmaster creates and maintains a mirror of all GitHub-hosted repositories on Eclipse Foundation hardware.
+====
 
 [[resources-issues]]
 === Issue Trackers
 
-{forgeName} projects must use an Eclipse Foundation-provided
-issue tracker. Project teams may opt to use either the {bugzillaUrl}[{forgeName} Bugzilla]
-instance or--for projects that use <<resources-github,GitHub>>--GitHub Issues instances associated
-with Eclipse Foundation-managed GitHub project repositories.
+{forgeName} projects must use an Eclipse Foundation-provided issue tracker. Project teams may opt to use either the {bugzillaUrl}[{forgeName} Bugzilla] instance or--for projects that use <<resources-github,GitHub>>--GitHub Issues instances associated with Eclipse Foundation-managed GitHub project repositories. 
 
-NOTE: Per directive from the Eclipse Foundation's Board of Directors,
-you must obtain approval from your PMC to use GitHub Issues.
-
-To request _GitHub Issues_ access for your project, a bug against 
-{bugzillaGitHubUrl}[Community/GitHub] and send the link to your PMC's mailing list
-with a request for their approval.
+Per directive from the Eclipse Foundation's Board of Directors, the project team must obtain approval from your PMC to use _GitHub Issues_. To request GitHub Issues access for your project, a bug against {bugzillaGitHubUrl}[Community/GitHub] and send the link to your PMC's mailing list with a request for their approval.
 
 [[resources-forums]]
 === Forums and Outbound Communication
 
-All projects are assigned a {forumsUrl}[user forum] as a point of contact between
-the user and adopter communities, and the project developers.
+All projects are assigned a {forumsUrl}[user forum] as a point of contact between the user and adopter communities, and the project developers.
 
-The EMO strongly encourages the use of alternative communication channels for
-connecting with the community: your project team knows your community and how
-to best connect with them.
+The EMO strongly encourages the use of alternative communication channels for connecting with the community: your project team knows your community and how to best connect with them.
 
 [[resources-website]]
 === Project Websites
 
-Project websites are an excellent way to connect your project with
-your community. Many projects opt to use the <<pmi,Project Management Infrastructure>>
-(PMI) as their project website,
-but if so-desired, a project may host a website on Eclipse Foundation-hosted
-servers. 
+// Project-specific websites are only supported on the Eclipse forge.
+ifeval::["{forgeName}"=="Eclipse"]
+Project websites are an excellent way to connect your project with your community. Many projects opt to use the <<pmi,Project Management Infrastructure>> (PMI) as their project website.  PMI-based website URLs take the form of `{forgeUrl}/projects/_projectid_` (e.g. `{forgeUrl}/projects/technology.foo`). 
 
-Project website sources are hosted in Git repositories maintained by the
-Eclipse Foundation. {websiteRequestUrl}[Open a bug] to request that the Webmaster 
-create a website for your project.
+Many project teams opt to create a custom main project website: if so-desired, a project may host a website on Eclipse Foundation-hosted servers. Project website URLs take the form `{wwwUrl}/_shortname_` (e.g.`{wwwUrl}/foo`). Custom project website content is maintained in a Git repositories hosted on Eclipse Foundation infrastructure. A background job moves content from the Git repository to the website; content pushed to the repository will appear on the live website within five minutes.
 
-NOTE: Alternative hosting services for project-specific websites are
-not permitted. Websites _not_ hosted by the Eclipse Foundation are
-considered <<trademark-external-community,community portals>> and so are subject to the
-{trademarkGuidelinesUrl}[Guidelines for Eclipse
-Logo & Trademarks] (the Eclipse Foundation asserts ownership of the
-project name trademark).
+[NOTE]
+====
+If a project website has not already been created for your project, {websiteRequestUrl}[open a bug] to request that the Eclipse Webmaster create one.
+====
+endif::[]
+ifeval::["{forgeName}"=="Eclipse"]
+The <<pmi,Project Management Infrastructure>> (PMI) provides the main project website. Website URLs take the form of `{forgeUrl}/projects/_projectid_` (e.g. `{forgeUrl}/projects/technology.foo`).
+endif::[]
+
+Websites _not_ hosted by the Eclipse Foundation are considered <<trademark-external-community,community portals>> and are subject to the {trademarkGuidelinesUrl}[Guidelines for Eclipse Logo & Trademarks] (the Eclipse Foundation asserts ownership of the project name trademark).
 
 [[resources-builds]]
 === Builds
 
-Use of Eclipse Foundation-provided and hosted build services, the so-called
-{cbiUrl}[Common Build Infrastructure] (CBI) is strongly recommended, but not 
-strictly required. 
+Use of Eclipse Foundation-provided and hosted build services, the so-called {cbiUrl}[Common Build Infrastructure] (CBI) is strongly recommended, but not strictly required. 
 
-Whether or not your project chooses to make use of provided build resources, it must
-be possible for members of the community to build project artifacts from 
-source code with reasonable effort.
+Whether or not your project chooses to make use of provided build resources, it must be possible for members of the community to build project artifacts from source code with reasonable effort.
 
 [[resources-signing]]
 ==== Signed Artifacts
 
-Where technically sensible, all downloadable artifacts should
-be {jarSigningUrl}[signed] by an Eclipse Foundation-provided certificate.
+Where technically sensible, all downloadable artifacts should be {jarSigningUrl}[signed] by an Eclipse Foundation-provided certificate.
 
 [[resources-downloads]]
 ==== Downloads
 
-Project artifacts (e.g. downloads) can be distributed via third-party
-services (e.g. Maven Central), but the Eclipse Foundation-provided
-infrastructure must be considered the primary source of project
-downloads. 
+The project is allocated space on the {forgeName} download and archive servers.
 
-Project committers can {downloadsUrl}[upload project artifacts] to the project's 
-directory on the download server.
+Project artifacts (e.g. downloads) can be distributed via third party services (e.g. Maven Central), but--where technically sensible--the Eclipse Foundation-provided infrastructure must be considered the primary source of project downloads.
+
+Download
+
+You can upload content to `downloads/_shortname_` (e.g. `downloads/dash`) via SFTP or SCP (to {downloadsHost}) or from a CI instance at Eclipse.org
+
+Project committers can {downloadsUrl}[upload project artifacts] to the project's directory on the download server.
 
 [[resources-faq]]
 === Frequently Asked Questions
 
 [qanda]
 Can a project use the _gh-pages_ support from Github to host at _<project>.github.io_?::
-	The project's primary website must be hosted on Eclipse Foundation
-	infrastructure. GitHub's _gh-pages_ support can be used to host
-	supplementary content only as a <<trademark-external-community,Community
-	Portal>> (and is subject to the branding requirements).
+
+The project's primary website must be hosted on Eclipse Foundation infrastructure. GitHub's _gh-pages_ support can be used to host supplementary content only as a <<trademark-external-community,Community Portal>> (and is subject to the branding requirements).
+
+Do we have to use the Eclipse Foundation-provided download server? ::
+
+If you provide content to your community via any form of click-to-download notion, then the Eclipse Foundation-provided download server *must* be the primary source of that content. If, however, the concept of a download doesn't make sense for the sort of content that your project provides (e.g. your community consumes your context exclusively through Maven Central, or if source code is the only content delivered by the project), then you aren't required to provide that content via the download server. 
