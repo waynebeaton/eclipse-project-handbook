@@ -3,6 +3,7 @@
 :emoRecordsEmail: emo-records@eclipse.org
 :webmasterEmail: webmaster@eclipse.org
 :legalEmail: license@eclipse.org
+:marketingEmail: mailto:marketing@eclipse.org
 :proposalsForum: http://www.eclipse.org/forums/eclipse.proposals
 :activityUrl: http://www.eclipse.org/projects/project_activity.php
 :edpUrl: http://www.eclipse.org/projects/dev_process/development_process.php
@@ -28,6 +29,7 @@
 :gitHubRequestUrl: https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Community&component=GitHub
 :gerritRequestUrl: https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Community&component=Gerrit
 :websiteRequestUrl: https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Community&component=Website
+:emoApprovalsUrl: https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Community&component=EMO%20Approvals
 :ecaUrl: https://www.eclipse.org/legal/ECA.php
 :ecaSignUrl: https://dev.eclipse.org/site_login/myaccount.php#open_tab_cla
 :dcoUrl: https://www.eclipse.org/legal/DCO.php
