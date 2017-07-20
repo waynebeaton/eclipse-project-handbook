@@ -1,17 +1,13 @@
 [[checklist]]
 == Project Checklist
 
-This checklist is provided as a convenience and is included primarily as 
-a guideline or tool to ensure that {forgeName} projects are doing the right
-sorts of things to attract community and grow. We've tried to strike a balance 
-between being concise while being comprehensive. 
+This checklist is provided as a convenience and is included primarily as a guideline or tool to ensure that {forgeName} projects are doing the right sorts of things to attract community and grow. We've tried to strike a balance between being concise while being comprehensive. 
 
-The Eclipse Foundation staff and Project Management Committee members will
-use this checklist as part of their evaluation during a <<release-review,Release Review>>.
+The Eclipse Foundation staff and Project Management Committee members will use this checklist as part of their evaluation during a <<release-review,Release Review>>.
 
-All projects must conform to the <<trademarks,branding guidelines>> before engaging
-in any Release or Graduation Review (specific examples are described below).
+All projects must conform to the <<trademarks,branding guidelines>> before engaging in any Release or Graduation Review (specific examples are described below).
 
+[discrete]
 === Code
 
 * All project code is managed in source code repositories provided by The Eclipse Foundation;
@@ -26,11 +22,10 @@ in any Release or Graduation Review (specific examples are described below).
 * Every module contains an `about.html` file as required by the {legalDocumentationUrl}[guide to the legal documentation]; and
 * Features names and descriptions are captured, are spelled correctly, use proper grammar, and contain content that is actually useful for the intended audience.
 
+[discrete]
 === Downloads
 
-Most projects provide binary/compiled _downloads_ of their software, intended
-for consumption by their various communities. If the project does not provide
-downloads, then that should be stated on the project's website.
+Most projects provide binary/compiled _downloads_ of their software, intended for consumption by their various communities. If the project does not provide downloads, then that should be stated on the project's website.
  
 * All generated artifacts include only intellectual property that has been subject to the IP Due Diligence Process;
 * All distributed third-party code has been approved by the IP Team;
@@ -39,25 +34,26 @@ downloads, then that should be stated on the project's website.
 * All download artifacts are (if technical feasible) {jarSigningUrl}[signed]; and
 * Subject to limitations of specific technologies, the {versionNumberingUrl}[Version numbering] rules are followed.
 
+[discrete]
 === Project Metadata
 
 Project metadata is specified and maintained using the <<pmi, Project Management Interface>>.
 
 * The formal name, e.g. _{forgeName} Foo(TM)_, is used in the project title; 
 * The formal name including appropriate marks is used in the first mention in the text of the project description, and scope;
-* The project description starts with a single paragraph that can serve as an 'executive summary';
+* The project description starts with a single paragraph that can serve as an _executive summary_;
 * Source code repository references are up-to-date; and
 * Download links and information are up-to-date.
 
+[discrete]
 === Release Metadata
 
-Release metadata is specified and maintained using the <<pmi, Project Management Interface>>. Project teams
-are required to create a metadata entry for every official release (including major, minor, and service
-releases).
+Release metadata is specified and maintained using the <<pmi, Project Management Interface>>. Project teams are required to create a metadata entry for every official release (including major, minor, and service releases).
 
 * At least one release record describes a future release; and
-* The release record includes a description that starts with a single paragraph that can serve as an 'executive summary'.
+* The release record includes a description that starts with a single paragraph that can serve as an _executive summary_.
 
+[discrete]
 === Development Website
 * Is hosted on Eclipse Foundation-provided infrastructure;
 * Uses the formal name including appropriate marks, e.g. _{forgeName} Foo(TM)_, on the page title, first mention in the text, and on all prominent references to the project;
@@ -65,28 +61,24 @@ releases).
 * Includes a concise description of the project (with all necessary marks); and
 * The <<trademarks-website-footer,standard navigation>> links (e.g. `{wwwUrl}`) are included in the website footer.
 
+[discrete]
 === Logos and graphics
 * Project logo includes the trademark symbol; and
 * Are used consistently.
 
+[discrete]
 === Company Logos
 
-Company logos may optionally be included on a project website, but
-only if the following conditions are met.
+Company logos may optionally be included on a project website, but only if the following conditions are met.
 
-* The company is a http://eclipse.org/membership/[member] of the
-Eclipse Foundation;
-* At least one project committer is an employee of the company
-in question; and
-* The committer is active (i.e. they have made at least one commit in
-the last three months)
+* The company is a http://eclipse.org/membership/[member] of the Eclipse Foundation;
+* At least one project committer is an employee of the company in question; and
+* The committer is active (i.e. they have made at least one commit in the last three months)
 
+[discrete]
 === Community Portals and Related Websites
 
-<<trademark-external-community,Community portals>>, regardless of who owns and maintains
-them must conform to the branding guidelines. If you discover a website that does not
-conform to these guidelines (and it is not within your power to effect the changes yourself),
-send a note to {emoEmail} to request assistance.
+<<trademark-external-community,Community portals>>, regardless of who owns and maintains them must conform to the branding guidelines. If you discover a website that does not conform to these guidelines (and it is not within your power to effect the changes yourself), send a note to {emoEmail} to request assistance.
 
 * The formal name including appropriate marks, e.g. _{forgeName} Foo(TM)_, is used on the page title, first mention in the text, and on all prominent references to the project;
 * <<trademarks-external-attribution,Attributions>> are provided for all Eclipse Foundation marks;
@@ -96,10 +88,10 @@ send a note to {emoEmail} to request assistance.
 * Ownership of the domain name (especially if it includes the project name) has been transferred to the Eclipse Foundation; and
 * The domain is regarded and used exclusively as a community portal (i.e. is is not presented as the official project website).
 
+[discrete]
 === Announcements, News items, Blog posts, ...
 
-All announcements regarding project milestones issued by the project must conform to the branding
-guidelines.
+All announcements regarding project milestones issued by the project must conform to the branding guidelines.
 
 * The formal name including appropriate marks, e.g. _{forgeName} Foo(TM)_, is used in the title, first mention in the text, and on all prominent references to the project;
 * <<trademarks-external-attribution,Attributions>> are provided for all Eclipse Foundation marks; and

@@ -38,11 +38,11 @@ include::chapters/pmi.adoc[]
 
 include::chapters/trademarks.adoc[]
 
-// include::chapters/community.adoc[]
+include::chapters/community.adoc[]
+
+include::chapters/checklist.adoc[leveloffset=+1]
 
 // include::chapters/links.adoc[]
-
-include::chapters/checklist.adoc[]
 
 include::chapters/glossary.adoc[]
 
