@@ -1,102 +1,67 @@
 [[ip]]
 == Intellectual Property
 
-{forgeName} projects are expected to take necessary precautions to mitigate
-intellectual property (IP) risk to adopters. A company that integrates the code 
-from your project, for example, does so with confidence that the code in the 
-project can legally be distributed under the agreed-to terms. The 
-{ipDueDiligenceUrl}[IP Due Diligence Process], managed by the Eclipse IP Team 
-(commonly referred to as the 'IP Team'), is in place to support this. 
+{forgeName} projects are expected to take necessary precautions to mitigate intellectual property (IP) risk to adopters. A company that integrates the code from your project, for example, does so with confidence that the code in the project can legally be distributed under the agreed-to terms. The {ipDueDiligenceUrl}[IP Due Diligence Process], managed by the Eclipse IP Team (commonly referred to as the _IP Team_), is in place to support this. 
 
-All {forgeName} committers must be familiar with the {ipPolicyUrl}[Eclipse IP 
-Policy].
+All {forgeName} committers must be familiar with the {ipPolicyUrl}[Eclipse IP Policy].
 
 [[ip-initial-contribution]]
 === Initial Contribution
-Code provenance tracking is critical (we need to know the source of all code
-that ends up in our repositories). To that end, all new projects are required to 
-make an 'initial contribution' before *any* code is committed to a project's 
-source code repository.
+Code provenance tracking is critical (we need to know the source of all code that ends up in our repositories). To that end, all new projects are required to make an _initial contribution_ before *any* code is committed to a project's source code repository.
 
-The IP Team will review your initial contribution to ensure that the code can 
-distributed through {aForgeName} property. The IP Team will review the code to 
-make sure that it hasn't been copied inappropriately, that licenses are being 
-used correctly, and so forth. As part of this process, the IP Team  will 
-research the source of all code; depending on the size of the contribution, this 
-can be a time-consuming process.
+The IP Team will review your initial contribution to ensure that the code can distributed through {aForgeName} property. The IP Team will review the code to make sure that it hasn't been copied inappropriately, that licenses are being used correctly, and so forth. As part of this process, the IP Team  will research the source of all code; depending on the size of the contribution, this can be a time-consuming process.
 
-NOTE: A project cannot make a <<release, release>> until the due diligence on 
-the IP contained in that release--including project code contributions and 
-third-party libraries--is complete. 
+[NOTE]
+====
+A project cannot make a <<release, release>> until the due diligence on the IP contained in that release--including project code contributions and third-party libraries--is complete. 
+====
 
-Create a <<ip-cq,contribution questionnaire>> to submit the initial contribution 
-for review by the IP Team.
+Create a <<ip-cq,contribution questionnaire>> to submit the initial contribution for review by the IP Team.
 
-The IP Team is not able to review the history of project code being moved to 
-{aForgeName} project. The IP Team will review a snapshot of the project code and 
-that snapshot, the 'initial contribution', must be the first commit in the 
-{forgeName} repository. If your project uses an existing GitHub repository, the
-Webmaster team will help you obscure the the history into a hidden branch. 
+The IP Team is not able to review the history of project code being moved to {aForgeName} project. The IP Team will review a snapshot of the project code and that snapshot, the initial contribution, must be the first commit in the {forgeName} repository. If your project uses an existing GitHub repository, the Webmaster team will help you obscure the the history into a hidden branch. 
 
 [[ip-project-code]]
 === Project Code Contributions
 
-Some contributions of code to maintained by the project (i.e. committed to a
-project source code repository and maintained by the project team) must be
-reviewed by the IP Team. The {ipDueDiligenceUrl}[IP Due Diligence Process]
-provides help to determine whether or not the contribution needs to be reviewed
-by the IP Team. If you're not sure, ask your project mentors or your PMC for
-assistance.
+Some contributions of code to maintained by the project (i.e. committed to a project source code repository and maintained by the project team) must be reviewed by the IP Team. The {ipDueDiligenceUrl}[IP Due Diligence Process] provides help to determine whether or not the contribution needs to be reviewed by the IP Team. If you're not sure, ask your project mentors or your PMC for assistance.
 
-All contributions of project code must be tracked in the project's 
-<<ip-iplog,IP Log>>.
+All contributions of project code must be tracked in the project's <<ip-iplog,IP Log>>.
 
-Create a <<ip-cq,contribution questionnaire>> to submit a project code 
-contribution for review by the IP Team.
+Create a <<ip-cq,contribution questionnaire>> to submit a project code contribution for review by the IP Team.
 
 [[ip-third-party]]
 === Third-Party Libraries
 
-All third-party libraries required by project code will have to be checked 
-and approved by the IP Team. 
+All third-party libraries required by project code will have to be checked and approved by the IP Team. 
 
 The IP Team must review a third-party library if:
 
-* the Java/OSGi manifest for one of the project bundles makes a 
-direct reference to a third-party library (either the library bundle 
-or a package from the library);
-* project code includes an import statement for a package from a 
-third-party library;
-* project code uses reflection or other means to reference a 
-library's APIs and implementation;
-* project code uses OSGi Services to make a reference to a 
-specific implementation of a service; or
+* the Java/OSGi manifest for one of the project bundles makes a direct reference to a third-party library (either the library bundle or a package from the library);
+* project code includes an import statement for a package from a third-party library;
+* project code uses reflection or other means to reference a library's APIs and implementation;
+* project code uses OSGi Services to make a reference to a specific implementation of a service; or
 * project code invokes a "command line" tool.
 
 This list is not intended to be exhaustive. 
 
-The {ipThirdParty}[Guidelines for the Review of Third Party Dependencies] can help
-you determine how to classify your third-party libraries.
+The {ipThirdParty}[Guidelines for the Review of Third Party Dependencies] can help you determine how to classify your third-party libraries.
 
-NOTE: A project cannot make a <<release, release>> until the due diligence on 
-the IP contained in that release--including project code contributions and 
-third-party libraries--is complete. 
+[NOTE]
+====
+A project cannot make a <<release, release>> until the due diligence on the IP contained in that release--including project code contributions and third-party libraries--is complete. 
+====
 
-Create a <<ip-cq,contribution questionnaire>> to submit a third-party
-library for review by the IP Team.
+Create a <<ip-cq,contribution questionnaire>> to submit a third-party library for review by the IP Team.
 
 [[ip-ownership]]
 === Ownership
 
-The author of a contribution (or their employer) retains ownership of the
-intellectual property contained in the contribution. As part of the contribution
-process, the contributor licenses their contribution under the project license.
+The author of a contribution (or their employer) retains ownership of the intellectual property contained in the contribution. As part of the contribution process, the contributor licenses their contribution under the project license.
 
 [[ip-copyright-headers]]
 === Copyright and License Headers
 
-All source files must include a file header that describes the copyright and
-license terms of the software.
+All source files must include a file header that describes the copyright and license terms of the software.
 
 .Example Copyright and License Header
 -----------------------------------------------------------------
@@ -116,148 +81,88 @@ If other organizations have contributed, include "and others".
 <2> List project licenses.
 <3> Optionally list the names of the contributors and the nature of their contribution.
 
-Your project is not a legal entity and so it is inappropriate to list it as
-the copyright owner.
+Your project is not a legal entity and so it is inappropriate to list it as the copyright owner.
 
-WARNING: The copyright owner is either an individual or their employer. Most
-employment contracts stipulate that the intellectual property creations of an
-employee are the property of the employer and so the employer should generally
-be listed as the copyright owner.
+[WARNING]
+====
+The copyright owner is either an individual or their employer. Most employment contracts stipulate that the intellectual property creations of an employee are the property of the employer and so the employer should generally be listed as the copyright owner.
+====
 
 For more information please see the {copyrightUrl}[Default Eclipse Foundation Copyright and License Notice].
 
 [[ip-licensing]] 
 === Licensing
 
-{forgeName} top level projects define the standard licensing for their
-projectsd. If your project has non standard licensing requirements,
-you may need to make a presentation to the Eclipse board of directors 
-to request their approval. The presentation need only briefly describe 
-the project and why special licensing considerations are necessary.
+{forgeName} top level projects define the standard licensing for their projects. If your project has non standard licensing requirements, you may need to make a presentation to the Eclipse board of directors to request their approval. The presentation need only briefly describe the project and why special licensing considerations are necessary.
 
 [[ip-ipzilla]]
 === IPZilla
 
-{ipzillaUrl}[IPZilla] is a modified instance of Bugzilla that tracks the progress 
-of the intellectual property due diligence review and approval process. 
-It is the main interaction point between committers and the
-Eclipse Foundation's Intellectual Property (IP) Team. You can review 
-both completed and ongoing reviews via IPZilla. 
+{ipzillaUrl}[IPZilla] is a modified instance of Bugzilla that tracks the progress of the intellectual property due diligence review and approval process. It is the main interaction point between committers and the Eclipse Foundation's Intellectual Property (IP) Team. You can review both completed and ongoing reviews via IPZilla. 
 
-NOTE: IPZilla is accessible only by committers, Eclipse Foundation 
-member company representatives, and other specifically-designated individuals.
+[NOTE]
+====
+IPZilla is accessible only by committers, Eclipse Foundation member company representatives, and other specifically-designated individuals.
+====
 
 [[ip-cq]]
 ==== Contribution Questionnaires
 
-A Contribution Questionnaires (CQ) is the main interface 
-between {forgeName} committers and the IP Team.
+A Contribution Questionnaires (CQ) is the main interface between {forgeName} committers and the IP Team.
 
-A CQ is started when a committer completes a 'questionnaire' regarding
-a contribution or third-party library. In literal terms, a CQ is a 
-record in 'IPZilla', that tracks the progress of the approval process. 
-The CQ record is the primary communication channel between the submitting 
-committer and the IP Team. CQ records persist indefinitely.
+A CQ is started when a committer completes a _questionnaire_ regarding a contribution or third-party library. In literal terms, a CQ is a  record in _IPZilla+, that tracks the progress of the approval process. The CQ record is the primary communication channel between the submitting committer and the IP Team. CQ records persist indefinitely.
 
-All significant contributions of code to be maintained by {aForgeName} project, as 
-defined by the Eclipse IP Due Diligence Process require a CQ.
+All significant contributions of code to be maintained by {aForgeName} project, as defined by the Eclipse IP Due Diligence Process require a CQ.
 
-Projects require a CQ for every third-party library that project 
-code makes direct use of (regardless of whether or not the library 
-is directly distributed by the project. If your code makes indirect 
-use of a third party library through another {forgeName}
-project's code, you do not require a CQ for that library.
+Projects require a CQ for every third-party library that project code makes direct use of (regardless of whether or not the library is directly distributed by the project. If your code makes indirect use of a third party library through another {forgeName} project's code, you do not require a CQ for that library.
 
-NOTE: CQs for third-party libraries are 'version-specific'. That is, 
-a separate CQ is required for different versions of the same library.
+[NOTE]
+====
+CQs for third-party libraries are _version-specific_. That is, a separate CQ is required for different versions of the same library.
+====
 
-CQs are not generally required for ongoing work done by project
-committers. Consult the IP Due Diligence Process document for 
-more information.
+CQs are not generally required for ongoing work done by project committers. Consult the IP Due Diligence Process document for more information.
 
 [[ip-parallel-ip]]
 ==== Parallel IP
 
-The 'Parallel IP Process' allows {forgeName} projects to make use of
-project code contributions and third-party libraries before they
-are fully approved by the IP Team. In practical terms, the Parallel
-IP Process permits--with preliminary approval from the IP Team--a 
-project to check-in code contributions into their source code
-repository and run builds against third-party libraries 
-without having to wait for the full IP Due Diligence Process to
-compete.
+The _Parallel IP Process_ allows {forgeName} projects to make use of project code contributions and third-party libraries before they are fully approved by the IP Team. In practical terms, the Parallel IP Process permits--with preliminary approval from the IP Team--a project to check-in code contributions into their source code repository and run builds against third-party libraries without having to wait for the full IP Due Diligence Process to compete.
 
-NOTE: There is some risk associated with the Parallel IP Process.
-The IP Team will grant preliminary approval based on a cursory
-review of the contribution; but during their full review, they may
-uncover issues that require mitigation. This may require, for
-example, that some parts of a contribution be removed completely
-(history and all) from a source code repository.
+[NOTE]
+====
+There is some risk associated with the Parallel IP Process. The IP Team will grant preliminary approval based on a cursory review of the contribution; but during their full review, they may uncover issues that require mitigation. This may require, for example, that some parts of a contribution be removed completely (history and all) from a source code repository.
+====
 
-Parallel IP manifests in two different ways: projects in the 
-'incubation phase' may leverage the Parallel IP process for 
-project code and third-party libraries. 'Mature phase' projects 
-may leverage parallel IP for new versions of third-party libraries 
-for which previous versions have already been approved.
+Parallel IP manifests in two different ways: projects in the _incubation phase_ may leverage the Parallel IP process for project code and third-party libraries. _Mature phase_ projects may leverage parallel IP for new versions of third-party libraries for which previous versions have already been approved.
 
-To leverage the Parallel IP Process, projects still submit CQ. 
-The difference is that once a CQ has been reviewed for 
-license compatibility, the project will be authorized via IPzilla 
-to check-in the code start working on it.
+To leverage the Parallel IP Process, projects still submit CQ. The difference is that once a CQ has been reviewed for license compatibility, the project will be authorized via IPzilla to check-in the code start working on it.
 
 All IP must be fully approved before it is included in a release.
 
 [[ip-piggyback]]
 ==== Piggyback CQs
 
-Many third party libraries have already been approved for use in {forgeName} projects. 
-Many of those are immediately available via the http://www.eclipse.org/orbit[Orbit Project]. 
-While these libraries have already been cleared for use by all projects, 
-their use must be tracked. Usage is tracked so that--in the event that a issue is uncovered 
-following the due diligence process--we can mitigate the impact of that issue.
+Many third party libraries have already been approved for use in {forgeName} projects. Many of those are immediately available via the http://www.eclipse.org/orbit[Orbit Project]. While these libraries have already been cleared for use by all projects, their use must be tracked. Usage is tracked so that--in the event that a issue is uncovered following the due diligence process--we can mitigate the impact of that issue.
 
-In this case, a 'piggyback CQ' can be created on top of an existing CQ. Piggyback CQs 
-are generally approved very quickly as the due diligence work has already been completed.
+In this case, a _piggyback CQ_ can be created on top of an existing CQ. Piggyback CQs are generally approved very quickly as the due diligence work has already been completed.
 
 [[ip-cq-workflow]]
 ==== CQ Workflow
 
-The workflow for creating a CQ for a third-party library starts with a search of existing 
-CQs. If an existing CQ can be found that is concerned with the same library and version, 
-then a piggyback CQ is created. Piggyback CQs must be approved by the project's Project 
-Management Committee (PMC) before they are processed by the EMO IP Team.
+The workflow for creating a CQ for a third-party library starts with a search of existing CQs. If an existing CQ can be found that is concerned with the same library and version, then a piggyback CQ is created. Piggyback CQs must be approved by the project's Project Management Committee (PMC) before they are processed by the EMO IP Team.
 
-If an existing CQ cannot be found, a new one must be created. Once created, the source 
-code for the third-party library must be attached to the record. The PMC must then approve 
-the record. If the project is eligible to leverage the Parallel IP Process, the IP 
-Team performs a cursory review of the record and--if the CQ meets with the 
-requirements--tentatively approves the use of the library while the full review is 
-undertaken in parallel.
+If an existing CQ cannot be found, a new one must be created. Once created, the source code for the third-party library must be attached to the record. The PMC must then approve the record. If the project is eligible to leverage the Parallel IP Process, the IP Team performs a cursory review of the record and--if the CQ meets with the requirements--tentatively approves the use of the library while the full review is undertaken in parallel.
 
-The IP team may require your assistance as it performs a deep analysis of the library. 
-Once that analysis is complete and the IP team has made a decision, they will outline 
-the next steps. These next steps may--in the event that the library is rejected--that 
-the library be removed from the project VCS, or that some part be removed. Most often, 
-the library is approved and the CQ is marked as such.
+The IP team may require your assistance as it performs a deep analysis of the library. Once that analysis is complete and the IP team has made a decision, they will outline the next steps. These next steps may--in the event that the library is rejected--that the library be removed from the project VCS, or that some part be removed. Most often, the library is approved and the CQ is marked as such.
 
-Be advised that this process may take a while. The actual amount of time that it takes 
-to process a CQ depends on numerous factors including the size of the queue, and the 
-nature and size of the contribution.
+Be advised that this process may take a while. The actual amount of time that it takes to process a CQ depends on numerous factors including the size of the queue, and the nature and size of the contribution.
 
 [[ip-iplog]]
 === IP Logs
 
-An IP Log is a record of the intellectual property contributions to a project. 
-This includes such as a list of all committers, past and present, that have 
-worked on the code and (especially) those who have made contributions to 
-the current code base.
+An IP Log is a record of the intellectual property contributions to a project. This includes such as a list of all committers, past and present, that have worked on the code and (especially) those who have made contributions to the current code base.
 
-The IP Log is a big part of the official <<release, release cycle>>. You are required to 
-submit your project's IP Log prior to scheduling a release, or restructuring 
-review. We encourage you to keep your IP log current rather than rushing at the 
-end. The IP Log includes important information about your project that lets 
-adopters know where all the code comes from, who owns the copyrights, and so 
-forth. 
+The IP Log is a big part of the official <<release, release cycle>>. You are required to submit your project's IP Log prior to scheduling a release, or restructuring review. We encourage you to keep your IP log current rather than rushing at the end. The IP Log includes important information about your project that lets adopters know where all the code comes from, who owns the copyrights, and so forth. 
 
 Specifically, the log tracks:
 
@@ -269,10 +174,7 @@ Specifically, the log tracks:
 [[ip-iplog-generator]]
 ==== IP Log Generator
 
-The Automated IP Log Tool automatically generates an IP Log using information 
-that is available to the Eclipse Foundation. The list of committers, for 
-example is generated using information provided by the Dash project which itself 
-pulls information out of source code repositories.
+The Automated IP Log Tool automatically generates an IP Log using information that is available to the Eclipse Foundation. The list of committers, for example is generated using information provided by the Dash project which itself pulls information out of source code repositories.
 
 The IP Log generator pulls information from multiple location to assemble the log:
 
@@ -312,10 +214,8 @@ digraph {
 * Third-party libraries used by the project come from _IPZilla_;
 * The _Dash_ process scans the project source code repositories to assess committer activity;
 * _Dash_ also scans Git repositories for contributions;
-** If you follow the guidelines for handling Git contributions, contributions received via 
-Git in any branch will automatically appear in the log
-* Contributions received as patches in _Bugzilla_ that are marked +pass:[iplog+]+ 
-will automatically appear in the log; and
+** If you follow the guidelines for handling Git contributions, contributions received via Git in any branch will automatically appear in the log
+* Contributions received as patches in _Bugzilla_ that are marked +pass:[iplog+]+ will automatically appear in the log; and
 * License information is obtained from the _Foundation_ database
 
 To fully leverage the value of the Automated IP Log Tool, you need to:
@@ -325,79 +225,43 @@ To fully leverage the value of the Automated IP Log Tool, you need to:
 * Mark IP Contributions in Bugzilla; and
 * Create <<ip-cq,contribution questionnaires>> (CQs) where appropriate
 
-WARNING: Contributions should be recorded in _one of_ Git or Bugzilla, not both.
-Setting the _Author_ credentials on Git commits is the preferred mechanism. 
-The IP Log generator is not smart enough to detect duplicate entries.
+[WARNING]
+====
+Contributions should be recorded in _one of_ Git or Bugzilla, not both. Setting the _Author_ credentials on Git commits is the preferred mechanism. The IP Log generator is not smart enough to detect duplicate entries.
+====
 
-Your project's metadata is used to determine the identities of the source code 
-repositories that Dash needs to scan to find out committer information. Specifically, 
-you need to specify, in the _Source Repositories_ section, a list of paths to source code 
-repository locations. 
+Your project's metadata is used to determine the identities of the source code repositories that Dash needs to scan to find out committer information. Specifically, you need to specify, in the _Source Repositories_ section, a list of paths to source code repository locations. 
 
-The Automated IP Log tool populates the _Contributors_ section with information gathered 
-from Git and Bugzilla. This section lists contributions from non-committers (this is 
-time-sensitive, so contributions made by current committers before they became 
-committers will also be included). Only non-committer contributions are recorded in 
-the generated log. 
+The Automated IP Log tool populates the _Contributors_ section with information gathered from Git and Bugzilla. This section lists contributions from non-committers (this is time-sensitive, so contributions made by current committers before they became committers will also be included). Only non-committer contributions are recorded in the generated log. 
 
-<<resources-commit,Git commits>> contributed by non-committers are identified by
-the author credentials on the commit record; the _Author_ field must be set to the identity 
-of the actual author of the commit.
+<<resources-commit,Git commits>> contributed by non-committers are identified by the author credentials on the commit record; the _Author_ field must be set to the identity of the actual author of the commit.
 
-Alternatively, Bugzilla attachments can be marked with the +pass:[iplog+]+ flag. 
-This flag setting indicates that the person who attached  the bug is the contributor. 
-To comply with the website terms of use, the person who attaches 
-the contribution *must* be the person who has permission to make it available. 
-You should ensure that this is the case before including the code in your project's 
-repository and flagging the entry.
+Alternatively, Bugzilla attachments can be marked with the +pass:[iplog+]+ flag. This flag setting indicates that the person who attached  the bug is the contributor. To comply with the website terms of use, the person who attaches the contribution *must* be the person who has permission to make it available. You should ensure that this is the case before including the code in your project's repository and flagging the entry.
 
-You can also flag an entire Bugzilla entry with +pass:[iplog+]+. Doing so, 
-however, indicates to the Automated IP Log tool that every single comment made by a non-committer 
-in the bug report represents a potential contribution. For your own sanity, it's a good practice 
-to ask contributors to provide and attach patches that can be individually marked. Marking an 
-entire bug represents an ongoing maintenance issue as new comments added to the bug from 
-non-committers will show up in the generated log.
+You can also flag an entire Bugzilla entry with +pass:[iplog+]+. Doing so, however, indicates to the Automated IP Log tool that every single comment made by a non-committer in the bug report represents a potential contribution. For your own sanity, it's a good practice to ask contributors to provide and attach patches that can be individually marked. Marking an entire bug represents an ongoing maintenance issue as new comments added to the bug from non-committers will show up in the generated log.
 
-That contributions flagged in Bugzilla will only appear in the IP Log if the bug is marked 
-+FIXED+ or +CLOSED+.
+That contributions flagged in Bugzilla will only appear in the IP Log if the bug is marked +FIXED+ or +CLOSED+.
 
-The Third-Party Software section of the log is populated from IPZilla. The IP Team 
-will mark your contributions in such a way that they will appear in 
-the log. If third party software is not appearing properly, contact the 
-mailto:{ipTeamEmail}[EMO IP Team] to make corrections.
+The Third-Party Software section of the log is populated from IPZilla. The IP Team will mark your contributions in such a way that they will appear in the log. If third party software is not appearing properly, contact the mailto:{ipTeamEmail}[EMO IP Team] to make corrections.
 
 [[ip-faq]]
 === Frequently Asked Questions
 
 [qanda]
 Do we really need to do this? ::
-	Yes.
+Yes.
 	
 What do you do with the IP Log? ::
-	IP Log reviews occur in two stages. In the first stage, the EMO performs
-	a technical assessment to make sure that the artifacts produced by the
-	project are properly accounted for in the IP log. You may be asked to
-	assist with the resolution of any discrepancies found during this assessment.
-	In the second stage, the IP Team reviews the log to ensure that 
-	it matches their records. The IP log review concludes with approval by the IP Team.
+IP Log reviews occur in two stages. In the first stage, the EMO performs a technical assessment to make sure that the artifacts produced by the project are properly accounted for in the IP log. You may be asked to assist with the resolution of any discrepancies found during this assessment. In the second stage, the IP Team reviews the log to ensure that it matches their records. The IP log review concludes with approval by the IP Team.
 
 When should I submit the IP Log for review? ::
-	The IP Log should be submitted for review by the IP Team two weeks before the planned
-	end date for a release review or (if code moves are involved) a restructuring review. 
-	Note that the date of your review may be different from the date of the actual release.
+The IP Log should be submitted for review by the IP Team two weeks before the planned end date for a release review or (if code moves are involved) a restructuring review. Note that the date of your review may be different from the date of the actual release.
 	
 We submitted an IP Log for our release, but we've made some changes since then that will end up in the release, should we resubmit the IP Log? ::
-
 The purpose of the IP Log review is to checkpoint the IP Due Diligence Process and ensure that nothing is slipping through the cracks; an IP Log is not intended to be an accurate reflection of exactly what is in any particular release.
 
 Are there other reasons to submit the IP Log for review? ::
-	Generally no. If the IP Team requires an IP Log review outside of the context of
-	a release or restructuring review, they'll ask for it. It is not generally necessary
-	to submit an IP Log for review outside of the context of a review. 
-	It is, however, good practice to do your own review of the generated 
-	IP Log periodically to make	sure that it accurately reflects the state of the project.
+Generally no. If the IP Team requires an IP Log review outside of the context of a release or restructuring review, they'll ask for it. It is not generally necessary to submit an IP Log for review outside of the context of a review. It is, however, good practice to do your own review of the generated IP Log periodically to make	sure that it accurately reflects the state of the project.
 	
 How do I fix problems with the generated IP Log? ::
-	The IP Log is generated based on data from Eclipse Foundation servers. If the log
-	is being generated incorrectly, then the underlying data needs to be fixed. If
-	you spot a problem, send a note to {emoEmail}.
+The IP Log is generated based on data from Eclipse Foundation servers. If the log is being generated incorrectly, then the underlying data needs to be fixed. If you spot a problem, send a note to {emoEmail}.
