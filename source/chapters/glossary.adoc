@@ -128,8 +128,8 @@ Member Company ::
 	
 Parallel IP ::
 	The <<ip-parallel-ip,Parallel IP Process>> allows {aForgeName} projects to make use of
-	project code contributions and third-party libraries before they
-	are fully approved by the IP Team.
+	project code contributions and third party content before they
+	are fully approved by the Eclipse IP Team.
 
 Planning Council ::
 	The Planning Council is responsible for cross-project planning, architectural issues, 

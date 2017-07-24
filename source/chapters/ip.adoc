@@ -13,7 +13,7 @@ The IP Team will review your initial contribution to ensure that the code can di
 
 [NOTE]
 ====
-A project cannot make a <<release, release>> until the due diligence on the IP contained in that release--including project code contributions and third-party libraries--is complete. 
+A project cannot make a <<release, release>> until the due diligence on the IP contained in that release--including project code contributions and third party content--is complete. 
 ====
 
 Create a <<ip-cq,contribution questionnaire>> to submit the initial contribution for review by the IP Team.
@@ -30,28 +30,28 @@ All contributions of project code must be tracked in the project's <<ip-iplog,IP
 Create a <<ip-cq,contribution questionnaire>> to submit a project code contribution for review by the IP Team.
 
 [[ip-third-party]]
-=== Third-Party Libraries
+=== Third Party Content
 
-All third-party libraries required by project code will have to be checked and approved by the IP Team. 
+All third party content required by project code must be checked and approved by the IP Team. 
 
-The IP Team must review a third-party library if:
+The IP Team must review third party content if:
 
-* the Java/OSGi manifest for one of the project bundles makes a direct reference to a third-party library (either the library bundle or a package from the library);
-* project code includes an import statement for a package from a third-party library;
-* project code uses reflection or other means to reference a library's APIs and implementation;
+* the Java/OSGi manifest for one of the project bundles makes a direct reference to third party content (either a bundle or package);
+* project code includes an import statement for a package from third party content;
+* project code uses reflection or other means to reference APIs and implementation;
 * project code uses OSGi Services to make a reference to a specific implementation of a service; or
 * project code invokes a "command line" tool.
 
 This list is not intended to be exhaustive. 
 
-The {ipThirdParty}[Guidelines for the Review of Third Party Dependencies] can help you determine how to classify your third-party libraries.
+The {ipThirdParty}[Guidelines for the Review of Third Party Dependencies] can help you determine how to classify your third party content.
 
 [NOTE]
 ====
-A project cannot make a <<release, release>> until the due diligence on the IP contained in that release--including project code contributions and third-party libraries--is complete. 
+A project cannot make a <<release, release>> until the due diligence on the IP contained in that release--including project code contributions and third party content--is complete. 
 ====
 
-Create a <<ip-cq,contribution questionnaire>> to submit a third-party library for review by the IP Team.
+Create a <<ip-cq,contribution questionnaire>> to submit third party content for review by the IP Team.
 
 [[ip-ownership]]
 === Ownership
@@ -110,15 +110,15 @@ IPZilla is accessible only by committers, Eclipse Foundation member company repr
 
 A Contribution Questionnaires (CQ) is the main interface between {forgeName} committers and the IP Team.
 
-A CQ is started when a committer completes a _questionnaire_ regarding a contribution or third-party library. In literal terms, a CQ is a  record in _IPZilla+, that tracks the progress of the approval process. The CQ record is the primary communication channel between the submitting committer and the IP Team. CQ records persist indefinitely.
+A CQ is started when a committer completes a _questionnaire_ regarding a contribution or third party content. In literal terms, a CQ is a  record in _IPZilla+, that tracks the progress of the approval process. The CQ record is the primary communication channel between the submitting committer and the IP Team. CQ records persist indefinitely.
 
 All significant contributions of code to be maintained by {aForgeName} project, as defined by the Eclipse IP Due Diligence Process require a CQ.
 
-Projects require a CQ for every third-party library that project code makes direct use of (regardless of whether or not the library is directly distributed by the project. If your code makes indirect use of a third party library through another {forgeName} project's code, you do not require a CQ for that library.
+Projects require a CQ for every piece of third party content that project code makes direct use of (regardless of whether or not the content is directly distributed by the project. If project code makes _indirect_ use of third party content through another {forgeName} project's code, a CQ is not required.
 
 [NOTE]
 ====
-CQs for third-party libraries are _version-specific_. That is, a separate CQ is required for different versions of the same library.
+CQs for third party content are _version-specific_. That is, a separate CQ is required for different versions of the same content.
 ====
 
 CQs are not generally required for ongoing work done by project committers. Consult the IP Due Diligence Process document for more information.
@@ -126,14 +126,14 @@ CQs are not generally required for ongoing work done by project committers. Cons
 [[ip-parallel-ip]]
 ==== Parallel IP
 
-The _Parallel IP Process_ allows {forgeName} projects to make use of project code contributions and third-party libraries before they are fully approved by the IP Team. In practical terms, the Parallel IP Process permits--with preliminary approval from the IP Team--a project to check-in code contributions into their source code repository and run builds against third-party libraries without having to wait for the full IP Due Diligence Process to compete.
+The _Parallel IP Process_ allows {forgeName} projects to make use of project code contributions and third party content before they are fully approved by the IP Team. In practical terms, the Parallel IP Process permits--with preliminary approval from the IP Team--a project to check-in code contributions into their source code repository and run builds against third party content without having to wait for the full IP Due Diligence Process to compete.
 
 [NOTE]
 ====
 There is some risk associated with the Parallel IP Process. The IP Team will grant preliminary approval based on a cursory review of the contribution; but during their full review, they may uncover issues that require mitigation. This may require, for example, that some parts of a contribution be removed completely (history and all) from a source code repository.
 ====
 
-Parallel IP manifests in two different ways: projects in the _incubation phase_ may leverage the Parallel IP process for project code and third-party libraries. _Mature phase_ projects may leverage parallel IP for new versions of third-party libraries for which previous versions have already been approved.
+Parallel IP manifests in two different ways: projects in the _incubation phase_ may leverage the Parallel IP process for project code and third party content. _Mature phase_ projects may leverage parallel IP for new versions of third party content for which previous versions have already been approved.
 
 To leverage the Parallel IP Process, projects still submit CQ. The difference is that once a CQ has been reviewed for license compatibility, the project will be authorized via IPzilla to check-in the code start working on it.
 
@@ -149,11 +149,11 @@ In this case, a _piggyback CQ_ can be created on top of an existing CQ. Piggybac
 [[ip-cq-workflow]]
 ==== CQ Workflow
 
-The workflow for creating a CQ for a third-party library starts with a search of existing CQs. If an existing CQ can be found that is concerned with the same library and version, then a piggyback CQ is created. Piggyback CQs must be approved by the project's Project Management Committee (PMC) before they are processed by the EMO IP Team.
+The workflow for creating a CQ for third party content starts with a search of existing CQs. If an existing CQ can be found that is concerned with the same content and version, then a piggyback CQ is created. Piggyback CQs must be approved by the project's Project Management Committee (PMC) before they are processed by the EMO IP Team.
 
-If an existing CQ cannot be found, a new one must be created. Once created, the source code for the third-party library must be attached to the record. The PMC must then approve the record. If the project is eligible to leverage the Parallel IP Process, the IP Team performs a cursory review of the record and--if the CQ meets with the requirements--tentatively approves the use of the library while the full review is undertaken in parallel.
+If an existing CQ cannot be found, a new one must be created. Once created, the source code for the third party content must be attached to the record. The PMC must then approve the record. If the project is eligible to leverage the Parallel IP Process, the IP Team performs a cursory review of the record and--if the CQ meets with the requirements--tentatively approves the use of the content while the full review is undertaken in parallel.
 
-The IP team may require your assistance as it performs a deep analysis of the library. Once that analysis is complete and the IP team has made a decision, they will outline the next steps. These next steps may--in the event that the library is rejected--that the library be removed from the project VCS, or that some part be removed. Most often, the library is approved and the CQ is marked as such.
+The Eclipse IP team may require assistance as from the project team it performs a deep analysis of the content. Once that analysis is complete and the Eclipse IP team has made a decision, they will outline the next steps. These next steps may--in the event that the content is rejected--that the content be removed from the project VCS, or that some part be removed. Most often, the content is approved and the CQ is marked as such.
 
 Be advised that this process may take a while. The actual amount of time that it takes to process a CQ depends on numerous factors including the size of the queue, and the nature and size of the contribution.
 
@@ -168,7 +168,7 @@ Specifically, the log tracks:
 
 * Licenses;
 * Past and present committers;
-* Third-party libraries; and
+* Third party content; and
 * Contributions from outside the project (i.e. non-committers)
 
 [[ip-iplog-generator]]
@@ -211,7 +211,7 @@ digraph {
 }
 ----
 
-* Third-party libraries used by the project come from _IPZilla_;
+* The list of third party content used by the project comes from _IPZilla_;
 * The _Dash_ process scans the project source code repositories to assess committer activity;
 * _Dash_ also scans Git repositories for contributions;
 ** If you follow the guidelines for handling Git contributions, contributions received via Git in any branch will automatically appear in the log
@@ -242,7 +242,7 @@ You can also flag an entire Bugzilla entry with +pass:[iplog+]+. Doing so, howev
 
 That contributions flagged in Bugzilla will only appear in the IP Log if the bug is marked +FIXED+ or +CLOSED+.
 
-The Third-Party Software section of the log is populated from IPZilla. The IP Team will mark your contributions in such a way that they will appear in the log. If third party software is not appearing properly, contact the mailto:{ipTeamEmail}[EMO IP Team] to make corrections.
+The Third Party Software section of the log is populated from IPZilla. The IP Team will mark your contributions in such a way that they will appear in the log. If third party software is not appearing properly, contact the mailto:{ipTeamEmail}[EMO IP Team] to make corrections.
 
 [[ip-faq]]
 === Frequently Asked Questions

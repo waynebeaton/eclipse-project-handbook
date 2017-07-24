@@ -78,7 +78,7 @@ community to obtain your builds.
 
 All of your project's <<ip,intellectual property>> contributions
 must be approved by the IP Team before you can release
-(this includes third-party libraries and contributions of code to be
+(this includes third party content and contributions of code to be
 maintained by the project).
 
 [[release-review]]

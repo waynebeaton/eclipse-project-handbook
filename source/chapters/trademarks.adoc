@@ -204,9 +204,9 @@ In Java, for example, package names must start with `{namespace}` and use their 
 The project team must petition the Planning Council via their PMC to request exceptions.
 
 [[trademarks-external]]
-=== Third-Party Use of Trademarks
+=== Third Party Use of Trademarks
 
-The use of Eclipse Foundation trademarks outside of the immediate scope of the open source project, including the use of project names, is subject to the terms of the {trademarkGuidelinesUrl}[Guidelines for Eclipse Logos & Trademarks]. This includes third-party websites, books, publications, conferences, events, and more.
+The use of Eclipse Foundation trademarks outside of the immediate scope of the open source project, including the use of project names, is subject to the terms of the {trademarkGuidelinesUrl}[Guidelines for Eclipse Logos & Trademarks]. This includes third party websites, books, publications, conferences, events, and more.
 
 [[trademarks-external-events]]
 ==== Conferences and Events
