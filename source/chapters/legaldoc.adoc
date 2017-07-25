@@ -1,0 +1,206 @@
+[[legaldoc]]
+= Legal Documentation Requirements
+
+The content that is developed and maintained by Eclipse Foundation open source projects is distributed via multiple channels, including distributed source code management systems, download servers, and software repositories. Further, open source project content is‒by design‒integrated into and distributed as part of the products of adopters. The legal obligations of the content must be observed in all forms of which the content is available.
+
+As much as is possible, we adopt standards and conventions in order to be good open source citizens.
+
+We use the Software Package Data Exchange® (https://spdx.org[SPDX]®) specification for communicating the components, licenses, and copyrights associated with software packages. SPDX is machine readable which makes it relatively easy for adopters and other consumers of {forgeName} software to understand the legal nature of the content. In specific terms, this takes the form of using SPDX codes to express licenses, and SPDX file formats to express notices.
+
+[[legaldoc-repo]]
+== Source Code Repositories
+
+{forgeName} projects may have one or more source code repositories. Since it is possible for source code repositories to be cloned and rehosted, it is important that legal information is captured directly in the root of every repository.
+
+A `LICENSE` and `NOTICE` file, as described below, must be included in the root of every source code repository.
+
+[source,subs="verbatim,attributes"]
+----
+git.{forgeMachineName}.org/project.git
+ ├── LICENSE
+ ├── NOTICE
+ └── ...
+----
+
+[[legaldoc-distribution]]
+== Distribution
+
+The distribution form of software artifacts (often in a compiled form) generated from a project’s source code repositories must also include legal information.
+
+A license and notice file, as described below, must be included in the root of every unit-level distribution artifact (e.g. `JAR` file). It is a best practice to name these files `LICENSE` and `NOTICE`, respectively. Variations of these names may be used in cases where technical limitations require that alternatives be used. In the most general case, these files will appear in the root of distribution unit, but the exact location varies by technology type.
+
+For content delivered as Java archive (`JAR`) files, for example, the legal files should be placed in the `META-INF` directory.
+
+[source]
+----
+MyFile.jar
+ ├── META-INF
+ |   ├── NOTICE
+ │   └── LICENSE
+ └── ...
+----
+
+[NOTE]
+====
+This structure need not necessarily be reflected in the source tree. How a project’s build includes this information is determined by the project team.
+====
+
+When the unit level of distribution is an individual file (e.g. JavaScript), the file must contain a header with copyright and license information, and the best effort must be undertaken to associate the file with the notices (e.g. a link to the source repository in the header).
+
+Project teams should consult with their PMCs for input and advice regarding alternate names and locations for legal documentation.
+
+[[legaldoc-end-user]]
+== End User Content
+
+All products delivered by the project—including executables, websites, documentation, and help—must include certain notices. An executable might, for example, provide this information in an _About Dialog_; documentation might include a notice in either the pre- or post-amble, or a website might provide this information in a common footer, or a dedicated page.
+
+The notices must include one or more copyright statement, the assertion of trademarks owned by the Eclipse Foundation on behalf of the project, indication of third party trademarks in use, and a cryptography notice.
+
+.Example website notices
+____
+All material on this website is Copyright © 2002-2017, Contributors to the Eclipse Foundation
+
+{forgeName} Dash and the {forgeName} Dash project logo are trademarks of the Eclipse Foundation. Eclipse and the Eclipse logo are registered trademarks of The Eclipse Foundation.
+
+Java and all Java-based trademarks are trademarks of Oracle Corporation in the United States, other countries, or both.
+
+Content may contain encryption software. The country in which you are currently may have restrictions on the import, possession, and use, and/or re-export to another country, of encryption software. BEFORE using any encryption software, please check the country's laws, regulations and policies concerning the import, possession, or use, and re-export of encryption software, to see if this is permitted.
+____
+
+[[ip-copyright-headers]]
+== Copyright Headers
+
+Where possible, all source code, property files, and metadata files (including application, test, and generated source code as well as other types of files such as `XML`, `HTML`, etc.) should contain appropriate copyright and license notices as well as information on each contribution.
+
+Copyright holders are legal entities: either individuals or companies. Note that employment contracts very often stipulate that the intellectual property developed by an employee is the property of the company (in this case, the company should be listed as the copyright holder, not the individual; the individual should still be listed as an author).
+
+[NOTE]
+====
+An Eclipse Foundation open source project is _not_ a legal entity. Further, the Eclipse Foundation does not assume ownership of contributions (the Eclipse Foundation is only a copyright holder in those cases where an employee of the Eclipse Foundation has authored the contribution).
+====
+
+Copyright headers can take one of two forms. In the traditional form, the identities of the copyright holders must be indicated in the copyright statement on the first line of the header.
+
+.Example Copyright and License Header
+[source]
+----
+/******************************************************************
+ * Copyright (c) 2017 My Company, and others <1>
+ *
+ * This program and the accompanying materials <2>
+ * are made available under the terms of the Eclipse Public License
+ * v1.0 which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * SPDX-License-Identifier: EPL-1.0 <3>
+ *
+ * Contributors: <4>
+ *   Robert Smith - initial API and implementation
+ ******************************************************************/
+----
+<1> Name of the initial copyright owner (this must be a legal entity); other organizations that have contributed are either listed individually or grouped together by appending "and others". The year is expressed as a single year or a range spanning the year of the very initial assertion and that of the most recent change.
+<2> Declared project licenses described in human readable form.
+<3> Declared project licenses indicated using SPDX codes and expressions.
+<4> The names of the contributors and the nature of their contribution (this section may be excluded).
+
+Contributors should be consistent when expressing copyright on a particular file and in the `NOTICE` file. In some legal circles, the exact form of the copyright message must be used in summaries, including punctuation (e.g. the “Copyright (c) 2017 My Company, Inc” and “Copyright (c) 2017 My Company, Inc.” are considered different and distinct because of the period).
+
+[NOTE]
+====
+Older versions of this template included the sentence “All rights reserved.” It is not wrong for this sentence to be included in the header, it is just not necessary as it is meaningless in a legal context. File headers that include this sentence do not need to be changed.
+====
+
+Alternatively, project teams can adopt a more generic copyright header for each file and include the identities of the copyright holders in the `NOTICE` file.
+
+.Alternative Copyright and License Header
+[source]
+----
+/********************************************************************
+ * Copyright (c) 2017 Contributors to the Eclipse Foundation <1>
+ *
+ * See the NOTICE file(s) distributed with this work for additional
+ * information regarding copyright ownership.
+ *
+ * This program and the accompanying materials <2>
+ * are made available under the terms of the EPL-1.0
+ * which accompanies this distribution and is available at
+ * https://www.eclipse.org/org/documents/epl-v10.html.
+ *
+ * SPDX-License-Identifier: EPL-1.0 <3>
+ ********************************************************************/
+----
+<1> The year is expressed as a single year or a range spanning the year of the very initial assertion and that of the most recent change.
+<2> Declared project licenses described in human readable form.
+<3> Declared project licenses indicated using SPDX codes and expressions.
+
+[NOTE]
+====
+The border, line breaks, etc. are not mandated.
+====
+
+Incorporating the `SPDX-License-Identifier` tag in the header makes it easy for automated tools to discover and report the license of the content. More usefully, the SPDX expression syntax can be used to make it very explicit to automated tools how multiple licenses are combined.
+
+In SPDX, disjunction is used to express dual licensing and conjunction is used to express that the content contains content that is distributed simultaneously under multiple licenses. For example, `EPL-1.0 OR MIT` expresses that the consumer may choose to accept the content under one of the licenses listed; and `EPL-1.0 AND MIT` indicates that the consumer must accept the content under both licenses (it may be the case that parts of the content are under one license and other parts are under the other).
+
+[[legaldoc-license]]
+== License File
+
+The license file contains the exact text of the project’s declared licenses in human readable form. The declared licenses are those that the project team’s content is distributed under. This does not, for example, include the licenses of third party content or incidental fragments of code that is incorporated into the project content (the license of any such content should be indicated in the source file itself and the notice file that accompanies it).
+
+If the project is multi-licensed then the text of those licenses must be included. The file should start with a short paragraph that describes how the licenses are combined. E.g. dual licensing permits the consumer to choose which license they use the content under.
+
+Use inclusive disjunction (“or”) when talking about dual licenses (e.g. “choose one or the other (or both)”).
+
+The license file must be expressed in a human readable (`plaintext`) form; human readable markup languages may be used. The file is conventionally named `LICENSE` and may include a suffix (e.g. `LICENSE.md`).
+
+[[legaldoc-notice]]
+== Notice Files
+
+Notice files are expressed in SPDX tag/value format, which is at least nominally human readable. The file must include basic project metadata, an expression of the declared project licenses, the copyright holder's, information regarding the licensing of any third party content, and a statement regarding the use of cryptography in cases where the content employs cryptography.
+
+Project metadata provides the identity of the originating project, along with pointers to the project’s website and canonical source code repository.
+
+The declared licenses (and defined in the <<legaldoc-license,License File>>) are expressed using SPDX https://spdx.org/licenses/[license codes] and expression syntax.
+
+Copyright holders are expressed as multiple complete copyright statements; with one complete entry on each line. Note that copyright holders need only be listed when they are not made explicit in the individual source file headers (though they may be included in both the headers and in the notice file).
+
+If cryptography is included with the content, then the following statement must be included in a comment in the notice file:
+
+____
+Content may contain encryption software. The country in which you are currently may have restrictions on the import, possession, and use, and/or re-export to another country, of encryption software. BEFORE using any encryption software, please check the country's laws, regulations and policies concerning the import, possession, or use, and re-export of encryption software, to see if this is permitted.
+____
+
+Other information, as deemed necessary by the project team may also be included in separate comment fields.
+
+.Example `NOTICE` file
+[source]
+----
+# Document Metadata <1>
+SPDXVersion: SPDX-2.1
+DataLicense: CC0-1.0
+
+# Project <2>
+Name: Eclipse Collections 
+Website: http://www.eclipse.org/collections
+Repo: git://git.eclipse.org/gitroot/collections/collections.git
+
+# Package
+PackageName: eclipse-collections
+PackageDownloadLocation: git://git.eclipse.org/gitroot/collections/collections.git
+PackageLicenseDeclared: EPL-1.0 OR EDL-1.0 <3>
+PackageLicenseConcluded: EPL-1.0 OR EDL-1.0
+PackageLicenseInfoFromFiles: Apache-2.0 <4>
+PackageLicenseInfoFromFiles: BSD-3-Clause
+PackageLicenseInfoFromFiles: EPL-1.0
+PackageCopyrightText: <text>Copyright (c) 2015, 2017 Goldman Sachs. <5>
+Copyright (c) 2016 Bhavana Hindupur.
+Copyright (c) 2016 Shotaro Sano.
+</text>
+----
+<1> Metadata regarding the NOTICE file itself, including the SPDX version used.
+<2> The formal name of the project, link to the project website and canonical repository that contains the file.
+<3> An SPDX code or expression that describes the licenses by which the project code is made available. The _declared_ and _concluded_ values should be the same.
+<4> SPDX codes for licenses found in the project code (may include licenses that are different from the declared licenses).
+<5> A list of copyright statements take the form "Copyright (c) {year} {owner}"
+
+Tools exist to generate most of this information. The Eclipse Foundation uses https://github.com/nexB/scancode-toolkit[ScanCode Toolkit].

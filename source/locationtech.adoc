@@ -2,6 +2,7 @@ include::config.adoc[]
 
 :forgeName: LocationTech
 :aforgeName: a LocationTech
+:forgeMachineName: locationtech
 :namespace: org.locationtech
 :wwwUrl: https://www.locationtech.org
 :forgeUrl: https://www.locationtech.org

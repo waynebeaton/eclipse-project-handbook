@@ -58,38 +58,6 @@ Create a <<ip-cq,contribution questionnaire>> to submit third party content for 
 
 The author of a contribution (or their employer) retains ownership of the intellectual property contained in the contribution. As part of the contribution process, the contributor licenses their contribution under the project license.
 
-[[ip-copyright-headers]]
-=== Copyright and License Headers
-
-All source files must include a file header that describes the copyright and license terms of the software.
-
-.Example Copyright and License Header
------------------------------------------------------------------
-/*******************************************************************************
- * Copyright (c) 2015 Schmedly Inc. and others. <1>
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html <2>
- *
- * Contributors:
- *   Wayne Beaton - initial API and implementation <3>
- *******************************************************************************/
------------------------------------------------------------------
-<1> Name the initial copyright owner; this must be a legal entity (e.g. a company or individual).
-If other organizations have contributed, include "and others".
-<2> List project licenses.
-<3> Optionally list the names of the contributors and the nature of their contribution.
-
-Your project is not a legal entity and so it is inappropriate to list it as the copyright owner.
-
-[WARNING]
-====
-The copyright owner is either an individual or their employer. Most employment contracts stipulate that the intellectual property creations of an employee are the property of the employer and so the employer should generally be listed as the copyright owner.
-====
-
-For more information please see the {copyrightUrl}[Default Eclipse Foundation Copyright and License Notice].
-
 [[ip-licensing]] 
 === Licensing
 

@@ -2,6 +2,7 @@ include::config.adoc[]
 
 :forgeName: PolarSys
 :aforgeName: a PolarSys
+:forgeMachineName: polarsys
 :namespace: org.polarsys
 :wwwUrl: https://www.polarsys.org
 :forgeUrl: https://www.polarsys.org

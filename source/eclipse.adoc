@@ -2,6 +2,7 @@ include::config.adoc[]
 
 :forgeName: Eclipse
 :aforgeName: an Eclipse
+:forgeMachineName: eclipse
 :namespace: org.eclipse
 :wwwUrl: https://www.eclipse.org
 :forgeUrl: https://projects.eclipse.org
@@ -31,6 +32,8 @@ include::chapters/elections.adoc[]
 include::chapters/paperwork.adoc[]
 
 include::chapters/ip.adoc[]
+
+include::chapters/legaldoc.adoc[leveloffset=+1]
 
 include::chapters/release.adoc[]
 
