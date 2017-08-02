@@ -1,0 +1,31 @@
+= Eclipse Project Handbook README
+
+== General Formatting Rules
+
+* All content is written using Asciidoc; rendered using Asciidoctor (which has some functionality enhancements.
+* Don't wrap lines; use a single line for each paragraph.
+* Each chapter has a machine name (e.g. legaldoc); that machine name should be used as a prefix in heading anchors separated with a dash (e.g. legaldoc-license).
+* Preserve the machine names for headers, even when subsections move from one chapter to another.
+* Main text should be written in the third person. Notes and other callouts may be written in the second person.
+
+Use monospace backticks for file/repo paths, e.g. `stuff/junk/thing.java`, technical terms (e.g. class names), and for `pass:[+1]`, `pass:[-1]`. 
+
+Use italics to highlight _key terms_ or _phrases_. Use quotes judiciously.
+
+Use http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#ui-macros[UI Macros] to describe menus, key bindings, etc. e.g. kbd:[Ctrl+Shift+N] and menu:View[Zoom > Reset]. Use menus to capture click paths, paths through a preferences dialog, etc.
+
+image::images/myimage.png[]
+
+[NOTE]
+====
+Use blocks to render NOTE/WARNING callouts.
+====
+
+== Converting Existing Content
+
+We've used Pandoc to conver existing content into asciidoc for inclusion in the handbook.
+
+e.g. 
+
+ pandoc --atx-headers --wrap=none -f html -t asciidoc input.html > output.adoc
+
