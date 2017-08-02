@@ -35,7 +35,7 @@ For content delivered as Java archive (`JAR`) files, for example, the legal file
 ----
 MyFile.jar
  ├── META-INF
- |   ├── NOTICE
+ │   ├── NOTICE
  │   └── LICENSE
  └── ...
 ----
@@ -204,3 +204,6 @@ Copyright (c) 2016 Shotaro Sano.
 <5> A list of copyright statements take the form "Copyright (c) {year} {owner}"
 
 Tools exist to generate most of this information. The Eclipse Foundation uses https://github.com/nexB/scancode-toolkit[ScanCode Toolkit].
+
+If you have any questions or concerns, please mailto:license@eclipse.org[contact] the staff of the Eclipse Foundation.
+
