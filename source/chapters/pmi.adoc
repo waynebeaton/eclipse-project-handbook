@@ -146,83 +146,46 @@ is extracted from the last segment of the URL.
 If a description file exists in the Git repository, the contents are
 automatically displayed under the repository name.
 
-NOTE: The script that we us to identify repositories attempts to identify a
-corresponding Gerrit interface for the repository. If it exists, the
-Gerrit URL is used in place of the Git one. If the repository uses
-Gerrit, then only the Gerrit URL is displayed. Otherwise, the "git://"
-and "ssh://" URLs are displayed.
+[NOTE]
+====
+The script that we us to identify repositories attempts to identify a corresponding Gerrit interface for the repository. If it exists, the Gerrit URL is used in place of the Git one. If the repository uses Gerrit, then only the Gerrit URL is displayed. Otherwise, the `git://` and `ssh://` URLs are displayed.
+====
 
-You can use wildcards to match multiple repositories, e.g.
-'/gitroot/virgo/*'. Note that wildcards only work for repositories that
-exist on {forgeName} infrastructure (they do not work for GitHub-based
-repositories, for example). 
+You can use wildcards to match multiple repositories, e.g. `/gitroot/virgo/*`. Note that wildcards only work for repositories that exist on {forgeName} infrastructure (they do not work for GitHub-based repositories, for example). 
 
-Repositories are displayed in the order they are specified. The order
-can be changed in the edit screen by dragging entries into the desired
-order. All wildcard matches are sorted alphabetically by name at the end
-of the list.
+Repositories are displayed in the order they are specified. The order can be changed in the edit screen by dragging entries into the desired order. All wildcard matches are sorted alphabetically by name at the end of the list.
 
-A *Contribution Message* should be provided; it is displayed at
-the top of the section and is one of the primary means by which the 
-community will find the project code. Arbitrary text is permitted, but we recommend
-that you limit this content to a single paragraph with a few sentences
-that include a link to more information.
+A _Contribution Message_ should be provided; it is displayed at the top of the section and is one of the primary means by which the community will find the project code. Arbitrary text is permitted, but we recommend that you limit this content to a single paragraph with a few sentences that include a link to more information.
 
 [[pmi-company-logos]]
 ==== Company Logos
 
-Company logos automatically appear on the _Who's Involved_ page under the following
-conditions:
+Company logos automatically appear on the _Who's Involved_ page under the following conditions:
 
-* The company must be a http://eclipse.org/membership/[member] of the
-Eclipse Foundation;
+* The company must be a http://eclipse.org/membership/[member] of the Eclipse Foundation;
 * The company needs to have their logo uploaded to the Portal;
-* At least one committer has to be listed as an employee of the company
-in question;
+* At least one committer has to be listed as an employee of the company in question;
 * The committer must be on this project; and
-* The committer must be active (must have made at least one commit in
-the last three months)
+* The committer must be active (must have made at least one commit in the last three months)
 
-If all of those conditions are met and the logo is still not showing up,
-then it's possible that the project meta-data doesn't have the correct
-source code repository information specified.
+If all of those conditions are met and the logo is still not showing up, then it's possible that the project meta-data doesn't have the correct source code repository information specified.
 
 [[pmi-build-technology]]
 ==== Build Technology
 
-A project can specify a section of text, links, and a selection of the
-build technologies employed. Specifying this information makes it easier
-for members from the community to understand your build. Links can
-include direct links into the Hudson builds, pages of build
-instructions, or whatever else the project team feels will help the community build
-the project.
+A project can specify a section of text, links, and a selection of the build technologies employed. Specifying this information makes it easier for members from the community to understand your build. Links can include direct links into the Hudson builds, pages of build instructions, or whatever else the project team feels will help the community build the project.
 
 [[pmi-technology-types]]
 ==== Technology Types
 
-A project can specify the types of technology produced by the project.
-This is specified in rather broad terms like "OSGi" or "Runtime". The
-various technology types manifest as checkboxes on the edit screen. This
-information is used to form connections between projects to assist in
-navigation and discovery.
+A project can specify the types of technology produced by the project. This is specified in rather broad terms like _OSGi_ or _Runtime_. Th various technology types manifest as checkboxes on the edit screen. This information is used to form connections between projects to assist in navigation and discovery.
 
-Clicking on one of the technology types, will take the user
-to a page that lists the projects that produce that particular type of
-technology, along with the summary of their description and project logo
-(if specified).
+Clicking on one of the technology types, will take the user to a page that lists the projects that produce that particular type of technology, along with the summary of their description and project logo (if specified).
 
 [[pmi-releases]]
 === Releases and Reviews
 
-Projects, Releases, and Reviews are presented as separate records. Each
-project record, obviously, represents information about a project. A
-project may have multiple releases; information about the release is
-represented in a release record. The release record also contains some
-review information. This information is included here, because all
-releases do not necessarily have a review (a project can opt to provide
-some _review_ type information as part of a release record. A project
-can have multiple review records; as release reviews are the most common
-form of review, most review records will be joined to a release record.
+Projects, Releases, and Reviews are presented as separate records. Each project record, obviously, represents information about a project. A project may have multiple releases; information about the release is represented in a release record. The release record also contains some review information. This information is included here, because all releases do not necessarily have a review (a project can opt to provide some _review_ type information as part of a release record. A project can have multiple review records; as release reviews are the most common form of review, most review records will be joined to a release record.
 
 [graphviz, releases-and-reviews, svg]
 .The relationship between proposals, projects, releases, and reviews.
@@ -247,34 +210,21 @@ digraph {
 }
 ----
 
-A review record, however, does not require a release association. Some
-reviews are associated with proposals. Other have no other association
-(e.g. termination reviews).
+A review record, however, does not require a release association. Some reviews are associated with proposals. Other have no other association (e.g. termination reviews).
 
-Each <<release,release>> has its own record in the database. Records are connected
-directly to a single specific project; a subset of release records
-associated with a project are displayed on the project page. An existing
-release can be edited in much the same was as a project. Any logged in
-project member (committer or project lead) can click the "Edit" button.
+Each <<release,release>> has its own record in the database. Records are connected directly to a single specific project; a subset of release records associated with a project are displayed on the project page. An existing release can be edited in much the same was as a project. Any logged in project member (committer or project lead) can click the menu:[Edit] tab.
 
-NOTE: Create a single record for each release. *Do not create release records
-for milestones.* Enter milestone information in the 'Plan' information
-for your release.
+[NOTE]
+====
+Create a single record for each release. *Do not create release records for milestones.* Enter milestone information in the _Plan_ information for your release.
+====
 
-A project lead or committer can create a new release by clicking "Create a new release" under
-"Committer Commands" on the project page. This opens a dialog requesting
-that a date and name be specified. Both of these values can be changed later. 
+A project lead or committer can create a new release by clicking menu:[Create a new release] under menu:[Committer Commands] on the project page. This opens a dialog requesting that a date and name be specified. Both of these values can be changed later. 
 
 [[pmi-release-description]]
 ==== Description
 
-Describe the release in the 'Description' section. The description
-should generally be a concise paragraph describing the focus of the
-release (e.g. adding certain functionality, fixing bugs, etc.) in a form
-that is appropriate in an aggregation (e.g. a page that displays the
-release information for all projects participating in an instance of the
-Simultaneous release). The description should provide enough information
-to encourage the reader to click the "find out more" link.
+Describe the release in the 'Description' section. The description should generally be a concise paragraph describing the focus of the release (e.g. adding certain functionality, fixing bugs, etc.) in a form that is appropriate in an aggregation (e.g. a page that displays the release information for all projects participating in an instance of the Simultaneous release). The description should provide enough information to encourage the reader to click the menu:[find out more] link.
 
 [[pmi-release-issues]]
 ==== Issues
@@ -283,105 +233,64 @@ The release record will automatically generate a list of targeted bugs.
 
 To populate this list:
 
-* Ensure that the Bugzilla Product is set the to correct value in the
-project metadata;
-* Set the "target milestones" in Bugzilla need to match the name of your
-release.
+* Ensure that the Bugzilla _Product_ is set the to correct value in the project metadata;
+* Set the _target milestones_ in Bugzilla need to match the name of your release.
 
-NOTE: The matching algorithm tries to be as forgiving as possible, a release
-  named "3.5", "3.5.0", or "3.5 (Luna)" will--for example--match target
-  milestones named "3.5" ,"3.5M1", "3.5 M2", "3.5.0M3", etc., but will
-  not match "3.5.1".
+[NOTE]
+====
+The matching algorithm tries to be as forgiving as possible, a release named `3.5`, `3.5.0`, or `3.5 (Luna)` will--for example--match target milestones named `3.5` ,`3.5M1`, `3.5 M2`, `3.5.0M3`, etc., but will not match `3.5.1`.
+====
 
-The bugs for all projects participating in the release will be included.
-Bugs are grouped by Bugzilla product and component.
+The bugs for all projects participating in the release will be included. Bugs are grouped by Bugzilla product and component.
 
 [[pmi-release-plan]]
 ==== Plan
 
-<<releases-plan,Project plan>> information belongs in the 'Plan' section. This
-information *should* generally be provided early in the development
-cycle to allow the various communities the ability to understand and
-participate in the release. It is expected that the plan will evolve
-over time. Note that all projects are required to provide a plan for
-each major and minor release (plans are not required service releases).
+<<releases-plan,Project plan>> information belongs in the _Plan_ section. This information *should* generally be provided early in the development cycle to allow the various communities the ability to understand and participate in the release. It is expected that the plan will evolve over time. Note that all projects are required to provide a plan for each major and minor release (plans are not required service releases).
 
 [[pmi-release-milestones]]
 ==== Milestones
 
-Enter the name, date, and optional description for each milestone
-expected with the release. 
+Enter the name, date, and optional description for each milestone expected with the release. 
 
-Projects should generally include more than one milestone build with each
-release. To include additional milestones, click the "Add another item"
-button. Note that milestones can be dragged into the desired order. To
-remove a milestone, leave the "Name" field blank.
+Projects should generally include more than one milestone build with each release. To include additional milestones, click the menu:[Add another item] button. Note that milestones can be dragged into the desired order. To remove a milestone, leave the _Name_ field blank.
 
 [[pmi-review]]
 ==== Review
 
-The release has a <<release-review,'Review'>> section that can be used to provide
-information for the associated review. If you provide information here,
-the release record itself can be used as review documentation; no
-further documentation is required.
+The release has a <<release-review,'Review'>> section that can be used to provide information for the associated review. If you provide information here, the release record itself can be used as review documentation; no further documentation is required.
 
-Each section on the review page includes a little help to describe the
-sort of information that you should provide.
+Each section on the review page includes a little help to describe the sort of information that you should provide.
 
-All major and minor releases require a review. Service releases (i.e.
-bug fix releases that do not change public APIs or add new
-functionality) do not require a review.
+All major and minor releases require a review. Service releases (i.e. bug fix releases that do not change public APIs or add new functionality) do not require a review.
 
-If a release requires a review, you can schedule one by clicking the
-"Schedule a review" button. The drop-down list above the button contains 
-several options for review dates. Pick the one that works best for you.
+If a release requires a review, you can schedule one by clicking the menu:[Schedule a review] button. The drop-down list above the button contains  several options for review dates. Pick the one that works best for you.
 
-Note that this form will not appear if a review has already been
-scheduled, or the release date does not provide enough time to run a
-review (or is in the past). If a review has been scheduled, a link to
-the review will appear.
+Note that this form will not appear if a review has already been scheduled, or the release date does not provide enough time to run a review (or is in the past). If a review has been scheduled, a link to the review will appear.
 
-You can edit the review document, but there's really not all that much
-to edit. A free-form text field is available and can be used if there is
-some need to provide review-specific information that might not
-otherwise be an appropriate part of the release record. _This field is
-intended for other types of review (e.g. restructuring or termination
-reviews); we decided to leave it available for release reviews for cases
-in which it might be useful rather than suppress it._
+You can edit the review document, but there's really not all that much to edit. A free-form text field is available and can be used if there is some need to provide review-specific information that might not otherwise be an appropriate part of the release record. 
 
-When the review is displayed, it automatically includes the _review_
-information from the release record; it shows the review-specific
-information at the top of the page, and includes the _review_
-information from the release as the rest of the page contents.
+[NOTE]
+====
+The free-form text field in the review record is intended for other types of reviews (e.g. restructuring or termination reviews); we decided to leave it available for release reviews for cases in which it might be useful rather than suppress it.
+====
 
-This can make things a bit confusing when you want to make changes to
-the metadata for a review record. Just remember that the _review_
-information for a release is stored in the release record.
+When the review is displayed, it automatically includes the _review_ information from the release record; it shows the review-specific information at the top of the page, and includes the _review_ information from the release as the rest of the page contents.
+
+This can make things a bit confusing when you want to make changes to the metadata for a review record. Just remember that the _review_ information for a release is stored in the release record.
 
 ifeval::["{forgeName}"=="Eclipse"]
 [[pmi-joining-a-simultaneous-release]]
 === Joining a Simultaneous Release
 
-Projects cannot add themselves directly to a simultaneous release (e.g.
-https://projects.eclipse.org/releases/luna[Luna]), but rather must be
-added by the EMO (there is a
-https://bugs.eclipse.org/bugs/show_bug.cgi?id=402190[bug open] to extend
-this ability to planning council members).
+Projects cannot add themselves directly to a simultaneous release (e.g. https://projects.eclipse.org/releases/luna[Luna]), but rather must be added by the EMO (there is a https://bugs.eclipse.org/bugs/show_bug.cgi?id=402190[bug open] to extend this ability to planning council members).
 
 To join a simultaneous release:
 
 1.  Create a release record:
 * Provide at least a description of the release initially;
-* The date of the release should generally match that of the
-simultaneous release;
-2.  Send a note to the planning council (Eclipse projects normally do
-this via the
-https://dev.eclipse.org/mailman/listinfo/cross-project-issues-dev[cross-project-issues-dev
-mailing list]) with the name of your project, the name/number of the
-release, and the offset.
+* The date of the release should generally match that of the simultaneous release;
+2.  Send a note to the planning council (Eclipse projects normally do this via the https://dev.eclipse.org/mailman/listinfo/cross-project-issues-dev[cross-project-issues-dev mailing list]) with the name of your project, the name/number of the release, and the offset.
 
-The offset indicates how many days after the start of the aggregation
-process for a milestone your project's bits will be available. If your
-project's bits depend on a +pass:[+1]+ project's bits then your project is
-probably a +pass:[+2]+ project, for example.
+The offset indicates how many days after the start of the aggregation process for a milestone your project's bits will be available. If your project's bits depend on a `pass:[+1]` project's bits then your project is probably a `pass:[+2]` project, for example.
 endif::[]
