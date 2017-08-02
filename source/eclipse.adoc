@@ -50,3 +50,7 @@ include::chapters/checklist.adoc[leveloffset=+1]
 include::chapters/glossary.adoc[]
 
 include::chapters/contact.adoc[]
+
+= Appendix A
+
+include::chapters/legaldoc-plugins.adoc[leveloffset=+1]
