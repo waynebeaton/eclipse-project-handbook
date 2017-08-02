@@ -1,150 +1,83 @@
 [[pmi]]
 == Project Management Infrastructure (PMI)
 
-The {forgeName} Project Management Infrastructure (PMI) consolidates 
-project management activities into a single consistent location and experience.
+The {forgeName} Project Management Infrastructure (PMI) consolidates project management activities into a single consistent location and experience.
 
 Project Management Infrastructure themes:
 
-_Improved consistency._ Configuration/data-driven project web presence, 
-direct linkage between releases, reviews, and plans. Information--including 
-basic project metadata, project plans, and release review information--is 
-captured and retained in a consistent (and easily leveraged) data-based 
-format (rather than in multiple documents in arbitrary formats).
+_Improved consistency._ Configuration/data-driven project web presence, direct linkage between releases, reviews, and plans. Information--including basic project metadata, project plans, and release review information--is captured and retained in a consistent (and easily leveraged) data-based format (rather than in multiple documents in arbitrary formats).
 
-_All-in-one-place._ Project leads and committers are able to edit 
-information in place on the project information pages. Text/information in 
-one place with links in another is eliminated where possible. Comments and 
-discussion related to reviews, elections, etc. are connected directly 
-to the item being discussed.
+_All-in-one-place._ Project leads and committers are able to edit information in place on the project information pages. Text/information in one place with links in another is eliminated where possible. Comments and discussion related to reviews, elections, etc. are connected directly to the item being discussed.
 
-_Get started faster._ By default, projects are provided with a data-driven 
-website that includes consistent links to project releases, reviews, 
-downloads, etc. Projects can opt to override the default and provide 
-their own customized web presence. Setting up a project presence is a 
-matter of configuration, not PHP programming against proprietary APIs.
+_Get started faster._ By default, projects are provided with a data-driven website that includes consistent links to project releases, reviews, downloads, etc. Projects can opt to override the default and provide their own customized web presence. Setting up a project presence is a matter of configuration, not PHP programming against proprietary APIs.
 
 [[pmi-metadata]]
 === Project Metadata
 
-Project committers and project leads are responsible for maintaining
-their project's metadata. This information is an important part of being
-an Eclipse project.
+Project committers and project leads are responsible for maintaining their project's metadata. This information is an important part of being an Eclipse project.
 
 Project metadata is:
 
-1.  Relatively static structural information such as the project
-description and scope, the names of the project's mailing lists and
-newsgroups, the bugzilla products, source code repositories, etc.
-2.  Historical information such as previous release downloads, release
-review slides and IP logs, etc.
-3.  Status and future looking information such as the project and
-milestone plans, the features scheduled for the current release, release
-dates, etc.
+1.  Relatively static structural information such as the project description and scope, the names of the project's mailing lists and forums, the bugzilla products, source code repositories, etc.
+2.  Historical information such as previous release downloads, release review slides and IP logs, etc.
+3.  Status and future looking information such as the project and milestone plans, the features scheduled for the current release, release dates, etc.
 
-PMC members, and the Eclipse Foundation staff also have the ability to
-make changes on behalf of a project.
+PMC members and the Eclipse Foundation staff also have the ability to make changes on behalf of a project.
 
 [[pmi-viewing]]
 === Viewing
 
-The complete listing of all current
-{projectListUrl}[{forgeName} projects] provides
-one starting point for viewing projects. From here, you can link
-directly to a project information page. Navigation options are provided
-to help you move from one project to another.
+The complete listing of all current {projectListUrl}[{forgeName} projects] provides one starting point for viewing projects. From here, you can link directly to a project information page. Navigation options are provided to help you move from one project to another.
 
 [[pmi-commands-and-tools]]
 === Commands and Tools
 
-Committers have access to several committer-specific
-commands and tools. The selection of commands available are context sensitive; only those
-commands that make sense for the logged in user are shown.
+Committers have access to several committer-specific commands and tools. The selection of commands available are context sensitive; only those commands that make sense for the logged in user are shown.
 
 [[pmi-editing]]
 === Editing Project Metadata
 
-Committers have the ability to edit the information managed and displayed
-on the project page.
-There are several sections on the page. When you switch the page into
-"Edit" mode, you will be provided with lots of help regarding the
-contents of each of the fields (note that the help text is currently
-rendered below the fields).
+Committers have the ability to edit the information managed and displayed on the project page. There are several sections on the page. When you switch the page into _Edit_ mode, you will be provided with lots of help regarding the contents of each of the fields (note that the help text is currently rendered below the fields).
 
 Some of the fields are described below.
 
 [[pmi-description-and-scope]]
 ==== Description and Scope
 
-The 'description' should start with a concise paragraph of three to five 
-sentences (e.g. suitable for display with a collection of other projects). 
-A single paragraph is generally appropriate for the
-description.
+The _description_ should start with a concise paragraph of three to five sentences (e.g. suitable for display with a collection of other projects). A single paragraph is generally appropriate for the description.
 
-If more than a single simple paragraph is required to fully
-describe the project, it is possible to set a summary. The summary
-can be specified by toggling the "show summary" link to explicitly
-set a summary apart from the more detailed description, or the top
-part of the description can be designated as the summary by inserting 
-a 'Teaser Break' into the content.
+If more than a single simple paragraph is required to fully describe the project, it is possible to set a summary. The summary can be specified by toggling the menu:show summary[] link to explicitly set a summary apart from the more detailed description, or the top part of the description can be designated as the summary by inserting a _Teaser Break_ into the content.
 
-NOTE: providing a summary gives you control over what will get rendered.
-In views where we are displaying more than one project, the system
-will artifically cut short descriptions that are too long, potentially
-resulting in a description that looks _weird_.
+[NOTE]
+====
+Providing a summary gives you control over what will get rendered. In views where we are displaying more than one project, the system will artifically cut short descriptions that are too long, potentially resulting in a description that looks _weird_.
+====
 
-The 'scope' is intended for a more select audience; generally speaking the
-scope should be taken directly from the project's proposal. Project
-members have the ability to change the text of the project scope, but
-should be careful to avoid changing the meaning. If the meaning of the
-scope needs to change, the Project Management Committee (PMC) must be
-contacted regarding a potential restructuring review.
+The _scope_ is intended for a more select audience; generally speaking the scope should be taken directly from the project's proposal. Project members have the ability to change the text of the project scope, but should be careful to avoid changing the meaning. If the meaning of the scope needs to change, the Project Management Committee (PMC) must be contacted regarding a potential restructuring review.
 
 [[pmi-downloads]]
 ==== Downloads
 
-You can provide download information for your project in the "Downloads"
-section.
+You can provide download information for your project in the _Downloads_ section.
 
-The first entry is the main "Downloads URL". This manifests as a "Big
-Button" Download on the project page. What you put here is left to the
-project team to decide. It can be a link to a webpage, a direct link to 
-a file download, or whatever else makes sense the project and community.
+The first entry is the main "Downloads URL". This manifests as a _Big Button_ Download on the project page. What you put here is left to the project team to decide. It can be a link to a webpage, a direct link to a file download, or whatever else makes sense the project and community.
 
-Optional text can be included along with the "Big
-Button" Download, as well as links to zero or more Eclipse Marketplace,
-update/p2 sites, or other downloads. Each of the links can have an
-optional title (the link itself will be displayed if no title is
-provided). Note that no validation is done on the links to ensure that
-they are meaningful. 
+Optional text can be included along with the _Big Button_ Download, as well as links to zero or more Eclipse Marketplace, update/p2 sites, or other downloads. Each of the links can have an optional title (the link itself will be displayed if no title is provided). Note that no validation is done on the links to ensure that they are meaningful. 
 
 ifeval::["{forgeName}"=="Eclipse"]
-_The Eclipse Foundation strongly encourages all projects to create an
-maintain and http://marketplace.eclipse.org[Eclipse Marketplace]
-presence._
+_The Eclipse Foundation strongly encourages all projects (especially those that produce Eclipse Platform Plug-ins and Features) to create an maintain and http://marketplace.eclipse.org[Eclipse Marketplace] presence._
 endif::[]
 
 [[source-repositories]]
 ==== Source Repositories
 
-The project can specify zero or more *source repositories*. These are
-displayed in the "Contribute to this Project" section.
+The project can specify zero or more *source repositories*. These are displayed in the _Contribute to this Project_ section.
 
-The values specified are used to query against a database of known
-existing source repositories (this database is updated nightly by a
-discovery process). Those repositories that are found in the database
-will be displayed with enhanced information (including links to
-repository mirrors, Gerrit, etc.). All values that you provide will be
-displayed, whether they point to real repositories or not. If the
-database does not contain your repository, the PMI will assume that the
-value is correct and try its best to display the information.
+The values specified are used to query against a database of known existing source repositories (this database is updated nightly by a discovery process). Those repositories that are found in the database will be displayed with enhanced information (including links to repository mirrors, Gerrit, etc.). All values that you provide will be displayed, whether they point to real repositories or not. If the database does not contain your repository, the PMI will assume that the value is correct and try its best to display the information.
 
-Repositories should be specified using the file system path, e.g.
-'/gitroot/egit/egit.git'. The name that is displayed for the repository
-is extracted from the last segment of the URL.
+Repositories should be specified using the file system path, e.g. `/gitroot/egit/egit.git`. The name that is displayed for the repository is extracted from the last segment of the URL.
 
-If a description file exists in the Git repository, the contents are
-automatically displayed under the repository name.
+If a description file exists in the Git repository, the contents are automatically displayed under the repository name.
 
 [NOTE]
 ====
@@ -212,19 +145,19 @@ digraph {
 
 A review record, however, does not require a release association. Some reviews are associated with proposals. Other have no other association (e.g. termination reviews).
 
-Each <<release,release>> has its own record in the database. Records are connected directly to a single specific project; a subset of release records associated with a project are displayed on the project page. An existing release can be edited in much the same was as a project. Any logged in project member (committer or project lead) can click the menu:[Edit] tab.
+Each <<release,release>> has its own record in the database. Records are connected directly to a single specific project; a subset of release records associated with a project are displayed on the project page. An existing release can be edited in much the same was as a project. Any logged in project member (committer or project lead) can click the menu:Edit[] tab.
 
 [NOTE]
 ====
 Create a single record for each release. *Do not create release records for milestones.* Enter milestone information in the _Plan_ information for your release.
 ====
 
-A project lead or committer can create a new release by clicking menu:[Create a new release] under menu:[Committer Commands] on the project page. This opens a dialog requesting that a date and name be specified. Both of these values can be changed later. 
+A project lead or committer can create a new release by clicking menu:Committer Commands[Create a new release] on the project page. This opens a dialog requesting that a date and name be specified. Both of these values can be changed later. 
 
 [[pmi-release-description]]
 ==== Description
 
-Describe the release in the 'Description' section. The description should generally be a concise paragraph describing the focus of the release (e.g. adding certain functionality, fixing bugs, etc.) in a form that is appropriate in an aggregation (e.g. a page that displays the release information for all projects participating in an instance of the Simultaneous release). The description should provide enough information to encourage the reader to click the menu:[find out more] link.
+Describe the release in the _Description_ section. The description should generally be a concise paragraph describing the focus of the release (e.g. adding certain functionality, fixing bugs, etc.) in a form that is appropriate in an aggregation (e.g. a page that displays the release information for all projects participating in an instance of the Simultaneous release). The description should provide enough information to encourage the reader to click the menu:find out more[] link.
 
 [[pmi-release-issues]]
 ==== Issues
@@ -253,7 +186,7 @@ The bugs for all projects participating in the release will be included. Bugs ar
 
 Enter the name, date, and optional description for each milestone expected with the release. 
 
-Projects should generally include more than one milestone build with each release. To include additional milestones, click the menu:[Add another item] button. Note that milestones can be dragged into the desired order. To remove a milestone, leave the _Name_ field blank.
+Projects should generally include more than one milestone build with each release. To include additional milestones, click the btn:[Add another item] button. Note that milestones can be dragged into the desired order. To remove a milestone, leave the _Name_ field blank.
 
 [[pmi-review]]
 ==== Review
@@ -264,7 +197,7 @@ Each section on the review page includes a little help to describe the sort of i
 
 All major and minor releases require a review. Service releases (i.e. bug fix releases that do not change public APIs or add new functionality) do not require a review.
 
-If a release requires a review, you can schedule one by clicking the menu:[Schedule a review] button. The drop-down list above the button contains  several options for review dates. Pick the one that works best for you.
+If a release requires a review, you can schedule one by clicking the menu:Schedule a review[] link. The drop-down list above the button contains  several options for review dates. Pick the one that works best for you.
 
 Note that this form will not appear if a review has already been scheduled, or the release date does not provide enough time to run a review (or is in the past). If a review has been scheduled, a link to the review will appear.
 

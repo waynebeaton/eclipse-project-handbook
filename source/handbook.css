@@ -111,3 +111,19 @@ div.sect1 h2 {
 	border-top-style: solid;
 	border-top-width: 1px;
 }
+
+span.menuseq {
+}
+
+span.menu, span.menuitem {
+	font-style: italic;
+}
+
+.button {
+	font-weight: normal;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	box-shadow: 1px 1px;
+	padding: 2px;
+}

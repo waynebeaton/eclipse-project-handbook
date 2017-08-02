@@ -230,7 +230,7 @@ How much effort should we put into this? ::
 
 
 How do I submit the IP Log for review? ::
-	Click the 'Submit' button on the <<ip-iplog-generator,IP Log generator>>. 
+	Click the btn:[Submit] button on the <<ip-iplog-generator,IP Log generator>>. 
 	You need to be logged in as project committer to have access to this button.
 
 Can I accept contributions after I submit the IP Log for review? ::
