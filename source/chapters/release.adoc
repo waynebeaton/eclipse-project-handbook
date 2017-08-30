@@ -1,18 +1,15 @@
 [[release]]
 == Releases
 
-Releases are formal for {forgeName} projects. They start with planning,
-and end with a community review. You can capture as many future releases as you'd like. It's 
-common practice to specify releases three or six months into the future.
+Releases are formal for {forgeName} projects. They start with planning, and end with a community review. You can capture as many future releases as you'd like. It's common practice to specify releases three or six months into the future.
 
 Releases are broadly categorized as:
 
-* 'Major' releases include API changes (potential for downstream breakage);
-* 'Minor' releases add new functionality, but are API compatible with previous versions; and
-* 'Service' releases include bug fixes only and include no significant new functionality.
+* _Major_ releases include API changes (potential for downstream breakage);
+* _Minor_ releases add new functionality, but are API compatible with previous versions; and
+* _Service_ releases include bug fixes only and include no significant new functionality.
 
-For all major and minor releases, you must engage in a 'release review'.
-Release reviews are not required for bug-fix/service releases.
+For all major and minor releases, you must engage in a _<<release-review,release review>>_. Release reviews are not required for bug-fix/service releases.
 
 [graphviz, release-cycle, svg]
 .The Release Cycle
@@ -42,72 +39,29 @@ digraph {
 [[releases-plan]]
 === Release Plan
 
-A project plan is 'required' for each major and minor project release.
-The plan should lay out in broad terms what the goals are for the
-release. As plans are a valuable means
-for the community to get involved with your project, the plan should be
-created at the beginning of the release cycle. By establishing the plan
-early, you give prospective contributors help in determining how they
-can most usefully contribute, and adopters can prepare their own
-development schedule and themes. Plans can change during the release
-cycle.
+A project plan is _required_ for each major and minor project release. The plan should lay out in broad terms what the goals are for the release. As plans are a valuable means for the community to get involved with your project, the plan should be created at the beginning of the release cycle. By establishing the plan early, you give prospective contributors help in determining how they can most usefully contribute, and adopters can prepare their own development schedule and themes. Plans can change during the release cycle.
 
-Use the <<pmi, Project Management Interface>> to create a new release
-record. At the start of the release cycle, your plan should minimally
-include a release number, date, and short description. Think of the
-description as an "elevator pitch": how would you describe the release
-in a fifteen second elevator ride? All aspects of a plan can change 
-during the release cycle (including the date). If you do change the plan, 
-make sure that the change is communicated via your project's 'dev' list 
-and other project channels.
+Use the <<pmi, Project Management Interface>> to create a new release record. At the start of the release cycle, your plan should minimally include a release number, date, and short description. Think of the description as an _elevator pitch_: how would you describe the release in a fifteen second elevator ride? All aspects of a plan can change during the release cycle (including the date). If you do change the plan, make sure that the change is communicated via your project's _dev_ list and other project channels.
 
-The 'Plan' tab in the release record contains numerous fields for capturing
-plan information. The amount of information that you should capture
-for a release plan varies by top-level project, so consult with your
-Project Management Committee (PMC) for advice.
+The _Plan_ tab in the release record contains numerous fields for capturing plan information. The amount of information that you should capture for a release plan varies by top-level project, so consult with your Project Management Committee (PMC) for advice.
 
-Producing regular builds is an important part of the release cycle.
-Builds are an important means of engaging with the community: adopters can
-help you test your code and test their own so that they can be ready for
-the eventual release. Plan to produce at least one 'milestone' build (more
-are better, depending on the length of your release cycle), and capture
-the planned date for that milestone in the release record. It is also
-common practice to generate nightly and weekly integration builds. Ensure that
-your project's downloads page provides the information required for the
-community to obtain your builds.
+Producing regular builds is an important part of the release cycle. Builds are an important means of engaging with the community: adopters can help you test your code and test their own so that they can be ready for the eventual release. Plan to produce at least one _milestone_ build (more are better, depending on the length of your release cycle), and capture the planned date for that milestone in the release record. It is also common practice to generate nightly and weekly integration builds. Ensure that your project's downloads page provides the information required for the community to obtain your builds.
 
-All of your project's <<ip,intellectual property>> contributions
-must be approved by the IP Team before you can release
-(this includes third party content and contributions of code to be
-maintained by the project).
+All of your project's <<ip,intellectual property>> contributions must be approved by the IP Team before you can release (this includes third party content and contributions of code to be maintained by the project).
 
 [[release-review]]
 === Release Review
 
-A 'release review' is a formal announcement of your release to the
-community and a request for feedback. In practical terms, experience
-has shown that those individuals and organizations who are interested 
-in your project follow development throughout the release cycle and so 
-are have likely already provided feedback during the development
-cycle (i.e. they are unlikely to provide feedback during the review
-period). With this in mind, the review generally serves as a means for 
-a project to engage in a retrospective of the progress made during the
-release, discover areas of potential improvement, demonstrate that the 
-project is operating in an open and transparent manner, and ensure that 
-the development process and intellectual due diligence processes have 
-been followed.
+A _release review_ is a formal announcement of your release to the community and a request for feedback. In practical terms, experience has shown that those individuals and organizations who are interested in your project follow development throughout the release cycle and so are have likely already provided feedback during the development cycle (i.e. they are unlikely to provide feedback during the review period). With this in mind, the review generally serves as a means for a project to engage in a retrospective of the progress made during the release, discover areas of potential improvement, demonstrate that the project is operating in an open and transparent manner, and ensure that the development process and intellectual due diligence processes have been followed.
 
 Release reviews run for a week and always conclude on a Wednesday. 
 
-NOTE: We schedule reviews to conclude on the 'first and 
-third Wednesdays of the month'. Your release date does not have to 
-coincide with the review date (you can set the release date as
-necessary). The review must, however, conclude successfully before you
-can make the release official.
+[NOTE]
+====
+We schedule reviews to conclude on the _first and third Wednesdays of the month_. Your release date does not have to  coincide with the review date (you can set the release date as necessary). The review must, however, conclude successfully before you can make the release official.
+====
 
-A 'release review' requires review documentation and an intellectual
-property (IP) log check. The review process must be initiated at least
-two weeks in advance of the anticipated 'review' date.
+A _release review_ requires review documentation and an intellectual property (IP) log check. The review process must be initiated at least two weeks in advance of the anticipated review date.
 
 [graphviz, release-review, svg]
 .Release review work flow
@@ -132,140 +86,99 @@ digraph {
 }
 ----
 
-Prepare the review documentation well in advance of the start of the
-review period. The release record which contains your project plan
-also includes a 'Review' tab with appropriate fields for a review.
-As with the plan fields, all of the review fields are optional and
-the level of detail you need to provide varies by top-level project.
-You can assemble review information during the release cycle (there's 
-no need to wait until the end)
+Prepare the review documentation well in advance of the start of the review period. The release record which contains your project plan also includes a _Review_ tab with appropriate fields for a review. As with the plan fields, all of the review fields are optional and the level of detail you need to provide varies by top-level project. You can assemble review information during the release cycle (there's no need to wait until the end)
 
 The review materials must be approved by the PMC; send an email to 
-the PMC's mailing list asking for approval. The PMC will respond with
-feedback or a simple "+1" indicating approval.
+the PMC's mailing list asking for approval. The PMC will respond with feedback or a simple `pass:[+1]` indicating approval.
 
-NOTE: Click the handy 'Send Email to the PMC' link under 'Committer Tools'
-on the release record page to connect with the PMC.
+[NOTE]
+====
+Click the handy menu:Committer Tools[Send Email to the PMC] link on the release record page to connect with the PMC.
+====
 
-Submit the IP Log for review by the IP Team. The IP Team must approve
-the IP Log before we can schedule the review, so submitting this early
-is important. The <<ip-iplog-generator,IP Log generator>> automatically 
-collects information based on the information that the project team has 
-provided to the IP Team through <<ip-cq,contribution questionnaires>> 
-in IPZilla, commits in the project's source code repository, and
-other information in our databases. Carefully review the IP Log before
-submitting to the IP Team for their review.
+Submit the IP Log for review by the IP Team. The IP Team must approve the IP Log before we can schedule the review, so submitting this early is important. The <<ip-iplog-generator,IP Log generator>> automatically collects information based on the information that the project team has provided to the IP Team through <<ip-cq,contribution questionnaires>> in IPZilla, commits in the project's source code repository, and other information in our databases. Carefully review the IP Log before submitting to the IP Team for their review.
 
-NOTE: Click the handy 'Generate IP Log' link under 'Committer Tools'
-on the release record page to open the IP Log generator.
+[NOTE]
+====
+Click the handy menu:Committer Tools[Generate IP Log] link on the release record page to open the IP Log generator.
+====
 
-The information used to generate an IP Log should always be up-to-date
-(don't wait until the end of the release cycle to make it right).
+The information used to generate an IP Log should always be up-to-date (don't wait until the end of the release cycle to make it right).
 
-At any point in this process, you can request that the review be
-initiated by clicking the 'Schedule a review for this release' link
-that appears at the top of the release record page. This will invite you
-to select a review date. You must then follow up with the EMO to approve
-the review. 
+At any point in this process, you can request that the review be initiated by clicking the menu:Schedule a review for this release[] link that appears at the top of the release record page. This will invite you to select a review date. You must then follow up with the EMO to approve the review. 
 
-NOTE: The EMO will likely notice that you've created the release record, 
-connected with your PMC, and submitted an IP Log for review by the IP 
-team and will take steps to initiate the actual review. However, since 
-there is a great deal of variability in this process, send an email to
-{emoEmail} stating your intent to release.
+[NOTE]
+====
+The EMO will likely notice that you've created the release record, connected with your PMC, and submitted an IP Log for review by the IP team and will take steps to initiate the actual review. However, since there is a great deal of variability in this process, send an email to {emoEmail} stating your intent to release.
+====
 
-The EMO will conclude the review on the scheduled end date and advise the
-project team of the outcome.
+The EMO will conclude the review on the scheduled end date and advise the project team of the outcome.
 
 [[release-graduation]]
 === Graduation Review
 
-The purpose of a 'graduation review' is to confirm that the project has
-a working and demonstrable code base of sufficiently high quality
-active and sufficiently diverse communities; has adopters, developers, and users
-operating fully in the open following the {edpUrl}[Eclipse Development Process]; and
-is a credit to {forgeName} and is functioning well within the larger {forgeName} community
+The purpose of a _graduation review_ is to confirm that the project has a working and demonstrable code base of sufficiently high quality active and sufficiently diverse communities; has adopters, developers, and users operating fully in the open following the {edpUrl}[Eclipse Development Process]; and is a credit to {forgeName} and is functioning well within the larger {forgeName} community
 
-Graduation reviews are generally combined with a <<release-review, 'release review'>>
-(typically, but not necessarily the '1.0' release).
-Upon successful completion of a graduation review, a project will leave the
-incubation phase and be designated as a 'mature' project.
+Graduation reviews are generally combined with a _<<release-review, release review>>_ (typically, but not necessarily the `1.0` release). Upon successful completion of a graduation review, a project will leave the incubation phase and be designated as a _mature_ project.
 
-For a graduation review, release review documentation must be augmented to 
-include demonstration of:
+For a graduation review, release review documentation must be augmented to include demonstration of:
 
 * solid working code with stable APIs; 
 * an established and growing community around the project;
 * diverse multi-organization committer/contributor/developer activity; and
 * operation in the open using open source rules of engagement.
 
-The graduation review documentation should demonstrate that members have 
-learned the ropes and logistics of being {aForgeName} project. That is,
-the project "gets the {forgeName} way".
+The graduation review documentation should demonstrate that members have learned the ropes and logistics of being {aForgeName} project. That is, the project "gets the {forgeName} way".
 
 [[release-faq]]
 === Frequently Asked Questions
 
 [qanda]
 Can a release review fail? ::
-	Technically, yes. A release review can fail. In our history, however, this
-	occurrs very rarely. We set up release reviews to succeed.
+
+Technically, yes. A release review can fail. In our history, however, this occurrs very rarely. We set up release reviews to succeed.
 
 Do we really need to do this? ::
-	Yes.
+
+Yes.
 
 How often should we do releases? ::
-	This depends very much on the nature of your project and the expectations 
-	of your community and stake holders. If you're not sure, connect with your
-	mentors and top-level project for guidance.
+
+This depends very much on the nature of your project and the expectations of your community and stake holders. If you're not sure, connect with your mentors and top-level project for guidance.
 
 How much effort should we put into this? ::
-	The amount of effort varies based on the nature of the team, and 
-	expectations of the community and stake holders. Generally, though, a project
-	team shouldn't spend more than a couple of hours working directly on the
-	formal aspects of the release review.
-	If the amount of effort seems too onerous, you may be trying too hard.
-	Connect with your project mentors, top-level project's PMC, or the 
-	mailto:{emoEmail}[EMO] for guidance.
+
+The amount of effort varies based on the nature of the team, and expectations of the community and stake holders. Generally, though, a project team shouldn't spend more than a couple of hours working directly on the formal aspects of the release review. If the amount of effort seems too onerous, you may be trying too hard. Connect with your project mentors, top-level project's PMC, or the mailto:{emoEmail}[EMO] for guidance.
 
 
 How do I submit the IP Log for review? ::
-	Click the btn:[Submit] button on the <<ip-iplog-generator,IP Log generator>>. 
-	You need to be logged in as project committer to have access to this button.
+
+Click the btn:[Submit] button on the <<ip-iplog-generator,IP Log generator>>. You need to be logged in as project committer to have access to this button.
 
 Can I accept contributions after I submit the IP Log for review? ::
-	The short answer is 'yes'. Please do accept contributions.
-	If you require a new contribution questionnaire (for either a third
-	party library or code contribution) after submitting the IP Log for
-	review, please ask the mailto:{ipTeamEmail}[IP Team] if
-	they want you to resubmit the IP Log.
+
+The short answer is _yes_. Please do accept contributions. If you require a new contribution questionnaire (for either a third party library or code contribution) after submitting the IP Log for review, please ask the mailto:{ipTeamEmail}[IP Team] if they want you to resubmit the IP Log.
 
 How do I obtain PMC approval? ::
-	Send the the PMC a note via the top-level project's 'PMC' mailing list
-	with a link to the release record. Note that the release record page
-	has a handy link labeled 'Send Email the PMC' under 'Committer Tools'.
+
+Send the the PMC a note via the top-level project's _PMC_ mailing list with a link to the release record. Note that the release record page has a handy link labeled menu:Committer Tools[Send Email the PMC].
 
 I need to do a release now. Can you fast-track the review? ::
-	While we do try to be as accommodating as possible, the answer is no. 
-	We have a well-defined process with predictable dates. Please plan
-	accordingly.
+
+While we do try to be as accommodating as possible, the answer is no. We have a well-defined process with predictable dates. Please plan accordingly.
 
 Can a project in the incubation phase do releases? ::
-	Yes. In fact, we encourage projects to do at least one release while
-	in incubation phase.
+
+Yes. In fact, we encourage projects to do at least one release while in incubation phase.
 
 What restrictions are placed on version names for incubating projects? ::
-	Projects in the incubation phase generally use version numbers that
-	are less than 1.0. This is, however, a convention not a rule. If it makes sense
-	for you community and adopters to use higher numbers, then do so.
-	If you're not sure, ask your top-level project PMC for advice.
+
+Projects in the incubation phase generally use version numbers that are less than 1.0. This is, however, a convention not a rule. If it makes sense for you community and adopters to use higher numbers, then do so. If you're not sure, ask your top-level project PMC for advice.
 
 How do I name/number milestone builds? ::
-	Milestone builds should contain the name/number of the release suffixed
-	with "Mn" (e.g. the second milestone for EGit 3.2 may have a file
-	named "egit-3.2M2"). Projects in the incubation phase may produce 
-	milestone builds for their graduation release, e.g "myProject-1.0M2".
+
+Milestone builds should contain the name/number of the release suffixed with "Mn" (e.g. the second milestone for EGit 3.2 may have a file named `egit-3.2M2`). Projects in the incubation phase may produce milestone builds for their graduation release, e.g `myProject-1.0M2`.
 
 How can I get help? ::
-	Contact your mentors (for projects in the incubation phase), top-level
-	project PMC, or the mailto:{emoEmail}[EMO].
+
+Contact your mentors (for projects in the incubation phase), top-level project PMC, or the mailto:{emoEmail}[EMO].

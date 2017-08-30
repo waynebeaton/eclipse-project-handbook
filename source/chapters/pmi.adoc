@@ -145,7 +145,7 @@ digraph {
 
 A review record, however, does not require a release association. Some reviews are associated with proposals. Other have no other association (e.g. termination reviews).
 
-Each <<release,release>> has its own record in the database. Records are connected directly to a single specific project; a subset of release records associated with a project are displayed on the project page. An existing release can be edited in much the same was as a project. Any logged in project member (committer or project lead) can click the menu:Edit[] tab.
+Each <<release,release>> has its own record in the database. Records are connected directly to a single specific project; a subset of release records associated with a project are displayed on the project page. An existing release can be edited in much the same was as a project. Any logged in project member (committer or project lead) can switch to the _Edit_ tab.
 
 [NOTE]
 ====

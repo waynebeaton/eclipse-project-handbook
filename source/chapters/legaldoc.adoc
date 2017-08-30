@@ -79,13 +79,19 @@ Copyright holders are legal entities: either individuals or companies. Note that
 An Eclipse Foundation open source project is _not_ a legal entity. Further, the Eclipse Foundation does not assume ownership of contributions (the Eclipse Foundation is only a copyright holder in those cases where an employee of the Eclipse Foundation has authored the contribution).
 ====
 
+_Copyright statements_ take the form `Copyright (c) \{date} \{owner}`. 
+
+The `\{date}` is either a year or a range of years with the first and last years of the range separated by a comma (e.g. `2004` or `2004, 2017`). The first year is when the contents of the file were first created and the last year is the last year is when the contents were last modified. 
+
+The `\{owner}` is the name of the copyright holder. If the content is subsequently modified and appended to by other copyright owners, the words "and others" are typically appended. So for example: "XYZ Corp." or "XYZ Corp. and others". The words "and others" are used to avoid having to list every copyright owner and because often, most of the content in the file was contributed the by initial copyright owner with subsequent modifications by others being smaller. However especially if the number of copyright owners is small (e.g. two), there is nothing wrong with listing all of them especially if their contributions are more proportionately equal. For example: "XYZ Corp., John Smith, and ABC Enterprises."
+
 Copyright headers can take one of two forms. In the traditional form, the identities of the copyright holders must be indicated in the copyright statement on the first line of the header.
 
-.Example Copyright and License Header
+.Eclipse Public License 1.0 Copyright and License Header template
 [source]
 ----
 /******************************************************************
- * Copyright (c) 2017 My Company, and others <1>
+ * Copyright (c) {date} {owner}[, and others] <1>
  *
  * This program and the accompanying materials <2>
  * are made available under the terms of the Eclipse Public License
@@ -95,10 +101,10 @@ Copyright headers can take one of two forms. In the traditional form, the identi
  * SPDX-License-Identifier: EPL-1.0 <3>
  *
  * Contributors: <4>
- *   Robert Smith - initial API and implementation
+ *   {name} - initial API and implementation
  ******************************************************************/
 ----
-<1> Name of the initial copyright owner (this must be a legal entity); other organizations that have contributed are either listed individually or grouped together by appending "and others". The year is expressed as a single year or a range spanning the year of the very initial assertion and that of the most recent change.
+<1> Name of the initial copyright owner (this must be a legal entity); other organizations that have contributed are either listed individually or grouped together by appending "and others". The date is expressed as a single year or a range spanning the year of the very initial assertion and that of the most recent change.
 <2> Declared project licenses described in human readable form.
 <3> Declared project licenses indicated using SPDX codes and expressions.
 <4> The names of the contributors and the nature of their contribution (this section may be excluded).
@@ -112,11 +118,11 @@ Older versions of this template included the sentence “All rights reserved.”
 
 Alternatively, project teams can adopt a more generic copyright header for each file and include the identities of the copyright holders in the `NOTICE` file.
 
-.Alternative Copyright and License Header
+.Alternative Eclipse Public License 1.0 Copyright and License Header template
 [source]
 ----
 /********************************************************************
- * Copyright (c) 2017 Contributors to the Eclipse Foundation <1>
+ * Copyright (c) {date} Contributors to the Eclipse Foundation <1>
  *
  * See the NOTICE file(s) distributed with this work for additional
  * information regarding copyright ownership.
@@ -129,13 +135,13 @@ Alternatively, project teams can adopt a more generic copyright header for each 
  * SPDX-License-Identifier: EPL-1.0 <3>
  ********************************************************************/
 ----
-<1> The year is expressed as a single year or a range spanning the year of the very initial assertion and that of the most recent change.
+<1> The date is expressed as a single year or a range spanning the year of the very initial assertion and that of the most recent change.
 <2> Declared project licenses described in human readable form.
 <3> Declared project licenses indicated using SPDX codes and expressions.
 
 [NOTE]
 ====
-The border, line breaks, etc. are not mandated.
+The border, line breaks, etc. are not mandated in either form.
 ====
 
 Incorporating the `SPDX-License-Identifier` tag in the header makes it easy for automated tools to discover and report the license of the content. More usefully, the SPDX expression syntax can be used to make it very explicit to automated tools how multiple licenses are combined.

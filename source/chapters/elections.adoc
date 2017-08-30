@@ -105,7 +105,7 @@ digraph {
 ----
 
 
-Only project committers may vote in a committer election. To be successful, the election must receive a minimum of three positive +pass:[+1]+ votes. Any committer can veto the election by casting a +pass:[-1]+ vote. For projects with three or fewer committers all committers must vote. Committer elections run for one week, but will end prematurely if all project committers vote +pass:[+1]+.
+Only project committers may vote in a committer election. To be successful, the election must receive a minimum of three positive `pass:[+1]` votes. Any committer can veto the election by casting a +pass:[-1]+ vote. For projects with three or fewer committers all committers must vote. Committer elections run for one week, but will end prematurely if all project committers vote `pass:[+1]`.
 
 Following a successful committer vote, the project's PMC will review the election results and then either approve or veto the election. An election may be vetoed, for example, if the PMC feels that the merit statement is not strong enough.
 
@@ -130,9 +130,9 @@ http://www.odata.org/blog/eclipse-ogee
 
 Project leads are normally also committers. A project may have more than one project lead (so-called _co-leads_).
 
-Use the _Nominate a Project Lead_ link in the _Committer Tools_ block on the project's <<pmi,management page>> to start a project lead election.
+Use the menu:Committer Tools[Nominate a Project Lead] link on the project's <<pmi,management page>> to start a project lead election.
 
-Only project committers can vote in a project lead election. To be successful, a project lead election must receive a minimum of three positive +pass:[+1]+ votes. Any committer can veto the election by casting a +pass:[-1]+ vote. For projects with three or fewer committers all committers must vote. Committer elections run for one week, but will end prematurely if all project committers vote +pass:[+1]+.
+Only project committers can vote in a project lead election. To be successful, a project lead election must receive a minimum of three positive `pass:[+1]` votes. Any committer can veto the election by casting a `pass:[-1]` vote. For projects with three or fewer committers all committers must vote. Committer elections run for one week, but will end prematurely if all project committers vote `pass:[+1]`.
 
 Following a successful committer vote, the project's PMC will review the election results and then either approve or veto the election.  A PMC-approved election will be referred to the EMO/ED as a recommendation for appointment. The final decision rests with the EMO/ED.
 
