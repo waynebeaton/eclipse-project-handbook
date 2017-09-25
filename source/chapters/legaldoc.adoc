@@ -5,7 +5,10 @@ The content developed and maintained by Eclipse Foundation open source projects 
 
 As much as is possible, we adopt standards and conventions in order to be good open source citizens.
 
-We use the Software Package Data Exchange(R) (https://spdx.org[SPDX](R)) specification for communicating the components, licenses, and copyrights associated with software packages. SPDX is machine readable which makes it relatively easy for adopters and other consumers of {forgeName} software to understand the legal nature of the content. In specific terms, this takes the form of using SPDX codes to express licenses, and SPDX file formats to express notices.
+[NOTE]
+====
+We use the Software Package Data Exchange(R) (https://spdx.org[SPDX](R)) specification for communicating the licenses associated with software packages.
+====
 
 [[legaldoc-repo]]
 == Source Code Repositories
@@ -108,14 +111,14 @@ Copyright headers can take one of two forms. In the traditional form, the identi
 <3> Declared project licenses indicated using SPDX codes and expressions.
 <4> The names of the contributors and the nature of their contribution (this section may be excluded).
 
-Contributors should be consistent when expressing copyright on a particular file and in the `NOTICE` file. In some legal circles, the exact form of the copyright message must be used in summaries, including punctuation (e.g. the “Copyright (c) 2017 My Company, Inc” and “Copyright (c) 2017 My Company, Inc.” are considered different and distinct because of the period).
+Contributors should be consistent when expressing copyright on a particular file and in the <<legaldoc-notice,notice>> file. In some legal circles, the exact form of the copyright message must be used in summaries, including punctuation (e.g. the “Copyright (c) 2017 My Company, Inc” and “Copyright (c) 2017 My Company, Inc.” are considered different and distinct because of the period).
 
 [NOTE]
 ====
-Older versions of this template included the sentence “All rights reserved.” It is not wrong for this sentence to be included in the header, it is just not necessary as it is meaningless in a legal context. File headers that include this sentence do not need to be changed.
+Older versions of this template included the sentence “All rights reserved.” It is not wrong for this sentence to be included in the header, it is just not necessary, as it is meaningless in a legal context. File headers that include this sentence do not need to be changed.
 ====
 
-Alternatively, project teams can adopt a more generic copyright header for each file and include the identities of the copyright holders in the `NOTICE` file.
+Alternatively, project teams can adopt a more generic copyright header for each file and include the identities of the copyright holders in the _notice_ file.
 
 .Alternative Eclipse Public License 2.0 Copyright and License Header template
 [source]
@@ -167,7 +170,7 @@ In SPDX, disjunction is used to express dual licensing and conjunction is used t
 
 The license file contains the exact text of the project’s declared licenses in human readable form. The declared licenses are those that the project team’s content is distributed under. This does not, for example, include the licenses of third party content or incidental fragments of code that is incorporated into the project content (the license of any such content should be indicated in the source file itself and the notice file that accompanies it).
 
-If the project is multiply-licensed then the text of those licenses must be included. The file should start with a short paragraph that describes how the licenses are combined. E.g. dual licensing permits the consumer to choose which license they use the content under.
+If the project is multiply-licensed then the text of those licenses must be included. The file should start with a short paragraph that describes how the licenses are combined. This statement should in most cases, be exactly the same as the license statement in the file <<ip-copyright-headers,copyright and license headers>> (see the example below).
 
 Use inclusive disjunction (“or”) when talking about dual licenses (e.g. “choose one or the other (or both)”).
 
@@ -189,56 +192,112 @@ http://www.eclipse.org/legal/epl-2.0, or the Apache Software License
 [[legaldoc-notice]]
 == Notice Files
 
-Notice files are expressed in SPDX tag/value format, which is at least nominally human readable. The file must include basic project metadata, an expression of the declared project licenses, the copyright holder's, information regarding the licensing of any third party content, and a statement regarding the use of cryptography in cases where the content employs cryptography.
+Notice files are expressed in human-readable plain text format; human readable markup languages may be used. The file is conventionally named `NOTICE` and may include a suffix (e.g. `NOTICE.md`).
 
-Project metadata provides the identity of the originating project, along with pointers to the project’s website and canonical source code repository.
+The notice file must include basic project metadata, an expression of the declared project licenses, the copyright holder's, information regarding the licensing of any third party content, and a statement regarding the use of cryptography in cases where either the project code or third party content implements cryptography.
 
-The declared licenses (as indicated in the <<legaldoc-license,license file>>) are expressed using SPDX https://spdx.org/licenses/[license codes] and expression syntax.
+Project metadata provides the identity of the originating project, along with pointers to the project’s website and canonical source code repositories.
 
-Copyright holders are expressed as multiple complete copyright statements; with one complete entry on each line. Note that copyright holders need only be listed when they are not made explicit in the individual source file headers (though they may be included in both the headers and in the notice file).
+The declared licenses statement should in most cases, be exactly the same as the license statement in the file <<ip-copyright-headers,copyright and license headers>>.
 
-If cryptography is included with the content, then the following statement must be included in a comment in the notice file:
+Copyright holders are expressed as multiple complete copyright statements; with one complete entry on each line. In many cases, the copyright holder is different from the author (the copyright holder is very often the author's employer). When possible, the actual copyright holder should be listed. If, however, the actual copyright holder is difficult or impossible to determine, the identity of the author is sufficient for legal purposes.
+
+If cryptography is included with the content, then the following statement must be included in a comment in the _notice_ file:
 
 .Cryptography Statement
 ____
 Content may contain encryption software. The country in which you are currently may have restrictions on the import, possession, and use, and/or re-export to another country, of encryption software. BEFORE using any encryption software, please check the country's laws, regulations and policies concerning the import, possession, or use, and re-export of encryption software, to see if this is permitted.
 ____
 
-Other information, as deemed necessary by the project team may also be included in separate comment fields.
+Other information, as deemed necessary by the project team may also be included.
 
 .Example `NOTICE` file
 [source]
 ----
-# Document Metadata <1>
-SPDXVersion: SPDX-2.1
-DataLicense: CC0-1.0
+This content is produced and maintained by the Eclipse Dash, Tools for
+Committers project.
 
-# Project <2>
-Name: Eclipse Collections 
-Website: http://www.eclipse.org/collections
-Repo: git://git.eclipse.org/gitroot/collections/collections.git
+* Project home: https://projects.eclipse.org/projects/technology.dash
 
-# Package
-PackageName: eclipse-collections
-PackageDownloadLocation: git://git.eclipse.org/gitroot/collections/collections.git
-PackageLicenseDeclared: EPL-1.0 OR EDL-1.0 <3>
-PackageLicenseConcluded: EPL-1.0 OR EDL-1.0
-PackageLicenseInfoFromFiles: Apache-2.0 <4>
-PackageLicenseInfoFromFiles: BSD-3-Clause
-PackageLicenseInfoFromFiles: EPL-1.0
-PackageCopyrightText: <text>Copyright (c) 2015, 2017 Goldman Sachs. <5>
-Copyright (c) 2016 Bhavana Hindupur.
-Copyright (c) 2016 Shotaro Sano.
-</text>
+== Declared Project Licenses
+
+This program and the accompanying materials are made available under the terms
+of the Eclipse Public License 2.0 which is available at
+http://www.eclipse.org/legal/epl-2.0.html.
+
+== Source Code
+
+* http://git.eclipse.org/c/dash/org.eclipse.dash.dashboard.git
+* http://git.eclipse.org/c/dash/org.eclipse.dash.handbook.git
+* http://git.eclipse.org/c/dash/org.eclipse.dash.m4e.tools.git
+* http://git.eclipse.org/c/dash/org.eclipse.dash.maven.git
+* http://git.eclipse.org/c/dash/org.eclipse.dash.repositories.git
+* http://git.eclipse.org/c/dash/org.eclipse.dash.test.git
+
+== Copyright Holders
+
+Copyright 2011-2012 Aaron Digulla
+Copyright 2011 David Carver
+Copyright 2015 Business Systems Integration AG
+Copyright 2011 Webtide
+Copyright 2015-2017 The Eclipse Foundation
+
+== Third-party Content
+
+commons-codec-1.3.jar Version: 1.3 
+* License: Apache License, 2.0
+
+Yahoo YUI Version: 2.3.1  
+* License: New BSD license
+
+Services_JSON Version: 1.31 
+* License: Modified BSD 
+* Project: http://pear.php.net/pepr/pepr-proposal-show.php?id=198
+* Source: http://mike.teczno.com/JSON/
+
+YUI 2.6.0  Subset:  Build and Version: Assets  
+* License: New BSD license
+
+ckeditor Version: 3.0.1 
+* License: MPL 1.1, BSD
+* Project: http://ckeditor.com/
+* Source: http://ckeditor.com/download
+
+commons-vfs2 Version: 2.1 
+* License: Apache License, 2.0
+
+commons-net Version: 3.3 
+* License: Apache License, 2.0
+
+Google Gson Version: 2.2.4 
+* License: Apache License, 2.0
+
+Google Guava Version: 19.0 
+* License: Apache License, 2.0
+
+== Cryptography
+
+Content may contain encryption software. The country in which you are currently
+may have restrictions on the import, possession, and use, and/or re-export to
+another country, of encryption software. BEFORE using any encryption software,
+please check the country's laws, regulations and policies concerning the import,
+possession, or use, and re-export of encryption software, to see if this is
+permitted.
 ----
-<1> Metadata regarding the NOTICE file itself, including the SPDX version used.
-<2> The formal name of the project, link to the project website and canonical repository that contains the file.
-<3> An SPDX code or expression that describes the licenses by which the project code is made available. The _declared_ and _concluded_ values should be the same.
-<4> https://spdx.org/licenses/[SPDX codes] for licenses found in the project code (may include licenses that are different from the declared licenses).
-<5> A list of copyright statements take the form "Copyright (c) {year} {owner}"
 
-The actual text of the licenses should not be included in the notice file. The terms of the applicable licenses for all content must be observed (e.g. some license require that the text of the license be included with the distribution; in this case, position the license text as close to the corresponding content as possible).
+[NOTE]
+====
+The actual text of the project's declared licenses should not be included in the notice file (they are provided in the _license_ file). The terms of the other licenses included in the content, including third-party licenses, must be observed (e.g. some licenses require that the text of the license be included with the distribution; in this case, position the license text either in the _notice_ file or as close to the corresponding content as possible).
+====
 
-Tools exist to generate most of this information. The Eclipse Foundation uses https://github.com/nexB/scancode-toolkit[ScanCode Toolkit].
+[[legaldoc-faq]]
+=== Frequently Asked Questions
+
+[qanda]
+Do the _license_ and _notice_ files need to be named `LICENSE` and `NOTICE`?::
+
+No. If there are technical limitations, for example, that require that you select different names, you can do so. But for the sake of consistency for our communities we prefer that this convention be followed.
+
+How do I get help with this?::
 
 If you have any questions or concerns, please mailto:{legalEmail}[contact] the staff of the Eclipse Foundation.
