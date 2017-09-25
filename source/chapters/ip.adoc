@@ -78,7 +78,7 @@ IPZilla is accessible only by committers, Eclipse Foundation member company repr
 
 A Contribution Questionnaires (CQ) is the main interface between {forgeName} committers and the IP Team.
 
-A CQ is started when a committer completes a _questionnaire_ regarding a contribution or third party content. In literal terms, a CQ is a  record in _IPZilla+, that tracks the progress of the approval process. The CQ record is the primary communication channel between the submitting committer and the IP Team. CQ records persist indefinitely.
+A CQ is started when a committer completes a _questionnaire_ regarding a contribution or third party content. In literal terms, a CQ is a  record in IPZilla, that tracks the progress of the approval process. The CQ record is the primary communication channel between the submitting committer and the IP Team. CQ records persist indefinitely.
 
 All significant contributions of code to be maintained by {aForgeName} project, as defined by the Eclipse IP Due Diligence Process require a CQ.
 
