@@ -7,7 +7,9 @@ Where possible we adopt standards and conventions in order to be good open sourc
 
 [NOTE]
 ====
-This document describes a set of general guidelines for legal documentation. Projects that implement Eclipse Platform Plug-ins and Features should follow the <<legaldoc-plugins,Legal Documentation for Eclipse Platform Plug-ins and Features>>.
+This document describes a set of general guidelines for legal documentation. Projects that implement Eclipse Platform Plug-ins and Features under the EPL-2.0 should follow the <<legaldoc-plugins,Legal Documentation for Eclipse Platform Plug-ins and Features>>.
+
+Projects that implement Eclipse Platform Plug-ins and Features under the EPL-1.0 should follow the http://www.eclipse.org/legal/guidetolegaldoc-EPL-1.0.php[Guide to the Legal Documentation for Eclipse Plug-ins and Features under the EPL-1.0].
 ====
 
 [[legaldoc-repo]]

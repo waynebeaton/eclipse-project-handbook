@@ -1,5 +1,5 @@
 [[contact]]
-=== Getting Help
+= Getting Help
 
 If you have any questions, or are unsure of your responsibilities as a
 project lead or committer, please contact your project mentors or
