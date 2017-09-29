@@ -3,11 +3,11 @@
 
 The content developed and maintained by Eclipse Foundation open source projects is distributed via multiple channels, including distributed source code management systems, download servers, and software repositories. Further, open source project content is--by design--integrated into and distributed as part of the products of adopters. The legal obligations of the content must be observed in all forms of which the content is available.
 
-As much as is possible, we adopt standards and conventions in order to be good open source citizens.
+Where possible we adopt standards and conventions in order to be good open source citizens. We use the Software Package Data Exchange(R) (https://spdx.org[SPDX](R)) specification for communicating the licenses associated with software packages.
 
 [NOTE]
 ====
-We use the Software Package Data Exchange(R) (https://spdx.org[SPDX](R)) specification for communicating the licenses associated with software packages.
+This document describes a set of general guidelines for legal documentation. Projects that implement Eclipse Platform Plug-ins and Features should follow the <<legaldoc-plugins,Legal Documentation for Eclipse Platform Plug-ins and Features>>.
 ====
 
 [[legaldoc-repo]]
@@ -15,7 +15,7 @@ We use the Software Package Data Exchange(R) (https://spdx.org[SPDX](R)) specifi
 
 {forgeName} projects may have one or more source code repositories. Since it is possible for source code repositories to be cloned and rehosted, it is important that legal information is captured directly in the root of every repository.
 
-As described below, `LICENSE` and `NOTICE` files must be included in the root of every source code repository.
+As described below, <<legaldoc-license,_license_>> and <<legaldoc-notice,_notice_>> files must be included in the root of every source code repository.
 
 [source,subs="verbatim,attributes"]
 ----
@@ -30,7 +30,7 @@ git.{forgeMachineName}.org/project.git
 
 The distribution form of software artifacts (often in a compiled form) generated from a project’s source code repositories must also include legal information.
 
-A license and notice file, as described below, must be included in the root of every unit-level distribution artifact (e.g. `JAR` file). It is a best practice to name these files `LICENSE` and `NOTICE`, respectively. Variations of these names may be used in cases where technical limitations require that alternatives be used. In the most general case, these files will appear in the root of distribution unit, but the exact location varies by technology type.
+_License_ and _notice_ files, as described below, must be included in the root of every unit-level distribution artifact (e.g. `JAR` file). In the most general case, these files will appear in the root of distribution unit, but the exact location varies by technology type.
 
 For content delivered as Java archive (`JAR`) files, for example, the legal files should be placed in the `META-INF` directory.
 
@@ -55,7 +55,7 @@ Project teams should consult with their PMCs for input and advice regarding alte
 [[legaldoc-end-user]]
 == End User Content
 
-All products delivered by the project—including executables, websites, documentation, and help—must include certain notices. An executable might, for example, provide this information in an _About Dialog_; documentation might include a notice in either the pre- or post-amble, or a website might provide this information in a common footer, or a dedicated page.
+All products delivered by the project—including executables, websites, documentation, and help must include certain notices. An executable might, for example, provide this information in an _About Dialog_; documentation might include a notice in either the pre- or post-amble, or a website might provide this information in a common footer, or a dedicated page.
 
 The notices must include one or more copyright statement, the assertion of trademarks owned by the Eclipse Foundation on behalf of the project, indication of third party trademarks in use, and--if applicable--a cryptography notice.
 
@@ -94,9 +94,9 @@ Copyright headers can take one of two forms. In the traditional form, the identi
 [source]
 ----
 /********************************************************************************
- * Copyright (c) {date} {owner}[ and others]
+ * Copyright (c) {date} {owner}[ and others] <1>
  * 
- * This program and the accompanying materials are made available under the
+ * This program and the accompanying materials are made available under the <2>
  * terms of the Eclipse Public License 2.0 which is available at
  * http://www.eclipse.org/legal/epl-2.0.
  * 
@@ -111,11 +111,11 @@ Copyright headers can take one of two forms. In the traditional form, the identi
 <3> Declared project licenses indicated using SPDX codes and expressions.
 <4> The names of the contributors and the nature of their contribution (this section may be excluded).
 
-Contributors should be consistent when expressing copyright on a particular file and in the <<legaldoc-notice,notice>> file. In some legal circles, the exact form of the copyright message must be used in summaries, including punctuation (e.g. the “Copyright (c) 2017 My Company, Inc” and “Copyright (c) 2017 My Company, Inc.” are considered different and distinct because of the period).
+Contributors should be consistent when expressing copyright on a particular file and in the <<legaldoc-notice,notice>> file. In some legal circles, the exact form of the copyright message must be used in summaries, including punctuation (e.g. the “Copyright (c) 2017 My Company, Inc” and “Copyright (c) 2017 My Company, Inc.” may be considered different and distinct because of the period).
 
 [NOTE]
 ====
-Older versions of this template included the sentence “All rights reserved.” It is not wrong for this sentence to be included in the header, it is just not necessary, as it is meaningless in a legal context. File headers that include this sentence do not need to be changed.
+Older versions of this template included the sentence “All rights reserved.” It is not wrong for this sentence to be included in the header; it is just not necessary. File headers that include this sentence do not need to be changed.
 ====
 
 Alternatively, project teams can adopt a more generic copyright header for each file and include the identities of the copyright holders in the _notice_ file.
@@ -170,7 +170,7 @@ In SPDX, disjunction is used to express dual licensing and conjunction is used t
 
 The license file contains the exact text of the project’s declared licenses in human readable form. The declared licenses are those that the project team’s content is distributed under. This does not, for example, include the licenses of third party content or incidental fragments of code that is incorporated into the project content (the license of any such content should be indicated in the source file itself and the notice file that accompanies it).
 
-If the project is multiply-licensed then the text of those licenses must be included. The file should start with a short paragraph that describes how the licenses are combined. This statement should in most cases, be exactly the same as the license statement in the file <<ip-copyright-headers,copyright and license headers>> (see the example below).
+If the project code is distributed under multiple licenses then the text of those licenses must be included. The file should start with a short paragraph that describes how the licenses are combined. This statement should in most cases, be exactly the same as the license statement in the file <<ip-copyright-headers,copyright and license headers>> (see the example below).
 
 Use inclusive disjunction (“or”) when talking about dual licenses (e.g. “choose one or the other (or both)”).
 
@@ -198,9 +198,9 @@ The notice file must include basic project metadata, an expression of the declar
 
 Project metadata provides the identity of the originating project, along with pointers to the project’s website and canonical source code repositories.
 
-The declared licenses statement should in most cases, be exactly the same as the license statement in the file <<ip-copyright-headers,copyright and license headers>>.
+The declared licenses statement should in most case, be exactly the same as the license statement in the file <<ip-copyright-headers,copyright and license headers>>.
 
-Copyright holders are expressed as multiple complete copyright statements; with one complete entry on each line. In many cases, the copyright holder is different from the author (the copyright holder is very often the author's employer). When possible, the actual copyright holder should be listed. If, however, the actual copyright holder is difficult or impossible to determine, the identity of the author is sufficient for legal purposes.
+Copyright holders are expressed as multiple complete copyright statements; with one complete entry on each line. In many cases, the copyright holder is different from the author (the copyright holder is very often the author's employer).
 
 If cryptography is included with the content, then the following statement must be included in a comment in the _notice_ file:
 
@@ -298,6 +298,6 @@ Do the _license_ and _notice_ files need to be named `LICENSE` and `NOTICE`?::
 
 No. If there are technical limitations, for example, that require that you select different names, you can do so. But for the sake of consistency for our communities we prefer that this convention be followed.
 
-How do I get help with this?::
+How do I get help?::
 
-If you have any questions or concerns, please mailto:{legalEmail}[contact] the staff of the Eclipse Foundation.
+If you have any questions or concerns, contact mailto:{legalEmail}[{legalEmail}].
