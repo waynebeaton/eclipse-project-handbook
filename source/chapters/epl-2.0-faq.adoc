@@ -1,0 +1,428 @@
+:toc!:
+:toc-placement!: 
+:sectlinks:
+
+[[epl-faq]]
+= Eclipse Public License (EPL) Frequently Asked Questions
+
+For informational purposes only.
+
+This FAQ attempts to provide answers to commonly asked questions related to the https://www.eclipse.org/legal/epl-2.0[Eclipse Public License (EPL)]. It is provided for informational purposes only. It is not part of, nor does it modify, amend, or supplement the terms of the EPL. The EPL is a legal agreement that governs the rights granted to material licensed under it, so please read it carefully. If there is any conflict between this FAQ and the EPL, the terms of the EPL shall govern. This FAQ should not be regarded as legal advice. If you need legal advice, you must contact your own lawyer.
+
+:sectnums:
+
+[[epl-overview]]
+== Overview
+
+[[h.2487uaelxj1l]]
+=== What is the latest version of the EPL?
+
+Version 2.0 is the latest version of the Eclipse Public License
+
+[[h.wswwmbk7gui7]]
+=== What is the SPDX code for the Eclipse Public License, Version 2.0?
+
+EPL-2.0
+
+[[h.hz76esowpykz]]
+=== Why did the Eclipse Foundation create a new version of the EPL?
+
+The EPL-1.0 is very close to the Common Public License; and as such, its terms are essentially 16 years old. A lot of the motivation was to simply update the license to reflect the norms and expectations of an industry that has changed a lot in that time.
+
+[[h.a0eux401qus]]
+=== What are the major changes between EPL-1.0 and EPL-2.0?
+
+* The term of art is now referred to as "module" rather than "file";
+* The choice of law provisions has been removed;
+* The license is now suitable for scripting languages such as JavaScript; and
+* The license now includes an option to add a secondary license for GPL-2.0+ compatibility.
+
+[[h.60mjudroo8e5]]
+=== Why should I Re-license from EPL-1.0 to EPL-2.0?
+
+The EPL-1.0 has been deprecated; and in order to reduce license proliferation, the Eclipse open source project community will begin to migrate to the new EPL-2.0. Each Eclipse project will need to go through the process of updating their project license and license headers to specify EPL-2.0. Users and adopters of Eclipse projects should expect the next simultaneous release of each Eclipse project will be using EPL-2.0.
+
+[[epl-secondary]]
+== Secondary License
+
+[[h.w1np1lrpht6k]]
+=== Why was the concept of Secondary Licenses added to the EPL-2.0?
+
+A number of Eclipse projects require GPL compatibility. Previously, our solution to this was to dual-license projects under the EPL-1.0 and the BSD. However, this had the effect of eliminating the copyleft provisions which are the norm within the Eclipse community. As a result, this was a pragmatic approach to resolve this issue.
+
+[[h.it3upld1gcpe]]
+=== What is the benefit of content to be available under EPL-2.0 with a Secondary License clause?
+
+The notion of Secondary Licenses is intended to permit combining content licensed under the EPL-2.0 with an otherwise incompatible license, specifically the GNU General Public License, v2.0 or greater. This means that the content that includes a Secondary License clause may be combined with content distributed under the terms of that Secondary License, and the combined content can be then be collectively distributed under the terms of that Secondary License.
+
+For example, content that is licensed under the EPL-2.0 with a GPL-2.0 Secondary License can be combined with content that is licensed under the GPL-2.0, and then distributed as combined work under the GPL-2.0.
+
+Content that includes a Secondary License clause may link directly with content that is licensed under the terms of that Secondary License (and vice-versa, subject to the terms of the Secondary License).
+
+[[h.lgjcpvoq08a9]]
+=== Is EPL-2.0 with the Secondary License clause considered dual licensing?
+
+It is extremely close to dual licensing. The EPL-2.0 is the only license, until such time as it is combined and distributed with a work under the Secondary License. After such time, any recipient of the combined work can consider the content licensed under the Secondary License. The original work remains under the EPL-2.0 and is never really dual-licensed. Once a downstream adopter has received the content under the Secondary License, they can modify and further distribute it solely under the terms of the Secondary License.
+
+The EPL-2.0 file headers should remain on the source code content even if it has been made available under the Secondary License.
+
+[[h.ofnb7ks8rr0y]]
+=== Some organizations do not use GPL-licensed content. Will this impact the adoption of Eclipse projects licensed EPL-2.0 with the Secondary License clause?
+
+While the EPL-2.0 has a concept called "Secondary Licenses" (which allows downstream adopters of projects which use the Secondary License clause to combine EPL-2.0 licensed code with GPL-licensed code and distribute the combination under the GPL), should an adopter not want to use the Secondary License (e.g. GPL-2.0 with Classpath Exception), then the entire construct can simply be ignored. The code can be consumed purely under the EPL-2.0 without any concerns.
+
+If the project does not use the Secondary License clause, then there is no issue.
+
+[[h.7hwnw6ty29pj]]
+=== If an Eclipse Top Level Project (TLP) is licensed EPL-2.0 with the Secondary License clause, is this license a hard requirement for the sub projects of that TLP?
+
+Charter statements specify the default licenses for the projects within the top-level project. Other license(s) can be used with the approval of the Project Management Committee (PMC) and in certain circumstances the Eclipse Board of Directors.
+
+[[h.nzy2s8vsuxe2]]
+=== Should Eclipse Foundation dual licensed projects (EPL-1.0 OR EDL-1.0) re-license to EPL-2.0 with the Secondary License clause?
+
+If your project is currently using a dual licensing scheme involving the Eclipse Public License v1.0 and the Eclipse Distribution License v1.0 (which is BSD 3 Clause), you should consider relicensing to the Eclipse Public License v2.0 with a Secondary License in order to retain the copyleft provisions of the EPL. Note that because the BSD permits re-licensing, you would not need the explicit permission of the contributors to the project. This specific re-licensing can be decided and completed at the project team's discretion. (Please see the Re-licensing FAQ section below for further details.)
+
+Each project must make its own determination of the costs and benefits of such a re-licensing.
+
+[[h.nmhx2u70socl]]
+=== I'm familiar with using code under the dual license of CDDL or GPL-2.0 with Classpath Exception. Is the use of EPL-2.0 with the Secondary License clause of GPL-2.0+ with Classpath Exception the same scenario?
+
+While the EPL-2.0 is similar in many ways to the CDDL, what the Secondary License clause says is that if a downstream adopter wants to take the EPL-2.0 code and combine it with GPLv2+CE code and ship the resulting combined work under the GPLv2+CE they can do so. Someone who receives that combined work could conceivably then fork the code under the GPLv2+CE, however it would be our preference that modifications be contributed upstream to the original EPL-2.0 licensed project.
+
+[[h.cyyo81gn4npa]]
+=== Does the use of the EPL-2.0 with the Secondary License clause mean I can never remove the EPL-2.0 license?
+
+If you receive a combined work which is distributed solely under the Secondary License, you may use, modify, and distribute that code under those Secondary License terms, rather than the EPL-2.0. 
+
+However, it would be our preference that:
+
+* modifications be contributed upstream to the original EPL-2.0 licensed project; and
+* you not remove the EPL-2.0 file headers to maintain the origin of the code.
+
+[[h.etxgak6rgdy1]]
+=== If I use EPL-2.0 licensed content with the Secondary License clause specifying GPL-2.0+ with Classpath Exception and I combine the work with GPL with CE licensed content and make the content available under the GPL-2.0+ with CE only, is the EPL-2.0 license effectively removed and no longer applicable?
+
+At this point the combination is licensed only under the GPL 2.0 with CE. The original content is still available under the EPL-2.0 with the Secondary License clause. 
+
+[[h.8noir4xue973]]
+=== Is there an advantage to this new primary/secondary approach vs a dual license approach?
+
+Yes. The Secondary License approach provides the flexibility to use content licensed under the EPL-2.0 with a Secondary License clause in GPL-licensed projects while maintaining the original code base under the EPL-2.0. This does not prevent forks of the code base where it makes sense, but it does try to maintain license compatibility.
+
+[[h.aofuc4dbllpj]]
+=== Can I remove Exhibit A from the license text if do not intend to enable a Secondary License?
+
+No. Exhibit A forms part of the License Agreement and thus cannot be removed. Exhibit A is provided in order to allow the source code to be made available under a secondary license(s). The EPL-2.0 stipulates applicable secondary licenses are the GNU General Public License, Version 2.0, or any later versions of that license, including any exceptions or additional permissions as identified by the initial Contributor.
+
+If you do not wish to enable any Secondary Licenses for content that you create, then you can basically ignore the Exhibit A. If you do want to enable one or more Secondary Licenses, then you should include a copy of the notice statement in Exhibit A in your file header copyright notices, and/or any additional notices you provide to your downstream adopters.
+
+[[h.lza2unrion3b]]
+=== Can I use other licenses as a Secondary License other than the GPL-2.0 or later?
+
+No. The provisions of the EPL-2.0 stipulates Secondary License "means either the GNU General Public License, Version 2.0, or any later versions of that license, including any exceptions or additional permissions as identified by the initial Contributor"
+
+[[h.r4jspab0hx2c]]
+=== How do I make my new project GPL compatible?
+
+You must re-license to EPL-2.0 adding GPL Compatibility as per Exhibit A.
+
+[[h.yixdeq46521o]]
+=== Does including a Secondary License(s) clause entitle an Eclipse Project to distribute third-party content licensed under the terms of that Secondary License?
+
+No, the inclusion of a Secondary License clause does not permit you to distribute GPL licensed third-party content from Eclipse Foundation Projects. Please consult with the Eclipse Foundation IP team if your Eclipse Foundation project has a requirement for LGPL or GPL-licensed third-party content.
+
+[[h.hsnsfg4e0htq]]
+=== With EPL-2.0, would the optional GPL compatibility clause work for LGPL code as well?
+
+No, it does not. The EPL and LGPL are already compatible licenses if we are talking about components and not cutting-and-pasting code. Our aversion to the LGPL is a business decision, not a legal one. 
+
+Should an Eclipse Foundation project have a strong and unavoidable requirement for an LGPL dependency, we can seek a Board exception.
+
+[[epl-relicensing]]
+== Re-licensing
+
+[[h.tci84nlsqpgw]]
+=== How Do I Re-license from EPL-1.0 to EPL-2.0?
+
+The EPL allows new versions of the license to be adopted by projects with little work. Specifically, the license states that, "Each new version of the Agreement will be given a distinguishing version number. The Program (including Contributions) may always be distributed subject to the version of the Agreement under which it was received. In addition, after a new version of the Agreement is published, Contributor may elect to distribute the Program (including its Contributions) under the new version."
+
+So, a project can use the new version by simply updating the file headers and notices.
+
+Note that it is good community practice to discuss this change on your public mailing lists, and to make every attempt to ensure that: (a) downstream users are aware of the change, and (b) that there is a rough consensus amongst the committers that this is the right time to switch.
+
+[[h.cktcxkzh8ks4]]
+=== How to Re-license from EPL-1.0 to EPL-2.0 with Secondary License?
+
+You must gain permission from all copyright holders to re-license the content
+
+[[h.tintzo3jnku1]]
+=== What is the process for Eclipse Foundation projects to re-license to EPL-2.0 with Secondary License?
+
+Eclipse projects must ensure that all authors of contributions, including both committers and non-committer contributors, agree to re-license their work under the new terms. For those individuals whose contribution was made in the regular course of their employment by an Eclipse Member Organization, their respective employer has or will give consent on their behalf. Individual contributors, however, will need to give a personal authorization.
+
+Projects must create a record in the project's Bugzilla product with a description that very clearly states the nature of the change and explicitly request all copyright owners to explicitly approve the relicensing.
+
+For example:
+====
+The project team would like to re-license the existing project content under the Eclipse Public License version 2.0 with secondary license compatibility with the GNU General Public License version 2.0.
+
+The Eclipse Foundation must ensure that all authors of contributions, including both committers and non-committer contributors, agree to re-license their work under the new licensing scheme.
+
+Content owners must express their agreement by providing a +1.
+====
+Note that every contributor (i.e. the authors of every commit) or their employer is a copyright holder. A single statement is required for an organization that holds copyrights via multiple authors.
+
+When every copyright holder has added their approval, send a note to license@eclipse.org to request review and final approval.
+
+[[h.q72cnghf29k0]]
+=== What project documentation changes do I need to make after switching to the EPL-2.0 only with no Secondary License?
+
+Update all file headers, about files and notice files. All references to the license must be updated to EPL-2.0. Replace occurrences of the SUA with the EPL-2.0 license text.
+
+File headers should follow this example:
+
+.Eclipse Public License 2.0 Copyright and License Header example
+[source]
+----
+/*********************************************************************
+* Copyright (c) {date} {owner} [and others]
+*
+* This program and the accompanying materials are made
+* available under the terms of the Eclipse Public License 2.0
+* which is available at https://www.eclipse.org/legal/epl-2.0/
+*
+* SPDX-License-Identifier: EPL-2.0
+**********************************************************************/
+----
+
+[[h.aq5xwcjmpy2a]]
+=== What project documentation changes do I need to make after switching to the EPL-2.0 with Secondary License?
+
+Update all file headers, about files and notice files. All references to the license must be updated to EPL-2.0 including the Secondary License information as well. Replace occurrences of the SUA with the EPL-2.0 license text.
+
+File headers should follow this example.
+
+.Secondary License File Header example
+[source]
+----
+********************************************************************************
+* Copyright (c) {date} {owner} [and others]
+*
+* This program and the accompanying materials are made available under the
+* terms of the Eclipse Public License 2.0 which is available at
+* http://www.eclipse.org/legal/epl-2.0.
+*
+* This Source Code may also be made available under the following Secondary
+* Licenses when the conditions for such availability set forth in the Eclipse
+* Public License, v. 2.0 are satisfied: GNU General Public License, version 2
+* with the GNU Classpath Exception which is
+* available at https://www.gnu.org/software/classpath/license.html.
+*
+* SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 
+********************************************************************************/
+----
+
+The first paragraph defines the basic terms. The second paragraph must be included to describe how secondary licenses apply. In this example, the GPL-2.0 with an exception applies. The generally-accepted names of the licenses and exceptions must be used.
+
+Contact the EMO for assistance in crafting a non-obvious copyright and license header. 
+
+[[epl-general]]
+== General Questions
+
+[[h.mz8pxljvc07w]]
+=== Is my EPL-2.0 licensed project GPL compatible by default?
+
+No. EPL-2.0 licensed projects may explicitly add GPL compatibility by way of adding a Secondary License as per Exhibit A -- Form of Secondary Licenses Notice. See Section 3.2 of the EPL-2.0. Please note adding a secondary license is considered a relicensing exercise and all copyright holders must agree to the license change.
+
+[[h.gry4ochk5i85]]
+=== Should EPL-1.0 projects accept contributions under EPL-2.0?
+
+Since it is extremely easy to re-license from EPL-1.0 to EPL-2.0, we suggest projects remain under the EPL-1.0 until the project is ready to switch fully to EPL-2.0.
+
+[[h.qr04zt7270jy]]
+=== Can I modify the EPL-2.0 License?
+
+No. Everyone is permitted to copy and distribute copies of the Agreement; however, in order to avoid inconsistency, the agreement is copyrighted and may only be modified by the Agreement Steward who reserves the right to publish new versions (including revisions) of this Agreement from time to time. No one other than the Agreement Steward has the right to modify the Agreement.
+
+[[h.rqhk20ygse0e]]
+=== Is the EPL-2.0 better than EPL-1.0 for jurisdictions outside of the USA?
+
+The EPL-2.0 removes all mention of venue and choice of law.
+
+[[h.tokw8l7u084o]]
+=== Does EPL-2.0 change the scope of the copyleft?
+
+The EPL-2.0 continues to be a weak copyleft license. In its simplest terms, that means that if you have modified EPL-2.0 licensed source code and you distribute that code or binaries built from that code outside y. our company, you must make the source code available under the EPL-2.0.
+
+[[h.jpf1lpypxbyb]]
+=== Did the patent license terms change?
+
+No.
+
+[[h.4tc4zmwxqcf6]]
+=== Can I still use EPL-1.0?
+
+Yes. However, the version has been deprecated and in order to reduce license proliferation, we suggest that new projects consider adopting the EPL-2.0.
+
+[[h.nye3xp5x2dce]]
+=== Do all Eclipse Foundation members approve of the EPL?
+
+Yes, the Eclipse Foundation Board of Directors unanimously approved the new version of the EPL. Future members must agree to abide by the EPL and the Intellectual Property Policy as part of joining the Eclipse Foundation and signing the https://www.eclipse.org/org/documents/Eclipse%2520MEMBERSHIP%2520AGMT%25202003_11_10%2520Final.pdf[Eclipse Foundation Membership Agreement].
+
+[[h.ctmhioag9rse]]
+=== Is the EPL approved by the Open Source Initiative (OSI)?
+
+Yes, the EPL has been approved. Version 2.0 was approved in August 2017. See the complete http://opensource.org/licenses/[list of OSI-approved licenses].
+
+[[h.vtzs3trm64du]]
+=== Is the EPL an approved Free Software Foundation License (FSF)?
+
+Yes, the EPL-2.0 has been added to the official license list of the Free Software Foundation. While the FSF still considers the EPL-2.0 incompatible with the GPL, it recognizes the EPL-2.0 with Secondary License explicitly offers the option of designating content available under the GNU GPL version 2 or later. See the complete list of https://www.gnu.org/licenses/license-list.html[FSF Licenses]. 
+
+[[h.248ll7svxcyn]]
+=== How are the parties defined in the EPL?
+
+There are two types of parties to the EPL. They are "Contributors" and "Recipients." Contributors include an initial Contributor, who is the person or entity that creates the initial code distributed under the EPL, and subsequent Contributors, who originate changes or additions to the code (the combination referred to as the "Program"). Any person or entity that redistributes the Program is also a Contributor. Recipients include anyone who receives the Program under the EPL, including Contributors.
+
+[[h.973c2qv6zg27]]
+=== Can a Contributor remain anonymous?
+
+No. Except for those who simply redistribute the Program, each Contributor must identify itself as the originator of its Contribution in a way that later Recipients will be able to readily see.
+
+[[h.u8ivm25hel7]]
+=== What rights do Contributors grant Recipients under EPL?
+
+Contributors license Recipients under the rights that they have in their Contributions.
+
+[[h.5ucozq4kvv7o]]
+=== Does the EPL allow me to take the Source Code for a Program licensed under it and include all or part of it in another program licensed under the GNU General Public License (GPL), Berkeley Software Distribution (BSD) license or other Open Source license?
+
+No. Only the owner of software can decide whether and how to license it to others. Contributors to a Program licensed under the EPL understand that source code for the Program will be made available under the terms of the EPL. Unless you are the owner of the software or have received permission from the owner, you are not authorized to apply the terms of another license to the Program by including it in a program licensed under another Open Source license. 
+
+However, if the content has been made available under the EPL-2.0 with Secondary License, the content may be distributed under the terms of that Secondary License while maintaining the original code base under the EPL-2.0.
+
+[[h.fn86eyf5mvhs]]
+=== Is my EPL-2.0 licensed project GPL compatible by default?
+
+No. EPL-2.0 licensed projects may explicitly add GPL compatibility by way of adding a Secondary License as per Exhibit A -- Form of Secondary Licenses Notice. See Section 3.2 of the EPL-2.0. Please note adding a secondary license is considered a relicensing exercise and all copyright holders must agree to the license change.
+
+[[h.obyumhvpl7gl]]
+=== Can I take a Program licensed under the EPL, compile it without modification, and commercially license the result?
+
+Yes. You may compile a Program licensed under the EPL without modification and commercially license the result in accordance with the terms of the EPL.
+
+[[h.u8dlu1sf2f98]]
+=== If I take a Program licensed under the EPL, compile it without modification, and commercially license the result, do I need to include the source code with the object code distribution?
+
+No. But you do need to include a statement indicating where the source code is available and information on how to obtain it. The source code may be provided by you, or you may choose to provide a reference to where the source code originated from, such as the correct repository hosted at git.eclipse.org.
+
+[[h.n9g0wv1ltlut]]
+=== When I incorporate a portion of a Program licensed under the EPL into my own proprietary product distributed in object code form, can I use a single license for the full product, in other words, covering the portion of the Program plus my own code?
+
+Yes. The object code for the product may be distributed under a single license as long as it references the EPL portion and complies, for that portion, with the terms of the EPL.
+
+[[h.vaqoo586ejdj]]
+=== The EPL states that it can only be changed by the Agreement Steward. Does a Contributor have the choice of redistributing a previously distributed Program under the old or the new version of the EPL?
+
+While Contributions are licensed under the version of the License under which they are originally distributed, the EPL provides for the ability of any Contributor to choose between that version or a later version.
+
+[[h.8upxunejvnvc]]
+=== If I modify a Program licensed under the EPL, but never distribute it to anyone else, do I have to make my modifications available to others?
+
+No. If you do not distribute the modified Program, you do not have to make your modifications available to others.
+
+[[h.2c51ohn0wg82]]
+=== If I modify a Program licensed under the EPL and distribute the object code of the modified Program, must I make the source code available?
+
+Yes. By distributing the modified Program, even if it is only a free version of the object code, you are obligated to make the source code to the modified Program available to others.
+
+[[h.xr574gmz4aly]]
+=== If I write a module to add to a Program licensed under the EPL and distribute the object code of the module along with the rest of the Program, must I make the source code to my module available in accordance with the terms of the EPL?
+
+No, as long as the module is not a Modified Work of the Program.
+
+[[h.s5gxmwu1579y]]
+=== Does the EPL offer any warranty with regard to the Program?
+
+No. The Program released under the EPL is provided on an "as is" basis, without warranties or conditions of any kind.
+
+[[h.gpf2fucdwyo4]]
+=== I am starting my own open source software project. Does the Eclipse Foundation allow me to use the EPL for my project?
+
+Yes. The EPL is an OSI-approved open source license and may be used unaltered by projects regardless of where they are hosted.
+
+[[h.kozlxbolal4y]]
+=== What licenses are acceptable for third-party code redistributed by Eclipse projects?
+
+Eclipse views license compatibility through the lens of enabling successful commercial adoption of Eclipse technology in software products and services. We wish to create a commercial ecosystem based on the redistribution of Eclipse software technologies in commercially licensed software products. Determining whether a license for third-party code is acceptable often requires the input and advice of Eclipse's legal advisors.
+
+Our list of the most common licenses approved for use by third-party code redistributed by Eclipse Foundation Projects is http://www.eclipse.org/org/documents/licenses.php[here]. This list is not exhaustive. If you have any questions, please contact license@eclipse.org.
+
+[[h.ny475e9r1v2u]]
+=== Is an OSI-compliant license a requirement for all third-party code redistributed by Eclipse projects?
+
+Eclipse fully supports the Open Source Initiative's certification of open source licenses, and the Eclipse Public License is certified as such. However, there are licenses for software content which meet Eclipse's requirements for compatibility with the EPL and downstream commercial re-distribution that are not OSI certified, and Eclipse projects may make use of such licenses after review and approval by the Eclipse Foundation.
+
+The reverse is also true: there are OSI-compliant licenses are not compatible with the EPL or do not permit downstream commercial re-distribution. Such licenses are not used by Eclipse projects.
+
+[[h.sfzscklic49g]]
+=== Are the Eclipse Public License (EPL) and the General Public License (GPL) compatible?
+
+Unless a Secondary License has been specified in the EPL-2.0, the EPL and the GPL are not compatible in any combination where the result would be considered either: (a) a "derivative work" (which Eclipse interprets consistent with the definition of that term in the U.S. Copyright Act ) or (b) a work "based on" the GPL code, as that phrase is used in the http://www.gnu.org/licenses/old-licenses/gpl-2.0.html[GPLv2], http://www.fsf.org/licensing/licenses/gpl.html[GPLv3] or the http://www.fsf.org/licensing/licenses/gpl-faq.html[GPL FAQ] as applicable. Further, you may not combine EPL and GPL code in any scenario where source code under those licenses are both the same source code module.
+
+Based upon the http://www.fsf.org/licensing/licenses/[position] of the Free Software Foundation, you may not combine EPL and GPL code in any scenario where linking exists between code made available under those licenses. The above applies to both GPL version 2 and GPL version 3.
+
+[[h.30qunqoq5upx]]
+=== How do I specify dual licensing in my file headers?
+
+Dual licensing should be specified by listing the license names and URLs, using inclusive disjunction ("or") to indicate choice from the consumer's perspective (i.e. the consumer can choose to accept the content under one license or the other) as in the example below.
+
+.Dual licensing file header example.
+[source]
+----
+/********************************************************************************
+ * Copyright (c) {date} {owner}[and others]
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0, or the Apache License, Version 2.0
+ * which is available at https://www.apache.org/licenses/LICENSE-2.0.
+ *
+ * SPDX-License-Identifier: EPL-2.0 OR Apache-2.0
+ ********************************************************************************/
+----
+
+In the past, our projects have used a conjunctive "and" from the creator's perspective (i.e. the creator makes the content available under both licenses). Unless explicitly stated otherwise, content that uses "and" should be interpreted as equivalent in meaning to inclusive disjunction.
+
+[[epl-derivative]]
+== Derivative Works
+
+[[h.fxtpdwpym0hx]]
+=== Some open source software communities specify what they mean by a "derivative work". Does the Eclipse Foundation have a position on this?
+
+As described in section 1 of the Eclipse Public License,
+
+[quote]
+____
+"Derivative Works" shall mean any work, whether in Source Code or other form, that is based on (or derived from) the Program and for which the editorial revisions, annotations, elaborations, or other modifications represent, as a whole, an original work of authorship.
+____
+
+The Eclipse Foundation interprets the term "derivative work" in a way that is consistent with the definition in the U.S. Copyright Act, as applicable to computer software. You will need to seek the advice of your own legal counsel in deciding whether your program constitutes a derivative work.
+
+[[h.dywt3xhx2jg]]
+=== Some free software communities say that linking to their code automatically means that your program is a derivative work. Is this the position of the Eclipse Foundation?
+
+No, the Eclipse Foundation interprets the term "derivative work" in a way that is consistent with the definition in the U.S. Copyright Act, as applicable to computer software. Therefore, linking to Eclipse code might or might not create a derivative work, depending on all of the other facts and circumstances.
+
+[[h.wg4sdtz3fnc5]]
+=== I'm programmer not a lawyer, can you give me a clear-cut example of when something is or is not a derivative work?
+
+If you have made a copy of existing Eclipse code and made a few minor revisions to it, that is a derivative work. If you've written your own Eclipse Platform plug-in with 100% your own code to implement functionality not currently in Eclipse, then it is not a derivative work. Scenarios between those two extremes will require you to seek the advice of your own legal counsel in deciding whether your program constitutes a derivative work.
+
+For clarity, merely interfacing or interoperating with Eclipse Platform plug-in APIs (without modification) does not make an Eclipse Platform plug-in a derivative work.
+
+[[h.xu4ooq8g5mx8]]
+=== Many Eclipse tools and wizards use code templates which are included in the application that is generated. Is the code generated by these tools considered a derivative work that must be licensed under the EPL?
+
+Unfortunately, there is no clear answer to this question. To the extent that the code generated by a wizard is purely functional in nature and therefore not the proper subject matter for copyright protection, it could be argued that it is not subject to copyright protection, and therefore is not a derivative work. An example of that type of code would include calls to APIs or other technical instructions which are dictated by functional or technical requirements. Moreover, to the extent the generated code is a very small part of the final overall work, there is an argument that such use would be di minimis, and the final product or application should not be considered to be a derivative work. Finally, to the extent developers who use the generated code make many changes and additions to the code, there is also an argument that the resultant application is not a derivative work. Of course, these are just arguments and not "bright line" tests, and therefore each position could be subject to differing viewpoints. Eclipse cannot take a position on this issue, as it will ultimately be a question of the facts and circumstances associated with a particular use.
