@@ -18,7 +18,7 @@ A project cannot make a <<release, release>> until the due diligence on the IP c
 
 Create a <<ip-cq,contribution questionnaire>> to submit the initial contribution for review by the IP Team.
 
-The IP Team is not able to review the history of project code being moved to {aForgeName} project. The IP Team will review a snapshot of the project code and that snapshot, the initial contribution, must be the first commit in the {forgeName} repository. If your project uses an existing GitHub repository, the Webmaster team will help you obscure the the history into a hidden branch. 
+The IP Team is not able to review the history of project code being moved to {aForgeName} project. The IP Team will review a snapshot of the project code and that snapshot, the initial contribution, must be the first commit in the {forgeName} repository. If your project uses an existing GitHub repository, the Webmaster team will help you obscure the history into a hidden branch. 
 
 [[ip-project-code]]
 === Project Code Contributions
@@ -76,7 +76,7 @@ IPZilla is accessible only by committers, Eclipse Foundation member company repr
 [[ip-cq]]
 ==== Contribution Questionnaires
 
-A Contribution Questionnaires (CQ) is the main interface between {forgeName} committers and the IP Team.
+A Contribution Questionnaire (CQ) is the main interface between {forgeName} committers and the IP Team.
 
 A CQ is started when a committer completes a _questionnaire_ regarding a contribution or third party content. In literal terms, a CQ is a  record in IPZilla, that tracks the progress of the approval process. The CQ record is the primary communication channel between the submitting committer and the IP Team. CQ records persist indefinitely.
 
