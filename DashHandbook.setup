@@ -21,11 +21,13 @@
       xsi:type="setup.p2:P2Task">
     <requirement
         name="org.eclipse.gef4.dot.sdk.feature.group"/>
+    <repository
+        url="http://download.eclipse.org/tools/gef/gef4/updates/releases"/>
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task">
     <requirement
-        name="org.eclipse.mylyn.wikitext.asciidoc.core"/>
+        name="org.eclipse.mylyn.wikitext.asciidoc"/>
     <requirement
         name="org.eclipse.mylyn.wikitext.asciidoc.ui"/>
     <repository
