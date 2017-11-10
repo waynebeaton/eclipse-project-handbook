@@ -6,11 +6,15 @@
   
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <apache.tika.version>1.16</apache.tika.version>
         <asciidoctor.maven.plugin.version>1.5.6</asciidoctor.maven.plugin.version>
         <asciidoctorj.version>1.5.6</asciidoctorj.version>
         <asciidoctorj.diagram.version>1.5.4.1</asciidoctorj.diagram.version>
         <asciidoctorj.pdf.version>1.5.0-alpha.16</asciidoctorj.pdf.version>
+        <eclipse.epub.version>4.0.5</eclipse.epub.version>
+        <eclipse.emf.version>2.12.0</eclipse.emf.version>
         <jruby.version>9.1.13.0</jruby.version>
+        <epub.source>${project.build.directory}/generated-docs</epub.source>
     </properties>
 
     <build>
@@ -71,7 +75,7 @@
                             <goal>process-asciidoc</goal>
                         </goals>
                         <configuration>
-                            <backend>html5</backend>
+                            <backend>xhtml5</backend>
                             <sourceHighlighter>coderay</sourceHighlighter>
                             <!--
                             Scenarios for linking vs embedding assets:
@@ -164,6 +168,83 @@
                     </execution>
                 </executions>
             </plugin>
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.8</version>
+				<executions>
+					<execution>
+                    		<id>generate-epub-doc</id>
+						<phase>package</phase>
+						<configuration>							
+							<target>	
+								<taskdef name="epub" classname="org.eclipse.mylyn.docs.epub.ant.core.EpubTask" classpathref="maven.plugin.classpath"/>
+								<epub file="${project.build.directory}/Eclipse_Project_Handbook.epub"
+										workingfolder="${project.build.directory}/epub" 
+										identifierId="identifier">
+									<title>Eclipse Project Handbook</title>
+									<subject>This document provides you with the information that you need to create a new Eclipse open source project or become a committer on an existing one.</subject>
+									<identifier id="identifier" scheme="uuid">778639e5-7bd5-4981-8e53-5ff53f945a69</identifier>
+									<creator name="Eclipse Foundation, Inc" role="aut"/>
+									<creator fileAs="Beaton, Wayne" name="Wayne Beaton" role="aut"/>
+									<creator fileAs="Roy, Denis" name="Denis Roy" role="aut"/>
+									<creator fileAs="Carver, Dave" name="Dave Carver" role="aut"/>
+									<creator fileAs="Merks, Ed" name="Ed Merks" role="aut"/>
+									<creator fileAs="Freeman-Benson, Bjorn" name="Bjorn Freeman-Benson" role="aut"/>
+									<creator fileAs="Jacko, Anne" name="Anne Jacko" role="aut"/>
+									<creator fileAs="Skerrett, Ian" name="Ian Skerrett" role="aut"/>
+									<creator fileAs="Milinkovich, Mike" name="Mike Milinkovich" role="aut"/>
+									<creator fileAs="Arthorne, John" name="John Arthorne" role="aut"/>
+									<creator fileAs="Resheim, Torkild U." name="Torkild U. Resheim" role="clb"/>
+									<source>https://git.eclipse.org/r/dash/org.eclipse.dash.handbook</source>
+									<language code="en"/>
+									<toc generate="true"/>
+									<item file="${epub.source}/eclipse.html" />
+								</epub>
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+				<dependencies>
+                    <dependency>
+	                    	<groupId>org.eclipse.mylyn.docs</groupId>
+	                    	<artifactId>org.eclipse.mylyn.docs.epub.core</artifactId>
+	                    	<version>${eclipse.epub.version}</version>
+                    </dependency>
+                    <dependency>
+	                    	<groupId>org.eclipse.mylyn.docs</groupId>
+	                    	<artifactId>org.eclipse.mylyn.docs.epub.ant</artifactId>
+	                    	<version>${eclipse.epub.version}</version>
+                    </dependency>
+					<dependency>
+						<groupId>org.eclipse.emf</groupId>
+						<artifactId>org.eclipse.emf.ecore</artifactId>
+						<version>${eclipse.emf.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.eclipse.emf</groupId>
+						<artifactId>org.eclipse.emf.common</artifactId>
+						<version>${eclipse.emf.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.eclipse.emf</groupId>
+						<artifactId>org.eclipse.emf.ecore.xmi</artifactId>
+						<version>${eclipse.emf.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.tika</groupId>
+						<artifactId>tika-core</artifactId>
+						<version>${apache.tika.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.tika</groupId>
+						<artifactId>tika-parsers</artifactId>
+						<version>${apache.tika.version}</version>
+					</dependency>
+				</dependencies>
+			</plugin>
             <!--
             NOTE: Use the maven-resources-plugin if there are assets outside the AsciiDoc source folder
                   that need to be copied to the generated-docs. The Maven plugin automatically copies
