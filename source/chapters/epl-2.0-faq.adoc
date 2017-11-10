@@ -1,5 +1,5 @@
-:toc!:
-:toc-placement!: 
+:toc:
+:toc-placement: top 
 :sectlinks:
 
 [[epl-faq]]
@@ -233,7 +233,7 @@ Contact the EMO for assistance in crafting a non-obvious copyright and license h
 [[h.mz8pxljvc07w]]
 === Is my EPL-2.0 licensed project GPL compatible by default?
 
-No. EPL-2.0 licensed projects may explicitly add GPL compatibility by way of adding a Secondary License as per Exhibit A -- Form of Secondary Licenses Notice. See Section 3.2 of the EPL-2.0. Please note adding a secondary license is considered a relicensing exercise and all copyright holders must agree to the license change.
+No. EPL-2.0 licensed projects may explicitly add GPL compatibility by way of adding a Secondary License as per _Exhibit A -- Form of Secondary Licenses Notice_. See Section 3.2 of the EPL-2.0. Please note adding a secondary license is considered a relicensing exercise and all copyright holders must agree to the license change.
 
 [[h.gry4ochk5i85]]
 === Should EPL-1.0 projects accept contributions under EPL-2.0?
@@ -305,7 +305,7 @@ However, if the content has been made available under the EPL-2.0 with Secondary
 [[h.fn86eyf5mvhs]]
 === Is my EPL-2.0 licensed project GPL compatible by default?
 
-No. EPL-2.0 licensed projects may explicitly add GPL compatibility by way of adding a Secondary License as per Exhibit A -- Form of Secondary Licenses Notice. See Section 3.2 of the EPL-2.0. Please note adding a secondary license is considered a relicensing exercise and all copyright holders must agree to the license change.
+No. EPL-2.0 licensed projects may explicitly add GPL compatibility by way of adding a Secondary License as per _Exhibit A -- Form of Secondary Licenses Notice_. See Section 3.2 of the EPL-2.0. Please note adding a secondary license is considered a relicensing exercise and all copyright holders must agree to the license change.
 
 [[h.obyumhvpl7gl]]
 === Can I take a Program licensed under the EPL, compile it without modification, and commercially license the result?
@@ -357,7 +357,7 @@ Yes. The EPL is an OSI-approved open source license and may be used unaltered by
 
 Eclipse views license compatibility through the lens of enabling successful commercial adoption of Eclipse technology in software products and services. We wish to create a commercial ecosystem based on the redistribution of Eclipse software technologies in commercially licensed software products. Determining whether a license for third-party code is acceptable often requires the input and advice of Eclipse's legal advisors.
 
-Our list of the most common licenses approved for use by third-party code redistributed by Eclipse Foundation Projects is http://www.eclipse.org/org/documents/licenses.php[here]. This list is not exhaustive. If you have any questions, please contact license@eclipse.org.
+Please see our http://www.eclipse.org/legal/licenses.php[list of the most common licenses] approved for use by third-party code redistributed by Eclipse Foundation Projects. This list is not exhaustive. If you have any questions, please contact mailto:license@eclipse.org.
 
 [[h.ny475e9r1v2u]]
 === Is an OSI-compliant license a requirement for all third-party code redistributed by Eclipse projects?
@@ -369,7 +369,7 @@ The reverse is also true: there are OSI-compliant licenses are not compatible wi
 [[h.sfzscklic49g]]
 === Are the Eclipse Public License (EPL) and the General Public License (GPL) compatible?
 
-Unless a Secondary License has been specified in the EPL-2.0, the EPL and the GPL are not compatible in any combination where the result would be considered either: (a) a "derivative work" (which Eclipse interprets consistent with the definition of that term in the U.S. Copyright Act ) or (b) a work "based on" the GPL code, as that phrase is used in the http://www.gnu.org/licenses/old-licenses/gpl-2.0.html[GPLv2], http://www.fsf.org/licensing/licenses/gpl.html[GPLv3] or the http://www.fsf.org/licensing/licenses/gpl-faq.html[GPL FAQ] as applicable. Further, you may not combine EPL and GPL code in any scenario where source code under those licenses are both the same source code module.
+Unless a Secondary License has been specified in the EPL-2.0, the EPL and the GPL are not compatible in any combination where the result would be considered either: (a) a _derivative work_ (which Eclipse interprets consistent with the definition of that term in the U.S. Copyright Act ) or (b) a work _based on_ the GPL code, as that phrase is used in the http://www.gnu.org/licenses/old-licenses/gpl-2.0.html[GPLv2], http://www.fsf.org/licensing/licenses/gpl.html[GPLv3] or the http://www.fsf.org/licensing/licenses/gpl-faq.html[GPL FAQ] as applicable. Further, you may not combine EPL and GPL code in any scenario where source code under those licenses are both the same source code module.
 
 Based upon the http://www.fsf.org/licensing/licenses/[position] of the Free Software Foundation, you may not combine EPL and GPL code in any scenario where linking exists between code made available under those licenses. The above applies to both GPL version 2 and GPL version 3.
 
