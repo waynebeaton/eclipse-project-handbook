@@ -1,203 +1,154 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.eclipse.dash</groupId>
-  <artifactId>org.eclipse.dash.handbook</artifactId>
-  <version>1.0.0</version>
-  
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <apache.tika.version>1.16</apache.tika.version>
-        <asciidoctor.maven.plugin.version>1.5.6</asciidoctor.maven.plugin.version>
-        <asciidoctorj.version>1.5.6</asciidoctorj.version>
-        <asciidoctorj.diagram.version>1.5.4.1</asciidoctorj.diagram.version>
-        <asciidoctorj.pdf.version>1.5.0-alpha.16</asciidoctorj.pdf.version>
-        <eclipse.epub.version>4.0.5</eclipse.epub.version>
-        <eclipse.emf.version>2.12.0</eclipse.emf.version>
-        <jruby.version>9.1.13.0</jruby.version>
-        <epub.source>${project.build.directory}/generated-docs</epub.source>
-    </properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.eclipse.dash</groupId>
+	<artifactId>org.eclipse.dash.handbook</artifactId>
+	<version>1.0.0</version>
 
-    <build>
-        <defaultGoal>process-resources</defaultGoal>
-        <plugins>
-            <plugin>
-                <groupId>org.asciidoctor</groupId>
-                <artifactId>asciidoctor-maven-plugin</artifactId>
-                <version>${asciidoctor.maven.plugin.version}</version>              
-                <dependencies>
-                    <!-- Comment this section to use the default jruby artifact provided by the plugin -->
-                    <dependency>
-                        <groupId>org.jruby</groupId>
-                        <artifactId>jruby-complete</artifactId>
-                        <version>${jruby.version}</version>
-                    </dependency>
-                    <!-- Comment this section to use the default AsciidoctorJ artifact provided by the plugin -->
-                    <dependency>
-                        <groupId>org.asciidoctor</groupId>
-                        <artifactId>asciidoctorj</artifactId>
-                        <version>${asciidoctorj.version}</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.asciidoctor</groupId>
-                        <artifactId>asciidoctorj-diagram</artifactId>
-                        <version>${asciidoctorj.diagram.version}</version>
-                    </dependency>
-                    
-                    <dependency>
-                        <groupId>org.asciidoctor</groupId>
-                        <artifactId>asciidoctorj-pdf</artifactId>
-                        <version>${asciidoctorj.pdf.version}</version>
-                    </dependency>
-                </dependencies>
-                <configuration>
-                    <sourceDirectory>source</sourceDirectory>
-                    
-                    <requires>
-                        <require>asciidoctor-diagram</require>
-                    </requires>
-                    
-                    <!-- If you set baseDir to ${project.basedir}, top-level includes are resolved relative to the project root -->
-                    <!--
-                    <baseDir>${project.basedir}</baseDir>
-                    -->
-                    <!-- Attributes common to all output formats -->
-                    <attributes>
-                        <endpoint-url>http://www.eclipse.org</endpoint-url>
-                        <sourcedir>${project.build.sourceDirectory}</sourcedir>
-                        <project-version>${project.version}</project-version>
-                    </attributes>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>asciidoc-to-html</id>
-                        <phase>generate-resources</phase>
-                        <goals>
-                            <goal>process-asciidoc</goal>
-                        </goals>
-                        <configuration>
-                            <backend>xhtml5</backend>
-                            <sourceHighlighter>coderay</sourceHighlighter>
-                            <!--
-                            Scenarios for linking vs embedding assets:
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<apache.tika.version>1.16</apache.tika.version>
+		<asciidoctor.maven.plugin.version>1.5.6</asciidoctor.maven.plugin.version>
+		<asciidoctorj.version>1.5.6</asciidoctorj.version>
+		<asciidoctorj.diagram.version>1.5.4.1</asciidoctorj.diagram.version>
+		<asciidoctorj.pdf.version>1.5.0-alpha.16</asciidoctorj.pdf.version>
+		<eclipse.epub.version>4.0.5</eclipse.epub.version>
+		<eclipse.emf.version>2.12.0</eclipse.emf.version>
+		<jruby.version>9.1.13.0</jruby.version>
+		<epub.source>${project.build.directory}/generated-docs</epub.source>
+	</properties>
 
-                            Link to both stylesheets and images::
-
-                              - don't set embedAssets option
-                              - set linkcss attribute to true
-                              - set imagesdir attribute to path relative to AsciiDoc source file
-
-                              <attributes>
-                                  <linkcss>true</linkcss>
-                                  <imagesdir>./images</imagesdir>
-                              </attributes>
-
-                            Embed stylesheets and images::
-                            
-                              - set embedAssets option to true
-                              - don't set linkcss attribute
-                              - set imagesdir attribute to path relative to project root
-
-                              <embedAssets>true</embedAssets>
-                              <attributes>
-                                  <imagesdir>src/docs/asciidoc/images</imagesdir>
-                              </attributes>
-
-                            Link to stylesheets but embed images::
-                            
-                              - set embedAssets option to true
-                              - set linkcss attribute to true
-                              - set imagesdir attribute to path relative to project root
-
-                              <embedAssets>true</embedAssets>
-                              <attributes>
-                                  <linkcss>true</linkcss>
-                                  <imagesdir>src/docs/asciidoc/images</imagesdir>
-                              </attributes>
-
-                            Embed stylesheets but link images (default)::
-                            
-                              - don't set embedAssets option
-                              - don't set linkcss attribute
-                              - set imagesdir attribute to path relative to AsciiDoc source file
-
-                              <attributes>
-                                  <imagesdir>./images</imagesdir>
-                              </attributes>
-
-                            IMPORTANT: When you enable image embedding, you must qualify the path the the imagesdir, as shown above.
-                            -->
-                            <attributes>
-                                <doctype>book</doctype>
-                                <imagesoutdir>.</imagesoutdir>
-                                <imagesdir>.</imagesdir>
-                                <data-uri/>
-                                <toc>left</toc>
-                                <icons/>
-                                <sectanchors>true</sectanchors>
-                                <!-- set the idprefix to blank -->
-                                <idprefix/>
-                                <idseparator>-</idseparator>
-                                <docinfo1>true</docinfo1>
-                                <embedAssets>true</embedAssets>
-                                <stylesheet>handbook.css</stylesheet>
-                            </attributes>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>generate-pdf-doc</id>
-                        <phase>generate-resources</phase>
-                        <goals>
-                            <goal>process-asciidoc</goal>
-                        </goals>
-                        <configuration>
-                            <backend>pdf</backend>
-                            <!-- Since 1.5.0-alpha.9 PDF back-end can use 'rouge' as well as 'coderay'
-                            source highlighting -->
-                            <sourceHighlighter>rouge</sourceHighlighter>
-                            <attributes>
-                                <doctype>book</doctype>
-                                <icons>font</icons>
-                                <imagesoutdir>.</imagesoutdir>
-                                <imagesdir>.</imagesdir>
-                                <pagenums/>
-                                <toc/>
-                                <idprefix/>
-                                <idseparator>-</idseparator>
-                            </attributes>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+	<build>
+		<defaultGoal>process-resources</defaultGoal>
+		<plugins>
+			<plugin>
+				<groupId>org.asciidoctor</groupId>
+				<artifactId>asciidoctor-maven-plugin</artifactId>
+				<version>${asciidoctor.maven.plugin.version}</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.jruby</groupId>
+						<artifactId>jruby-complete</artifactId>
+						<version>${jruby.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.asciidoctor</groupId>
+						<artifactId>asciidoctorj</artifactId>
+						<version>${asciidoctorj.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.asciidoctor</groupId>
+						<artifactId>asciidoctorj-diagram</artifactId>
+						<version>${asciidoctorj.diagram.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.asciidoctor</groupId>
+						<artifactId>asciidoctorj-pdf</artifactId>
+						<version>${asciidoctorj.pdf.version}</version>
+					</dependency>
+				</dependencies>
+				<configuration>
+					<sourceDirectory>source</sourceDirectory>
+					<requires>
+						<require>asciidoctor-diagram</require>
+					</requires>
+					<attributes>
+						<endpoint-url>http://www.eclipse.org</endpoint-url>
+						<sourcedir>${project.build.sourceDirectory}</sourcedir>
+						<project-version>${project.version}</project-version>
+					</attributes>
+				</configuration>
+				<executions>
+					<execution>
+						<id>asciidoc-to-html</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>process-asciidoc</goal>
+						</goals>
+						<configuration>
+							<backend>xhtml5</backend>
+							<sourceHighlighter>coderay</sourceHighlighter>
+							<attributes>
+								<doctype>book</doctype>
+								<imagesoutdir>.</imagesoutdir>
+								<imagesdir>.</imagesdir>
+								<data-uri />
+								<toc>left</toc>
+								<icons />
+								<sectanchors>true</sectanchors>
+								<!-- set the idprefix to blank -->
+								<idprefix />
+								<idseparator>-</idseparator>
+								<docinfo1>true</docinfo1>
+								<embedAssets>true</embedAssets>
+								<stylesheet>handbook.css</stylesheet>
+							</attributes>
+						</configuration>
+					</execution>
+					<execution>
+						<id>generate-pdf-doc</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>process-asciidoc</goal>
+						</goals>
+						<configuration>
+							<backend>pdf</backend>
+							<!-- Since 1.5.0-alpha.9 PDF back-end can use 'rouge' as well as 'coderay' 
+								source highlighting -->
+							<sourceHighlighter>rouge</sourceHighlighter>
+							<attributes>
+								<doctype>book</doctype>
+								<icons>font</icons>
+								<imagesoutdir>.</imagesoutdir>
+								<imagesdir>.</imagesdir>
+								<pagenums />
+								<toc />
+								<idprefix />
+								<idseparator>-</idseparator>
+							</attributes>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 			<plugin>
 				<artifactId>maven-antrun-plugin</artifactId>
 				<version>1.8</version>
 				<executions>
 					<execution>
-                    		<id>generate-epub-doc</id>
+						<id>generate-epub-doc</id>
 						<phase>package</phase>
-						<configuration>							
-							<target>	
-								<taskdef name="epub" classname="org.eclipse.mylyn.docs.epub.ant.core.EpubTask" classpathref="maven.plugin.classpath"/>
+						<configuration>
+							<target>
+								<taskdef name="epub"
+									classname="org.eclipse.mylyn.docs.epub.ant.core.EpubTask"
+									classpathref="maven.plugin.classpath" />
 								<epub file="${project.build.directory}/Eclipse_Project_Handbook.epub"
-										workingfolder="${project.build.directory}/epub" 
-										identifierId="identifier">
+									workingfolder="${project.build.directory}/epub" identifierId="identifier">
 									<title>Eclipse Project Handbook</title>
-									<subject>This document provides you with the information that you need to create a new Eclipse open source project or become a committer on an existing one.</subject>
+									<subject>This document provides you with the information that
+										you need to create a new Eclipse open source project or become
+										a committer on an existing one.</subject>
 									<identifier id="identifier" scheme="uuid">778639e5-7bd5-4981-8e53-5ff53f945a69</identifier>
-									<creator name="Eclipse Foundation, Inc" role="aut"/>
-									<creator fileAs="Beaton, Wayne" name="Wayne Beaton" role="aut"/>
-									<creator fileAs="Roy, Denis" name="Denis Roy" role="aut"/>
-									<creator fileAs="Carver, Dave" name="Dave Carver" role="aut"/>
-									<creator fileAs="Merks, Ed" name="Ed Merks" role="aut"/>
-									<creator fileAs="Freeman-Benson, Bjorn" name="Bjorn Freeman-Benson" role="aut"/>
-									<creator fileAs="Jacko, Anne" name="Anne Jacko" role="aut"/>
-									<creator fileAs="Skerrett, Ian" name="Ian Skerrett" role="aut"/>
-									<creator fileAs="Milinkovich, Mike" name="Mike Milinkovich" role="aut"/>
-									<creator fileAs="Arthorne, John" name="John Arthorne" role="aut"/>
-									<creator fileAs="Resheim, Torkild U." name="Torkild U. Resheim" role="clb"/>
+									<creator name="Eclipse Foundation, Inc" role="aut" />
+									<creator fileAs="Beaton, Wayne" name="Wayne Beaton"
+										role="aut" />
+									<creator fileAs="Roy, Denis" name="Denis Roy" role="aut" />
+									<creator fileAs="Carver, Dave" name="Dave Carver" role="aut" />
+									<creator fileAs="Merks, Ed" name="Ed Merks" role="aut" />
+									<creator fileAs="Freeman-Benson, Bjorn" name="Bjorn Freeman-Benson"
+										role="aut" />
+									<creator fileAs="Jacko, Anne" name="Anne Jacko" role="aut" />
+									<creator fileAs="Skerrett, Ian" name="Ian Skerrett"
+										role="aut" />
+									<creator fileAs="Milinkovich, Mike" name="Mike Milinkovich"
+										role="aut" />
+									<creator fileAs="Arthorne, John" name="John Arthorne"
+										role="aut" />
+									<creator fileAs="Resheim, Torkild U." name="Torkild U. Resheim"
+										role="clb" />
 									<source>https://git.eclipse.org/r/dash/org.eclipse.dash.handbook</source>
-									<language code="en"/>
-									<toc generate="true"/>
+									<language code="en" />
+									<toc generate="true" />
 									<item file="${epub.source}/eclipse.html" />
 								</epub>
 							</target>
@@ -208,16 +159,16 @@
 					</execution>
 				</executions>
 				<dependencies>
-                    <dependency>
-	                    	<groupId>org.eclipse.mylyn.docs</groupId>
-	                    	<artifactId>org.eclipse.mylyn.docs.epub.core</artifactId>
-	                    	<version>${eclipse.epub.version}</version>
-                    </dependency>
-                    <dependency>
-	                    	<groupId>org.eclipse.mylyn.docs</groupId>
-	                    	<artifactId>org.eclipse.mylyn.docs.epub.ant</artifactId>
-	                    	<version>${eclipse.epub.version}</version>
-                    </dependency>
+					<dependency>
+						<groupId>org.eclipse.mylyn.docs</groupId>
+						<artifactId>org.eclipse.mylyn.docs.epub.core</artifactId>
+						<version>${eclipse.epub.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.eclipse.mylyn.docs</groupId>
+						<artifactId>org.eclipse.mylyn.docs.epub.ant</artifactId>
+						<version>${eclipse.epub.version}</version>
+					</dependency>
 					<dependency>
 						<groupId>org.eclipse.emf</groupId>
 						<artifactId>org.eclipse.emf.ecore</artifactId>
@@ -245,78 +196,48 @@
 					</dependency>
 				</dependencies>
 			</plugin>
-            <!--
-            NOTE: Use the maven-resources-plugin if there are assets outside the AsciiDoc source folder
-                  that need to be copied to the generated-docs. The Maven plugin automatically copies
-                  non-AsciiDoc files in the AsciiDoc source folder to generated-docs.
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>2.6</version>
-                <executions>
-                    <execution>
-                        <id>copy-asciidoc-resources</id>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>copy-resources</goal>
-                        </goals>
-                        <configuration>
-                            <resources>
-                                <resource>
-                                    <directory>src/docs/resources</directory>
-                                    <includes>
-                                        <include>**/*.jpg</include>
-                                        <include>**/*.png</include>
-                                    </includes>
-                                </resource>
-                            </resources>
-                            <outputDirectory>target/generated-docs</outputDirectory>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            -->
-        </plugins>
-        <pluginManagement>
-        	<plugins>
-        		<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
-        		<plugin>
-        			<groupId>org.eclipse.m2e</groupId>
-        			<artifactId>lifecycle-mapping</artifactId>
-        			<version>1.0.0</version>
-        			<configuration>
-        				<lifecycleMappingMetadata>
-        					<pluginExecutions>
-        						<pluginExecution>
-        							<pluginExecutionFilter>
-        								<groupId>
-        									org.asciidoctor
-        								</groupId>
-        								<artifactId>
-        									asciidoctor-maven-plugin
-        								</artifactId>
-        								<versionRange>
-        									[1.5.3,)
-        								</versionRange>
-        								<goals>
-        									<goal>
-        										process-asciidoc
-        									</goal>
-        								</goals>
-        							</pluginExecutionFilter>
-        							<action>
-        								<ignore></ignore>
-        							</action>
-        						</pluginExecution>
-        					</pluginExecutions>
-        				</lifecycleMappingMetadata>
-        			</configuration>
-        		</plugin>
-        	</plugins>
-        </pluginManagement>
-    </build>
-    <name>Eclipse Dash</name>
-    <organization>
-    	<name>Eclipse Dash</name>
-    </organization>
+		</plugins>
+		<pluginManagement>
+			<plugins>
+				<!--This plugin's configuration is used to store Eclipse m2e settings 
+					only. It has no influence on the Maven build itself. -->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>
+											org.asciidoctor
+										</groupId>
+										<artifactId>
+											asciidoctor-maven-plugin
+										</artifactId>
+										<versionRange>
+											[1.5.3,)
+										</versionRange>
+										<goals>
+											<goal>
+												process-asciidoc
+											</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore></ignore>
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	<name>Eclipse Dash</name>
+	<organization>
+		<name>Eclipse Dash</name>
+	</organization>
 </project>
