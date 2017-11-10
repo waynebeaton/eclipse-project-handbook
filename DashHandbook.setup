@@ -30,6 +30,8 @@
         name="org.eclipse.mylyn.wikitext.asciidoc"/>
     <requirement
         name="org.eclipse.mylyn.wikitext.asciidoc.ui"/>
+    <requirement
+        name="org.eclipse.mylyn.docs.epub.feature.group"/>
     <repository
         url="http://download.eclipse.org/mylyn/snapshots/nightly/docs/"/>
   </setupTask>

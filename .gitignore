@@ -2,3 +2,4 @@
 source/images/*.dot.pdf
 source/*.svg
 target/*
+/target/
