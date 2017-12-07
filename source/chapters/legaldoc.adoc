@@ -150,7 +150,7 @@ The border, line breaks, etc. are not mandated in either form.
 
 Incorporating the `SPDX-License-Identifier` tag in the header makes it easy for automated tools to discover and report the license of the content. More usefully, the SPDX expression syntax can be used to make it very explicit to automated tools how multiple licenses are combined.
 
-In SPDX, disjunction is used to express dual licensing and conjunction is used to express that the content contains content that is distributed simultaneously under multiple licenses. For example, `EPL-1.0 OR MIT` expresses that the consumer may choose to accept the content under one of the licenses listed; and `EPL-1.0 AND MIT` indicates that the consumer must accept the content under both licenses (it may be the case that parts of the content are under one license and other parts are under the other).
+In SPDX, disjunction is used to express dual licensing and conjunction is used to express that the content contains content that is distributed simultaneously under multiple licenses. For example, `EPL-2.0 OR MIT` expresses that the consumer may choose to accept the content under one of the licenses listed; and `EPL-2.0 AND MIT` indicates that the consumer must accept the content under both licenses (it may be the case that parts of the content are under one license and other parts are under the other).
 
 .Example Copyright and License Header for Dual-licensed Content
 [source]
