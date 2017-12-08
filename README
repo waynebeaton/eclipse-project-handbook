@@ -21,6 +21,12 @@ image::images/myimage.png[]
 Use blocks to render NOTE/WARNING callouts.
 ====
 
+== Consistent use of terms
+
+* _Eclipse Project_ (treat as a proper noun)
+* _Top-Level Project_ (treat as a proper noun, use a hyphen)
+* _Third-party content_ (prefer the use of "content" rather than, e.g., "library")
+
 == Converting Existing Content
 
 We've used Pandoc to conver existing content into asciidoc for inclusion in the handbook.
