@@ -41,7 +41,14 @@ digraph {
 
 A project plan is _required_ for each major and minor project release. The plan should lay out in broad terms what the goals are for the release. As plans are a valuable means for the community to get involved with your project, the plan should be created at the beginning of the release cycle. By establishing the plan early, you give prospective contributors help in determining how they can most usefully contribute, and adopters can prepare their own development schedule and themes. Plans can change during the release cycle.
 
-Use the <<pmi, Project Management Interface>> to create a new release record. At the start of the release cycle, your plan should minimally include a release number, date, and short description. Think of the description as an _elevator pitch_: how would you describe the release in a fifteen second elevator ride? All aspects of a plan can change during the release cycle (including the date). If you do change the plan, make sure that the change is communicated via your project's _dev_ list and other project channels.
+Use the <<pmi-releases, Project Management Infrastructure>> to create a new release record:
+
+* Navigate to the project page;
+* Ensure that you are logged in;
+* In the _Committer Tools_ block on the right side of the page, click menu:Releases[Create a new Release]; and
+* Use the form to provide information about the release.
+
+At the start of the release cycle, your plan should minimally include a release number, date, and short description. Think of the description as an _elevator pitch_: how would you describe the release in a fifteen second elevator ride? All aspects of a plan can change during the release cycle (including the date). If you do change the plan, make sure that the change is communicated via your project's _dev_ list and other project channels.
 
 The _Plan_ tab in the release record contains numerous fields for capturing plan information. The amount of information that you should capture for a release plan varies by top-level project, so consult with your Project Management Committee (PMC) for advice.
 
