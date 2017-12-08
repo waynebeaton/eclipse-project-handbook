@@ -37,7 +37,7 @@ Most projects provide binary/compiled _downloads_ of their software, intended fo
 [discrete]
 === Project Metadata
 
-Project metadata is specified and maintained using the <<pmi, Project Management Interface>>.
+Project metadata is specified and maintained using the <<pmi, Project Management Infrastructure>>.
 
 * The formal name, e.g. _{forgeName} Foo(TM)_, is used in the project title; 
 * The formal name including appropriate marks is used in the first mention in the text of the project description, and scope;
@@ -48,7 +48,7 @@ Project metadata is specified and maintained using the <<pmi, Project Management
 [discrete]
 === Release Metadata
 
-Release metadata is specified and maintained using the <<pmi, Project Management Interface>>. Project teams are required to create a metadata entry for every official release (including major, minor, and service releases).
+Release metadata is specified and maintained using the <<pmi, Project Management Infrastructure>>. Project teams are required to create a metadata entry for every official release (including major, minor, and service releases).
 
 * At least one release record describes a future release; and
 * The release record includes a description that starts with a single paragraph that can serve as an _executive summary_.

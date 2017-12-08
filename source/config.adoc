@@ -11,6 +11,8 @@
 :trademarkGuidelinesUrl: https://eclipse.org/legal/logo_guidelines.php
 :copyrightUrl: https://www.eclipse.org/legal/copyrightandlicensenotice.php
 :accountUrl: https://accounts.eclipse.org/
+:memberUrl: https://www.eclipse.org/membership/
+:wgUrl: https://www.eclipse.org/org/workinggroups/
 
 :developerPortalUrl: http://portal.eclipse.org
 :committerQuestionnaireUrl: http://portal.eclipse.org
@@ -54,5 +56,7 @@
 :toc:
 :toc-placement: auto
 :icons: font
+
+:figure-caption!:
 
 :experimental:

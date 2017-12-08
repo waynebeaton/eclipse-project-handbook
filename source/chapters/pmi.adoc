@@ -152,7 +152,7 @@ Each <<release,release>> has its own record in the database. Records are connect
 Create a single record for each release. *Do not create release records for milestones.* Enter milestone information in the _Plan_ information for your release.
 ====
 
-A project lead or committer can create a new release by clicking menu:Committer Commands[Create a new release] on the project page. This opens a dialog requesting that a date and name be specified. Both of these values can be changed later. 
+A project lead or committer can create a new release by clicking menu:Releases[Create a new release] in the _Committer Tools_ block on their project page. This opens a dialog requesting that a date and name be specified. Both of these values can be changed later. 
 
 [[pmi-release-description]]
 ==== Description
