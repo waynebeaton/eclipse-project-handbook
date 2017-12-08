@@ -57,6 +57,8 @@
 :toc-placement: auto
 :icons: font
 
+:sectlinks:
+:sectanchors:
 :figure-caption!:
 
 :experimental:
