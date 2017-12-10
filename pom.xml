@@ -1,6 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
+	<name>Eclipse Dash</name>
+	<organization>
+		<name>Eclipse Dash</name>
+	</organization>
+
 	<groupId>org.eclipse.dash</groupId>
 	<artifactId>org.eclipse.dash.handbook</artifactId>
 	<version>1.0.0</version>
@@ -52,36 +58,47 @@
 					<requires>
 						<require>asciidoctor-diagram</require>
 					</requires>
+					<backend>xhtml5</backend>
+					<sourceHighlighter>coderay</sourceHighlighter>
 					<attributes>
 						<endpoint-url>http://www.eclipse.org</endpoint-url>
-						<sourcedir>${project.build.sourceDirectory}</sourcedir>
 						<project-version>${project.version}</project-version>
+						<doctype>book</doctype>
+						<imagesoutdir>.</imagesoutdir>
+						<imagesdir>.</imagesdir>
+						<data-uri />
+						<toc>left</toc>
+						<icons />
+						<sectanchors>true</sectanchors>
+						<idprefix />
+						<idseparator>-</idseparator>
+						<docinfo1>true</docinfo1>
+						<embedAssets>true</embedAssets>
+						<stylesheet>handbook.css</stylesheet>
 					</attributes>
 				</configuration>
 				<executions>
 					<execution>
-						<id>asciidoc-to-html</id>
+						<id>asciidoc-to-html-eclipse</id>
 						<phase>generate-resources</phase>
 						<goals>
 							<goal>process-asciidoc</goal>
 						</goals>
 						<configuration>
-							<backend>xhtml5</backend>
-							<sourceHighlighter>coderay</sourceHighlighter>
+							<sourceDocumentName>eclipse.adoc</sourceDocumentName>
 							<attributes>
-								<doctype>book</doctype>
-								<imagesoutdir>.</imagesoutdir>
-								<imagesdir>.</imagesdir>
-								<data-uri />
-								<toc>left</toc>
-								<icons />
-								<sectanchors>true</sectanchors>
-								<!-- set the idprefix to blank -->
-								<idprefix />
-								<idseparator>-</idseparator>
-								<docinfo1>true</docinfo1>
-								<embedAssets>true</embedAssets>
-								<stylesheet>handbook.css</stylesheet>
+							</attributes>
+						</configuration>
+					</execution>
+					<execution>
+						<id>asciidoc-to-html-polarsys</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>process-asciidoc</goal>
+						</goals>
+						<configuration>
+							<sourceDocumentName>polarsys.adoc</sourceDocumentName>
+							<attributes>
 							</attributes>
 						</configuration>
 					</execution>
@@ -93,8 +110,7 @@
 						</goals>
 						<configuration>
 							<backend>pdf</backend>
-							<!-- Since 1.5.0-alpha.9 PDF back-end can use 'rouge' as well as 'coderay' 
-								source highlighting -->
+							<sourceDocumentName>eclipse.adoc</sourceDocumentName>
 							<sourceHighlighter>rouge</sourceHighlighter>
 							<attributes>
 								<doctype>book</doctype>
@@ -116,13 +132,14 @@
 				<executions>
 					<execution>
 						<id>generate-epub-doc</id>
-						<phase>package</phase>
+						<phase>generate-resources</phase>
 						<configuration>
 							<target>
 								<taskdef name="epub"
 									classname="org.eclipse.mylyn.docs.epub.ant.core.EpubTask"
 									classpathref="maven.plugin.classpath" />
-								<epub file="${project.build.directory}/Eclipse_Project_Handbook.epub"
+								<epub
+									file="${project.build.directory}/generated-docs/Eclipse_Project_Handbook.epub"
 									workingfolder="${project.build.directory}/epub" identifierId="identifier">
 									<title>Eclipse Project Handbook</title>
 									<subject>This document provides you with the information that
@@ -236,8 +253,4 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-	<name>Eclipse Dash</name>
-	<organization>
-		<name>Eclipse Dash</name>
-	</organization>
 </project>

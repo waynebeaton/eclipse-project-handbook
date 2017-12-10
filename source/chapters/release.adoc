@@ -11,7 +11,7 @@ Releases are broadly categorized as:
 
 For all major and minor releases, you must engage in a _<<release-review,release review>>_. Release reviews are not required for bug-fix/service releases.
 
-[graphviz, release-cycle, svg]
+[graphviz, images/release-cycle, svg]
 .The Release Cycle
 ----
 digraph {
@@ -70,7 +70,7 @@ We schedule reviews to conclude on the _first and third Wednesdays of the month_
 
 A _release review_ requires review documentation and an intellectual property (IP) log check. The review process must be initiated at least two weeks in advance of the anticipated review date.
 
-[graphviz, release-review, svg]
+[graphviz, images/release-review, svg]
 .Release review work flow
 ----
 digraph {

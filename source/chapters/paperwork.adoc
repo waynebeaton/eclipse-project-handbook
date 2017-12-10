@@ -22,7 +22,7 @@ Only member companies that have provided a signed _Member Committer Agreement_ w
 
 The exact nature of the documentation required is dependent upon employments status.
 
-[graphviz, paperwork, svg]
+[graphviz, images/paperwork, svg]
 .What paperwork do you need?
 ----
 digraph {

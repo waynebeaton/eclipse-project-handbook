@@ -146,7 +146,7 @@ The Automated IP Log Tool automatically generates an IP Log using information th
 
 The IP Log generator pulls information from multiple location to assemble the log:
 
-[graphviz, ip-log-generator, svg]
+[graphviz, images/ip-log-generator, svg]
 .Sources for the IP Log generator
 ----
 digraph {

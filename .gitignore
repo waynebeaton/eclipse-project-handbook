@@ -1,5 +1,6 @@
 # GEF 4 Dot support
 source/images/*.dot.pdf
 source/*.svg
+source/images/*.svg
 target/*
 /target/

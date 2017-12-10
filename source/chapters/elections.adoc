@@ -61,7 +61,7 @@ Your project must have a _dev list_ specified in the project's <<pmi,metadata>> 
 
 An election starts with a nomination by an existing committer.
 
-[graphviz, elections-overview, svg]
+[graphviz, images/elections-overview, svg]
 .An overview of the Election Process
 ----
 digraph {

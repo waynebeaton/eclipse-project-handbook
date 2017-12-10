@@ -120,7 +120,7 @@ Clicking on one of the technology types, will take the user to a page that lists
 
 Projects, Releases, and Reviews are presented as separate records. Each project record, obviously, represents information about a project. A project may have multiple releases; information about the release is represented in a release record. The release record also contains some review information. This information is included here, because all releases do not necessarily have a review (a project can opt to provide some _review_ type information as part of a release record. A project can have multiple review records; as release reviews are the most common form of review, most review records will be joined to a release record.
 
-[graphviz, releases-and-reviews, svg]
+[graphviz, images/releases-and-reviews, svg]
 .The relationship between proposals, projects, releases, and reviews.
 ----
 digraph {

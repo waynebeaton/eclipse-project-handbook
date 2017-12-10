@@ -7,7 +7,7 @@ It's also important to know what new projects don't give up. The project team re
 
 {forgeName} open source projects start with a proposal that is made available to the community for review. At the end of the _community review_ period, we engage in a _creation review_, and then provision the project resources.
 
-[graphviz, overview, svg]
+[graphviz, images/overview, svg]
 .An overview of the Project Creation Process
 ----
 digraph {
@@ -106,7 +106,7 @@ The IP Team will indicate check-in permission by adding the `checkin` keyword an
 
 <<ip-third-party,Third party content>> that is required by the project code must also be reviewed by the Eclipse IP Team. Project teams that are new to the process should start by raising no more than three CQs for third party content in order to gain an understanding of the third party review process before proceeding to enter all requests.
 
-[graphviz, post-creation, svg]
+[graphviz, images/post-creation, svg]
 .Post creation activities
 ----
 digraph {
