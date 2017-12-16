@@ -86,9 +86,9 @@ An Eclipse Foundation open source project is _not_ a legal entity. Further, the 
 
 _Copyright statements_ take the form `Copyright (c) \{date} \{owner}`. 
 
-The `\{date}` is either a year or a range of years with the first and last years of the range separated by a comma (e.g. "`2004`" or "`2004, 2017`"). The first year is when the contents of the file were first created and the last year is the last year is when the contents were last modified. 
+The `\{date}` is either a year or a range of years with the first and last years of the range separated by a comma (e.g. "`2004`" or "`2004, 2017`"). The first year is when the contents of the file were first created and the last year is when the contents were last modified. 
 
-The `\{owner}` is the name of the copyright holder. If the content is subsequently modified and appended to by other copyright owners, the words "and others" are typically appended. So for example: "XYZ Corp." or "XYZ Corp. and others". The words "and others" are used to avoid having to list every copyright owner and because often, most of the content in the file was contributed the by initial copyright owner with subsequent modifications by others being smaller. However especially if the number of copyright owners is small (e.g. two), there is nothing wrong with listing all of them especially if their contributions are more proportionately equal. For example: "XYZ Corp., John Smith, and ABC Enterprises."
+The `\{owner}` is the name of the copyright holder. If the content is subsequently modified and appended to by other copyright owners, the words "and others" are typically appended. So for example: "XYZ Corp." or "XYZ Corp. and others". The words "and others" are used to avoid having to list every copyright owner and because often, most of the content in the file was contributed by the initial copyright owner with subsequent modifications by others being smaller. However, especially if the number of copyright owners is small (e.g. two), there is nothing wrong with listing all of them especially if their contributions are more proportionately equal. For example: "XYZ Corp., John Smith, and ABC Enterprises."
 
 Copyright headers can take one of two forms. In the traditional form, the identities of the copyright holders must be indicated in the copyright statement on the first line of the header.
 

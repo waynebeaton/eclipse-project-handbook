@@ -3,7 +3,7 @@
 
 Open source projects at the Eclipse Foundation are required to make use of certain Eclipse Foundation services:
 
-* All project issues must be tracked in a the issue tracker assigned to the project;
+* All project issues must be tracked in the issue tracker assigned to the project;
 * Source code must be maintained in source code repositories assigned to the project (e.g. {aforgeName} {gitUrl}[Git] or {gerritUrl}[Gerrit] instance, or the {gitHubUrl}[{forgeName} Organization] on GitHub);
 * All third party content used by the project must be <<ip-third-party,tracked and approved>> for use by the Eclipse IP Team;
 * Downloads must be distributed via a forge-specific downloads server;
@@ -15,7 +15,7 @@ Open source projects at the Eclipse Foundation are required to make use of certa
 Project resources make use of two sorts of ids:
 
 Short name::
-The short name is used project in various parts of Eclipse Foundation infrastructure (e.g. the name of the project's directory on the downloads and Git servers, and the URL for the project website). The short name may contain lowercase alphanumeric characters, dashes, and underlines; but does not contain periods.
+The short name is used in various parts of Eclipse Foundation infrastructure (e.g. the name of the project's directory on the downloads and Git servers, and the URL for the project website). The short name may contain lowercase alphanumeric characters, dashes, and underlines; but does not contain periods.
 
 Qualified identifier::
 The project's short name is joined with the short name of the parent project(s) to form a qualified identifier (project id) for the project that is used as a key on services generated and/or maintained for the project by the Eclipse Foundation. 

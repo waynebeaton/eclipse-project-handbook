@@ -1,9 +1,9 @@
 [[starting]]
 == Starting an Open Source Project at {forgeName}
 
-Before getting started, it's important to know what is required of {aForgeName} project. The Eclipse Foundation will take ownership of many aspects of the project to ensure that the project and its assets are are managed in an open and vendor-neutral manner. This takes the form, for example, of the Eclipse Foundation retaining ownership of project's trademarks on behalf of the community, and carefully managing who has write access on project resources such as source code repositories and distribution channels. {forgeName} projects are obligated to use certain <<project-resources-and-services,resources>> assigned to the project by the Eclipse Foundation and conform to logo and trademark guidelines. New project sponsors must engage in the process of transitioning an existing project with the intent to continue development of the project code and growth of the community and ecosystem around the project.
+Before getting started, it's important to know what is required of {aForgeName} project. The Eclipse Foundation will take ownership of many aspects of the project to ensure that the project and its assets are managed in an open and vendor-neutral manner. This takes the form, for example, of the Eclipse Foundation retaining ownership of the project's trademarks on behalf of the community, and carefully managing who has write access on project resources such as source code repositories and distribution channels. {forgeName} projects are obligated to use certain <<project-resources-and-services,resources>> assigned to the project by the Eclipse Foundation and conform to logo and trademark guidelines. New project sponsors must engage in the process of transitioning an existing project with the intent to continue development of the project code and growth of the community and ecosystem around the project.
 
-It's also important to know what new projects don't give up. The project team retains control of the project's direction by virtue of regular contribution to the project. The contributors to the project retain ownership of their contributions (those contributions are used under license by the project). Project leads are required to ensure that other individuals who present themselves to the project are given uniform opportunity to participate, but project team gets to establish the rules for participation (within certain parameters). The project team is responsible for determining development methodology, establishing plans, etc. Existing owners of the project code retain their ownership.
+It's also important to know what new projects don't give up. The project team retains control of the project's direction by virtue of regular contribution to the project. The contributors to the project retain ownership of their contributions (those contributions are used under license by the project). Project leads are required to ensure that other individuals who present themselves to the project are given uniform opportunity to participate, but the project team gets to establish the rules for participation (within certain parameters). The project team is responsible for determining development methodology, establishing plans, etc. Existing owners of the project code retain their ownership.
 
 {forgeName} open source projects start with a proposal that is made available to the community for review. At the end of the _community review_ period, we engage in a _creation review_, and then provision the project resources.
 
@@ -61,7 +61,7 @@ A proposal must minimally include a description of the project, a declaration of
 When you feel that the proposal is ready, send a note to the Eclipse Management Organization (EMO) at {emoEmail} requesting that the proposal be made available to the public for review. The EMO
 will review the proposal and may provide feedback before initiating the _community review_ period.
 
-At the beginning of the _community review_ period, the EMO will announce the proposal on several channels (the {activityUrl}[Project Activity News] page, Twitter, the {proposalsForum}[Proposals Forum], blog post, and an email note to the Eclipse Foundation members and committers). The EMO will also open an record in the Eclipse Foundation's issue tracker--an instance of Bugzilla--to track the progress of the proposal; the proposal's author and project leads will be copied on that record.
+At the beginning of the _community review_ period, the EMO will announce the proposal on several channels (the {activityUrl}[Project Activity News] page, Twitter, the {proposalsForum}[Proposals Forum], blog post, and an email note to the Eclipse Foundation members and committers). The EMO will also open a record in the Eclipse Foundation's issue tracker--an instance of Bugzilla--to track the progress of the proposal; the proposal's author and project leads will be copied on that record.
 
 A proposal will be open for community review for a minimum of two weeks.
 
@@ -142,7 +142,7 @@ After the project code is pushed into the project repository, the project team c
 [[starting-project-phases]]
 === Project Phases
 
-All new projects start in the _incubation phase_ (a project in the incubation phase is said to be _incubating_). The classification of a project in the incubation phase is not a statement about the quality of the project's code; rather, incubation phase is more about the project team's progress in practicing the open and public processes necessary to establish the three communities (developers, adopters, and users) around the project.
+All new projects start in the _incubation phase_ (a project in the incubation phase is said to be _incubating_). The classification of a project in the incubation phase is not a statement about the quality of the project's code; rather, the incubation phase is more about the project team's progress in practicing the open and public processes necessary to establish the three communities (developers, adopters, and users) around the project.
 
 .The Incubation Logo
 image::images/Egg-incubation.png[]
@@ -181,7 +181,7 @@ You don't have to find them yourself. Focus on the content of the proposal. We c
 
 Can I change the proposal after it is posted? ::
 
-Yes. The proposal can be changed any time before the start of the start of the creation review.
+Yes. The proposal can be changed any time before the start of the creation review.
 
 When do I submit my code for review by the IP team? ::
 
