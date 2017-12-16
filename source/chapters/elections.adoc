@@ -146,7 +146,7 @@ In all cases, the PMC Lead makes a recommendation to the EMO/ED to appoint a PMC
 [[elections-pmc-lead]]
 === PMC Lead Appointments
 
-PMC _Leads_ are are not elected. They are vetted by the EMO, approved by the Eclipse Board of Directors, and appointed by the EMO/ED.
+PMC _Leads_ are not elected. They are vetted by the EMO, approved by the Eclipse Board of Directors, and appointed by the EMO/ED.
 
 [[elections-faq]]
 === Frequently Asked Questions
