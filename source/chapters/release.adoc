@@ -116,7 +116,7 @@ At any point in this process, you can request that the review be initiated by cl
 
 [NOTE]
 ====
-The EMO will likely notice that you've created the release record, connected with your PMC, and submitted an IP Log for review by the IP team and will take steps to initiate the actual review. However, since there is a great deal of variability in this process, send an email to {emoEmail} stating your intent to release.
+The EMO will likely notice that you've created the release record, connected with your PMC, and submitted an IP Log for review by the IP team and will take steps to initiate the actual review. However, since there is a great deal of variability in this process, send an email to mailto:{emoEmail}[EMO] stating your intent to release.
 ====
 
 The EMO will conclude the review on the scheduled end date and advise the project team of the outcome.

@@ -78,7 +78,7 @@ Company logos may optionally be included on a project website, but only if the f
 [discrete]
 === Community Portals and Related Websites
 
-<<trademark-external-community,Community portals>>, regardless of who owns and maintains them must conform to the branding guidelines. If you discover a website that does not conform to these guidelines (and it is not within your power to effect the changes yourself), send a note to {emoEmail} to request assistance.
+<<trademark-external-community,Community portals>>, regardless of who owns and maintains them must conform to the branding guidelines. If you discover a website that does not conform to these guidelines (and it is not within your power to effect the changes yourself), send a note to mailto:{emoEmail}[EMO] to request assistance.
 
 * The formal name including appropriate marks, e.g. _{forgeName} Foo(TM)_, is used on the page title, first mention in the text, and on all prominent references to the project;
 * <<trademarks-external-attribution,Attributions>> are provided for all Eclipse Foundation marks;
