@@ -192,6 +192,45 @@ You can upload content to `downloads/<shortname>` (e.g. `downloads/dash`) via SF
 
 Project committers can {downloadsUrl}[upload project artifacts] to the project's directory on the download server.
 
+[[resources-external]]
+=== External Resources
+
+Project teams may use services that are not hosted by the Eclipse Foundation (e.g. <<resources-github,GitHub>> or <<resources-dockerhub,DockerHub>>).
+
+The following rules apply:
+
+* The Eclipse Foundation's <<trademarks,branding rules>> must be observed;
+* External services must not add legal terms or conditions that invalidate the project licenses or copyrights;
+* One or more project *committers* must have ownership rights; and
+* The usual level playing field must be observed.
+
+Even when using services not hosted by the Eclipse Foundation, project teams are required to operate in an open and transparent manner. Use of the service must not add an unreasonable access barrier for contributors, and no single individual or company can exert exclusive control of the service. Administrative level control of the service must be shared by as diverse a subset of the project committers as possible, and a documented policy must be established for managing that control.
+
+All services require that users conform to some sort of terms of use that likely dictate copyright and licensing terms. Project leads must take care to ensure that those terms of use are not at odds with the project license or impact the copyright ownership of project contributions.
+
+[WARNING]
+====
+<<resources-source,Source code>>, documentation, <<resources-issues,issues/tickets/bug reports>> must all be maintained using resources that are provided and managed by the Eclipse Foundation.
+====
+
+External resources can be used for:
+
+* User forum discussions, presentations;
+* Builds and alternative sources for <<resources-downloads,downloads>>; 
+* Container image management (e.g. <<resources-dockerhub,DockerHub>>); and
+* Examples, blogs, social media handles.
+
+This list is not exhaustive. Project leads should work with their PMC and the EMO to determine the terms and conditions for an external resource are compatible with the project license(s), the {ipPolicyUrl}[Eclipse IP Policy], and {edpUrl}[Eclipse Development Process].
+
+[[resources-dockerhub]]
+==== DockerHub
+
+The Eclipse Foundation owns several organizations on DockerHub, including https://hub.docker.com/u/eclipse/[eclipse], https://hub.docker.com/u/locationtech/[locationtech], and https://hub.docker.com/u/polarsys/[polarsys], but does not formally support or strictly manage the use of these organizations. Due to manner in which permissions are managed, membership in the _owners_ team for these organizations is required to create new repositories. The project's PMC or the mailto:{emoEmail}[EMO] can grant membership in this team to designated committers for projects that require this access. The EMO periodically reviews membership in the teams associated with these organizations and will remove members who are not active committers. Repositories created in these organizations must follow the pattern `<organization>/<shortname>[-<component>]` (e.g. `eclipse/che-server`).
+
+Subject to the <<resources-external,rules for the use of external resources>>, a project team can create and maintain their own organization on DockerHub. The organization name must follow the pattern `{forgeMachineName}-<shortname>` (e.g. `{forgeMachineName}-woolsey`) or some variation (e.g. `{forgeMachineName}woolsey`). As indicated in the rules, ownership of the organization must be shared by a subset of project *committers* and the project must have a documented policy regarding how access to that organization is managed.
+
+Additionally, a PMC may decide to create and manage an organization for the Top-Level Project. The PMC may have their own policy regarding the use of DockerHub. Project teams should consult with their PMC to determine which approach is best suited for the project.
+
 [[resources-faq]]
 === Frequently Asked Questions
 
