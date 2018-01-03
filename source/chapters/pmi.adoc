@@ -27,12 +27,55 @@ PMC members and the Eclipse Foundation staff also have the ability to make chang
 [[pmi-viewing]]
 === Viewing
 
-The complete listing of all current {projectListUrl}[{forgeName} projects] provides one starting point for viewing projects. From here, you can link directly to a project information page. Navigation options are provided to help you move from one project to another.
+The complete listing of all current {projectListUrl}[{forgeName} projects] provides one starting point for viewing projects. From here, you can link directly to a <<pmi-project-page,project page>>. Navigation options are provided to help you move from one project to another.
+
+[[pmi-project-page]]
+=== Project Pages
+
+The PMI provides a website for every project based on the <<pmi-metadata,project metadata>>. This website includes an _overview_ page that includes the project's description, a _downloads_ page, a _developer_ page that includes links to <<source-repositories,source code repositories>>, and more. The website also includes links to project-related <<pmi-commands-and-tools,commands and tools>> when the user is logged in as a project committer.
+
+The URL for a project page takes the form `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`), where `pass:c,a[<projectid>]` is the qualified <<resources-identifers,identifier>> for the project.
 
 [[pmi-commands-and-tools]]
 === Commands and Tools
 
 Committers have access to several committer-specific commands and tools. The selection of commands available are context sensitive; only those commands that make sense for the logged in user are shown.
+
+[[pmi-commands-cq]]
+==== Create a Contribution Questionnaire
+
+Any project committer create <<ip-cq, Contribution Questionnaire>> (CQ). CQs are required to track some contributions of project code, as well as all uses of third-party content.
+
+To create a Contribution Questionnaire:
+
+1. Log in;
+2. Navigate to a project page;
+3. Click menu:Committer Tools[Intellectual Property > Create a Contribution Questionnaire]; and
+4. Follow the workflow.
+
+[[pmi-commands-iplog]]
+==== Submit a Project's IP Log for Review
+
+Any project committer generate the <<ip-iplog, Intellectual Property (IP) Log>> and submit it for review by the Eclipse IP Team. An IP Log review is required, for example, for all <<release-review, release reviews>> (release reviews are required for all major and minor releases).
+
+To generate an IP Log:
+
+1. Log in;
+2. Navigate to a project page;
+3. Click menu:Committer Tools[Intellectual Property > Generate IP Log]; and
+4. Follow the workflow.
+
+[[pmi-commands-release]]
+==== Create a New Release
+
+A project lead or committer can create a new <<release,release>> record. This opens a dialog requesting that a date and name be specified. Both of these values can be changed later.
+
+To generate an IP Log:
+
+1. Log in;
+2. Navigate to a project page;
+3. Click menu:Committer Tools[Releases > Create a new release]; and
+4. Follow the workflow.
 
 [[pmi-editing]]
 === Editing Project Metadata
@@ -147,12 +190,12 @@ A review record, however, does not require a release association. Some reviews a
 
 Each <<release,release>> has its own record in the database. Records are connected directly to a single specific project; a subset of release records associated with a project are displayed on the project page. An existing release can be edited in much the same was as a project. Any logged in project member (committer or project lead) can switch to the _Edit_ tab.
 
-[NOTE]
-====
 Create a single record for each release. *Do not create release records for milestones.* Enter milestone information in the _Plan_ information for your release.
-====
 
-A project lead or committer can create a new release by clicking menu:Releases[Create a new release] in the _Committer Tools_ block on their project page. This opens a dialog requesting that a date and name be specified. Both of these values can be changed later. 
+[TIP]
+====
+Use the <<pmi-commands-release, Create a new release>> command on a specific <<pmi-project-page, project page>> in the <<pmi,Project Management Interface (PMI)>> to create a new release record.
+==== 
 
 [[pmi-release-description]]
 ==== Description

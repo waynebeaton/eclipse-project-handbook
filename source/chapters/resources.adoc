@@ -154,7 +154,7 @@ The EMO strongly encourages the use of alternative communication channels for co
 
 // Project-specific websites are only supported on the Eclipse forge.
 ifeval::["{forgeName}"=="Eclipse"]
-Project websites are an excellent way to connect your project with your community. Many projects opt to use the <<pmi,Project Management Infrastructure>> (PMI) as their project website.  PMI-based website URLs take the form of `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`). 
+Project websites are an excellent way to connect your project with your community. Many projects opt to use the <<pmi,Project Management Infrastructure>> (PMI) as their <<pmi-project-page,project website>>.  PMI-based website URLs take the form of `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`). 
 
 Many project teams opt to create a custom main project website: if so-desired, a project may host a website on Eclipse Foundation-hosted servers. Project website URLs generally take the form `pass:c,a[{wwwUrl}/<shortname>]` (e.g. `pass:c,a[{wwwUrl}/foo]`). Custom project website content is maintained in Git repositories hosted on Eclipse Foundation infrastructure. A background job moves content from the Git repository to the website; content pushed to the repository will appear on the live website within five minutes.
 
@@ -164,7 +164,7 @@ If a project website has not already been created for your project, {websiteRequ
 ====
 endif::[]
 ifeval::["{forgeName}"!="Eclipse"]
-The <<pmi,Project Management Infrastructure>> (PMI) provides the main project website. Website URLs take the form of `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`).
+The <<pmi,Project Management Infrastructure>> (PMI) provides the main <<pmi-project-page,project website>>. Website URLs take the form of `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`).
 endif::[]
 
 Websites _not_ hosted by the Eclipse Foundation are considered <<trademark-external-community,community portals>> and are subject to the {trademarkGuidelinesUrl}[Guidelines for Eclipse Logo & Trademarks] (the Eclipse Foundation asserts ownership of all project name trademarks).

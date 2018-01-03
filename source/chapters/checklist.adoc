@@ -53,6 +53,11 @@ Release metadata is specified and maintained using the <<pmi, Project Management
 * At least one release record describes a future release; and
 * The release record includes a description that starts with a single paragraph that can serve as an _executive summary_.
 
+[TIP]
+====
+Use the <<pmi-commands-release, Create a new release>> command on a specific <<pmi-project-page, project page>> in the <<pmi,Project Management Interface (PMI)>> to create a new release record.
+==== 
+
 [discrete]
 === Development Website
 * Is hosted on Eclipse Foundation-provided infrastructure;

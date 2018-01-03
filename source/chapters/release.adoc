@@ -41,12 +41,10 @@ digraph {
 
 A project plan is _required_ for each major and minor project release. The plan should lay out in broad terms what the goals are for the release. As plans are a valuable means for the community to get involved with your project, the plan should be created at the beginning of the release cycle. By establishing the plan early, you give prospective contributors help in determining how they can most usefully contribute, and adopters can prepare their own development schedule and themes. Plans can change during the release cycle.
 
-Use the <<pmi-releases, Project Management Infrastructure>> to create a new release record:
-
-* Navigate to the project page;
-* Ensure that you are logged in;
-* In the _Committer Tools_ block on the right side of the page, click menu:Releases[Create a new Release]; and
-* Use the form to provide information about the release.
+[TIP]
+====
+Use the <<pmi-commands-release, Create a new release>> command on a specific <<pmi-project-page, project page>> in the <<pmi,Project Management Interface (PMI)>> to create a new release record.
+==== 
 
 At the start of the release cycle, your plan should minimally include a release number, date, and short description. Think of the description as an _elevator pitch_: how would you describe the release in a fifteen second elevator ride? All aspects of a plan can change during the release cycle (including the date). If you do change the plan, make sure that the change is communicated via your project's _dev_ list and other project channels.
 
@@ -98,16 +96,16 @@ Prepare the review documentation well in advance of the start of the review peri
 The review materials must be approved by the PMC; send an email to 
 the PMC's mailing list asking for approval. The PMC will respond with feedback or a simple `pass:[+1]` indicating approval.
 
-[NOTE]
+[TIP]
 ====
-Click the handy menu:Committer Tools[Send Email to the PMC] link on the release record page to connect with the PMC.
+Click the handy menu:Committer Tools[Communication > Send Email to the PMC] link on the release record page to connect with the PMC.
 ====
 
 Submit the IP Log for review by the IP Team. The IP Team must approve the IP Log before we can schedule the review, so submitting this early is important. The <<ip-iplog-generator,IP Log generator>> automatically collects information based on the information that the project team has provided to the IP Team through <<ip-cq,contribution questionnaires>> in IPZilla, commits in the project's source code repository, and other information in our databases. Carefully review the IP Log before submitting to the IP Team for their review.
 
-[NOTE]
+[TIP]
 ====
-Click the handy menu:Committer Tools[Generate IP Log] link on the release record page to open the IP Log generator.
+Use the <<pmi-commands-iplog, Generate IP Log>> tool on a specific <<pmi-project-page, project page>> in the <<pmi,Project Management Interface (PMI)>> to generate and submit the IP Log for review.
 ====
 
 The information used to generate an IP Log should always be up-to-date (don't wait until the end of the release cycle to make it right).

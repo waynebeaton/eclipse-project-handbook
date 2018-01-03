@@ -11,12 +11,14 @@ Code provenance tracking is critical (we need to know the source of all code tha
 
 The IP Team will review your initial contribution to ensure that the code can distributed through {aForgeName} property. The IP Team will review the code to make sure that it hasn't been copied inappropriately, that licenses are being used correctly, and so forth. As part of this process, the IP Team  will research the source of all code; depending on the size of the contribution, this can be a time-consuming process.
 
-[NOTE]
-====
 A project cannot make a <<release, release>> until the due diligence on the IP contained in that release--including project code contributions and third party content--is complete. 
-====
 
-Create a <<ip-cq,contribution questionnaire>> to submit the initial contribution for review by the IP Team.
+Create a <<ip-cq,contribution questionnaire>> (CQ) to submit the initial contribution for review by the IP Team. 
+
+[TIP]
+====
+Use the <<pmi-commands-cq, Create a Contribution Questionnaire>> tool on a specific <<pmi-project-page, project page>> in the <<pmi,Project Management Interface (PMI)>> to create a CQ.
+====
 
 The IP Team is not able to review the history of project code being moved to {aForgeName} project. The IP Team will review a snapshot of the project code and that snapshot, the initial contribution, must be the first commit in the {forgeName} repository. If your project uses an existing GitHub repository, the Webmaster team will help you obscure the history into a hidden branch. 
 
@@ -27,7 +29,12 @@ Some contributions of code to maintained by the project (i.e. committed to a pro
 
 All contributions of project code must be tracked in the project's <<ip-iplog,IP Log>>.
 
-Create a <<ip-cq,contribution questionnaire>> to submit a project code contribution for review by the IP Team.
+Create a <<ip-cq,contribution questionnaire>> to submit a project code contribution for review by the IP Team. 
+
+[TIP]
+====
+Use the <<pmi-commands-cq, Create a Contribution Questionnaire>> tool on a specific <<pmi-project-page, project page>> in the <<pmi,Project Management Interface (PMI)>> to create a CQ.
+====
 
 [[ip-third-party]]
 === Third Party Content
@@ -46,12 +53,14 @@ This list is not intended to be exhaustive.
 
 The {ipThirdParty}[Guidelines for the Review of Third Party Dependencies] can help you determine how to classify your third party content.
 
-[NOTE]
-====
 A project cannot make a <<release, release>> until the due diligence on the IP contained in that release--including project code contributions and third party content--is complete. 
-====
 
 Create a <<ip-cq,contribution questionnaire>> to submit third party content for review by the IP Team.
+
+[TIP]
+====
+Use the <<pmi-commands-cq, Create a Contribution Questionnaire>> tool on a specific <<pmi-project-page, project page>> in the <<pmi,Project Management Interface (PMI)>> to create a CQ.
+====
 
 [[ip-ownership]]
 === Ownership
@@ -90,6 +99,11 @@ CQs for third party content are _version-specific_. That is, a separate CQ is re
 ====
 
 CQs are not generally required for ongoing work done by project committers. Consult the IP Due Diligence Process document for more information.
+
+[TIP]
+====
+Use the <<pmi-commands-cq, Create a Contribution Questionnaire>> tool on a specific <<pmi-project-page, project page>> in the <<pmi,Project Management Interface (PMI)>> to create a CQ.
+====
 
 [[ip-parallel-ip]]
 ==== Parallel IP
@@ -211,6 +225,11 @@ You can also flag an entire Bugzilla entry with +pass:[iplog+]+. Doing so, howev
 That contributions flagged in Bugzilla will only appear in the IP Log if the bug is marked +FIXED+ or +CLOSED+.
 
 The Third Party Software section of the log is populated from IPZilla. The IP Team will mark your contributions in such a way that they will appear in the log. If third party software is not appearing properly, contact the mailto:{ipTeamEmail}[EMO IP Team] to make corrections.
+
+[TIP]
+====
+Use the <<pmi-commands-iplog, Generate IP Log>> tool on a specific <<pmi-project-page, project page>> in the <<pmi,Project Management Interface (PMI)>> to generate and submit the IP Log for review.
+====
 
 [[ip-faq]]
 === Frequently Asked Questions
