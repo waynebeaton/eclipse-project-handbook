@@ -32,14 +32,19 @@ The complete listing of all current {projectListUrl}[{forgeName} projects] provi
 [[pmi-project-page]]
 === Project Pages
 
-The PMI provides a website for every project based on the <<pmi-metadata,project metadata>>. This website includes an _overview_ page that includes the project's description, a _downloads_ page, a _developer_ page that includes links to <<source-repositories,source code repositories>>, and more. The website also includes links to project-related <<pmi-commands-and-tools,commands and tools>> when the user is logged in as a project committer.
+The PMI provides a website for every project based on the <<pmi-metadata,project metadata>>. This website includes an _Overview_ page that shows basic information about the project, a _Downloads_ page that provides links to downloads, a _Developer Resources_ page that includes links to <<source-repositories,source code repositories>>, and more. 
+
+An example project page is shown below. The _Overview_ page includes the name and description of the project, list of project licenses, a table of recent releases, and various charts and other information (note that more charts are displayed on the _Who's Involved_ page. The website also includes links to project-specific <<pmi-commands-and-tools,commands and tools>> when the user is logged in as a project committer.
+
+.A logged in committer can access commands and tools from the _Committer Tools_ block on the right side of the project page.
+image::images/project-page.png[]
 
 The URL for a project page takes the form `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`), where `pass:c,a[<projectid>]` is the qualified <<resources-identifers,identifier>> for the project.
 
 [[pmi-commands-and-tools]]
 === Commands and Tools
 
-Committers have access to several committer-specific commands and tools. The selection of commands available are context sensitive; only those commands that make sense for the logged in user are shown.
+Committers have access to several committer-specific commands and tools in the _Committer Tools_ block on the right side of project pages. The selection of commands available are context sensitive; only those commands that make sense for the logged in user are shown.
 
 [[pmi-commands-cq]]
 ==== Create a Contribution Questionnaire
