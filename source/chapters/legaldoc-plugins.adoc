@@ -3,7 +3,7 @@
 
 [WARNING]
 ====
-This is draft content. Please post questions, comments, and feedback on https://bugs.eclipse.org/bugs/show_bug.cgi?id=525401[Bug 525401].
+This is draft content. If you have an issue, please open a report against https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Dash&component=Handbook[Dash/Handbook].
 
 Projects that implement Eclipse Platform Plug-ins and Features under the EPL-1.0 should follow the http://www.eclipse.org/legal/guidetolegaldoc-EPL-1.0.php[Guide to the Legal Documentation for Eclipse Plug-ins and Features under the EPL-1.0].
 ====
