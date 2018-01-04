@@ -144,6 +144,11 @@ Be advised that this process may take a while. The actual amount of time that it
 
 An IP Log is a record of the intellectual property contributions to a project. This includes such as a list of all committers, past and present, that have worked on the code and (especially) those who have made contributions to the current code base.
 
+[NOTE]
+====
+An IP Log is a record of intellectual property for an entire project. The purpose of the IP Log review is to confirm that the project team understands the {ipPolicyUrl}[Eclipse IP Policy] and is implementing the supporting processes. An IP Log is not intended to reflect the intellectual property included with any particular release.
+====
+
 The IP Log is a big part of the official <<release, release cycle>>. You are required to submit your project's IP Log prior to scheduling a release, or restructuring review. We encourage you to keep your IP log current rather than rushing at the end. The IP Log includes important information about your project that lets adopters know where all the code comes from, who owns the copyrights, and so forth. 
 
 Specifically, the log tracks:
