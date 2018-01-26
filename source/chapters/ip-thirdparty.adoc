@@ -1,0 +1,205 @@
+[[ip-scenarios]]
+= Intellectual Property Due Diligence Scenarios
+
+The term Intellectual Property (IP) refers to any sort of creative work, be it literature, art, or software. In the realm of open source software, artifacts like source code, documentation, and images are considered intellectual property. Unless otherwise stated, intellectual property is the property of its creator, who may grant permission for others to use that intellectual property by providing a license.
+
+The ease with which software can be copied and combined makes it challenging to know with confidence if content can be used without running into legal issues. Any sort of serious software development effort must be accompanied by a well-defined IP Due Diligence process that can ferret out issues and mitigate the risk of leveraging the work of others. IP Due Diligence is a time consuming process that requires specialized skills and a keen eye for detail.
+
+There are different kinds of content (source code, documentation, images, …) to consider. Project Code is content that is produced and maintained by the open source project committers and contributors. Third Party Content generally takes the form of libraries (modules, components, …), source files, images, or other forms of IP that are produced and maintained outside of the scope of the open source project. To mitigate the risk associated with adopting open source in products, the Project Code and Third Party Content that it leverages need to be vetted to ensure that the copyrights expressed are correct, licensing is valid and compatible, and other issues have been uncovered and properly investigated.
+
+The Eclipse Foundation has a well-defined IP Policy, corresponding IP Due Diligence Process, and a dedicated team of professional IP specialists who perform the heavy lifting in the due diligence process. Committers, the software developers who decide what will become Project Code and how an Eclipse open source project will leverage Third Party Content, are responsible for bringing IP issues to the attention of the Eclipse IP Team.
+
+Most of the Project Code produced by committers can just be pushed into a project repository without any sort of legal review. However, at least in some cases, the IP Team needs to be engaged to review Project Code that comes from contributors (who are not committers); and there are some cases where even the work of committers needs to be reviewed. I’ll discuss Project Code with more detail in a future post.
+
+The sort of effort that the Eclipse IP Team brings to bear on Third Party Content varies depending on the type. The Guidelines for the Review of Third Party Dependencies defines three different types: Prerequisite, Exempt Prerequisite, and Works With Dependency.
+
+The simplest form of Third Party Content is Prerequisite. Prerequisites are required by the Eclipse project content to provide core functionality. Prerequisite content is not generally stored in an Eclipse project’s source code repositories, but is likely included in build scripts and referenced as runtime dependencies. Since adopters of Eclipse project content are compelled to adopt the Prerequisite content, that content must also be vetted by the IP Team. The vetting requirement applies recursively: the entire transitive closure of a Prerequisite’s dependencies needs to reviewed (the dependencies of a Prerequisite are themselves Prerequisites).
+
+[graphviz, images/prereq_dependencies, svg]
+.Eclipse Project Dependencies
+----
+digraph {
+   graph [ranksep="0.25"; nodesep="0.25"; fontsize=12];
+   bgcolor=transparent
+   rankdir=LR;
+
+   node [shape=box;style=filled;fillcolor=white;fontsize=12;label="Content"]
+   edge [fontsize=12]
+   root[label="Eclipse Project\nContent"];
+
+   subgraph cluster_prereq {
+      node [fontsize=10;label="Third Party\nContent"]
+      prereq1; prereq2;
+      ref1; ref2; ref3; ref4;
+      label="\"Prereq\" Dependencies\n(Must be vetted by the IP Team)";
+      graph[style=dotted];
+   }
+   
+   root -> prereq1;
+   root -> prereq2;
+   prereq1 -> ref1;
+   prereq2 -> ref2 -> ref3
+   ref2 -> ref4;
+}
+----
+
+The transitive closure requirement only applies when an Eclipse project makes a direct reference to Third Party Content (the Eclipse Project Handbook provides some examples of what constitutes a direct reference). In the case where an Eclipse project references code from a second Eclipse project that itself references Prerequisites, no further vetting of that chain of Prerequisite content is required (the IP Team will have already vetted it on behalf of the second project team). Eclipse project teams should take care to only reference release versions of other Eclipse projects in their own releases to ensure that the IP process has been completed.
+
+[graphviz, images/eclipse_dependencies, svg]
+.Eclipse Project Dependencies
+----
+digraph {
+   graph [ranksep="0.25"; nodesep="0.25"; fontsize=12];
+   bgcolor=transparent
+   rankdir=LR;
+
+   node [shape=box;style=filled;fillcolor=white;fontsize=12;label="Content"]
+   edge [fontsize=12]
+   root[label="Eclipse Project\nContent"];
+
+   subgraph cluster_eclipse {
+      graph[style=dotted];
+      label="No further vetting required";
+      node [fontsize=10;label="Content from\na different\nEclipse Project"]
+      prereq1; 
+      node [fontsize=10;label="Third Party\nContent"]
+      ref1;
+   }
+   
+   subgraph cluster_thirdparty {
+      graph[style=dotted];
+      label="\"Prereq\" Dependencies\n(Must be vetted by the IP Team)";
+      node [fontsize=10;label="Third Party\nContent"]
+      prereq2;
+      ref2;
+   }
+   
+   root -> prereq1;
+   root -> prereq2;
+   prereq1 -> ref1;
+   prereq2 -> ref2;
+}
+----
+
+When you follow this all the way to the bottom, the entire runtime environment including virtual machines and the operating system are included in the transitive closure of dependencies. Clearly, having the IP team vet virtual machines and operating systems is not a great use of time, and—in the case of closed source operating systems—just not be possible.
+
+The Eclipse IP process guidelines provide for a notion of Exempt Prerequisite dependencies, which are not subject to review. According to the guide, content may be considered exempt if it “is pervasive in nature, expected to be already on the user’s machine, and/or an IP review would be either impossible, impractical, or inadvisable.” The Eclipse IP Team does not review the source code associated with an Exempt Prerequisite.
+
+One of the key aspects of an Exempt Prerequisite is that the user or adopter is typically the one that actually installs the software and so is the one who must agree to the licensing terms. Content that is declared an Exempt Prerequisite should never be directly distributed by an Eclipse project or otherwise made available without some explicit action from the consumer. Exempt Prerequisites must be approved by the Eclipse Foundation’s Executive Director.
+
+The Eclipse IP process guidelines also define the notion of a Works With Dependency (commonly referred to as a “works with”) that applies in two different cases. Third Party Content may be declared a Works With Dependency when:
+
+* the functionality of Eclipse project content is enhanced by the presence of the software, but is otherwise functional and useful without it; or
+* there are multiple choices and vetting all of them is impractical or impossible.
+
+A Works With Dependency is, literally, a dependency that the Eclipse Project Code will work with when it is available. The fundamental requirement is the Eclipse Project Code must be useful and adoptable without the Works With Dependency. That is, either the Project Code provides useful functionality without the Works With Dependency or the Works With Dependency is a suitable alternative for a Prerequisite.
+
+It’s enough to just register the use of Works With Dependency without seeking IP Team approval for its dependencies. The consumer is responsible for making that content available and otherwise agreeing to the terms for that content.
+
+[graphviz, images/prereq_and_workswith, svg]
+.Prerequisite and "Works with" Dependencies
+----
+digraph {
+   graph [ranksep="0.25"; nodesep="0.25"; fontsize=12];
+   bgcolor=transparent
+   rankdir=LR;
+   
+   node [shape=box;style=filled;fillcolor=white;fontsize=12;label="Content"]
+   edge [fontsize=12]
+   
+   adopter[label="Consumer"];
+   root[label="Eclipse Project\nContent"];
+
+   subgraph cluster_prereq {
+      label="\"Prereq\" Dependencies\n(Must be vetted by the IP Team)";
+      graph[style=dotted];
+      node [fontsize=10;label="Third Party\nContent"]
+      prereq1; prereq2;
+      ref1; ref2; ref3; ref4;
+   }
+   
+   subgraph cluster_workswith {
+      graph[style=dotted];
+      
+      node [fontsize=10;label="Third Party\n\"Works With\" Content\n(Must be vetted by the IP Team)"]
+      workswith;
+      subgraph cluster_workswith_transitive {
+         label="\"Works With\" Dependencies\n(No vetting required)";
+         graph[style=dotted];
+         node [fontsize=10;label="Third Party\nContent"]
+         workswith1; workswith2; workswith3;
+      }
+   }
+   
+   adopter -> root;
+   adopter -> workswith [xlabel="requires"];
+   
+   root -> prereq1 [label="requires"];
+   root -> prereq2 [label="requires"];
+   prereq1 -> ref1;
+   prereq2 -> ref2 -> ref3
+   ref2 -> ref4;
+   
+   root -> workswith[style="dotted";label="optional"];
+   workswith -> workswith1;
+   workswith -> workswith2 -> workswith3;
+}
+----
+
+As with an Exempt Prerequisite, a Works With Dependency should never be directly distributed or otherwise made available without some explicit action from the consumer. Works With Dependencies must be approved by the Eclipse project’s Project Management Committee.
+
+As an example, if Eclipse Project Code will make use of a specific database implementation when it is available, but otherwise provides useful functionality when that database is not present, that database may be a Works With Dependency. If, however, a specific database must be available for the Eclipse Project Code to provide any sort of core functionality, then that database is likely a Prerequisite which must be fully vetted. Or, if the Project Code must have access to some database, then the IP process requires that at least one specific database be fully vetted as a Prerequisite and other options can be declared as Works With Dependencies.
+
+Eclipse committers engage the Eclipse IP Process is by filing a Contribution Questionnaire (which is commonly referred to as a CQ). Committers can find a link to create a CQ on their project page in the Eclipse Project Management Infrastructure (PMI).
+
+== Maven Example
+
+[source, xml]
+----
+...
+<dependencies>
+   <dependency>
+      <groupId>commons-httpclient</groupId>
+      <artifactId>commons-httpclient</artifactId>
+      <version>3.1</version>
+   </dependency>
+</dependencies>
+...
+----
+
+[source]
+----
+$ mvn dependency:tree
+...
+[INFO] org.eclipse.dash:good-stuff:jar:0.0.1-SNAPSHOT
+[INFO] \- commons-httpclient:commons-httpclient:jar:3.1:compile
+[INFO]    +- commons-logging:commons-logging:jar:1.0.4:compile
+[INFO]    \- commons-codec:commons-codec:jar:1.2:compile
+...
+----
+
+[graphviz, images/example-dependencies, svg]
+.Maven Dependency Example
+----
+digraph {
+   graph [ranksep="0.25"; nodesep="0.25"; fontsize=12];
+   bgcolor=transparent
+   rankdir=LR;
+   
+   node [shape=box;style=filled;fillcolor=white;fontsize=12;label="Content"]
+   edge [fontsize=12]
+   
+   projectcode [label="org.eclipse.dash:stuff:jar:0.0.1"];
+   subgraph cluster_dependencies {
+      graph[style=dotted];
+      label="\"Prereq\" Dependencies\n(Must be vetted by the IP Team)";
+      httpclient [label="commons-httpclient:commons-httpclient:jar:3.1"];
+      logging [label="commons-logging:commons-logging:jar:1.0.4"];
+      codec [label="commons-codec:commons-codec:jar:1.2"];
+   }
+   
+   projectcode -> httpclient [label="requires"];
+   httpclient -> logging;
+   httpclient -> codec;
+}
+----
