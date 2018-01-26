@@ -1,5 +1,5 @@
 [[starting]]
-== Starting an Open Source Project at {forgeName}
+== Starting an Open Source Project at Eclipse Foundation
 
 Before getting started, it's important to know what is required of {aForgeName} project. The Eclipse Foundation will take ownership of many aspects of the project to ensure that the project and its assets are managed in an open and vendor-neutral manner. This takes the form, for example, of the Eclipse Foundation retaining ownership of the project's trademarks on behalf of the community, and carefully managing who has write access on project resources such as source code repositories and distribution channels. {forgeName} projects are obligated to use certain <<project-resources-and-services,resources>> assigned to the project by the Eclipse Foundation and conform to logo and trademark guidelines. New project sponsors must engage in the process of transitioning an existing project with the intent to continue development of the project code and growth of the community and ecosystem around the project.
 
