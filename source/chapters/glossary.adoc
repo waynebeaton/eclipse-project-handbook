@@ -66,6 +66,10 @@ EMO Records ::
 
 The EMO Records Team (commonly referred to as _EMO Records_) is responsible for managing committer paperwork and other records on behalf of the Eclipse Foundation. Contact the EMO Records team via email ({emoRecordsEmail}).
 
+Exempt Prerequisite (Dependency) ::
+
+An _Exempt Prerequisite_ is defined by the {ipThirdParty}[Guide for the Review of Third Party Dependencies] as third party content which is used by Eclipse project code but is not not subject to review by the EMO IP Team. Content may be considered exempt if it is "is pervasive in nature, expected to be already on the user's machine, and/or an IP review would be either impossible, impractical, or inadvisable."
+
 Incubation Phase ::
 
 The purpose of the incubation phase is to establish a fully-functioning open-source project. In this context, incubation is about developing the process, the community, and the technology. Incubation is a phase rather than a place: new projects may be incubated under any existing project.
@@ -89,6 +93,10 @@ The <<ip-parallel-ip,Parallel IP Process>> allows {aForgeName} projects to make 
 Planning Council ::
 
 The Eclipse Planning Council is responsible for cross-project planning, architectural issues, user interface conflicts, and all other coordination and integration issues. The Planning Council discharges its responsibility via collaborative evaluation, prioritization, and compromise. 
+
+Prerequisite::
+
+The {ipThirdParty}[Guide for the Review of Third Party Dependencies] defines Prerequisites as third party content that is required by the Eclipse project content to provide core functionality. 
 
 Project::
 
@@ -116,3 +124,7 @@ The Webmaster team is responsible for maintaining the IT infrastructure of the E
 Working Group ::
 
 Eclipse {wgUrl}[Working Groups] provide a vendor-neutral governance structure that allow organizations to freely collaborate on new technology development. 
+
+Works With Dependency ::
+
+A _Works With Dependency_ is defined by the {ipThirdParty}[Guide for the Review of Third Party Dependencies] as third party content that Eclipse Project Code will work with when it is available. The fundamental requirement is the Eclipse Project Code must be useful and adoptable without the Works With Dependency. That is, either the Project Code provides useful functionality without the Works With Dependency or the Works With Dependency is a suitable alternative for a Prerequisite.
