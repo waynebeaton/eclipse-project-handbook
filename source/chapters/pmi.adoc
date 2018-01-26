@@ -53,8 +53,8 @@ Any project committer create <<ip-cq, Contribution Questionnaire>> (CQ). CQs are
 
 To create a Contribution Questionnaire:
 
-1. Log in;
-2. Navigate to a project page;
+1. Log in to the {forgeUrl}[PMI];
+2. Navigate to a <<pmi-project-page,project page>>;
 3. Click menu:Committer Tools[Intellectual Property > Create a Contribution Questionnaire]; and
 4. Follow the workflow.
 
@@ -65,8 +65,8 @@ Any project committer generate the <<ip-iplog, Intellectual Property (IP) Log>> 
 
 To generate an IP Log:
 
-1. Log in;
-2. Navigate to a project page;
+1. Log in to the {forgeUrl}[PMI];
+2. Navigate to a <<pmi-project-page,project page>>;
 3. Click menu:Committer Tools[Intellectual Property > Generate IP Log]; and
 4. Follow the workflow.
 
@@ -77,8 +77,8 @@ A project lead or committer can create a new <<release,release>> record. This op
 
 To generate an IP Log:
 
-1. Log in;
-2. Navigate to a project page;
+1. Log in to the {forgeUrl}[PMI];
+2. Navigate to a <<pmi-project-page,project page>>;
 3. Click menu:Committer Tools[Releases > Create a new release]; and
 4. Follow the workflow.
 
