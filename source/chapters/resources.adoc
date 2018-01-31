@@ -68,7 +68,7 @@ Date:   Wed May 29 16:17:36 2013 +0200
 <1> The email address of the author must match the email address on the Eclipse Foundation Account.
 <2> Best practice: include the bug id in the commit message summary.
 <3> Gerrit `Change-Id` (only when pushing to Gerrit for review).
-<4> Additional authors can be added using `Also-by` entries.
+<4> Additional authors can be added using `Also-by` or `Co-authored-by` entries.
 <5> Non-committers must _sign-off_ the commit, indicating that they aware of the terms by which the contribution has been provided to the project, using the same email address as used in the author field.
 
 The _summary_ line is used in many places where Git commits are listed, ensure that this line is sensible by itself. The _description_ area should be used to provide more detail about the commit. The footer area is used for extra fields and values.
@@ -77,7 +77,7 @@ If the bug id is included in the summary line (using the form "Bug 12345 - xxx" 
 
 The `Change-Id` is used by <<resources-gerrit,Gerrit Code Review>> to associate new versions of a change back to its original review. This field need only be specified if the repository is managed by Gerrit.
 
-An `Also-by` entry can be added for each additional author of a commit (one committer per entry). This might apply, for example, if a commit has been authored via pair-programming, or the commit is the result of collapsing multiple commits authored by multiple developers.
+An `Also-by` (or `Co-authored-by`) entry can be added for each additional author of a commit (one committer per entry). This might apply, for example, if a commit has been authored via pair-programming, or the commit is the result of collapsing multiple commits authored by multiple developers. To be considered valid the entry must take the form `Also-by: Name <email>`.
 
 Commits that are provided by non-committers must have a `Signed-off-by` field in the footer indicating that the author is aware of the terms by which the contribution has been provided to the project. The non-committer must additionally have an Eclipse Foundation Account and must have a signed <<resources-eca,Eclipse Contributor Agreement>> (ECA) on file.
 
