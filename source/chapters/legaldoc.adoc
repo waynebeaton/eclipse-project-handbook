@@ -323,6 +323,10 @@ What licenses should be listed in a build script (e.g. Maven `pom.xml` file)?::
 
 The license(s) in the build should reflect what is being built, but typically not the license(s) of referenced third party content. The `pom.xml` file for project code, for example, should list the project license(s).
 
+In a multiple license scenario, do we use conjunction (`AND`) or disjunction (`OR`)?::
+
+We follow the lead of the https://spdx.org/[SPDX community] with regard to the way in which we express the combination of licenses, and use inclusive disjunction. In the example of a dual licensing scenario, we make the content available under the terms of licenses A *AND* B, but the consumer accepts it under the terms of license A *OR* B or both. Think of it from the perspective of the consumer.
+
 How do I get help?::
 
 If you have any questions or concerns, contact mailto:{legalEmail}[{legalEmail}].
