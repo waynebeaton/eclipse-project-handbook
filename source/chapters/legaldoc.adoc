@@ -113,7 +113,7 @@ Copyright headers can take one of two forms. In the traditional form, the identi
 <3> Declared project licenses indicated using SPDX codes and expressions.
 <4> The names of the contributors and the nature of their contribution (this section may be excluded).
 
-Contributors should be consistent when expressing copyright on a particular file and in the <<legaldoc-notice,notice>> file. In some legal circles, the exact form of the copyright message must be used in summaries, including punctuation (e.g. the “Copyright (c) 2017 My Company, Inc” and “Copyright (c) 2017 My Company, Inc.” may be considered different and distinct because of the period).
+Contributors should be consistent when expressing copyright on a particular file. In some legal circles, the exact form of the copyright message must be used in summaries, including punctuation (e.g. the “Copyright (c) 2017 My Company, Inc” and “Copyright (c) 2017 My Company, Inc.” may be considered different and distinct because of the period).
 
 [NOTE]
 ====
@@ -196,13 +196,11 @@ http://www.eclipse.org/legal/epl-2.0, or the Apache Software License
 
 Notice files are expressed in human-readable plain text format; human readable markup languages may be used. The file is conventionally named `NOTICE` and may include a suffix (e.g. `NOTICE.md`).
 
-The notice file must include basic project metadata, an expression of the declared project licenses, the copyright holder's, information regarding the licensing of any third party content, and a statement regarding the use of cryptography in cases where either the project code or third party content implements cryptography.
+The notice file must include basic project metadata, an expression of the declared project licenses, information regarding the licensing of any third party content, and a statement regarding the use of cryptography in cases where either the project code or third party content implements cryptography.
 
 Project metadata provides the identity of the originating project, along with pointers to the project’s website and canonical source code repositories.
 
 The declared licenses statement should in most case, be exactly the same as the license statement in the file <<ip-copyright-headers,copyright and license headers>>.
-
-Copyright holders are expressed as multiple complete copyright statements; with one complete entry on each line. In many cases, the copyright holder is different from the author (the copyright holder is very often the author's employer).
 
 If cryptography is included with the content, then the following statement must be included in a comment in the _notice_ file:
 
@@ -216,68 +214,81 @@ Other information, as deemed necessary by the project team may also be included.
 .Example `NOTICE` file
 [source]
 ----
+# Notices for Dash, Tools for Committers
+
 This content is produced and maintained by the Eclipse Dash, Tools for
 Committers project.
 
-* Project home: https://projects.eclipse.org/projects/technology.dash
+ * Project home: https://projects.eclipse.org/projects/technology.dash
 
-== Declared Project Licenses
+## Trademarks
+
+Eclipse Dash, Tools for Committers, and Dash, Tools for Committers are
+trademarks of the Eclipse Foundation. Eclipse, and the Eclipse Logo are
+registered trademarks of the Eclipse Foundation.
+
+## Declared Project Licenses
 
 This program and the accompanying materials are made available under the terms
-of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.html.
+of the Eclipse Public License v. 1.0 which is available at
+http://www.eclipse.org/legal/epl-v10.html.
 
-== Source Code
+SPDX-License-Identifier: EPL-1.0
 
-* http://git.eclipse.org/c/dash/org.eclipse.dash.dashboard.git
-* http://git.eclipse.org/c/dash/org.eclipse.dash.handbook.git
-* http://git.eclipse.org/c/dash/org.eclipse.dash.m4e.tools.git
-* http://git.eclipse.org/c/dash/org.eclipse.dash.maven.git
-* http://git.eclipse.org/c/dash/org.eclipse.dash.repositories.git
-* http://git.eclipse.org/c/dash/org.eclipse.dash.test.git
+## Source Code
 
-== Copyright Holders
+The project maintains the following source code repositories:
 
-Copyright 2011-2012 Aaron Digulla
-Copyright 2011 David Carver
-Copyright 2015 Business Systems Integration AG
-Copyright 2011 Webtide
-Copyright 2015-2017 The Eclipse Foundation
+ * http://git.eclipse.org/c/dash/org.eclipse.dash.dashboard.git
+ * http://git.eclipse.org/c/dash/org.eclipse.dash.handbook.git
+ * http://git.eclipse.org/c/dash/org.eclipse.dash.m4e.tools.git
+ * http://git.eclipse.org/c/dash/org.eclipse.dash.maven.git
+ * http://git.eclipse.org/c/dash/org.eclipse.dash.repositories.git
+ * http://git.eclipse.org/c/dash/org.eclipse.dash.test.git
 
-== Third-party Content
+## Third-party Content
 
-commons-codec-1.3.jar Version: 1.3 
-* License: Apache License, 2.0
+ckeditor (3.0.1)
 
-Yahoo YUI Version: 2.3.1  
-* License: New BSD license
+ * License: MPL 1.1, BSD
+ * Project: http://ckeditor.com/
+ * Source: http://ckeditor.com/download
 
-Services_JSON Version: 1.31 
-* License: Modified BSD 
-* Project: http://pear.php.net/pepr/pepr-proposal-show.php?id=198
-* Source: http://mike.teczno.com/JSON/
+commons-codec-1.3.jar (1.3)
 
-YUI 2.6.0  Subset:  Build and Version: Assets  
-* License: New BSD license
+ * License: Apache License, 2.0
 
-ckeditor Version: 3.0.1 
-* License: MPL 1.1, BSD
-* Project: http://ckeditor.com/
-* Source: http://ckeditor.com/download
+commons-net (3.3)
 
-commons-vfs2 Version: 2.1 
-* License: Apache License, 2.0
+ * License: Apache License, 2.0
 
-commons-net Version: 3.3 
-* License: Apache License, 2.0
+commons-vfs2 (2.1)
 
-Google Gson Version: 2.2.4 
-* License: Apache License, 2.0
+ * License: Apache License, 2.0
 
-Google Guava Version: 19.0 
-* License: Apache License, 2.0
+Google Gson (2.2.4)
 
-== Cryptography
+ * License: Apache License, 2.0
+
+Google Guava (19.0)
+
+ * License: Apache License, 2.0
+
+Services_JSON (1.31)
+
+ * License: Modified BSD 
+ * Project: http://pear.php.net/pepr/pepr-proposal-show.php?id=198
+ * Source: http://mike.teczno.com/JSON/
+
+Yahoo YUI (2.3.1)
+
+ * License: New BSD license
+
+YUI (2.6.0)
+
+ * License: New BSD license
+
+## Cryptography
 
 Content may contain encryption software. The country in which you are currently
 may have restrictions on the import, possession, and use, and/or re-export to
@@ -298,7 +309,19 @@ The actual text of the project's declared licenses should not be included in the
 [qanda]
 Do the _license_ and _notice_ files need to be named `LICENSE` and `NOTICE`?::
 
-No. If there are technical limitations, for example, that require that you select different names, you can do so. But for the sake of consistency for our communities we prefer that this convention be followed.
+No. If there are technical limitations, for example, that require that you select different names, you can do so. But for the sake of consistency for our communities we prefer that this convention be followed. Format-specific file extensions (e.g. `NOTICE.md`) can be used.
+
+Can the _license_ and _notice_ files use Markdown?::
+
+Yes. Any human-readable markup format may be used.
+
+Is the cryptography statement required?::
+
+The cryptography statement is only required if the project code includes cryptography algorithms or other cryptographic content.
+
+What licenses should be listed in a build script (e.g. Maven `pom.xml` file)?::
+
+The license(s) in the build should reflect what is being built, but typically not the license(s) of referenced third party content. The `pom.xml` file for project code, for example, should list the project license(s).
 
 How do I get help?::
 
