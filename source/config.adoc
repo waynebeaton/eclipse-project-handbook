@@ -15,7 +15,6 @@
 :wgUrl: https://www.eclipse.org/org/workinggroups/
 
 :developerPortalUrl: http://portal.eclipse.org
-:committerQuestionnaireUrl: http://portal.eclipse.org
 :committerGuidelinesUrl: http://www.eclipse.org/legal/committerguidelines.php
 :legalDocumentationUrl: http://www.eclipse.org/legal/guidetolegaldoc.php
 :ipDueDiligenceUrl: http://www.eclipse.org/legal/EclipseLegalProcessPoster.pdf

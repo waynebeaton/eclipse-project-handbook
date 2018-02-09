@@ -3,27 +3,30 @@
 
 The Eclipse Foundation needs to ensure that all committers with write access to the code, websites, and issue tracking systems understand their role in the intellectual property process. The Eclipse Foundation also needs to ensure that we have accurate records of the people who are acting as change agents on the projects. To ensure that committers understand their role, and that the Eclipse Foundation has accurate records, committers must provide documentation asserting that they have read, understood, and will follow the committer guidelines. Committers must also gain their employers consent to their participation in Eclipse Foundation open source projects.
 
-All committers must complete the _Committer Questionnaire_ and provide documentation as described below.
+All committers must complete the _Committer Paperwork Workflow_, which includes the _Committer Questionnaire_ and documentation as described below.
 
 [[paperwork-questionnaire]]
 === Committer Questionnaire
 
-The {committerQuestionnaireUrl}[Committer Questionnaire] is an online form that must be completed by all new committers. This form offers two separate paths: one for committers who work for a member company that has provided a signed _Member Committer Agreement_, and one for everyone else.
+The _Committer Questionnaire_ is an online form that must be completed by all new committers. This form offers two separate paths: one for committers who work for a member company that has provided a signed _Member Committer Agreement_, and one for everyone else.
+
+.The Committer Paperwork Workflow starts by asking for employment status.
+image::images/committer_questionnaire.png[]
+
+The _Committer Questionnaire_ is accessible only after an individual has been elected into the role of a committer on a project (note that all committer relationships are between an individual and a specific project), either as an initial committer on a new project, or via <<elections-committer,_Committer Election_>> on an existing project. New committers will be sent a link to the questionnaire via email.
 
 [NOTE]
 ====
-The _Committer Questionnaire_ is accessible only after you have been elected as a committer on a project, either as an initial committer on a new project, or via election on an existing project.
+If you indicate that you are employed, you will be asked to identify your employer. Only member companies that have provided a *signed* _Member Committer Agreement_ will be listed as member companies in the _Committer Questionnaire_. If you work for a company that is not an Eclipse Foundation Member Company, or your employer has not provided the Eclipse Foundation with a _Member Committer Agreement_ you must list your employer as "Other".
 ====
-
-Only member companies that have provided a signed _Member Committer Agreement_ will be listed as member companies in the _Committer Questionnaire_.
 
 [[paperwork-documents]]
 === Documents
 
-The exact nature of the documentation required is dependent upon employments status.
+The exact nature of the documentation required is dependent upon the employment status of the individual.
 
 [graphviz, images/paperwork, svg]
-.What paperwork do you need?
+.What paperwork is required?
 ----
 digraph {
 	// Graph properties
@@ -35,8 +38,7 @@ digraph {
 	node [shape=box;style=filled;fillcolor=white;fontsize=12;group=g1]
 	
 	start [label="Start"]
-	ica_ececf [label="Submit an ICA\nand ECECF"]
-	mca [label="Submit an MCA"]
+	ica [label="Submit an ICA"]
 	final [label="You're done!"]
 	
 	node [shape=diamond;style=filled;fillcolor=white;fontsize=10;group=g1];
@@ -44,7 +46,6 @@ digraph {
 	is_committer [label="Are you already\na committer?"]
 	is_member [label="Do you work for\na member company?"]
 	has_mca [label="Has your company\nprovided an MCA?"]
-	can_mca [label="Can your company\nprovide an MCA?"]
 	
 	start -> is_committer
 	
@@ -52,21 +53,23 @@ digraph {
 	is_committer -> is_member [label="No"]
 	
 	is_member -> has_mca [label="Yes"]
-	is_member -> ica_ececf [label="No"]
+	is_member -> ica [label="No"]
 		
 	has_mca -> final [label="Yes"]
-	has_mca -> can_mca [label="No"]
+	has_mca -> ica [label="No"]
 	
-	can_mca -> mca [label="Yes"]
-	can_mca -> ica_ececf [label="No"]
-	
-	ica_ececf -> final
-	mca -> final
-	
+	ica -> final
 }
 ----
 
-Documents must be printed, signed and then returned either by fax (using the fax number on the form) or as scanned images via email to the mailto:{emoRecordsEmail}[EMO Records Team].
+The new committer must download and print the documents, complete and sign them, and then provide them to the EMO Records Team. The new committer paperwork workflow provides a means of uploading these documents; alternatively, the team may ask you to provide them via email. 
+
+.Upload the ICA directly into the form
+image::images/committer_questionnaire2.png[]
+
+After all required documents have been received, the EMO Records Team will review them, contact the committer to resolve any issues that need to be addressed, and send a request to the Webmaster to provision a committer account.
+
+Questions regarding this process should be addressed to the mailto:{emoRecordsEmail}[EMO Records Team].
 
 [[paperwork-mca]]
 ==== Member Committer Agreement
@@ -78,36 +81,19 @@ The {mcaUrl}[Member Committer Agreement] (MCA) is used by organizations that are
 If your employer is a member of the Eclipse Foundation and  has not already provided an MCA, consult with your management team to determine who has the necessary authority to sign it on your company's behalf. Provide the MCA in advance of the completion of your committer election or new project creation to streamline the committer provisioning process. If you and your management team are not sure whether or not your employer has an MCA, ask the mailto:{emoRecordsEmail}[EMO Records Team].
 ====
 
-If the committer's employer is a member of the Eclipse Foundation that cannot provide a signed MCA, then the committer will have to complete an _Individual Committer Agreement_ and _Eclipse Committer Employer Consent Form_.
+If the committer's employer is a member of the Eclipse Foundation that cannot provide a signed MCA, then the committer will have to complete an _Individual Committer Agreement_.
 
 [[paperwork-ica]]
 ==== Individual Committer Agreement
 
 The {icaUrl}[Individual Committer Agreement] (ICA) is used by committers who are not covered by a _Member Committer Agreement_.
 
-An ICA is required if:
+An ICA is required when:
 
 * The committer works for a company that is not a member of the Eclipse Foundation;
 * The committer works for member company that has not signed a Member Committer Agreement;
 * The committer is self employed or not employed; or
 * The committer is a student.
-
-If the committer provides an _Individual Committer Agreement_, and is employed or self-employed, then they must also provide an _Eclipse Committer Employer Consent Form_.
- 
-[[paperwork-ececf]]
-==== Eclipse Committer Employer Consent Form
-
-Committers covered by an _Individual Committer Agreement_ must document the consent of their employer when participating in Eclipse Foundation projects by providing an {ececfUrl}[Eclipse Committer Employer Consent Form] (ECECF).
-
-A committer will need to provide an ECECF if:
- 
-* The committer works for a company that is not a member of the Eclipse Foundation;
-* The committer works for member company that has not signed a _Member Committer Agreement_; or
-* The committer is self-employed.
-
-If the committer is self employed, an owner of their company, or has full ownership or part ownership in another company and has the authority to sign and submit the ECECF on their own behalf, then they should do so.
-
-Alternatively, the committer may arrange for the company that is their principal business customer to sign and submit the ECECF on their behalf.
 
 [[paperwork-existing]]
 ==== Existing Committer
