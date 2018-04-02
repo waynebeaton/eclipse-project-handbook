@@ -13,6 +13,7 @@
 :accountUrl: https://accounts.eclipse.org/
 :memberUrl: https://www.eclipse.org/membership/
 :wgUrl: https://www.eclipse.org/org/workinggroups/
+:licenseWhitelistUrl: https://www.eclipse.org/legal/licenses.php#approved
 
 :developerPortalUrl: http://portal.eclipse.org
 :committerGuidelinesUrl: http://www.eclipse.org/legal/committerguidelines.php

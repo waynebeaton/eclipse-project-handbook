@@ -178,6 +178,9 @@ How do I find Eclipse Architecture Council mentors? ::
 
 You don't have to find them yourself. Focus on the content of the proposal. We can solicit mentors from the Eclipse Architecture Council after the proposal has been opened for community review.
 
+What license(s) can I use for my project? ::
+{forgeName} top level projects define the standard licensing for their projects. When a project has nonstandard licensing requirements, they may need to make an appeal to the Eclipse board of directors to request their approval. Connect with mailto:{emoEmail}[EMO] for assistance.
+
 Can I change the proposal after it is posted? ::
 
 Yes. The proposal can be changed any time before the start of the creation review.
