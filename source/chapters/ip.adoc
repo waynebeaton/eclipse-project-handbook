@@ -19,7 +19,7 @@ The term intellectual property (IP) refers to any sort of creative work, be it l
 
 The ease with which software can be copied and combined makes it challenging to know with confidence if content can be used without running into legal issues. Any sort of serious software development effort must be accompanied by a well-defined IP due diligence process that can ferret out issues and mitigate the risk of leveraging the work of others. IP due diligence is a time consuming process that requires specialized skills and a keen eye for detail.
 
-There are different kinds of content (e.g., source code, documentation, and images) to consider. <<ip-project-code,_Project code_>> (or _project content_) is content that is produced and maintained by the open source project committers and contributors. <<ip-third-party,_Third party content_>> generally takes the form of libraries (e.g. modules, or components), source files, images, or other forms of IP that are produced and maintained outside of the scope of the open source project. To mitigate the risk associated with adopting open source in products, the _project code_ and _third party content_ that it leverages need to be reviewed (vetted) to ensure that the copyrights expressed are correct, licensing is valid and compatible, and other issues have been uncovered and properly investigated.
+There are different kinds of content (e.g., source code, documentation, and images) to consider. <<ip-project-code,_Project code_>> (or _project content_) is content that is produced and maintained by the open source project committers and contributors. <<ip-third-party,_Third party content_>> generally takes the form of libraries (e.g. modules, or components), source files, images, or other forms of IP that are produced and maintained outside of the scope of the open source project. To mitigate the risk associated with adopting open source in products, the _project code_ and _third party content_ that it leverages need to be reviewed to ensure that the copyrights expressed are correct, licensing is valid and compatible, and other issues have been uncovered and properly investigated.
 
 The Eclipse Foundation has a well-defined {ipPolicyUrl}[IP Policy], corresponding {ipDueDiligenceUrl}[IP Due Diligence Process], and a dedicated team of professional IP specialists (IP Team) who perform the heavy lifting in the due diligence process. Committers, the software developers who decide what will become _project code_ and how {aForgeName} open source project will leverage _third party content_, are responsible for bringing IP issues to the attention of the Eclipse IP Team.
 
@@ -109,7 +109,7 @@ The sort of effort that the Eclipse IP Team brings to bear on third party conten
 [ip-third-party-prereq]]
 ==== Prerequisite Dependencies
 
-The simplest form of third party content is _Prerequisite_ (or _prereq_). Prerequisites are required by the Eclipse project content to provide core functionality. Prerequisite content is not generally stored in an Eclipse project’s source code repositories, but is likely included in build scripts and referenced as runtime dependencies. Since adopters of Eclipse project content are compelled to adopt the Prerequisite content, that content must also be vetted by the IP Team. The vetting requirement applies recursively: the entire transitive closure of a Prerequisite’s dependencies needs to reviewed (the dependencies of a Prerequisite are themselves Prerequisites).
+The simplest form of third party content is _Prerequisite_ (or _prereq_). Prerequisites are required by the Eclipse project content to provide core functionality. Prerequisite content is not generally stored in an Eclipse project’s source code repositories, but is likely included in build scripts and referenced as runtime dependencies. Since adopters of Eclipse project content are compelled to adopt the Prerequisite content, that content must also be reviewed by the IP Team. The review requirement applies recursively: the entire transitive closure of a Prerequisite’s dependencies needs to reviewed (the dependencies of a Prerequisite are themselves Prerequisites).
 
 [graphviz, images/prereq_dependencies, svg]
 .Eclipse Project Dependencies
@@ -127,7 +127,7 @@ digraph {
       node [fontsize=10;label="Third Party\nContent"]
       prereq1; prereq2;
       ref1; ref2; ref3; ref4;
-      label="\"Prerequisite\" Dependencies\n(Must be vetted by the IP Team)";
+      label="\"Prerequisite\" Dependencies\n(Must be reviewed by the IP Team)";
       graph[style=dotted];
    }
    
@@ -139,17 +139,18 @@ digraph {
 }
 ----
 
-The IP Team must review third party content if:
+Examples of _Prerequisite_ dependencies:
 
 * the Java/OSGi manifest for one of the project bundles makes a direct reference to third party content (either a bundle or package);
 * project code includes an import statement for a package from third party content;
+* project code imports a third party library's header file;
 * project code uses reflection or other means to reference APIs and implementation;
 * project code uses OSGi Services to make a reference to a specific implementation of a service; or
 * project code invokes a "command line" tool.
 
 This list is not intended to be exhaustive. 
 
-In the case where {aForgeName} project references code from <<ip-other-projects,another {forgeName} project>> that itself references _Prerequisites_, no further vetting of that chain of Prerequisite content is required (the IP Team will have already vetted it on behalf of the second project team). Eclipse project teams should take care to only reference release versions of other Eclipse projects in their own releases to ensure that the IP Due Diligence Process has been completed.
+In the case where {aForgeName} project references code from <<ip-other-projects,another {forgeName} project>> that itself references _Prerequisites_, no further review of that chain of Prerequisite content is required (the IP Team will have already reviewed it on behalf of the second project team). Eclipse project teams should take care to only reference release versions of other Eclipse projects in their own releases to ensure that the IP Due Diligence Process has been completed.
 
 [graphviz, images/eclipse_dependencies, svg]
 .Eclipse Project Dependencies
@@ -165,7 +166,7 @@ digraph {
 
    subgraph cluster_eclipse {
       graph[style=dotted];
-      label="No further vetting required";
+      label="No further review required";
       node [fontsize=10;label="Content from\na different\nEclipse Project"]
       prereq1; 
       node [fontsize=10;label="Third Party\nContent"]
@@ -174,7 +175,7 @@ digraph {
    
    subgraph cluster_thirdparty {
       graph[style=dotted];
-      label="\"Prerequisite\" Dependencies\n(Must be vetted by the IP Team)";
+      label="\"Prerequisite\" Dependencies\n(Must be reviewed by the IP Team)";
       node [fontsize=10;label="Third Party\nContent"]
       prereq2;
       ref2;
@@ -220,7 +221,7 @@ Create a <<ip-cq,CQ>> to submit an Exempt Prerequisite for review by the IP Team
 The Eclipse IP Due Diligence Process guidelines also define the notion of a _Works With Dependency_ (commonly referred to as a “works with”) that applies in two different cases. Third party content_ may be declared a _Works With Dependency_ when:
 
 * the functionality of Eclipse <<ip-project-code,project code>> is enhanced by the presence of the software, but is otherwise functional and useful without it; or
-* there are multiple choices and vetting all of them is impractical or impossible.
+* there are multiple choices and reviewing all of them is impractical or impossible.
 
 A _Works With Dependency_ is, literally, a dependency that the Eclipse project code will work with when it is available. The fundamental requirement is the Eclipse project code must be useful and adoptable without the Works With Dependency. That is, either the project code provides useful functionality without the Works With Dependency or the Works With Dependency is a suitable alternative for a <<ip-third-party-prereq,Prerequisite>>.
 
@@ -241,7 +242,7 @@ digraph {
    root[label="Eclipse Project\nContent"];
 
    subgraph cluster_prereq {
-      label="\"Prereq\" Dependencies\n(Must be vetted by the IP Team)";
+      label="\"Prereq\" Dependencies\n(Must be reviewed by the IP Team)";
       graph[style=dotted];
       node [fontsize=10;label="Third Party\nContent"]
       prereq1; prereq2;
@@ -251,10 +252,10 @@ digraph {
    subgraph cluster_workswith {
       graph[style=dotted];
       
-      node [fontsize=10;label="Third Party\n\"Works With\" Content\n(Must be vetted by the IP Team)"]
+      node [fontsize=10;label="Third Party\n\"Works With\" Content\n(Must be reviewed by the IP Team)"]
       workswith;
       subgraph cluster_workswith_transitive {
-         label="\"Works With\" Dependencies\n(No vetting required)";
+         label="\"Works With\" Dependencies\n(No review required)";
          graph[style=dotted];
          node [fontsize=10;label="Third Party\nContent"]
          workswith1; workswith2; workswith3;
