@@ -421,6 +421,9 @@ Yes. Third party content can be included in binary form (e.g. source and binary 
 Can my release use unreleased content from another Eclipse open source project? ::
 No. A release may only use released content from other projects. A project may disseminate milestone builds that include unreleased content, but the upstream content must be released before a downstream project can include the content in their own release.
 
+Are project websites subject to the IP Due Diligence Process? ::
+Website content is separate from project code. Project teams are expected to respect licenses for all web site content, but are not required to submit website content (including third party libraries) for review by the IP Team.
+
 What do you do with the IP Log? ::
 IP Log reviews occur in two stages. In the first stage, the EMO performs a technical assessment to make sure that the artifacts produced by the project are properly accounted for in the IP log. You may be asked to assist with the resolution of any discrepancies found during this assessment. In the second stage, the IP Team reviews the log to ensure that it matches their records. The IP log review concludes with approval by the IP Team.
 
