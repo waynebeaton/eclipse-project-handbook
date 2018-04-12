@@ -125,7 +125,7 @@ Product names should also be prefixed with "{forgeName}" when used in any formal
 Project teams should work with their PMC to determine whether or not to pursue assertion of ownership of the trademark for product names. Project teams should work with the Eclipse Management Organization (EMO) to assert ownership of product trademarks.
 
 [[trademarks-project-description]]
-==== Project Descriptions
+=== Project Descriptions
 
 All {forgeName} projects require a description. The project description must include a brief sentence or short paragraph (no bullets) that explains the primary function of the software deliverables provided. For example:
 
@@ -138,7 +138,7 @@ The complete description can certainly include much more information, but starti
 Project teams may seek guidance from the PMC and EMO to ensure that the text is a proper trademark goods description; i.e. one that describes the specific functionality of the software available for download and use.
 
 [[trademarks-project-logo]]
-==== Logos And Graphics
+=== Logos And Graphics
 
 All {forgeName} projects are encouraged to create a unique logo to identify their project. Projects teams can engage a graphic design crowdsouring site or similar service to create a logo. The project leader and committers are responsible for setting up the design process and providing the feedback to the graphic designers. Based on past experience, faster and more detailed feedback to the designers yields better results.
 
