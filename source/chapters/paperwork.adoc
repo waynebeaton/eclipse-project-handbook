@@ -113,10 +113,6 @@ What happens if I do not fill out the paperwork?::
 
 If you do not fill out the paperwork, then you do not get your credentials for write-access to the source code repository(s) and other project resources.
 
-What happens if I cannot convince my employer to fill out the paperwork?::
-
-The Eclipse Board of Directors has taken a firm position that if you are employed then you must meet one of the scenarios described above. If you cannot convince your employer to fill out the necessary paperwork, then you cannot have write-access to project resources. This is the Board's position _even if_ you are working on {forgeName} projects on your own time. We realize that this prevents some talented and desirable people from being able to commit to the projects but this is our IP risk reduction strategy. 
-
 Where can I get help to discuss these documents with my management team? ::
 
 The EMO can talk to your management and senior executives about these (and other) legal documents to help them understand why these documents are the best risk reduction solution for everyone involved; just contact us at license@eclipse.org.
