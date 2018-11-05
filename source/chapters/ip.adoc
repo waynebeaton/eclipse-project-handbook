@@ -448,8 +448,14 @@ Yes, all Eclipse projects are eligible to choose <<ip-third-party-prereq-types,T
 How does a Project Lead document their project as _Type A_? ::
 The Project Lead and all committers have the ability to designate their project as Type A via the <<pmi-due-diligence, project metadata>>.
 
-Can a project consist of both Type A and Type B CQs? ::
-Yes
+Can a project use a combination of _Type A_ and _Type B_ CQs? ::
+Yes. A project that has at least one _Type A_ CQ must be designated _Type A_.
+
+Can a release use a combination of _Type A_ and _Type B_ CQs? ::
+Yes. A release that has at least one _Type A_ CQ must be designated _Type A_.
+
+Can a _Type A_ project have _Type B_ releases? ::
+Yes. It is possible for a _Type A_ project to have some subset of its CQs be _Type B_. When a particular release contains only _Type B_ CQs, that release is _Type B_.
 
 If my project requests _Type A_ review for a CQ, can we later change the request to _Type B_? ::
 Yes. 
@@ -468,6 +474,9 @@ That is entirely up to the project. However, during the bootstrapping process, n
 
 Can a _Type B_ only project consume other projects/releases that are _Type A_ or combination _Type A/B_? ::
 This is an individual project choice.  If a project decides this does not work for them, it is up to the projects work together to resolve any issue.
+
+Do I need to create a CQ for a service release of third party content? ::
+A CQ is not required for a service release that is based on an resolved version of third party content. That is, if one version of third party content is resolved as either license certified (_Type A_) or approved (_Type B_), then service releases that include only bug fixes that extend that release may be used without creating a CQ.
 
 Is an IP Log _Type A_ or _Type B_? ::
 IP Logs are not themselves intellectual property and so are neither Type A nor B.
