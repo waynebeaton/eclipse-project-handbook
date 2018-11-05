@@ -16,6 +16,7 @@
 :licenseWhitelistUrl: https://www.eclipse.org/legal/licenses.php#approved
 
 :developerPortalUrl: http://portal.eclipse.org
+:bylawsUrl: https://www.eclipse.org/org/documents/eclipse_foundation-bylaws.pdf
 :committerGuidelinesUrl: http://www.eclipse.org/legal/committerguidelines.php
 :legalDocumentationUrl: http://www.eclipse.org/legal/guidetolegaldoc.php
 :ipDueDiligenceUrl: http://www.eclipse.org/legal/EclipseLegalProcessPoster.pdf
