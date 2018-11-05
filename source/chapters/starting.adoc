@@ -195,7 +195,7 @@ Yes. Git is the only source code management system that is currently permitted f
 
 Can I host my project code on GitHub? ::
 
-New projects can make use of <<resources-github,GitHub>>. Official project repositories must be moved under the {gitHubUrl}[{forgeName} Organization] at GitHub. Official repositories are subject to the same intellectual property due diligence rules and processes that all Eclipse project repositories must follow. 
+New projects can make use of <<resources-github,GitHub>>. Official project repositories must be hosted under Eclipse Foundation-managed organization at GitHub. Official repositories are subject to the same intellectual property due diligence rules and processes that all Eclipse project repositories must follow. 
 
 How long should I let my project incubate? ::
 
