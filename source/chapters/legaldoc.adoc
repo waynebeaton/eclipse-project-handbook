@@ -309,8 +309,66 @@ permitted.
 The actual text of the project's declared licenses should not be included in the notice file (they are provided in the _license_ file). The terms of the other licenses included in the content, including third-party licenses, must be observed (e.g. some licenses require that the text of the license be included with the distribution; in this case, position the license text either in the _notice_ file or as close to the corresponding content as possible).
 ====
 
+[[legaldoc-contributor]]
+== Contributor Guide
+
+While not strictly _legal documentation_, having concise and clear information how to get involved in a project is very important for building the community around a project. Therefore, to simplify adoption and encourage contributions it is recommended that projects maintain a _Contributor Guide_.  The file is conventionally named `CONTRIBUTING` (or `README`) and may include a suffix (e.g. `CONTRIBUTING.md`).
+
+Like legal documentation, a CONTRIBUTING file should be placed in the root of each repository. Keep the guide as concise as possible: it should contain a few words and a link to other documents for details and more information. Use plain text that can be easily consumed without being formally rendered.
+
+Minimally, the CONTRIBUTING file should include:
+
+* The name and brief description of the project;
+* A link to the project's website and documentation;
+* A link to the primary Communication channel (how do potential contributors contact the project team?);
+* A pointer to the canonical source code repositories;
+* Mechanics of how to actually contribute (pull requests accepted, via Gerrit, etc.);
+* Link to sign the ECA (https://www.eclipse.org/legal/ECA.php)
+
+Additionally, the guide might include:
+
+* Link to downloads; and
+* Link to a more comprehensive project contribution guide (e.g. a website).
+
+[[legaldoc-contributor-setup]]
+=== Setting up the Development Environment
+
+The CONTRIBUTING file should make it easy for people who got interested in the project to start working with it. It should include:
+
+* Instructions for obtaining the sources;
+* Clear instructions for setting up any additional tools needed for the development;
+* A description of the dependencies of the project, or even better how to easily get all the necessary content the project depends on; and
+* A list of necessary steps to build the artifacts of the project (e.g. bundles, features, standalone products). 
+
+[[legaldoc-contributor-contributing]]
+=== Contributing Code
+
+The CONTRIBUTING file should make it very clear what are the steps a contributor needs to follow, so that their contribution reaches the project and may be accepted. 
+
+It should:
+
+* Include very specific instructions on how contributions are accepted;
+* Indicate whether or not the project will accept GitHub pull requests, along with the necessary steps to have the project honor those requests;
+* Describe the legal part of the process for accepting contributions, e.g. point to the the http://www.eclipse.org/legal/ECA.php[Eclipse Contributor Agreement] (ECA) and https://www.eclipse.org/legal/DCO.php[Developer Certificate of Origin] (DCO); and
+* Describe any project specific rules, which the contributors should know, for example:
+** preferences on code quality;
+** code formatting; and
+** processes for code review.
+
+Projects may slightly different rules for contributing to different repositories. Make this clear to the contributors.
+
+[[legaldoc-contributor-ideas]]
+=== Help Wanted
+
+The CONTRIBUTING file can optionally provide guidance for developers who want to help, but don't have their own agenda. To help these developers, the guide may list ideas for improvements which the team already knows, or areas where help is needed.
+
+[NOTE]
+====
+Keeping a help-wanted list up-to-date can be challenging. Consider including a query (e.g. for "helpwanted" issues) rather than (or in addition to) specific work area recommendations.
+====
+
 [[legaldoc-faq]]
-=== Frequently Asked Questions
+== Frequently Asked Questions
 
 [qanda]
 Do the _license_ and _notice_ files need to be named `LICENSE` and `NOTICE`?::
