@@ -1,0 +1,98 @@
+# Eclipse Project Handbook
+
+This repository contains the sources for the Eclipse Project Handbook. All content is represented in Asciidoc format and Asciidoctor is used to render the content into HTML, PDF, and EPUB formats. Note that the documents are all rendered complete (i.e. images and other resources are embedded).
+
+The CONTRIBUTING.md file contains information regarding how to contribute to this project.
+
+## General Formatting Rules
+
+* All content is written using Asciidoc; rendered using Asciidoctor (which has some functionality enhancements.
+* Don't wrap lines; use a single line for each paragraph.
+* Each chapter has a machine name (e.g. legaldoc); that machine name should be used as a prefix in heading anchors separated with a dash (e.g. legaldoc-license).
+* Preserve the machine names for headers, even when subsections move from one chapter to another.
+* Main text should be written in the third person. Notes and other callouts may be written in the second person.
+
+## Specific Formatting Guidelines
+
+Use monospace backticks for file/repo paths, e.g. `stuff/junk/thing.java`, technical terms (e.g. class names), and for `pass:[+1]`, `pass:[-1]`. 
+
+Use http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#ui-macros[UI Macros] to describe menus, key bindings, etc. e.g. kbd:[Ctrl+Shift+N] and menu:View[Zoom > Reset]. Use menus to capture click paths, paths through a preferences dialog, etc.
+
+Make sure that images that are not inline are specified as image blocks.
+
+~~~~
+image::images/myimage.png[]
+~~~~
+
+Where possible, we use Graphviz `dot` to describe images (use of text-based source for graphics makes it easier to track changes, and adds a level of consistency, allows contributors to get bogged down and frustrated trying to get an image to render "just right"). Render as SVG when possible.
+
+~~~~
+[graphviz, images/overview, svg]
+.An overview of the Project Creation Process
+----
+digraph {
+	bgcolor=transparent
+	
+	node [shape=box;style=filled;fillcolor=white;fontsize=12];
+	proposal[label="Project Proposal", group=g1];
+	community[label="Community Review", group=g1];
+	review[label="Creation Review", group=g1];
+	provision[label="Provision", group=g1]
+	
+	node [shape=plaintext;fillcolor=transparent;fontsize=10]
+	approval [label="EMO\nApproval"]
+	trademark [label="Trademark\nReview"]
+	mentors [label="Mentors"]
+	paperwork [label="Committer\nPaperwork"]
+
+	proposal -> community -> review -> provision
+	
+	edge [color=grey]
+	approval -> community
+	mentors -> review
+	trademark -> review
+	paperwork -> provision
+	
+	// Force the trademark and mentors boxes to
+	// be on either side of the main process points.
+	// Do this by creating invisible lines that would
+	// cross if they are on the same side.
+	node[style=invis] ic
+	edge [style=invis]
+	trademark -> ic
+	mentors->provision
+}
+----
+~~~~
+
+
+Use callout blocks. `NOTE`, `WARNING`, and `TIP` are supported.
+
+~~~~
+[NOTE]
+====
+Use blocks to render NOTE/WARNING callouts.
+====
+~~~~
+
+We use pseudo legal capitalization form for defined terms. The first occurance of a defined term in every chapter should be italicised. We use quotes sparringly (generally only for actual quotes).
+
+~~~
+* _Eclipse Project_ is a defined term;
+* _Top-Level Project_ is also a defined term; we always hyphenate "Top-Level";
+* We prefer the use of _Third-party content_  rather than, e.g., "library"
+~~~~
+
+## Converting Existing Content
+
+We've used Pandoc to convert existing content into Asciidoc for inclusion in the handbook.
+
+~~~~
+ pandoc --atx-headers --wrap=none -f html -t asciidoc input.html > output.adoc
+~~~~
+
+Content exported from Google Docs comes with some extra cruft around URLs. Filter that out using sed.
+
+~~~~
+sed -E -e 's/https:\/\/www\.google\.com\/url\?q=([^%[&]+)(%23([^&]+))?\&[^[]+/\1#\3/g'
+~~~~
