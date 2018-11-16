@@ -392,9 +392,9 @@ digraph {
 	// Nodes that define the key points in the process
 	node [shape=box;style=filled;fillcolor=white;fontsize=12]
 	git [label="Git", group="g1"]
-	committer [label="Committer Activity\n(Git via Dash)", group="g2"]
+	committer [label="Committer Activity", group="g2"]
 	pmi [label="Repositories\n(PMI)", group="g1"]
-	contributions [label="Git Contributions\n(Git via Dash)"]
+	contributions [label="Git Contributions"]
 	licenses [label="Licenses\n(Foundation DB)", group="g2"]
 	generator [label="IP Log Generator", group="g1"]
 	contributions_bugzilla [label="Contributions\n(Bugzilla)"]
