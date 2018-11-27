@@ -98,6 +98,7 @@
 						</goals>
 						<configuration>
 							<sourceDocumentName>eclipse.adoc</sourceDocumentName>
+							<headerFooter>false</headerFooter>
 							<attributes>
 							</attributes>
 						</configuration>
