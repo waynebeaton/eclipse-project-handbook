@@ -12,17 +12,17 @@ committer quality and cooperation.
 
 ## Developer resources
 
-Information regarding source code management, builds, coding standards, and
-more.
+The source for the Eclipse Project Handbook is maintained in the the following 
+source code repository.
 
-* https://projects.eclipse.org/projects/technology.dash/developer
-
-The project maintains the following source code repositories
-
-* http://git.eclipse.org/c/dash/org.eclipse.dash.dashboard.git
 * http://git.eclipse.org/c/dash/org.eclipse.dash.handbook.git
-* http://git.eclipse.org/c/dash/org.eclipse.dash.m4e.tools.git
-* http://git.eclipse.org/c/dash/org.eclipse.dash.maven.git
+
+Note that the repository includes some submodules, clone using 
+`--recurse-submodules` to ensure that you have all of the content. 
+
+e.g.
+
+    git clone --recurse-submodules git://git.eclipse.org/gitroot/dash/org.eclipse.dash.handbook.git
 
 This project uses Bugzilla to track ongoing development and issues.
 
@@ -34,11 +34,11 @@ contributions are always welcome!
 
 We use Maven to build.
 
-  mvn compile
+    mvn compile
 
 Content is rendered into the `./target` folder in HTML, PDF, and EPUB formats.
 
-The README.md file contains information regarding how we structure documents
+The `README.md` file contains information regarding how we structure documents
 and other guidelines regarding content.
 
 ## Eclipse Contributor Agreement
