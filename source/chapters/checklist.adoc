@@ -17,7 +17,7 @@ The Eclipse Foundation staff and Project Management Committee members will use t
 
 All projects must conform to the <<trademarks,branding guidelines>> before engaging in any Release or Graduation Review (specific examples are described below).
 
-[discrete}
+[discrete]
 == General
 
 * Project is operating within the charter of the Top Level Project; 
