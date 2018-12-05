@@ -63,4 +63,6 @@ include::chapters/glossary.adoc[]
 
 include::chapters/legaldoc-plugins.adoc[leveloffset=+1]
 
+include::eclipse-development-process/source/development_process.adoc[leveloffset=+1]
+
 include::chapters/contact.adoc[leveloffset=+1]
