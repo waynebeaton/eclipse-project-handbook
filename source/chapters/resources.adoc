@@ -242,6 +242,17 @@ Subject to the <<resources-external,rules for the use of external resources>>, a
 
 Additionally, a PMC may decide to create and manage an organization for the Top-Level Project. The PMC may have their own policy regarding the use of DockerHub. Project teams should consult with their PMC to determine which approach is best suited for the project.
 
+[[resources-maven]]
+==== Maven Central
+
+The Eclipse Foundation has no formal relationship with Maven Central or staging providers like OSSRH. Eclipse project teams are, however, welcome to use these services as a distribution channel.
+
+By convention, the `groupid` should be of the form `pass:a,c[{namespace}.<shortname>]` (e.g. `{namespace}.dash` for the `technology.dash` project). Project teams should work with their PMC if some exception to this convention is required (and take care to avoid infringing on the namespaces of other projects). The form of the `artifactid` should be determined by the project team. The version number should follow the standard Semantic Versioning pattern. All pre-release builds must be appropriately labeled (e.g. `1.0M3` for pre-release builds of version `1.0`). 
+
+Project teams must engage in the <<release>> process before labeling any software as a release version.
+
+The Eclipse Release Engineering Team has provided some help regarding the use of Maven Central in the https://wiki.eclipse.org/IT_Infrastructure_Doc#Publish_to_Maven_Central[Eclipsepedia Wiki].
+
 [[resources-faq]]
 === Frequently Asked Questions
 
@@ -253,3 +264,11 @@ The project's primary website must be hosted on Eclipse Foundation infrastructur
 Do we have to use the Eclipse Foundation-provided download server? ::
 
 If you provide content to your community via any form of click-to-download notion, then the Eclipse Foundation-provided download server *must* be the primary source of that content. If, however, the concept of a download doesn't make sense for the sort of content that your project provides (e.g. your community consumes your context exclusively through Maven Central, or if source code is the only content delivered by the project), then you aren't required to provide that content via the download server. 
+
+Can we host pre-release software (e.g. milestone builds) on Maven Central? ::
+
+Reasonable steps must be taken to ensure that the consumer understands the pre-release nature of software. At a minimum, pre-release software must be labeled as such. A milestone build for version 1.0, for example, must be labeled as "1.0M1" (or similar). Pre-release software can be pushed to Maven Central, but due to the permanent nature of content that is pushed there, it will persist there indefinitely. Whether or not this is desirable is a decision that the project team should make with help from their PMC.
+
+Can we use external services like OSSRH to stage pre-release builds? ::
+
+Yes.
