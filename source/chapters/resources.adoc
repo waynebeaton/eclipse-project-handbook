@@ -94,7 +94,7 @@ Commits that are provided by non-committers must have a `Signed-off-by` field in
 [[resources-git]]
 === Git
 
-Those projects that want to use Git on the {forgeName} forge, are assigned a directory in which they may create as many Git repositories as required. {gitRequestUrl}[Open a bug] to request that the Webmaster create a new Git repository for your project. Alternatively, committers with shell accounts can create repositories themselves.
+Those projects that want to use Git on the {forgeName} forge, are assigned a directory in which they may create as many Git repositories as required. Committers may {gitRequestUrl}[open a bug] to request Eclipse Webmaster help to create a new Git repository for their project project. Alternatively, committers with shell accounts can create repositories themselves.
 
 [subs="attributes"]
 .Create a new Git repository
@@ -108,12 +108,15 @@ To set the description of the repository, use `sftp` or `scp` to copy a text fil
 
 Only project committers can push to {aForgeName} Git repository. A push that includes commits that do not conform to the required form will be rejected.
 
-You can {gitUrl}[browse {forgeName} repositories] directly on the Git server.
+[NOTE]
+==== 
+Anybody can {gitUrl}[browse] {forgeName} Git repositories. Use a project's short name to quickly jump to the project's Git repositories with a URL of the form  `pass:a,c[{gitUrl}/<shortname>]` (e.g. `pass:a,c[{gitUrl}/dash]` for repositories associated with the `technology.dash` project).
+====
 
 [[resources-gerrit]]
 === Gerrit Code Review
 
-https://www.gerritcodereview.com/[Gerrit] provides web based code review and repository management for the Git version control system. Many projects use Gerrit to reduce barriers and encourage contribution to the project. {gerritRequestUrl}[Open a bug] to request that the Webmaster configure your Git repository for Gerrit. 
+https://www.gerritcodereview.com/[Gerrit] provides web based code review and repository management for the Git version control system. Many projects use Gerrit to reduce barriers and encourage contribution to the project. {gerritRequestUrl}[Open a bug] to request that the Eclipse Webmaster configure your Git repository for Gerrit. 
 
 Commits may be pushed directly to the Git repository through Gerrit by a project committer (e.g. to the `master` branch).
 
@@ -126,7 +129,7 @@ You can {gerritUrl}[browse {forgeName} repositories] directly on the Gerrit serv
 
 Projects may opt to move some or all of their canonical source code repositories to an organization on GitHub that is maintained by the Eclipse Foundation. Both GitHub Issues and Wiki may also be used.
 
-{gitHubRequestUrl}[Open a bug] to request that the Webmaster create a new, or move an existing, Git repository for your project. The Webmaster will install some _hooks_ on your GitHub repository.
+Any committer can {gitHubRequestUrl}[open a bug] to request that the Eclipse Webmaster create a new, or move an existing, Git repository into their project. The Eclipse Webmaster will install some _hooks_ onto all Eclipse project GitHub repository.
 
 The _Committers hook_ grants designated project committers write access to the GitHub-hosted project repositories. Project committers must use the email address they provide to the Eclipse Foundation as their GitHub email address. 
 
@@ -135,12 +138,12 @@ The <<resources-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect inco
 .Notification that the commit is properly structured and permissions are in place.
 image::images/Github-cla-success.png[]
 
-Since the GitHub API does not provide a means of absolutely denying a merge the hook will warn you that the contributors have not signed a ECA or that the commit message is not correctly structured:
+Since the GitHub API does not provide a means of absolutely denying a merge the hook will warn committers that the contributors have not signed a ECA or that the commit message is not correctly structured:
 
 .Notification that there is something wrong with the commit.
 image::images/Github-cla-failure.png[]
 
-Click on the _Details_ link for more information. Do not merge unless you are absolutely certain that the contributer does have a valid ECA on file and the commit message includes the required `Signed-off-by` statement in the footer.
+Click on the _Details_ link for more information. Committers must not merge commits unless they are absolutely certain that the contributer does have a valid ECA on file and the commit message includes the required `Signed-off-by` statement in the footer.
 
 [NOTE]
 ==== 
@@ -157,14 +160,14 @@ The Eclipse Webmaster creates and maintains a mirror of all GitHub-hosted reposi
 
 All projects are assigned a {forumsUrl}[user forum] as a point of contact between the user and adopter communities, and the project developers.
 
-The EMO strongly encourages the use of alternative communication channels for connecting with the community: your project team knows your community and how to best connect with them.
+The EMO strongly encourages the use of alternative communication channels for connecting with the community: project teams know their community and how to best connect with them.
 
 [[resources-website]]
 === Project Websites
 
 // Project-specific websites are only supported on the Eclipse forge.
 ifeval::["{forgeName}"=="Eclipse"]
-Project websites are an excellent way to connect your project with your community. Many projects opt to use the <<pmi,Project Management Infrastructure>> (PMI) as their <<pmi-project-page,project website>>.  PMI-based website URLs take the form of `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`). 
+Project websites are an excellent way to connect an open source project with the community. Many projects opt to use the <<pmi,Project Management Infrastructure>> (PMI) as their <<pmi-project-page,project website>>.  PMI-based website URLs take the form of `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`). 
 
 Many project teams opt to create a custom main project website: if so-desired, a project may host a website on Eclipse Foundation-hosted servers. Project website URLs generally take the form `pass:c,a[{wwwUrl}/<shortname>]` (e.g. `pass:c,a[{wwwUrl}/foo]`). Custom project website content is maintained in Git repositories hosted on Eclipse Foundation infrastructure. A background job moves content from the Git repository to the website; content pushed to the repository will appear on the live website within five minutes.
 
@@ -184,12 +187,12 @@ Websites _not_ hosted by the Eclipse Foundation are considered <<trademark-exter
 
 Use of Eclipse Foundation-provided and hosted build services, the so-called {cbiUrl}[Common Build Infrastructure] (CBI) is strongly recommended, but not strictly required. 
 
-Whether or not your project chooses to make use of provided build resources, it must be possible for members of the community to build project artifacts from source code with reasonable effort.
+Whether or not a project chooses to make use of provided build resources, it must be possible for members of the community to build project artifacts from source code with reasonable effort.
 
 [[resources-signing]]
 === Signed Artifacts
 
-Where technically sensible, all downloadable artifacts should be {jarSigningUrl}[signed] by an Eclipse Foundation-provided certificate.
+Where technically sensible, all downloadable artifacts should be {jarSigningUrl}[signed] by an Eclipse Foundation certificate.
 
 [[resources-downloads]]
 === Downloads
@@ -198,9 +201,7 @@ The project is allocated space on the {forgeName} download and archive servers.
 
 Project artifacts (e.g. downloads) can be distributed via third party services (e.g. Maven Central), but--where technically sensible--the Eclipse Foundation-provided infrastructure must be considered the primary source of project downloads.
 
-You can upload content to `downloads/<shortname>` (e.g. `downloads/dash`) via SFTP or SCP (to {downloadsHost}) or from a CI instance at Eclipse.org
-
-Project committers can {downloadsUrl}[upload project artifacts] to the project's directory on the download server.
+Project committers can {downloadsUrl}[upload project artifacts] to the project's directory on the download server. The short name is used to denote the area available to the project (e.g. `pass:a[{downloadsHost}/dash]` for the `technology.dash` project) via SFTP or SCP, or from a <<resources-builds,Eclipse Foundation hosted build infrastructure>>.
 
 [[resources-external]]
 === External Resources

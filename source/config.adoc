@@ -47,6 +47,8 @@
 :ecaSignUrl: https://dev.eclipse.org/site_login/myaccount.php#open_tab_cla
 :dcoUrl: https://www.eclipse.org/legal/DCO.php
 :incubationListUrl: https://dev.eclipse.org/mailman/listinfo/incubation
+:incubationBrandingUrl: http://wiki.eclipse.org/Development_Resources/HOWTO/Conforming_Incubation_Branding
+:membershipAgreementUrl: https://www.eclipse.org/org/documents/eclipse_membership_agreement.pdf
 
 :jarSigningUrl: https://wiki.eclipse.org/IT_Infrastructure_Doc#Sign_my_plugins.2FZIP_files.3F
 :downloadsUrl: https://wiki.eclipse.org/IT_Infrastructure_Doc#Downloads
