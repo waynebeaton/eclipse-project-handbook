@@ -1,0 +1,29 @@
+digraph {
+	bgcolor=transparent;
+	rankdir=TB;
+	splines=ortho;
+	
+	node [shape=box,style=filled,fillcolor=white,fontsize=12];
+	{
+		rank=same;rankdir=LR;
+		start[shape=circle,label=""];
+		plan[label="Plan"];
+		development[label="Development"];
+		milestone[label="Milestone",style="filled,rounded"];
+	}
+	{
+		rank=same; rankdir=LR;
+		rc[label="Release\nCandidate",style="filled,rounded"];
+		release_review[label="Release\nReview"];
+		release[label="Release",style="filled,rounded"];
+	}
+	
+	start -> plan;
+	plan -> development [weight=1000];
+	development -> milestone[weight=1000];
+	milestone -> development[weight=1000];
+	development -> rc[weight=1000];
+	rc -> release_review ;
+	release_review -> release;
+	release -> plan;
+}

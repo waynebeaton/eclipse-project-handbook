@@ -11,7 +11,7 @@
 [[release]]
 == Releases
 
-Releases are formal for {forgeName} projects. They start with planning, and end with a community review. You can capture as many future releases as you'd like. It's common practice to specify releases three or six months into the future.
+Releases are formal for {forgeName} projects. 
 
 Releases are broadly categorized as:
 
@@ -19,64 +19,67 @@ Releases are broadly categorized as:
 * _Minor_ releases add new functionality, but are API compatible with previous versions; and
 * _Service_ releases include bug fixes only and include no significant new functionality.
 
-For all major and minor releases, you must engage in a _<<release-review,release review>>_. Release reviews are not required for bug-fix/service releases.
+For many {forgeName} projects, the release lifecycle follows the traditional pattern of every release being preceded by a release review. This is especially true for projects with release cycles that span a year or more.
 
 [graphviz, images/release-cycle, svg]
 .The Release Cycle
 ----
-digraph {
-	// Graph properties
-	bgcolor=transparent
-	rankdir=LR
-	
-	// Nodes that define the key points in the process
-	node [shape=box;style=filled;fillcolor=white;fontsize=12];
-	plan[label="Capture Plan", group=g1];
-	implement[label="Implement", group=g1];
-	milestone[label="Produce\nMilestone", group=g1];
-	release[label="Release"]
-	
-	plan-> implement 
-	milestone -> release
-	release->plan
-	
-	edge [splines=curved]
-	milestone -> implement
-	implement -> milestone
-}
+include::diagrams/edp__release_lifecycle.dot[]
 ----
+
+Every release cycle starts with a <<releases-plan, plan>> that is created in an open and transparent manner and made available the community both for review and to solicit input. The development process must be iterative, with the regular delivery of <<release-milestones, milestone builds>> to solicit feedback. The release cycle ends with the delivery of a final release candidate, a <<release-review, release review>>, and general availability of the products of the release.
+
+A project team may declare official major or minor releases and distribute associated products for up to one year following a successful _<<release-review,release or progress review>>_. Reviews are not required for bug-fix/service releases.
+
+[[NOTE]]
+====
+*Intellectual property must be properly accounted for and tracked at all times.* The project team must engage in the Eclipse IP Due Diligence Process on an ongoing basis. The IP Log review and approval that occurs at the time of either a release review or progress review should be regarded as a means of confirming that intellectual property is being properly managed and not as a trigger to engage in a last minute clean up.
+
+All tracking of project and third-party content must be current and correct at all times.
+====
 
 [[releases-plan]]
 === Release Plan
 
 A project plan is _required_ for each major and minor project release. The plan should lay out in broad terms what the goals are for the release. As plans are a valuable means for the community to get involved with your project, the plan should be created at the beginning of the release cycle. By establishing the plan early, you give prospective contributors help in determining how they can most usefully contribute, and adopters can prepare their own development schedule and themes. Plans can change during the release cycle.
 
+Release records are used to capture a project plan. All project leads and committers can use the <<pmi-commands-release, Create a new release>> command on their <<pmi-project-page, project page>> in the <<pmi,Project Management Interface (PMI)>> to create a new release record.
+
+At the start of the release cycle, a plan should minimally include a release number, date, and short description. All aspects of a plan can change during the release cycle (including the date). If you do change the plan, make sure that the change is communicated via your project's _dev_ list and other project channels.
+
 [TIP]
 ====
-Use the <<pmi-commands-release, Create a new release>> command on a specific <<pmi-project-page, project page>> in the <<pmi,Project Management Interface (PMI)>> to create a new release record.
-==== 
-
-At the start of the release cycle, your plan should minimally include a release number, date, and short description. Think of the description as an _elevator pitch_: how would you describe the release in a fifteen second elevator ride? All aspects of a plan can change during the release cycle (including the date). If you do change the plan, make sure that the change is communicated via your project's _dev_ list and other project channels.
+Think of the description of the project plan as an _elevator pitch_: how would you describe the release in a fifteen second elevator ride? 
+====
 
 The _Plan_ tab in the release record contains numerous fields for capturing plan information. The amount of information that you should capture for a release plan varies by top-level project, so consult with your Project Management Committee (PMC) for advice.
 
-Producing regular builds is an important part of the release cycle. Builds are an important means of engaging with the community: adopters can help you test your code and test their own so that they can be ready for the eventual release. Plan to produce at least one _milestone_ build (more are better, depending on the length of your release cycle), and capture the planned date for that milestone in the release record. It is also common practice to generate nightly and weekly integration builds. Ensure that your project's downloads page provides the information required for the community to obtain your builds.
+Producing regular builds is an important part of the release cycle. Builds are an important means of engaging with the community: adopters can help you test your code and test their own so that they can be ready for the eventual release. Project teams should plan to produce at least one _milestone_ build (more are better, depending on the length of your release cycle), and capture the planned date for that milestone in the release record. It is also common practice to generate nightly and weekly integration builds. Project teams must ensure that their project's downloads page provides the information required for the community to obtain builds.
 
-All of your project's <<ip,intellectual property>> contributions must be approved by the IP Team before you can release (this includes third party content and contributions of code to be maintained by the project).
+All requests for review of <<ip,intellectual property>> contributions must be approved by the IP Team before the products of a release are pushed out onto distribution channels (this includes third party content and contributions of code to be maintained by the project).
+
+[[release-milestones]]
+=== Milestones and Release Candidates
+
+Milestone builds and release candidates are not themselves official releases. Per the Eclipse Development Process, milestone and release candidate builds are intended to be consumed by a limited audience to solicit, gather, and incorporate feedback from leading edge consumers. A predictable schedule for the delivery of milestone builds is especially valuable when the period of time between formal releases spans multiple months. 
+
+Project teams should include at least one milestone build during every release cycle. The timing of milestone and release candidate builds should be included in release plans.
 
 [[release-review]]
-=== Release Review
+=== Progress and Release Reviews
 
-A _release review_ is a formal announcement of your release to the community and a request for feedback. In practical terms, experience has shown that those individuals and organizations who are interested in your project follow development throughout the release cycle and so are have likely already provided feedback during the development cycle (i.e. they are unlikely to provide feedback during the review period). With this in mind, the review generally serves as a means for a project to engage in a retrospective of the progress made during the release, discover areas of potential improvement, demonstrate that the project is operating in an open and transparent manner, and ensure that the development process and intellectual due diligence processes have been followed.
+Progress and release reviews differ only in timing. A progress review can be scheduled at any point in a project's release cycle; a release review is scheduled at the end of the release cycle. A _release review_ can be thought of as a formal announcement of a release to the community. 
 
-Release reviews run for a week and always conclude on a Wednesday. 
+These reviews generally serve as a means for a project to engage in a retrospective of the progress made during the release, discover areas of potential improvement, demonstrate that the project is operating in an open and transparent manner, and ensure that the development process and intellectual due diligence processes have been followed.
+
+Reviews run for a week and always conclude on a Wednesday. 
 
 [NOTE]
 ====
 We schedule reviews to conclude on the _first and third Wednesdays of the month_. Your release date does not have to  coincide with the review date (you can set the release date as necessary). The review must, however, conclude successfully before you can make the release official.
 ====
 
-A _release review_ requires review documentation and an intellectual property (IP) log check. The review process must be initiated at least two weeks in advance of the anticipated review date.
+_Release and progress reviews_ require review documentation and an intellectual property (IP) log check. The review process must be initiated at least two weeks in advance of the anticipated review date.
 
 [graphviz, images/release-review, svg]
 .Release review work flow
@@ -91,7 +94,7 @@ digraph {
 	pmc [label="PMC Review\nDocumentation", group=g1]
 	iplog [label="Assemble\nIP Log", group=g2]
 	ipteam [label="IP Team Review\nIP Log", group=g2]
-	start [label="Start\nRelease Review", group=g3]
+	start [label="Start\Review", group=g3]
 	end [label="End\nRelease Review", group=g3]
 	publish [label="Publish Release", group=g3]
 	
@@ -101,17 +104,16 @@ digraph {
 }
 ----
 
-Prepare the review documentation well in advance of the start of the review period. The release record which contains your project plan also includes a _Review_ tab with appropriate fields for a review. As with the plan fields, all of the review fields are optional and the level of detail you need to provide varies by top-level project. You can assemble review information during the release cycle (there's no need to wait until the end)
+The project team must prepare the review documentation well in advance of the start of the review period. The release record which contains the project plan also includes a _Review_ tab with appropriate fields for a review. As with the plan fields, all of the review fields are optional and the level of detail required varies by top-level project. Project teams can assemble review information during the release cycle (there's no need to wait until the end)
 
-The review materials must be approved by the PMC; send an email to 
-the PMC's mailing list asking for approval. The PMC will respond with feedback or a simple `pass:[+1]` indicating approval.
+The review materials must be approved by the PMC; the project lead or a designated project committer should send an email to the PMC's mailing list with a request for approval. The PMC will respond with feedback or a simple `pass:[+1]` indicating approval.
 
 [TIP]
 ====
 Click the handy menu:Committer Tools[Communication > Send Email to the PMC] link on the release record page to connect with the PMC.
 ====
 
-Submit the IP Log for review by the IP Team. The IP Team must approve the IP Log before we can schedule the review, so submitting this early is important. The <<ip-iplog-generator,IP Log generator>> automatically collects information based on the information that the project team has provided to the IP Team through <<ip-cq,contribution questionnaires>> in IPZilla, commits in the project's source code repository, and other information in our databases. Carefully review the IP Log before submitting to the IP Team for their review.
+The IP Team must approve the IP Log before the EMO can schedule the review, so submitting this early is important. The <<ip-iplog-generator,IP Log generator>> automatically collects information based on the information that the project team has provided to the IP Team through <<ip-cq,contribution questionnaires>> in IPZilla, commits in the project's source code repository, and other information in our databases. The project team should review the IP Log before submitting to the IP Team for their review.
 
 [TIP]
 ====
@@ -120,7 +122,7 @@ Use the <<pmi-commands-iplog, Generate IP Log>> tool on a specific <<pmi-project
 
 The information used to generate an IP Log should always be up-to-date (don't wait until the end of the release cycle to make it right).
 
-At any point in this process, you can request that the review be initiated by clicking the menu:Schedule a review for this release[] link that appears at the top of the release record page. This will invite you to select a review date. You must then follow up with the EMO to approve the review. 
+At any point in this process, the project lead or a designated committer can request that the review be initiated by clicking the menu:Schedule a review for this release[] link that appears at the top of the release record page.
 
 [NOTE]
 ====
@@ -130,7 +132,7 @@ The EMO will likely notice that you've created the release record, connected wit
 The EMO will conclude the review on the scheduled end date and advise the project team of the outcome.
 
 [[release-graduation]]
-=== Graduation Review
+=== Graduation Reviews
 
 The purpose of a _graduation review_ is to confirm that the project has a working and demonstrable code base of sufficiently high quality active and sufficiently diverse communities; has adopters, developers, and users operating fully in the open following the {edpUrl}[Eclipse Development Process]; and is a credit to {forgeName} and is functioning well within the larger {forgeName} community
 

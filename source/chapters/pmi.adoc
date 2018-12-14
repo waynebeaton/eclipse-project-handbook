@@ -15,7 +15,7 @@ The {forgeName} Project Management Infrastructure (PMI) consolidates project man
 
 Project Management Infrastructure themes:
 
-_Improved consistency._ Configuration/data-driven project web presence, direct linkage between releases, reviews, and plans. Information--including basic project metadata, project plans, and release review information--is captured and retained in a consistent (and easily leveraged) data-based format (rather than in multiple documents in arbitrary formats).
+_Improved consistency._ Configuration/data-driven project web presence, direct linkage between releases, reviews, and plans. Information--including basic project metadata, project plans, and review information--is captured and retained in a consistent (and easily leveraged) data-based format (rather than in multiple documents in arbitrary formats).
 
 _All-in-one-place._ Project leads and committers are able to edit information in place on the project information pages. Text/information in one place with links in another is eliminated where possible. Comments and discussion related to reviews, elections, etc. are connected directly to the item being discussed.
 
@@ -29,7 +29,7 @@ Project committers and project leads are responsible for maintaining their proje
 Project metadata is:
 
 1.  Relatively static structural information such as the project description and scope, the names of the project's mailing lists and forums, the bugzilla products, source code repositories, etc.
-2.  Historical information such as previous release downloads, release review slides and IP logs, etc.
+2.  Historical information such as previous release downloads, review slides and IP logs, etc.
 3.  Status and future looking information such as the project and milestone plans, the features scheduled for the current release, release dates, etc.
 
 PMC members and the Eclipse Foundation staff also have the ability to make changes on behalf of a project.
@@ -72,7 +72,7 @@ To create a Contribution Questionnaire:
 [[pmi-commands-iplog]]
 ==== Submit a Project's IP Log for Review
 
-Any project committer generate the <<ip-iplog, Intellectual Property (IP) Log>> and submit it for review by the Eclipse IP Team. An IP Log review is required, for example, for all <<release-review, release reviews>> (release reviews are required for all major and minor releases).
+Any project committer generate the <<ip-iplog, Intellectual Property (IP) Log>> and submit it for review by the Eclipse IP Team. An IP Log review is required, for example, for all <<release-review, release and progress reviews>>.
 
 To generate an IP Log:
 
