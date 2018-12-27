@@ -73,6 +73,37 @@ CQs are not generally required for ongoing work done by project committers. Cons
 
 Code provenance tracking is critical (the source of all code that ends up in Eclipse Foundation repositories must be well known). To that end, all new projects are required to make an _initial contribution_ before *any* code is committed to a project's source code repository.
 
+[graphviz, images/overview, svg]
+.How The Initial Contribution Fits into the Project Creation Process
+----
+digraph {
+	bgcolor=transparent;
+	rank=same;rankdir=LR
+	
+	node [shape=box;style=filled;fillcolor=white;fontsize=12];
+	{
+		rankdir=TB;
+		creation[label="EMO declares\nsuccessful\nCreation Review"];
+		provision[label="Eclipse\nWebmaster\nProvisions"];
+	}
+	initial[label="Committer submits\nInitial\nContribution"];
+	checkin[label="IP Team\ngrants\n\"check-in\""];
+	{
+		rankdir=TB;
+		push[label="Committer\npushes to\nProject Git"];
+		develop[label="Work\nbegins!"]
+	}
+	creation -> provision;
+	provision -> initial;
+	initial -> checkin;
+	checkin -> push;
+	push -> develop;
+}
+----
+
+Following a successful Creation Review, the EMO will initiate the provisioning process (Committers provide required paperwork and the Webmaster creates project resources (Git, downloads, website, etc.);
+#
+
 The initial contribution, like any other <<ip-project-code,project code>> contribution, should contain *only* project code/content. Any <<ip-third-party,third party content>> that might be included in the existing source tree should be excluded from the initial contribution and submitted as separate <<ip-cq,CQs>>.
 
 The IP Team will review the initial contribution to ensure that it hasn't been copied inappropriately, that licenses are being used correctly, and so forth. As part of this process, the IP Team  will research the source of all code; depending on the size of the contribution, this can be a time-consuming process.
