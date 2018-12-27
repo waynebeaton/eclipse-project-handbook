@@ -1,0 +1,40 @@
+digraph {
+	bgcolor=transparent;
+	rankdir=TB;
+	graph [splines=ortho; overlap = false]
+	
+	node [shape=box,style=filled,fillcolor=white,fontsize=12];
+	{
+		{
+			rank=same;rankdir=TB;
+			start[shape=circle,label=""];
+			plan[label="Plan"];
+		}
+		rank=same;rankdir=LR;
+		development[label="Development"];
+		milestone[label="Milestone",style="filled,rounded"];
+		progress_review[label="Progress\nReview"];
+	}
+	{
+		rank=same; rankdir=LR;
+		rc[label="Release",style="filled,rounded"];
+	}
+	
+	{
+		rank=same; rankdir=LR;
+		review[fontsize=8;label="Review in\npast year?";shape="diamond"]
+		release_review[label="Release\nReview"];
+	}
+	
+	start -> plan;
+	plan -> development [];
+	development -> milestone[];
+	milestone -> development[];
+	milestone -> progress_review;
+	progress_review -> development;
+	development -> review
+	review -> rc[fontsize=8;xlabel="Yes"]
+	review -> release_review[fontsize=8;label="No"]
+	release_review -> rc;
+	rc -> plan;
+}
