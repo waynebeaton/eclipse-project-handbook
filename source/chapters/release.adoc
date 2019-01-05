@@ -24,7 +24,7 @@ For many {forgeName} projects, the release lifecycle follows the traditional pat
 [graphviz, images/release-cycle, svg]
 .The Release Cycle
 ----
-include::diagrams/edp__release_lifecycle.dot[]
+include::diagrams/edp_release_lifecycle.dot[]
 ----
 
 Every release cycle starts with a <<releases-plan, plan>> that is created in an open and transparent manner and made available the community both for review and to solicit input. The development process must be iterative, with the regular delivery of <<release-milestones, milestone builds>> to solicit feedback. The release cycle ends with the delivery of a final release candidate, a <<release-review, release review>>, and general availability of the products of the release.

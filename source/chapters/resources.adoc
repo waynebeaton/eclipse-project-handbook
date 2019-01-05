@@ -11,7 +11,7 @@
 [[project-resources-and-services]]
 == Project Resources and Services
 
-Open source projects at the Eclipse Foundation are required to make use of certain Eclipse Foundation services:
+Open source projects at the Eclipse Foundation are _required_ to make use of certain Eclipse Foundation services:
 
 * All project issues must be tracked in the issue tracker assigned to the project;
 * Source code must be maintained in source code repositories assigned to the project (e.g. {aforgeName} {gitUrl}[Git] or {gerritUrl}[Gerrit] instance, or an organization on GitHub maintained by the Eclipse Foundation);
@@ -30,7 +30,7 @@ The short name is used in various parts of Eclipse Foundation infrastructure (e.
 Qualified identifier::
 The project's short name is joined with the short name of the parent project(s) to form a qualified identifier (project id) for the project that is used as a key on services generated and/or maintained for the project by the Eclipse Foundation. 
 
-For example the "{forgeName} Woolsey" project has a short name of "woolsey"; its qualified name is "technology.dash.woolsey", indicating that it is a subproject of the {aForgeName} _Dash_ Project which is itself a subproject of the {forgeName} _Technology_ Top Level Project.
+For example the "{forgeName} Woolsey" project has a _short name_ of "woolsey"; its _qualified identifier_ is "technology.dash.woolsey", indicating that it is a subproject of the {aForgeName} _Dash_ Project which is itself a subproject of the {forgeName} _Technology_ Top Level Project.
 
 [[resources-source]]
 === Source Code Management
