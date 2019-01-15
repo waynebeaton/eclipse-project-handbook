@@ -294,8 +294,7 @@ Questions? Project participants who have questions about Eclipse Foundation trad
 Thanks and credit to the Apache Software Foundation's http://www.apache.org/foundation/marks/pmcs[Project Branding Requirements] (licensed under the Apache License, v2.0) for parts of this trademark section.
 
 [[trademarks-faq]]
-Frequently Asked Questions
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Frequently Asked Questions
 
 [qanda]
 Can my company use the project name as part of their product name?::
