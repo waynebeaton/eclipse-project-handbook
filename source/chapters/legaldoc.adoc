@@ -73,7 +73,7 @@ The notices must include one or more copyright statement, the assertion of trade
 
 .Example website notices
 ____
-All material on this website is Copyright (c) 2002-2017, Contributors to the Eclipse Foundation
+All material on this website is Copyright (c) 2017, Contributors to the Eclipse Foundation
 
 {forgeName} Dash and the {forgeName} Dash project logo are trademarks of the Eclipse Foundation. Eclipse and the Eclipse logo are registered trademarks of The Eclipse Foundation.
 
@@ -94,9 +94,9 @@ Copyright holders are legal entities: either individuals or companies. Note that
 An Eclipse Foundation open source project is _not_ a legal entity. Further, the Eclipse Foundation does not assume ownership of contributions (the Eclipse Foundation is only a copyright holder in those cases where an employee of the Eclipse Foundation has authored the contribution).
 ====
 
-_Copyright statements_ take the form `Copyright (c) \{date} \{owner}`. 
+_Copyright statements_ take the form `Copyright (c) \{year} \{owner}`. 
 
-The `\{date}` is either a year or a range of years with the first and last years of the range separated by a comma (e.g. "`2004`" or "`2004, 2017`"). The first year is when the contents of the file were first created and the last year is when the contents were last modified. 
+The `\{year}` is the year in which the content was created (e.g. "`2004`"). The date may optionally be set to a range of years with the first and last years of the range separated by a comma (e.g. "`2004, 2017`"); in this case, the first year is when the content was first created and the last year is when the content was last modified. 
 
 The `\{owner}` is the name of the copyright holder. If the content is subsequently modified and appended to by other copyright owners, the words "and others" are typically appended. So for example: "XYZ Corp." or "XYZ Corp. and others". The words "and others" are used to avoid having to list every copyright owner and because often, most of the content in the file was contributed by the initial copyright owner with subsequent modifications by others being smaller. However, especially if the number of copyright owners is small (e.g. two), there is nothing wrong with listing all of them especially if their contributions are more proportionately equal. For example: "XYZ Corp., John Smith, and ABC Enterprises."
 
@@ -106,7 +106,7 @@ Copyright headers can take one of two forms. In the traditional form, the identi
 [source]
 ----
 /********************************************************************************
- * Copyright (c) {date} {owner}[ and others] <1>
+ * Copyright (c) {year} {owner}[ and others] <1>
  * 
  * This program and the accompanying materials are made available under the <2>
  * terms of the Eclipse Public License 2.0 which is available at
@@ -118,16 +118,16 @@ Copyright headers can take one of two forms. In the traditional form, the identi
  *   {name} - initial API and implementation
  ********************************************************************************/
 ----
-<1> Name of the initial copyright owner (this must be a legal entity); other organizations that have contributed are either listed individually or grouped together by appending "and others". The date is expressed as a single year or a range spanning the year of the very initial assertion and that of the most recent change.
+<1> Name of the initial copyright owner (this must be a legal entity); other organizations that have contributed are either listed individually or grouped together by appending "and others". The year is expressed either as a single year or a range spanning the year of the initial creation and that of the most recent change.
 <2> Declared project licenses described in human readable form.
 <3> Declared project licenses indicated using SPDX codes and expressions.
 <4> The names of the contributors and the nature of their contribution (this section may be excluded).
 
-Contributors should be consistent when expressing copyright on a particular file. In some legal circles, the exact form of the copyright message must be used in summaries, including punctuation (e.g. the “Copyright (c) 2017 My Company, Inc” and “Copyright (c) 2017 My Company, Inc.” may be considered different and distinct because of the period).
+Contributors should be consistent when expressing copyright on a particular file. In some legal circles, the exact form of the copyright message must be used in summaries, including punctuation (e.g. the "Copyright (c) 2017 My Company, Inc" and "Copyright (c) 2017 My Company, Inc." may be considered different and distinct because of the period).
 
 [NOTE]
 ====
-Older versions of this template included the sentence “All rights reserved.” It is not wrong for this sentence to be included in the header; it is just not necessary. File headers that include this sentence do not need to be changed.
+Older versions of this template included the sentence "All rights reserved." It is not wrong for this sentence to be included in the header; it is just not necessary. File headers that include this sentence do not need to be changed.
 ====
 
 Alternatively, project teams can adopt a more generic copyright header for each file and include the identities of the copyright holders in the _notice_ file.
@@ -136,7 +136,7 @@ Alternatively, project teams can adopt a more generic copyright header for each 
 [source]
 ----
 /********************************************************************************
- * Copyright (c) {date} Contributors to the Eclipse Foundation <1>
+ * Copyright (c) {year} Contributors to the Eclipse Foundation <1>
  *
  * See the NOTICE file(s) distributed with this work for additional <2>
  * information regarding copyright ownership.
@@ -148,7 +148,7 @@ Alternatively, project teams can adopt a more generic copyright header for each 
  * SPDX-License-Identifier: EPL-2.0 <4>
  ********************************************************************************/
 ----
-<1> The date is expressed as a single year or a range spanning the year of the very initial assertion and that of the most recent change.
+<1> The year is expressed as a single year or a range spanning the year of the very initial assertion and that of the most recent change.
 <2> Statement that indicates where the actual copyright information is located.
 <3> Declared project licenses described in human readable form.
 <4> Declared project licenses indicated using SPDX codes and expressions.
@@ -166,7 +166,7 @@ In SPDX, disjunction is used to express dual licensing and conjunction is used t
 [source]
 ----
 /********************************************************************************
- * Copyright (c) {date} {owner}[ and others]
+ * Copyright (c) {year} {owner}[ and others]
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License 2.0 which is available at
@@ -184,7 +184,7 @@ The license file contains the exact text of the project’s declared licenses in
 
 If the project code is distributed under multiple licenses then the text of those licenses must be included. The file should start with a short paragraph that describes how the licenses are combined. This statement should in most cases, be exactly the same as the license statement in the file <<ip-copyright-headers,copyright and license headers>> (see the example below).
 
-Use inclusive disjunction (“or”) when talking about dual licenses (e.g. “choose one or the other (or both)”).
+Use inclusive disjunction (`OR`) when talking about dual licenses (e.g. "choose one or the other (or both)").
 
 The license file must be expressed in a human readable (`plaintext`) form; human readable markup languages may be used. The file is conventionally named `LICENSE` and may include a suffix (e.g. `LICENSE.md`).
 
@@ -353,13 +353,13 @@ The CONTRIBUTING file should make it easy for people who got interested in the p
 [[legaldoc-contributor-contributing]]
 === Contributing Code
 
-The CONTRIBUTING file should make it very clear what are the steps a contributor needs to follow, so that their contribution reaches the project and may be accepted. 
+The `CONTRIBUTING` file should make it very clear what are the steps a contributor needs to follow, so that their contribution reaches the project and may be accepted. 
 
 It should:
 
 * Include very specific instructions on how contributions are accepted;
 * Indicate whether or not the project will accept GitHub pull requests, along with the necessary steps to have the project honor those requests;
-* Describe the legal part of the process for accepting contributions, e.g. point to the the http://www.eclipse.org/legal/ECA.php[Eclipse Contributor Agreement] (ECA) and https://www.eclipse.org/legal/DCO.php[Developer Certificate of Origin] (DCO); and
+* Describe the legal part of the process for accepting contributions, e.g. point to the the {ecaUrl}[Eclipse Contributor Agreement] (ECA) and {dcoUrl}[Developer Certificate of Origin] (DCO); and
 * Describe any project specific rules, which the contributors should know, for example:
 ** preferences on code quality;
 ** code formatting; and
@@ -370,7 +370,7 @@ Projects may slightly different rules for contributing to different repositories
 [[legaldoc-contributor-ideas]]
 === Help Wanted
 
-The CONTRIBUTING file can optionally provide guidance for developers who want to help, but don't have their own agenda. To help these developers, the guide may list ideas for improvements which the team already knows, or areas where help is needed.
+The `CONTRIBUTING` file can optionally provide guidance for developers who want to help, but don't have their own agenda. To help these developers, the guide may list ideas for improvements which the team already knows, or areas where help is needed.
 
 [NOTE]
 ====
