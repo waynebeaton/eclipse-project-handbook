@@ -62,7 +62,7 @@
 :suaTxtUrl: http://www.eclipse.org/legal/epl/notice.txt
 :suaPropertiesUrl: http://www.eclipse.org/legal/epl/feature.properties.txt
 
-:securityPolicyUrl: https://www.eclipse.org/security
+:securityPolicyUrl: https://www.eclipse.org/security/policy.php
 :securityTeamEmail: security@eclipse.org
 :vulnerabilityReportUrl: https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Community&component=Vulnerability+Reports&keywords=security&groups=Security_Advisories
 :knownVulnerabilitiesUrl: https://www.eclipse.org/security/known.php
