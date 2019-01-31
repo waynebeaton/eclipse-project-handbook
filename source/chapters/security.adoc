@@ -1,0 +1,107 @@
+////
+ * Copyright (C) 2019 Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+[[vulnerability]]
+= Managing and Reporting Vulnerabilities
+
+The {securityPolicyUrl}[Eclipse Security Policy] contains information regarding obligations and specific practices regarding the reporting and disclosure of vulnerabilities.
+
+[[vulnerability-team]]
+== Security Team
+
+The Eclipse Security Team provides help and advice to Eclipse projects on security issues and is the first point of contact for handling security vulnerabilities. Members of the Security Team are committers on Eclipse Projects and members of the Eclipse Architecture Council.
+
+[[vulnerability-reporting]]
+== Reporting
+
+Vulnerabilities can be reported either via email to {securityTeamEmail} or directly with a project via the Eclipse Foundation's Bugzilla instance.
+
+The general mailto:{securityTeamEmail}[security team email address] can also be used to report vulnerabilities. Members of the Eclipse Security Team will receive messages sent to this address. This address should be used only for reporting undisclosed vulnerabilities; regular issue reports and questions unrelated to vulnerabilities in Eclipse project software will be ignored. Note that this email address is not encrypted.
+
+The community is encouraged to report vulnerabilities using the standard Eclipse Bugzilla instance in a project-specific product and component. If the project teams does not have a Bugzilla product of their own, or if a reporter is unable to determine an appropriate product and component, the reporter may use {vulnerabilityReportUrl}[Community/Vulnerability Reports] product/component. Issue reports related to vulnerabilities must be marked with the `committers-only` flag, either by the reporter, or by a committer during the triage process.
+
+[NOTE]
+====
+Bugzilla Records marked with the `committers-only` flag are visible to all Eclipse committers. By default, a `committers-only` Bugzilla record is also accessible to the reporter, assignee, and individuals explicitly indicated in the `cc` list. 
+====
+
+[WARNING]
+====
+Bugzilla sends out emails as issues are modified. Email is inherently insecure.
+====
+
+[TIP]
+====
+The Eclipse IP Team will give priority to <<ip-cq,contribution questionnaires>> (CQs) required to resolve vulnerabilities.
+====
+
+[[vulnerability-disclosure]]
+== Disclosure
+
+Disclosure is initially limited to the reporter and all Eclipse Committers, but is expanded to include other individuals, and the general public. The timing and manner of disclosure is governed by the {securityPolicyUrl}[Eclipse Security Policy].
+
+[NOTE]
+====
+Knowledge of a vulnerability can be easily extended to individuals by adding them to the `cc` list on the corresponding Bugzilla report 
+
+Contacts added to an unresolved vulnerability must be _individuals_. Groups (e.g. mailing lists with open subscription and public archives)--with the exception of the mailto:{securityTeamEmail}[Security Team email address]--should never be copied on a vulnerability issue.
+
+The `committers-only` must be removed and the `security` keyword must be added on Bugzilla records for disclosed vulnerabilities.
+====
+
+Publicly disclosed issues are listed on the {knownVulnerabilitiesUrl}[Known Eclipse Security Vulnerabilities] page.
+
+[[vulnerability-cve]]
+== Common Vulnerabilities and Exposure
+
+The Eclipse Foundation is a {cveUrl}[Common Vulnerabilities and Exposures] (CVE) Numbering Authority.
+
+Whether or not a vulnerability requires a CVE is decided by the project team with assistance from their PMC (if required).
+
+To request a CVE Number assignment, the vulnerability must be captured in a Eclipse Bugzilla record. The project team can track work on a vulnerability elsewhere, but the vulnerability reporting is tracked via Bugzilla. 
+
+[TIP]
+====
+Mark Bugzilla records as `committers-only` to prevent broad dissemination of the vulnerability before the project team has had a chance to get ahead of the issue.
+====
+
+The Bugzilla record must provide:
+
+* The name of the impacted project and product;
+* A description of the versions impacted (which may include ranges);
+* A {cweUrl}[Common Weakness Enumeration] (CWE) code; and
+* A one or two sentence summary of the issue which clearly identifies the Eclipse project/product and impacted versions.
+
+The Bugzilla record may be augmented with additional information as required.
+
+.Example CVE Report data
+----
+project: Eclipse Vert.x
+
+version: [3.0, 3.5.1]
+
+cwe: CWE-93: Improper Neutralization of CRLF Sequences ('CRLF Injection')
+
+summary: In Eclipse Vert.x version 3.0 to 3.5.1, the HttpServer response 
+headers and HttpClient request headers do not filter carriage return and 
+line feed characters from the header value. This allow unfiltered values 
+to inject a new header in the client request or server response."
+----
+
+The record must be `RESOLVED/FIXED` and the `committers-only` flag must be turned off before the EMO can push the report to the central reporting authority.
+
+When all of the information is assembled and the vulnerability is ready for disclosure, a project team member must send a message to the mailto:{securityTeamEmail}[Security Team] with a request to assign a CVE Number and send the report to the central authority.
+
+The required information is rendered into the appropriate form by the EMO and forwarded to the central authority.
+
+[NOTE]
+====
+The security team will assign a CVE Number to the Bugzilla record as an _alias_, they will then notify the central authority, and--when the report is accepted and posted--add the central authority's link to the URL field of the bug.
+====

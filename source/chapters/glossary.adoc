@@ -131,6 +131,10 @@ Top-Level Project (TLP) ::
 
 A top-level project (sometimes referred to as a _TLP_) is effectively a container for projects that do the real work. A top-level project does not generally contain code; rather, a top-level project contains other projects. Each top-level project defines a charter that, among other things defines a scope for the types of projects that it contains. Top-level projects are managed by a Project Management Committee.
 
+Vulnerability ::
+
+This Eclipse Foundation uses the ISO 27005 definition of vulnerability: "A weakness of an asset or group of assets that can be exploited by one or more threats."
+
 Webmaster ::
 
 The Webmaster team is responsible for maintaining the IT infrastructure of the Eclipse Foundation and the {forgeName} forge. You can contact the Webmaster team directly via email ({webmasterEmail}).
