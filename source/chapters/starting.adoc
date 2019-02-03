@@ -17,7 +17,7 @@ It's also important to know what new projects don't give up. The project team re
 
 {forgeName} open source projects start with a proposal that is made available to the community for review. At the end of the _community review_ period, we engage in a _creation review_, and then provision the project resources.
 
-[graphviz, images/overview, svg]
+[graphviz, images/starting_overview, svg]
 .An overview of the Project Creation Process
 ----
 digraph {

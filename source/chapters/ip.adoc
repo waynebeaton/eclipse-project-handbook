@@ -73,7 +73,7 @@ CQs are not generally required for ongoing work done by project committers. Cons
 
 Code provenance tracking is critical (the source of all code that ends up in Eclipse Foundation repositories must be well known). To that end, all new projects are required to make an _initial contribution_ before *any* code is committed to a project's source code repository.
 
-[graphviz, images/overview, svg]
+[graphviz, images/ip_ic_overview, svg, width=800px]
 .How The Initial Contribution Fits into the Project Creation Process
 ----
 digraph {
