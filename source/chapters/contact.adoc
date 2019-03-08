@@ -11,6 +11,10 @@
 [[contact]]
 == Getting Help
 
-If you have any questions, or are unsure of your responsibilities as a
-project lead or committer, please contact your project mentors or
-mailto:{emoEmail}[EMO].
+If you have any questions, or are unsure of your responsibilities as a project lead or committer, please contact your project mentors or {emoEmail}.
+
+To report vulnerabilities or report security issues contact {securityTeamEmail}. Please see <<vulnerability, Managing and Reporting Vulnerabilities>>.
+
+To ask questions about licensing or issues of a legal nature, contact {legalEmail}.
+
+If you're not sure, contact {emoEmail}.
