@@ -153,6 +153,9 @@ After the project code is pushed into the project repository, the project team c
 
 All new projects start in the _incubation phase_ (a project in the incubation phase is said to be _incubating_). The classification of a project in the incubation phase is not a statement about the quality of the project's code; rather, the incubation phase is more about the project team's progress in practicing the open and public processes necessary to establish the three communities (developers, adopters, and users) around the project.
 
+[[starting-incubation]]
+==== Incubation Phase
+
 .The Incubation Logo
 image::images/Egg-incubation.png[]
 
@@ -172,7 +175,10 @@ For projects that produce OSGi artifacts, include the word "incubation" in the _
 
 Incubating projects that correctly conform to the incubation branding rules outlined above may take advantage of the <<ip-parallel-ip, Parallel IP Process>>. They are encouraged to produce milestone builds, make releases, and grow their community.
 
-When the project code is ready (e.g. stable APIs) and the project team has learned to operate as an open source project according to the Eclipse Development Process, the project may opt to _graduate_ into the _mature phase_.
+When the project code is ready (e.g. stable APIs) and the project team has learned to operate as an open source project according to the Eclipse Development Process, the project may opt to _graduate_ (via <<release-graduation,graduation review>> into the _mature phase_.
+
+[[starting-mature]]
+==== Mature Phase
 
 Most of the lifetime of {aForgeName} project is spent in the mature phase. A mature project is one that:
 
