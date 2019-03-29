@@ -268,6 +268,10 @@ Can a project use the _gh-pages_ support from Github to host at `<project>.githu
 
 The project's primary website must be hosted on Eclipse Foundation infrastructure. GitHub's _gh-pages_ support can be used to host supplementary content only as a <<trademark-external-community,Community Portal>> (and is subject to the branding requirements).
 
+Can we use GitHub for our project website? ::
+
+The process that publishes website content pulls from the project's designated _website_ repository on `git.{forgeMachineName}.org`. A project team can put website source in a GitHub repository, but in order to actually get it on the website, some sort of process must set something up to push it to the website repository. <<resources-builds, Build infrastructure>> can be used for this.
+
 Do we have to use the Eclipse Foundation-provided download server? ::
 
 If you provide content to your community via any form of click-to-download notion, then the Eclipse Foundation-provided download server *must* be the primary source of that content. If, however, the concept of a download doesn't make sense for the sort of content that your project provides (e.g. your community consumes your context exclusively through Maven Central, or if source code is the only content delivered by the project), then you aren't required to provide that content via the download server. 
