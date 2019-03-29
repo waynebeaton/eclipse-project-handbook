@@ -171,3 +171,9 @@ Yes. Your status as a committer is not tied to your employment status. You may, 
 What happens if committers don't vote? ::
 
 If a project has three or fewer committers, then all committers must vote. If even one out of the three does not vote, then the election will end in failure. If the non-voting committer is also not active, then they can, perhaps, be retired by the project lead. Connect with mailto:{emoEmail}[EMO] for assistance.
+
+How do we transfer committers from one project to another? ::
+
+Short answer: you don't
++
+We have no concept of transferring committers. if committers need to move from one project to another, then they must be elected as committers to the new project and retire themselves from the old one.
