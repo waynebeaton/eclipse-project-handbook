@@ -4,3 +4,5 @@ source/*.svg
 source/images/*.svg
 target/*
 /target/
+.asciidoctor
+/source/chapters/images
