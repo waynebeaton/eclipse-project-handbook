@@ -32,7 +32,7 @@
 :ipDueDiligenceUrl: http://www.eclipse.org/legal/EclipseLegalProcessPoster.pdf
 :ipThirdParty: http://www.eclipse.org/org/documents/Eclipse_Policy_and_Procedure_for_3rd_Party_Dependencies_Final.pdf
 :ipPolicyUrl: http://eclipse.org/org/documents/Eclipse_IP_Policy.pdf
-:mcaUrl: http://www.eclipse.org/legal/committer_process/EclipseMemberCommitterAgreementFinal.pdf
+:mccaUrl: http://www.eclipse.org/legal/committer_process/EclipseMemberCommitterAgreementFinal.pdf
 :icaUrl: http://www.eclipse.org/legal/committer_process/EclipseIndividualCommitterAgreementFinal.pdf
 :ececfUrl: http://www.eclipse.org/legal/committer_process/employer_consent.pdf
 :ipzillaUrl: https://dev.eclipse.org/ipzilla

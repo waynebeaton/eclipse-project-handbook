@@ -18,7 +18,7 @@ All committers must complete the _Committer Paperwork Workflow_, which includes 
 [[paperwork-questionnaire]]
 === Committer Questionnaire
 
-The _Committer Questionnaire_ is an online form that must be completed by all new committers. This form offers two separate paths: one for committers who work for a member company that has provided a signed _Member Committer Agreement_, and one for everyone else.
+The _Committer Questionnaire_ is an online form that must be completed by all new committers. This form offers two separate paths: one for committers who work for a member company that has provided a signed {mccaUrl}[Member Committer and Contributor Agreement] (MCCA), and one for everyone else.
 
 .The Committer Paperwork Workflow starts by asking for employment status.
 image::images/committer_questionnaire.png[]
@@ -27,7 +27,7 @@ The _Committer Questionnaire_ is accessible only after an individual has been el
 
 [NOTE]
 ====
-If you indicate that you are employed, you will be asked to identify your employer. Only member companies that have provided a *signed* _Member Committer Agreement_ will be listed as member companies in the _Committer Questionnaire_. If you work for a company that is not an Eclipse Foundation Member Company, or your employer has not provided the Eclipse Foundation with a _Member Committer Agreement_ you must list your employer as "Other".
+If you indicate that you are employed, you will be asked to identify your employer. Only member companies that have provided a *signed* _MCCA_ will be listed as member companies in the _Committer Questionnaire_. If you work for a company that is not an Eclipse Foundation Member Company, or your employer has not provided the Eclipse Foundation with a _MCCA_ you must list your employer as "Other".
 ====
 
 [[paperwork-documents]]
@@ -55,18 +55,18 @@ digraph {
 	
 	is_committer [label="Are you already\na committer?"]
 	is_member [label="Do you work for\na member company?"]
-	has_mca [label="Has your company\nprovided an MCA?"]
+	has_mcca [label="Has your company\nprovided an MCCA?"]
 	
 	start -> is_committer
 	
 	is_committer -> final [label="Yes"]
 	is_committer -> is_member [label="No"]
 	
-	is_member -> has_mca [label="Yes"]
+	is_member -> has_mcca [label="Yes"]
 	is_member -> ica [label="No"]
 		
-	has_mca -> final [label="Yes"]
-	has_mca -> ica [label="No"]
+	has_mcca -> final [label="Yes"]
+	has_mcca -> ica [label="No"]
 	
 	ica -> final
 }
@@ -81,27 +81,27 @@ After all required documents have been received, the EMO Records Team will revie
 
 Questions regarding this process should be addressed to the mailto:{emoRecordsEmail}[EMO Records Team].
 
-[[paperwork-mca]]
-==== Member Committer Agreement
+[[paperwork-mcca]]
+==== Member Committer and Contributor Agreement[[paperwork-mca]]
 
-The {mcaUrl}[Member Committer Agreement] (MCA) is used by organizations that are members of the Eclipse Foundation to cover all of their employees who participate in Eclipse Foundation projects as committers. 
+The {mccaUrl}[Member Committer and Contributor Agreement] (MCCA) is used by organizations that are members of the Eclipse Foundation to cover all of their employees who participate in Eclipse Foundation projects as committers. 
 
 [NOTE]
 ====
-If your employer is a member of the Eclipse Foundation and  has not already provided an MCA, consult with your management team to determine who has the necessary authority to sign it on your company's behalf. Provide the MCA in advance of the completion of your committer election or new project creation to streamline the committer provisioning process. If you and your management team are not sure whether or not your employer has an MCA, ask the mailto:{emoRecordsEmail}[EMO Records Team].
+If your employer is a member of the Eclipse Foundation and  has not already provided an MCCA, consult with your management team to determine who has the necessary authority to sign it on your company's behalf. Provide the MCCA in advance of the completion of your committer election or new project creation to streamline the committer provisioning process. If you and your management team are not sure whether or not your employer has an MCCA, ask the mailto:{emoRecordsEmail}[EMO Records Team].
 ====
 
-If the committer's employer is a member of the Eclipse Foundation that cannot provide a signed MCA, then the committer will have to complete an _Individual Committer Agreement_.
+If the committer's employer is a member of the Eclipse Foundation that cannot provide a signed MCCA, then the committer will have to complete an _Individual Committer Agreement_.
 
 [[paperwork-ica]]
 ==== Individual Committer Agreement
 
-The {icaUrl}[Individual Committer Agreement] (ICA) is used by committers who are not covered by a _Member Committer Agreement_.
+The {icaUrl}[Individual Committer Agreement] (ICA) is used by committers who are not covered by a {mccaUrl}[MCCA].
 
 An ICA is required when:
 
 * The committer works for a company that is not a member of the Eclipse Foundation;
-* The committer works for member company that has not signed a Member Committer Agreement;
+* The committer works for member company that has not signed a MCCA;
 * The committer is self employed or not employed; or
 * The committer is a student.
 
