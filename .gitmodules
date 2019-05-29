@@ -1,4 +1,4 @@
-[submodule "source/eclipse-development-process"]
-	path = source/eclipse-development-process
-	url = https://github.com/eclipse-architecture/eclipse-development-process
+[submodule "source/efdp"]
+	path = source/efdp
+	url = https://github.com/EclipseFdn/EFDP
 	ignore = dirty
