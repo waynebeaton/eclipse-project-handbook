@@ -33,7 +33,7 @@ All projects must conform to the <<trademarks,branding guidelines>> before engag
 * All project source code repositories include a https://wiki.eclipse.org/Architecture_Council/Contributor_Guide_Recommendation[CONTRIBUTING] file
 (or equivalent) in the root;
 * Naming Conventions followed:
-** e.g. `{namespace}.<short-name>.<component>[.*]` for Java packages and OSGi Bundles;
+** e.g. `{namespace}.<shortname>.<component>[.*]` for Java packages and OSGi Bundles;
 * Provider information is set to the project's formal name:
 ** e.g. the `Bundle-Vendor` entry set to "Eclipse Foo" in OSGi Bundles; or
 ** e.g. the `project` and `organization` names are set to "{forgeName} Foo" in Maven `pom.xml` files;

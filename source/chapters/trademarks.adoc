@@ -209,7 +209,7 @@ The PMI supports teasers or summaries for many fields; ensure that these teaser
 
 Where applicable and supported by the programming languages and style used by the project, code namespaces must include the project’s short name.
 
-In Java, for example, package names must start with `{namespace}` and use their short name in the third-segment  (i.e. follow the pattern `{namespace}.<short-name>.<component>`), e.g. `{namespace}.foo.core`, `{namespace}.foo.ui`, and `{namespace}.foo.connector`. Component names are left to the discretion of the project team.
+In Java, for example, package names must start with `{namespace}` and use their short name in the third-segment  (i.e. follow the pattern `{namespace}.<shortname>.<component>`), e.g. `{namespace}.foo.core`, `{namespace}.foo.ui`, and `{namespace}.foo.connector`. Component names are left to the discretion of the project team.
 
 The project team must petition the Planning Council via their PMC to request exceptions.
 
