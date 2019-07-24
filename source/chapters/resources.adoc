@@ -89,7 +89,7 @@ The `Change-Id` is used by <<resources-gerrit,Gerrit Code Review>> to associate 
 
 An `Also-by` (or `Co-authored-by`) entry can be added for each additional author of a commit (one committer per entry). This might apply, for example, if a commit has been authored via pair-programming, or the commit is the result of collapsing multiple commits authored by multiple developers. To be considered valid the entry must take the form `Also-by: Name <email>`.
 
-Commits that are provided by non-committers must have a `Signed-off-by` field in the footer indicating that the author is aware of the terms by which the contribution has been provided to the project. The non-committer must additionally have an Eclipse Foundation Account and must have a signed <<resources-eca,Eclipse Contributor Agreement>> (ECA) on file.
+Commits that are provided by non-committers must have a `Signed-off-by` field in the footer indicating that the author is aware of the terms by which the contribution has been provided to the project. To be considered valid the entry must take the form `Signed-off-by: Name <email>`. The non-committer must additionally have an Eclipse Foundation Account and must have a signed <<resources-eca,Eclipse Contributor Agreement>> (ECA) on file.
 
 [[resources-git]]
 === Git

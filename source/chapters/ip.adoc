@@ -102,7 +102,6 @@ digraph {
 ----
 
 Following a successful Creation Review, the EMO will initiate the provisioning process (Committers provide required paperwork and the Webmaster creates project resources (Git, downloads, website, etc.);
-#
 
 The initial contribution, like any other <<ip-project-code,project code>> contribution, should contain *only* project code/content. Any <<ip-third-party,third party content>> that might be included in the existing source tree should be excluded from the initial contribution and submitted as separate <<ip-cq,CQs>>.
 
@@ -242,7 +241,7 @@ Project teams must create a separate CQ for each source (e.g. open source projec
 The project team can provide the IP Team with finer-grained requests if that's easier. That is, a project team can ask the IP Team to review the source for specific subsets of content (e.g. individual JAR files or modules), or an entire source tree that's used to build several components. The IP Team's focus is on _source content_; they do not generally review built content or focus on how the source code is assembled (i.e. they don't generally review JAR files). 
 ====
 
-Many third party libraries have already been approved by the IP Team. The first stage of the CQ creation process involves a search of existing content; if the content has already been approved, the project team can piggyback on the already-approved content (via a <<cq-piggyback,_Piggyback CQ_>>). _Piggyback CQs_ are approved automatically and immediately.
+Many third party libraries have already been approved by the IP Team. The first stage of the CQ creation process involves a search of existing content; if the content has already been approved, the project team can piggyback on the already-approved content (via a <<ip-piggyback,_Piggyback CQ_>>). _Piggyback CQs_ are approved automatically and immediately.
 
 [[ip-third-party-versions]]
 ===== Versions of Prerequisites
@@ -358,12 +357,12 @@ Piggyback CQs are generally approved very quickly as the due diligence work has 
 
 IP Team review or approval is *not* required for {aForgeName} open source project to use _released_ content from another {forgeName} open source project as part of a release (a project may use unreleased content from another project in milestone builds). A release of one project should *never* include unreleased content from another project.
 
-A CQ is not required for third party content that is indirectly used by virtue of consuming content from another {forgeName} open source project. If {aForgeName} projects makes direct use of third party content inherited by consuming another {forgeName} open source project, then a <<cq-piggyback,Piggyback CQ>> is required
+A CQ is not required for third party content that is indirectly used by virtue of consuming content from another {forgeName} open source project. If {aForgeName} projects makes direct use of third party content inherited by consuming another {forgeName} open source project, then a <<ip-piggyback,Piggyback CQ>> is required
 
 [[ip-cq-workflow]]
 === CQ Workflow
 
-The workflow for creating a CQ for third party content starts with a search of existing CQs. If an existing CQ can be found that is concerned with the same content and version, then a <<cq-piggyback,Piggyback CQ>> is created. Piggyback CQs are automatically and immediately approved.
+The workflow for creating a CQ for third party content starts with a search of existing CQs. If an existing CQ can be found that is concerned with the same content and version, then a <<ip-piggyback,Piggyback CQ>> is created. Piggyback CQs are automatically and immediately approved.
 
 If an existing CQ cannot be found, a new one must be created. Once created, the source code for the third party content must be attached to the record by the committer. The PMC must then approve the record. If the project is eligible to leverage the <<ip-parallel-ip,Parallel IP Process>>, the IP Team performs a cursory review of the record and--if the CQ meets with the requirements--tentatively approves the use of the content while the full review is undertaken in _parallel_.
 
