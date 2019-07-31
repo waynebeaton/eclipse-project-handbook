@@ -102,6 +102,20 @@
 							</attributes>
 						</configuration>
 					</execution>
+					<execution>
+						<id>asciidoc-to-html-security-policy</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>process-asciidoc</goal>
+						</goals>
+						<configuration>
+							<sourceDocumentName>chapters/security-policy.adoc</sourceDocumentName>
+							<headerFooter>false</headerFooter>
+							<attributes>
+								<edpUrl>http://www.eclipse.org/projects/dev_process/development_process.php</edpUrl>
+							</attributes>
+						</configuration>
+					</execution>
 <!-- 					<execution> -->
 <!-- 						<id>asciidoc-to-html-polarsys</id> -->
 <!-- 						<phase>generate-resources</phase> -->
