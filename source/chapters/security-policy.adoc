@@ -1,0 +1,111 @@
+////
+ * Copyright (C) 2018 Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+[[security]]
+= Eclipse Security Policy
+
+[[security-overview]]
+== Overview
+
+The purpose of the Eclipse Security Policy is to set forth the general principles under which the Eclipse Foundation will manage the reporting, management, discussion, and disclosure of Vulnerabilities discovered in Eclipse software. This Security Policy applies to all software distributed by the Eclipse Foundation, including all software authored by Eclipse Committers and third-parties. This IP Policy should at all times be interpreted in a manner that is consistent with the Purposes of the Eclipse Foundation as set forth in the Eclipse Foundation Bylaws.
+
+The document uses the ISO 27005 definition of vulnerability: "A weakness of an asset or group of assets that can be exploited by one or more threats."
+
+This document uses terms from the http://www.eclipse.org/projects/dev_process/development_process.php[Eclipse Development Process].
+
+[[security-team]]
+== Eclipse Security Team
+
+The Security Team is the first line of defense: it is effectively a triage unit with security expertise. Ultimately, Vulnerabilities are resolved by individual projects with assistance from the Security Team.
+
+The Security Team is composed of a small number of security experts. At any point in time, there are no more than seven (7) members, including a minimum of one representative each from the Eclipse and RT Top-Level Projects, and a representative of the EMO(ED). All members are appointed by EMO(ED).
+
+Mail sent to the security mail address is sent exclusively to all members of the Security Team. Anybody can send mail to this address.
+
+[[security-reporting]]
+== Reporting
+
+Vulnerabilities can be reported either via email or directly with a project via Bugzilla.
+
+The general security mailing list address is security@eclipse.org. Members of the Eclipse Security Team will receive messages sent to this address. This address should be used only for reporting undisclosed Vulnerabilities; regular issue reports and questions unrelated to Vulnerabilities in Eclipse software will be ignored. Note that this email address is not encrypted.
+
+The community is encouraged to report Vulnerabilities using the standard Eclipse Bugzilla instance. Issue reports related to Vulnerabilities must be marked as "committers-only", either by the reporter, or by a committer during the triage process.
+
+Note that issues marked "committers-only" are visible to all Eclipse committers. By default, a "committers-only" issue is also accessible to the reporter and individuals explicitly indicated in the "cc" list. These defaults can be overridden to further restrict access at the discretion of the committer and project leadership.
+
+_Note that Bugzilla sends out emails as issues are modified. Email is inherently insecure._
+
+[[security-discussion]]
+== Discussion
+
+Initial discussion of an open Vulnerability may occur privately amongst members of the Security Team. Discussion should be moved to a Bugzilla record in a timely manner.
+
+[[security-resolution]]
+== Resolution
+
+A Vulnerability is considered resolved when either a patch or workaround is available, or it is determined that a fix is not possible or desirable.
+
+The Eclipse IP Team will give priority to contribution questionnaires (CQs) required to resolve Vulnerabilities.
+
+It is left to the discretion of the Security Team and project leadership to determine what subset of the project committers are best suited to resolve Vulnerabilities. The Security Team and project leaders may also—at their discretion—assemble external resources (e.g. subject matter experts) or call on the expertise of the Architecture Council.
+
+[[security-distribution]]
+== Distribution
+
+Once a Vulnerability has been resolved, the updated software must be made available to the community.
+
+At a minimum, updated software is made available via normal project distribution channels (e.g. downloads and update sites).
+
+The Eclipse Planning Council must be made aware of Vulnerabilities in software that is part of the simultaneous release. The Eclipse Planning Council will determine whether or not a "respin" of the simultaneous release repository and EPP packages is required. The Eclipse Planning Council will coordinate the timing of the "respin" with the Project Leadership.
+
+[[security-disclosure]]
+== Disclosure
+
+Disclosure is initially limited to the reporter and all Eclipse Committers, but can be expanded to include other individuals.
+
+All Vulnerabilities must be disclosed, regardless of the resolution. Users and administrators of Eclipse software must made aware that a vulnerability exists so they can assess risk, and take the appropriate action to protect their users, servers and systems from potential exploit.
+
+[[security-timing]]
+=== Timing
+
+The timing of disclosure is left to the discretion of the project leadership, including the Project Lead(s), PMC, and EMO(ED). In the absence of specific guidance from the project leadership, the following guidelines are recommended:
+
+* Vulnerabilities for which there is a patch, workaround or fix, should be disclosed to the community immediately.
+* Vulnerabilities—regardless of state—must be disclosed to the community after a maximum three months.
+
+Vulnerabilities need not necessarily be resolved at the time of disclosure.
+
+[[security-quiet-disclosure]]
+=== Quiet Disclosure
+
+A Vulnerability can be _quietly_ disclosed by simply removing the 'committers_only' flag. The issue's history will record that the flag has been removed, and the issue will become visible for everyone in searches.
+
+In general, quiet disclosure is appropriate only for issues that are identified by a committer as having been erroneously marked as Vulnerabilities.
+
+[[security-progressive-disclosure]]
+=== Progressive Disclosure
+
+Knowledge of a Vulnerability can be easily extended to individuals by adding them to the "cc" list on the issue. A Vulnerability may--at the discretion of the committer--be disclosed to specific individuals. A committer may, for example, provide access to a subject-matter expert to solicit help or advice. The Vulnerability may also be disclosed to known adopters to allow them an opportunity to mitigate their immediate risk and prepare for a forthcoming resolution.
+
+Contacts added to an unresolved Vulnerability must be individuals. Groups (e.g. mailing lists)--with the exception of security@eclipse.org--should never be copied on a Vulnerability issue.
+
+[[security-full-disclosure]]
+=== Full Disclosure
+
+All Vulnerabilities must ultimately be fully disclosed to the community at large.
+
+All Vulnerabilities affecting projects that participate in the Simultaneous Release must be reported to the Eclipse Planning Council prior to full disclosure to the community at large. Disclosure of a Vulnerability must be coordinated with the distribution of the updated software from the Project's own distribution channels, the Simultaneous Release repository, and EPP packages (please see link:#Distribution[Distribution]).
+
+To complete the disclosure of a Vulnerability, the committers-only flag must be removed from the issue and the 'security' keyword added. Issues in this state are automatically reported on the security page and RSS feed.
+
+[[security-escalation]]
+=== Escalation
+
+A security vulnerability may--at the discretion of the project leadership--be escalated to a outside body such as http://www.cert.org[CERT]. The EMO can provide assistance.
