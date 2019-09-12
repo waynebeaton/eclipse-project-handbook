@@ -45,7 +45,7 @@ A project plan is _required_ for each major and minor project release. The plan 
 
 Release records are used to capture a project plan. All project leads and committers can use the <<pmi-commands-release, Create a new release>> command on their <<pmi-project-page, project page>> in the <<pmi,Project Management Interface (PMI)>> to create a new release record.
 
-At the start of the release cycle, a plan should minimally include a release number, date, and short description. All aspects of a plan can change during the release cycle (including the date). If you do change the plan, make sure that the change is communicated via your project's _dev_ list and other project channels.
+At the start of the release cycle, a plan should minimally include a release number, date, and short description. All aspects of a plan can change during the release cycle (including the date). If you do change the plan, make sure that the change is communicated via your project's _dev-list_ and other project channels.
 
 [TIP]
 ====

@@ -50,7 +50,7 @@ Nominations such as "we all know Bob, vote for him" may work within the team, bu
 [[elections-nomination]]
 ==== What Should a Nomination Look Like?
 
-A committer nomination should explain the candidate's contributions to the project and thus why they should be elected as a Committer. Cite the issues they have fixed via patches; cite the community forum postings they have answered; cite the _dev list_ design discussions to which they have contributed; etc. In all cases, provide urls to source material.
+A committer nomination should explain the candidate's contributions to the project and thus why they should be elected as a Committer. Cite the issues they have fixed via patches; cite the community forum postings they have answered; cite the _dev-list_ design discussions to which they have contributed; etc. In all cases, provide urls to source material.
 
 [[elections-how]]
 ==== How does an Election work?
@@ -60,11 +60,11 @@ Use the menu:Committer Tools[Nominate a Committer] link on the corresponding <<p
 .The New Committer Nomination Form
 image::images/committer-election2.png[]
 
-Project committers will be notified to participate in the election via the project's _dev list_.
+Project committers will be notified to participate in the election via the project's _dev-list_.
 
 [NOTE]
 ====
-Your project must have a _dev list_ specified in the project's <<pmi,metadata>> and existing project team members must be subscribed to the list.
+Your project must have a _dev-list_ specified in the project's <<pmi,metadata>> and existing project team members must be subscribed to the list.
 ====
 
 An election starts with a nomination by an existing committer.
