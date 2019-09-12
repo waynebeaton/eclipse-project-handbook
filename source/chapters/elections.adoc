@@ -156,6 +156,44 @@ In all cases, the PMC Lead makes a recommendation to the EMO/ED to appoint a PMC
 
 PMC _Leads_ are not elected. They are vetted by the EMO, approved by the Eclipse Board of Directors, and appointed by the EMO/ED.
 
+[[elections-retire-cm]]
+=== Committer Retirement
+
+A committer can retire themselves from a project. Retirement cannot be undone: to rejoin a project as a committer after being retired, a contributor must again be <<elections-committer,nominated and elected>> into the role.
+
+[TIP]
+====
+To retire from a project, navigate to the <<pmi-project-page, project page>>, open the "Who's Involved" tab, and click on your image in the committer list. Then, in the "Retire Committer Status" box on the on the project role page, check the checkbox and click the btn:[Submit] button.
+
+image::images/elections_retire_self.png[]
+====
+
+A project lead may also retire a committer. A project lead might, for example, retire a committer that has been inactive for an extended period of time (e.g., longer than a year). Before retiring a committer, the project's community should be informed of the change and the committer must be given a chance to defend retaining their status via the project's dev-list. 
+
+[NOTE]
+====
+A common practice is for the project lead to use the project's dev-list to announce generically that they're going to retire committers that have been inactive for some designated period of time and give the committers a chance to speak up before a deadline.
+====
+
+There is no means by which a committer can be forced out of a project if they have not done anything wrong (there is no notion of "voting a committer out" of a project). Leaving the company that sponsors the project, for example, is not a valid reason for retirement. On the other hand, that a committer has changed jobs or roles and can no longer continue to contribute the project is a completely valid reason for retirement.
+
+[[elections-retire-pl]]
+=== Project Lead Retirement
+
+A project lead can retire themselves from a project. Prior to retiring, a project lead should work with the project team to ensure the continuity of the role (e.g., in the case where a project's sole project lead plans retirement, they should engage with the team to identify and <<elections-pl,elect>> a replacment). In the spirit of open source transparency, a retiring project lead should announce their retirement on the project's dev-list.
+
+[TIP]
+====
+To retire from a project, navigate to the <<pmi-project-page, project page>>, open the "Who's Involved" tab, and click on your image in the project lead list. Then, in the "Retire Project Lead Status" box on the on the project role page, check the checkbox and click the btn:[Submit] button.
+
+image::images/elections_retire_pl.png[]
+====
+
+[[elections-retire-other]]
+=== Retiring Other Roles
+
+Connect with the PMC or mailto:{emoEmail}[EMO] for assistance.
+
 [[elections-faq]]
 === Frequently Asked Questions
 
@@ -170,10 +208,14 @@ Yes. Your status as a committer is not tied to your employment status. You may, 
 	
 What happens if committers don't vote? ::
 
-If a project has three or fewer committers, then all committers must vote. If even one out of the three does not vote, then the election will end in failure. If the non-voting committer is also not active, then they can, perhaps, be retired by the project lead. Connect with mailto:{emoEmail}[EMO] for assistance.
+If a project has three or fewer committers, then all committers must vote. If even one out of the three does not vote, then the election will end in failure. If the non-voting committer is also not active, then they can, perhaps, be <<elections-retire-cm,retired>> by the project lead.
 
 How do we transfer committers from one project to another? ::
 
 Short answer: you don't
 +
 We have no concept of transferring committers. if committers need to move from one project to another, then they must be elected as committers to the new project and retire themselves from the old one.
+
+Can a project lead retire a _disruptive_ committer? ::
+
+The EDP allows a project lead to retire a disruptive committer. This is basically the "nuclear" option and so should be used sparingly; we have only retired a few committers in this manner. Should a project lead decide to take this step, they should be prepared to provide evidence to back up the claim of disruption. The project lead should work with the PMC and EMO to determine how (or if) that evidence is tracked and disseminated.
