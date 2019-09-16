@@ -49,7 +49,7 @@ Committers *do not* require an ECA to contribute to a project on which they have
 [[resources-commit]]
 === Git Commit Records
 
-Git commit records are required to take a specific form. The credentials of the actual author must be used to populate the `Author` field. The author credentials must specify the author's actual name and email address. The email address used must match the email address that the Eclipse Foundation has on file for the author (case-sensitive).
+Git commit records are required to take a specific form. The credentials of the actual author must be used to populate the `Author` field. The author credentials must specify the author's actual (legal) name and email address. The email address used must match the email address that the Eclipse Foundation has on file for the author (case-sensitive).
 
 The commit message is divided into three sections:
 
@@ -80,6 +80,11 @@ Date:   Wed May 29 16:17:36 2013 +0200
 <3> Gerrit `Change-Id` (only when pushing to Gerrit for review).
 <4> Additional authors can be added using `Also-by` or `Co-authored-by` entries.
 <5> Non-committers must _sign-off_ the commit, indicating that they aware of the terms by which the contribution has been provided to the project, using the same email address as used in the author field.
+
+[IMPORTANT]
+====
+The named used in the `Author` field (and, when required, in the `Also-by` and `Signed-off-by` fields) must be the legal name of the contributor; the email address must be valid and real.
+====
 
 The _summary_ line is used in many places where Git commits are listed, ensure that this line is sensible by itself. The _description_ area should be used to provide more detail about the commit. The footer area is used for extra fields and values.
 
@@ -283,3 +288,7 @@ Reasonable steps must be taken to ensure that the consumer understands the pre-r
 Can we use external services like OSSRH to stage pre-release builds? ::
 
 Yes.
+
+Can an {aForgeName} project accept anonymous code contributions? ::
+
+No. All contributions must be associated with their author using their legal name and a real email address. In pragmatic terms, the contributor must provide their legal name and email address in the Git commit's `Author` field, and sign-off the commit using those same credentials; the contributor must also have electronically signed the ECA using those same credentials.
