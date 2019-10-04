@@ -157,7 +157,7 @@ All new projects start in the _incubation phase_ (a project in the incubation ph
 ==== Incubation Phase
 
 .The Incubation Logo
-image::images/Egg-incubation.png[]
+image::images/incubating.png[width=200px]
 
 In order to alert potential consumers of the incubating nature, projects in the incubation phase must include _incubation branding_. The project team must:
 
