@@ -16,15 +16,15 @@
 
 	<groupId>org.eclipse.dash</groupId>
 	<artifactId>org.eclipse.dash.handbook</artifactId>
-	<version>1.0M4</version>
+	<version>1.0M5</version>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<apache.tika.version>1.16</apache.tika.version>
 		<asciidoctor.maven.plugin.version>1.5.8</asciidoctor.maven.plugin.version>
-		<asciidoctorj.version>1.5.8.1</asciidoctorj.version>
-		<asciidoctorj.diagram.version>1.5.16</asciidoctorj.diagram.version>
-		<asciidoctorj.pdf.version>1.5.0-alpha.16</asciidoctorj.pdf.version>
+		<asciidoctorj.version>1.6.2</asciidoctorj.version>
+		<asciidoctorj.diagram.version>1.5.18</asciidoctorj.diagram.version>
+		<asciidoctorj.pdf.version>1.5.0-beta.5</asciidoctorj.pdf.version>
 		<asciidoctorj.epub.version>1.5.0-alpha.9</asciidoctorj.epub.version>
 		<jruby.version>9.2.7.0</jruby.version>
 		<epub.source>${project.build.directory}/generated-docs</epub.source>
