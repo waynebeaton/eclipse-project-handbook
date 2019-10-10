@@ -16,7 +16,7 @@
 
 	<groupId>org.eclipse.dash</groupId>
 	<artifactId>org.eclipse.dash.handbook</artifactId>
-	<version>1.0M5</version>
+	<version>1.0M6</version>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

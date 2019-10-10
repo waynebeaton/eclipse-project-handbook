@@ -67,3 +67,5 @@ include::chapters/contact.adoc[]
 include::chapters/legaldoc-plugins.adoc[leveloffset=+1]
 
 include::efdp/source/development_process.adoc[leveloffset=+1]
+
+include::chapters/dpia.adoc[leveloffset=+1]
