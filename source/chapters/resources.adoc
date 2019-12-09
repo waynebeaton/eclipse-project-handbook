@@ -75,11 +75,11 @@ Date:   Wed May 29 16:17:36 2013 +0200
     Signed-off-by: Some Body <somebody@somewhere.com> <5>
 ------------------------------------------------------------
 
-<1> The email address of the author must match the email address on the Eclipse Foundation Account.
+<1> The email address of the author must match the email address on the Eclipse Foundation Account, the name "Some Body" must be replaced by the real name of the person.
 <2> Best practice: include the bug id in the commit message summary.
 <3> Gerrit `Change-Id` (only when pushing to Gerrit for review).
-<4> Additional authors can be added using `Also-by` or `Co-authored-by` entries.
-<5> Non-committers must _sign-off_ the commit, indicating that they aware of the terms by which the contribution has been provided to the project, using the same email address as used in the author field.
+<4> Additional authors can be added using `Also-by` or `Co-authored-by` entries, by replacing the name "Some Bodyelse" by the real name of the person
+<5> Non-committers must _sign-off_ the commit, indicating that they aware of the terms by which the contribution has been provided to the project, using the same name and email address as used in the author field.
 
 [IMPORTANT]
 ====
