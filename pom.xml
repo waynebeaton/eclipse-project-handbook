@@ -1,22 +1,25 @@
-<!-- /******************************************************************************** 
-	* Copyright (C) 2015 Eclipse Foundation, Inc. and others. * * This program 
-	and the accompanying materials are made available under the * terms of the 
-	Eclipse Public License v. 2.0 which is available at * http://www.eclipse.org/legal/epl-2.0. 
-	* * SPDX-License-Identifier: EPL-2.0 ********************************************************************************/ -->
+<!-- 
+Copyright (C) Eclipse Foundation, Inc. and others. 
+
+This program and the accompanying materials are made available under the terms of the 
+Eclipse Public License v. 2.0 which is available at http://www.eclipse.org/legal/epl-2.0. 
+
+SPDX-License-Identifier: EPL-2.0
+-->
 
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<name>Eclipse Dash</name>
+	<name>Eclipse Foundation Project Handbook</name>
 	<organization>
-		<name>Eclipse Dash</name>
+		<name>Eclipse Dash Project</name>
 	</organization>
 
 	<groupId>org.eclipse.dash</groupId>
 	<artifactId>org.eclipse.dash.handbook</artifactId>
-	<version>1.0M6</version>
+	<version>1.0M7</version>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -102,32 +105,6 @@
 							</attributes>
 						</configuration>
 					</execution>
-					<execution>
-						<id>asciidoc-to-html-security-policy</id>
-						<phase>generate-resources</phase>
-						<goals>
-							<goal>process-asciidoc</goal>
-						</goals>
-						<configuration>
-							<sourceDocumentName>chapters/security-policy.adoc</sourceDocumentName>
-							<headerFooter>false</headerFooter>
-							<attributes>
-								<edpUrl>http://www.eclipse.org/projects/dev_process/development_process.php</edpUrl>
-							</attributes>
-						</configuration>
-					</execution>
-<!-- 					<execution> -->
-<!-- 						<id>asciidoc-to-html-polarsys</id> -->
-<!-- 						<phase>generate-resources</phase> -->
-<!-- 						<goals> -->
-<!-- 							<goal>process-asciidoc</goal> -->
-<!-- 						</goals> -->
-<!-- 						<configuration> -->
-<!-- 							<sourceDocumentName>polarsys.adoc</sourceDocumentName> -->
-<!-- 							<attributes> -->
-<!-- 							</attributes> -->
-<!-- 						</configuration> -->
-<!-- 					</execution> -->
 
 <!-- 					<execution> -->
 <!-- 						<id>generate-pdf-doc</id> -->
