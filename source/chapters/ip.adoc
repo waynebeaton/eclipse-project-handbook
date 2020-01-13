@@ -468,18 +468,21 @@ Use the <<pmi-commands-iplog, Generate IP Log>> tool on a specific <<pmi-project
 === Frequently Asked Questions
 
 [qanda]
-Can third party content be included in an Eclipse project's source code repository? ::
-Yes. Third party content can be included in binary form (e.g. source and binary JAR files) in a project's source code repository if that makes technical sense for the project.
+Can <<ip-third-party,third party content>>  be included in an Eclipse project's source code repository? ::
 
-Can we include third party source code in an Eclipse project's source code repository? ::
-<<ip-third-party,Third party content>> that is stored in the project repository is effectively a _fork_ of that third party content. This is a bit of a grey area in that it is _third party content_ that will be ultimately treated as <<ip-project-code,_project code_>> (i.e. contributors may potentially modify it). Forked source code that is included in a project's source code repository should be treated as third party content with a separate CQ.
+Yes. Third party content can be included in binary form (e.g. source and binary JAR files) in a project's source code repository if that makes technical sense for the project.
++
+Third party content that is stored in the project repository is effectively a _fork_ of that third party content. This is a bit of a grey area in that it is _third party content_ that will be ultimately treated as <<ip-project-code,_project code_>> (i.e. contributors may potentially modify it). 
++
+Third party _source code_ must be reviewed by the EMO IP Team (i.e., open a <<ip-cq,CQ>>) before it may be include in a project repository.
 
 The IP Due Diligence Process says that I need to create a CQ for project code contributions that exceed 1,000 lines of code; how do I calculate lines of code? ::
-The short version is that we trust our committers' judgement regarding how lines of code should be calculated. What we're interested in is net new intellectual property. With this in mind, it's not generally correct to just add the number of lines added to the lines removed; it's also not generally correct to use the difference of these numbers to determine the true number of lines in a contribution. Again, as a committer we trust your judgement.
+
+The short version is that the Eclipse Foundation trusts the judgement of Eclipse committers regarding how lines of code should be calculated. What we're interested in is net new intellectual property. With this in mind, it's not generally correct to just add the number of lines added to the lines removed; it's also not generally correct to use the difference of these numbers to determine the true number of lines in a contribution. Again, as a committer we trust your judgement.
 +
 If a contribution contains significant new functionality, or if you are not certain of the provenance or are otherwise concerned that there may be intellectual property issues with a contribution (of any size), then the IP Team needs to be engaged.
 +
-If you're not sure, create the CQ.
+If you're not sure, create the <<ip-cq,CQ>>.
 
 Can my release use unreleased content from another Eclipse open source project? ::
 No. A release may only use released content from other projects. A project may disseminate milestone builds that include unreleased content, but the upstream content must be released before a downstream project can include the content in their own release.
