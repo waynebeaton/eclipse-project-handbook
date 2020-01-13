@@ -77,6 +77,8 @@
 :toc-placement: auto
 :icons: font
 
+:doctype: book
+:mkdirs: true
 :sectlinks:
 :sectanchors:
 :figure-caption!:
