@@ -1,0 +1,35 @@
+////
+ * Copyright (C) Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+[[specifications]]
+= Specifications
+
+[[specifications-paperwork]]
+== Paperwork
+
+[[specification-contributor]]
+=== Contributors
+
+Contributors to {aForgeName} Specification Project are required to sign the {ecaUrl}[Eclipse Contributor Agreement] (ECA). Contributions are typically made via pull request to the project in the <<resources-commit, standard form>>; pull requests must be merged by a project committer.
+
+To become a contributor:
+
+1. Create an account with the Eclipse Foundation;
+2. Sign the {ecaUrl}[Eclipse Contributor Agreement] (ECA);
+3. Contribute! (submit a pull request)
+
+Regular contributors of high quality content may be invited to join the project team as a committer (via <<elections-committer, committer election>>).
+
+[[specification-committer]]
+=== Committers
+
+According to the {ipPolicyUrl}[Eclipse IP Policy], essential claim grants flow through committer participation the the project at key _checkpoint reviews- (e.g., <<release-review,release and progress reviews>>). Since essential claims grants are attached to committer participation in a specification project, additional paperwork is required.
+
+Member Participants may appoint a representative committer to any specification project under the purview
