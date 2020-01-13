@@ -105,3 +105,42 @@ The required information is rendered into the appropriate form by the EMO and fo
 ====
 The security team will assign a CVE Number to the Bugzilla record as an _alias_, they will then notify the central authority, and--when the report is accepted and posted--add the central authority's link to the URL field of the bug.
 ====
+
+[[security-faq]]
+=== Frequently Asked Questions
+
+In what form should a disclosure be published? Is publishing the bug on the {knownVulnerabilitiesUrl}[Known Vulnerabilities page] enough? ::
+
+Publishing on the Known Vulnerabilities page will happen automatically. This is mimimal disclosure. Whether or not you should do more is a project team decision. If you  need help with that decision, connect with your PMC or the Security Team.
++
+If the vulnerability real and is in release software (i.e., it's likely to have been adopted), you should <<vulnerability-cve,request a CVE>>.
++
+You should let your community know about the vulnerability though your usual communication channels.
+ 
+Who can/will update {knownVulnerabilitiesUrl}[Known Vulnerabilities page] and when? ::
+
+When a {bugzillaUrl}[Eclipse Bugzilla] record has the "committers-only" flag turned off, includes the `security` keyword, is in the `RESOLVED`, `VERIFIED`, or `CLOSED` state, and is resolved `FIXED`, it will appear on this page.
+ 
+Can I already commit the fixes to our repository and provide a service release, or shall I wait for some part of the disclosure process first? ::
+
+In general, you should fix the issue first.
++
+Whether or not we disclose in advance of making the fix available is a judgement call. When there is a real risk that somebody may exploit the vulnerability, you generally want to inform your adopters as quicky and discretely as possible so that they can prepare themselves.
++
+If the issue is particularly sensitive and you need to make that fix in a private repository and coordinate disclosure, connect with EMO and we'll help. Very few projects actually need to go to this extreme.
+ 
+Is there something specific I should add (or something I should avoid mentioning) in the commit message? ::
+
+That depends. In general, you should avoid adding anything that calls particular attention to the vulnerability. Just state what the commit contains.
+ 
+Do we need a <<vulnerability-cve,CVE>>? ::
+
+That's up to the project team. We need the project team to engage with the process of gathering the information required to report the vulnerability to the central authority; the first step in that process is deciding whether or not a CVE is desired/required.
++
+The general rule is that a CVE is required when a vulnerability impacts release software. If you're not sure, check with your PMC or the <<vulnerability-team, Security Team>>.
++
+It's a bit of a rite of passage for an open source project to disclose their first vulnerability.
+
+Does the CVE process start after the disclosure? ::
+
+Sort of. You can start the process, but we need to remove the `committers-only` flag on the before we push the CVE to the central authority.
