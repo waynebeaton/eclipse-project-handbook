@@ -17,6 +17,7 @@
 :proposalsForum: http://www.eclipse.org/forums/eclipse.proposals
 :activityUrl: http://www.eclipse.org/projects/project_activity.php
 :edpUrl: http://www.eclipse.org/projects/dev_process/development_process.php
+:efspUrl: https://www.eclipse.org/projects/efsp/
 :trademarkTransferUrl: http://eclipse.org/legal/Trademark_Transfer_Agreement.pdf
 :trademarkGuidelinesUrl: https://eclipse.org/legal/logo_guidelines.php
 :copyrightUrl: https://www.eclipse.org/legal/copyrightandlicensenotice.php

@@ -167,6 +167,17 @@ How much effort should we put into this? ::
 
 The amount of effort varies based on the nature of the team, and expectations of the community and stake holders. Generally, though, a project team shouldn't spend more than a couple of hours working directly on the formal aspects of the release review. If the amount of effort seems too onerous, you may be trying too hard. Connect with your project mentors, top-level project's PMC, or the mailto:{emoEmail}[EMO] for guidance.
 
+Do I need to engage in a release review? ::
+
+If the the project team wants to issue an official major or minor release and has not engaged in a release review (or progress review) within a year of the planned release date, then a release review is required.
+
+What is the difference between a release review and progress review? ::
+
+In practice, there is really no difference. The activities involved are the same and a project may create major and minor releases for an entire year following a successful release or progress review.
++
+Progress reviews were added to the {edpUrl}[Eclipse Foundation Development Process] primarily to support the {efspUrl}[Eclipse Foundation Specification Process], which requires that specification project teams engage periodic reviews that do not necessarily align with releases.
++
+In cases where, for example, a project team has gone an extended period of time without having engaged in a review, the project leadership chain may  compel the project team to engage in a progress review to ensure that the project team is following the processes and is generally engaging in the sorts of activities required for success.
 
 How do I submit the IP Log for review? ::
 

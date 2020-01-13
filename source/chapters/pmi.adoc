@@ -254,18 +254,21 @@ The bugs for all projects participating in the release will be included. Bugs ar
 [[pmi-release-milestones]]
 ==== Milestones
 
-Enter the name, date, and optional description for each milestone expected with the release. 
+Enter the name, date, and optional description for each <<release-milestones,milestone>> expected with the release. 
 
 Projects should generally include more than one milestone build with each release. To include additional milestones, click the btn:[Add another item] button. Note that milestones can be dragged into the desired order. To remove a milestone, leave the _Name_ field blank.
 
 [[pmi-review]]
 ==== Review
 
-The release has a <<release-review,'Review'>> section that can be used to provide information for the associated review. If you provide information here, the release record itself can be used as review documentation; no further documentation is required.
+The release record has a <<release-review,_Review_>> section that can be used to provide information for the associated review. If you provide information in the _Review_ section, the release record itself can be used as review documentation; no further documentation is required.
 
 Each section on the review page includes a little help to describe the sort of information that you should provide.
 
-All major and minor releases require a review. Service releases (i.e. bug fix releases that do not change public APIs or add new functionality) do not require a review.
+[NOTE]
+====
+A review is not necessarily required for every release. A project team may declare official major or minor releases and distribute associated products for up to one year following a successful _<<release-review,release or progress review>>_ and reviews are never required for bug-fix/service releases. 
+====
 
 If a release requires a review, you can schedule one by clicking the menu:Schedule a review[] link. The drop-down list above the button contains  several options for review dates. Pick the one that works best for you.
 
