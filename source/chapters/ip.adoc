@@ -548,7 +548,7 @@ We submitted an IP Log for our release, but we've made some changes since then t
 The purpose of the IP Log review is to checkpoint the IP Due Diligence Process and ensure that nothing is slipping through the cracks; an IP Log is not intended to be an accurate reflection of exactly what is in any particular release.
 
 Are there other reasons to submit the IP Log for review? ::
-Generally no. If the IP Team requires an IP Log review outside of the context of a release or restructuring review, they'll ask for it. It is not generally necessary to submit an IP Log for review outside of the context of a review. It is, however, good practice to do your own review of the generated IP Log periodically to make	sure that it accurately reflects the state of the project.
+Generally no. If the IP Team requires an IP Log review outside of the context of a release or restructuring review, they'll ask for it. It is not generally necessary to submit an IP Log for review outside of the context of a review. It is, however, good practice to do your own review of the generated IP Log periodically to make sure that it accurately reflects the state of the project.
 	
 How do I fix problems with the generated IP Log? ::
 The IP Log is generated based on data from Eclipse Foundation servers. If the log is being generated incorrectly, then the underlying data needs to be fixed. If you spot a problem, send a note to mailto:{emoEmail}[EMO].
