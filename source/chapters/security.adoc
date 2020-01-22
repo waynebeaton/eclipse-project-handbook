@@ -107,7 +107,7 @@ The security team will assign a CVE Number to the Bugzilla record as an _alias_,
 ====
 
 [[security-faq]]
-=== Frequently Asked Questions
+== Frequently Asked Questions
 
 In what form should a disclosure be published? Is publishing the bug on the {knownVulnerabilitiesUrl}[Known Vulnerabilities page] enough? ::
 
@@ -135,11 +135,24 @@ That depends. In general, you should avoid adding anything that calls particular
  
 Do we need a <<vulnerability-cve,CVE>>? ::
 
-That's up to the project team. We need the project team to engage with the process of gathering the information required to report the vulnerability to the central authority; the first step in that process is deciding whether or not a CVE is desired/required.
+It's up to the project team. We need the project team to engage with the process of gathering the information required to report the vulnerability to the central authority; the first step in that process is deciding whether or not a CVE is desired/required.
 +
-The general rule is that a CVE is required when a vulnerability impacts release software. If you're not sure, check with your PMC or the <<vulnerability-team, Security Team>>.
+The general rule is that a CVE is required when a vulnerability impacts release software. The Eclipse Security Team has given this advice (paraphrased):
++
+[quote]
+____
+If someone can download compiled (e.g., JAR) files and use them without any sort of compilation process then we are inclined to say that there exists a tangible risk to consumers and so a CVE should be requested. That is, unless that version string specifically says alpha or beta, or the content has otherwise clear warnings to not use it in a production context, then we should--as good citizens--create a CVE. Merely being versioned 0.x instead of 1.x doesn't absolve the situation.
+____
++
+If you're not sure, check with your PMC or the <<vulnerability-team, Security Team>>.
 +
 It's a bit of a rite of passage for an open source project to disclose their first vulnerability.
+
+Do we need a <<vulnerability-cve,CVE>> for versions of software that we released before moving our project to the Eclipse Foundation? ::
+
+The answer to this is not obvious, but as a general rule... no. The answer is not obvious because the continuity of the source of affected products may not be obvious (or relevant) to consumers, and it is not strictly wrong for a CVE Numbering Authority to create a CVE for a version of a product not immediately in their purview. 
++
+Ultimately, whether or not we should create a CVE is the project team's call.
 
 Does the CVE process start after the disclosure? ::
 
