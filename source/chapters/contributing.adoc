@@ -1,0 +1,91 @@
+////
+ * Copyright (C) Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+[[contributing]]
+= Contributing to {aForge} Projects
+
+== Eclipse Account
+
+[[resources-eca]]
+=== Eclipse Contributor Agreement (ECA)
+
+All contributors, who are not committers on the {forgeName} project, must sign the {ecaUrl}[Eclipse Contributor Agreements] (ECA) to ensure that the necessary <<ip,intellectual property>> (IP) rights to the contribution are granted. 
+
+Contributors who work for an Eclipse Foundation Member Company are not required to individually sign the ECA if their company has signed the  {mccaUrl}[Member Committer and Contributor Agreement] (MCCA). Likewise, committers who have signed an {icaUrl}[Individual Committer Agreement] (ICA) are not required to also sign the ECA.
+
+Committers *do not* require an ECA to contribute to a project on which they have committer status.
+
+[[resources-commit]]
+=== Git Commit Records
+
+Git commit records are required to take a specific form. The credentials of the actual author must be used to populate the `Author` field. The author credentials must specify the author's actual (legal) name and email address. The email address used must match the email address that the Eclipse Foundation has on file for the author (case-sensitive).
+
+The commit message is divided into three sections:
+
+. One line (max 72 characters) summary;
+. Description; and
+. Footer.
+
+.Example Git Commit Record
+[source]
+------------------------------------------------------------
+commit d6cf52411377a039fc2906378711091a26e932cb
+Author: Some Body <somebody@somewhere.com> <1>
+Date:   Wed May 29 16:17:36 2013 +0200
+
+    Bug 350686 - Hide unwanted action bar items <2>
+    
+    This change hides unwanted 'Link with Editor' and 
+    'Customize View...' items from the local toolbar 
+    and the view menu.
+    
+    Change-Id: Ia2bd5091303d1b0a738157effc24e4dac5a7d0c7 <3>
+    Also-by: Some Bodyelse <somebodyelse@nowhere.com> <4>
+    Signed-off-by: Some Body <somebody@somewhere.com> <5>
+------------------------------------------------------------
+
+<1> The email address of the author must match the email address on the Eclipse Foundation Account, the name "Some Body" must be replaced by the real name of the person.
+<2> Best practice: include the bug id in the commit message summary.
+<3> Gerrit `Change-Id` (only when pushing to Gerrit for review).
+<4> Additional authors can be added using `Also-by` or `Co-authored-by` entries, by replacing the name "Some Bodyelse" by the real name of the person
+<5> Non-committers must _sign-off_ the commit, indicating that they aware of the terms by which the contribution has been provided to the project, using the same name and email address as used in the author field.
+
+[IMPORTANT]
+====
+The named used in the `Author` field (and, when required, in the `Also-by` and `Signed-off-by` fields) must be the legal name of the contributor; the email address must be valid and real.
+====
+
+The _summary_ line is used in many places where Git commits are listed, ensure that this line is sensible by itself. The _description_ area should be used to provide more detail about the commit. The footer area is used for extra fields and values.
+
+If the bug id is included in the summary line (using the form "Bug 12345 - xxx" or "[12345] xxx") Gerrit Code Review will automatically add a link in the corresponding Bugzilla record back to the Gerrit record (this, of course, only applies to commits pushed to Gerrit).
+
+The `Change-Id` is used by <<resources-gerrit,Gerrit Code Review>> to associate new versions of a change back to its original review. This field need only be specified if the repository is managed by Gerrit.
+
+An `Also-by` (or `Co-authored-by`) entry can be added for each additional author of a commit (one committer per entry). This might apply, for example, if a commit has been authored via pair-programming, or the commit is the result of collapsing multiple commits authored by multiple developers. To be considered valid the entry must take the form `Also-by: Name <email>`.
+
+Commits that are provided by non-committers must have a `Signed-off-by` field in the footer indicating that the author is aware of the terms by which the contribution has been provided to the project. To be considered valid the entry must take the form `Signed-off-by: Name <email>`. The non-committer must additionally have an Eclipse Foundation Account and must have a signed <<resources-eca,Eclipse Contributor Agreement>> (ECA) on file.
+
+== Contributors
+
+How do I contribute?
+
+== Committers
+
+How do I become a committer? Start by being a <<contributing-contributors,contributor>>.
+
+[[contributing-faq]]
+== Frequently Asked Questions
+
+[qanda]
+Is there any requirement on what is necessary for committers/project leads to consider when dealing with contributions from someone from the same company? ::
+
+No requirement.  Getting reviews/approvals from any committer on your project is sufficient -- whether they are from the same company or different.
++
+Given that...  It may be nice to request a review from an "outsider", especially if the proposed change might be considered complex or controversial.  It's always good to get outside viewpoints.  Again, using MicroProfile as an example, if I am making changes that are "slam dunk" for the next release of MicroProfile, getting a review/approval from another IBMer is just fine.  But, if I am changing the way that we are packaging MicroProfile, then I will request a review from an outsider.  When I create a PR, I tend to pick several individuals as potential reviewers to give others an opportunity to review.

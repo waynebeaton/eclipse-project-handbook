@@ -515,7 +515,7 @@ How do I change a CQ from _Type A_ to _Type B_? ::
 Add a comment to the CQ asking the IP Team to change the due diligence type. If you want to change multiple CQs from _Type A_ to _Type B_, the Project Lead should contact the mailto:{ipTeamEmail}[IP Team] to coordinate and discuss scheduling and timelines.
 
 Can a project join a simultaneous release if it has chosen _Type A_ due diligence? ::
-From the point of view of the Eclipse Foundation and the Eclipse Development Process, it is completely acceptable for a project to join a simultaneous release while leveraging _Type A_ content. The parties that manage the simultaneous release (e.g. the Eclipse Planning Council), however, may impose additional restrictions.
+From the point of view of the Eclipse Foundation and the Eclipse Development Process, it is completely acceptable for a project to join a simultaneous release while leveraging _Type A_ content. The parties that manage the simultaneous release, however, may impose additional restrictions.
 
 Can a project release and/or graduate if it has chosen Type A CQs? ::
 Yes. There is no barrier to releasing and/or graduating based on the IP due diligence type chosen.

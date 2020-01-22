@@ -62,7 +62,7 @@ The purpose of the Eclipse Contributor Agreement (ECA) is to provide a written r
 
 Eclipse Management Organization (EMO) ::
 
-The Eclipse Management Organization (EMO) consists of the Eclipse Foundation staff, and the Eclipse Architecture and Planning Councils. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the {edpUrl}[Eclipse Development Process]. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead, mentor, or PMC, ask the EMO.
+The Eclipse Management Organization (EMO) consists of the Eclipse Foundation staff, and the Eclipse Architecture Council. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the {edpUrl}[Eclipse Development Process]. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead, mentor, or PMC, ask the EMO.
 
 EMO Executive Director ::
 
@@ -103,10 +103,6 @@ The Eclipse Foundation and Eclipse community is supported by our {memberUrl}[mem
 Parallel IP ::
 
 The <<ip-parallel-ip,Parallel IP Process>> allows {aForgeName} projects to make use of project code contributions and third-party content before they are fully approved by the Eclipse IP Team.
-
-Planning Council ::
-
-The Eclipse Planning Council is responsible for cross-project planning, architectural issues, user interface conflicts, and all other coordination and integration issues. The Planning Council discharges its responsibility via collaborative evaluation, prioritization, and compromise. 
 
 Prerequisite (Dependency)::
 

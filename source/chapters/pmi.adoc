@@ -289,14 +289,14 @@ ifeval::["{forgeName}"=="Eclipse"]
 [[pmi-joining-a-simultaneous-release]]
 === Joining a Simultaneous Release
 
-Projects cannot add themselves directly to a simultaneous release (e.g. https://projects.eclipse.org/releases/luna[Luna]), but rather must be added by the EMO (there is a https://bugs.eclipse.org/bugs/show_bug.cgi?id=402190[bug open] to extend this ability to planning council members).
+Projects cannot add themselves directly to a simultaneous release (e.g. https://projects.eclipse.org/releases/luna[Luna]), but rather must be added by the EMO.
 
 To join a simultaneous release:
 
 1.  Create a release record:
 * Provide at least a description of the release initially;
 * The date of the release should generally match that of the simultaneous release;
-2.  Send a note to the planning council (Eclipse projects normally do this via the https://dev.eclipse.org/mailman/listinfo/cross-project-issues-dev[cross-project-issues-dev mailing list]) with the name of your project, the name/number of the release, and the offset.
+2.  Send a note to the https://dev.eclipse.org/mailman/listinfo/cross-project-issues-dev[cross-project-issues-dev mailing list] (the EMO monitors this mailing list) with the name of your project, the name/number of the release, and the offset.
 
 The offset indicates how many days after the start of the aggregation process for a milestone your project's bits will be available. If your project's bits depend on a `pass:[+1]` project's bits then your project is probably a `pass:[+2]` project, for example.
 endif::[]
