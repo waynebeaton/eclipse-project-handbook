@@ -38,6 +38,8 @@ include::chapters/starting.adoc[]
 
 include::chapters/resources.adoc[]
 
+include::chapters/security.adoc[leveloffset=+1]
+
 include::chapters/elections.adoc[]
 
 include::chapters/paperwork.adoc[]

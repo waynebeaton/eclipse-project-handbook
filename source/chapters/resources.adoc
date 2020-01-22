@@ -160,8 +160,6 @@ The Eclipse Webmaster creates and maintains a mirror of all GitHub-hosted reposi
 
 {forgeName} projects must use an Eclipse Foundation-provided issue tracker. Project teams may opt to use either the {bugzillaUrl}[{forgeName} Bugzilla] instance or--for projects that use <<resources-github,GitHub>>--GitHub Issues instances associated with Eclipse Foundation-managed GitHub project repositories. 
 
-include::security.adoc[leveloffset=+2]
-
 [[resources-forums]]
 === Forums and Outbound Communication
 
