@@ -63,7 +63,7 @@ Use the {createurl}[web form] to create a new project proposal. Instructions are
 
 [NOTE]
 ====
-Keep track of the URL of the proposal. We do not provide public links to the document until after the proposal is opened for community review.
+Keep track of the URL of the proposal. The website does not provide public links to the document until after the proposal is opened for community review. If you do lose trck of the URL, ask mailto:{emoEmail}[the EMO] for assistance.
 ====
 
 A proposal must minimally include a description of the project, a declaration of scope, and a list of prospective members (project leads and committers) before we make it accessible to the public for _community review_.
@@ -151,15 +151,59 @@ After the project code is pushed into the project repository, the project team c
 [[starting-project-phases]]
 === Project Phases
 
-All new projects start in the _incubation phase_ (a project in the incubation phase is said to be _incubating_). The classification of a project in the incubation phase is not a statement about the quality of the project's code; rather, the incubation phase is more about the project team's progress in practicing the open and public processes necessary to establish the three communities (developers, adopters, and users) around the project.
+{forgeName} projects move through various phases. Projects in active phases (incubation or mature) engage in all the normal sorts of development activies: project committers write code, run builds, release software, court contribution, and seek to convert contributors into committers. All new projects start in the _incubation phase_. Projects tend to stay in the incubation phase for a few months (varies depending on the nature and composition of the project) and then move into the mature phase. 
+
+
+[graphviz, images/phases, svg]
+.An overview of the Project lifecycle Phases
+----
+digraph {
+	// Graph properties
+	bgcolor=transparent;
+	rankdir=LR;
+	rank=same;
+	// Nodes that define the key points in the process
+	node [shape=box;style=filled;fillcolor=white;fontsize=12];
+	{
+		proposal[label="Proposal\nPhase"];
+		incubation[label="Incubation\nPhase"];
+		mature[label="Mature\nPhase"];
+		archived[label="Archived"];
+	}
+	
+	edge [fontsize=10];
+	proposal -> incubation  [xlabel="Creation\nReview"];
+	incubation -> mature [xlabel="Graduation\nReview"];
+	mature -> archived [label="Termination\nReview"];
+	incubation -> archived;
+
+	incubation:e -> incubation:e [label="Release"]
+	mature:e -> mature:e [label="Release"]
+}
+----
+
+Key project lifeycle events are gated by reviews; moving from the incubation phase to the mature phase must be, for example, preceded by a <<release-graduation,graduation review>>.
 
 [[starting-incubation]]
 ==== Incubation Phase
 
+A project in the incubation phase is said to be _incubating_.
+
+The classification of a project in the incubation phase is not a statement about the quality of the project's code; rather, the incubation phase is more about the project team's progress in practicing the open and transparent processes described by the {edpUrl}[Eclipse Development Process] to establish the three communities (developers, adopters, and users) around the project.
+
+Incubating projects are encouraged to produce milestone builds, make releases, and grow their community.
+
+When the project code is ready (e.g. stable APIs) and the project team has learned to operate as an open source project according to the Eclipse Development Process, the project may opt to _graduate_ (via <<release-graduation,graduation review>> into the _mature phase_.
+
+[[starting-incubation-branding]]
+===== Incubation branding
+
+In order to alert potential consumers of the incubating nature, projects in the incubation phase must include _incubation branding_. 
+
 .The Incubation Logo
 image::images/incubating.png[width=200px]
 
-In order to alert potential consumers of the incubating nature, projects in the incubation phase must include _incubation branding_. The project team must:
+The project team must:
 
 * Display the incubation logo on their project web page (if they have one);
 * Display the incubation logo on their project's primary download page;
@@ -173,10 +217,6 @@ There are no incubation branding requirements for general user interface element
 For projects that produce OSGi artifacts, include the word "incubation" in the _Bundle-Name_, feature names, and p2 repositories. The word "incubation" should not be included in technical namespaces (especially when it may result in confusion when the project leaves incubation). e.g. an OSGi bundle's _Bundle-SymbolicName_, or a Java package name.
 ====
 
-Incubating projects that correctly conform to the incubation branding rules outlined above may take advantage of the <<ip-parallel-ip, Parallel IP Process>>. They are encouraged to produce milestone builds, make releases, and grow their community.
-
-When the project code is ready (e.g. stable APIs) and the project team has learned to operate as an open source project according to the Eclipse Development Process, the project may opt to _graduate_ (via <<release-graduation,graduation review>> into the _mature phase_.
-
 [[starting-mature]]
 ==== Mature Phase
 
@@ -185,6 +225,11 @@ Most of the lifetime of {aForgeName} project is spent in the mature phase. A mat
 * Is a good open source citizen with open, transparent, and meritocratic behavior;
 * Regularly and predictably releases IP clean extensible frameworks and exemplary tools; and
 * Actively nurtures the three communities: developers, adopters, and users.
+
+[[starting-archived]]
+==== Archived
+
+When a project has reached its logical conclusion, its resources are archived. Transition in the Archived (phase) is preceded by a termination review.
 
 [[starting-faq]]
 === Frequently Asked Questions
@@ -211,7 +256,7 @@ Yes. Git is the only source code management system that is currently permitted f
 
 Can I host my project code on GitHub? ::
 
-New projects can make use of <<resources-github,GitHub>>. Official project repositories must be hosted under Eclipse Foundation-managed organization at GitHub. Official repositories are subject to the same intellectual property due diligence rules and processes that all Eclipse project repositories must follow. 
+{forgeName} projects can make use of <<resources-github,GitHub>>. Official project repositories must be hosted under an Eclipse Foundation-managed organization at GitHub. Official repositories are subject to the same intellectual property due diligence rules and processes that all Eclipse project repositories must follow. 
 
 How long should I let my project incubate? ::
 

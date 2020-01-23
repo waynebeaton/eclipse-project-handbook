@@ -48,7 +48,7 @@ Most projects provide binary/compiled _downloads_ of their software, intended fo
 * All generated artifacts include only intellectual property that has been subject to the IP Due Diligence Process;
 * All distributed third party content has been approved by the IP Team;
 * The project website and PMI page includes links for artifacts;
-* <<starting-project-phases,Incubation branding>> (if applicable) is included on distributed artifacts; 
+* <<starting-incubation-branding,Incubation branding>> (when applicable) is included on distributed artifacts; 
 * All download artifacts are (if technical feasible) {jarSigningUrl}[signed]; and
 * Subject to limitations of specific technologies, the {versionNumberingUrl}[Version numbering] rules are followed.
 
@@ -80,7 +80,7 @@ Use the <<pmi-commands-release, Create a new release>> command on a specific <<p
 === Development Website
 * Is hosted on Eclipse Foundation-provided infrastructure;
 * Uses the formal name including appropriate marks, e.g. _{forgeName} Foo(TM)_, on the page title, first mention in the text, and on all prominent references to the project;
-* Project incubation status (if applicable) is correctly noted;
+* <<starting-incubation-branding,Incubation branding>> (when applicable) is displayed; 
 * Includes a concise description of the project (with all necessary marks); and
 * The <<trademarks-website-footer,standard navigation>> links (e.g. `{wwwUrl}`) are included in the website footer.
 
