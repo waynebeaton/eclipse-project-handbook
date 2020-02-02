@@ -15,6 +15,9 @@ Before getting started, it's important to know what is required of {aForgeName} 
 
 It's also important to know what new projects don't give up. The project team retains control of the project's direction by virtue of regular contribution to the project. The contributors to the project retain ownership of their contributions (those contributions are used under license by the project). Project leads are required to ensure that other individuals who present themselves to the project are given uniform opportunity to participate, but the project team gets to establish the rules for participation (within certain parameters). The project team is responsible for determining development methodology, establishing plans, etc. Existing owners of the project code retain their ownership.
 
+[[starting-proposal]]
+=== Project Proposal
+
 {forgeName} open source projects start with a proposal that is made available to the community for review. At the end of the _community review_ period, we engage in a _creation review_, and then provision the project resources.
 
 [graphviz, images/starting_overview, svg]
