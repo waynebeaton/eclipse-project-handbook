@@ -11,14 +11,70 @@
 [[contributing]]
 = Contributing to {aForge} Projects
 
+[[contributing-contributors]]
+== Contributors
+
+Anybody can be a contributor. To be a contributor, you need to contribute. Contributions typically take the form of code or documentation submitted to the project's source code repository, but may also take the form of answering questions in project and community forums, and more.
+
+For contributions that contain intellectual property (e.g., source code or documentation), some formal documentation is required to ensure that the rights assoicated with the intellectual property are properly attributed and licensed.
+
+To contribute intellectual property, you need to:
+
+. Create an <<contributing-account,Eclipse Foundation Account>>;
+. Sign the <<resources-eca,Eclipse Contributor Agreement>>;
+. Read the project's contribution guide to learn about coding style and other guidelines for contributions (contribution guidelines are typically found a `CONTRIBUTING` or `README` file in the root of every source code repository)
+. Create a pull request (GitHub), or submit a review (Gerrit):
+.* Ensure that the author credentials match the email address associated with your Eclipse Foundation Account, and
+.* Ensure that all commits have been _Signed-off_;
+. Work with the project team to merge your contribution.
+
+Note that contributors retain ownership of their contributions; the ECA, for example, states in part:
+
+____
+This ECA, and the license(s) associated with the particular Eclipse Foundation projects You are contributing to, provides a license to Your Contributions to the Eclipse Foundation and downstream consumers, but *You still own Your Contributions*, and except for the licenses provided for in this ECA, You reserve all right, title and interest in Your Contributions. 
+____
+
+That is, the contributor owns their contributions, but grants a license to the Eclipse Foundation and downstream consumers to use them under the terms of the project license.
+
+== Committers
+
+For Eclipse Projects (and the open source world in general), committers are ones who hold they keys. Committers decide what code goes into the code base, they decide how a project builds, and they ultimately decide what gets delivered to the adopter community. With awesome power, comes awesome responsibility, and so the Open Source Rules of Engagement described by the {edpUrl}[Eclipse Foundation Development Process], puts _meritocracy_ on equal footing with _transparency_ and _openness_: becoming a committer isn’t necessarily hard, but it does require a demonstration of merit.
+
+In practical terms, there are two ways to become an Eclipse Committer. 
+
+The first way is to be listed as an initial committer on a new <<starting-proposal,project proposal>>. When projects come to the Eclipse Foundation we need them to actually start with committers, and so we include this as part of the bootstrapping. As part of the process of community vetting a new project proposal, the committers listed are themselves vetted by the community. In effect, the project proposal process also acts as a committer election that’s open to the entire community.
+
+The second way to become a committer is to get voted in via <<elections-committer,committer election>. After an individual has made a small number of high quality contributions that demonstrate that they understand how the project works, understand the Eclipse Development Process and are prepared to implement the Eclipse IP Policy, a committer will invite them to join the team and initate the election. Comitter elections start with a nomination by an existing committer that includes a statement of merit that usually takes the form of a list various contributions that the individual has made to the project. What constitutes a sufficient demonstration of merit varies by project team and  team.
+
+[NOTE]
+====
+Committer status is assigned on a project-by-project basis. That is, individuals have committer rights only on those projects for which they hold committer status. For all other projects, they are contributors.
+====
+
+When a contributor becomes a committer, they must be convered by a committer agreement (either a {mccaUrl}[Member Committer and Contributor Agreement] (MCCA) or an {icaUrl}[Individual Committer Agreement] (ICA). As the last step in the committer election process, the Eclipse Foundation systems will determine which agreement applies and engage a workflow with the new committer to ensure that everything is in place.
+
 == Eclipse Account
 
+Eclipse Foundation project resources are generally accessible without an acccount. That is, members of the community may browse code, documentation, issues, help, etc. without creating an Eclipse Foundation Account. For those members of the community that wish to contribute code patches, open issues, add content to wikis, etc., an {accountUrl}[Eclipse Foundation Account] is required.
+
+For contributors and committers, their Eclipse Foundation account is their primary portal into their relationship with the Eclipse Foundation. From their account page, individuals can sign the {ecaUrl}[Eclipse Contributor Agreement], manage their mailing list subscriptions, access build resources, and more.
+
+[TIP]
+====
+If you're working with projects that use GitHub, be sure to add your GitHub Id to your Eclipse Foundation Account so that our scripts can add you to the GitHub Teams that we use to manage access to Eclipse Foundation repositories hosted on GitHub. When, for exmaple, you become a committer on an Eclipse project that hosts their source code repositories on GitHub, you will be sent an invitation to join the GitHub Team associated with that project.
+====
+
 [[resources-eca]]
-=== Eclipse Contributor Agreement (ECA)
+== Eclipse Contributor Agreement (ECA)
 
-All contributors, who are not committers on the {forgeName} project, must sign the {ecaUrl}[Eclipse Contributor Agreements] (ECA) to ensure that the necessary <<ip,intellectual property>> (IP) rights to the contribution are granted. 
+All contributors, who are not committers on the {forgeName} project, must sign the {ecaUrl}[Eclipse Contributor Agreements] (ECA) to ensure that the necessary <<ip,intellectual property>> (IP) rights to the contribution are granted.
 
-Contributors who work for an Eclipse Foundation Member Company are not required to individually sign the ECA if their company has signed the  {mccaUrl}[Member Committer and Contributor Agreement] (MCCA). Likewise, committers who have signed an {icaUrl}[Individual Committer Agreement] (ICA) are not required to also sign the ECA.
+Contributors who are already covered by a committer agreement (either an MCCA or ICA) are not required to also sign the ECA.
+
+[TIP]
+====
+You can determine your ECA status from your {accountUrl}[Eclipse Foundation Account page]. Your ECA status is shown in the top-right corner. 
+==== 
 
 Committers *do not* require an ECA to contribute to a project on which they have committer status.
 
@@ -72,20 +128,14 @@ An `Also-by` (or `Co-authored-by`) entry can be added for each additional author
 
 Commits that are provided by non-committers must have a `Signed-off-by` field in the footer indicating that the author is aware of the terms by which the contribution has been provided to the project. To be considered valid the entry must take the form `Signed-off-by: Name <email>`. The non-committer must additionally have an Eclipse Foundation Account and must have a signed <<resources-eca,Eclipse Contributor Agreement>> (ECA) on file.
 
-== Contributors
-
-How do I contribute?
-
-== Committers
-
-How do I become a committer? Start by being a <<contributing-contributors,contributor>>.
-
 [[contributing-faq]]
 == Frequently Asked Questions
 
 [qanda]
 Is there any requirement on what is necessary for committers/project leads to consider when dealing with contributions from someone from the same company? ::
 
-No requirement.  Getting reviews/approvals from any committer on your project is sufficient -- whether they are from the same company or different.
+No requirement. Getting reviews/approvals from any committer on your project is sufficient, whether they are from the same company or different.
 +
-Given that...  It may be nice to request a review from an "outsider", especially if the proposed change might be considered complex or controversial.  It's always good to get outside viewpoints.  Again, using MicroProfile as an example, if I am making changes that are "slam dunk" for the next release of MicroProfile, getting a review/approval from another IBMer is just fine.  But, if I am changing the way that we are packaging MicroProfile, then I will request a review from an outsider.  When I create a PR, I tend to pick several individuals as potential reviewers to give others an opportunity to review.
+Project teams may establish their own rules regarding how contributions are accepted. These rules range from allowing any committer to approve a contribution, to requiring that contributions from a committer be approved by another committer, to requiring that all contributions be approved by a project lead. Whatever the case, it should be documented (typically captured in a `CONTRIBUTING` file).
++
+It is generally considered good practice (or a nice-to-have) to request a review from an "outsider", especially if the proposed change might be considered complex or controversial.  It's always good to get outside viewpoints. But the specific rules are left for the project team to decide.
