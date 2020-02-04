@@ -16,7 +16,7 @@
 
 Anybody can be a contributor. To be a contributor, you need to contribute. Contributions typically take the form of code or documentation submitted to the project's source code repository, but may also take the form of answering questions in project and community forums, and more.
 
-For contributions that contain intellectual property (e.g., source code or documentation), some formal documentation is required to ensure that the rights assoicated with the intellectual property are properly attributed and licensed.
+For contributions that contain intellectual property (e.g., source code or documentation), some formal documentation is required to ensure that the rights associated with the intellectual property are properly attributed and licensed.
 
 To contribute intellectual property, you need to:
 
@@ -44,28 +44,30 @@ In practical terms, there are two ways to become an Eclipse Committer.
 
 The first way is to be listed as an initial committer on a new <<starting-proposal,project proposal>>. When projects come to the Eclipse Foundation we need them to actually start with committers, and so we include this as part of the bootstrapping. As part of the process of community vetting a new project proposal, the committers listed are themselves vetted by the community. In effect, the project proposal process also acts as a committer election that’s open to the entire community.
 
-The second way to become a committer is to get voted in via <<elections-committer,committer election>. After an individual has made a small number of high quality contributions that demonstrate that they understand how the project works, understand the Eclipse Development Process and are prepared to implement the Eclipse IP Policy, a committer will invite them to join the team and initate the election. Comitter elections start with a nomination by an existing committer that includes a statement of merit that usually takes the form of a list various contributions that the individual has made to the project. What constitutes a sufficient demonstration of merit varies by project team and  team.
+The second way to become a committer is to get voted in via <<elections-committer,committer election>. After an individual has made a small number of high quality contributions that demonstrate that they understand how the project works, understand the Eclipse Development Process and are prepared to implement the Eclipse IP Policy, a committer will invite them to join the team and initiate the election. Committer elections start with a nomination by an existing committer that includes a statement of merit that usually takes the form of a list various contributions that the individual has made to the project. What constitutes a sufficient demonstration of merit varies by project team and  team.
 
 [NOTE]
 ====
 Committer status is assigned on a project-by-project basis. That is, individuals have committer rights only on those projects for which they hold committer status. For all other projects, they are contributors.
 ====
 
-When a contributor becomes a committer, they must be convered by a committer agreement (either a {mccaUrl}[Member Committer and Contributor Agreement] (MCCA) or an {icaUrl}[Individual Committer Agreement] (ICA). As the last step in the committer election process, the Eclipse Foundation systems will determine which agreement applies and engage a workflow with the new committer to ensure that everything is in place.
+When a contributor becomes a committer, they must be covered by a committer agreement (either a {mccaUrl}[Member Committer and Contributor Agreement] (MCCA) or an {icaUrl}[Individual Committer Agreement] (ICA). As the last step in the committer election process, the Eclipse Foundation systems will determine which agreement applies and engage a workflow with the new committer to ensure that everything is in place.
 
 == Eclipse Account
 
-Eclipse Foundation project resources are generally accessible without an acccount. That is, members of the community may browse code, documentation, issues, help, etc. without creating an Eclipse Foundation Account. For those members of the community that wish to contribute code patches, open issues, add content to wikis, etc., an {accountUrl}[Eclipse Foundation Account] is required.
+Eclipse Foundation project resources are generally accessible without an account. That is, members of the community may browse code, documentation, issues, help, etc. without creating an Eclipse Foundation Account. For those members of the community that wish to contribute code patches, open issues, add content to wikis, etc., an {accountUrl}[Eclipse Foundation Account] is required.
 
 For contributors and committers, their Eclipse Foundation account is their primary portal into their relationship with the Eclipse Foundation. From their account page, individuals can sign the {ecaUrl}[Eclipse Contributor Agreement], manage their mailing list subscriptions, access build resources, and more.
 
 [TIP]
 ====
-If you're working with projects that use GitHub, be sure to add your GitHub Id to your Eclipse Foundation Account so that our scripts can add you to the GitHub Teams that we use to manage access to Eclipse Foundation repositories hosted on GitHub. When, for exmaple, you become a committer on an Eclipse project that hosts their source code repositories on GitHub, you will be sent an invitation to join the GitHub Team associated with that project.
+If you're working with projects that use GitHub, be sure to add your GitHub Id to your Eclipse Foundation Account so that our scripts can add you to the GitHub Teams that we use to manage access to Eclipse Foundation repositories hosted on GitHub. When, for example, you become a committer on an Eclipse project that hosts their source code repositories on GitHub, you will be sent an invitation to join the GitHub Team associated with that project.
 ====
 
 [[resources-eca]]
 == Eclipse Contributor Agreement (ECA)
+
+The purpose of the ECA is to provide a written record that contributors have agreed to provide their contributions of code and documentation under the licenses used by the Eclipse project(s) they’re contributing to. It also makes it clear that contributors are promising that what they are contributing to Eclipse is code that they wrote, and that they have the necessary rights to contribute it to Eclipse projects. And finally, it documents a commitment from the contributor that their open source contributions will be permanently on the public record.
 
 All contributors, who are not committers on the {forgeName} project, must sign the {ecaUrl}[Eclipse Contributor Agreements] (ECA) to ensure that the necessary <<ip,intellectual property>> (IP) rights to the contribution are granted.
 
