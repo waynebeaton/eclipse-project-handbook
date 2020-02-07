@@ -35,7 +35,6 @@
 :ipPolicyUrl: http://eclipse.org/org/documents/Eclipse_IP_Policy.pdf
 :mccaUrl: http://www.eclipse.org/legal/committer_process/EclipseMemberCommitterAgreementFinal.pdf
 :icaUrl: http://www.eclipse.org/legal/committer_process/EclipseIndividualCommitterAgreementFinal.pdf
-:ececfUrl: http://www.eclipse.org/legal/committer_process/employer_consent.pdf
 :ipzillaUrl: https://dev.eclipse.org/ipzilla
 
 :cbiUrl: http://wiki.eclipse.org/CBI
