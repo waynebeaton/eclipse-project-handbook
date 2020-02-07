@@ -119,6 +119,15 @@ If the committer is not employed or is a student, they must send a note to the m
 === Frequently Asked Questions
 
 [qanda]
+
+What is the difference between an Individual Committer Agreement, the Member Committer and Contributor Agreement, and the Eclipse Contributor Agreement? ::
+
+The <<paperwork-ica, Individual Committer Agreement>> (ICA) is for committers whose employers are either not {memberUrl}[members] of the Eclipse Foundation or are members that have not signed the Member Committer and Contributor Agreement.
++
+The <<paperwork-mcca, Member Committer and Contributor Agreement>> (MCCA) is used by organizations that are members of the Eclipse Foundation to cover all of their employees who participate in Eclipse Foundation open source projects as committers.
++
+The <<resources-eca, Eclipse Contributor Agreement>> (ECA) is for everybody else. The ECA covers contributors who are not otherwise covered for their contributions by an ICA or MCCA.
+
 What happens if I do not fill out the paperwork?::
 
 If you do not fill out the paperwork, then you do not get your credentials for write-access to the source code repository(s) and other project resources.
