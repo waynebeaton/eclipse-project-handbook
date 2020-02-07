@@ -38,7 +38,7 @@ That is, the contributor owns their contributions, but grants a license to the E
 
 == Committers
 
-For Eclipse Projects (and the open source world in general), committers are ones who hold they keys. Committers decide what code goes into the code base, they decide how a project builds, and they ultimately decide what gets delivered to the adopter community. With awesome power, comes awesome responsibility, and so the Open Source Rules of Engagement described by the {edpUrl}[Eclipse Foundation Development Process], puts _meritocracy_ on equal footing with _transparency_ and _openness_: becoming a committer isn’t necessarily hard, but it does require a demonstration of merit.
+For Eclipse projects (and the open source world in general), committers are the ones who hold the keys. Committers decide what code goes into the code base, they decide how a project builds, and they ultimately decide what gets delivered to the adopter community. With awesome power, comes awesome responsibility, and so the Open Source Rules of Engagement described by the {edpUrl}[Eclipse Foundation Development Process], puts _meritocracy_ on equal footing with _transparency_ and _openness_: becoming a committer isn’t necessarily hard, but it does require a demonstration of merit.
 
 In practical terms, there are two ways to become an Eclipse Committer. 
 
@@ -53,7 +53,8 @@ Committer status is assigned on a project-by-project basis. That is, individuals
 
 When a contributor becomes a committer, they must be covered by a committer agreement (either a {mccaUrl}[Member Committer and Contributor Agreement] (MCCA) or an {icaUrl}[Individual Committer Agreement] (ICA). As the last step in the committer election process, the Eclipse Foundation systems will determine which agreement applies and engage a workflow with the new committer to ensure that everything is in place.
 
-== Eclipse Account
+[[contribution-account]]
+== Eclipse Foundation Account
 
 Eclipse Foundation project resources are generally accessible without an account. That is, members of the community may browse code, documentation, issues, help, etc. without creating an Eclipse Foundation Account. For those members of the community that wish to contribute code patches, open issues, add content to wikis, etc., an {accountUrl}[Eclipse Foundation Account] is required.
 
@@ -141,3 +142,29 @@ No requirement. Getting reviews/approvals from any committer on your project is 
 Project teams may establish their own rules regarding how contributions are accepted. These rules range from allowing any committer to approve a contribution, to requiring that contributions from a committer be approved by another committer, to requiring that all contributions be approved by a project lead. Whatever the case, it should be documented (typically captured in a `CONTRIBUTING` file).
 +
 It is generally considered good practice (or a nice-to-have) to request a review from an "outsider", especially if the proposed change might be considered complex or controversial.  It's always good to get outside viewpoints. But the specific rules are left for the project team to decide.
+
+Do I need to sign the Eclipse Contributor Agreement (ECA)? ::
+
+If you are not a committer on an Eclipse open source project, to contribute (e.g., make pull requests) to that project, you need to be covered by an ECA. If you are already a committer on any Eclipse open source project, then you are already covered by an ECA through your committer agreement and do not need to sign the ECA separately. If your employer has signed the <<paperwork-mcca,Member Committer and Contributor Agreement>>, then you are already covered by an ECA and you do not need to sign the ECA separately.
++
+If you are a committer on a project you do not need an ECA to contribute to that project. 
+
+How do I know if I’m covered by an Eclipse Contributor Agreement (ECA)? ::
+
+Visit your <<contributing-account,Eclipse Foundation Account>> page. Your ECA status is shown in the top-right corner.
+
+How do I know if my employer is a member of the Eclipse Foundation? ::
+
+If your employer is a member of the Eclipse Foundation, they will be listed on the {memberUrl}[Explore Our Members] page.
+
+How do I know if my employer has signed the Member Committer and Contributor Agreement (MCCA)? ::
+
+Check with your manager. If your manager doesn't know, you can contact the {emoRecords}[EMO Record Team] for assistance.
+
+I know that my employer has signed the Member Committer and Contributor Agreement (MCCA), but my account page shows that I am not covered by the ECA. What should I do? ::
+
+It's likely that you haven't provided us with employer information. In order for our systems to know that you are affiliated with a particular organization, you must specify your employer in your <<contributing-account, Eclipse Foundation Account>>.
+
+I am a committer on a project, but I cannot push to that project's GitHub repositories. What should I do? ::
+
+It's likely that you haven't provided us with your GitHub Id. Our systems manage the composition of the GitHub teams that have the necessary privileges on project repositories. For that, we need your GitHub Id, which you must provide us with in your <<contributing-account, Eclipse Foundation Account>>.
