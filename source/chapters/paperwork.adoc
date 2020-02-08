@@ -134,7 +134,7 @@ If you do not fill out the paperwork, then you do not get your credentials for w
 
 Where can I get help to discuss these documents with my management team? ::
 
-The EMO can talk to your management and senior executives about these (and other) legal documents to help them understand why these documents are the best risk reduction solution for everyone involved; just contact us at license@eclipse.org.
+The EMO can talk to your management and senior executives about these (and other) legal documents to help them understand why these documents are the best risk reduction solution for everyone involved. Contact us at {legalEmail}.
 
 What formats can be used to submit paper documentation? ::
 
