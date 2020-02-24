@@ -9,24 +9,25 @@
 ////
 
 [[contributing]]
-= Contributing to {aForge} Projects
+= Contributing to {aForgeName} Project
 
 [[contributing-contributors]]
 == Contributors
 
-Anybody can be a contributor. To be a contributor, you need to contribute. Contributions typically take the form of code or documentation submitted to the project's source code repository, but may also take the form of answering questions in project and community forums, and more.
+Anybody can be a contributor. To be a contributor, you just need to contribute. Contributions typically take the form of code or documentation submitted to the project's source code repository, but may also take the form of answering questions in project and community forums, and more.
 
-For contributions that contain intellectual property (e.g., source code or documentation), some formal documentation is required to ensure that the rights associated with the intellectual property are properly attributed and licensed.
+For contributions that contain intellectual property (e.g., source code or documentation), some formal documentation is required to ensure that the rights associated with the intellectual property are properly managed and licensed.
 
-To contribute intellectual property, you need to:
+To contribute to {aForgeName} open source project, a contributor must:
 
 . Create an <<contributing-account,Eclipse Foundation Account>>;
-. Sign the <<resources-eca,Eclipse Contributor Agreement>>;
+. Sign the <<contributing-eca,Eclipse Contributor Agreement>>;
 . Read the project's contribution guide to learn about coding style and other guidelines for contributions (contribution guidelines are typically found a `CONTRIBUTING` or `README` file in the root of every source code repository)
+. Create a commit
+ * Ensure that the author credentials on the commit record match the email address associated with their Eclipse Foundation Account, and
+ * Ensure that all commits have been _Signed-off_;
 . Create a pull request (GitHub), or submit a review (Gerrit):
-.* Ensure that the author credentials match the email address associated with your Eclipse Foundation Account, and
-.* Ensure that all commits have been _Signed-off_;
-. Work with the project team to merge your contribution.
+. Work with the project team to merge the contribution.
 
 Note that contributors retain ownership of their contributions; the ECA, for example, states in part:
 
@@ -36,28 +37,58 @@ ____
 
 That is, the contributor owns their contributions, but grants a license to the Eclipse Foundation and downstream consumers to use them under the terms of the project license.
 
+[graphviz, images/contributor-contributors, svg]
+.Becoming a contributor
+----
+digraph {
+	// Graph properties
+	bgcolor=transparent
+	
+    graph [ranksep="0.25", nodesep="0.25"]
+    
+	// Nodes that define the key points in the process
+	node [shape=box;style=filled;fillcolor=white;fontsize=12;group=g1]
+	
+	start [label="You want to be\na contributor"; style="filled,bold"];
+	eca [label=<<b>You</b> sign<br/>the ECA>];
+	contribute [label=<Create pull requests>];
+	committer [label="Project Team elects\nyou as a committer"; style="filled,bold"];
+	
+	node [shape=diamond;style=filled;fillcolor=white;fontsize=10;group=g1];
+	
+	merit [label="Significant\ncontributor?"];
+		
+	start -> eca -> contribute;
+	contribute:e -> merit:e;
+	merit -> committer [label="Yes"];
+	merit:w -> contribute:w [xlabel="No"];
+}
+----
+
+After establishing a pattern of contributing high quality contributions a contributor may be invited to join the project as a committer; an existing project committer will nominate a contributor to be a committer via <<elections-committer, committer election>>.
+
 [[contributing-committers]]
 == Committers
 
-For Eclipse projects (and the open source world in general), committers are the ones who hold the keys. Committers decide what code goes into the code base, they decide how a project builds, and they ultimately decide what gets delivered to the adopter community. With awesome power, comes awesome responsibility, and so the Open Source Rules of Engagement described by the {edpUrl}[Eclipse Foundation Development Process], puts _meritocracy_ on equal footing with _transparency_ and _openness_: becoming a committer isn’t necessarily hard, but it does require a demonstration of merit.
+For {forgeName} projects (and the open source world in general), committers are the ones who hold the keys. Committers decide what code goes into the code base, they decide how a project builds, and they ultimately decide what gets delivered to the adopter community. With awesome power, comes awesome responsibility, and so the Open Source Rules of Engagement described by the {edpUrl}[Eclipse Foundation Development Process], puts _meritocracy_ on equal footing with _transparency_ and _openness_: becoming a committer isn’t necessarily hard, but it does require a demonstration of merit.
 
-In practical terms, there are two ways to become an Eclipse Committer. 
+In practical terms, there are two ways to become {aForgeName} Committer. 
 
 The first way is to be listed as an initial committer on a new <<starting-proposal,project proposal>>. When projects come to the Eclipse Foundation we need them to actually start with committers, and so we include this as part of the bootstrapping. As part of the process of community vetting a new project proposal, the committers listed are themselves vetted by the community. In effect, the project proposal process also acts as a committer election that’s open to the entire community.
 
-The second way to become a committer is to get voted in via <<elections-committer,committer election>. After an individual has made a small number of high quality contributions that demonstrate that they understand how the project works, understand the Eclipse Development Process and are prepared to implement the Eclipse IP Policy, a committer will invite them to join the team and initiate the election. Committer elections start with a nomination by an existing committer that includes a statement of merit that usually takes the form of a list various contributions that the individual has made to the project. What constitutes a sufficient demonstration of merit varies by project team and  team.
+The second way to become a committer is to get voted in via <<elections-committer,committer election>>. After an individual has made a small number of high quality contributions that demonstrate that they understand how the project works, understand the Eclipse Development Process and are prepared to implement the Eclipse IP Policy, a committer will invite them to join the team and initiate the election. Committer elections start with a nomination by an existing committer that includes a statement of merit that usually takes the form of a list various contributions that the individual has made to the project. What constitutes a sufficient demonstration of merit varies by project team and  team.
 
 [NOTE]
 ====
 Committer status is assigned on a project-by-project basis. That is, individuals have committer rights only on those projects for which they hold committer status. For all other projects, they are contributors.
 ====
 
-When a contributor becomes a committer, they must be covered by a committer agreement (either a {mccaUrl}[Member Committer and Contributor Agreement] (MCCA) or an {icaUrl}[Individual Committer Agreement] (ICA). As the last step in the committer election process, the Eclipse Foundation systems will determine which agreement applies and engage a workflow with the new committer to ensure that everything is in place.
+When a contributor becomes a committer, they must be covered by a committer agreement (either a <<paperwork-mcca,Member Committer and Contributor Agreement>> (MCCA) or an <<paperwork-ica,Individual Committer Agreement>> (ICA). As the last step in the committer election process, the Eclipse Foundation systems will determine which agreement applies and engage a <<paperwork,committer paperwork>> workflow with the new committer to ensure that everything is in place.
 
 [[contributing-account]]
 == Eclipse Foundation Account
 
-Eclipse Foundation project resources are generally accessible without an account. That is, members of the community may browse code, documentation, issues, help, etc. without creating an Eclipse Foundation Account. For those members of the community that wish to contribute code patches, open issues, add content to wikis, etc., an {accountUrl}[Eclipse Foundation Account] is required.
+Eclipse Foundation project resources are accessible without an account. That is, members of the community may browse code, documentation, issues, help, etc. without creating an Eclipse Foundation Account. For those members of the community that wish to contribute code patches, open issues, add content to wikis, etc., an {accountUrl}[Eclipse Foundation Account] is required.
 
 For contributors and committers, their Eclipse Foundation account is their primary portal into their relationship with the Eclipse Foundation. From their account page, individuals can sign the {ecaUrl}[Eclipse Contributor Agreement], manage their mailing list subscriptions, access build resources, and more.
 
@@ -66,10 +97,10 @@ For contributors and committers, their Eclipse Foundation account is their prima
 If you're working with projects that use GitHub, be sure to add your GitHub Id to your Eclipse Foundation Account so that our scripts can add you to the GitHub Teams that we use to manage access to Eclipse Foundation repositories hosted on GitHub. When, for example, you become a committer on an Eclipse project that hosts their source code repositories on GitHub, you will be sent an invitation to join the GitHub Team associated with that project.
 ====
 
-[[resources-eca]]
-== Eclipse Contributor Agreement (ECA)
+[[contributing-eca]]
+== Eclipse Contributor Agreement
 
-The purpose of the ECA is to provide a written record that contributors have agreed to provide their contributions of code and documentation under the licenses used by the Eclipse project(s) they’re contributing to. It also makes it clear that contributors are promising that what they are contributing to Eclipse is code that they wrote, and that they have the necessary rights to contribute it to Eclipse projects. And finally, it documents a commitment from the contributor that their open source contributions will be permanently on the public record.
+The purpose of the Eclipse Contributor Agreement (ECA) is to provide a written record that contributors have agreed to provide their contributions of code and documentation under the licenses used by the Eclipse project(s) they’re contributing to. It also makes it clear that contributors are promising that what they are contributing to Eclipse is code that they wrote, and that they have the necessary rights to contribute it to Eclipse projects. And finally, it documents a commitment from the contributor that their open source contributions will be permanently on the public record.
 
 All contributors, who are not committers on the {forgeName} project, must sign the {ecaUrl}[Eclipse Contributor Agreements] (ECA) to ensure that the necessary <<ip,intellectual property>> (IP) rights to the contribution are granted.
 
@@ -81,56 +112,6 @@ You can determine your ECA status from your {accountUrl}[Eclipse Foundation Acco
 ==== 
 
 Committers *do not* require an ECA to contribute to a project on which they have committer status.
-
-[[resources-commit]]
-=== Git Commit Records
-
-Git commit records are required to take a specific form. The credentials of the actual author must be used to populate the `Author` field. The author credentials must specify the author's actual (legal) name and email address. The email address used must match the email address that the Eclipse Foundation has on file for the author (case-sensitive).
-
-The commit message is divided into three sections:
-
-. One line (max 72 characters) summary;
-. Description; and
-. Footer.
-
-.Example Git Commit Record
-[source]
-------------------------------------------------------------
-commit d6cf52411377a039fc2906378711091a26e932cb
-Author: Some Body <somebody@somewhere.com> <1>
-Date:   Wed May 29 16:17:36 2013 +0200
-
-    Bug 350686 - Hide unwanted action bar items <2>
-    
-    This change hides unwanted 'Link with Editor' and 
-    'Customize View...' items from the local toolbar 
-    and the view menu.
-    
-    Change-Id: Ia2bd5091303d1b0a738157effc24e4dac5a7d0c7 <3>
-    Also-by: Some Bodyelse <somebodyelse@nowhere.com> <4>
-    Signed-off-by: Some Body <somebody@somewhere.com> <5>
-------------------------------------------------------------
-
-<1> The email address of the author must match the email address on the Eclipse Foundation Account, the name "Some Body" must be replaced by the real name of the person.
-<2> Best practice: include the bug id in the commit message summary.
-<3> Gerrit `Change-Id` (only when pushing to Gerrit for review).
-<4> Additional authors can be added using `Also-by` or `Co-authored-by` entries, by replacing the name "Some Bodyelse" by the real name of the person
-<5> Non-committers must _sign-off_ the commit, indicating that they aware of the terms by which the contribution has been provided to the project, using the same name and email address as used in the author field.
-
-[IMPORTANT]
-====
-The named used in the `Author` field (and, when required, in the `Also-by` and `Signed-off-by` fields) must be the legal name of the contributor; the email address must be valid and real.
-====
-
-The _summary_ line is used in many places where Git commits are listed, ensure that this line is sensible by itself. The _description_ area should be used to provide more detail about the commit. The footer area is used for extra fields and values.
-
-If the bug id is included in the summary line (using the form "Bug 12345 - xxx" or "[12345] xxx") Gerrit Code Review will automatically add a link in the corresponding Bugzilla record back to the Gerrit record (this, of course, only applies to commits pushed to Gerrit).
-
-The `Change-Id` is used by <<resources-gerrit,Gerrit Code Review>> to associate new versions of a change back to its original review. This field need only be specified if the repository is managed by Gerrit.
-
-An `Also-by` (or `Co-authored-by`) entry can be added for each additional author of a commit (one committer per entry). This might apply, for example, if a commit has been authored via pair-programming, or the commit is the result of collapsing multiple commits authored by multiple developers. To be considered valid the entry must take the form `Also-by: Name <email>`.
-
-Commits that are provided by non-committers must have a `Signed-off-by` field in the footer indicating that the author is aware of the terms by which the contribution has been provided to the project. To be considered valid the entry must take the form `Signed-off-by: Name <email>`. The non-committer must additionally have an Eclipse Foundation Account and must have a signed <<resources-eca,Eclipse Contributor Agreement>> (ECA) on file.
 
 [[contributing-faq]]
 == Frequently Asked Questions

@@ -23,14 +23,14 @@ Employment status has no bearing at whether or not somebody can participate in a
 
 Contributors who have the trust of the project's committers can, through election, be promoted to _committer status_ for that project. The breadth of a committer's influence corresponds to the breadth of their contribution. A development team's contributors and committers may (and should) come from a diverse set of organizations. A committer gains voting rights allowing them to affect the future of the project. Becoming a committer is a privilege that is earned by contributing and showing discipline and good judgment. It is a responsibility that should be neither given nor taken lightly, nor is it a right based on employment by an Eclipse Foundation member company or any company employing existing committers.
 
-Being a {forgeName} Committer is more than just having write-access to the project resources: there are specific IP due diligence and record keeping activities that Committers _must_ follow. New committers must ensure that they are familiar with the {committerGuidelinesUrl}[Committer Due Diligence Guidelines].
+Being a {forgeName} committer is more than just having write-access to the project resources: there are specific IP due diligence and record keeping activities that committers _must_ follow. New committers must ensure that they are familiar with the {committerGuidelinesUrl}[Committer Due Diligence Guidelines].
 
 New committers should be encouraged to join the {incubationListUrl}[Incubation Mailing List]; this list is a good place to ask questions about process, services available, and other aspects of working as a committer.
 
 [[elections-requirements]]
 ==== What are the Requirements?
 
-There are only three requirements around nominating and electing new committers (note that there are additional <<paperwork>> requirements for the new committer):
+There are only three requirements around nominating and electing new committers (note that there are additional <<paperwork, committer paperwork>> requirements for the new committer):
 
 * Define trust;
 * Maintain vendor/employer neutrality; and
@@ -38,9 +38,9 @@ There are only three requirements around nominating and electing new committers 
 
 Each project is entitled to define how it evaluates "[people] who have the trust of the Project's Committers ... [through] contributing and showing discipline and good judgment". This definition needs to be a transparent and public document on the project's website (the top-level project charter may provide this). It is extremely important to publish these criteria to avoid any issues around cliques or "the in-crowd" preventing others from joining a project. 
 
-There must not be any hint of "we (company W) hired person X to work on project Y thus person X should elected a committer". Committer status is independent of employment; thereare well-supported mechanisms for contributors without commit-rights and thus Committer status is not required for a team member to be effective. Additionally, the team will want to make sure that they have confidence in the candidate irrespective of employment and management because the committer status will continue even after moves to another job.
+There must not be any hint of "we (company W) hired person X to work on project Y thus person X should elected a committer". Committer status is independent of employment; thereare well-supported mechanisms for contributors without commit-rights and thus committer status is not required for a team member to be effective. Additionally, the team will want to make sure that they have confidence in the candidate irrespective of employment and management because the committer status will continue even after moves to another job.
 
-The nomination and election process for a new Committer is for more than just the project team - it is also for the entire {forgeName} community, current and future. The larger community uses the artifacts of elections as (one of many pieces of) evidence about the maturity of the project team, and thus quality of the frameworks.
+The nomination and election process for a new committer is for more than just the project team - it is also for the entire {forgeName} community, current and future. The larger community uses the artifacts of elections as (one of many pieces of) evidence about the maturity of the project team, and thus quality of the frameworks.
 
 [NOTE]
 ====
@@ -50,7 +50,7 @@ Nominations such as "we all know Bob, vote for him" may work within the team, bu
 [[elections-nomination]]
 ==== What Should a Nomination Look Like?
 
-A committer nomination should explain the candidate's contributions to the project and thus why they should be elected as a Committer. Cite the issues they have fixed via patches; cite the community forum postings they have answered; cite the _dev-list_ design discussions to which they have contributed; etc. In all cases, provide urls to source material.
+A committer nomination should explain the candidate's contributions to the project and thus why they should be elected as a committer. Cite the issues they have fixed via patches; cite the community forum postings they have answered; cite the _dev-list_ design discussions to which they have contributed; etc. In all cases, provide urls to source material.
 
 [[elections-how]]
 ==== How does an Election work?
@@ -163,7 +163,7 @@ A committer can retire themselves from a project. Retirement cannot be undone: t
 
 [TIP]
 ====
-To retire from a project, navigate to the <<pmi-project-page, project page>>, open the "Who's Involved" tab, and click on your image in the committer list. Then, in the "Retire Committer Status" box on the on the project role page, check the checkbox and click the btn:[Submit] button.
+To retire from a project, navigate to the <<pmi-project-page, project page>>, open the _Who's Involved_ tab, and click on your image in the committer list. Then, in the "Retire Committer Status" box on the on the project role page, check the checkbox and click the btn:[Submit] button.
 
 image::images/elections_retire_self.png[]
 ====
@@ -184,7 +184,7 @@ A project lead can retire themselves from a project. Prior to retiring, a projec
 
 [TIP]
 ====
-To retire from a project, navigate to the <<pmi-project-page, project page>>, open the "Who's Involved" tab, and click on your image in the project lead list. Then, in the "Retire Project Lead Status" box on the on the project role page, check the checkbox and click the btn:[Submit] button.
+To retire from a project, navigate to the <<pmi-project-page, project page>>, open the _Who's Involved_ tab, and click on your image in the project lead list. Then, in the "Retire Project Lead Status" box on the on the project role page, check the checkbox and click the btn:[Submit] button.
 
 image::images/elections_retire_pl.png[]
 ====

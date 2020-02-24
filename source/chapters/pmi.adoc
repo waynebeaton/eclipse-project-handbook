@@ -69,6 +69,11 @@ To create a Contribution Questionnaire:
 3. Click menu:Committer Tools[Intellectual Property > Create a Contribution Questionnaire]; and
 4. Follow the workflow.
 
+[NOTE]
+====
+The CQ creation process works in two parts. First you create the CQ, then (when required) you attach the source code. You can attach the source code immediately after creating the CQ (otherwise the system will email you with instructions).
+====
+
 [[pmi-commands-iplog]]
 ==== Submit a Project's IP Log for Review
 
@@ -154,7 +159,7 @@ A _Contribution Message_ should be provided; it is displayed at the top of the s
 
 Company logos automatically appear on the _Who's Involved_ page under the following conditions:
 
-* The company must be a http://eclipse.org/membership/[member] of the Eclipse Foundation;
+* The company must be a {memberUrl}[member] of the Eclipse Foundation;
 * The company needs to have their logo uploaded to the Portal;
 * At least one committer has to be listed as an employee of the company in question;
 * The committer must be on this project; and
@@ -300,3 +305,24 @@ To join a simultaneous release:
 
 The offset indicates how many days after the start of the aggregation process for a milestone your project's bits will be available. If your project's bits depend on a `pass:[+1]` project's bits then your project is probably a `pass:[+2]` project, for example.
 endif::[]
+
+[[pmi-faq]]
+=== Frequently Asked Questions
+
+[qanda]
+
+Why doesn't a committer appear on the project's _Who's Involved_ page? ::
+
+For a committer to appear on a project's _Who's Involved_ page:
++
+--
+. The new committer must be <<elections-committer,elected>> (or be listed as an initial committer on a <<starting-proposal,project proposal>>);
+. The election must complete successfully and be approved by the PMC;
+. The new committer must provide the required <<paperwork,paperwork>>;
+. The paperwork must be processed by the EMO Records Team; and
+. The webmaster must create the committer account.
+--
++
+Each piece takes time. If a committer doesn't appear some number of days after the successful completion of a committer election, then contact the committer to confirm that they've followed the provided instructions and have submitted committer paperwork. Then, connect with mailto:{emoEmail}[EMO] for assistance.
++
+If the new committer will be working with projects that use GitHub, they must be sure to add their GitHub Id to their <<contributing-account,Eclipse Foundation Account>> so that our scripts can add them to the GitHub Teams that we use to manage access to Eclipse Foundation repositories hosted on GitHub.
