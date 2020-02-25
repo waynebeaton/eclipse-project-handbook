@@ -111,7 +111,7 @@ In order to get committer rights on project repositories hosted on GitHub, you n
 [[specifications-agreements]]
 === Specification Development Agreements
 
-Due to the nature of specification project work, the <<paperwork, committer agreements>> need to be augmented. For {forge} open source software projects (i.e., those projects not engaged in specification development) the committer agreements (Member Committer and Contributor Agreement and Individual Committer Agreement) are sufficient. The complete set of required agreements are described below.
+Due to the nature of specification project work, the <<paperwork, committer agreements>> need to be augmented. For {forgeName} open source software projects (i.e., those projects not engaged in specification development) the committer agreements (Member Committer and Contributor Agreement and Individual Committer Agreement) are sufficient. The complete set of required agreements are described below.
 
 [graphviz, images/specification-committers, svg]
 .What paperwork is required?
@@ -277,7 +277,7 @@ Following a successful release review, the final release version of the specific
 
 All versions of specifications that are referenced by a ratified final specification must themselves be ratified. The <<specifications-release-review,release review>> for related specification versions may be run concurrently.
 
-Final Specifications and their associated artifacts are distributed under specific licenses. The specification document for the final specification must be distributed as read-only text (e.g., PDF) under the {efsl}[Eclipse Foundation Specification License]. The ratified TCK in composite is distributed under the {eftcklUrl}[Eclipse Foundation TCK License]. Other technical artifacts must be distributed under an open source license (normally the specification project’s license).
+Final Specifications and their associated artifacts are distributed under specific licenses. The specification document for the final specification must be distributed as read-only text (e.g., PDF) under the {efslLink}. The ratified TCK in composite is distributed under the {eftcklLink}. Other technical artifacts must be distributed under an open source license (normally the specification project’s license).
 
 [[specifications-implementations]]
 == Compatible Implementations

@@ -141,7 +141,7 @@ If your employer is a member of the Eclipse Foundation, they will be listed on t
 
 How do I know if my employer has signed the Member Committer and Contributor Agreement (MCCA)? ::
 
-Check with your manager. If your manager doesn't know, you can contact the {emoRecords}[EMO Record Team] for assistance.
+Check with your manager. If your manager doesn't know, you can contact the {emoRecordsEmailLink} for assistance.
 
 I know that my employer has signed the Member Committer and Contributor Agreement (MCCA), but my account page shows that I am not covered by the ECA. What should I do? ::
 

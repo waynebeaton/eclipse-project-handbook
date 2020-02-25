@@ -18,7 +18,7 @@
 :activityUrl: http://www.eclipse.org/projects/project_activity.php
 :edpUrl: http://www.eclipse.org/projects/dev_process/development_process.php
 :efspUrl: https://www.eclipse.org/projects/efsp/
-:eflsUrl: https://www.eclipse.org/legal/efsl.php
+:efslUrl: https://www.eclipse.org/legal/efsl.php
 :eftcklUrl: https://www.eclipse.org/legal/tck.php
 :trademarkTransferUrl: http://eclipse.org/legal/Trademark_Transfer_Agreement.pdf
 :trademarkGuidelinesUrl: https://eclipse.org/legal/logo_guidelines.php
@@ -27,6 +27,15 @@
 :memberUrl: https://www.eclipse.org/membership/
 :wgUrl: https://www.eclipse.org/org/workinggroups/
 :licenseWhitelistUrl: https://www.eclipse.org/legal/licenses.php#approved
+
+:webmasterEmailLink: mailto:{webmasterEmail}[Eclipse Webmaster]
+:ipTeamEmailLink: mailto:{ipTeamEmail}[EMO IP Team]
+:emoEmailLink: mailto:{emoEmail}[EMO]
+:emoRecordsEmailLink: mailto:{emoRecordsEmail}[EMO Records Team]
+
+:edpLink: {edpUrl}[Eclipse Foundation Development Process]
+:efslLink: {efslUrl}[Eclipse Foundation Specification License]
+:eftcklLink: {eftcklUrl}[Eclipse Foundation TCK License]
 
 :developerPortalUrl: http://portal.eclipse.org
 :bylawsUrl: https://www.eclipse.org/org/documents/eclipse_foundation-bylaws.pdf
