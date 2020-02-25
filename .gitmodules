@@ -2,3 +2,6 @@
 	path = source/efdp
 	url = https://github.com/EclipseFdn/EFDP
 	ignore = dirty
+[submodule "source/efsp"]
+	path = source/efsp
+	url = git://github.com/EclipseFdn/EFSP.git

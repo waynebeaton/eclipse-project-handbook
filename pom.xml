@@ -19,7 +19,7 @@ SPDX-License-Identifier: EPL-2.0
 
 	<groupId>org.eclipse.dash</groupId>
 	<artifactId>org.eclipse.dash.handbook</artifactId>
-	<version>1.0M8</version>
+	<version>1.0M9</version>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
