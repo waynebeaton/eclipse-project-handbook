@@ -134,11 +134,11 @@ You can {gerritUrl}[browse {forgeName} repositories] directly on the Gerrit serv
 
 Projects may opt to move some or all of their canonical source code repositories to an organization on GitHub that is maintained by the Eclipse Foundation. Both GitHub Issues and Wiki may also be used.
 
-Any committer can {gitHubRequestUrl}[open a bug] to request that the Eclipse Webmaster create a new, or move an existing, Git repository into their project. The Eclipse Webmaster will install some _hooks_ onto all Eclipse project GitHub repository.
+Any committer can {gitHubRequestUrl}[open a bug] to request that the Eclipse Webmaster create a new, or move an existing, Git repository into their project. The Eclipse Webmaster installs some _hooks_ onto all Eclipse project GitHub repository.
 
-The _Committers hook_ grants designated project committers write access to the GitHub-hosted project repositories. Project committers must use the email address they provide to the Eclipse Foundation as their GitHub email address. 
+The _Committers hook_ grants designated project committers write access to the GitHub-hosted project repositories. Project committers must add their GitHub id to their <<contributing-account,Eclipse Foundation account>>, and must use the email address they provide to the Eclipse Foundation as the email address in the author credentials of all commits. 
 
-The <<resources-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect incoming GitHub pull requests to ensure that the contributor has a valid ECA on file, and that the commit has been "signed-off" as required. Project committers should only merge pull _green_ requests:
+The <<resources-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect incoming GitHub pull requests to ensure that the contributor has a valid ECA on file, and that the commit has been `Signed-off-by` as required. Project committers should only merge pull _green_ requests:
 
 .Notification that the commit is properly structured and permissions are in place.
 image::images/Github-cla-success.png[]
