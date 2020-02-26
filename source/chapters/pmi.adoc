@@ -326,3 +326,7 @@ For a committer to appear on a project's _Who's Involved_ page:
 Each piece takes time. If a committer doesn't appear some number of days after the successful completion of a committer election, then contact the committer to confirm that they've followed the provided instructions and have submitted committer paperwork. Then, connect with mailto:{emoEmail}[EMO] for assistance.
 +
 If the new committer will be working with projects that use GitHub, they must be sure to add their GitHub Id to their <<contributing-account,Eclipse Foundation Account>> so that our scripts can add them to the GitHub Teams that we use to manage access to Eclipse Foundation repositories hosted on GitHub.
+
+What is the difference between a _Committer_ and an _Historic Committer_? ::
+
+The _Who's Involved_ page lists committers and (in many cases) historic committers. Committers are those individuals who currently hold committer status (i.e., they can write to project resources). Historic committers are retired former committers. While they hold a special place in our hearts, they have no official status on the project. To turn an historic committer back into a committer, they must be <<elections-committer,re-elected>> to the project.
