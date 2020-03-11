@@ -13,14 +13,14 @@
 
 The Eclipse Foundation needs to ensure that all committers with write access to the code, websites, and issue tracking systems understand their role in the intellectual property process. The Eclipse Foundation also needs to ensure that we have accurate records of the people who are acting as change agents on the projects. To ensure that committers understand their role, and that the Eclipse Foundation has accurate records, committers must provide documentation asserting that they have read, understood, and will follow the committer guidelines. Committers must also gain their employers consent to their participation in Eclipse Foundation open source projects.
 
-All committers must complete the _Committer Paperwork Workflow_, which includes the _Committer Questionnaire_ and documentation as described below.
+All committers must complete the _Committer Agreement Workflow_, which includes the _Committer Questionnaire_ and documentation as described below.
 
 [[paperwork-questionnaire]]
 === Committer Questionnaire
 
 The _Committer Questionnaire_ is an online form that must be completed by all new committers. This form offers two separate paths: one for committers who work for a member company that has provided a signed {mccaUrl}[Member Committer and Contributor Agreement] (MCCA), and one for everyone else.
 
-.The Committer Paperwork Workflow starts by asking for employment status.
+.The Committer Agreement Workflow starts by asking for employment status.
 image::images/committer_questionnaire.png[]
 
 The _Committer Questionnaire_ is accessible only after an individual has been elected into the role of a committer on a project (note that all committer relationships are between an individual and a specific project), either as an initial committer on a new project, or via <<elections-committer,_Committer Election_>> on an existing project. New committers will be sent a link to the questionnaire via email.
@@ -33,10 +33,11 @@ If you indicate that you are employed, you will be asked to identify your employ
 [[paperwork-documents]]
 === Documents
 
-The exact nature of the documentation required is dependent upon the employment status of the individual.
+The specific agreements required depends on the nature of the project and the employment status of the individual. For committers on an open source _software_ project (i.e., most {forgeName} projects), the agreements described below are required. 
+For committers on an open source _specification_ project, additional <<specifications-agreements,working group agreements>> are required.
 
 [graphviz, images/paperwork, svg]
-.What paperwork is required?
+.What agreements are required?
 ----
 digraph {
 	// Graph properties
@@ -72,7 +73,7 @@ digraph {
 }
 ----
 
-The new committer must download and print the documents, complete and sign them, and then provide them to the EMO Records Team. The new committer paperwork workflow provides a means of uploading these documents; alternatively, the team may ask you to provide them via email. 
+The new committer must download and print the documents, complete and sign them, and then provide them to the EMO Records Team. The Committer Agreement Workflow provides a means of uploading these documents; alternatively, the team may ask you to provide them via email. 
 
 .Upload the ICA directly into the form
 image::images/committer_questionnaire2.png[]
@@ -108,7 +109,7 @@ An ICA is required when:
 [[paperwork-existing]]
 ==== Existing Committer
 
-If the individual is already a committer on an existing Eclipse Foundation project then additional paperwork may or may not be necessary. The EMO Records Team will ask for additional documentation if required.
+If the individual is already a committer on an existing Eclipse Foundation project then additional agreements may or may not be necessary. The EMO Records Team will ask for additional documentation if required.
 
 [[paperwork-not-employed]]
 ==== Not Employed or Student
@@ -128,9 +129,9 @@ The <<paperwork-mcca, Member Committer and Contributor Agreement>> (MCCA) is use
 +
 The <<resources-eca, Eclipse Contributor Agreement>> (ECA) is for everybody else. The ECA covers contributors who are not otherwise covered for their contributions by an ICA or MCCA.
 
-What happens if I do not fill out the paperwork?::
+What happens if I do not fill out the agreements?::
 
-If you do not fill out the paperwork, then you do not get your credentials for write-access to the source code repository(s) and other project resources.
+If you do not fill out the agreements, then you do not get your credentials for write-access to the source code repository(s) and other project resources.
 
 Where can I get help to discuss these documents with my management team? ::
 

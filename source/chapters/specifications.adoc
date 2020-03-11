@@ -121,16 +121,16 @@ include::diagrams/specifications-agreements.dot[]
 
 A committer who is self-employed, unemployed, or a student needs:
 
-* Individual Working Group Participation Agreement (WGPA), which includes:
+* <<specifications-iwgpa, Individual Working Group Participation Agreement>> (IWGPA), which includes:
 ** Membership Agreement as a Committer Member, no dues
 ** Individual Committer Agreement
 
 A committer whose employer is either not an Eclipse Foundation Member; or is an Eclipse Foundation Member that is not a participant in the working group needs the following agreements:
 
-* Individual Working Group Participation Agreement (WGPA), which includes:
+* <<specifications-iwgpa, Individual Working Group Participation Agreement>> (IWGPA), which includes:
 ** Membership Agreement as a Committer Member, no dues
 ** Individual Committer Agreement
-** Employer Consent Agreement for Eclipse Specification Projects (“Consent Agreement”)
+** <<specifications-consent, Employer Consent Agreement for Eclipse Specification Projects>> (“Consent Agreement”)
 
 A committer who works for an Eclipse Foundation Member that is a working group participant needs:
 * No additional agreements are required.
@@ -143,20 +143,20 @@ The Eclipse Foundation’s committer provisioning process is automated. As a new
 [[specifications-wgpa]]
 === Working Group Participation Agreement
 
-A WGPA is signed by an organization that wishes to participate in a particular working group. By signing the Working Group Participation Agreement (WGPA), an organization agrees to become a participant of the working group and to adhere to the terms outlined in by the working group’s charter. 
+A Working Group Participation Agreement (WGPA) is signed by an organization that wishes to participate in a particular working group. By signing the Working Group Participation Agreement (WGPA), an organization agrees to become a participant of the working group and to adhere to the terms outlined in by the working group’s charter. 
 
 WGPAs are working group specific; signing the agreement for a particular working group covers the employees of the organization operating in a committer role on one or more specification projects operating under the purview of that working group’s specification committee. 
 
-Participation in a working group requires that the organization commit to being a member of the Eclipse Foundation (at a level defined by the working group’s charter) and to commit to the terms of the Member Committer and Contributor Agreement (MCCA).  Both of these commitments are explicitly made as part of the organization signing the WGPA. 
+Participation in a working group requires that the organization commit to being a member of the Eclipse Foundation (at a level defined by the working group’s charter) and to commit to the terms of the <<paperwork-mcca, Member Committer and Contributor Agreement>> (MCCA).  Both of these commitments are explicitly made as part of the organization signing the WGPA. 
 
 [[specifications-iwgpa]]
 === Individual Working Group Participation Agreement
 
-An IWGPA is signed by an individual that wishes to participate in a particular working group when their employer is not themselves a participant in the working group. By signing the Individual Working Group Participation Agreement (IWGPA), an individual agrees to become a participant of the working group and to adhere to the terms outlined in by the working group’s charter. 
+An Individual Working Group Participation Agreement (IWGPA) is signed by an individual that wishes to participate in a particular working group when their employer is not themselves a participant in the working group. By signing the IWGPA, an individual agrees to become a participant of the working group and to adhere to the terms outlined in by the working group’s charter. 
 
 Like WGPAs, IWGPAs are working group specific; signing the agreement for a particular working group covers the individual to operate in a committer role on one or more specification projects that operate under the purview of that working group’s specification committee. 
 
-Participation in a working group requires that the individual commit to being a committer member (there are no fees associated with being a committer member) of the Eclipse Foundation and to commit to the terms of the Individual Committer Agreement (ICA).  Both of these commitments are explicitly made as part of the individual signing the IWGPA. 
+Participation in a working group requires that the individual commit to being a committer member (there are no fees associated with being a committer member) of the Eclipse Foundation and to commit to the terms of the <<paperwork-ica, Individual Committer Agreement>> (ICA).  Both of these commitments are explicitly made as part of the individual signing the IWGPA. 
 
 [[specifications-consent]]
 === Employer Consent Agreement for Eclipse Specification Projects
@@ -291,6 +291,14 @@ Compatible Implementations may only claim compatibility with a final specificati
 
 [qanda]
 
+How do I tell whether or not a project is a specification project? ::
+
+The best way to know, frankly, is it communicate with the project team. Specification project teams should make the nature of the project clear in the `README` files in their repositories.
++
+We do track this in metadata, which we expose in a number of different locations including the <<pmi-project-page, PMI project page>>. For example:
++
+image::images/specification-project.png[]
+
 Do we need to engage in a release review for a service release? ::
 
 Yes, the specification project team must engage in a successful release review prior to issuing a release of any kind; this includes service releases.
@@ -309,15 +317,15 @@ You do not need to arrange for your employer to sign the Employer Consent Agreem
 +
 If, however, you are employed, and your employer is not a member of the working group, then you must arrange for your employer to sign the Employer Consent Agreement for Eclipse Specification Projects.
 
-Do I need to sign the ECA? ::
+Do I need to sign the Eclipse Contributor Agreement? ::
 
-If you are not a committer on an Eclipse open source project, to contribute (e.g., make pull requests) to that project, you need to be covered by an ECA. If you are already a committer on any Eclipse open source project, then you are already covered by an ECA through your committer agreement and do not need to sign the ECA separately. If your employer has signed the Member Committer and Contributor Agreement, then you are already covered by an ECA and you do not need to sign the ECA separately.
+If you are not a committer on an Eclipse open source project, to contribute (e.g., make pull requests) to that project, you need to be covered by an Eclipse Contributor Agreement (ECA). If you are already a committer on any Eclipse open source project, then you are already covered by an ECA through your committer agreement and do not need to sign the ECA separately. If your employer has signed the Member Committer and Contributor Agreement, then you are already covered by an ECA and you do not need to sign the ECA separately.
 +
 If you are a committer on a project you do not need an ECA to contribute to that project. 
 
 How do I know if I’m covered by an Eclipse Contributor Agreement? ::
 
-Visit your Eclipse Account page. Your Eclipse Contributor Agreement (ECA) status is shown in the top-right corner.
+Visit your Eclipse Account page. Your <<contributing-eca, Eclipse Contributor Agreement>> (ECA) status is shown in the top-right corner.
 +
 For example, this contributor is covered by the ECA (and is a committer on one or more Eclipse Foundation open source projects).
 +
@@ -325,10 +333,11 @@ image::images/accounts-status.png[]
 
 How do I know if my employer is a member of the Eclipse Foundation? ::
 
-If your employer is a member of the Eclipse Foundation, they will be listed on the Explore Our Members page.
+If your employer is a member of the Eclipse Foundation, they will be listed on the {memberUrl}[Eclipse Foundation Membership] page.
 
 How do I know if my employer has signed the Member Committer and Contributor Agreement (MCCA)? ::
-If your employer is a participant in the working group, then they must have signed the Working Group Participation Agreement, which includes the Member Committer and Contributor Agreement.
+
+If your employer is a participant in the working group, then they must have signed the <<specifications-wgpa, Working Group Participation Agreement>>, which includes the Member Committer and Contributor Agreement.
 +
 If you are unsure whether or not your employer has signed a particular document, please contact the EMO Records Team. 
 
@@ -338,4 +347,4 @@ Your status as a committer is not tied to your employment status. Your committer
 
 What if my employer will not sign the Employer Consent Agreement?  ::
 
-If your employer is not a participant of the working group, your employer must sign the Employer Consent Agreement to provide the necessary legal coverage for you to be a committer on a specification project operating under the purview of that working group. Without this agreement, you cannot have a committer role on a specification project. You may, however, continue to operate as a (non-committer) contributor on specification projects. You may also assume a committer role on Eclipse open source projects that are not engaged in specification development.
+If your employer is not a participant of the working group, your employer must sign the <<specifications-consent, Employer Consent Agreement>> to provide the necessary legal coverage for you to be a committer on a specification project operating under the purview of that working group. Without this agreement, you cannot have a committer role on a specification project. You may, however, continue to operate as a (non-committer) contributor on specification projects. You may also assume a committer role on Eclipse open source projects that are not engaged in specification development.

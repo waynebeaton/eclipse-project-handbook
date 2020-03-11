@@ -33,10 +33,6 @@
 :emoEmailLink: mailto:{emoEmail}[EMO]
 :emoRecordsEmailLink: mailto:{emoRecordsEmail}[EMO Records Team]
 
-:edpLink: {edpUrl}[Eclipse Foundation Development Process]
-:efslLink: {efslUrl}[Eclipse Foundation Specification License]
-:eftcklLink: {eftcklUrl}[Eclipse Foundation TCK License]
-
 :developerPortalUrl: http://portal.eclipse.org
 :bylawsUrl: https://www.eclipse.org/org/documents/eclipse_foundation-bylaws.pdf
 :committerGuidelinesUrl: http://www.eclipse.org/legal/committerguidelines.php
@@ -79,6 +75,12 @@
 :knownVulnerabilitiesUrl: https://www.eclipse.org/security/known.php
 :cveUrl: https://cve.mitre.org/
 :cweUrl: https://cwe.mitre.org/
+
+:edpLink: {edpUrl}[Eclipse Foundation Development Process]
+:efslLink: {efslUrl}[Eclipse Foundation Specification License]
+:eftcklLink: {eftcklUrl}[Eclipse Foundation TCK License]
+:ecaLink: {ecaUrl}[Eclipse Contributor Agreement]
+:ipDueDiligenceLink: <<ip, Eclipse Foundation Intellectual Property Due Diligence Process>>
 
 :linkcss:
 :stylesdir: ./resources
