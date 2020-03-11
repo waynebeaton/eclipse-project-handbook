@@ -83,7 +83,7 @@ Date:   Wed May 29 16:17:36 2013 +0200
 
 [IMPORTANT]
 ====
-The named used in the `Author` field (and, when required, in the `Also-by` and `Signed-off-by` fields) must be the legal name of the contributor; the email address must be valid and real.
+The name used in the `Author` field (and, when required, in the `Also-by` and `Signed-off-by` fields) must be the legal name of the contributor; the email address must be valid and real.
 ====
 
 The _summary_ line is used in many places where Git commits are listed, ensure that this line is sensible by itself. The _description_ area should be used to provide more detail about the commit. The footer area is used for extra fields and values.
