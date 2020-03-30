@@ -167,17 +167,6 @@ Company logos automatically appear on the _Who's Involved_ page under the follow
 
 If all of those conditions are met and the logo is still not showing up, then it's possible that the project meta-data doesn't have the correct source code repository information specified.
 
-[[pmi-due-diligence]]
-==== Due Diligence Type
-
-Any committer or project lead can specify the default <<ip-third-party-prereq-types,due diligence type>> for the project (it's reported on the _Governance_ page). A project may be designated as _Type A_ or _Type B_, indicating the default due diligence type that is employed by that project. This default is used when <<pmi-commands-cq,creating new CQs>>. This value indicates the default; individual releases can specify a different type of due diligence.
-
-image::images/project_dd_type.png[]
-
-If nothing is specified, _Type B_ is assumed. Specifying the value at the project level is basically a way for the project team to make a statement that their releases tend to employ a certain type of due diligence for third-party content.
-
-All new projects start with _Type A_ due diligence.
-
 [[pmi-build-technology]]
 ==== Build Technology
 
