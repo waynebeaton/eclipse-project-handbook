@@ -32,7 +32,7 @@ To attract and support contributors:
 
 When somebody does show up to do some work on your project, help them be successful. 
 
-To attact and support users:
+To attract and support users:
 
 * Maintain a concise and clear description of the project on the website;
 * Provide a five minute tutorial to help users understand what the project does and why they should care;
@@ -68,7 +68,7 @@ The more welcome you make your community feel, the more likely it is that your p
 
 When your community reports a problem, fix it as soon as possible. Be sure to make a distinction between wish list items ("I want more goodness") and actual defects ("it's broken because it's not working the way it was designed to work"). A list of 1,000 issue reports that looks to the community like a list of 1,000 defects rather than like a list of 1,000 wishes is bad publicity. Having _no responses_ in most of those reports, is also bad news. Your community will interpret it as a lack of respect, and no pleas about your lack of resource will help offset that negative perception.
 
-Provide linkage beween commits and issue records in the commit comment so that somebody browsing the history of your code can follow the links to find any discussion, or other useful information related to that commit. Consider including issue numbers directly in comments in the source code when the discussion contained in that bug is particularly useful. This will help your community and committers better understand why your code is implemented the way it is and give them a pre-existing place (i.e. the issue report) to pose further questions.
+Provide linkage between commits and issue records in the commit comment so that somebody browsing the history of your code can follow the links to find any discussion, or other useful information related to that commit. Consider including issue numbers directly in comments in the source code when the discussion contained in that bug is particularly useful. This will help your community and committers better understand why your code is implemented the way it is and give them a pre-existing place (i.e. the issue report) to pose further questions.
 
 [[signs-of-success]]
 === Signs of success

@@ -104,7 +104,7 @@ digraph {
 }
 ----
 
-The project team must prepare the review documentation well in advance of the start of the review period. The release record which contains the project plan also includes a _Review_ tab with appropriate fields for a review. As with the plan fields, all of the review fields are optional and the level of detail required varies by top-level project. Project teams can assemble review information during the release cycle (there's no need to wait until the end)
+The project team must prepare the review documentation well in advance of the start of the review period. See this <<checklist,checklist>> used as part of evaluation during a Release Review. The release record which contains the project plan also includes a _Review_ tab with appropriate fields for a review. As with the plan fields, all of the review fields are optional and the level of detail required varies by top-level project. Project teams can assemble review information during the release cycle (there's no need to wait until the end)
 
 The review materials must be approved by the PMC; the project lead or a designated project committer should send an email to the PMC's mailing list with a request for approval. The PMC will respond with feedback or a simple `pass:[+1]` indicating approval.
 
