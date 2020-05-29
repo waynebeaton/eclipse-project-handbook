@@ -155,6 +155,23 @@ Click on the _Details_ link for more information. Committers must not merge comm
 The Eclipse Webmaster creates and maintains a mirror of all GitHub-hosted repositories on Eclipse Foundation hardware.
 ====
 
+[[resources-github]]
+==== Access to GitHub Repositories
+
+All project committers have write access to their project's repositories on GitHub.
+
+To gain write access to a project's GitHub repositories a developer must:
+
+* Be <<elections-committer, elected>> as a project committer; and
+* Provide their Github Id in their <<contributing-account,Eclipse Foundation Account>>.
+
+To gain `admin` level access to their project's GitHub repositories, a project lead must {gitHubRequestUrl}[open a bug] against Community/GitHub. To be eligible to such permission level, the project must be in the mature phase and the request must be motivated; the project lead must explain why (on the bug) they need that access.
+
+[TIP]
+====
+Granting `admin` level access is a relatively new feature. By providing an explanation why the access isr required, it will help the Eclipse Foundation's Webmaster team better understand requirements and guide the evolution of this feature.
+====
+
 [[resources-issues]]
 === Issue Trackers
 
