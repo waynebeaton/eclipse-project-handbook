@@ -32,9 +32,9 @@ The ease with which software can be copied and combined makes it challenging to 
 
 There are different kinds of content (e.g., source code, documentation, and images) to consider. <<ip-project-code,_Project code_>> (or _project content_) is content that is produced and maintained by the open source project committers and contributors. <<ip-third-party,_Third party content_>> generally takes the form of libraries (e.g. modules, or components), source files, images, or other forms of IP that are produced and maintained outside of the scope of the open source project. To mitigate the risk associated with adopting open source in products, the _project code_ and the _third party content_ that it leverages need to be reviewed to ensure that the copyrights expressed are correct, licensing is valid and compatible, and that other issues have been uncovered and properly investigated.
 
-The Eclipse Foundation has a well-defined {ipPolicyUrl}[IP Policy], corresponding {ipDueDiligenceUrl}[IP Due Diligence Process], and an _IP Team_ of dedicated professional IP specialists who perform the heavy lifting in the due diligence process. Committers, the software developers who decide what will become _project code_ and how {aForgeName} open source project will leverage _third party content_, are responsible for bringing IP issues to the attention of the Eclipse IP Team.
+The Eclipse Foundation has a well-defined {ipPolicyUrl}[IP Policy], corresponding IP Due Diligence Process, and an _IP Team_ of dedicated professional IP specialists who perform the heavy lifting in the due diligence process. Committers, the software developers who decide what will become _project code_ and how {aForgeName} open source project will leverage _third party content_, are responsible for bringing IP issues to the attention of the Eclipse IP Team.
 
-Most of the _project code_ produced by committers can just be pushed into a project repository without any sort of legal review. However, at least in some cases, the IP Team needs to be engaged to review project code that comes from contributors (who are not committers); and there are some cases where even the work of committers needs to be reviewed. These cases are highlighted in the IP Due Diligence Process document.
+Most of the _project code_ produced by committers can just be pushed into a project repository without any sort of legal review. However, at least in some cases, the IP Team needs to be engaged to review project code that comes from contributors (who are not committers); and there are some cases where even the work of committers needs to be reviewed. These cases are highlighted in the IP Due Diligence Process.
 
 The IP Due Diligence Process focuses on source content. For the purposes of the IP Due Diligence Process, the term _source code_ (or _source content_) refers to the pre-compiled content, including programming language source, configuration and property files, as well as binary things that don't have a pre-compiled form like icons. The IP Due Diligence Process is concerned with reviewing the IP that is either consumed (third party content) or produced (project code) by the Eclipse open source project. The process doesn't generally focus on compiled content (e.g. the IP Team looks at source code, not JAR files).
 
@@ -107,7 +107,7 @@ The initial contribution, like any other <<ip-project-code,project code>> contri
 
 The IP Team will review the initial contribution to ensure that it hasn't been copied inappropriately, that licenses are being used correctly, and so forth. As part of this process, the IP Team  will research the source of all code; depending on the size of the contribution, this can be a time-consuming process.
 
-Because a full review can be time-consuming, the IP Team will in most cases engage the <<ip-parallel-ip,_Parallel IP Process_>>. This starts with a cursory review of the content, and--assuming that no significant issues are uncovered by that cursory review--the IP Team will grant _check-in_ indicated that the project team can push the initial contribution into their Git repository (or initiate the transfer of their existing repository) and start working while the IP team continues their review in _parallel_. 
+Because a full review can be time-consuming, the IP Team will in most cases start with a cursory review of the content, and--assuming that no significant issues are uncovered by that cursory review--will grant _check-in_ indicating that the project team can push/merge the initial contribution into their Git repository (or initiate the transfer of their existing repository) and start working with the code while the IP team continues their review in _parallel_ (they will add completing the review to their work queue and address it in turn).
 
 After _check-in_ has been granted for the initial contribution, the project team should start the process of engaging the IP Team with their <<ip-third-party,third party content>> review requests.
 
@@ -122,7 +122,7 @@ The email address that is associated with your Eclipse Foundation account is use
 
 A project cannot make a <<release, release>> until the due diligence on the IP contained in that release--including project code contributions and third party content--is complete. 
 
-The IP Team is not able to review the history of project code being moved to {aForgeName} project. The IP Team will review a snapshot of the project code and that snapshot, the initial contribution, must be the first commit in the {forgeName} repository. If your project uses an existing <<resources-github,GitHub>> repository, the Eclipse Webmaster team will help you obscure the history into a hidden branch. 
+The IP Team is not able to review the history of project code being moved to {aForgeName} project. The IP Team will review a snapshot of the project code as the initial contribution.
 
 [[ip-project-code]]
 === Project Code Contributions
@@ -171,7 +171,7 @@ digraph {
       node [fontsize=10;label="Third Party\nContent"]
       prereq1; prereq2;
       ref1; ref2; ref3; ref4;
-      label="\"Prerequisite\" Dependencies\n(Must be reviewed by the IP Team)";
+      label="\"Prerequisite\" Dependencies\n(licenses must be verified)";
       graph[style=dotted];
    }
    
@@ -219,7 +219,7 @@ digraph {
    
    subgraph cluster_thirdparty {
       graph[style=dotted];
-      label="\"Prerequisite\" Dependencies\n(Must be reviewed by the IP Team)";
+      label="\"Prerequisite\" Dependencies\n(licenses must be verified)";
       node [fontsize=10;label="Third Party\nContent"]
       prereq2;
       ref2;
@@ -304,7 +304,7 @@ digraph {
    root[label="Eclipse Project\nContent"];
 
    subgraph cluster_prereq {
-      label="\"Prereq\" Dependencies\n(Must be reviewed by the IP Team)";
+      label="\"Prereq\" Dependencies\n(licenses must be verified)";
       graph[style=dotted];
       node [fontsize=10;label="Third Party\nContent"]
       prereq1; prereq2;
@@ -314,7 +314,7 @@ digraph {
    subgraph cluster_workswith {
       graph[style=dotted];
       
-      node [fontsize=10;label="Third Party\n\"Works With\" Content\n(Must be reviewed by the IP Team)"]
+      node [fontsize=10;label="Third Party\n\"Works With\" Content\n(must be reviewed by IP Team)"]
       workswith;
       subgraph cluster_workswith_transitive {
          label="\"Works With\" Dependencies\n(No review required)";
@@ -444,7 +444,8 @@ digraph {
 ----
 
 * The list of third party content used by the project comes from _IPZilla_;
-* The project source code repositories are scanned to identify non-committer authors of contributions; and
+* The project source code repositories are scanned to identify non-committer authors of contributions; 
+* The committer list, which includes everybody who has ever held committer status the project (regardless of whether or not they have ever made any contributions of intellectual property) comes from the _Foundation_ database; and
 * License information is obtained from the _Foundation_ database
 
 To fully leverage the value of the Automated IP Log Tool, the project team needs to:
