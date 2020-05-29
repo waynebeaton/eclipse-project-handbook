@@ -26,6 +26,31 @@ Individual working groups may add requirements for specification projects over a
 
 The EDP defines a number of lifecycle reviews for Eclipse projects. All projects start with a creation review, but the most common type is the release review. In addition to those reviews defined by the EDP, the EFSP further defines plan reviews. 
 
+[graphviz, images/spec-release-review, svg]
+.Release review work flow
+----
+digraph {
+	// Graph properties
+	bgcolor=transparent
+	
+	// Nodes that define the key points in the process
+	node [shape=box;style=filled;fillcolor=white;fontsize=12;width=2]
+	doc [label="Review\nDocumentation", group=g1]
+	pmc [label="PMC\nApproval", group=g1]
+	ipteam [label="IP Log Approval\n(IP Team)", group=g2]
+	ballot [label="Specification Committee\nBallot", group=g3]
+	start [label="Start\Review", group=g3]
+	end [label="End\nRelease Review", group=g3]
+	publish [label="Publish Release", group=g3]
+	
+	doc -> start
+	pmc -> start
+	ipteam -> start
+	ballot -> end
+	start -> end -> publish
+}
+----
+
 Specification project teams engage in reviews in the same manner as all Eclipse projects, with a few differences:
 
 * Prior to starting the release cycle, a specification team must engage in a successful plan review;
