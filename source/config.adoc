@@ -26,7 +26,9 @@
 :accountUrl: https://accounts.eclipse.org/
 :memberUrl: https://www.eclipse.org/membership/
 :wgUrl: https://www.eclipse.org/org/workinggroups/
-:licenseWhitelistUrl: https://www.eclipse.org/legal/licenses.php#approved
+:approvedLicensesUrl: https://www.eclipse.org/legal/licenses.php#approved
+:proprietaryToolsUrl: https://www.eclipse.org/org/documents/Eclipse_Using_Proprietary_Tools_Final.php
+:clearlyDefinedUrl: http://clearlydefined.io/
 
 :webmasterEmailLink: mailto:{webmasterEmail}[Eclipse Webmaster]
 :ipTeamEmailLink: mailto:{ipTeamEmail}[EMO IP Team]
@@ -81,6 +83,8 @@
 :eftcklLink: {eftcklUrl}[Eclipse Foundation TCK License]
 :ecaLink: {ecaUrl}[Eclipse Contributor Agreement]
 :ipDueDiligenceLink: <<ip, Eclipse Foundation Intellectual Property Due Diligence Process>>
+
+:clearlyDefinedMinimumScore: 75
 
 :linkcss:
 :stylesdir: ./resources

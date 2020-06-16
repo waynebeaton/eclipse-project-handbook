@@ -155,7 +155,7 @@ Click on the _Details_ link for more information. Committers must not merge comm
 The Eclipse Webmaster creates and maintains a mirror of all GitHub-hosted repositories on Eclipse Foundation hardware.
 ====
 
-[[resources-github]]
+[[resources-github-access]]
 ==== Access to GitHub Repositories
 
 All project committers have write access to their project's repositories on GitHub.
