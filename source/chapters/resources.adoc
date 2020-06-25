@@ -39,13 +39,6 @@ For example the "{forgeName} Woolsey" project has a _short name_ of "woolsey"; i
 
 In order for the project to operate in an _open_ manner, it must be possible for potential contributors to have access to the code base in its most current form, so all ongoing development must be regularly pushed to these canonical repositories.
 
-[[resources-eca]]
-=== Eclipse Contributor Agreement (ECA)
-
-The Eclipse Foundation has implemented the {ecaUrl}[Eclipse Contributor Agreements] (ECA) to improve <<ip,intellectual property>> (IP) management and workflow. All contributors, who are not committers on the {forgeName} project, must sign the ECA.
-
-Committers *do not* require an ECA to contribute to a project on which they have committer status.
-
 [[resources-commit]]
 === Git Commit Records
 
@@ -94,7 +87,7 @@ The `Change-Id` is used by <<resources-gerrit,Gerrit Code Review>> to associate 
 
 An `Also-by` (or `Co-authored-by`) entry can be added for each additional author of a commit (one committer per entry). This might apply, for example, if a commit has been authored via pair-programming, or the commit is the result of collapsing multiple commits authored by multiple developers. To be considered valid the entry must take the form `Also-by: Name <email>`.
 
-Commits that are provided by non-committers must have a `Signed-off-by` field in the footer indicating that the author is aware of the terms by which the contribution has been provided to the project. To be considered valid the entry must take the form `Signed-off-by: Name <email>`. The non-committer must additionally have an Eclipse Foundation Account and must have a signed <<resources-eca,Eclipse Contributor Agreement>> (ECA) on file.
+Commits that are provided by non-committers must have a `Signed-off-by` field in the footer indicating that the author is aware of the terms by which the contribution has been provided to the project. To be considered valid the entry must take the form `Signed-off-by: Name <email>`. The non-committer must additionally have an Eclipse Foundation Account and must have a signed <<contributing-eca,Eclipse Contributor Agreement>> (ECA) on file.
 
 [[resources-git]]
 === Git
@@ -138,7 +131,7 @@ Any committer can {gitHubRequestUrl}[open a bug] to request that the Eclipse Web
 
 The _Committers hook_ grants designated project committers write access to the GitHub-hosted project repositories. Project committers must add their GitHub id to their <<contributing-account,Eclipse Foundation account>>, and must use the email address they provide to the Eclipse Foundation as the email address in the author credentials of all commits. 
 
-The <<resources-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect incoming GitHub pull requests to ensure that the contributor has a valid ECA on file, and that the commit has been `Signed-off-by` as required. Project committers should only merge pull _green_ requests:
+The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect incoming GitHub pull requests to ensure that the contributor has a valid ECA on file, and that the commit has been `Signed-off-by` as required. Project committers should only merge pull _green_ requests:
 
 .Notification that the commit is properly structured and permissions are in place.
 image::images/Github-cla-success.png[]

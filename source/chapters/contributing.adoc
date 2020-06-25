@@ -105,7 +105,7 @@ If you're working with projects that use GitHub, be sure to add your GitHub Id t
 [[contributing-eca]]
 == Eclipse Contributor Agreement
 
-The purpose of the Eclipse Contributor Agreement (ECA) is to provide a written record that contributors have agreed to provide their contributions of code and documentation under the licenses used by the Eclipse project(s) they’re contributing to. It also makes it clear that contributors are promising that what they are contributing to Eclipse is code that they wrote, and that they have the necessary rights to contribute it to Eclipse projects. And finally, it documents a commitment from the contributor that their open source contributions will be permanently on the public record.
+[[resources-eca]]The purpose of the Eclipse Contributor Agreement (ECA) is to provide a written record that contributors have agreed to provide their contributions of code and documentation under the licenses used by the Eclipse project(s) they’re contributing to. It also makes it clear that contributors are promising that what they are contributing to Eclipse is code that they wrote, and that they have the necessary rights to contribute it to Eclipse projects. And finally, it documents a commitment from the contributor that their open source contributions will be permanently on the public record.
 
 All contributors, who are not committers on the {forgeName} project, must sign the {ecaUrl}[Eclipse Contributor Agreements] (ECA) to ensure that the necessary <<ip,intellectual property>> (IP) rights to the contribution are granted.
 
