@@ -34,7 +34,7 @@ The ease with which software can be copied and combined makes it challenging to 
 ____
 In October 2019, The Eclipse Foundation's Board of Directors approved an update to the IP Policy that introduces several significant changes in our IP due diligence process.
 
-**License certification only for third-party content.** This change removes the requirement to perform deep copyright, provenance and scanning of anomalies for third-party content unless it is being modified and/or if there are _special_ considerations regarding the content. Instead, the focus for third-party content is on _license compatibility only, which had previously been referred to as _Type A_ due diligence.
+**License certification only for third-party content.** This change removes the requirement to perform deep copyright, provenance and scanning of anomalies for third-party content unless it is being modified and/or if there are _special_ considerations regarding the content. Instead, the focus for third-party content is on _license compatibility_ only, which had previously been referred to as _Type A_ due diligence.
 
 **Leverage other sources of license information for third-party content.** With this change to license certification only for third-party content, we are able to leverage existing sources of information license information. That is, the requirement that the Eclipse IP Team personally review every bit of third-party content has been removed and we can now leverage other _trusted_ sources.
 
@@ -371,7 +371,7 @@ When content fails to meet these requirements, the project team must engage with
 
 [TIP]
 ====
-The Eclipse Dash project's <ip-license-tool, IP License Tool>> will help you determine whether or not a CQ is required.
+The Eclipse Dash project's <<ip-license-tool, IP License Tool>> will help you determine whether or not a CQ is required.
 ====
 
 When in doubt, committers should check with the Eclipse IP Team.
