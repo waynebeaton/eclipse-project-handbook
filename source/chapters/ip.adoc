@@ -363,7 +363,7 @@ Content that claims to be distributed under a particular license may in fact inc
 
 The Eclipse Foundation has two trusted sources of license information: <<ip-ipzilla, IPZilla>> and <<ip-clearlydefined, ClearlyDefined>>.
 
-IPZilla is the primary source of license information for third-party content. If third-party content is marked as `approved` or `license_certified` in IPzilla, then it can be used without further action. If, however, third-party content is otherwise marked (e.g., `withdrawn` or `rejected`), then the project team must engage with the Eclipse IP Team via CQ to get approval to use the content.
+IPZilla is the primary source of license information for third-party content. If third-party content is marked as `approved` or `license_certified` in IPZilla, then it can be used without further action. If, however, third-party content is otherwise marked (e.g., `withdrawn` or `rejected`), then the project team must engage with the Eclipse IP Team via CQ to get approval to use the content.
 
 If third-party content is not known to IPZilla, then ClearlyDefined can be used. When an entry is known to ClearlyDefined and has a score of at least {clearlyDefinedMinimumScore} and all discovered licenses are on the Eclipse Foundation's {approvedLicensesUrl}[approved licenses list], then the content can be used without further action. 
 
