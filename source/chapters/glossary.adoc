@@ -99,10 +99,6 @@ An <<ip-iplog,Intellectual Property Log>> (commonly referred to as an _IP Log_) 
 Member Company ::
 
 The Eclipse Foundation and Eclipse community is supported by our {memberUrl}[member organizations]. Through this support, the Eclipse Foundation provides the open source community with IT, intellectual property, and marketing services.
-	
-Parallel IP ::
-
-The <<ip-parallel-ip,Parallel IP Process>> allows {aForgeName} projects to make use of project code contributions and third-party content before they are fully approved by the Eclipse IP Team.
 
 Prerequisite (Dependency)::
 

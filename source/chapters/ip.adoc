@@ -753,3 +753,7 @@ Generally no. If the IP Team requires an IP Log review outside of the context of
 	
 How do I fix problems with the generated IP Log? ::
 The IP Log is generated based on data from Eclipse Foundation servers. If the log is being generated incorrectly, then the underlying data needs to be fixed. If you spot a problem, send a note to mailto:{emoEmail}[EMO].
+
+[[ip-parallel-ip]]What is Parallel IP? ::
+
+The parallel IP Process allows {aForgeName} projects to make use of project code contributions and third-party content before they are fully approved by the Eclipse IP Team. In versions of the IP Policy prior to 2019, projects needed to meet specific requirements to be able to leverage the Parallel IP. This is no longer the case: full vetting is now always applied in parallel in all cases.
