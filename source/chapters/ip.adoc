@@ -126,17 +126,31 @@ digraph {
 		provision[label="Eclipse\nWebmaster\nProvisions"];
 	}
 	initial[label="Committer submits\nInitial\nContribution"];
-	checkin[label="IP Team\ngrants\n\"check-in\""];
+	
+	{
+		rankdir=TB;
+		checkin[label="IP Team\ngrants\n\"check-in\""];
+		parallel[label="IP Team\ncompletes review"];
+		approval[label="IP Team\ngrants\n\"approval\""];
+	}
+	
 	{
 		rankdir=TB;
 		push[label="Committer\npushes to\nProject Git"];
-		develop[label="Work\nbegins!"]
+		develop[label="Committers and\ncontributors engage"];
+		review[label="Project Team\nengages in a\nRelease Review"];
+		release[label="First Release"; style="filled,bold"];
 	}
 	creation -> provision;
 	provision -> initial;
 	initial -> checkin;
 	checkin -> push;
+	checkin -> parallel;
+	parallel -> approval;
 	push -> develop;
+	develop -> review;
+	approval -> review;
+	review -> release;
 }
 ----
 
