@@ -453,7 +453,7 @@ When engaged in the workflow to create a CQ for a prerequisite:
 * When specifying the "Name and Version" on the second page of the wizard, use Node, Maven, or <<ip-clearlydefined-identifiers, ClearlyDefined>> identifiers when possible; and 
 * On the third page of the wizard, indicate that it is a "Request IP Team Assistance".
 
-After creating the CQ, the committer will be sent an email with instructions to attach the corresponding source code. Bundle the `HEAD` state of the source code into a ZIP file for the attachment.
+After creating the CQ, the committer will be sent an email with instructions to attach the corresponding source code. Bundle the source code into a ZIP file for the attachment.
 
 Be sure to click btn:[Issues addressed, return CQ to IP Team] to release the CQ back to the workflow.
 ====
