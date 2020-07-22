@@ -377,9 +377,55 @@ Content that claims to be distributed under a particular license may in fact inc
 
 The Eclipse Foundation has two trusted sources of license information: <<ip-ipzilla, IPZilla>> and <<ip-clearlydefined, ClearlyDefined>>.
 
-IPZilla is the primary source of license information for third-party content. If third-party content is marked as `approved` or `license_certified` in IPZilla, then it can be used without further action. If, however, third-party content is otherwise marked (e.g., `withdrawn` or `rejected`), then the project team must engage with the Eclipse IP Team via CQ to get approval to use the content.
+IPZilla is the primary source of license information for third-party content. If the IPZilla record (<<ip-cq,CQ>>) for third-party content is marked as `approved` or `license_certified`, then it can be used without further action. If, however, third-party content is otherwise marked (e.g., `withdrawn` or `rejected`), then the project team must engage with the Eclipse IP Team via CQ to get approval to use the content.
 
-If third-party content is not known to IPZilla, then ClearlyDefined can be used. When an entry is known to ClearlyDefined and has a score of at least {clearlyDefinedMinimumScore} and all discovered licenses are on the Eclipse Foundation's {approvedLicensesUrl}[approved licenses list], then the content can be used without further action. 
+If third-party content is not known to IPZilla, then <<ip-clearlydefined, ClearlyDefined>> can be used. When an entry is known to ClearlyDefined and has a score of at least {clearlyDefinedMinimumScore} and all discovered licenses are on the Eclipse Foundation's {approvedLicensesUrl}[approved licenses list], then the content can be used without further action. 
+
+[graphviz, images/ip_prereq_diligence, svg]
+.Due Diligence for Prerequisites
+----
+digraph {
+	graph [ranksep="0.25"; nodesep="0.25"; fontsize=12];
+	bgcolor=transparent;
+	rankdir=TB;
+	splines=curved;
+	
+	node [shape=box;style=filled;fillcolor=white;fontsize=12]
+	edge [fontsize=12]
+	
+	search [style="filled,bold",label="Search IPZilla\nfor Existing CQ"];
+	{
+		rank=same; rankdir=LR;
+		foundCq[shape=diamond;label="Found in\nIPZilla?"];
+		cd [label="Search\nClearlyDefined", href="#ip-clearlydefined"];
+		cd_score[shape=diamond;label="Score is\n≥ 75"];
+	}
+	
+	{
+		rank=same;rankdir=LR;
+		isApproved[shape=diamond;label="Approved\nfor use?"];
+		cd_licenses[shape=diamond;label="Licenses are\ncompatible?"];
+	}
+	
+	{
+		rank=same;rankdir=LR;
+		approved[style="filled,bold",label="No further investigation;\nmay be used by\nEclipse Project"];
+		cq[style="filled,bold",label="Engage with IP Team\nfor assistance\n(create a CQ)", href="#ip-prereq-cq"];
+	}
+	
+	search -> foundCq;
+	foundCq -> cd [label="No"; weight=1000];
+	foundCq -> isApproved[label="Yes"];
+	isApproved -> approved[taillabel="Yes"];
+	isApproved -> cq[taillabel="No"];
+	cd -> cd_score;
+	cd_score -> cd_licenses[label="Yes"];
+	cd_score -> cq:e[xlabel="No"]
+	cd_licenses -> approved[taillabel="Yes"];
+	cd_licenses -> cq[label="No"];
+}
+----
+
 
 When content fails to meet these requirements, the project team must engage with the Eclipse IP Team via CQ to get approval to use the content.
 

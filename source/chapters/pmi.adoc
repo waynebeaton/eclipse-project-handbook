@@ -60,7 +60,7 @@ Committers have access to several committer-specific commands and tools in the _
 [[pmi-commands-cq]]
 ==== Create a Contribution Questionnaire
 
-Any project committer create <<ip-cq, Contribution Questionnaire>> (CQ). CQs are required to track some contributions of project code, as well as all uses of third-party content.
+Any project committer create <<ip-cq, Contribution Questionnaire>> (CQ). CQs are required to track the due diligence review of contributions of project content and third-party content
 
 To create a Contribution Questionnaire:
 
