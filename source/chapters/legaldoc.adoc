@@ -69,7 +69,7 @@ Project teams should consult with their PMCs for input and advice regarding alte
 
 All products delivered by the project—including executables, websites, documentation, and help must include certain notices. An executable might, for example, provide this information in an _About Dialog_; documentation might include a notice in either the pre- or post-amble, or a website might provide this information in a common footer, or a dedicated page.
 
-The notices must include one or more copyright statement, the assertion of trademarks owned by the Eclipse Foundation on behalf of the project, indication of third party trademarks in use, and--if applicable--a cryptography notice.
+The notices must include one or more copyright statement, the assertion of trademarks owned by the Eclipse Foundation on behalf of the project, indication of third-party trademarks in use, and--if applicable--a cryptography notice.
 
 .Example website notices
 ____
@@ -180,7 +180,7 @@ In SPDX, disjunction is used to express dual licensing and conjunction is used t
 [[legaldoc-license]]
 == License File
 
-The license file contains the exact text of the project’s declared licenses in human readable form. The declared licenses are those that the project team’s content is distributed under. This does not, for example, include the licenses of third party content or incidental fragments of code that is incorporated into the project content (the license of any such content should be indicated in the source file itself and the notice file that accompanies it).
+The license file contains the exact text of the project’s declared licenses in human readable form. The declared licenses are those that the project team’s content is distributed under. This does not, for example, include the licenses of third-party content or incidental fragments of code that is incorporated into the project content (the license of any such content should be indicated in the source file itself and the notice file that accompanies it).
 
 If the project code is distributed under multiple licenses then the text of those licenses must be included. The file should start with a short paragraph that describes how the licenses are combined. This statement should in most cases, be exactly the same as the license statement in the file <<ip-copyright-headers,copyright and license headers>> (see the example below).
 
@@ -206,7 +206,7 @@ http://www.eclipse.org/legal/epl-2.0, or the Apache Software License
 
 Notice files are expressed in human-readable plain text format; human readable markup languages may be used. The file is conventionally named `NOTICE` and may include a suffix (e.g. `NOTICE.md`).
 
-The notice file must include basic project metadata, an expression of the declared project licenses, information regarding the licensing of any third party content, and a statement regarding the use of cryptography in cases where either the project code or third party content implements cryptography.
+The notice file must include basic project metadata, an expression of the declared project licenses, information regarding the licensing of any third-party content, and a statement regarding the use of cryptography in cases where either the project code or third-party content implements cryptography.
 
 Project metadata provides the identity of the originating project, along with pointers to the project’s website and canonical source code repositories.
 
@@ -395,7 +395,7 @@ The cryptography statement is only required if the project code includes cryptog
 
 What licenses should be listed in a build script (e.g. Maven `pom.xml` file)?::
 
-The license(s) in the build should reflect what is being built, but typically not the license(s) of referenced third party content. The `pom.xml` file for project code, for example, should list the project license(s).
+The license(s) in the build should reflect what is being built, but typically not the license(s) of referenced third-party content. The `pom.xml` file for project code, for example, should list the project license(s).
 
 In a multiple license scenario, do we use conjunction (`AND`) or disjunction (`OR`)?::
 

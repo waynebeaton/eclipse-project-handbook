@@ -56,7 +56,7 @@ The _Plan_ tab in the release record contains numerous fields for capturing plan
 
 Producing regular builds is an important part of the release cycle. Builds are an important means of engaging with the community: adopters can help you test your code and test their own so that they can be ready for the eventual release. Project teams should plan to produce at least one _milestone_ build (more are better, depending on the length of your release cycle), and capture the planned date for that milestone in the release record. It is also common practice to generate nightly and weekly integration builds. Project teams must ensure that their project's downloads page provides the information required for the community to obtain builds.
 
-All requests for review of <<ip,intellectual property>> contributions must be approved by the IP Team before the products of a release are pushed out onto distribution channels (this includes third party content and contributions of code to be maintained by the project).
+All requests for review of <<ip,intellectual property>> contributions must be approved by the IP Team before the products of a release are pushed out onto distribution channels (this includes third-party content and contributions of code to be maintained by the project).
 
 [[release-milestones]]
 === Milestones and Release Candidates
@@ -185,7 +185,7 @@ Click the btn:[Submit] button on the <<ip-iplog-generator,IP Log generator>>. Yo
 
 Can I accept contributions after I submit the IP Log for review? ::
 
-The short answer is _yes_. Please do accept contributions. If you require a new contribution questionnaire (for either a third party library or code contribution) after submitting the IP Log for review, please ask the mailto:{ipTeamEmail}[IP Team] if they want you to resubmit the IP Log.
+The short answer is _yes_. Please do accept contributions. If you require a new contribution questionnaire (for either a third-party library or code contribution) after submitting the IP Log for review, please ask the mailto:{ipTeamEmail}[IP Team] if they want you to resubmit the IP Log.
 
 How do I obtain PMC approval? ::
 

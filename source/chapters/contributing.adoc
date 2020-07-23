@@ -67,7 +67,7 @@ digraph {
 
 [NOTE]
 ====
-{forgeName} committers must engage with the EMO Intellectual Property Team to review your <<ip-project-code, project code>> contributions, or <<ip-third-party, third party>> content that your contributions leverage. The committers will take are of this, but may need your help as part of the process.
+{forgeName} committers must engage with the EMO Intellectual Property Team to review your <<ip-project-code, project code>> contributions, or <<ip-third-party, third-party>> content that your contributions leverage. The committers will take are of this, but may need your help as part of the process.
 ====
 
 After establishing a pattern of contributing high quality contributions a contributor may be invited to join the project as a committer; an existing project committer will nominate a contributor to be a committer via <<elections-committer, committer election>>.

@@ -15,15 +15,15 @@ The term Intellectual Property (IP) refers to any sort of creative work, be it l
 
 The ease with which software can be copied and combined makes it challenging to know with confidence if content can be used without running into legal issues. Any sort of serious software development effort must be accompanied by a well-defined IP Due Diligence process that can ferret out issues and mitigate the risk of leveraging the work of others. IP Due Diligence is a time consuming process that requires specialized skills and a keen eye for detail.
 
-There are different kinds of content (source code, documentation, images, …) to consider. Project Code is content that is produced and maintained by the open source project committers and contributors. Third Party Content generally takes the form of libraries (modules, components, …), source files, images, or other forms of IP that are produced and maintained outside of the scope of the open source project. To mitigate the risk associated with adopting open source in products, the Project Code and Third Party Content that it leverages need to be vetted to ensure that the copyrights expressed are correct, licensing is valid and compatible, and other issues have been uncovered and properly investigated.
+There are different kinds of content (source code, documentation, images, …) to consider. Project Code is content that is produced and maintained by the open source project committers and contributors. Third-party Content generally takes the form of libraries (modules, components, …), source files, images, or other forms of IP that are produced and maintained outside of the scope of the open source project. To mitigate the risk associated with adopting open source in products, the Project Code and Third-party Content that it leverages need to be vetted to ensure that the copyrights expressed are correct, licensing is valid and compatible, and other issues have been uncovered and properly investigated.
 
-The Eclipse Foundation has a well-defined IP Policy, corresponding IP Due Diligence Process, and a dedicated team of professional IP specialists who perform the heavy lifting in the due diligence process. Committers, the software developers who decide what will become Project Code and how an Eclipse open source project will leverage Third Party Content, are responsible for bringing IP issues to the attention of the Eclipse IP Team.
+The Eclipse Foundation has a well-defined IP Policy, corresponding IP Due Diligence Process, and a dedicated team of professional IP specialists who perform the heavy lifting in the due diligence process. Committers, the software developers who decide what will become Project Code and how an Eclipse open source project will leverage Third-party Content, are responsible for bringing IP issues to the attention of the Eclipse IP Team.
 
 Most of the Project Code produced by committers can just be pushed into a project repository without any sort of legal review. However, at least in some cases, the IP Team needs to be engaged to review Project Code that comes from contributors (who are not committers); and there are some cases where even the work of committers needs to be reviewed. I’ll discuss Project Code with more detail in a future post.
 
-The sort of effort that the Eclipse IP Team brings to bear on Third Party Content varies depending on the type. The Guidelines for the Review of Third Party Dependencies defines three different types: Prerequisite, Exempt Prerequisite, and Works With Dependency.
+The sort of effort that the Eclipse IP Team brings to bear on Third-party Content varies depending on the type. The Guidelines for the Review of Third-party Dependencies defines three different types: Prerequisite, Exempt Prerequisite, and Works With Dependency.
 
-The simplest form of Third Party Content is Prerequisite. Prerequisites are required by the Eclipse project content to provide core functionality. Prerequisite content is not generally stored in an Eclipse project’s source code repositories, but is likely included in build scripts and referenced as runtime dependencies. Since adopters of Eclipse project content are compelled to adopt the Prerequisite content, that content must also be vetted by the IP Team. The vetting requirement applies recursively: the entire transitive closure of a Prerequisite’s dependencies needs to reviewed (the dependencies of a Prerequisite are themselves Prerequisites).
+The simplest form of Third-party Content is Prerequisite. Prerequisites are required by the Eclipse project content to provide core functionality. Prerequisite content is not generally stored in an Eclipse project’s source code repositories, but is likely included in build scripts and referenced as runtime dependencies. Since adopters of Eclipse project content are compelled to adopt the Prerequisite content, that content must also be vetted by the IP Team. The vetting requirement applies recursively: the entire transitive closure of a Prerequisite’s dependencies needs to reviewed (the dependencies of a Prerequisite are themselves Prerequisites).
 
 [graphviz, images/prereq_dependencies, svg]
 .Eclipse Project Dependencies
@@ -38,7 +38,7 @@ digraph {
    root[label="Eclipse Project\nContent"];
 
    subgraph cluster_prereq {
-      node [fontsize=10;label="Third Party\nContent"]
+      node [fontsize=10;label="Third-party\nContent"]
       prereq1; prereq2;
       ref1; ref2; ref3; ref4;
       label="\"Prereq\" Dependencies\n(Must be vetted by the IP Team)";
@@ -53,7 +53,7 @@ digraph {
 }
 ----
 
-The transitive closure requirement only applies when an Eclipse project makes a direct reference to Third Party Content (the Eclipse Project Handbook provides some examples of what constitutes a direct reference). In the case where an Eclipse project references code from a second Eclipse project that itself references Prerequisites, no further vetting of that chain of Prerequisite content is required (the IP Team will have already vetted it on behalf of the second project team). Eclipse project teams should take care to only reference release versions of other Eclipse projects in their own releases to ensure that the IP process has been completed.
+The transitive closure requirement only applies when an Eclipse project makes a direct reference to Third-party Content (the Eclipse Project Handbook provides some examples of what constitutes a direct reference). In the case where an Eclipse project references code from a second Eclipse project that itself references Prerequisites, no further vetting of that chain of Prerequisite content is required (the IP Team will have already vetted it on behalf of the second project team). Eclipse project teams should take care to only reference release versions of other Eclipse projects in their own releases to ensure that the IP process has been completed.
 
 [graphviz, images/eclipse_dependencies, svg]
 .Eclipse Project Dependencies
@@ -72,14 +72,14 @@ digraph {
       label="No further vetting required";
       node [fontsize=10;label="Content from\na different\nEclipse Project"]
       prereq1; 
-      node [fontsize=10;label="Third Party\nContent"]
+      node [fontsize=10;label="Third-party\nContent"]
       ref1;
    }
    
    subgraph cluster_thirdparty {
       graph[style=dotted];
       label="\"Prereq\" Dependencies\n(Must be vetted by the IP Team)";
-      node [fontsize=10;label="Third Party\nContent"]
+      node [fontsize=10;label="Third-party\nContent"]
       prereq2;
       ref2;
    }
@@ -97,7 +97,7 @@ The Eclipse IP process guidelines provide for a notion of Exempt Prerequisite de
 
 One of the key aspects of an Exempt Prerequisite is that the user or adopter is typically the one that actually installs the software and so is the one who must agree to the licensing terms. Content that is declared an Exempt Prerequisite should never be directly distributed by an Eclipse project or otherwise made available without some explicit action from the consumer. Exempt Prerequisites must be approved by the Eclipse Foundation’s Executive Director.
 
-The Eclipse IP process guidelines also define the notion of a Works With Dependency (commonly referred to as a “works with”) that applies in two different cases. Third Party Content may be declared a Works With Dependency when:
+The Eclipse IP process guidelines also define the notion of a Works With Dependency (commonly referred to as a “works with”) that applies in two different cases. Third-party Content may be declared a Works With Dependency when:
 
 * the functionality of Eclipse project content is enhanced by the presence of the software, but is otherwise functional and useful without it; or
 * there are multiple choices and vetting all of them is impractical or impossible.
@@ -123,7 +123,7 @@ digraph {
    subgraph cluster_prereq {
       label="\"Prereq\" Dependencies\n(Must be vetted by the IP Team)";
       graph[style=dotted];
-      node [fontsize=10;label="Third Party\nContent"]
+      node [fontsize=10;label="Third-party\nContent"]
       prereq1; prereq2;
       ref1; ref2; ref3; ref4;
    }
@@ -131,12 +131,12 @@ digraph {
    subgraph cluster_workswith {
       graph[style=dotted];
       
-      node [fontsize=10;label="Third Party\n\"Works With\" Content\n(Must be vetted by the IP Team)"]
+      node [fontsize=10;label="Third-party\n\"Works With\" Content\n(Must be vetted by the IP Team)"]
       workswith;
       subgraph cluster_workswith_transitive {
          label="\"Works With\" Dependencies\n(No vetting required)";
          graph[style=dotted];
-         node [fontsize=10;label="Third Party\nContent"]
+         node [fontsize=10;label="Third-party\nContent"]
          workswith1; workswith2; workswith3;
       }
    }

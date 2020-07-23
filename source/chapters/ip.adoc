@@ -782,7 +782,7 @@ No. A release may only use released content from other projects. A project may d
 Are project websites subject to the IP Due Diligence Process? ::
 Website content is separate from project content. Project teams are expected to respect licenses for all web site content, but are not required to submit website content (including third-party libraries) for review by the IP Team.
 
-My IP Log contains outdated third party dependency information. How do I update this information?::
+My IP Log contains outdated third-party dependency information. How do I update this information?::
 Send an email to the {ipTeamEmailLink}, providing a list of CQs to be marked as either:
 +
 * "unused" - not currently used, but potentially may be in the future or 

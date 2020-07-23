@@ -15,7 +15,7 @@ Open source projects at the Eclipse Foundation are _required_ to make use of cer
 
 * All project issues must be tracked in the issue tracker assigned to the project;
 * Source code must be maintained in source code repositories assigned to the project (e.g. {aforgeName} {gitUrl}[Git] or {gerritUrl}[Gerrit] instance, or an organization on GitHub maintained by the Eclipse Foundation);
-* All third party content used by the project must be <<ip-third-party,tracked and approved>> for use by the Eclipse IP Team;
+* All third-party content used by the project must be <<ip-third-party,tracked and approved>> for use by the Eclipse IP Team;
 * Downloads must be distributed via {aForgeName} downloads server;
 * Developer (committer) communication must occur in the _dev-list_ provided to the project by the Eclipse Foundation; and
 * Projects must keep their <<pmi-metadata, Project Metadata>> up-to-date.
@@ -214,7 +214,7 @@ Where technically sensible, all downloadable artifacts should be {jarSigningUrl}
 
 The project is allocated space on the {forgeName} download and archive servers.
 
-Project artifacts (e.g. downloads) can be distributed via third party services (e.g. Maven Central), but--where technically sensible--the Eclipse Foundation-provided infrastructure must be considered the primary source of project downloads.
+Project artifacts (e.g. downloads) can be distributed via third-party services (e.g. Maven Central), but--where technically sensible--the Eclipse Foundation-provided infrastructure must be considered the primary source of project downloads.
 
 Project committers can {downloadsUrl}[upload project artifacts] to the project's directory on the download server. The short name is used to denote the area available to the project (e.g. `pass:a[{downloadsHost}/dash]` for the `technology.dash` project) via SFTP or SCP, or from a <<resources-builds,Eclipse Foundation hosted build infrastructure>>.
 

@@ -107,7 +107,7 @@ Acronyms often become brand names.
 [[trademarks-project-existing]]
 ==== Existing Software Product Names
 
-To avoid confusion between {forgeName} Projects and commercial products, {forgeName} projects may not be named after commercial products and vice versa. To ensure that users understand the source of software products—i.e. from {aForgeName} project, or from a third party vendor—the brand for {aForgeName} project must not include or be directly reminiscent of a commercial product.
+To avoid confusion between {forgeName} Projects and commercial products, {forgeName} projects may not be named after commercial products and vice versa. To ensure that users understand the source of software products—i.e. from {aForgeName} project, or from a third-party vendor—the brand for {aForgeName} project must not include or be directly reminiscent of a commercial product.
 
 [[trademarks-project-short]]
 ==== Short Names and Ids
@@ -163,7 +163,7 @@ The Eclipse Foundation will help fund the creation of project logos. A project l
 
 The official project website is the primary means of learning about the project and getting involved: people who are interested in contributing to the project come here to learn about technical details, and to observe the project's development process.
 
-{forgeName} projects must host all project content on an Eclipse Foundation provided domain,especially the official/primary website for project-related information, communications, access to source code, and downloads. This ensures both that the Eclipse Foundation's Webmaster team can maintain the services, and informs consumers that the content comes from {aForgeName} Project, and not a third party. This further ensures that the project remains independent of any specific vendor or single individual.
+{forgeName} projects must host all project content on an Eclipse Foundation provided domain,especially the official/primary website for project-related information, communications, access to source code, and downloads. This ensures both that the Eclipse Foundation's Webmaster team can maintain the services, and informs consumers that the content comes from {aForgeName} Project, and not a third-party. This further ensures that the project remains independent of any specific vendor or single individual.
 
 All primary links to the project (including, for example, the project’s contribution guide) must point directly to the official website, and not to external sites or domains.
 
@@ -214,9 +214,9 @@ In Java, for example, package names must start with `{namespace}` and use their 
 The project team must get approval for exceptions from their PMC.
 
 [[trademarks-external]]
-=== Third Party Use of Trademarks
+=== Third-party Use of Trademarks
 
-The use of Eclipse Foundation trademarks outside of the immediate scope of the open source project, including the use of project names, is subject to the terms of the {trademarkGuidelinesUrl}[Guidelines for Eclipse Logos & Trademarks]. This includes third party websites, books, publications, conferences, events, and more.
+The use of Eclipse Foundation trademarks outside of the immediate scope of the open source project, including the use of project names, is subject to the terms of the {trademarkGuidelinesUrl}[Guidelines for Eclipse Logos & Trademarks]. This includes third-party websites, books, publications, conferences, events, and more.
 
 [[trademarks-external-events]]
 ==== Conferences and Events
@@ -281,15 +281,15 @@ The external uses of Eclipse Foundation trademarks must include a prominent trad
 For example:
 
 ____
-Eclipse Woolsey Intellectual Property Tools, Eclipse Woolsey, Woolsey, Eclipse, the Eclipse logo, and the Eclipse Woolsey project logo are either registered trademarks or trademarks of The Eclipse Foundation in the United States and/or other countries.
+Eclipse Woolsey Intellectual Property Tools, Eclipse Woolsey, Woolsey, Eclipse, the Eclipse logo, and the Eclipse Woolsey project logo are Trademarks of The Eclipse Foundation.
 ____
 
 [[trademarks-notes]]
 === Important Notes
 
-Nothing in this Eclipse Foundation document shall be interpreted to allow any third party to claim any association with the Eclipse Foundation or any of its projects or to imply any approval or support by the Eclipse Foundation for any third party products, services, or events, unless specifically covered by an Eclipse Membership agreement.
+Nothing in this Eclipse Foundation document shall be interpreted to allow any third-party to claim any association with the Eclipse Foundation or any of its projects or to imply any approval or support by the Eclipse Foundation for any third-party products, services, or events, unless specifically covered by an Eclipse Membership agreement.
 
-Questions? Project participants who have questions about Eclipse Foundation trademarks either used here or at third party sites should contact the EMO. Other organizations looking for information on how to use or refer to any Eclipse Foundation project trademarks or logos should see the {trademarkGuidelinesUrl}[Guidelines for Eclipse Logos & Trademarks].
+Questions? Project participants who have questions about Eclipse Foundation trademarks either used here or at third-party sites should contact the EMO. Other organizations looking for information on how to use or refer to any Eclipse Foundation project trademarks or logos should see the {trademarkGuidelinesUrl}[Guidelines for Eclipse Logos & Trademarks].
 
 Thanks and credit to the Apache Software Foundation's http://www.apache.org/foundation/marks/pmcs[Project Branding Requirements] (licensed under the Apache License, v2.0) for parts of this trademark section.
 

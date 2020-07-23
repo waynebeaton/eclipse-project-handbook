@@ -46,7 +46,7 @@ All projects must conform to the <<trademarks,branding guidelines>> before engag
 Most projects provide binary/compiled _downloads_ of their software, intended for consumption by their various communities. If the project does not provide downloads, then that should be stated on the project's website.
  
 * All generated artifacts include only intellectual property that has been subject to the IP Due Diligence Process;
-* All distributed third party content has been approved by the IP Team;
+* All distributed third-party content has been approved by the IP Team;
 * The project website and PMI page includes links for artifacts;
 * <<starting-incubation-branding,Incubation branding>> (when applicable) is included on distributed artifacts; 
 * All download artifacts are (if technical feasible) {jarSigningUrl}[signed]; and
