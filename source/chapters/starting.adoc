@@ -79,7 +79,7 @@ A proposal will be open for community review for a minimum of two weeks.
 
 The Eclipse Foundation holds the _trademark_ for all {forgeName} projects. Trademark assignment is undertaken prior to the creation of any new project. If you already have a trademark on your project name, that trademark must be assigned to the Eclipse Foundation. Be advised that trademark assignment can be a time-consuming process (it can take hours, days, or weeks depending on the circumstances surrounding the name). If you currently hold the trademark, you will be asked to complete a {trademarkTransferUrl}[Trademark Transfer Agreement].
 
-The proposal must list at least one mentor from the Eclipse Architecture Council. Members of the Eclipse Architecture Council have considerable experience with Eclipse Foundation practices, and the {edpUrl}[Eclipse Development Process]. The EMO will engage directly with the Architecture Council to identify mentors as necessary. Mentors are assigned to the project through the incubation phase; they are released from their duties when the project <<release-graduation,graduates>>.
+The proposal must list at least one mentor from the Eclipse Architecture Council. Members of the Eclipse Architecture Council have considerable experience with Eclipse Foundation practices, and the {edpLink}. The EMO will engage directly with the Architecture Council to identify mentors as necessary. Mentors are assigned to the project through the incubation phase; they are released from their duties when the project <<release-graduation,graduates>>.
 
 When the project name trademark has been secured, a mentor has been identified, and the proposal contents are finalized, the EMO will schedule a _creation review_. Reviews--which run for a minimum of one week--are scheduled twice a month, generally concluding on the first and third Wednesday of each month. The creation review may overlap with the _community review_ period.
 
@@ -192,11 +192,11 @@ Key project lifeycle events are gated by reviews; moving from the incubation pha
 
 A project in the incubation phase is said to be _incubating_.
 
-The classification of a project in the incubation phase is not a statement about the quality of the project's code; rather, the incubation phase is more about the project team's progress in practicing the open and transparent processes described by the {edpUrl}[Eclipse Development Process] to establish the three communities (developers, adopters, and users) around the project.
+The classification of a project in the incubation phase is not a statement about the quality of the project's code; rather, the incubation phase is more about the project team's progress in practicing the open and transparent processes described by the {edpLink} to establish the three communities (developers, adopters, and users) around the project.
 
 Incubating projects are encouraged to produce milestone builds, make releases, and grow their community.
 
-When the project code is ready (e.g. stable APIs) and the project team has learned to operate as an open source project according to the Eclipse Development Process, the project may opt to _graduate_ (via <<release-graduation,graduation review>> into the _mature phase_.
+When the project code is ready (e.g. stable APIs) and the project team has learned to operate as an open source project according to the {edpLink}, the project may opt to _graduate_ (via <<release-graduation,graduation review>> into the _mature phase_.
 
 [[starting-incubation-branding]]
 ===== Incubation branding

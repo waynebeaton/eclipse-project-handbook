@@ -18,7 +18,7 @@ The Eclipse Architecture Council (AC) serves the community by identifying and ta
 
 Architecture Council Mentor ::
 
-The Eclipse Architecture Council (AC) is a body of battle-hardened Eclipse committers. All new projects are required to have at least one mentor taken from the ranks of the AC. Your project mentors will help you find answers to any questions you may have about the Eclipse Development Process and life-in-general within the Eclipse community. If your mentor doesn't have an answer to your question, they can draw on the wisdom of the full AC and the EMO.
+The Eclipse Architecture Council (AC) is a body of battle-hardened Eclipse committers. All new projects are required to have at least one mentor taken from the ranks of the AC. Your project mentors will help you find answers to any questions you may have about the {edpLink} and life-in-general within the Eclipse community. If your mentor doesn't have an answer to your question, they can draw on the wisdom of the full AC and the EMO.
 
 Board of Directors ::	
 
@@ -62,7 +62,7 @@ The purpose of the Eclipse Contributor Agreement (ECA) is to provide a written r
 
 Eclipse Management Organization (EMO) ::
 
-The Eclipse Management Organization (EMO) consists of the Eclipse Foundation staff, and the Eclipse Architecture Council. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the {edpUrl}[Eclipse Development Process]. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead, mentor, or PMC, ask the EMO.
+The Eclipse Management Organization (EMO) consists of the Eclipse Foundation staff, and the Eclipse Architecture Council. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the {edpLink}. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead, mentor, or PMC, ask the EMO.
 
 EMO Executive Director ::
 
@@ -106,11 +106,11 @@ A <<ip-third-party-prereq,Prerequisites>> (or _prereqs_) are third-party content
 
 Project::
 
-Projects are where the real work happens. Each project has code, committers, and resources including a web site, source code repositories, space on the build and download server, etc. Projects may act as a parent for one or more child projects. Each child project has its own identity, committers, and resource. Projects may, but do not necessarily, have a dedicated web site. Projects are sometimes referred to as _subprojects_ or as _components_.  The Eclipse Development Process, however, treats the terms _project_, _subproject_, and _component_ as equivalent.
+Projects are where the real work happens. Each project has code, committers, and resources including a web site, source code repositories, space on the build and download server, etc. Projects may act as a parent for one or more child projects. Each child project has its own identity, committers, and resource. Projects may, but do not necessarily, have a dedicated web site. Projects are sometimes referred to as _subprojects_ or as _components_.  The {edpLink}, however, treats the terms _project_, _subproject_, and _component_ as equivalent.
 
 Project Lead ::
 
-The project lead is more of a position of responsibility than one of power. The project lead is immediately responsible for the overall well-being of the project. They own and manage the project's development process, coordinate development, facilitate discussion among project committers, ensure that the Eclipse IP policy is being observed by the project and more. If you have questions about your project, the {edpUrl}[Eclipse Development Process], or anything else, ask your project lead.
+The project lead is more of a position of responsibility than one of power. The project lead is immediately responsible for the overall well-being of the project. They own and manage the project's development process, coordinate development, facilitate discussion among project committers, ensure that the Eclipse IP policy is being observed by the project and more. If you have questions about your project, the {edpLink}, or anything else, ask your project lead.
 
 Project Management Committee (PMC) ::
 Each top-level project is governed by a Project Management Committee (PMC). The PMC has one or more leads along with several members. The PMC has numerous responsibilities, including the ultimate approval of committer elections, and approval of intellectual property contributions. Effectively, the PMC provides oversight for each of the projects that are part of the top-level project. If you have a question that your project lead cannot answer, ask the PMC.

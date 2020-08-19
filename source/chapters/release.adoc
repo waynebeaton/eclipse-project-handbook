@@ -61,7 +61,7 @@ All requests for review of <<ip,intellectual property>> contributions must be ap
 [[release-milestones]]
 === Milestones and Release Candidates
 
-Milestone builds and release candidates are not themselves official releases. Per the Eclipse Development Process, milestone and release candidate builds are intended to be consumed by a limited audience to solicit, gather, and incorporate feedback from leading edge consumers. A predictable schedule for the delivery of milestone builds is especially valuable when the period of time between formal releases spans multiple months. 
+Milestone builds and release candidates are not themselves official releases. Per the {edpLink}, milestone and release candidate builds are intended to be consumed by a limited audience to solicit, gather, and incorporate feedback from leading edge consumers. A predictable schedule for the delivery of milestone builds is especially valuable when the period of time between formal releases spans multiple months. 
 
 Project teams should include at least one milestone build during every release cycle. The timing of milestone and release candidate builds should be included in release plans.
 
@@ -134,7 +134,7 @@ The EMO will conclude the review on the scheduled end date and advise the projec
 [[release-graduation]]
 === Graduation Reviews
 
-The purpose of a _graduation review_ is to confirm that the project has a working and demonstrable code base of sufficiently high quality active and sufficiently diverse communities; has adopters, developers, and users operating fully in the open following the {edpUrl}[Eclipse Development Process]; and is a credit to {forgeName} and is functioning well within the larger {forgeName} community
+The purpose of a _graduation review_ is to confirm that the project has a working and demonstrable code base of sufficiently high quality active and sufficiently diverse communities; has adopters, developers, and users operating fully in the open following the {edpLink}; and is a credit to {forgeName} and is functioning well within the larger {forgeName} community
 
 Graduation reviews are generally combined with a _<<release-review, release review>>_ (typically, but not necessarily the `1.0` release). Upon successful completion of a graduation review, a project will leave the incubation phase and be designated as a _mature_ project.
 
@@ -175,7 +175,7 @@ What is the difference between a release review and progress review? ::
 
 In practice, there is really no difference. The activities involved are the same and a project may create major and minor releases for an entire year following a successful release or progress review.
 +
-Progress reviews were added to the {edpUrl}[Eclipse Foundation Development Process] primarily to support the {efspUrl}[Eclipse Foundation Specification Process], which requires that specification project teams engage periodic reviews that do not necessarily align with releases.
+Progress reviews were added to the {edpLink} primarily to support the {efspUrl}[Eclipse Foundation Specification Process], which requires that specification project teams engage periodic reviews that do not necessarily align with releases.
 +
 In cases where, for example, a project team has gone an extended period of time without having engaged in a review, the project leadership chain may  compel the project team to engage in a progress review to ensure that the project team is following the processes and is generally engaging in the sorts of activities required for success.
 

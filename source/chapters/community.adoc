@@ -11,11 +11,11 @@
 [[community]]
 == Community
 
-The _{edpUrl}[Eclipse Development Process]_ (EDP) is mostly concerned with engaging in activities that grow community involvement. {aForgeName} project is considered successful only if a vibrant community develops around it and the project team grows in diversity.
+The {edpLink} (EDP) is mostly concerned with engaging in activities that grow community involvement. {aForgeName} project is considered successful only if a vibrant community develops around it and the project team grows in diversity.
 
 While the reviews and processes described by the EDP may seem onerous, they are a necessary part of community development. You should anticipate spending a significant amount of time responding to questions posed in various forums ({forumsUrl}[{forgeName} Forums], {mailingListsUrl}[mailing lists], and other places where your community gathers. You should plan on attending conferences, presenting webinars, writing papers, and more to support your project.
 
-Community and eco-system development are two things that every committer should spend at least some time thinking about, and--hopefully--some time doing something about. Ultimately, it is difficult to call your project a success without these things. It is from the community and eco-system that you will draw additional contributions and other helpful input to make your open source project a success.
+Community and ecosystem development are two things that every committer should spend at least some time thinking about, and--hopefully--some time doing something about. Ultimately, it is difficult to call your project a success without these things. It is from the community and ecosystem that you will draw additional contributions and other helpful input to make your open source project a success.
 
 [[community-barriers]]
 === Lower the Barriers

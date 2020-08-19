@@ -246,7 +246,7 @@ External resources can be used for:
 * Container image management (e.g. <<resources-dockerhub,DockerHub>>); and
 * Examples, blogs, social media handles.
 
-This list is not exhaustive. Project leads should work with their PMC and the EMO to determine the terms and conditions for an external resource are compatible with the project license(s), the {ipPolicyUrl}[Eclipse IP Policy], and {edpUrl}[Eclipse Development Process].
+This list is not exhaustive. Project leads should work with their PMC and the EMO to determine the terms and conditions for an external resource are compatible with the project license(s), the {ipPolicyUrl}[Eclipse IP Policy], and {edpLink}.
 
 [[resources-dockerhub]]
 ==== DockerHub

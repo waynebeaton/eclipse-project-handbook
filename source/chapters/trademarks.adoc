@@ -13,7 +13,7 @@
 
 This section defines how {forgeName} Projects must use and display all Eclipse Foundation trademarks as well as how they showcase their project's website within the community and ecosystem. The requirements described here are a complement to the {trademarkGuidelinesUrl}[Guidelines for Eclipse Logos & Trademarks], targeting {forgeName} open source project leads and committers specifically.
 
-These requirements are meant to promote and improve the image of all projects that are part of the {forgeName} community, as well as to show that all {forgeName} Projects are part of our community of developers, adopters and users that we believe is an important factor in our mutual success. While every project manages their own development within the broader {edpUrl}[Eclipse Development Process], a consistent public branding and web presence that ties all of our projects together benefits all of us.
+These requirements are meant to promote and improve the image of all projects that are part of the {forgeName} community, as well as to show that all {forgeName} Projects are part of our community of developers, adopters and users that we believe is an important factor in our mutual success. While every project manages their own development within the broader {edpLink}, a consistent public branding and web presence that ties all of our projects together benefits all of us.
 
 All projects must conform to these branding requirements before engaging in any Release or Graduation Review.
 
@@ -64,7 +64,7 @@ Renaming projects (i.e. after a project has been created and provisioned) requir
 [[trademarks-project]]
 === Project Names
 
-A project, as defined by the Eclipse Development Process, is the main operational unit; all open source software development at {forgeName} occurs within the context of a project. The Eclipse Foundation holds the trademark for all {forgeName} Projects.
+A project, as defined by the {edpLink}, is the main operational unit; all open source software development at {forgeName} occurs within the context of a project. The Eclipse Foundation holds the trademark for all {forgeName} Projects.
 
 All project names must be approved by the Eclipse Management Organization (EMO) either before a project is created or before an existing project is renamed.
 

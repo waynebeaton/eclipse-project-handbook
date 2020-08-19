@@ -13,7 +13,7 @@
 
 The {efspUrl}[Eclipse Foundation Specification Process] (EFSP) defines a means of creating specifications in open source. The EFSP defines specifications as a “... collection of Application Programming Interface (API) definitions, descriptions of semantic behavior, data formats, protocols, and/or other referenced specifications, along with its TCK, intended to enable the development and testing of independent Compatible Implementations.” 
 
-Under the EFSP, all specification work must be done in a designated specification project. Specification projects operate according to the {edpUrl}[Eclipse Foundation Development Process] (EDP), just like "regular" Eclipse open source projects, but with special consideration for the intellectual property management differences that are inherent in specification development. Specifically, the flow of intellectual property license grants is a critical difference between open source software development and open source specification development that is addressed by the EFSP. Due to these differences in the intellectual property license grants, specification project committers must be covered by additional legal agreements and must engage in additional governance steps. 
+Under the EFSP, all specification work must be done in a designated specification project. Specification projects operate according to the {edpLink} (EDP), just like "regular" Eclipse open source projects, but with special consideration for the intellectual property management differences that are inherent in specification development. Specifically, the flow of intellectual property license grants is a critical difference between open source software development and open source specification development that is addressed by the EFSP. Due to these differences in the intellectual property license grants, specification project committers must be covered by additional legal agreements and must engage in additional governance steps. 
 
 Unlike Eclipse open source software projects which have no formal association with {wgUrl}[Eclipse Foundation Working Groups] (“working groups”), every specification project is aligned directly with an Eclipse Foundation working group and operates under the purview of that working group’s specification committee.
 
@@ -124,7 +124,7 @@ Regular contributors of high quality content shoul be invited to join the specif
 [[specifications-committers]]
 == Committers
 
-Committers are developers who have the ability to directly push (i.e., they have write access) their own contributions to the project’s Git repositories, and have the responsibility to review and merge the contributions of others. Committers are responsible for implementing the Eclipse Development Process and abiding by the Eclipse Intellectual Property Due Diligence Process.
+Committers are developers who have the ability to directly push (i.e., they have write access) their own contributions to the project’s Git repositories, and have the responsibility to review and merge the contributions of others. Committers are responsible for implementing the {edpLink} and abiding by the Eclipse Intellectual Property Due Diligence Process.
 
 Committer status is assigned on a project-by-project basis. That is, individuals have committer rights only on those projects for which they hold committer status. For all other projects, they are contributors.
 
@@ -238,7 +238,7 @@ In the event of a failure, the specification committee will provide feedback reg
 
 Creation reviews give the community a last opportunity to review and comment on a new project proposal before it is created.
 
-The specification committee needs to approve of the creation of a specification project from a proposal by taking a role in the creation review. The expectation is that the specification committee members will consider the details of a proposed specification project (with particular focus on the scope) before making their decision. In addition to the requirements defined by the {edpUrl}[Eclipse Development Process] (EDP), a <<specifications-ballots,super-majority ballot>> of the entire specification committee is required to approve a creation review.
+The specification committee needs to approve of the creation of a specification project from a proposal by taking a role in the creation review. The expectation is that the specification committee members will consider the details of a proposed specification project (with particular focus on the scope) before making their decision. In addition to the requirements defined by the {edpLink} (EDP), a <<specifications-ballots,super-majority ballot>> of the entire specification committee is required to approve a creation review.
 
 [TIP]
 ====

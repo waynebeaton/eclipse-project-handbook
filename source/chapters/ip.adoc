@@ -70,7 +70,7 @@ The IP Due Diligence Process does not dictate how source code repositories are s
 
 [NOTE] 
 ====
-The {edpUrl}[Eclipse Development Process] does restrict how content can be disseminated based on the state of the IP review. A Project team can create and distribute milestone builds of any content that has been granted _check-in_ from the IP Team. All content must be approved by the IP Team before the project can engage in a formal <<release, release>>.
+The {edpLink} does restrict how content can be disseminated based on the state of the IP review. A Project team can create and distribute milestone builds of any content that has been granted _check-in_ from the IP Team. All content must be approved by the IP Team before the project can engage in a formal <<release, release>>.
 ====
 
 The entry point into the IP Due Diligence Process is the <<ip-cq,Contribution Questionnaire>>, or _CQ_. Project teams should create a single CQ for the <<ip-initial-contribution,initial contribution>> of project content. The initial contribution is a special type of project content contribution in the sense that it is the first thing that the IP Team will review on behalf of the project team. 
