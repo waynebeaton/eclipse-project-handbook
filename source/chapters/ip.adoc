@@ -110,21 +110,23 @@ When content is known to ClearlyDefined and has a _Licensed_ score of at least {
 
 ClearlyDefined provides three different scores. For example:
 
-image::images/clearlydefined-example.png[]
+image::images/clearlydefined-example.png[Screenshot from ClearlyDefined]
+
+Three numbers are highlighted in this screenshot:
 
 // These will generate warnings; the callouts are included
 // part of the above image.
 
 <1> The overall score;
-<2> The _metadata_ score (i.e., completeness the metadata); and
+<2> The _Described_ score (i.e., completeness of the metadata); and
 <3> The _Licensed_ score (i.e., confidence in the licensing). 
 
 In this particular example, the declared and discovered licenses are all on the approved licenses list, and the _Licensed_ score meets the threshold. This content can be used by {aForgeName} project without further consideration.
 
 Note that when the ClearlyDefined record shows any of the following, a project committer must <<ip-project-content-cq, engage with the IP Team via CQ>>:
 
-* NOASSERTION appearing a _declared license_;
-* NOASSERTION appearing as a _discovered license_;
+* `NOASSERTION` appearing a _declared license_;
+* `NOASSERTION` appearing as a _discovered license_;
 * No declared license; or
 * A _License_ score of less than {clearlyDefinedMinimumScore}.
 
