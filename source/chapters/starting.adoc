@@ -73,7 +73,7 @@ A proposal must minimally include a description of the project, a declaration of
 
 When you feel that the proposal is ready, send a note to the mailto:{emoEmail}[Eclipse Management Organization] (EMO) requesting that the proposal be made available to the public for review. The EMO will review the proposal and may provide feedback before initiating the _community review_ period.
 
-At the beginning of the _community review_ period, the EMO will announce the proposal on several channels (the {activityUrl}[Project Activity News] page, Twitter, the {proposalsForum}[Proposals Forum], blog post, and an email note to the Eclipse Foundation members and committers). The EMO will also open a record in the Eclipse Foundation's issue tracker--an instance of Bugzilla--to track the progress of the proposal; the proposal's author and project leads will be copied on that record.
+At the beginning of the _community review_ period, the EMO will announce the proposal on several channels (the {activityUrl}[Project Activity News] page, Twitter, the {proposalsForum}[Proposals Forum], blog post, and an email note to the Eclipse Foundation members and committers). The EMO will also open a record in the Eclipse Foundation's issue tracker -- an instance of Bugzilla -- to track the progress of the proposal; the proposal's author and project leads will be copied on that record.
 
 A proposal will be open for community review for a minimum of two weeks.
 
@@ -81,7 +81,7 @@ The Eclipse Foundation holds the _trademark_ for all {forgeName} projects. Trade
 
 The proposal must list at least one mentor from the Eclipse Architecture Council. Members of the Eclipse Architecture Council have considerable experience with Eclipse Foundation practices, and the {edpLink}. The EMO will engage directly with the Architecture Council to identify mentors as necessary. Mentors are assigned to the project through the incubation phase; they are released from their duties when the project <<release-graduation,graduates>>.
 
-When the project name trademark has been secured, a mentor has been identified, and the proposal contents are finalized, the EMO will schedule a _creation review_. Reviews--which run for a minimum of one week--are scheduled twice a month, generally concluding on the first and third Wednesday of each month. The creation review may overlap with the _community review_ period.
+When the project name trademark has been secured, a mentor has been identified, and the proposal contents are finalized, the EMO will schedule a _creation review_. Reviews -- which run for a minimum of one week -- are scheduled twice a month, generally concluding on the first and third Wednesday of each month. The creation review may overlap with the _community review_ period.
 
 [NOTE]
 ====

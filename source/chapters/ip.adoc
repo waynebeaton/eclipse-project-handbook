@@ -46,7 +46,7 @@ In October 2019, The Eclipse Foundation's Board of Directors approved an update 
 
 **CQs are not required for third-party content in all cases.** In the case of third-party content due diligence, <<ip-cq,CQs>> are now only used to track the vetting process. 
 
-**CQs are no longer required _before_ third-party content is introduced.** Previously, the IP Policy required that all third-party content must be vetted by the IP Team before it can be used by {aForgeName} Project. The IP Policy updates turn this around. {forgeName} project teams may now introduce new third-party content during a development cycle without first checking with the IP Team. That is, a project team may commit build scripts, code references, etc. to third-party content to their source code repository without first creating a <<ip-cq,CQ>> to request IP Team review and approval of the third-party content. At least during the development period between releases, the onus is on the project team to--with reasonable confidence--ensure any third-party content that they introduce is license compatible with the project’s license. Before any content may be included in any formal release the project team must engage in the <<ip-prereq-diligence, due diligence process>> to validate that the third-party content licenses are compatible with the project license.
+**CQs are no longer required _before_ third-party content is introduced.** Previously, the IP Policy required that all third-party content must be vetted by the IP Team before it can be used by {aForgeName} Project. The IP Policy updates turn this around. {forgeName} project teams may now introduce new third-party content during a development cycle without first checking with the IP Team. That is, a project team may commit build scripts, code references, etc. to third-party content to their source code repository without first creating a <<ip-cq,CQ>> to request IP Team review and approval of the third-party content. At least during the development period between releases, the onus is on the project team to -- with reasonable confidence -- ensure any third-party content that they introduce is license compatible with the project’s license. Before any content may be included in any formal release the project team must engage in the <<ip-prereq-diligence, due diligence process>> to validate that the third-party content licenses are compatible with the project license.
 
 **History may be retained when an existing project moves to the Eclipse Foundation.** We had previously required that the commit history for a project moving to the Eclipse Foundation be squashed and that the <<ip-initial-contribution, initial contribution>> be the very first commit in the repository. This is no longer the case; existing projects are now encouraged (but not required) to retain their commit history. The initial contribution must still be provided to the IP Team via <<ip-cq, CQ>> as a snapshot of the `HEAD` state of the existing repository (if any).
 
@@ -94,7 +94,7 @@ In order to facilitate the use of automation in the IP due diligence process, th
 
 The notion of an identifier for content is pretty natural for developers who are familiar with technologies like Apache Maven which has well defined means of uniquely identifying content in a well-defined software repository. Maven coordinates -- which combine `groupid`, `artifactid`, and `version` (often referred to as a “GAV”) -- identify a very specific bit of content (especially when combined with a specific source, e.g. Maven Central). For example, `org.junit.jupiter:junit-jupiter:5.5.2` unambiguously identifies content on Maven Central that is known to be under the Eclipse Public License version 2.0 (EPL-2.0). Other systems use different means of identifying content: `node.js`, for example, uses a pURL-like identifier for content in the NPM repository (e.g., `@babel/generator@7.62`).
 
-To bridge the gap between the different means of identifying content (and fill in some of the blanks), we’ve adopted the ClearlyDefined project’s five part identifiers which includes the type of content, its software repository source, its name space and name, and version. ClearlyDefined coordinates are roughly analogous to Maven coordinates, but--by including the type and source--provide a greater degree of precision. ClearlyDefined uses slashes to separate the parts of the identifier, so the Maven GAV `org.junit.jupiter:junit-jupiter:5.5.2` maps to `maven/mavencentral/org.junit.jupiter/junit-jupiter/5.5.2` and the NPM identifier `@babel/generator@7.62` maps to `npm/npmjs/@babel/generator/7.6.2`.
+To bridge the gap between the different means of identifying content (and fill in some of the blanks), we’ve adopted the ClearlyDefined project’s five part identifiers which includes the type of content, its software repository source, its name space and name, and version. ClearlyDefined coordinates are roughly analogous to Maven coordinates, but -- by including the type and source -- provide a greater degree of precision. ClearlyDefined uses slashes to separate the parts of the identifier, so the Maven GAV `org.junit.jupiter:junit-jupiter:5.5.2` maps to `maven/mavencentral/org.junit.jupiter/junit-jupiter/5.5.2` and the NPM identifier `@babel/generator@7.62` maps to `npm/npmjs/@babel/generator/7.6.2`.
 
 [[ip-clearlydefined-using]]
 ==== Using ClearlyDefined
@@ -192,7 +192,7 @@ The initial contribution is a snapshot of the existing code base. The initial co
 
 Any project committer can start the initial contribution review process by creating a <<ip-cq,CQ>>. The IP Team will review the initial contribution to ensure that it hasn't been copied inappropriately, that licenses are being used correctly, and so forth. As part of this process, the IP Team  will research the source of all code; depending on the size of the contribution, this can be a time-consuming process.
 
-Because a full review can be time-consuming, the IP Team will in most cases start with a cursory review of the content, and--assuming that no significant issues are uncovered by that cursory review--will grant _check-in_ indicating that the project team can push/merge the initial contribution into their Git repository (or initiate the transfer of their existing repository) and start working with the code while the IP team continues their review in _parallel_ (they will add completing the review to their work queue and address it in turn).
+Because a full review can be time-consuming, the IP Team will in most cases start with a cursory review of the content, and -- assuming that no significant issues are uncovered by that cursory review -- will grant _check-in_ indicating that the project team can push/merge the initial contribution into their Git repository (or initiate the transfer of their existing repository) and start working with the code while the IP team continues their review in _parallel_ (they will add completing the review to their work queue and address it in turn).
 
 After _check-in_ has been granted for the initial contribution, the project team should start the due diligence process for their <<ip-third-party,third-party content>>.
 
@@ -203,7 +203,7 @@ Eclipse Foundation systems use email to inform and remind interested parties of 
 The email address that is associated with your Eclipse Foundation account is used; be sure to check spam filters to ensure that these messages are not missed. Send a note to mailto:{emoEmail}[EMO] if you are concerned that you are not receiving these notification.
 ====
 
-A project cannot make a <<release, release>> until the due diligence on the IP contained in that release--including project content contributions and third-party content--is complete. 
+A project cannot make a <<release, release>> until the due diligence on the IP contained in that release -- including project content contributions and third-party content -- is complete. 
 
 [[ip-project-content]]
 === Project Content
@@ -603,14 +603,14 @@ After creating the CQ, the committer will be sent an email with instructions to 
 Be sure to click btn:[Issues addressed, return CQ to IP Team] to release the CQ back to the workflow.
 ====
 
-The IP Team may require assistance from the project team as it analyzes content. Once that analysis is complete and the IP Team has made a decision, they will outline the next steps. These next steps may--in the event that the content is rejected--require that the content be removed from the project's source code repository, or that some part be removed. Most often, the content is _approved_ and the CQ is marked as such.
+The IP Team may require assistance from the project team as it analyzes content. Once that analysis is complete and the IP Team has made a decision, they will outline the next steps. These next steps may -- in the event that the content is rejected -- require that the content be removed from the project's source code repository, or that some part be removed. Most often, the content is _approved_ and the CQ is marked as such.
 
 Be advised that this process may take a while. The actual amount of time that it takes to process a CQ depends on numerous factors including the size of the IP Team's work queue, and the nature and size of the contribution.
 
 [[ip-third-party-exempt]]
 ==== Exempt Prerequisites
 
-When one follows a dependency graph all the way to the bottom, the entire runtime environment including virtual machines and the operating system are included in the transitive closure of dependencies. Clearly, having the IP team review virtual machines and operating systems is not a great use of time, and--in the case of closed source operating systems--just not be possible.
+When one follows a dependency graph all the way to the bottom, the entire runtime environment including virtual machines and the operating system are included in the transitive closure of dependencies. Clearly, having the IP team review virtual machines and operating systems is not a great use of time, and -- in the case of closed source operating systems -- just not be possible.
 
 The Eclipse IP Due Diligence Process guidelines provide for a notion of _Exempt Prerequisite_ dependencies, which are not subject to review. According to the guide, content may be considered exempt if it "is pervasive in nature, expected to be already on the user's machine, and/or an IP review would be either impossible, impractical, or inadvisable." The IP Team does not review the source code associated with an Exempt Prerequisite.
 
@@ -705,7 +705,7 @@ To declare build and test test dependencies, create a <<ip-cq, CQ>>:
 * Enter a description that indicates that the CQ is for test/build-only dependencies, and set the CQ type to "works with"; and
 * Enter "various" in the _license_ field and "binary" in the ;
 
-* List all the third-party dependencies--one on each line--along with version information.
+* List all the third-party dependencies -- one on each line -- along with version information.
 
 For example:
 

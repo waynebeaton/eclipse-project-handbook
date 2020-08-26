@@ -15,7 +15,7 @@ The {forgeName} Project Management Infrastructure (PMI) consolidates project man
 
 Project Management Infrastructure themes:
 
-_Improved consistency._ Configuration/data-driven project web presence, direct linkage between releases, reviews, and plans. Information--including basic project metadata, project plans, and review information--is captured and retained in a consistent (and easily leveraged) data-based format (rather than in multiple documents in arbitrary formats).
+_Improved consistency._ Configuration/data-driven project web presence, direct linkage between releases, reviews, and plans. Information -- including basic project metadata, project plans, and review information -- is captured and retained in a consistent (and easily leveraged) data-based format (rather than in multiple documents in arbitrary formats).
 
 _All-in-one-place._ Project leads and committers are able to edit information in place on the project information pages. Text/information in one place with links in another is eliminated where possible. Comments and discussion related to reviews, elections, etc. are connected directly to the item being discussed.
 
@@ -235,7 +235,7 @@ To populate this list:
 
 [NOTE]
 ====
-The matching algorithm tries to be as forgiving as possible, a release named `3.5`, `3.5.0`, or `3.5 (Luna)` will--for example--match target milestones named `3.5` ,`3.5M1`, `3.5 M2`, `3.5.0M3`, etc., but will not match `3.5.1`.
+The matching algorithm tries to be as forgiving as possible, a release named `3.5`, `3.5.0`, or `3.5 (Luna)` will -- for example -- match target milestones named `3.5` ,`3.5M1`, `3.5 M2`, `3.5.0M3`, etc., but will not match `3.5.1`.
 ====
 
 The bugs for all projects participating in the release will be included. Bugs are grouped by Bugzilla product and component.

@@ -15,7 +15,7 @@ The {edpLink} (EDP) is mostly concerned with engaging in activities that grow co
 
 While the reviews and processes described by the EDP may seem onerous, they are a necessary part of community development. You should anticipate spending a significant amount of time responding to questions posed in various forums ({forumsUrl}[{forgeName} Forums], {mailingListsUrl}[mailing lists], and other places where your community gathers. You should plan on attending conferences, presenting webinars, writing papers, and more to support your project.
 
-Community and ecosystem development are two things that every committer should spend at least some time thinking about, and--hopefully--some time doing something about. Ultimately, it is difficult to call your project a success without these things. It is from the community and ecosystem that you will draw additional contributions and other helpful input to make your open source project a success.
+Community and ecosystem development are two things that every committer should spend at least some time thinking about, and -- hopefully -- some time doing something about. Ultimately, it is difficult to call your project a success without these things. It is from the community and ecosystem that you will draw additional contributions and other helpful input to make your open source project a success.
 
 [[community-barriers]]
 === Lower the Barriers
@@ -53,7 +53,7 @@ Every project should have at least one committer monitor {forumsUrl}/eclipse.new
 ====
 endif::[]
 
-When your community asks questions, answer them as soon as possible. No question should go unanswered. Encourage all of the project committers to monitor the project forum(s), or--at very least--take turns. When sensible, incorporate the answers into the FAQ or some type of wiki recipe. Repeat this process for as many newsgroups as possible, because Eclipse's overall success will be reflected in your personal success. Your dedication to high-quality service and support is the fuel for your ecosystem and the success of that ecosystem is the most effective way to achieve maximum influence with your limited individual capacity.
+When your community asks questions, answer them as soon as possible. No question should go unanswered. Encourage all of the project committers to monitor the project forum(s), or -- at very least -- take turns. When sensible, incorporate the answers into the FAQ or some type of wiki recipe. Repeat this process for as many newsgroups as possible, because Eclipse's overall success will be reflected in your personal success. Your dedication to high-quality service and support is the fuel for your ecosystem and the success of that ecosystem is the most effective way to achieve maximum influence with your limited individual capacity.
 
 Adopter questions posed in developer mailing lists (and other _inappropriate_ forums such as personal e-mail) should be answered politely. It is reasonable to recommend that the question (or future questions) be posed in the forum where it can be _viewed by a larger audience as is more likely to receive a timely answer_.
 

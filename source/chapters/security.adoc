@@ -51,7 +51,7 @@ Disclosure is initially limited to the reporter and all Eclipse Committers, but 
 ====
 Knowledge of a vulnerability can be easily extended to individuals by adding them to the `cc` list on the corresponding Bugzilla report 
 
-Contacts added to an unresolved vulnerability must be _individuals_. Groups (e.g. mailing lists with open subscription and public archives)--with the exception of the mailto:{securityTeamEmail}[Security Team email address]--should never be copied on a vulnerability issue.
+Contacts added to an unresolved vulnerability must be _individuals_. Groups (e.g. mailing lists with open subscription and public archives) -- with the exception of the mailto:{securityTeamEmail}[Security Team email address] -- should never be copied on a vulnerability issue.
 
 The `committers-only` must be removed and the `security` keyword must be added on Bugzilla records for disclosed vulnerabilities.
 ====
@@ -103,7 +103,7 @@ The required information is rendered into the appropriate form by the EMO and fo
 
 [NOTE]
 ====
-The security team will assign a CVE Number to the Bugzilla record as an _alias_, they will then notify the central authority, and--when the report is accepted and posted--add the central authority's link to the URL field of the bug.
+The security team will assign a CVE Number to the Bugzilla record as an _alias_, they will then notify the central authority, and -- when the report is accepted and posted -- add the central authority's link to the URL field of the bug.
 ====
 
 [[security-faq]]
@@ -141,7 +141,7 @@ The general rule is that a CVE is required when a vulnerability impacts release 
 +
 [quote]
 ____
-If someone can download compiled (e.g., JAR) files and use them without any sort of compilation process then we are inclined to say that there exists a tangible risk to consumers and so a CVE should be requested. That is, unless that version string specifically says alpha or beta, or the content has otherwise clear warnings to not use it in a production context, then we should--as good citizens--create a CVE. Merely being versioned 0.x instead of 1.x doesn't absolve the situation.
+If someone can download compiled (e.g., JAR) files and use them without any sort of compilation process then we are inclined to say that there exists a tangible risk to consumers and so a CVE should be requested. That is, unless that version string specifically says alpha or beta, or the content has otherwise clear warnings to not use it in a production context, then we should -- as good citizens -- create a CVE. Merely being versioned 0.x instead of 1.x doesn't absolve the situation.
 ____
 +
 If you're not sure, check with your PMC or the <<vulnerability-team, Security Team>>.

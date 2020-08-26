@@ -11,7 +11,7 @@
 [[legaldoc]]
 = Legal Documentation Requirements
 
-The content developed and maintained by Eclipse Foundation open source projects is distributed via multiple channels, including distributed source code management systems, download servers, and software repositories. Further, open source project content is--by design--integrated into and distributed as part of the products of adopters. The legal obligations of the content must be observed in all forms of which the content is available.
+The content developed and maintained by Eclipse Foundation open source projects is distributed via multiple channels, including distributed source code management systems, download servers, and software repositories. Further, open source project content is -- by design -- integrated into and distributed as part of the products of adopters. The legal obligations of the content must be observed in all forms of which the content is available.
 
 Where possible we adopt standards and conventions in order to be good open source citizens. We use the Software Package Data Exchange(R) (https://spdx.org[SPDX](R)) specification for communicating the licenses associated with software packages.
 
@@ -69,7 +69,7 @@ Project teams should consult with their PMCs for input and advice regarding alte
 
 All products delivered by the project—including executables, websites, documentation, and help must include certain notices. An executable might, for example, provide this information in an _About Dialog_; documentation might include a notice in either the pre- or post-amble, or a website might provide this information in a common footer, or a dedicated page.
 
-The notices must include one or more copyright statement, the assertion of trademarks owned by the Eclipse Foundation on behalf of the project, indication of third-party trademarks in use, and--if applicable--a cryptography notice.
+The notices must include one or more copyright statement, the assertion of trademarks owned by the Eclipse Foundation on behalf of the project, indication of third-party trademarks in use, and -- when applicable -- a cryptography notice.
 
 .Example website notices
 ____

@@ -54,7 +54,7 @@ A commercial ecosystem is a system in which companies, organizations, and indivi
 
 Eclipse ::
 
-This is a tough one. For most people in the broader community, _Eclipse_ refers to the _Eclipse Java IDE_ which based on the Java development tools (JDT) project and assembled by the Eclipse Packaging Project. However, the term _Eclipse_ is also used to refer to the Eclipse Foundation, the eclipse.org website, the community, the ecosystem, and--of course--The Eclipse Project (which is just one of the top-level projects hosted by the Eclipse Foundation). Confusing? Yes.
+This is a tough one. For most people in the broader community, _Eclipse_ refers to the _Eclipse Java IDE_ which based on the Java development tools (JDT) project and assembled by the Eclipse Packaging Project. However, the term _Eclipse_ is also used to refer to the Eclipse Foundation, the eclipse.org website, the community, the ecosystem, and -- of course -- The Eclipse Project (which is just one of the top-level projects hosted by the Eclipse Foundation). Confusing? Yes.
 
 Eclipse Contributor Agreement (ECA) ::
 
