@@ -279,21 +279,40 @@ When the review is displayed, it automatically includes the _review_ information
 
 This can make things a bit confusing when you want to make changes to the metadata for a review record. Just remember that the _review_ information for a release is stored in the release record.
 
-ifeval::["{forgeName}"=="Eclipse"]
 [[pmi-joining-a-simultaneous-release]]
 === Joining a Simultaneous Release
 
-Projects cannot add themselves directly to a simultaneous release (e.g. https://projects.eclipse.org/releases/luna[Luna]), but rather must be added by the EMO.
+A simultaneous release (also referred to as a _coordinated release_ or _release train_) is a means of grouping together projects that are coordinating their respective releases and need a means of representing the aggregation. Simultaneous releases must themselves coordinated and managed by supervising body (e.g., a PMC or working group specification committee). The rules for joining and participating in a simultaneous release are defined by the supervising body.
 
-To join a simultaneous release:
+[NOTE]
+====
+Simultaneous releases are not a formal concept in the EDP. While the supervising body has considerably latitude to define the nature of their simultaneous release, the project teams that opt to participate in a simultaneous release are still individually required to fully meet their obligations under the EDP and the Eclipse IP Policy.
+====
 
-1.  Create a release record:
-* Provide at least a description of the release initially;
+To create a simultaneous release record and update its contents, the supervising body must connect with the {emoEmailLink}.
+
+[TIP]
+====
+The Eclipse Planning Council manages the https://wiki.eclipse.org/Category:SimRel[Eclipse IDE Simultaneous Release], and maintains the https://wiki.eclipse.org/SimRel/Simultaneous_Release_Requirements[participation rules] (in particular, see the https://wiki.eclipse.org/SimRel/Simultaneous_Release_Requirements#State_intent_early[process for joining]). 
+====
+
+[TIP]
+====
+The https://jakarta.ee/committees/specification/[Jakarta EE Specification Committee] manages the Jakarta EE release.
+====
+
+To join a simultaneous release, {aForgeName} project committer must
+
+1. Meet the requirements defined by the supervising body;
+2. Create a <<pmi-releases,release record>>:
+* The record must include at least brief description of the release (that can be changed later); and
 * The date of the release should generally match that of the simultaneous release;
-2.  Send a note to the https://dev.eclipse.org/mailman/listinfo/cross-project-issues-dev[cross-project-issues-dev mailing list] (the EMO monitors this mailing list) with the name of your project, the name/number of the release, and the offset.
+3. The committer must then connect with the supervising body and the {emoEmailLink} to add their release record to the simultaneous release record.
 
-The offset indicates how many days after the start of the aggregation process for a milestone your project's bits will be available. If your project's bits depend on a `pass:[+1]` project's bits then your project is probably a `pass:[+2]` project, for example.
-endif::[]
+[NOTE]
+====
+Release records are added to a simultaneous release record by reference. If you change information in the release (including the release name/number), those changes will be automatically reflected.
+====
 
 [[pmi-faq]]
 === Frequently Asked Questions
