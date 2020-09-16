@@ -103,7 +103,7 @@ ClearlyDefined is used as part of the overall <<ip-prereq-diligence, due diligen
 
 [NOTE]
 ====
-The Eclipse Foundation's <<ip-ipzilla, IPZilla>> is the primary source of information regarding third-party licensing for {aForgeName} projects. In cases where IPZilla and ClearlyDefined results differ, IPZilla results take precedence.
+The Eclipse Foundation's <<ip-ipzilla, IPZilla>> is the primary source of information regarding third-party licensing for {forgeName} projects. In cases where IPZilla and ClearlyDefined results differ, IPZilla results take precedence.
 ====
 
 When content is known to ClearlyDefined and has a _Licensed_ score of at least {clearlyDefinedMinimumScore}, and the _declared_ and all _discovered_ licenses are on the Eclipse Foundation's {approvedLicensesUrl}[approved licenses list], then the content can be used without further action. 
@@ -125,7 +125,7 @@ In this particular example, the declared and discovered licenses are all on the 
 
 Note that when the ClearlyDefined record shows any of the following, a project committer must <<ip-project-content-cq, engage with the IP Team via CQ>>:
 
-* `NOASSERTION` appearing a _declared license_;
+* `NOASSERTION` appearing as a _declared license_;
 * `NOASSERTION` appearing as a _discovered license_;
 * No declared license; or
 * A _License_ score of less than {clearlyDefinedMinimumScore}.
@@ -480,7 +480,7 @@ If third-party content is not known to IPZilla, then <<ip-clearlydefined, Clearl
 
 [NOTE]
 ====
-The Eclipse Foundation's <<ip-ipzilla, IPZilla>> is the primary source of information regarding third-party licensing for {aForgeName} projects. In cases where IPZilla and ClearlyDefined results differ, IPZilla results take precedence.
+The Eclipse Foundation's <<ip-ipzilla, IPZilla>> is the primary source of information regarding third-party licensing for {forgeName} projects. In cases where IPZilla and ClearlyDefined results differ, IPZilla results take precedence.
 ====
 
 [graphviz, images/ip_prereq_diligence, svg]
