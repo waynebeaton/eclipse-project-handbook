@@ -381,9 +381,15 @@ Keeping a help-wanted list up-to-date can be challenging. Consider including a q
 == Frequently Asked Questions
 
 [qanda]
+How do file headers change when content is refactored?::
+
+When you split a file during a refactoring exercise, any new files that you create must automatically inherit the header of the original. If even fragment of text from a single line of the original content survives the refactoring (whether generated, rote, or otherwise), then the original copyright statement and author information should be retained.
++
+Even a refactoring exercise that does not change behaviour, may add intellectual property. When refactoring adds content, copyright statements should be updated to reflect the addition. In concrete terms, you can either add the new copyright holders to the existing copyright statement or append "and others" (especially when the list of copyright holders gets long). 
+
 Do the _license_ and _notice_ files need to be named `LICENSE` and `NOTICE`?::
 
-No. If there are technical limitations, for example, that require that you select different names, you can do so. But for the sake of consistency for our communities we prefer that this convention be followed. Format-specific file extensions (e.g. `NOTICE.md`) can be used.
+No. If there are technical limitations, for example, that require that you select different names, you can do so. But for the sake of consistency for our communities we prefer that this convention be followed. Format-specific file extensions (e.g. `.md` as in `NOTICE.md`) can be used.
 
 Can the _license_ and _notice_ files use Markdown?::
 
