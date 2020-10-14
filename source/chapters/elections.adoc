@@ -113,7 +113,7 @@ digraph {
 ----
 
 
-Only project committers may nominate a new committer or vote in a committer election. To be successful, the election must receive a minimum of three positive `pass:[+1]` votes. Any committer can veto the election by casting a +pass:[-1]+ vote. For projects with three or fewer committers all committers must vote. Committer elections run for one week, but will end prematurely if all project committers vote `pass:[+1]`.
+Only project committers may nominate a new committer or vote in a committer election. To be successful, the election must receive a minimum of three positive `pass:[+1]` votes. Any committer can veto the election by casting a `pass:[-1]` vote, or indicate their participation in the process but with no opinion with a `pass:[+0]` vote. For projects with three or fewer committers all committers must vote. Committer elections run for one week, but will end prematurely if all project committers vote `pass:[+1]`.
 
 Following a successful committer vote, the project's PMC will review the election results and then either approve or veto the election. An election may be vetoed, for example, if the PMC feels that the merit statement is not strong enough.
 
