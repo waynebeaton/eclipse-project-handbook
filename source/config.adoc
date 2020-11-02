@@ -35,6 +35,7 @@
 :ipTeamEmailLink: mailto:{ipTeamEmail}[EMO IP Team]
 :emoEmailLink: mailto:{emoEmail}[EMO]
 :emoRecordsEmailLink: mailto:{emoRecordsEmail}[EMO Records Team]
+:trademarkGuidelinesLink: {trademarkGuidelinesUrl}[Eclipse Foundation Trademark Usage Guidelines]
 
 :developerPortalUrl: http://portal.eclipse.org
 :bylawsUrl: https://www.eclipse.org/org/documents/eclipse_foundation-bylaws.pdf
