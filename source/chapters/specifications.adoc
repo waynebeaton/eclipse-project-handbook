@@ -144,6 +144,11 @@ Due to the nature of specification project work, the <<paperwork, committer agre
 include::diagrams/specifications-agreements.dot[]
 ----
 
+[NOTE]
+====
+Specific agreements need only be signed once. If you've already signed the agreement, you're good-to-go.
+====
+
 A committer who is self-employed, unemployed, or a student needs:
 
 * <<specifications-iwgpa, Individual Working Group Participation Agreement>> (IWGPA), which includes:
