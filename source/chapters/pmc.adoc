@@ -8,10 +8,12 @@
  * SPDX-License-Identifier: EPL-2.0
 ////
 
-[[PMC]]
+[[pmc]]
 = Project Management Committee
 
-A PMC is responsible for the operation of exactly one Top Level Project as defined by the EDP. Per the EDP, top level projects sit at the top of the open source project hierarchy. Top level projects do not generally maintain open source code of their own, but rather provide oversight and guidance to those open source projects that fall under them in the project hierarchy. All projects that fall under a particular top level project must fit within the mission and scope defined by the top level project’s charter. In addition to mission and scope, the charter may further define other requirements or establish guidelines for practices by the project that fall under its purview.
+A project management committee (PMC) is responsible for the operation of exactly one top-level project as defined by the {edpLink} (EDP). Per the EDP, top-level projects sit at the top of the open source project hierarchy. 
+
+Top-level projects do not generally maintain open source code of their own, but rather provide oversight and guidance to those open source projects that fall under them in the project hierarchy. All projects that fall under a particular top-level project must fit within the mission and scope defined by the top-level project’s charter. In addition to mission and scope, the charter may further define other requirements or establish guidelines for practices by the project that fall under its purview.
 
 The primary role of the PMC is to ensure that project teams are implementing the EDP and operating within the terms outlined by the top-level project's charter. In particular, the PMC monitors project activity to ensure that project teams are operating in an open and transparent manner. 
 
@@ -19,11 +21,34 @@ The PMC is responsible for defining and managing the structure of the top level 
 
 The PMC provides other oversight regarding the operation of open source projects. They review and approve release and progress review materials, and facilitate cross-project communication within the top level project.
 
+== Composition
+
+A PMC has one or more PMC leads and zero or more PMC Members. Together the PMC provides oversight and overall leadership for the projects that fall under their top Level project. The PMC as a whole, and the PMC leads in particular, are ultimately responsible for ensuring that the Eclipse Development Process (EDP) is understood and followed by their projects. The PMC is additionally responsible for maintaining the top level project's charter.
+
+The PMC’s role is, fundamentally, to maintain the overall vision and operation of the top level project and all of the projects that fall within its purview. Very often (though it really depends on the nature of the top level project), the PMC will take a very active role in determining how its projects fit together, and how they communicate and interoperate. In pragmatic terms, the PMC ensures that projects are following the rules, set the standards over and above the basic requirements for releases and corresponding documentation, approves intellectual property contributions, and approves committer and project lead elections. 
+
+The PMC Lead is appointed by the Eclipse Foundation's Board of Directors. When an existing PMC Lead retires, the EMO will work with the PMC to identify a replacement and then with the EMO(ED) to have that individual ratified by the board of directors.
+
+PMC Members are appointed by the EMO(ED). The criteria by which PMC members are identified varies by PMC, but is generally by nomination and election within the existing PMC. Some PMCs are designed to be composed of representatives from some subset of the projects that operate under their purview. In such a case, the means of identifying members should be documented in the corresponding top-level project charter.
+
 == PMC Role in the Intellectual Property Due Diligence Process
 
 The PMC is responsible for ensuring that project teams abide by the Eclipse IP Policy and implementing the Eclipse Intellectual Property (IP) Due Diligence process. 
 
 Further, the Eclipse IP Team has limited technical knowledge and so relies on the PMC to provide technical insight.
+
+
+One of the key responsibilities of the PMC is to ensure that projects are following the Eclipse Intellectual Property Process. In that regard, the PMC has a role in the intellectual property vetting process. Specifically, we need the PMC to approve contribution questionnaires (CQ).
+
+The criteria by which a PMC grants approval of a CQ varies by PMC. 
+
+At least in part, PMC approval is required to ensure that the PMC is actively engaged with the project that operate under their purview in the event that the EMO requires some assistance working with the project (the PMC member that approves a CQ becomes an obvious contact should the IP Team require your assistance). 
+
+In part, PMC approval of CQ means that the PMC believes that the contribution represented by the CQ makes technical sense, but from an intellectual property perspective (i.e. does it make sense to incorporate this contribution into the project?). 
+
+Finally, we depend on the PMC to use their knowledge and experience with their community and technology to flag any potential issues that may not be obvious to our intellectual property due diligence team (e.g. you know that the license for some content was changed). 
+
+Some PMCs make additional requirements; we can discuss what those additional requirements might be, but I recommend that you defer considering that until a need is demonstrated.
 
 === Project Content
 
@@ -37,17 +62,21 @@ The PMC reviews and approves (or vetos) committer elections, first validating th
 
 == PMC Role in Reviews
 
+Literally put a `pass:[+1]` on the email thread when approving a review.
+
 == PMC Role in Grievance Handling
 
 The PMC is a link in the project leadership chain. As such, the PMC has a role in the grievance handling process: they identify and document project dysfunction (with the responsibility to remove or replace disruptive committers).
 
+== The PMC Mailing list
+
+We set the "pmc" list as the "dev" list for top level projects. This list is the primary means that the EMO and the Eclipse Foundation processes (e.g. committer elections) use to interact with the PMC.
+
+The PMC members should all be subscribed to that list.
+
+Over time, at least one committer/project lead from each subproject will also be subscribed to that list, making the list a good way for the EMO to interact with the entire project community under that TLP.
 
 
-
-
-A PMC has one or more PMC leads and zero or more PMC Members. Together the PMC provides oversight and overall leadership for the projects that fall under their top Level project. The PMC as a whole, and the PMC leads in particular, are ultimately responsible for ensuring that the Eclipse Development Process (EDP) is understood and followed by their projects. The PMC is additionally responsible for maintaining the top level project's charter.
-
-The PMC’s role is, fundamentally, to maintain the overall vision and operation of the top level project and all of the projects that fall within its purview. We expect that the EE4J PMC will take a very active role in determining how its projects fit together, communicate, and interoperate. In pragmatic terms, the PMC will be required to ensure that projects are following the rules, set the standards over and above the basic requirements for releases and corresponding documentation, approve intellectual property contributions, and approve committer and project lead elections. Once the PMC has been established, it will add or remove members as it sees fit.
 
 The PMC is an important link in the project leadership chain, which is composed of the project's project lead(s), the leadership of the parent project (if any), the PMC leads and PMC members, the EMO, and the Executive Director of the Eclipse Foundation. In exceptional situations—such as projects with zero active committers, disruptive committers, or no effective project leads—the project leadership chain has the authority to make changes (add, remove) to the set of committers and/or project leads of that project, and otherwise act on behalf of the project lead.
 
