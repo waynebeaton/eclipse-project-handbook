@@ -88,6 +88,8 @@
 
 :clearlyDefinedMinimumScore: 75
 
+:euro: &#x20AC;
+
 :linkcss:
 :stylesdir: ./resources
 :scriptsdir: ./resources

@@ -173,7 +173,7 @@ Logos are important to recognize as trademarks as well. For a project's official
 
 Projects may request to use the Eclipse logo within their project logo, or otherwise create a derivative of the Eclipse logo. However, they must contact the EMO (via a {emoApprovalsUrl}[Bugzilla record]) to request the Eclipse Foundation's Board of Directors' permission to do so.
 
-The Eclipse Foundation will help fund the creation of project logos. A project leader or committer will have to pay for the logo design in advance. Once the logo is created, the project can then send the invoice to the Eclipse Foundation {marketingEmail}[marketing team]. The Foundation will reimburse up to USD$600 for the logo design. Please also feel free to contact the Foundation marketing team with any questions about the logo design.
+The Eclipse Foundation will help fund the creation of project logos. A project leader or committer will have to pay for the logo design in advance. Once the logo is created, the project can then send the invoice to the Eclipse Foundation {marketingEmail}[marketing team]. The Foundation will reimburse up to 500{euro} for the logo design. Please also feel free to contact the Foundation marketing team with any questions about the logo design.
 
 [[trademarks-website]]
 === Project Website Branding
