@@ -9,7 +9,9 @@ digraph {
 	
 	start [label="Project Team elects\nyou as a committer"; style="filled,bold"];
 	iwgpa [label=<<b>You</b> sign<br/>the IWGPA>];
-	consent_and_iwgpa [label=<Your <b>Employer</b> signs the<br/>Consent Agreement and<br/><b>You</b> sign the IWGPA>];
+	consent [label=<Your <b>Employer</b> signs the<br/>Employer Consent Agreement for<br/>Eclipse Specification Projects>];
+	ica [label=<<b>You</b> sign<br/>the ICA>];
+	employed_iwgpa [label=<<b>You</b> sign<br/>the IWGPA>];
 	final [label="Congratulations,\nyou're a Committer"; style="rounded,filled,bold"];
 	
 	node [shape=diamond;style=filled;fillcolor=white;fontsize=10;group=g1];
@@ -17,6 +19,7 @@ digraph {
 	is_self_employed [label="Are you a student,\nself-employed,\nor unemployed?"];
 	is_member [label="Is your employer\na member of the\nEclipse Foundation?"];
 	is_participant [label="Is your employer\na participant in\nthe working group?"];
+	has_mcca [label="Has your employer\nsigned the MCCA?"];
 	
 	start -> is_self_employed;
 	is_self_employed -> is_member [label="No"];
@@ -24,10 +27,16 @@ digraph {
 	iwgpa -> final;
 		
 	is_member -> is_participant [label="Yes"];
-	is_member -> consent_and_iwgpa [label="No"];
-		
-	is_participant -> final [label="Yes"];
-	is_participant -> consent_and_iwgpa [label="No"];
+	is_member -> employed_iwgpa [label="No"];
 	
-	consent_and_iwgpa -> final;
+	employed_iwgpa -> consent;
+	ica -> consent;
+	
+	is_participant -> has_mcca [label="Yes"];
+	is_participant -> employed_iwgpa [label="No"];
+		
+	has_mcca -> final [label="Yes"];
+	has_mcca -> ica [label="No"];
+		
+	consent -> final;
 }
