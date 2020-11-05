@@ -29,7 +29,7 @@ All {forgeName} open source projects may use the _{forgeName}_ brand. Other bran
 The brand that is associated with a particular project is used on the corresponding <<pmi-project-page, project page>>.
 ====
 
-The <<trademarks-formal-name,formal name>> of all {forgeName} open source projects starts with a brand. The brand should not generally be concatenated with any other words (there are some primarily historical exceptions).
+The <<trademarks-formal-name,formal name>> of all {forgeName} open source projects starts with a brand. The brand should not generally be concatenated with any other words (there are some historical exceptions).
 
 [[trademarks-background]]
 === Naming and Trademarks
@@ -95,14 +95,18 @@ The primary branding for any project name is fully-qualified formal name which i
 The formal name may include a brand name and/or a descriptive name.
 
 [[trademarks-project-distinct]]
-==== Distinct Names
+==== Distinctive Names
 
-Project teams should strongly consider choosing a brand name. _Woolsey_, _Apogy_, and _Whiskers_ are examples of project names that are distinctive and memorable; they make the project easier to talk and write about than a wordier descriptive name. These names are not descriptive and so don’t stand well on their own; combining a distinctive name with a descriptive name (e.g. _{forgeName} Woolsey Intellectual Property Tools_) can help in this regard.
+Ideal project names are distinctive and memorable. _Woolsey_, _Apogy_, and _Whiskers_ are examples of project names that are distinctive and memorable: they make the project easier to talk and write about than a wordier descriptive name. 
+
+Distinctive names don't tend to convey information about the nature of the project; combining a distinctive name with a descriptive name (e.g. _{forgeName} Woolsey Intellectual Property Tools_) can help in this regard.
 
 [[trademarks-project-descriptive]]
 ==== Descriptive Names
 
-Descriptive names tend to be challenging to register as a trademark and so are generally discouraged. That's not to say that descriptive names are prohibited, but rather that they are more likely to be rejected during the trademark vetting process.
+Descriptive names tend to be challenging to register as a trademark and so are generally discouraged as a project name. That's not to say that descriptive names are prohibited, but rather that they are more likely to be rejected during the trademark vetting process. 
+
+Descriptive names can, however, be helpful as an informal secondary name for a project.
 
 The best names do not include the word _Project_, and are--in formal contexts--prepended by the <<trademarks-brands,brand name>>. Descriptive names may optionally include the words _Framework_, _Platform_, or _Tools_ if the project has a specific emphasis on extensible frameworks, a platform, or obvious development tooling technology. {forgeName} projects always provide both but may be tailored more toward one or the other. When choosing to use these words, the team should consider that _Framework_, _Platform_, and _Tools_ mean different things to different people and are becoming overused.
 
