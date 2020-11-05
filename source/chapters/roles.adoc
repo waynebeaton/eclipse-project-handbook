@@ -8,8 +8,57 @@
  * SPDX-License-Identifier: EPL-2.0
 ////
 
-[[pmc]]
-= Project Management Committee
+[[roles]]
+= Project Roles
+
+TBD
+
+[[roles-cm]]
+== Committers
+
+For {forgeName} projects (and the open source world in general), committers are the ones who hold the keys. Committers decide what code goes into the code base, they decide how a project builds, and they ultimately decide what gets delivered to the adopter community. With awesome power, comes awesome responsibility, and so the Open Source Rules of Engagement described by the {edpLink}, puts _meritocracy_ on equal footing with _transparency_ and _openness_: becoming a committer isn’t necessarily hard, but it does require a demonstration of merit.
+
+Operate in an open, transparent, and meritocratic manner.
+
+Write code. Code written by a committer should be pushed directly into the project's source code repository.
+
+Review contributions from contributors. Contributions
+
+[NOTE]
+====
+The IP due diligence process refers to content that is written "under the supervision of the PMC". We regard this to mean content that has been developed in an open and transparent manner. That is, content that is in-scope and in-plan. Generally, this means that the content is developed in response to a documented issue or plan item, or is otherwise a natural evolution of the code developed in manner that allows participation by the community.
+
+A committer who spends a few hours developing content before pushing it directly into the project's source code repository is likely working "under the supervision of the PMC"; a committer who _disappears_ for a few weeks to work on a feature and then drops it into the project repository is not. In the former example, the hypothetical committer is working in a manner that faciliates participation by others; the later hypothetical committer is not. 
+
+It is extremely difficult to attract contributors to participate in an open source project when massive changes are held back and then dumped.
+====
+
+
+[[roles-pl]]
+== Project Lead
+
+The short version is that the project lead is the first link in the project leadership chain and is the primary liaison between the project team and the EMO. 
+
+A project lead is not a super committer or anything like that. Committer and project lead are two different roles. A project lead is almost always also a committer. Most privileges on an Eclipse open source project are given to committers. I say most privileges, because we're always trying to sort out how to give project leads more privileges in GitHub and GitLab (e.g., Bug 533471).
+
+They are responsible for ensuring that project committers are following the rules. At the most basic level, "the rules" are the open source rules of engagement defined in the EDP (openness, transparency, and meritocracy), and we depend on them to make sure that team members understand their obligations under the Eclipse IP Policy (and seek help/advice from the PMC and EMO when they need assistance).
+
+I don't generally expect that anybody has read the IP Policy. I agree that it is cruel and unusual punishment. We describe the various practices with regard to the IP Policy in the handbook; we need the project leads to help us make sure that these practices are followed. 
+
+When committers are disruptive or otherwise behaving in a manner that is detrimental to the project, the project lead should work with the PMC and the EMO to resolve the issue. As you've noted, the project lead does have the ability to retire committers. This is a power that must be used responsibly. The project lead needs to be able to support their decision to retire a committer. As a best practice, the project lead should give committers reasonable opportunity to retrain their status, and--should the decision be made to retire--committer retirements should be announced on the project's mailing list. The six months of inactivity is more of a suggested period of time for considering retirement of committers; we defer to the judgement of the project lead to determine when and if somebody who is inactive should be retired.
+
+The project lead is not the technical lead. So it's not strictly their responsibility to develop things like coding standards, project policies, and such. They are responsible, however, for making sure that those sorts of things get created and for making sure that the project team is working to complete shared goals. We have no formal designation of technical lead; this tends to occur organically.
+
+Any committer can initiate a review with the EMO, but we always copy the project lead(s) in related communication to ensure that they are aware that the committer is acting as their delegate.
+
+Regarding the assertion that the IP Policy has been followed... this happens when the project lead (or their delegate) submits the IP Log for review. That is, we regard the act of submitting the IP Log for review as this assertion.
+
+The EDP also defines a project lead role: project leads are responsible for ensuring that the processes are being followed. So, for example, project leads need to ensure that committers are engaging in the IP due diligence process. But they are also responsible for ensuring that committers are “playing nice”. That is, they need to ensure that the level playing field and vendor neutrality bits in the EDP are being observed, but the EDP does not explicitly grant project leads any special powers to make technical decisions on behalf of the project team.
+
+As the first link in the project leadership chain, one important power granted to project leads by the EDP is the ability to retire committers who are working against the interests of the team. This is essentially the nuclear option (per Merriam-Webster, “an extreme option regarded as a drastic step or last resort”) and it should be used with care.
+
+[[roles-pmc]]
+== Project Management Committee
 
 A project management committee (PMC) is responsible for the operation of exactly one top-level project as defined by the {edpLink} (EDP). Per the EDP, top-level projects sit at the top of the open source project hierarchy. 
 
@@ -21,7 +70,7 @@ The PMC is responsible for defining and managing the structure of the top level 
 
 The PMC provides other oversight regarding the operation of open source projects. They review and approve release and progress review materials, and facilitate cross-project communication within the top level project.
 
-== Composition
+=== Composition
 
 A PMC has one or more PMC leads and zero or more PMC Members. Together the PMC provides oversight and overall leadership for the projects that fall under their top Level project. The PMC as a whole, and the PMC leads in particular, are ultimately responsible for ensuring that the Eclipse Development Process (EDP) is understood and followed by their projects. The PMC is additionally responsible for maintaining the top level project's charter.
 
@@ -31,7 +80,7 @@ The PMC Lead is appointed by the Eclipse Foundation's Board of Directors. When a
 
 PMC Members are appointed by the EMO(ED). The criteria by which PMC members are identified varies by PMC, but is generally by nomination and election within the existing PMC. Some PMCs are designed to be composed of representatives from some subset of the projects that operate under their purview. In such a case, the means of identifying members should be documented in the corresponding top-level project charter.
 
-== PMC Role in the Intellectual Property Due Diligence Process
+=== PMC Role in the Intellectual Property Due Diligence Process
 
 The PMC is responsible for ensuring that project teams abide by the Eclipse IP Policy and implementing the Eclipse Intellectual Property (IP) Due Diligence process. 
 
@@ -50,25 +99,25 @@ Finally, we depend on the PMC to use their knowledge and experience with their c
 
 Some PMCs make additional requirements; we can discuss what those additional requirements might be, but I recommend that you defer considering that until a need is demonstrated.
 
-=== Project Content
+==== Project Content
 
 Is the contribution in scope.
 
-=== Third Party Content
+==== Third Party Content
 
-== PMC Role in Elections
+=== PMC Role in Elections
 
 The PMC reviews and approves (or vetos) committer elections, first validating that candidate committers have demonstrated sufficient merit. 
 
-== PMC Role in Reviews
+=== PMC Role in Reviews
 
 Literally put a `pass:[+1]` on the email thread when approving a review.
 
-== PMC Role in Grievance Handling
+=== PMC Role in Grievance Handling
 
 The PMC is a link in the project leadership chain. As such, the PMC has a role in the grievance handling process: they identify and document project dysfunction (with the responsibility to remove or replace disruptive committers).
 
-== The PMC Mailing list
+=== The PMC Mailing list
 
 We set the "pmc" list as the "dev" list for top level projects. This list is the primary means that the EMO and the Eclipse Foundation processes (e.g. committer elections) use to interact with the PMC.
 
@@ -85,3 +134,4 @@ PMC Leads are are not elected. They are vetted by the EMO, approved by the Eclip
 In the unlikely event that a member of the PMC becomes disruptive to the process or ceases to contribute for an extended period, the member may be removed by the unanimous vote of the remaining PMC members, subject to approval by the EMO. Removal of a PMC Lead requires approval of the Board.
 
 Every PMC is entitled to appoint one representative to each of the Eclipse Architecture and Planning Councils. The Architecture Council’s main roles are to provide general architectural oversight for projects, and maintain the EDP. In particular, a representative of EE4J on the Architecture Council could advocate for modifications to the Eclipse Development Process if there are requirements that are counter-productive for a large runtime project such as EE4J.
+
