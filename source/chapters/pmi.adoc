@@ -154,6 +154,24 @@ Repositories are displayed in the order they are specified. The order can be cha
 
 A _Contribution Message_ should be provided; it is displayed at the top of the section and is one of the primary means by which the community will find the project code. Arbitrary text is permitted, but we recommend that you limit this content to a single paragraph with a few sentences that include a link to more information.
 
+[[pmi-project-logos]]
+==== Project Logos
+
+Any member of the project team can set the project's logo. The logo will be resized to a maximum of 200x200 pixels. Project logos are considered trademarks of the Eclipse Foundation (see <<trademarks-project-logo>> for more information).
+
+[TIP]
+====
+The Eclipse Foundation will use your logo to promote your project. Be sure to create your project logo with a transparent background so that it will display well on arbitrary background colors.
+====
+
+Any committer or project lead can set the logo for their own project. To set the project logo: 
+
+* Log into the PMI;
+* Navigate to the <<pmi-project-page,project page>>;
+* click <<pmi-editing,_Edit_>>;
+* Open the section labeled _Basics_; and
+* Upload your logo to the _Logo_ field.
+
 [[pmi-company-logos]]
 ==== Company Logos
 

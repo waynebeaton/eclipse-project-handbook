@@ -165,15 +165,25 @@ The complete description can certainly include much more information, but starti
 Project teams may seek guidance from the PMC and EMO to ensure that the text is a proper trademark goods description; i.e. one that describes the specific functionality of the software available for download and use.
 
 [[trademarks-project-logo]]
-=== Logos And Graphics
+=== Logos and Graphics
 
-All {forgeName} projects are encouraged to create a unique logo to identify their project. Projects teams can engage a graphic design crowdsourcing site or similar service to create a logo. The project leader and committers are responsible for setting up the design process and providing the feedback to the graphic designers. Based on past experience, faster and more detailed feedback to the designers yields better results.
+All {forgeName} projects are encouraged to create a unique logo to identify their project. 
 
-Logos are important to recognize as trademarks as well. For a project's official logo (if it has one, and especially if it uses the Eclipse Logo in any way), the designer must ensure that it includes a small trademark (™)  or registered trademark (®) symbol (as appropriate) in the graphic or immediately adjacent to it.
+[TIP]
+====
+The Eclipse Foundation will use your logo to promote your project. Be sure to create your project logo with a transparent background so that it will display well on arbitrary background colors. Square logos are preferred and we recommend that the logo be sized to display well at the 200x200 pixels resolution maximum permitted by the project metadata.
+====
 
-Projects may request to use the Eclipse logo within their project logo, or otherwise create a derivative of the Eclipse logo. However, they must contact the EMO (via a {emoApprovalsUrl}[Bugzilla record]) to request the Eclipse Foundation's Board of Directors' permission to do so.
+Logos are important to recognize as trademarks. For a project's official logo, the designer must ensure that it includes a small trademark (™)  or registered trademark (®) symbol (as appropriate) in the graphic or immediately adjacent to it.
 
-The Eclipse Foundation will help fund the creation of project logos. A project leader or committer will have to pay for the logo design in advance. Once the logo is created, the project can then send the invoice to the Eclipse Foundation {marketingEmail}[marketing team]. The Foundation will reimburse up to 500{euro} for the logo design. Please also feel free to contact the Foundation marketing team with any questions about the logo design.
+Projects may request to use an Eclipse logo within their project logo, or otherwise create a derivative of the Eclipse logo. However, they must contact the EMO (via a {emoApprovalsUrl}[Bugzilla record]) to request the Eclipse Foundation's Board of Directors' permission to do so.
+
+Projects teams can engage a graphic design crowdsourcing site or similar service to create a logo. The project leader and committers are responsible for setting up the design process and providing the feedback to the graphic designers. Based on past experience, faster and more detailed feedback to the designers yields better results. The Eclipse Foundation will help fund the creation of project logo. A project leader or committer will have to pay for the logo design in advance. Once the logo is created, the project can then send the invoice to the Eclipse Foundation {marketingEmail}[marketing team]. The Foundation will reimburse up to {euro}500 for the logo design. Project team members should contact the Eclipse Foundation's marketing team with any questions regarding logo design.
+
+[NOTE]
+====
+Add your project logo to your project's metadata via the <<pmi-project-logos,PMI>>.
+====
 
 [[trademarks-website]]
 === Project Website Branding
