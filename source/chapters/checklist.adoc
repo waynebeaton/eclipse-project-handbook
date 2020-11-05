@@ -1,5 +1,5 @@
 ////
- * Copyright (C) 2015 Eclipse Foundation, Inc. and others. 
+ * Copyright (C) Eclipse Foundation, Inc. and others. 
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
@@ -9,51 +9,58 @@
 ////
 
 [[checklist]]
-== Project Checklist
+= Project Checklist
 
-This checklist is provided as a convenience and is included primarily as a guideline or tool to ensure that {forgeName} projects are doing the right sorts of things to attract community and grow. We've tried to strike a balance between being concise while being comprehensive. 
+This checklist is provided as a convenience and is included primarily as a guideline or tool to ensure that {forgeName} projects are doing the right sorts of things to attract community and grow. 
+
+[TIP]
+====
+With this checklist, we've tried to strike a balance between being concise while being as comprehensive as possible. Many of the entries apply for specific technologies only. If an entry on the list doesn't make sense for some particular type of technology in your project, skip it (e.g., file headers do not make sense for JSON content).
+====
 
 The Eclipse Foundation staff and Project Management Committee members will use this checklist as part of their evaluation during a <<release-review,Release Review>>.
 
-All projects must conform to the <<trademarks,branding guidelines>> before engaging in any Release or Graduation Review (specific examples are described below).
+All projects must conform to the <<trademarks,branding guidelines>> before engaging in any <<release-review,release>> or <<release-graduation,graduation>> review (specific examples are described below).
 
 [discrete]
 == General
 
-* Project is operating within the charter of the Top Level Project; 
+* Project is operating within the mission and scope defined in its top-level project's charter; 
 * Project is operating within the bounds of its own scope;
+* Project is operating in an open and transparent manner;
+* All distributed <<ip-third-party,third-party>> content has been approved by the IP Team;
 * Project content correctly uses Eclipse Foundation trademarks; and
 * Project content (code and documentation) does not violate trademarks owned by other organizations.
 
 [discrete]
-=== Code
+== Code
 
 * All project code is managed in source code repositories provided by The Eclipse Foundation;
-* All source files include a copyright and license header;
-* All project source code repositories include a https://wiki.eclipse.org/Architecture_Council/Contributor_Guide_Recommendation[CONTRIBUTING] file
-(or equivalent) in the root;
-* Naming Conventions followed:
+* Naming conventions followed:
 ** e.g. `{namespace}.<shortname>.<component>[.*]` for Java packages and OSGi Bundles;
 * Provider information is set to the project's formal name:
 ** e.g. the `Bundle-Vendor` entry set to "Eclipse Foo" in OSGi Bundles; or
 ** e.g. the `project` and `organization` names are set to "{forgeName} Foo" in Maven `pom.xml` files;
-* Every module contains an `about.html` file as required by the {legalDocumentationUrl}[guide to the legal documentation]; and
-* Features names and descriptions are captured, are spelled correctly, use proper grammar, and contain content that is actually useful for the intended audience.
+* <<legaldoc,Legal documentation>> is provided:
+** All source files include a copyright and license header (when technically feasible);
+** All source code repositories include a <<legaldoc-license, `LICENSE`>> file (or equivalent) in the root; and
+** All source code repositories include a <<legaldoc-notice, `NOTICES`>> file (or--for projects that produce Eclipse Platform plug-ins--`about.html` files as described by the <<legaldoc-plugins>>); 
+* All source code repositories include a <<legaldoc-contributor, `CONTRIBUTING`>> file (or equivalent) in the root; and
+* All feature names and descriptions are captured, are spelled correctly, use proper grammar, and contain content that is actually useful for the intended audience.
 
 [discrete]
-=== Downloads
+== Downloads
 
-Most projects provide binary/compiled _downloads_ of their software, intended for consumption by their various communities. If the project does not provide downloads, then that should be stated on the project's website.
+Many projects provide binary/compiled _downloads_ of their software, intended for consumption by their various communities. 
  
-* All generated artifacts include only intellectual property that has been subject to the IP Due Diligence Process;
-* All distributed third-party content has been approved by the IP Team;
-* The project website and PMI page includes links for artifacts;
+* All generated artifacts include only intellectual property that has been subject to the <<ip,IP Due Diligence Process>>;
+* The project website and <<pmi-project-page, project page>> includes links for artifacts;
 * <<starting-incubation-branding,Incubation branding>> (when applicable) is included on distributed artifacts; 
 * All download artifacts are (if technical feasible) {jarSigningUrl}[signed]; and
 * Subject to limitations of specific technologies, the {versionNumberingUrl}[Version numbering] rules are followed.
 
 [discrete]
-=== Project Metadata
+== Project Metadata
 
 Project metadata is specified and maintained using the <<pmi, Project Management Infrastructure>>.
 
@@ -64,7 +71,7 @@ Project metadata is specified and maintained using the <<pmi, Project Management
 * Download links and information are up-to-date.
 
 [discrete]
-=== Release Metadata
+== Release Metadata
 
 Release metadata is specified and maintained using the <<pmi, Project Management Infrastructure>>. Project teams are required to create a metadata entry for every official release (including major, minor, and service releases).
 
@@ -77,7 +84,7 @@ Use the <<pmi-commands-release, Create a new release>> command on a specific <<p
 ==== 
 
 [discrete]
-=== Development Website
+== Development Website
 * Is hosted on Eclipse Foundation-provided infrastructure;
 * Uses the formal name including appropriate marks, e.g. _{forgeName} Foo(TM)_, on the page title, first mention in the text, and on all prominent references to the project;
 * <<starting-incubation-branding,Incubation branding>> (when applicable) is displayed; 
@@ -85,21 +92,21 @@ Use the <<pmi-commands-release, Create a new release>> command on a specific <<p
 * The <<trademarks-website-footer,standard navigation>> links (e.g. `{wwwUrl}`) are included in the website footer.
 
 [discrete]
-=== Logos and graphics
-* Project logo includes the trademark symbol; and
-* Are used consistently.
+== Logos and graphics
+* <<trademarks-project-logo,Project logo>> includes the trademark symbol; and
+* Project logo is used consistently.
 
 [discrete]
-=== Company Logos
+== Company Logos
 
 Company logos may optionally be included on a project website, but only if the following conditions are met.
 
-* The company is a http://eclipse.org/membership/[member] of the Eclipse Foundation;
+* The company is a {memberUrl}[member] of the Eclipse Foundation;
 * At least one project committer is an employee of the company in question; and
-* The committer is active (i.e. they have made at least one commit in the last three months)
+* The committer is active (i.e. they have made at least one commit in the last three months).
 
 [discrete]
-=== Community Portals and Related Websites
+== Community Portals and Related Websites
 
 <<trademark-external-community,Community portals>>, regardless of who owns and maintains them must conform to the branding guidelines. If you discover a website that does not conform to these guidelines (and it is not within your power to effect the changes yourself), send a note to mailto:{emoEmail}[EMO] to request assistance.
 
@@ -112,7 +119,7 @@ Company logos may optionally be included on a project website, but only if the f
 * The domain is regarded and used exclusively as a community portal (i.e. is is not presented as the official project website).
 
 [discrete]
-=== Announcements, News items, Blog posts, ...
+== Announcements, News items, Blog posts, ...
 
 All announcements regarding project milestones issued by the project must conform to the branding guidelines.
 
