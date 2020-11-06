@@ -223,18 +223,6 @@ The following minimal set of links must be included on the footer of all pages i
 An appropriate footer is included automatically by the default website infrastructure and the PMI.
 ====
 
-[[trademarks-metadata]]
-=== Project Metadata
-
-All Projects must keep their metadata updated regularly in the central <<pmi, Project Management Infrastructure>> (PMI). Projects must ensure that all metadata is kept up-to-date in the PMI tool to ensure that other infrastructure tools and processes can make connections to and disseminate information for  the project.
-
-The project description, scope, and other free-form text fields in the PMI must conform to the project naming guidelines. 
-
-[NOTE]
-====
-The PMI supports teasers or summaries for many fields; ensure that these teasers also conform to the guidelines.
-====
-
 [[trademarks-code]]
 === Code Namespaces
 
