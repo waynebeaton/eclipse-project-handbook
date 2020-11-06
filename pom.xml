@@ -23,13 +23,11 @@ SPDX-License-Identifier: EPL-2.0
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<apache.tika.version>1.16</apache.tika.version>
 		<asciidoctor.maven.plugin.version>2.1.0</asciidoctor.maven.plugin.version>
 		<asciidoctorj.version>2.4.1</asciidoctorj.version>
 		<asciidoctorj.diagram.version>2.0.2</asciidoctorj.diagram.version>
 		<asciidoctorj.pdf.version>1.5.3</asciidoctorj.pdf.version>
 		<jruby.version>9.2.13.0</jruby.version>
-		<epub.source>${project.build.directory}/generated-docs</epub.source>
 	</properties>
 
 	<build>
