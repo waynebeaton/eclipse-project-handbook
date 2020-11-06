@@ -116,7 +116,7 @@ To become a contributor, an individual must:
 
 [NOTE]
 ====
-If you are already a committer, your committer agreement includes an ECA; so you’re already covered. If your employer is a member of the Eclipse Foundation and your employer has signed the <<contributing-mcca,Member Committer and Contributor Agreement>> (MCCA), then you’re already covered. You can check your status on the <<contributing-account, Eclipse Foundation account>> page (your ECA status is in the top-right corner). If you’re not sure contact mailto:{emoRecordsEmail}[EMO Records] for assistance.
+If you are already a committer, your committer agreement includes an ECA; so you’re already covered. If your employer is a member of the Eclipse Foundation and your employer has signed the <<paperwork-mcca,Member Committer and Contributor Agreement>> (MCCA), then you’re already covered. You can check your status on the <<contributing-account, Eclipse Foundation account>> page (your ECA status is in the top-right corner). If you’re not sure contact mailto:{emoRecordsEmail}[EMO Records] for assistance.
 ====
 
 Regular contributors of high quality content shoul be invited to join the specification project team as a committer (via <<elections-committer, committer election>>).
@@ -262,7 +262,7 @@ During the development cycle, the project team will produce one or more _milesto
 A milestone build must never be used to claim compatibility with a specification. An implementation of a specification may only be considered _compatible_ when it is based on a <<specifications-final,_final specification_>>.
 ====
 
-A development cycle begins when a either a creation review or a <<specifications-plan,plan review>> is declared successful. A specification project team must engage in a <<specifications-progress,_progress review_>> when a development cycle exceeds one year in duration. 
+A development cycle begins when a either a creation review or a <<specifications-plan-review,plan review>> is declared successful. A specification project team must engage in a <<specifications-progress-review,_progress review_>> when a development cycle exceeds one year in duration. 
 
 [[specifications-progress-review]]
 === Progress Review
@@ -283,7 +283,7 @@ At the end of every development cycle, the project team must produce a _release 
 
 [TIP]
 ====
-To engage in a release review, create a <<pmi-release, release record>> (if one has not already been created as part of the planning process) and contact the mailto:{emoEmail}[EMO] to schedule the review. Your PMC and specification committee may provide additional requirements and documentation that must be met to get their approval of the review.
+To engage in a release review, create a <<pmi-releases, release record>> (if one has not already been created as part of the planning process) and contact the mailto:{emoEmail}[EMO] to schedule the review. Your PMC and specification committee may provide additional requirements and documentation that must be met to get their approval of the review.
 ====
 
 [[specifications-plan-review]]
@@ -295,7 +295,7 @@ The plan itself must be in-scope (i.e. all new work must fall within the bounds 
 
 [TIP]
 ====
-To engage in a plan review, create a <<pmi-release, release record>> and contact the mailto:{emoEmail}[EMO] to schedule a review.
+To engage in a plan review, create a <<pmi-releases, release record>> and contact the mailto:{emoEmail}[EMO] to schedule a review.
 ====
 
 After the Plan is approved, the Project Team engages in Development as before.
@@ -303,7 +303,7 @@ After the Plan is approved, the Project Team engages in Development as before.
 [[specifications-final]]
 === Final Specification
 
-Following a successful release review, the final release version of the specification artifacts are considered _ratified_ and transmogrifies into what the EFSP refers to as a _final specification_. It is the final specification that must be used to build <<specifications-implementation,compatible implementations>>.
+Following a successful release review, the final release version of the specification artifacts are considered _ratified_ and transmogrifies into what the EFSP refers to as a _final specification_. It is the final specification that must be used to build <<specifications-implementations,compatible implementations>>.
 
 All versions of specifications that are referenced by a ratified final specification must themselves be ratified. The <<specifications-release-review,release review>> for related specification versions may be run concurrently.
 

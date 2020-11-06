@@ -85,7 +85,7 @@ The entry point into the IP Due Diligence Process is the <<ip-cq,Contribution Qu
 
 {clearlyDefinedUrl}[ClearlyDefined] is an OSI project that combines automated harvesting of software repositories and curation by trusted members of the community to produce a massive database of license (and other) information about content. The Eclipse Foundation's IP Team works closely with the ClearlyDefined team, providing input into their processes and helping to curate their data.
 
-In rough terms, if the license information for third-party content can be validated by the Eclipse Foundation's <<ip-prereq-due-diligence, due diligence process>> using ClearlyDefined data, then no further action is required (i.e., no <<ip-cq,CQ>> is required).
+In rough terms, if the license information for third-party content can be validated by the Eclipse Foundation's <<ip-prereq-diligence, due diligence process>> using ClearlyDefined data, then no further action is required (i.e., no <<ip-cq,CQ>> is required).
 
 [[ip-clearlydefined-identifiers]]
 ==== ClearlyDefined Identifiers
@@ -223,7 +223,7 @@ When the contributor has signed the <<contributing-eca, Eclipse Contributor Agre
 * Contains no cryptography; and
 * Is it less than 1,000 lines of code, configuration files, and other forms of source code.
 
-If all of these conditions have **not** been met, then a project committer must <<ip-project-code-cq, open a CQ>> to request review by the IP Team before the contribution is pushed/merged.
+If all of these conditions have **not** been met, then a project committer must <<ip-project-content-cq, open a CQ>> to request review by the IP Team before the contribution is pushed/merged.
 
 [TIP]
 ====

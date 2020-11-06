@@ -29,7 +29,7 @@ All {forgeName} open source projects may use the _{forgeName}_ brand. Other bran
 The brand that is associated with a particular project is used on the corresponding <<pmi-project-page, project page>>.
 ====
 
-The <<trademarks-formal-name,formal name>> of all {forgeName} open source projects starts with a brand. The brand should not generally be concatenated with any other words (there are some historical exceptions).
+The <<trademarks-project-formal,formal name>> of all {forgeName} open source projects starts with a brand. The brand should not generally be concatenated with any other words (there are some historical exceptions).
 
 [[trademarks-background]]
 === Naming and Trademarks
@@ -53,6 +53,7 @@ Who needs these requirements?
 
 All project and product names must be vetted and approved by the EMO.
 
+[[trademarks-registered]]
 ==== Registered Trademarks
 
 Project teams may request legal trademark registration for their project or product name. Since trademark registration requires a significant investment in time money and ongoing maintenance  project teams must work with the EMO to determine whether trademark registration is necessary, determine in which jurisdictions the trademark must be registered, and how that registration will impact the project (e.g. adding registration marks on the website and in products).
@@ -201,7 +202,7 @@ All primary links to the project (including, for example, the project’s contri
 [[trademarks-website-name]]
 ==== Name References
 
-The first reference to a project or product on every web page--especially in page titles or headers--must use the <<trademarks-formal-name,formal name>> and must include the relevant trademark (™) or registered trademark (®) symbol (e.g. _{forgeName} Woolsey Intellectual Property Tools™_). When a webpage features an otherwise prominent reference to the project or product (e.g. in a callout), that reference should also use the formal name. Other references may use  the nickname or acronym (e.g. _{forgeName} Woolsey_ or _Woolsey_) as appropriate.
+The first reference to a project or product on every web page--especially in page titles or headers--must use the <<trademarks-project-formal,formal name>> and must include the relevant trademark (™) or registered trademark (®) symbol (e.g. _{forgeName} Woolsey Intellectual Property Tools™_). When a webpage features an otherwise prominent reference to the project or product (e.g. in a callout), that reference should also use the formal name. Other references may use  the nickname or acronym (e.g. _{forgeName} Woolsey_ or _Woolsey_) as appropriate.
 
 [[trademarks-website-footer]]
 ==== Footers
