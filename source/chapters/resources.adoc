@@ -253,7 +253,9 @@ This list is not exhaustive. Project leads should work with their PMC and the EM
 [[resources-dockerhub]]
 ==== DockerHub
 
-The Eclipse Foundation owns several organizations on DockerHub, including https://hub.docker.com/u/eclipse/[eclipse], https://hub.docker.com/u/locationtech/[locationtech], and https://hub.docker.com/u/polarsys/[polarsys], but does not formally support or strictly manage the use of these organizations. Due to manner in which permissions are managed, membership in the _owners_ team for these organizations is required to create new repositories. The project's PMC or the mailto:{emoEmail}[EMO] can grant membership in this team to designated committers for projects that require this access. The EMO periodically reviews membership in the teams associated with these organizations and will remove members who are not active committers. Repositories created in these organizations must follow the pattern `<organization>/<shortname>[-<component>]` (e.g. `eclipse/che-server`).
+The Eclipse Foundation owns several organizations on DockerHub, including https://hub.docker.com/u/eclipse/[eclipse], https://hub.docker.com/u/locationtech/[locationtech], and https://hub.docker.com/u/polarsys/[polarsys], but does not formally support or strictly manage the use of these organizations. 
+
+For more information, please see https://wiki.eclipse.org/CBI#Docker_Hub[CBI/DockerHub] in the Eclipse wiki.
 
 [NOTE]
 ====
