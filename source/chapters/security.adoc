@@ -65,7 +65,7 @@ The Eclipse Foundation is a {cveUrl}[Common Vulnerabilities and Exposures] (CVE)
 
 Whether or not a vulnerability requires a CVE is decided by the project team with assistance from their PMC (if required).
 
-To request a CVE Number assignment, the vulnerability must be captured in a Eclipse Bugzilla record. The project team can track work on a vulnerability elsewhere, but the vulnerability reporting is tracked via Bugzilla. 
+To request a CVE Number assignment, the vulnerability must be captured in an Eclipse Bugzilla record. If a record for the vulnerability report does not already exist, a _project committer_ must {vulnerabilityReportUrl}[create one]. The project team can track work on a vulnerability elsewhere, but the vulnerability reporting is tracked via Bugzilla. 
 
 [TIP]
 ====
