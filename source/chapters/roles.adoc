@@ -82,20 +82,25 @@ PMC Members are appointed by the EMO(ED). The criteria by which PMC members are 
 
 === PMC Role in the Intellectual Property Due Diligence Process
 
-The PMC is responsible for ensuring that project teams abide by the Eclipse IP Policy and implementing the Eclipse Intellectual Property (IP) Due Diligence process. 
+The Eclipse IP Team has limited technical knowledge and so relies on the PMC to use their relationship with the open source projects operating under their purview, their knowledge and experience with the community and related technology to provide technical insight. Specifically, the IP Team depends on the PMC to use their knowledge and experience with their community and technology to flag any potential issues that may not be obvious.
 
-Further, the Eclipse IP Team has limited technical knowledge and so relies on the PMC to provide technical insight.
+The PMC might, for example, know that the license for some content had been, at some point in the past, changed; or that some particular piece of content links in some non-obvious manner to other intellectual property that should also be vetted.
+
+PMC members should highlight issues directly on the CQ. The IP Team interprets a `pass:[+1]` as _no known issues_.
+
+[TIP]
+====
+The PMC should not perform any detailed analysis of content. The IP Team will engage in detailed analysis, identify license compatibility issues, and determine whether or not license headers have been appropriately applied, for example.
+====
 
 
-One of the key responsibilities of the PMC is to ensure that projects are following the Eclipse Intellectual Property Process. In that regard, the PMC has a role in the intellectual property vetting process. Specifically, we need the PMC to approve contribution questionnaires (CQ).
+In part, PMC approval of an intellectual property contribution (a <<ip-cq,contribution questionnaire>> or CQ) means that the PMC believes that the addition of the contribution to the project makes technical sense, but from an intellectual property perspective (that is, does it make sense to incorporate this intellectual property into the project?) 
 
-The criteria by which a PMC grants approval of a CQ varies by PMC. 
+
 
 At least in part, PMC approval is required to ensure that the PMC is actively engaged with the project that operate under their purview in the event that the EMO requires some assistance working with the project (the PMC member that approves a CQ becomes an obvious contact should the IP Team require your assistance). 
 
-In part, PMC approval of CQ means that the PMC believes that the contribution represented by the CQ makes technical sense, but from an intellectual property perspective (i.e. does it make sense to incorporate this contribution into the project?). 
 
-Finally, we depend on the PMC to use their knowledge and experience with their community and technology to flag any potential issues that may not be obvious to our intellectual property due diligence team (e.g. you know that the license for some content was changed). 
 
 Some PMCs make additional requirements; we can discuss what those additional requirements might be, but I recommend that you defer considering that until a need is demonstrated.
 
@@ -134,4 +139,12 @@ PMC Leads are are not elected. They are vetted by the EMO, approved by the Eclip
 In the unlikely event that a member of the PMC becomes disruptive to the process or ceases to contribute for an extended period, the member may be removed by the unanimous vote of the remaining PMC members, subject to approval by the EMO. Removal of a PMC Lead requires approval of the Board.
 
 Every PMC is entitled to appoint one representative to each of the Eclipse Architecture and Planning Councils. The Architecture Council’s main roles are to provide general architectural oversight for projects, and maintain the EDP. In particular, a representative of EE4J on the Architecture Council could advocate for modifications to the Eclipse Development Process if there are requirements that are counter-productive for a large runtime project such as EE4J.
+
+== Frequently Asked Questions
+
+[qand]
+
+Is the Project Lead a super-committer? ::
+
+A project lead is not a super committer or anything like that. Committer and project lead are two different roles. A project lead is almost always also a committer. Most privileges on an Eclipse open source project are given to committers. I say most privileges, because we're always trying to sort out how to give project leads more privileges in GitHub and GitLab (e.g., Bug 533471).
 
