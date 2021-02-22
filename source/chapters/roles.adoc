@@ -114,6 +114,15 @@ Is the contribution in scope.
 
 The PMC reviews and approves (or vetos) committer elections, first validating that candidate committers have demonstrated sufficient merit. 
 
+PMC members can review elections that require their attention on the _Notifications_ page. 
+
+[TIP]
+====
+Click the drop-down next to "Welcome, <name>" to access the Notifications page.
+
+image::images/notifications.png[]
+====
+
 === PMC Role in Reviews
 
 Literally put a `pass:[+1]` on the email thread when approving a review.
