@@ -109,6 +109,8 @@ The security team will assign a CVE Number to the Bugzilla record as an _alias_,
 [[security-faq]]
 == Frequently Asked Questions
 
+[qanda]
+
 In what form should a disclosure be published? Is publishing the bug on the {knownVulnerabilitiesUrl}[Known Vulnerabilities page] enough? ::
 
 Publishing on the Known Vulnerabilities page will happen automatically. This is mimimal disclosure. Whether or not you should do more is a project team decision. If you  need help with that decision, connect with your PMC or the Security Team.
