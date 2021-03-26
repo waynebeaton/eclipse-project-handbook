@@ -358,7 +358,7 @@ The `CONTRIBUTING` file should make it very clear what are the steps a contribut
 It should:
 
 * Include very specific instructions on how contributions are accepted;
-* Indicate whether or not the project will accept GitHub pull requests, along with the necessary steps to have the project honor those requests;
+* Describe how to submit contributions (GitHub pull requests, GitLab merge requests, or Gerrit reviews), along with the necessary steps to have the project accept those requests;
 * Describe the legal part of the process for accepting contributions, e.g. point to the the {ecaUrl}[Eclipse Contributor Agreement] (ECA) and {dcoUrl}[Developer Certificate of Origin] (DCO); and
 * Describe any project specific rules, which the contributors should know, for example:
 ** preferences on code quality;

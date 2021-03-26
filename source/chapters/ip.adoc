@@ -214,7 +214,7 @@ A project cannot make a <<release, release>> until the due diligence on the IP c
 
 In general, contributions made by project committers do not require review and can be pushed directly into a project repository.
 
-Contributions by others (i.e., developers who are not committers on the receiving project) must be received via an Eclipse Foundation channel (e.g., GitHub pull request, Gerrit review, or attachment on an issue). 
+Contributions by others (i.e., developers who are not committers on the receiving project) must be received via an Eclipse Foundation channel (e.g., GitHub pull request, GitLab merge request, Gerrit review, or attachment on an issue). 
 
 When the contributor has signed the <<contributing-eca, Eclipse Contributor Agreement>> (ECA) and the following conditions are met, a CQ is not required:
 
