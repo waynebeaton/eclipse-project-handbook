@@ -235,7 +235,7 @@ The following rules apply:
 * One or more project *committers* must have ownership rights; and
 * The usual level playing field must be observed.
 
-Even when using services not hosted by the Eclipse Foundation, project teams are required to operate in an open, transparent, meritocratic, and vendor neutral manner. Use of the service must not add an unreasonable access barrier for contributors, and no single individual or company can exert exclusive control of the service. Administrative level control of the service must be shared by as diverse a subset of the project committers as possible, and a documented policy must be established for managing that control.
+Even when using services not hosted by the Eclipse Foundation, project teams are required to operate in an open, transparent, meritocratic, and vendor-neutral manner. Use of the service must not add an unreasonable access barrier for contributors, and no single individual or company can exert exclusive control of the service. Administrative level control of the service must be shared by as diverse a subset of the project committers as possible, and a documented policy must be established for managing that control.
 
 All services require that users conform to some sort of terms of use that likely dictate copyright and licensing terms. Project leads must take care to ensure that those terms of use are not at odds with the project license or impact the copyright ownership of project contributions.
 

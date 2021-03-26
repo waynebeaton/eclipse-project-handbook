@@ -27,7 +27,7 @@ Four basic principles lie at the heart of the EDP:
 * Transparency;
 * Openness;
 * Meritocracy; and
-* Vendor neutrality
+* Vendor-neutrality
 
 We refer to the first three as the "open source rules of engagement".
 
@@ -42,7 +42,7 @@ _Openness_ at {forgeName} means quite a lot more than "open book" (which is real
 Employment status has no bearing at whether or not somebody can participate in an open source project at {forgeName}. Employment does not guarantee committer status; committer status must be earned by everybody.
 ====
 
-_Vendor neutrality_ is similar to openness in that it's concerned with maintaining a level playing field. No vendor is permitted to dominate a project, and nobody can be excluded from participating in a project based on their employment status. While project resources will contain copyright statements that assert ownership of various assets by individual vendors, the project itself must remain vendor neutral.
+_Vendor-neutrality_ is similar to openness in that it's concerned with maintaining a level playing field. No vendor is permitted to dominate a project, and nobody can be excluded from participating in a project based on their employment status. While project resources will contain copyright statements that assert ownership of various assets by individual vendors, the project itself must remain vendor-neutral.
 
 Quality and intellectual property cleanliness are also important principles.
  

@@ -133,7 +133,7 @@ The Webmaster team is responsible for maintaining the IT infrastructure of the E
 	
 Working Group ::
 
-Eclipse {wgUrl}[Working Groups] provide a vendor neutral governance structure that allow organizations to freely collaborate on new technology development. 
+Eclipse {wgUrl}[Working Groups] provide a vendor-neutral governance structure that allow organizations to freely collaborate on new technology development. 
 
 Works With Dependency ::
 
