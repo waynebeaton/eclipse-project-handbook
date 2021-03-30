@@ -24,8 +24,7 @@ To contribute to {aForgeName} open source project, a contributor must:
 . Sign the <<contributing-eca,Eclipse Contributor Agreement>>;
 . Read the project's contribution guide to learn about coding style and other guidelines for contributions (contribution guidelines are typically found a `CONTRIBUTING` or `README` file in the root of every source code repository);
 . Create a commit:
- * Ensure that the author credentials on the commit record match the email address associated with their Eclipse Foundation Account, and
- * Ensure that all commits have been _Signed-off_;
+ * Ensure that the author credentials on the commit record match the email address associated with their Eclipse Foundation Account
 . Create a pull request (GitHub), merge request (GitLab), or submit a review (Gerrit); and
 . Work with the project team to merge the contribution.
 
@@ -132,9 +131,11 @@ It is generally considered good practice (or a nice-to-have) to request a review
 
 Do I need to sign the Eclipse Contributor Agreement (ECA)? ::
 
-If you are not a committer on an Eclipse open source project, to contribute (e.g., make pull requests) to that project, you need to be covered by an ECA. If you are already a committer on any Eclipse open source project, then you are already covered by an ECA through your committer agreement and do not need to sign the ECA separately. If your employer has signed the <<paperwork-mcca,Member Committer and Contributor Agreement>>, then you are already covered by an ECA and you do not need to sign the ECA separately.
+If you are not a committer on a particular Eclipse open source project, to contribute (e.g., make pull requests) to that project, you need to be covered by an ECA. If you are already a committer on any Eclipse open source project, then you are already covered by an ECA through your committer agreement and do not need to sign the ECA separately. If your employer has signed the <<paperwork-mcca,Member Committer and Contributor Agreement>>, then you are already covered by an ECA and you do not need to sign the ECA separately.
 +
 If you are a committer on a project you do not need an ECA to contribute to that project. 
++
+Assuming that you are empowered to do so, you can individually sign the ECA even if you are already covered by another agreement.
 
 How do I know if I’m covered by an Eclipse Contributor Agreement? ::
 

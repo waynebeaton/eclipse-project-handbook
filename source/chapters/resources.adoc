@@ -65,18 +65,16 @@ Date:   Wed May 29 16:17:36 2013 +0200
     
     Change-Id: Ia2bd5091303d1b0a738157effc24e4dac5a7d0c7 <3>
     Also-by: Some Bodyelse <somebodyelse@nowhere.com> <4>
-    Signed-off-by: Some Body <somebody@somewhere.com> <5>
 ------------------------------------------------------------
 
 <1> The email address of the author must match the email address on the Eclipse Foundation Account, the name "Some Body" must be replaced by the real name of the person.
 <2> Best practice: include the bug id in the commit message summary.
 <3> Gerrit `Change-Id` (only when pushing to Gerrit for review).
-<4> Additional authors can be added using `Also-by` or `Co-authored-by` entries, by replacing the name "Some Bodyelse" by the real name of the person
-<5> Non-committers must _sign-off_ the commit, indicating that they aware of the terms by which the contribution has been provided to the project, using the same name and email address as used in the author field.
+<4> Additional authors can be added using `Also-by` or `Co-authored-by` entries, by replacing the name "Some Bodyelse" by the real name of the person (use one entry per person).
 
 [IMPORTANT]
 ====
-The name used in the `Author` field (and, when required, in the `Also-by` and `Signed-off-by` fields) must be the legal name of the contributor; the email address must be valid and real.
+The name used in the `Author` field (and, when required, in the `Also-by`/`Co-authored-by` entries) must be the legal name of the contributor; the email address must be valid and real.
 ====
 
 The _summary_ line is used in many places where Git commits are listed, ensure that this line is sensible by itself. The _description_ area should be used to provide more detail about the commit. The footer area is used for extra fields and values.
@@ -87,7 +85,7 @@ The `Change-Id` is used by <<resources-gerrit,Gerrit Code Review>> to associate 
 
 An `Also-by` (or `Co-authored-by`) entry can be added for each additional author of a commit (one committer per entry). This might apply, for example, if a commit has been authored via pair-programming, or the commit is the result of collapsing multiple commits authored by multiple developers. To be considered valid the entry must take the form `Also-by: Name <email>`.
 
-Commits that are provided by non-committers must have a `Signed-off-by` field in the footer indicating that the author is aware of the terms by which the contribution has been provided to the project. To be considered valid the entry must take the form `Signed-off-by: Name <email>`. The non-committer must additionally have an Eclipse Foundation Account and must have a signed <<contributing-eca,Eclipse Contributor Agreement>> (ECA) on file.
+Authors who are not committers on the project receiving the commit must have an Eclipse Foundation Account and must have a signed <<contributing-eca,Eclipse Contributor Agreement>> (ECA) on file.
 
 [[resources-git]]
 === Git
@@ -131,17 +129,17 @@ Any committer can {gitHubRequestUrl}[open a bug] to request that the Eclipse Web
 
 The _Committers hook_ grants designated project committers write access to the GitHub-hosted project repositories. Project committers must add their GitHub id to their <<contributing-account,Eclipse Foundation account>>, and must use the email address they provide to the Eclipse Foundation as the email address in the author credentials of all commits. 
 
-The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect incoming GitHub pull requests to ensure that the contributor has a valid ECA on file, and that the commit has been `Signed-off-by` as required. Project committers should only merge pull _green_ requests:
+The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect incoming GitHub pull requests to ensure that the contributor has a valid ECA on file Project committers should only merge pull _green_ requests:
 
 .Notification that the commit is properly structured and permissions are in place.
 image::images/Github-cla-success.png[]
 
-Since the GitHub API does not provide a means of absolutely denying a merge the hook will warn committers that the contributors have not signed a ECA or that the commit message is not correctly structured:
+Since the GitHub API does not provide a means of absolutely denying a merge, the hook will warn committers that the contributors have not signed a ECA or that the commit message is not correctly structured:
 
 .Notification that there is something wrong with the commit.
 image::images/Github-cla-failure.png[]
 
-Click on the _Details_ link for more information. Committers must not merge commits unless they are absolutely certain that the contributer does have a valid ECA on file and the commit message includes the required `Signed-off-by` statement in the footer.
+Click on the _Details_ link for more information. Committers must not merge commits unless they are absolutely certain that the contributor does have a valid ECA on file.
 
 [NOTE]
 ==== 
@@ -306,4 +304,4 @@ Yes.
 
 Can an {aForgeName} project accept anonymous code contributions? ::
 
-No. All contributions must be associated with their author using their legal name and a real email address. In pragmatic terms, the contributor must provide their legal name and email address in the Git commit's `Author` field, and sign-off the commit using those same credentials; the contributor must also have electronically signed the ECA using those same credentials.
+No. All contributions must be associated with their author using their legal name and a real email address. In pragmatic terms, the contributor must provide their legal name and email address in the Git commit's `Author` field; the contributor must also have electronically signed the ECA using those same credentials.
