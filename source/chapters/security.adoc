@@ -63,48 +63,72 @@ Publicly disclosed issues are listed on the {knownVulnerabilitiesUrl}[Known Ecli
 
 The Eclipse Foundation is a {cveUrl}[Common Vulnerabilities and Exposures] (CVE) Numbering Authority.
 
-Whether or not a vulnerability requires a CVE is decided by the project team with assistance from their PMC (if required).
-
-To request a CVE Number assignment, the vulnerability must be captured in an Eclipse Bugzilla record. If a record for the vulnerability report does not already exist, a _project committer_ must {vulnerabilityReportUrl}[create one]. The project team can track work on a vulnerability elsewhere, but the vulnerability reporting is tracked via Bugzilla. 
-
 [TIP]
 ====
-Mark Bugzilla records as `committers-only` to prevent broad dissemination of the vulnerability before the project team has had a chance to get ahead of the issue.
+If you're not sure whether or not a CVE is required, err on the side of caution and request one.
+
+Think of a first CVE for your open source project as a rite of passage. Alerting your adopters of a vulnerability is a signal of maturity and responsibility. to the open source community.
 ====
 
-The Bugzilla record must provide:
-
-* The name of the impacted project and product;
-* A description of the versions impacted (which may include ranges);
-* A {cweUrl}[Common Weakness Enumeration] (CWE) code; and
-* A one or two sentence summary of the issue which clearly identifies the Eclipse project/product and impacted versions.
-
-The Bugzilla record may be augmented with additional information as required.
-
-.Example CVE Report data
-----
-project: Eclipse Vert.x
-
-version: [3.0, 3.5.1]
-
-cwe: CWE-93: Improper Neutralization of CRLF Sequences ('CRLF Injection')
-
-summary: In Eclipse Vert.x version 3.0 to 3.5.1, the HttpServer response 
-headers and HttpClient request headers do not filter carriage return and 
-line feed characters from the header value. This allow unfiltered values 
-to inject a new header in the client request or server response."
-----
-
-The record must be `RESOLVED/FIXED` and the `committers-only` flag must be turned off before the EMO can push the report to the central reporting authority.
-
-When all of the information is assembled and the vulnerability is ready for disclosure, a project team member must send a message to the mailto:{securityTeamEmail}[Security Team] with a request to assign a CVE Number and send the report to the central authority.
-
-The required information is rendered into the appropriate form by the EMO and forwarded to the central authority.
+Any project committer can request a CVE assignment, by creating a {cveRequestUrl}[CVE Request issue]. Upon creation, the request issue will be marked as confidential. 
 
 [NOTE]
 ====
-The security team will assign a CVE Number to the Bugzilla record as an _alias_, they will then notify the central authority, and -- when the report is accepted and posted -- add the central authority's link to the URL field of the bug.
+Project committers should only request a CVE when the timing for disclosure is imminent. Due to the nature by which CVEs are allocated to the Eclipse Foundation, there is some risk that _reserving_ a CVE for a protracted period of time may block other CVE assignment requests. Plan to disclose the CVE within two days of the CVE being assigned by the EMO.
 ====
+
+The request must provide:
+
+* The name of the impacted project and product;
+* A description of the versions impacted (which may include ranges);
+* A {cweUrl}[Common Weakness Enumeration] (CWE) code; 
+* A one or two sentence summary of the issue which clearly identifies the Eclipse project/product and impacted versions; and
+* A pointer (URL) to the issue used to track mitigation of the vulnerability.
+
+The request may optionally include additional information, such as a Common Vulnerability Scoring System (CVSS) code.
+
+.Example CVE Report data
+----
+Project name: Eclipse Vert.x
+
+Project id: rt.vertx
+
+Versions affected: [3.0, 3.5.1]
+
+Common Weakness Enumeration: 
+
+- CWE-93: Improper Neutralization of CRLF Sequences ('CRLF Injection')
+
+Summary: 
+
+In Eclipse Vert.x version 3.0 to 3.5.1, the HttpServer response 
+headers and HttpClient request headers do not filter carriage return and 
+line feed characters from the header value. This allow unfiltered values 
+to inject a new header in the client request or server response.
+
+Links:
+
+- https://bugs.eclipse.org/123456
+----
+
+The _Tracking_ section of the request issue includes some checkboxes for the project team and for the EMO. The EMO will assign the CVE upon receipt of the request, but will not escalate (that is, they will not report the assignment of the CVE to the central authority) until after a project committer clicks the first checkbox indicating that they are ready to disclose the vulnerability.
+
+****
+...
+
+*This section will completed by the project team*.
+
+* [ ] We're ready for this issue to be reported to the central authority (i.e., make this public now)
+* [ ] (when applicable) The GitHub Security Advisory is ready to be published now
+
+Note that for those projects that host their repositories on GitHub, the use of GitHub Security Advisories is recommended but is not required.
+
+...
+****
+
+Click the first checkbox when you're ready for the EMO to submit the request to the central authority (that is, when you're ready for the issue to be disclosed publicly). 
+
+If the project is using a {githubSecurityAdvisoryInfoUrl}[GitHub Security Advisory] to track mitigation of the vulnerability, EMO intervention will likely be required to submit the advisory. Click the second checkbox to indicate that you're ready for the EMO to submit the advisory on the project team's behalf.
 
 [[security-faq]]
 == Frequently Asked Questions
@@ -155,7 +179,3 @@ Do we need a <<vulnerability-cve,CVE>> for versions of software that we released
 The answer to this is not obvious, but as a general rule... no. The answer is not obvious because the continuity of the source of affected products may not be obvious (or relevant) to consumers, and it is not strictly wrong for a CVE Numbering Authority to create a CVE for a version of a product not immediately in their purview. 
 +
 Ultimately, whether or not we should create a CVE is the project team's call.
-
-Does the CVE process start after the disclosure? ::
-
-Sort of. You can start the process, but we need to remove the `committers-only` flag on the before we push the CVE to the central authority.
