@@ -87,38 +87,21 @@ An `Also-by` (or `Co-authored-by`) entry can be added for each additional author
 
 Authors who are not committers on the project receiving the commit must have an Eclipse Foundation Account and must have a signed <<contributing-eca,Eclipse Contributor Agreement>> (ECA) on file.
 
-[[resources-git]]
-=== Git
-
-Those projects that want to use Git on the {forgeName} forge, are assigned a directory in which they may create as many Git repositories as required. Committers may {gitRequestUrl}[open a bug] to request Eclipse Webmaster help to create a new Git repository for their project project. Alternatively, committers with shell accounts can create repositories themselves.
-
-[subs="attributes"]
-.Create a new Git repository
------------------------------------------------------
-> initrepo /gitroot/project/{namespace}.repo.name.git
------------------------------------------------------
-
-For consistency, the name of the repository must end with `.git`.
-
-To set the description of the repository, use `sftp` or `scp` to copy a text file to `/gitroot/project/{namespace}.repo.name.git/description`. Git repository descriptions should be limited to a paragraph of one or two sentences.
-
-Only project committers can push to {aForgeName} Git repository. A push that includes commits that do not conform to the required form will be rejected.
-
-[NOTE]
-==== 
-Anybody can {gitUrl}[browse] {forgeName} Git repositories. Use a project's short name to quickly jump to the project's Git repositories with a URL of the form  `pass:a,c[{gitUrl}/<shortname>]` (e.g. `pass:a,c[{gitUrl}/dash]` for repositories associated with the `technology.dash` project).
-====
-
-[[resources-gerrit]]
+[#resources-gerrit]
 === Gerrit Code Review
+
+[#resources-git]
 
 https://www.gerritcodereview.com/[Gerrit] provides web based code review and repository management for the Git version control system. Many projects use Gerrit to reduce barriers and encourage contribution to the project. {gerritRequestUrl}[Open a bug] to request that the Eclipse Webmaster configure your Git repository for Gerrit. 
 
-Commits may be pushed directly to the Git repository through Gerrit by a project committer (e.g. to the `master` branch).
+Commits may be pushed directly to the Git repository through Gerrit by a project committer (e.g. to the `main` branch).
 
-Anybody can push to a `refs/for/*` branch for review in a Gerrit repository. A push that includes commits that do not conform to the required form will be rejected. Commits intended for review should have a {gerritUrl}/Documentation/user-changeid.html[`Change-Id`]
+Anybody can push to a `refs/for/*` branch for review in a Gerrit repository. A push that includes commits that do not conform to the required form will be rejected. Commits intended for review should have a {gerritUrl}/Documentation/user-changeid.html[`Change-Id`]. The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect incoming Gerrit review requests to ensure that the contributor has a valid ECA on file; attempts to push will fail in the case where the author credentials cannot be matched to an Eclipse Foundation account with a signed ECA.
 
+[TIP]
+====
 You can {gerritUrl}[browse {forgeName} repositories] directly on the Gerrit server.
+====
 
 [[resources-github]]
 === GitHub
@@ -129,7 +112,7 @@ Any committer can {gitHubRequestUrl}[open a bug] to request that the Eclipse Web
 
 The _Committers hook_ grants designated project committers write access to the GitHub-hosted project repositories. Project committers must add their GitHub id to their <<contributing-account,Eclipse Foundation account>>, and must use the email address they provide to the Eclipse Foundation as the email address in the author credentials of all commits. 
 
-The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect incoming GitHub pull requests to ensure that the contributor has a valid ECA on file Project committers should only merge pull _green_ requests:
+The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect incoming GitHub pull requests to ensure that the contributor has a valid ECA on file. Project committers should only merge pull _green_ requests:
 
 .Notification that the commit is properly structured and permissions are in place.
 image::images/Github-cla-success.png[]
