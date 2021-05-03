@@ -1,0 +1,36 @@
+digraph {
+	bgcolor=transparent;
+	rankdir=LR;
+	splines=ortho;
+	
+	node [shape=box,style=filled,fillcolor=white,fontsize=12];
+	subgraph cluster_committers {
+		label="Eclipse Project"
+		/* 
+		 * We need unicode version 13 support to get a stick figure.
+		 * project_lead [label=<<FONT POINT-SIZE="24">🯅</FONT><br/>Project Lead>;shape=none;style=rounded];
+		 */
+		project_lead [label="Project Lead"];
+		committer [label="Committer"];		
+		contributor [label="Contributor"];
+	}
+	
+	subgraph cluster_github {
+		label="Github Organization";
+		committers;
+		leads;
+		contributors;
+		
+		repository[label="";shape="cylinder"];
+	}
+	
+	edge [fontsize=10;minlen=2];
+	project_lead -> leads [taillabel="*"];
+	committer -> committers [taillabel="*"];
+	contributor -> contributors [taillabel="*"];
+	
+	leads -> repository [taillabel="maintain";headlabel="*"];
+	committers -> repository [taillabel="push"];
+	contributors -> repository [taillabel="triage"];
+	
+}
