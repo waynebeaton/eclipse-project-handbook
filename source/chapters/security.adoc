@@ -67,7 +67,7 @@ The Eclipse Foundation is a {cveUrl}[Common Vulnerabilities and Exposures] (CVE)
 ====
 If you're not sure whether or not a CVE is required, err on the side of caution and request one.
 
-Think of a first CVE for your open source project as a rite of passage. Alerting your adopters of a vulnerability is a signal of maturity and responsibility. to the open source community.
+Think of a first CVE for your open source project as a rite of passage. Alerting your adopters of a vulnerability is a signal of maturity and responsibility to the open source community.
 ====
 
 Any project committer can request a CVE assignment, by creating a {cveRequestUrl}[CVE Request issue]. Upon creation, the request issue will be marked as confidential. 
