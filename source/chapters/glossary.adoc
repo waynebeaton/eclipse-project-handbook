@@ -34,7 +34,7 @@ Community is a nebulous sort of term. Community is the group of individuals and 
 
 Contribution Questionnaire ::
 
-Prior to committing a significant contribution of content from a non-committer to {aforgeName} project, the committer must fill out a <<ip-cq,contribution questionnaire>> (CQ) and submit it to the IP Team for approval. In addition to the EMO, the relevant PMC must also provide a technical review and approval of the contribution. In general, ongoing development by project committers does not require EMO or PMC approval. When in doubt, consult the {ipDueDiligenceUrl}[Eclipse IP Due Diligence Process].
+Prior to committing a significant contribution of content from a non-committer to {aforgeName} project, the committer must fill out a <<ip-cq,contribution questionnaire>> (CQ) and submit it to the IP Team for approval. In addition to the EMO, the relevant PMC must also provide a technical review and approval of the contribution. In general, ongoing development by project committers does not require EMO or PMC approval. When in doubt, consult the xref:ip[Eclipse IP Due Diligence Process].
 
 Contributor ::
 
