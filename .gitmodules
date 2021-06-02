@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2015 Eclipse Foundation
+#
+# SPDX-License-Identifier: EPL-2.0
+
 [submodule "source/efdp"]
 	path = source/efdp
 	url = https://github.com/EclipseFdn/EFDP

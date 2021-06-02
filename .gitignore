@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2015 Eclipse Foundation
+#
+# SPDX-License-Identifier: EPL-2.0
+
 # GEF 4 Dot support
 source/images/*.dot.pdf
 source/*.svg
