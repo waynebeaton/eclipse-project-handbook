@@ -39,10 +39,11 @@ e.g.
 
     git clone --recurse-submodules git://git.eclipse.org/gitroot/dash/org.eclipse.dash.handbook.git
 
-This project uses Bugzilla to track ongoing development and issues.
+This project uses GitLab issues to track ongoing development and issues.
 
-* Search for issues: https://bugs.eclipse.org/bugs/buglist.cgi?product=Dash&component=Handbook
-* Create a new report: https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Dash&component=Handbook
+* Search for issues: https://gitlab.eclipse.org/eclipse/dash/org.eclipse.dash.handbook/-/issues
+* Older bugs were being tracked in bugzilla: https://bugs.eclipse.org/bugs/buglist.cgi?product=Dash&component=Handbook
+* Create a new report: https://gitlab.eclipse.org/eclipse/dash/org.eclipse.dash.handbook/-/issues/new
 
 Be sure to search for existing bugs before you create another one. Remember that
 contributions are always welcome!
