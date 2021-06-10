@@ -55,7 +55,7 @@ An example project page is shown below. The _Overview_ page includes the name an
 
 image::images/project-page.png[]
 
-The URL for a project page takes the form `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`), where `pass:c,a[<projectid>]` is the qualified <<resources-identifers,identifier>> for the project.
+The URL for a project page takes the form `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`), where `pass:c,a[<projectid>]` is the qualified <<resources-identifiers,identifier>> for the project.
 
 [[pmi-commands-and-tools]]
 === Commands and Tools

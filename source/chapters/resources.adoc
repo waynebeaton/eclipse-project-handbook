@@ -19,13 +19,13 @@
 Open source projects at the Eclipse Foundation are _required_ to make use of certain Eclipse Foundation services:
 
 * All project issues must be tracked in the issue tracker assigned to the project;
-* Source code must be maintained in source code repositories assigned to the project (e.g. {aforgeName} {gitUrl}[Git] or {gerritUrl}[Gerrit] instance, or an organization on GitHub maintained by the Eclipse Foundation);
+* Source code must be maintained in source code repositories assigned to the project (<<resources-gitlab, Eclipse Foundation GitLab>>, <<resources-github, Eclipse Foundation-managed GitHub>>, or <<resources-gerrit, Eclipse Foundation Gerrit>>);
 * All third-party content used by the project must be <<ip-third-party,tracked and approved>> for use by the Eclipse IP Team;
-* Downloads must be distributed via {aForgeName} downloads server;
+* Downloads (when provided) must be distributed via {aForgeName} downloads server;
 * Developer (committer) communication must occur in the _dev-list_ provided to the project by the Eclipse Foundation; and
 * Projects must keep their <<pmi-metadata, Project Metadata>> up-to-date.
 
-[[resources-identifers]]
+[[resources-identifiers]]
 === Identifers
 Project resources make use of two sorts of ids:
 
@@ -92,32 +92,33 @@ An `Also-by` (or `Co-authored-by`) entry can be added for each additional author
 
 Authors who are not committers on the project receiving the commit must have an Eclipse Foundation Account and must have a signed <<contributing-eca,Eclipse Contributor Agreement>> (ECA) on file.
 
-[#resources-gerrit]
-=== Gerrit Code Review
+[#resources-gitlab]
+=== GitLab
 
-[#resources-git]
+The Eclipse Foundation maintains an instance of GitLab for use by {forgeName} open source projects. Project teams may opt to host some or all of their canonical source code repositories on our GitLab instance.
 
-https://www.gerritcodereview.com/[Gerrit] provides web based code review and repository management for the Git version control system. Many projects use Gerrit to reduce barriers and encourage contribution to the project. {gerritRequestUrl}[Open a bug] to request that the Eclipse Webmaster configure your Git repository for Gerrit. 
+Any committer can https://gitlab.eclipse.org/eclipsefdn/gitlab[create an issue] to request that the Eclipse Webmaster create a new repository on, or move an existing repository to, the GitLab instance for their project. Note that the Webmaster will verify the request with the project leads.
 
-Commits may be pushed directly to the Git repository through Gerrit by a project committer (e.g. to the `main` branch).
+All project committers are be granted _Developer_ level access to project resources hosted on GitLab.
 
-Anybody can push to a `refs/for/*` branch for review in a Gerrit repository. A push that includes commits that do not conform to the required form will be rejected. Commits intended for review should have a {gerritUrl}/Documentation/user-changeid.html[`Change-Id`]. The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect incoming Gerrit review requests to ensure that the contributor has a valid ECA on file; attempts to push will fail in the case where the author credentials cannot be matched to an Eclipse Foundation account with a signed ECA.
+all project leads are granted _Maintainer_ level access to their project's GitLab repositories.
 
-[TIP]
-====
-You can {gerritUrl}[browse {forgeName} repositories] directly on the Gerrit server.
-====
+The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook inspects incoming merge requests to ensure that the contributor has a valid ECA on file, and flags those that do no. Project committers should only accept merge requests that pass this validation.
 
 [[resources-github]]
 === GitHub
 
-Projects may opt to move some or all of their canonical source code repositories to an organization on GitHub that is maintained by the Eclipse Foundation. Both GitHub Issues and Wiki may also be used.
+Project teams may opt to host some or all of their canonical source code repositories to an organization on GitHub that is maintained by the Eclipse Foundation. Both GitHub Issues and Wiki may also be used.
 
-Any committer can {gitHubRequestUrl}[open a bug] to request that the Eclipse Webmaster create a new, or move an existing, Git repository into their project. The Eclipse Webmaster installs some _hooks_ onto all Eclipse project GitHub repository.
+Any committer can {gitHubRequestUrl}[open an issue] to request that the Eclipse Webmaster create a new repository for their project on, or move an existing repository to, GitHub. A project may have more than one repository on GitHub. When making the request, the committer should describe--specifically and concisely--what they want to make happen. Note that the Webmaster will verify the request with the project leads.
+
+Repositories can be hosted in the default `{forgeMachineName}` GitHub organization, or a dedicated organization can be created. Dedicated organizations use as their name, the conjunction of `{forgeMachineName}` with the project <<resources-identifiers,short name>> (e.g., `{forgeMachineName}-woolsey`).
+
+The Eclipse Webmaster installs some _hooks_ onto all {forgeName} project repositories on GitHub.
 
 The _Committers hook_ grants designated project committers write access to the GitHub-hosted project repositories. Project committers must add their GitHub id to their <<contributing-account,Eclipse Foundation account>>, and must use the email address they provide to the Eclipse Foundation as the email address in the author credentials of all commits. 
 
-The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect incoming GitHub pull requests to ensure that the contributor has a valid ECA on file. Project committers should only merge pull _green_ requests:
+The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect incoming GitHub pull requests to ensure that the contributor has a valid ECA on file. Project committers should only merge _green_ pull requests:
 
 .Notification that the commit is properly structured and permissions are in place.
 image::images/Github-cla-success.png[]
@@ -142,13 +143,24 @@ All project committers have write access to their project's repositories on GitH
 To gain write access to a project's GitHub repositories a developer must:
 
 * Be <<elections-committer, elected>> as a project committer; and
-* Provide their Github Id in their <<contributing-account,Eclipse Foundation Account>>.
+* Provide their GitHub Id in their <<contributing-account,Eclipse Foundation Account>>.
 
-To gain `admin` level access to their project's GitHub repositories, a project lead must {gitHubRequestUrl}[open a bug] against Community/GitHub. To be eligible to such permission level, the project must be in the mature phase and the request must be motivated; the project lead must explain why (on the bug) they need that access.
+Project leads are granted `admin` level access to their project's GitHub repositories.
+
+[#resources-gerrit]
+=== Gerrit Code Review
+
+[#resources-git]
+
+https://www.gerritcodereview.com/[Gerrit] provides web based code review and repository management for the Git version control system. Many projects use Gerrit to reduce barriers and encourage contribution to the project. {gerritRequestUrl}[Open a bug] to request that the Eclipse Webmaster configure your Git repository for Gerrit. 
+
+Commits may be pushed directly to the Git repository through Gerrit by a project committer (e.g. to the `main` branch).
+
+Anybody can push to a `refs/for/*` branch for review in a Gerrit repository. A push that includes commits that do not conform to the required form will be rejected. Commits intended for review should have a {gerritUrl}/Documentation/user-changeid.html[`Change-Id`]. The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect incoming Gerrit review requests to ensure that the contributor has a valid ECA on file; attempts to push will fail in the case where the author credentials cannot be matched to an Eclipse Foundation account with a signed ECA.
 
 [TIP]
 ====
-Granting `admin` level access is a relatively new feature. By providing an explanation why the access isr required, it will help the Eclipse Foundation's Webmaster team better understand requirements and guide the evolution of this feature.
+You can {gerritUrl}[browse {forgeName} repositories] directly on the Gerrit server.
 ====
 
 [[resources-issues]]
@@ -270,7 +282,7 @@ The Eclipse Release Engineering Team has provided some help regarding the use of
 === Frequently Asked Questions
 
 [qanda]
-Can a project use the _gh-pages_ support from Github to host at `<project>.github.io`?::
+Can a project use the _gh-pages_ support from GitHub to host at `<project>.github.io`?::
 
 The project's primary website must be hosted on Eclipse Foundation infrastructure. GitHub's _gh-pages_ support can be used to host supplementary content only as a <<trademark-external-community,Community Portal>> (and is subject to the branding requirements).
 
