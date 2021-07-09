@@ -93,7 +93,7 @@
 :ecaLink: {ecaUrl}[Eclipse Contributor Agreement]
 :ipDueDiligenceLink: <<ip, Eclipse Foundation Intellectual Property Due Diligence Process>>
 
-:clearlyDefinedMinimumScore: 75
+:clearlyDefinedMinimumScore: 60
 
 :euro: &#x20AC;
 
