@@ -215,18 +215,23 @@ A project cannot make a <<release, release>> until the due diligence on the IP c
 [[ip-project-content]]
 === Project Content
 
-[[ip-project-code]]Project Content is content that is managed by the project team. This includes content that is produced by project committers, along with content that is contributed to the project by outside contributors. Essentially, all source code that is contained in a source code repository that is owned and managed by the Eclipse Foundation on behalf of an open source project team is considered project content. We use "content" in a general sense, independent of any particular technology or means of delivery; code, scripts, documentation, and configuration files are all (non-exhaustive) examples content. 
+[[ip-project-code]]Project content is content that is managed by the project team. This includes content that is produced by project committers, along with content that is contributed to the project by outside contributors. Essentially, all content that is contained in a source code repository that is owned and managed by the Eclipse Foundation on behalf of {aForgeName} open source project team is considered project content. We use "content" in a general sense, independent of any particular technology or means of delivery; code, scripts, documentation, and configuration files are all (non-exhaustive) examples of content. 
 
-In general, contributions made by project committers do not require review and can be pushed directly into a project repository.
+Contributions made by {forgeName} committers **do not** require review by the Eclipse IP Team and can be pushed directly into a project repository. Notwithstanding project-specific rules, project committers can push their own content directly into project repositories. While content produced by other {forgeName} committers _does not_ require review by the Eclipse IP Team, it must still be accepted by project committers. Project committers should engage the {forgeName} IP Team if they have concerns regarding the provenance of any contribution.
 
-Contributions by others (i.e., developers who are not committers on the receiving project) must be received via an Eclipse Foundation channel (e.g., GitHub pull request, GitLab merge request, Gerrit review, or attachment on an issue). 
+Contributions by others (i.e., developers who are not committers) must be received via an Eclipse Foundation channel (e.g., GitHub pull request, GitLab merge request, Gerrit review, or attachment on an issue). 
+
+[NOTE]
+====
+Historically, the IP due diligence process treated committers from other projects as complete strangers. That is, historically, a contribution to a project by {aForgeName} committer from a different project were treated as though they came from a contributor. This is no longer the case: contributions authored by {forgeName} committers who are not project committers (that is, they are committers on one or more other Eclipse projects) do not require a CQ.
+====
 
 When the contributor has signed the <<contributing-eca, Eclipse Contributor Agreement>> (ECA) and the following conditions are met, a CQ is not required:
 
 * Was developed from scratch; written 100% by submitting contributor;
 * Was submitted under the terms of the project license;
 * Contains no cryptography; and
-* Is it less than 1,000 lines of code, configuration files, and other forms of source code.
+* Is contains fewer than 1,000 lines of code, configuration files, and other forms of source code.
 
 If all of these conditions have **not** been met, then a project committer must <<ip-project-content-cq, open a CQ>> to request review by the IP Team before the contribution is pushed/merged.
 

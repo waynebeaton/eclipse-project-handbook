@@ -20,8 +20,8 @@ Open source projects at the Eclipse Foundation are _required_ to make use of cer
 
 * All project issues must be tracked in the issue tracker assigned to the project;
 * Source code must be maintained in source code repositories assigned to the project (<<resources-gitlab, Eclipse Foundation GitLab>>, <<resources-github, Eclipse Foundation-managed GitHub>>, or <<resources-gerrit, Eclipse Foundation Gerrit>>);
-* All third-party content used by the project must be <<ip-third-party,tracked and approved>> for use by the Eclipse IP Team;
-* Downloads (when provided) must be distributed via {aForgeName} downloads server;
+* All third-party content used by the project must be <<ip-third-party,vetted>>;
+* Downloads (when provided) must be distributed via xref:resources-downloads[{aForgeName} downloads] server;
 * Developer (committer) communication must occur in the _dev-list_ provided to the project by the Eclipse Foundation; and
 * Projects must keep their <<pmi-metadata, Project Metadata>> up-to-date.
 
@@ -40,9 +40,17 @@ For example the "{forgeName} Woolsey" project has a _short name_ of "woolsey"; i
 [[resources-source]]
 === Source Code Management
 
-{forgeName} projects must maintain source code in the repositories assigned to the project by the Eclipse Foundation. These official repositories must be the exclusive source of all project code delivered via the project's assigned distribution channel (e.g. the download server).
+[TIP]
+====
+We tend to incorrectly refer to all project content as _source code_. As a general rule, when we refer to _source code_, we mean all content (including documentation, configuration, image files, etc.) that is maintained in a source code repository (e.g., Git).
+====
 
+{forgeName} projects must maintain project content (source code, documentation, configuration, etc.) in the repositories assigned to the project by the Eclipse Foundation. These official repositories must be the exclusive source of all content delivered via the project's distribution channels (e.g. the download server).
+
+[NOTE]
+====
 In order for the project to operate in an _open_ manner, it must be possible for potential contributors to have access to the code base in its most current form, so all ongoing development must be regularly pushed to these canonical repositories.
+====
 
 [[resources-commit]]
 === Git Commit Records
