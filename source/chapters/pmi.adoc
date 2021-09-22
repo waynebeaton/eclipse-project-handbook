@@ -137,10 +137,17 @@ ifeval::["{forgeName}"=="Eclipse"]
 _The Eclipse Foundation strongly encourages all projects (especially those that produce Eclipse Platform Plug-ins and Features) to create an maintain and http://marketplace.eclipse.org[Eclipse Marketplace] presence._
 endif::[]
 
+[[pmi-contributors]]
+==== Contributors
+
+In order to grant the ability to assign issues and merge/pull requests to non-committers on repositories that are hosted on GitLab or GitHub, developers must be designated as _contributors_.
+
+Contributors can be designed by adding their email address to the _Contributors_ field. The contributor must have an Eclipse Foundation account using the email. In the case of GitHub, the contributor must also provide their GitHub ID in their <<contributing-account,Eclipse Foundation Account>>.
+
 [[source-repositories]]
 ==== Source Repositories
 
-The project can specify zero or more *source repositories*. These are displayed in the _Contribute to this Project_ section.
+The project can specify zero or more *source repositories*. These are displayed in the Developer Resources_ section.
 
 The values specified are used to query against a database of known existing source repositories (this database is updated nightly by a discovery process). Those repositories that are found in the database will be displayed with enhanced information (including links to repository mirrors, Gerrit, etc.). All values that you provide will be displayed, whether they point to real repositories or not. If the database does not contain your repository, the PMI will assume that the value is correct and try its best to display the information.
 

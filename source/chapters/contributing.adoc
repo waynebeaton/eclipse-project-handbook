@@ -76,6 +76,11 @@ digraph {
 
 After establishing a pattern of contributing high quality contributions a contributor may be invited to join the project as a committer; an existing project committer will nominate a contributor to be a committer via <<elections-committer, committer election>>.
 
+[NOTE]
+====
+In order to grant the ability to assign issues and merge/pull requests to a non-committer contributor on repositories that are hosted either on GitLab or GitHub, a <<contributing-committers,committer>> must designate the individual as a contributor by providing their email address in the <<pmi-contributors,Contributors field>> in the project's metadata (PMI).
+====
+
 [[contributing-committers]]
 == Committers
 
