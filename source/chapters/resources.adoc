@@ -208,6 +208,26 @@ endif::[]
 
 Websites _not_ hosted by the Eclipse Foundation are considered <<trademark-external-community,community portals>> and are subject to the {trademarkGuidelinesUrl}[Eclipse Foundation Trademark Usage Guidelines] (the Eclipse Foundation asserts ownership of all project name trademarks).
 
+[[resources-website-services]]
+=== Vendor-Specific Links
+
+Organizations who are investing in an open source project may want to provide links on the project website (or in other content related to a project: a `README` file, for example) to related professional services that they offer. 
+
+Including links to vendor-specific services related to an Eclipse open source project is completely consistent with the Eclipse Foundation Development Process.
+
+Vendor-neutrality must be observed. Care needs to be taken to make sure that there is no confusion that the project itself is an Eclipse open source project, and not a _Vendor X_ open source project. In that context, including references and links to vendors who provide services for an open source project is fine, so long as others can participate via the same set of rules.
+
+[NOTE]
+====
+It is inappropriate to provide vendor-specific references and links for services in technical documentation. 
+====
+
+The rules for inclusion of vendor-specific references need to be captured (even if only informally). A project team might, for example, decide that links to related vendor services are permitted only in cases where the vendor has an active committer on the project.
+
+Vendor-specific links should be a statement of fact without qualification or anything that looks like an advertisement or endorsement (that is, "Vendor X provides services related to this project" is acceptable, but "Vendor X is the preferred services provider for this project" is not). It must be very obvious to users browsing the project content that the links to vendor-specific services lead to content that is separate from the open source project (for example, links to vendor-specific content on a project website must lead to web pages with a distinctive appearance to avoid misleading the user into thinking that the services provider page is part of the open source project's website).
+
+Links to vendor-specific services must be directly related to the project.
+
 [[resources-builds]]
 === Builds
 
