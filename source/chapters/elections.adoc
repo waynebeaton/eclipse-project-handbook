@@ -152,9 +152,14 @@ Following a successful committer vote, the project's PMC will review the electio
 [[elections-pmc-member]]
 === PMC Member Elections
 
-The manner in which a top-level project's Project Management Committee (PMC) _Member_ is appointed varies by PMC. Some PMCs are set up to have a representative from each of the projects in the top-level project. Other PMCs are more exclusive and run an election similar to that of a project lead election. 
+PMC members are elected by the existing PMC leads and members, and approved by the EMO/ED. The criteria by which a PMC _Member_ is selected varies by PMC. Some PMCs are set up to have a representative from each of the projects in the top-level project. Other PMCs are more exclusive and require a demonstration of merit.
 
 In all cases, the PMC Lead makes a recommendation to the EMO/ED to appoint a PMC Member. The final decision rests with the EMO/ED.
+
+[TIP]
+====
+No specific infrastructure is exists for PMC Member elections. PMCs must use their PMC mailing list to nominate and elect new members, and report the results to the {emoEmail}[EMO]. The EMO will get approval from the EMO/ED and make the appointment.
+====
 
 [[elections-pmc-lead]]
 === PMC Lead Appointments
