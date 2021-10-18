@@ -184,6 +184,13 @@ Any committer or project lead can set the logo for their own project. To set the
 * Open the section labeled _Basics_; and
 * Upload your logo to the _Logo_ field.
 
+[NOTE]
+====
+On a xref:pmi-project-page[project page], the PMI displays either the project logo or -- when the project is in the xref:starting-project-phases[incubation phase] -- the xref:starting-incubation-branding[incubation logo]. 
+
+To exit from the incubation phase into a mature project, a project must meet all of the requirements and engage in a xref:release-graduation[graduation review].
+====
+
 [[pmi-company-logos]]
 ==== Company Logos
 
