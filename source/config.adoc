@@ -1,5 +1,5 @@
 ////
- * Copyright (C) 2015 Eclipse Foundation, Inc. and others. 
+ * Copyright (C) 2015,2021 Eclipse Foundation, Inc. and others. 
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
@@ -16,7 +16,7 @@
 :emoEmail: emo@eclipse.org
 :ipTeamEmail: emo-ip-team@eclipse.org
 :emoRecordsEmail: emo-records@eclipse.org
-:webmasterEmail: webmaster@eclipse.org
+:webmasterEmail: webmaster@eclipse-foundation.org
 :legalEmail: license@eclipse.org
 :marketingEmail: mailto:marketing@eclipse.org
 :proposalsForum: http://www.eclipse.org/forums/eclipse.proposals
