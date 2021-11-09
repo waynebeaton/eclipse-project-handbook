@@ -493,7 +493,7 @@ If third-party content is not known to IPZilla, then <<ip-clearlydefined, Clearl
 The Eclipse Foundation's <<ip-ipzilla, IPZilla>> is the primary source of information regarding third-party licensing for {forgeName} projects. In cases where IPZilla and ClearlyDefined results differ, IPZilla results take precedence.
 ====
 
-[graphviz, images/ip_prereq_diligence, svg]
+[graphviz, images/ip_prereq_diligence, svg, subs="attributes"]
 .Due Diligence for Prerequisites
 ----
 digraph {
@@ -510,7 +510,7 @@ digraph {
 		rank=same; rankdir=LR;
 		foundCq[shape=diamond;label="Found in\nIPZilla?"];
 		cd [label="Search\nClearlyDefined", href="#ip-clearlydefined"];
-		cd_score[shape=diamond;label="Score is\n≥ 75"];
+		cd_score[shape=diamond;label="Score is\n≥ {clearlyDefinedMinimumScore}"];
 	}
 	
 	{
