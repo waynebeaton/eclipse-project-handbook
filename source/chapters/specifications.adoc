@@ -108,7 +108,7 @@ An organization’s specification committee representative may send a note to ma
 Anybody that contributes to {aForgeName} specification project is a contributor. Contributors make pull requests against project repositories. Pull requests must be reviewed and merged by a committer.
 
 [graphviz, images/specification-contributors, svg]
-.What paperwork is required?
+.How to become a contributor
 ----
 include::diagrams/specifications-contributors.dot[]
 ----
@@ -143,12 +143,6 @@ In order to get committer rights on project repositories hosted on GitHub, you n
 
 Due to the nature of specification project work, the <<paperwork, committer agreements>> need to be augmented. For {forgeName} open source software projects (i.e., those projects not engaged in specification development) the committer agreements (Member Committer and Contributor Agreement and Individual Committer Agreement) are sufficient. The complete set of required agreements are described below.
 
-[graphviz, images/specification-committers, svg]
-.What paperwork is required?
-----
-include::diagrams/specifications-agreements.dot[]
-----
-
 [NOTE]
 ====
 Specific agreements need only be signed once. If you've already signed the agreement, you're good-to-go.
@@ -168,6 +162,7 @@ A committer whose employer is either not an Eclipse Foundation Member; or is an 
 ** <<specifications-consent, Employer Consent Agreement for Eclipse Specification Projects>> (“Consent Agreement”)
 
 A committer who works for an Eclipse Foundation Member that is a working group participant needs:
+
 * No additional agreements are required.
 
 [NOTE]
