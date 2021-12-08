@@ -65,6 +65,8 @@ include::chapters/pmi.adoc[]
 
 include::chapters/trademarks.adoc[]
 
+include::chapters/promotion.adoc[leveloffset=+1]
+
 include::chapters/community.adoc[]
 
 include::chapters/checklist.adoc[leveloffset=+1]

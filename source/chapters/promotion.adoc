@@ -1,0 +1,138 @@
+////
+ * Copyright (C) 2021 Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-FileType: SOURCE
+ *
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+[[promotion]]
+= Promoting your Project
+
+It’s certainly true that great technology is an important part of what makes {forgeName} open source projects great. However, technology alone isn’t enough. Technology needs to have a community. Open source projects need to bring the community together to do great things.
+
+Developing a community is an important part of being an open source project. It is from a community of users, adopters, and contributors that a project draws strength and longevity. Without a community, an open source project is just a bunch of code that might as well buried on a server behind a firewall somewhere in parts unknown.
+
+The Eclipse Foundation Development Process defines three different communities: users, adopters, and developers. Each of these communities has different requirements and expectations from Eclipse.
+
+[graphviz, images/promotion_communities, svg, width=600px]
+.Three communities
+----
+digraph {
+	bgcolor=transparent;
+	rank=same;rankdir=LR;
+	
+	node [shape=box;style=filled;fillcolor=white;fontsize=12];
+	developers[label="Developer\ncommunity"]
+	adopters[label="Adopter\ncommunity"];
+	users[label="User\ncommunity"];
+	
+	edge [fontsize=10];
+	users -> adopters [xlabel="feeds";weight=1000];
+	adopters -> users [label="grows"; weight=0];
+	adopters -> developers [xlabel="feeds"; weight=0];
+	developers -> adopters [label="supports";weight=1000];
+}
+----
+
+The first community, _users_, tends to regard open source primarily as consumable technology.
+
+The _adopter_ community contains individuals and organizations that build solutions based on open source technology. This includes those individuals and organizations who base a business on providing development assistance and support for open source technology. 
+
+The _developer_ contains that group of individuals who contribute directly to open source projects in the form of patches and/or contributions new functionality. xref:contributing-contributors[Contributors] tend to participate directly in an open source project by providing code, ideas, answers to questions in community forums, and more. xref:contributing-committers[Committers] are a subset of the contributors with write access to the resources maintained by a project (committer access is provided on a project-by-project basis). The idea is that a contributor is invited to become a committer and xref:elections-committer[elected] into that position based on credibility established over a period of time. 
+
+Developing a community is an important part of being {aForgeName} open source project. In fact, developing community is an integral part of the Eclipse Foundation Development Process: as part of the project xref:release-review[review process], a project is required to demonstrate their community-building activities, like blogging, speaking opportunities, and more.
+
+== Engage the Community
+
+Community development is an important part of life as {aForgeName} open source project. Project teams must plan to spend some significant amount of their time courting and informing the community. At least part of that effort involves keeping the project xref:promotion-website[web site] up-to-date. 
+
+Some projects are luckier than others: sometimes a technology is just so compelling that minimal effort returns huge dividends. More often, the overnight success of an open source project comes after weeks, months, and years of a combination of long work and hard work.
+
+It takes effort to get your message out; and if you want to develop a community around your open source project, you have to get the message out. To cultivate a vibrant community of users, adopters, and committers, a project has to have somebody who is responsible for community development. Somebody has to own it. Everybody on the project team has to dedicate some significant amount of their time to community development, but one person on the team has to be responsible for it. For some projects, this may be a full time job; for others, it may be a huge part of one. In fact, many open source projects have more than one full time person working on community development. In some circles, this role might be called the project’s evangelist, or maybe it’s the project lead that manages community development. Whatever the title, the role should be that of making everybody else successful in community development activities.
+
+Minimally, there are valuable activities that the project member responsible for community development can do for those lucky people who actually find your project:
+
+* Co-ordinate responsibility for monitoring the project’s communication channels: project developers can take turns monitoring community forums, and triaging issues;
+* Establish a response policy for responding for questions:
+  * How long should somebody expect to wait for a response? 
+  * Will project committers create issues on behalf of community members, or invite them to open issues themselves?
+* Teach your team members to be courteous and polite in all communication;
+* Make sure that anybody who finds your project has a positive experience; 
+* Ensure that the project is operating transparently: decisions regarding project architecture, features, and more should be discussed in transparent forums that invite participation; and
+* Ensure that the project’s website and other sources of information are correct and up-to-date.
+
+Being responsive for people who find your project is important. But is only effective when people actually find your project. There are many things that you can do to generate buzz and grow your community. Blogging, social media, attending and speaking at conferences, podcasts, and just simply speaking to everybody who will listen through all available media are important activities. 
+
+Here are some things to think about:
+
+_Know what kind of community you want to build._ Tailor your efforts to address that community through native channels. Know where the type of people who should be part of your community hang out. Find out where they get their information and take the necessary steps to get your voice heard on those forums.
+
+_Develop an elevator pitch for your project._ An elevator pitch is a thirty second to two-minute “sound bite” that describes your project in a way that be understood by a layperson. When done well, an elevator pitch motivates the listener to spend more time investigating your project. Make sure your developers can recite it. Make sure that the the project provides a means for the listener to go and find more information (e.g., a xref:promotion-website[website]).
+
+_Establish drum beat of outward communication_ Identify team members who can regularly blog, Tweet, podcast, host webinars, and otherwise provide outward communication. Coordinate their efforts so that communication is regular: daily, weekly, or monthly. It’s hard to ignore regular communication.
+
+_Leverage the existing community._ Leverage services provided by the Eclipse Foundation, like the {planetEclipseUrl}[Planet Eclipse] blog aggregator which provides a window into the world, work, and lives of Eclipse committers and contributors.
+
+_Present and represent._ Engage in demo camps, user groups, and other local networking opportunities on behalf of your project.
+
+_Make community development a part of your project’s regular work._ Interacting with and growing the community is every bit as important as writing the actual code. Make sure that all of your developers understand that community development is important and encourage them all to participate. Assume that it’s going to take a while. You’ll know that you’ve been successful when it starts to take on a life of it’s own (e.g. when people from your community start writing articles, blog posts, doing talks about your project at conferences, .,.).
+
+While the reviews and processes described by the EDP may seem onerous, they are a necessary part of community development. You should anticipate spending a significant amount of time responding to questions posed in various forums (community forums, mailing lists, and other places where your community gathers. You should plan on attending conferences, presenting webinars, writing papers, and more to support your project.
+
+[#promotion-resources]
+== Promotion Resources
+
+[#promotion-website]
+=== Project Web Site
+
+If your project does not already have an official xref:resources-website[website], create one.
+ 
+Web site developers must put themselves into the mindset of the project's target community. You must plan to iterate; you’re not going to get it right the first time. Too many of our project sites are old, contain stale information, and assume too much prior knowledge to be useful tools for growing a vibrant community of users, adopters, and developers.
+
+[#promoting-project-logo]
+== Logos and Graphics
+
+[#trademarks-project-logo]
+
+All {forgeName} projects are encouraged to create a unique logo to identify their project. 
+
+[TIP]
+====
+The Eclipse Foundation will use the project logo to promote a project. Project teams should be sure to create their project logo with a transparent background so that it will display well on arbitrary background colors. Square logos are preferred and should be sized to display well at the 200x200 pixels resolution maximum permitted by the project metadata.
+====
+
+Logos are important to recognize as trademarks. For a project's official logo, the designer must ensure that it includes a small trademark (™) or registered trademark (®) symbol (as appropriate) in the graphic or immediately adjacent to it.
+
+Projects may request to use an Eclipse logo within their project logo, or otherwise create a derivative of the Eclipse logo. However, they must contact the EMO by opening a {emoApprovalsUrl}[issue] to request the Eclipse Foundation's Board of Directors' permission to do so.
+
+[#promoting-project-logo-design]
+
+Projects teams can engage a graphic design crowdsourcing site or similar service to create a logo. The project leader and committers are responsible for setting up the design process and providing the feedback to the graphic designers. Based on past experience, faster and more detailed feedback to the designers yields better results. The Eclipse Foundation will help fund the creation of project logo. A project leader or committer will have to pay for the logo design in advance. Once the logo is created, the project can then send the invoice to the Eclipse Foundation {marketingEmail}[marketing team]. The Foundation will reimburse up to {euro}500 for the logo design. Project team members should contact the Eclipse Foundation's marketing team with any questions regarding logo design.
+
+[NOTE]
+====
+Add your project logo to your project's metadata via the <<pmi-project-logos,PMI>>.
+====
+
+[#promotion-adopters]
+== Adopters Programme
+
+Adopters are organizations that voluntarily show their support for the Eclipse projects they have adopted (i.e. shipping commercial products based on the projects and/or using the projects for non-commercial or internal reasons).
+
+The {adoptersProgrammeUrl}[Eclipse Project Adopters Programme] provides a means for projects to highlight the various organizations, groups, and other open source projects that leverage their content.
+
+[#promoting-marketing]
+== Eclipse Marketing Team
+
+The Eclipse Foundation has various {marketingServicesUrl}[Marketing Services] that they can bring to bear to help you market your project. 
+
+Project teams can, for example, request help with:
+
+* Funding for the xref:promoting-project-logo-design[design of a project logo];
+* Announcing releases and other important project milestones via the {newsroomUrl}[Eclipse Foundation News]; and
+* Advertising events that they are hosting or attending on the {eventsUrl}[Eclipse Foundation Events] page.
