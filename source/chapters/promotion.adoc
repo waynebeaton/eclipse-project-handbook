@@ -13,7 +13,7 @@
 [[promotion]]
 = Promoting your Project
 
-It’s certainly true that great technology is an important part of what makes {forgeName} open source projects great. However, technology alone isn’t enough. Technology needs to have a community. Open source projects need to bring the community together to do great things.
+It’s certainly true that great technology is an important part of what makes {forgeName} open source projects great. However, technology alone isn’t enough. Technology needs to have a xref:community[community]. Open source projects need to bring the community together to do great things.
 
 Developing a community is an important part of being an open source project. It is from a community of users, adopters, and contributors that a project draws strength and longevity. Without a community, an open source project is just a bunch of code that might as well buried on a server behind a firewall somewhere in parts unknown.
 
@@ -95,7 +95,7 @@ If your project does not already have an official xref:resources-website[website
 Web site developers must put themselves into the mindset of the project's target community. You must plan to iterate; you’re not going to get it right the first time. Too many of our project sites are old, contain stale information, and assume too much prior knowledge to be useful tools for growing a vibrant community of users, adopters, and developers.
 
 [#promoting-project-logo]
-== Logos and Graphics
+=== Logos and Graphics
 
 [#trademarks-project-logo]
 
@@ -120,14 +120,23 @@ Add your project logo to your project's metadata via the <<pmi-project-logos,PMI
 ====
 
 [#promotion-adopters]
-== Adopters Programme
+=== Adopters Programme
 
-Adopters are organizations that voluntarily show their support for the Eclipse projects they have adopted (i.e. shipping commercial products based on the projects and/or using the projects for non-commercial or internal reasons).
+The {adoptersProgrammeUrl}[Eclipse Project Adopters Programme] provides a means for projects to highlight the various organizations, groups, and other open source projects that leverage their content. 
 
-The {adoptersProgrammeUrl}[Eclipse Project Adopters Programme] provides a means for projects to highlight the various organizations, groups, and other open source projects that leverage their content.
+The Eclipse Project Adopters Programme provides:
+
+* A means for adopters to upload their logo and information; 
+* A {adoptersProgrammeAdopters}[standard mechanism] for adopters to express their interest in multiple {forgeName} open source projects;
+* An {adoptersProgrammeApi}[API] that {forgeName} project teams can leverage to display the adopter logos on their project page.
+
+[WARNING]
+====
+An important aspect of the Eclipse Project Adopters Programme is that adopter organizations are themselves responsible for providing the Eclipse Foundation with their logos, links, and other information. To avoid confusion and liability, {forgeName} project teams should not manage these resources directly.
+====
 
 [#promoting-marketing]
-== Eclipse Marketing Team
+=== Eclipse Marketing Team
 
 The Eclipse Foundation has various {marketingServicesUrl}[Marketing Services] that they can bring to bear to help you market your project. 
 

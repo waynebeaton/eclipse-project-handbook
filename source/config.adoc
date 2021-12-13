@@ -104,6 +104,8 @@
 :newsroomUrl: https://newsroom.eclipse.org/
 
 :adoptersProgrammeUrl: https://github.com/EclipseFdn/eclipsefdn-project-adopters
+:adoptersProgrammeAdopters: https://github.com/EclipseFdn/eclipsefdn-project-adopters#project-adopters
+:adoptersProgrammeApi: https://github.com/EclipseFdn/eclipsefdn-project-adopters#javascript-plugin
 
 :clearlyDefinedMinimumScore: 60
 
