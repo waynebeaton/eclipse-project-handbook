@@ -87,7 +87,7 @@ Date:   Wed May 29 16:17:36 2013 +0200
 
 [IMPORTANT]
 ====
-The name used in the `Author` field (and, when required, in the `Also-by`/`Co-authored-by` entries) must be the legal name of the contributor; the email address must be valid and real.
+The email address used in the `Author` field (and, when required, in the `Also-by`/`Co-authored-by` entries) must be valid and real, and the contributor must have signed the ECA.
 ====
 
 The _summary_ line is used in many places where Git commits are listed, ensure that this line is sensible by itself. The _description_ area should be used to provide more detail about the commit. The footer area is used for extra fields and values.
@@ -332,4 +332,8 @@ Yes.
 
 Can an {aForgeName} project accept anonymous code contributions? ::
 
-No. All contributions must be associated with their author using their legal name and a real email address. In pragmatic terms, the contributor must provide their legal name and email address in the Git commit's `Author` field; the contributor must also have electronically signed the ECA using those same credentials.
+No. All contributions must be associated with their author using their legal name and a real email address. In pragmatic terms, the contributor must provide their legal name and email address in the Git commit's `Author` field, or an email address that associates with their ECA; the contributor must also have electronically signed the ECA using those same credentials.
+
+Can special email addresses, such as GitHubUserName@users.noreply.github.com, be used for code contributions?
+
+Yes. The GitHub user name can be extracted from that email address and the contributor with the associated user name must have signed the ECA.
