@@ -139,7 +139,7 @@ All committers are automatically added to this team. All members of the _committ
 
 Contributors ::
 
-All contributors are automatically added to this team. All members of the _contributors team_ are granted _Reporter_ level access to project resources hosted on GitLab. When an individual is added to the project's xref:pmi-contributors[Contributors] list, they are automatically added to the _contributors team. Likewise, when they are removed from the contributors list, they are automatically removed from the team.
+All contributors are automatically added to this team. All members of the _contributors team_ are granted _Reporter_ level access to project resources hosted on GitLab. When an individual is added to the project's xref:pmi-contributors[Contributors] list, they are automatically added to the _contributors team_. Likewise, when they are removed from the Contributors list, they are automatically removed from the team.
 
 The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook inspects incoming merge requests to ensure that the contributor has a valid ECA on file, and flags those that do not. Project committers should only accept merge requests that pass this validation.
 
