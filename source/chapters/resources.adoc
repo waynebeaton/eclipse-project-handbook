@@ -105,13 +105,43 @@ Authors who are not committers on the project receiving the commit must have an 
 
 The Eclipse Foundation maintains an instance of GitLab for use by {forgeName} open source projects. Project teams may opt to host some or all of their canonical source code repositories on our GitLab instance.
 
-Any committer can https://gitlab.eclipse.org/eclipsefdn/gitlab[create an issue] to request that the Eclipse Webmaster create a new repository on, or move an existing repository to, the GitLab instance for their project. Note that the Webmaster will verify the request with the project leads.
+[TIP]
+====
+Any committer can {helpdeskUrl}[create an issue] to request that the Eclipse Webmaster create a new repository on, or move an existing repository to, the GitLab instance for their project. Note that the Webmaster will verify the request with the project leads.
+====
 
-All project committers are be granted _Developer_ level access to project resources hosted on GitLab.
+GitLab organizes content into a series of nested groups with `{forgeMachineName}` at the root, and the project's xref:trademarks-project-short[short name].
 
-all project leads are granted _Maintainer_ level access to their project's GitLab repositories.
+For example, the {forgeName} Dash project has a group of `{forgeMachineName}/dash` might have repositories with the following URLs (note that these URLs are provided as examples and may not actually be real):
 
-The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook inspects incoming merge requests to ensure that the contributor has a valid ECA on file, and flags those that do no. Project committers should only accept merge requests that pass this validation.
+* pass:a[{gitlabUrl}/{forgeMachineName}/dash/handbook]
+* pass:a[{gitlabUrl}/{forgeMachineName}/dash/license-tool]
+
+[NOTE]
+====
+Support for arbitrary nesting of groups on GitLab is being explored via https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/42[Help Desk Issue #42].
+====
+
+Three teams are created for the group, each containing members from the corresponding {forgeName} open source project. 
+
+[TIP]
+====
+For information regarding the privileges available to each of the Maintainer, Developer, and Reporter roles indicated below, consult the https://gitlab.eclipse.org/help/user/permissions.md#project-members-permissions[GitLab Documentation].
+====
+
+Project Leads ::
+
+All project leads are automatically added to this team. All members of the _project leads team_ are granted the _Maintainer_ role on their project's GitLab repositories. When an individual is xref:elections-pl[elected] into the role of project lead, they are automatically added to the _project leads team_. Likewise, when a project lead is xref:elections-retire-pl[retired], they are automatically removed from the team.
+
+Committers ::
+
+All committers are automatically added to this team. All members of the _committers team_ are granted the _Developer_ role on their project resources hosted on GitLab. When an individual is xref:elections-committer[elected] into the role of committer, they are automatically added to the _committers team_. Likewise, when a project lead is xref:elections-retire-cm[retired], they are automatically removed from the team.
+
+Contributors ::
+
+All contributors are automatically added to this team. All members of the _contributors team_ are granted _Reporter_ level access to project resources hosted on GitLab. When an individual is added to the project's xref:pmi-contributors[Contributors] list, they are automatically added to the _contributors team. Likewise, when they are removed from the contributors list, they are automatically removed from the team.
+
+The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook inspects incoming merge requests to ensure that the contributor has a valid ECA on file, and flags those that do not. Project committers should only accept merge requests that pass this validation.
 
 [[resources-github]]
 === GitHub

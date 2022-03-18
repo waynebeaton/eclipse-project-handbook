@@ -140,9 +140,17 @@ endif::[]
 [[pmi-contributors]]
 ==== Contributors
 
-In order to grant the ability to assign issues and merge/pull requests to non-committers on repositories that are hosted on GitLab or GitHub, developers must be designated as _contributors_.
+The project team can choose to designate specific individuals as official contributors. On xref:resources-gitlab[GitLab], designated contributors are granted the _Reporter_ role in the project's repositories. On xref:resources-github[GitHub], designated contributors are granted the _triage_ permission. Contributors can create merge and pull requests regardless of whether or not they are designated as an official contributor.
 
 Contributors can be designed by adding their email address to the _Contributors_ field. The contributor must have an Eclipse Foundation account using the email. In the case of GitHub, the contributor must also provide their GitHub ID in their <<contributing-account,Eclipse Foundation Account>>.
+
+Any committer or project lead can add or remove contributors for their own project. To set the add or remove contributors: 
+
+* Log into the PMI;
+* Navigate to the <<pmi-project-page,project page>>;
+* click <<pmi-editing,_Edit_>>;
+* Open the section labeled _Source Code and Issues/Bugzilla_; and
+* Add/remove email addresses to/from the _Contributors_ field.
 
 [[source-repositories]]
 ==== Source Repositories

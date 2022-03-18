@@ -26,6 +26,7 @@ include::config.adoc[]
 :projectListUrl: http://projects.eclipse.org/list-of-projects
 :bugzillaUrl: https://bugs.eclipse.org/bugs
 :gitUrl: https://git.eclipse.org/c
+:gitlabUrl: https://gitlab.eclipse.org
 :gerritUrl: https://git.eclipse.org/r
 :gitHubUrl: https://github.com/eclipse
 :forumsUrl: http://www.eclipse.org/forums

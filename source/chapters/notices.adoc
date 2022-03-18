@@ -16,7 +16,7 @@
 [[notices]]
 == Notices
 
-Copyright (C) 2015, 2020 Eclipse Foundation, Inc. and others. 
+Copyright (C) 2015, 2022 Eclipse Foundation, Inc. and others. 
 
 Made available under the {epl20Url}[Eclipse Public License v 2.0].
 

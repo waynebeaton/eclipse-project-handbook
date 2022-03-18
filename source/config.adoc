@@ -72,6 +72,7 @@
 :downloadsUrl: https://wiki.eclipse.org/IT_Infrastructure_Doc#Downloads
 :versionNumberingUrl: https://wiki.eclipse.org/Version_Numbering
 
+:helpdeskUrl: https://gitlab.eclipse.org/eclipsefdn/helpdesk
 :bugzillaGitHubUrl: https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Community&component=GitHub
 
 :epl20Url: http://www.eclipse.org/legal/epl-2.0
