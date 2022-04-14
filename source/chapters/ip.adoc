@@ -104,11 +104,11 @@ To bridge the gap between the different means of identifying content (and fill i
 [[ip-clearlydefined-using]]
 ==== Using ClearlyDefined
 
-ClearlyDefined is used as part of the overall <<ip-prereq-diligence, due diligence process for third-party prerequisites>>.
+ClearlyDefined is used as part of the overall <<ip-prereq-diligence, due diligence process for third-party prerequisites>>. The Eclipse Foundation's <<ip-ipzilla, IPZilla>> is the primary source of information regarding third-party licensing for {forgeName} projects. In cases where IPZilla and ClearlyDefined results differ, IPZilla results take precedence.
 
-[NOTE]
+[TIP]
 ====
-The Eclipse Foundation's <<ip-ipzilla, IPZilla>> is the primary source of information regarding third-party licensing for {forgeName} projects. In cases where IPZilla and ClearlyDefined results differ, IPZilla results take precedence.
+Don't use ClearlyDefined directly. Instead, use the xref:ip-license-tool[Eclipse Dash License Tool].
 ====
 
 When content is known to ClearlyDefined and has a _Licensed_ score of at least {clearlyDefinedMinimumScore}, and the _declared_ and all _discovered_ licenses are on the Eclipse Foundation's {approvedLicensesUrl}[approved licenses list], then the content can be used without further action. 
@@ -542,7 +542,7 @@ When content fails to meet these requirements, the project team must engage with
 
 [TIP]
 ====
-The Eclipse Dash project's <<ip-license-tool, IP License Tool>> will help you determine whether or not a CQ is required.
+Use the xref:ip-license-tool[Eclipse Dash License Tool] to determine whether or not a CQ is required.
 ====
 
 When in doubt, committers should check with the {ipTeamEmailLink}.
@@ -767,9 +767,9 @@ IP Team review or approval is *not* required for {aForgeName} open source projec
 When {aForgeName} projects makes direct use of third-party content inherited by consuming another {forgeName} open source project, that content must be treated as a prerequisite dependency.
 
 [[ip-license-tool]]
-=== License Tool
+=== Eclipse Dash License Tool
 
-The {licenseToolUrl}[License Tool] was created with a command line interface that takes a list of dependencies as input and generates output that matches content to license information obtained from trusted sources, and identifies the content that needs further scrutiny (i.e., it lists all content for which license information cannot be found in one of the approved sources). We created it with a command line interface so that the initial version of the tool could be used on a variety of technologies.
+The {licenseToolUrl}[Eclipse Dash License Tool] was created with a command line interface that takes a list of dependencies as input and generates output that matches content to license information obtained from trusted sources, and identifies the content that needs further scrutiny (i.e., it lists all content for which license information cannot be found in one of the approved sources). We created it with a command line interface so that the initial version of the tool could be used on a variety of technologies.
 
 [WARNING]
 ====
@@ -778,13 +778,18 @@ The License Tool is a prototype that is intended to assist with the process of d
 
 What the License Tool does is relatively simple:
 
-It first sends the content list to <<ip-ipzilla, IPZilla>>; if an entry has been vetted by the IP Team and has been approved for use, then it is marked as `approved` . If an entry has been vetted by the IP Team and flagged as somehow problematic, it will be marked as `restricted`.
+It first queries the Eclipse Foundation's database of curated license data; if an entry has been vetted by the IP Team and has been approved for use, then it is marked as `approved`. If an entry has been vetted by the IP Team and flagged as somehow problematic, it will be marked as `restricted`.
 
-It then sends the content that has not been flagged as either `approved` or `restricted` to <<ip-clearlydefined, ClearlyDefined>>; ClearlyDefined matches are marked as `approved`.
+It then sends the content that has **not** been flagged as either `approved` or `restricted` to <<ip-clearlydefined, ClearlyDefined>>; ClearlyDefined matches are marked as `approved`.
 
 Everything else is marked `restricted`. The License Tool lists all content that ended up marked as `restricted` as requiring further scrutiny. It is this list of content that requires further scrutiny that the project team must engage on with the <<ip-prereq-diligence, IP Team via CQ>>.
 
-For many build technologies, it is relatively easy to generate lists of dependencies directly (e.g., the Maven Dependencies plugin). There are some specific examples in the prototype tool’s README (e.g., Maven-, Gradle-, NPM-, and Yarn-based systems). Project teams that use technologies that do not provide easily parsed/converted dependency lists can manually generate a list and feed that to the tool. 
+An {licenseToolUrl}#example-maven-plugin[Maven plugin] is provided that can be used by project teams that leverage Maven `pom.xml` files for build.
+
+.The Eclipse Dash License Tool's Maven plugin in action
+image::images/licenseTool-mvn.png[]
+
+A CLI interface is also provided. For many build technologies, it is relatively easy to generate lists of dependencies directly (e.g., the Maven Dependencies plugin). There are some specific examples in the prototype tool’s `README` (e.g., Maven-, Gradle-, NPM-, and Yarn-based systems). Project teams that use technologies that do not provide easily parsed/converted dependency lists can manually generate a list and feed that to the tool. 
 
 [[ip-iplog]]
 === IP Logs
