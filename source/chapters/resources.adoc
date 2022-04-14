@@ -183,7 +183,7 @@ To gain write access to a project's GitHub repositories a developer must:
 * Be <<elections-committer, elected>> as a project committer; and
 * Provide their GitHub Id in their <<contributing-account,Eclipse Foundation Account>>.
 
-Project leads are granted `admin` level access to their project's GitHub repositories.
+Project leads are granted `maintain` level access to their project's GitHub repositories. However, it's possible for them to request temporary access to the "admin" level by {helpdeskUrl}[creating an issue]. The issue must describe what will be done using this new level of access and how long it will be needed.
 
 [#resources-gerrit]
 === Gerrit Code Review
