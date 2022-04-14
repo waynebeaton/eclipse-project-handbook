@@ -107,7 +107,7 @@ The Eclipse Foundation maintains an instance of GitLab for use by {forgeName} op
 
 [TIP]
 ====
-Any committer can {helpdeskUrl}[create an issue] to request that the Eclipse Webmaster create a new repository on, or move an existing repository to, the GitLab instance for their project. Note that the Webmaster will verify the request with the project leads.
+Any committer can {helpdeskUrl}[create a Help Desk issue] to request that the Eclipse Webmaster create a new repository on, or move an existing repository to, the GitLab instance for their project. Note that the Webmaster will verify the request with the project leads.
 ====
 
 GitLab organizes content into a series of nested groups with `{forgeMachineName}` at the root, and the project's xref:trademarks-project-short[short name].
@@ -131,15 +131,15 @@ For information regarding the privileges available to each of the Maintainer, De
 
 Project Leads ::
 
-All project leads are automatically added to this team. All members of the _project leads team_ are granted the _Maintainer_ role on their project's GitLab repositories. When an individual is xref:elections-pl[elected] into the role of project lead, they are automatically added to the _project leads team_. Likewise, when a project lead is xref:elections-retire-pl[retired], they are automatically removed from the team.
+All project leads are automatically added to this team. All members of the _project leads team_ are granted the _Maintainer_ role on their project's GitLab repositories. When an individual is xref:elections-pl[elected] into the role of project lead, they are automatically added to the _project leads team_. When a project lead is xref:elections-retire-pl[retired], they are automatically removed from the team.
 
 Committers ::
 
-All committers are automatically added to this team. All members of the _committers team_ are granted the _Developer_ role on their project resources hosted on GitLab. When an individual is xref:elections-committer[elected] into the role of committer, they are automatically added to the _committers team_. Likewise, when a project lead is xref:elections-retire-cm[retired], they are automatically removed from the team.
+All committers are automatically added to this team. All members of the _committers team_ are granted the _Developer_ role on their project resources hosted on GitLab. When an individual is xref:elections-committer[elected] into the role of committer, they are automatically added to the _committers team_. When a project lead is xref:elections-retire-cm[retired], they are automatically removed from the team.
 
 Contributors ::
 
-All contributors are automatically added to this team. All members of the _contributors team_ are granted _Reporter_ level access to project resources hosted on GitLab. When an individual is added to the project's xref:pmi-contributors[Contributors] list, they are automatically added to the _contributors team_. Likewise, when they are removed from the Contributors list, they are automatically removed from the team.
+All contributors are automatically added to this team. All members of the _contributors team_ are granted _Reporter_ level access to project resources hosted on GitLab. When an individual is added to the project's xref:pmi-contributors[Contributors] list, they are automatically added to the _contributors team_. When they are removed from the Contributors list, they are automatically removed from the team.
 
 The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook inspects incoming merge requests to ensure that the contributor has a valid ECA on file, and flags those that do not. Project committers should only accept merge requests that pass this validation.
 
@@ -161,17 +161,12 @@ The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect i
 .Notification that the commit is properly structured and permissions are in place.
 image::images/Github-cla-success.png[]
 
-Since the GitHub API does not provide a means of absolutely denying a merge, the hook will warn committers that the contributors have not signed a ECA or that the commit message is not correctly structured:
+Since the GitHub API does not provide a means of absolutely denying a merge, the hook warns committers when the contributors have not signed a ECA.
 
 .Notification that there is something wrong with the commit.
 image::images/Github-cla-failure.png[]
 
-Click on the _Details_ link for more information. Committers must not merge commits unless they are absolutely certain that the contributor does have a valid ECA on file.
-
-[NOTE]
-==== 
-The Eclipse Webmaster creates and maintains a mirror of all GitHub-hosted repositories on Eclipse Foundation hardware.
-====
+Click on the _Details_ link for more information. Committers must not merge commits unless they are certain that the contributor does have a valid ECA on file.
 
 [[resources-github-access]]
 ==== Access to GitHub Repositories
@@ -183,7 +178,12 @@ To gain write access to a project's GitHub repositories a developer must:
 * Be <<elections-committer, elected>> as a project committer; and
 * Provide their GitHub Id in their <<contributing-account,Eclipse Foundation Account>>.
 
-Project leads are granted `maintain` level access to their project's GitHub repositories. However, it's possible for them to request temporary access to the "admin" level by {helpdeskUrl}[creating an issue]. The issue must describe what will be done using this new level of access and how long it will be needed.
+Project leads are granted `maintain` level access to their project's GitHub repositories. 
+
+[TIP]
+====
+A project lead may request temporary `admin` level access to their project's repositories by {helpdeskUrl}[creating a Help Desk issue]. The issue must describe what will be done using this new level of access and how long it will be needed.
+====
 
 [#resources-gerrit]
 === Gerrit Code Review
