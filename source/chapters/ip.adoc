@@ -80,10 +80,30 @@ The {edpLink} does restrict how content can be disseminated based on the state o
 
 The entry point into the IP Due Diligence Process is the <<ip-cq,Contribution Questionnaire>>, or _CQ_. Project teams should create a single CQ for the <<ip-initial-contribution,initial contribution>> of project content. The initial contribution is a special type of project content contribution in the sense that it is the first thing that the IP Team will review on behalf of the project team. 
 
-[[ip-ipzilla]]
-=== IPZilla
+[#ip-dash-db]
+=== Eclipse Dash License Database
+
+The Eclipse Dash License Database (or, more simply, the _Dash Database_) is a database that contains the license information collected via the Eclipse Foundation Intellectual Property Due Diligence Process. It contains license information gathered and curated by the Eclipse Foundation's IP Team via xref-iplab[IPLab] and xref:ip-ipzilla[IPZilla]. The Dash Database is accessed via API only; the xref:ip-license-tool[Eclipse Dash License Tool] is the primary means of accessing this resource.
+
+[#ip-iplab]
+==== IPLab
+
+{iplabUrl}[_IPLab_] is a repository on the Eclipse Foundation's GitLab infrastructure that is dedicated to tracking the due diligence review process and conclusions for {forgeName} project and third-party content. Issues on that repository are used to request reviews, and track the review process and results.
+
+[WARNING]
+====
+IPLab is being phased in through 2022 as a replacement for xref:ip-ipzilla[IPZilla].
+====
+
+[#ip-ipzilla]
+==== IPZilla
 
 {ipzillaUrl}[IPZilla] is a modified instance of Bugzilla that tracks the progress of the IP due diligence review and approval process. It is the main interaction point between committers and the IP Team. IPZilla is accessible only by committers, Eclipse Foundation member company representatives, and other specifically-designated individuals. Authorized users can review both completed and ongoing reviews via IPZilla. 
+
+[WARNING]
+====
+IPZilla was marked **deprecated** in April 2022, and is scheduled for retirement at the end of 2022.
+====
 
 [[ip-clearlydefined]]
 === ClearlyDefined
@@ -104,31 +124,16 @@ To bridge the gap between the different means of identifying content (and fill i
 [[ip-clearlydefined-using]]
 ==== Using ClearlyDefined
 
-ClearlyDefined is used as part of the overall <<ip-prereq-diligence, due diligence process for third-party prerequisites>>. The Eclipse Foundation's <<ip-ipzilla, IPZilla>> is the primary source of information regarding third-party licensing for {forgeName} projects. In cases where IPZilla and ClearlyDefined results differ, IPZilla results take precedence.
+ClearlyDefined is used as _part_ of the overall <<ip-prereq-diligence, due diligence process for third-party prerequisites>>. The xref:ip-dash-db[Dash Database] is the primary source of information regarding third-party licensing for {forgeName} projects. In cases where the Dash Database and ClearlyDefined results differ, the Dash Database results take precedence.
 
 [TIP]
 ====
 Don't use ClearlyDefined directly. Instead, use the xref:ip-license-tool[Eclipse Dash License Tool].
 ====
 
-When content is known to ClearlyDefined and has a _Licensed_ score of at least {clearlyDefinedMinimumScore}, and the _declared_ and all _discovered_ licenses are on the Eclipse Foundation's {approvedLicensesUrl}[approved licenses list], then the content can be used without further action. 
+When content is known to ClearlyDefined and has a _Licensed_ score of at least {clearlyDefinedMinimumScore}, the _declared_ and all _discovered_ licenses are on the Eclipse Foundation's {approvedLicensesUrl}[approved licenses list], and all of the licenses are mutually consistent, then the content can be used without further action. 
 
-ClearlyDefined provides three different scores. For example:
-
-image::images/clearlydefined-example.png[Screenshot from ClearlyDefined]
-
-Three numbers are highlighted in this screenshot:
-
-// These will generate warnings; the callouts are included
-// part of the above image.
-
-<1> The overall score;
-<2> The _Described_ score (i.e., completeness of the metadata); and
-<3> The _Licensed_ score (i.e., confidence in the licensing). 
-
-In this particular example, the declared and discovered licenses are all on the approved licenses list, and the _Licensed_ score meets the threshold. This content can be used by {aForgeName} project without further consideration.
-
-Note that when the ClearlyDefined record shows any of the following, a project committer must <<ip-project-content-cq, engage with the IP Team via CQ>>:
+Note that when the ClearlyDefined record shows any of the following, a project committer must xref:ip-project-content-cq[engage with the IP Team to review the content]:
 
 * `NOASSERTION` appearing as a _declared license_;
 * `NOASSERTION` appearing as a _discovered license_;
@@ -482,16 +487,16 @@ Project teams are not required to engage with the IP Team to review service rele
 Content that claims to be distributed under a particular license may in fact include content that is distributed under alternative licenses, meaning that the licensing of a particular piece of content may be more complex than even the content authors know.
 ====
 
-The Eclipse Foundation has two trusted sources of license information: <<ip-ipzilla, IPZilla>> and <<ip-clearlydefined, ClearlyDefined>>.
+The Eclipse Foundation has two trusted sources of license information: <<ip-ipzilla, IPZilla>> and <<ip-clearlydefined, ClearlyDefined>>. IPZilla is the primary source of information regarding third-party licensing for {forgeName} projects. In cases where results differ, those from the IPZilla take precedence.
 
-IPZilla is the primary source of license information for third-party content. If the IPZilla record (<<ip-cq,CQ>>) for third-party content is marked as `approved` or `license_certified`, then it can be used without further action. If, however, third-party content is otherwise marked (e.g., `withdrawn` or `rejected`), then the project team must engage with the IP Team via CQ to get approval to use the content.
+[TIP]
+====
+Use the xref:ip-license-tool[Eclipse Dash License Tool] to determine whether or not third-party content has been approved for use.
+====
+
+IPZilla contains the accumulated knowledge of the Eclipse Foundation's IP Team; it is the primary source of license information for third-party content. When an IPZilla record (<<ip-cq,CQ>>) for third-party content is marked as `approved` or `license_certified`, then that content can be used without further action. If, however, third-party content is otherwise marked (e.g., `withdrawn` or `rejected`), then the project team must engage with the IP Team via CQ to get approval to use the content.
 
 If third-party content is not known to IPZilla, then <<ip-clearlydefined, ClearlyDefined>> can be used. When an entry is known to ClearlyDefined and has a _Licensed_ score of at least {clearlyDefinedMinimumScore} and all discovered licenses are on the Eclipse Foundation's {approvedLicensesUrl}[approved licenses list], then the content can be used without further action (for more information see <<ip-clearlydefined-using, Using ClearlyDefined>>). 
-
-[NOTE]
-====
-The Eclipse Foundation's <<ip-ipzilla, IPZilla>> is the primary source of information regarding third-party licensing for {forgeName} projects. In cases where IPZilla and ClearlyDefined results differ, IPZilla results take precedence.
-====
 
 [graphviz, images/ip_prereq_diligence, svg, subs="attributes"]
 .Due Diligence for Prerequisites
@@ -539,11 +544,6 @@ digraph {
 ----
 
 When content fails to meet these requirements, the project team must engage with the IP Team via CQ to get approval to use the content.
-
-[TIP]
-====
-Use the xref:ip-license-tool[Eclipse Dash License Tool] to determine whether or not a CQ is required.
-====
 
 When in doubt, committers should check with the {ipTeamEmailLink}.
 
@@ -778,7 +778,7 @@ The License Tool is a prototype that is intended to assist with the process of d
 
 What the License Tool does is relatively simple:
 
-It first queries the Eclipse Foundation's database of curated license data; if an entry has been vetted by the IP Team and has been approved for use, then it is marked as `approved`. If an entry has been vetted by the IP Team and flagged as somehow problematic, it will be marked as `restricted`.
+It first queries the Eclipse Foundation's license information database; if an entry has been vetted by the IP Team and has been approved for use, then it is marked as `approved`. If an entry has been vetted by the IP Team and flagged as somehow problematic, it will be marked as `restricted`.
 
 It then sends the content that has **not** been flagged as either `approved` or `restricted` to <<ip-clearlydefined, ClearlyDefined>>; ClearlyDefined matches are marked as `approved`.
 

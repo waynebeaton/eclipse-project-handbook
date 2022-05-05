@@ -80,6 +80,8 @@ An election starts with a nomination by an existing committer.
 digraph {
 	// Graph properties
 	bgcolor=transparent
+	rank=same
+	rankdir=TB
 	
 	// Decisions
 	node [shape=diamond;style=filled;fillcolor=white;fontsize=10];
@@ -92,7 +94,7 @@ digraph {
 	
 	node [shape=box;style=filled;fillcolor=white;fontsize=12];
 	start [label="Nominate", group=g1];
-	ongoing [label="Ongoing", group=g1];
+	ongoing [label="Vote", group=g1];
 	timedout [label="Timed out"];
 	complete [label="Complete", group=g1];
 	approved [label="Approved"];

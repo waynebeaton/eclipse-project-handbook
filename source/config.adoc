@@ -85,7 +85,10 @@
 :securityTeamEmail: security@eclipse.org
 :vulnerabilityReportUrl: https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Community&component=Vulnerability+Reports&keywords=security&groups=Security_Advisories
 :knownVulnerabilitiesUrl: https://www.eclipse.org/security/known.php
-:cveRequestUrl: https://gitlab.eclipse.org/eclipsefdn/iplab/emo/-/issues/new?issuable_template=cve
+
+:emoGitUrl: https://gitlab.eclipse.org/eclipsefdn/emo-team/emo
+:iplabUrl: https://gitlab.eclipse.org/eclipsefdn/emo-team/iplab
+:cveRequestUrl: {emoGitUrl}/-/issues/new?issuable_template=cve
 :cveUrl: https://cve.mitre.org/
 :cweUrl: https://cwe.mitre.org/
 

@@ -177,7 +177,7 @@ A _Contribution Message_ should be provided; it is displayed at the top of the s
 [[pmi-project-logos]]
 ==== Project Logos
 
-Any member of the project team can set the project's logo. The logo will be resized to a maximum of 200x200 pixels. Project logos are considered trademarks of the Eclipse Foundation (see <<trademarks-project-logo>> for more information).
+Any member of the project team can set the project's logo. The logo will be resized to a maximum of 200x200 pixels. Project logos are considered trademarks of the Eclipse Foundation (see xref:promoting-project-logo[Logos and Graphics] for more information).
 
 [TIP]
 ====
