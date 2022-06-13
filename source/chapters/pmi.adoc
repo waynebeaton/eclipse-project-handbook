@@ -1,5 +1,5 @@
 ////
- * Copyright (C) 2015 Eclipse Foundation, Inc. and others. 
+ * Copyright (C) 2015,2022 Eclipse Foundation, Inc. and others. 
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
@@ -7,7 +7,7 @@
  * 
  * SPDX-FileType: SOURCE
  *
- * SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
+ * SPDX-FileCopyrightText: 2015,2022 Eclipse Foundation, Inc.
  * SPDX-FileCopyrightText: 2015 Contributors to the Eclipse Foundation
  *
  * SPDX-License-Identifier: EPL-2.0
@@ -24,7 +24,7 @@ _Improved consistency._ Configuration/data-driven project web presence, direct l
 
 _All-in-one-place._ Project leads and committers are able to edit information in place on the project information pages. Text/information in one place with links in another is eliminated where possible. Comments and discussion related to reviews, elections, etc. are connected directly to the item being discussed.
 
-_Get started faster._ By default, projects are provided with a data-driven website that includes consistent links to project releases, reviews, downloads, etc. Projects can opt to override the default and provide their own customized web presence. Setting up a project presence is a matter of configuration, not PHP programming against proprietary APIs.
+_Get started fast._ By default, projects are provided with a data-driven website (a so-called _PMI Page_) that includes consistent links to project releases, reviews, downloads, etc. With the data-driven website, setting up project presence is a matter of providing metadata. Projects can opt provide their own xref:promotion-website[custom website]. 
 
 [[pmi-metadata]]
 === Project Metadata
@@ -33,8 +33,8 @@ Project committers and project leads are responsible for maintaining their proje
 
 Project metadata is:
 
-1.  Relatively static structural information such as the project description and scope, the names of the project's mailing lists and forums, the bugzilla products, source code repositories, etc.
-2.  Historical information such as previous release downloads, review slides and IP logs, etc.
+1.  Relatively static structural information such as the project description and scope, the names of the project's mailing lists and forums, pointers to source code repositories and issues, etc.
+2.  Historical information such as previous release downloads, review materials, etc.
 3.  Status and future looking information such as the project and milestone plans, the features scheduled for the current release, release dates, etc.
 
 PMC members and the Eclipse Foundation staff also have the ability to make changes on behalf of a project.
@@ -51,9 +51,10 @@ The PMI provides a website for every project based on the <<pmi-metadata,project
 
 An example project page is shown below. The _Overview_ page includes the name and description of the project, list of project licenses, a table of recent releases, and various charts and other information (note that more charts are displayed on the _Who's Involved_ page. The website also includes links to project-specific <<pmi-commands-and-tools,commands and tools>> when the user is logged in as a project committer.
 
-.A logged in committer can access commands and tools from the _Committer Tools_ block on the right side of the project page.
-
+.An example project page
 image::images/project-page.png[]
+
+A logged in committer can access xref:pmi-commands-and-tools[commands and tools] from the _Committer Tools_ block on the right side of the project page; they can also xref:pmi-editing[edit project metadata] by clicking the _Edit_ link at the far right of the tab list.
 
 The URL for a project page takes the form `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`), where `pass:c,a[<projectid>]` is the qualified <<resources-identifiers,identifier>> for the project.
 
@@ -108,10 +109,30 @@ To generate an IP Log:
 
 Committers have the ability to edit the information managed and displayed on the project page. There are several sections on the page. When you switch the page into _Edit_ mode, you will be provided with lots of help regarding the contents of each of the fields (note that the help text is currently rendered below the fields).
 
+.Editing project metadata.
+image::images/edit-project-metadata.png[]
+
+To set the edit project metadata: 
+
+* Log into the PMI;
+* Navigate to the <<pmi-project-page,project page>>;
+* Click btn:[Edit];
+* Expand sections to expose the various topic areas, and edit as required; and
+* Click btn:[Save].
+
+[TIP]
+====
+The changes that you make to the project metadata will be reflected immediately on the project information page.
+====
+
+If you require assistance editing the project metadata, contact the {emoEmailLink}.
+
 Some of the fields are described below.
 
 [[pmi-description-and-scope]]
 ==== Description and Scope
+
+The project description is displayed on the _Overview_ page; the scope is displayed on the _Governance_ page.
 
 The _description_ should start with a concise paragraph of three to five sentences (e.g. suitable for display with a collection of other projects). A single paragraph is generally appropriate for the description.
 
@@ -119,23 +140,43 @@ If more than a single simple paragraph is required to fully describe the project
 
 [NOTE]
 ====
-Providing a summary gives you control over what will get rendered. In views where we are displaying more than one project, the system will artifically cut short descriptions that are too long, potentially resulting in a description that looks _weird_.
+Providing a summary gives you control over what will get rendered. In views where we are displaying more than one project, the system will artificially cut short descriptions that are too long, potentially resulting in a description that looks _weird_.
 ====
 
-The _scope_ is intended for a more select audience; generally speaking the scope should be taken directly from the project's proposal. Project members have the ability to change the text of the project scope, but should be careful to avoid changing the meaning. If the meaning of the scope needs to change, the Project Management Committee (PMC) must be contacted regarding a potential restructuring review.
+The _scope_ is intended for a more select audience; generally speaking the scope should be taken directly from the project's proposal. 
+
+
+[WARNING]
+====
+Project members have the ability to change the text of the project scope, but should be careful to **avoid changing the meaning**. If the meaning of the scope needs to change, the Project Management Committee (PMC) must be contacted regarding a potential restructuring review.
+====
+
+To edit the description and/or scope:
+
+* Log into the PMI;
+* Navigate to the <<pmi-project-page,project page>>;
+* Click btn:[Edit];
+* Open the section labeled _The Basics_;
+* Update the fields as required; and
+* Click btn:[Save].
 
 [[pmi-downloads]]
 ==== Downloads
 
 You can provide download information for your project in the _Downloads_ section.
 
-The first entry is the main "Downloads URL". This manifests as a _Big Button_ Download on the project page. What you put here is left to the project team to decide. It can be a link to a webpage, a direct link to a file download, or whatever else makes sense the project and community.
+The first entry is the main "Downloads URL". This manifests as a _Big Button_ Download on the project page. What you put here is left to the project team to decide. It can be a link to a website, a direct link to a file download, or whatever else makes sense the project and community.
 
 Optional text can be included along with the _Big Button_ Download, as well as links to zero or more Eclipse Marketplace, update/p2 sites, or other downloads. Each of the links can have an optional title (the link itself will be displayed if no title is provided). Note that no validation is done on the links to ensure that they are meaningful. 
 
-ifeval::["{forgeName}"=="Eclipse"]
-_The Eclipse Foundation strongly encourages all projects (especially those that produce Eclipse Platform Plug-ins and Features) to create an maintain and http://marketplace.eclipse.org[Eclipse Marketplace] presence._
-endif::[]
+To edit the download information:
+
+* Log into the PMI;
+* Navigate to the <<pmi-project-page,project page>>;
+* Click btn:[Edit];
+* Open the section labeled _Downloads, Software Repositories, and Marketplace_;
+* Update the fields as required; and
+* Click btn:[Save].
 
 [[pmi-contributors]]
 ==== Contributors
@@ -148,34 +189,38 @@ Any committer or project lead can add or remove contributors for their own proje
 
 * Log into the PMI;
 * Navigate to the <<pmi-project-page,project page>>;
-* click <<pmi-editing,_Edit_>>;
-* Open the section labeled _Source Code and Issues/Bugzilla_; and
-* Add/remove email addresses to/from the _Contributors_ field.
+* Click btn:[Edit];
+* Open the section labeled _Source Code and Issues/Bugzilla_;
+* Add/remove email addresses to/from the _Contributors_ field;
+* Click btn:[Save].
 
 [[source-repositories]]
 ==== Source Repositories
 
-The project can specify zero or more *source repositories*. These are displayed in the Developer Resources_ section.
+Source repositories are listed on the _Developer Resources_ page.
 
-The values specified are used to query against a database of known existing source repositories (this database is updated nightly by a discovery process). Those repositories that are found in the database will be displayed with enhanced information (including links to repository mirrors, Gerrit, etc.). All values that you provide will be displayed, whether they point to real repositories or not. If the database does not contain your repository, the PMI will assume that the value is correct and try its best to display the information.
+Metadata regarding source repositories is maintained by EMO staff.
 
-Repositories should be specified using the file system path, e.g. `/gitroot/egit/egit.git`. The name that is displayed for the repository is extracted from the last segment of the URL.
+A _Contribution Message_, which is -- when provided -- displayed at the top of the _Developer Resources_ page. Arbitrary text is permitted, but we recommend that you limit this content to a single paragraph with a few sentences that include a link to more information. 
 
-If a description file exists in the Git repository, the contents are automatically displayed under the repository name.
-
-[NOTE]
+[TIP]
 ====
-The script that we us to identify repositories attempts to identify a corresponding Gerrit interface for the repository. If it exists, the Gerrit URL is used in place of the Git one. If the repository uses Gerrit, then only the Gerrit URL is displayed. Otherwise, the `git://` and `ssh://` URLs are displayed.
+It is more likely that potential contributors will find your project's source code repositories before they find the project page; be sure to provide a xref:legaldoc-contributor[Contributor Guide] in the root of your project repositories.
 ====
 
-You can use wildcards to match multiple repositories, e.g. `/gitroot/virgo/*`. Note that wildcards only work for repositories that exist on {forgeName} infrastructure (they do not work for GitHub-based repositories, for example). 
+To edit information about contribution and provide pointers to information about contributing to your project:
 
-Repositories are displayed in the order they are specified. The order can be changed in the edit screen by dragging entries into the desired order. All wildcard matches are sorted alphabetically by name at the end of the list.
-
-A _Contribution Message_ should be provided; it is displayed at the top of the section and is one of the primary means by which the community will find the project code. Arbitrary text is permitted, but we recommend that you limit this content to a single paragraph with a few sentences that include a link to more information.
+* Log into the PMI;
+* Navigate to the <<pmi-project-page,project page>>;
+* Click btn:[Edit];
+* Open the section labeled _Source Code and Issues/Bugzilla_;
+* Update the fields as required;
+* Click btn:[Save].
 
 [[pmi-project-logos]]
 ==== Project Logos
+
+Project Logos appear in the right navigation area on the project page. They also appear on summary or list pages (for example, the {projectListUrl}[Project List Page]).
 
 Any member of the project team can set the project's logo. The logo will be resized to a maximum of 200x200 pixels. Project logos are considered trademarks of the Eclipse Foundation (see xref:promoting-project-logo[Logos and Graphics] for more information).
 
@@ -188,9 +233,10 @@ Any committer or project lead can set the logo for their own project. To set the
 
 * Log into the PMI;
 * Navigate to the <<pmi-project-page,project page>>;
-* click <<pmi-editing,_Edit_>>;
-* Open the section labeled _Basics_; and
-* Upload your logo to the _Logo_ field.
+* Click btn:[Edit];
+* Open the section labeled _The Basics_;
+* Upload your logo to the _Logo_ field;
+* Click btn:[Save].
 
 [NOTE]
 ====
@@ -202,7 +248,7 @@ To exit from the incubation phase into a mature project, a project must meet all
 [[pmi-company-logos]]
 ==== Company Logos
 
-Company logos automatically appear on the _Who's Involved_ page under the following conditions:
+Company logos automatically appear on the _Overview_ and _Who's Involved_ page under the following conditions:
 
 * The company must be a {memberUrl}[member] of the Eclipse Foundation;
 * The company needs to have their logo uploaded to the Portal;
@@ -210,19 +256,48 @@ Company logos automatically appear on the _Who's Involved_ page under the follow
 * The committer must be on this project; and
 * The committer must be active (must have made at least one commit in the last three months)
 
-If all of those conditions are met and the logo is still not showing up, then it's possible that the project meta-data doesn't have the correct source code repository information specified.
+[TIP]
+====
+The display of company logos is _entirely automatic_ based on the criteria listed above.
+====
+
+If all of those conditions are met and the logo is still not showing up, then it's possible that the project meta-data doesn't have the correct source code repository information specified. Contact the {emoEmailLink} for assistance.
 
 [[pmi-build-technology]]
 ==== Build Technology
 
-A project can specify a section of text, links, and a selection of the build technologies employed. Specifying this information makes it easier for members from the community to understand your build. Links can include direct links into the Hudson builds, pages of build instructions, or whatever else the project team feels will help the community build the project.
+Build information appears on the _Developer Resources_ page.
+
+A project can specify a section of text, links, and a selection of the build technologies employed. Specifying this information makes it easier for members from the community to understand your build. Links can include direct links into the CI builds, pages of build instructions, or whatever else the project team feels will help the community build the project.
+
+To set build technology information: 
+
+* Log into the PMI;
+* Navigate to the <<pmi-project-page,project page>>;
+* Click btn:[Edit];
+* Open the section labeled _Build_;
+* Upload your logo to the _Logo_ field;
+* Click btn:[Save].
 
 [[pmi-technology-types]]
 ==== Technology Types
 
-A project can specify the types of technology produced by the project. This is specified in rather broad terms like _OSGi_ or _Runtime_. Th various technology types manifest as checkboxes on the edit screen. This information is used to form connections between projects to assist in navigation and discovery.
+Technology types are displayed in the _Tags_ block in the right navigation area of the project page.
+
+A project can specify the types of technology produced by the project. This is specified in rather broad terms like _OSGi_ or _Runtime_. The various technology types manifest as checkboxes on the edit screen. This information is used to form connections between projects to assist in navigation and discovery.
 
 Clicking on one of the technology types, will take the user to a page that lists the projects that produce that particular type of technology, along with the summary of their description and project logo (if specified).
+
+To configure technology types: 
+
+* Log into the PMI;
+* Navigate to the <<pmi-project-page,project page>>;
+* Click btn:[Edit];
+* Open the section labeled _Categorization, Relationships, and Tags_;
+* Select technology types from the list;
+* Click btn:[Save].
+
+You can also specify arbitrary tags and related projects (projects that share some link or synergy) in the _Categorization, Relationships, and Tags_ section.
 
 [[pmi-releases]]
 === Releases and Reviews
