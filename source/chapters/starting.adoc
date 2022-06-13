@@ -67,7 +67,7 @@ digraph {
 }
 ----
 
-Use the {createurl}[web form] to create a new project proposal. Instructions are provided on the form. All new proposals are created in _draft_ mode, and are accessible only by the original author and anybody designated as a project lead or committer in the proposal. Only those individuals designated as a project lead may edit the proposal.
+Use the {createUrl}[web form] to create a new project proposal. Instructions are provided on the form. All new proposals are created in _draft_ mode, and are accessible only by the original author and anybody designated as a project lead or committer in the proposal. Only those individuals designated as a project lead may edit the proposal.
 
 [NOTE]
 ====
