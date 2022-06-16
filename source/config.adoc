@@ -1,14 +1,11 @@
 ////
- * Copyright (C) 2015,2021 Eclipse Foundation, Inc. and others. 
+ * Copyright (C) 2015,2022 Eclipse Foundation, Inc. and others. 
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
  * http://www.eclipse.org/legal/epl-2.0.
  *  
  * SPDX-FileType: SOURCE
- *
- * SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
- * SPDX-FileCopyrightText: 2015 Contributors to the Eclipse Foundation
  *
  * SPDX-License-Identifier: EPL-2.0
 ////
@@ -51,6 +48,7 @@
 :legalDocumentationUrl: http://www.eclipse.org/legal/guidetolegaldoc.php
 :ipThirdParty: http://www.eclipse.org/org/documents/Eclipse_Policy_and_Procedure_for_3rd_Party_Dependencies_Final.pdf
 :ipPolicyUrl: http://eclipse.org/org/documents/Eclipse_IP_Policy.pdf
+:hostedServicesPrivacyPolicyUrl: https://www.eclipse.org/org/documents/eclipse-foundation-hosted-services-privacy-and-acceptable-usage-policy.pdf
 :mccaUrl: http://www.eclipse.org/legal/committer_process/EclipseMemberCommitterAgreementFinal.pdf
 :icaUrl: http://www.eclipse.org/legal/committer_process/EclipseIndividualCommitterAgreementFinal.pdf
 :ipzillaUrl: https://dev.eclipse.org/ipzilla

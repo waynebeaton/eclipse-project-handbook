@@ -1,14 +1,11 @@
 ////
- * Copyright (C) 2015 Eclipse Foundation, Inc. and others. 
+ * Copyright (C) 2015,2022 Eclipse Foundation, Inc. and others. 
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
  * http://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-FileType: SOURCE
- *
- * SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
- * SPDX-FileCopyrightText: 2015 Contributors to the Eclipse Foundation
  *
  * SPDX-License-Identifier: EPL-2.0
 ////
@@ -222,14 +219,16 @@ Project websites are an excellent way to connect an open source project with the
 
 Many project teams opt to create a custom main project website: if so-desired, a project may host a website on Eclipse Foundation-hosted servers. Project website URLs generally take the form `pass:c,a[{wwwUrl}/<shortname>]` (e.g. `pass:c,a[{wwwUrl}/foo]`). Custom project website content is maintained in Git repositories hosted on Eclipse Foundation infrastructure. A background job moves content from the Git repository to the website; content pushed to the repository will appear on the live website within five minutes.
 
-Project website Git repositories are hosted on git.eclipse.org and accessed via Gerrit. Project teams can opt to leverage GitHub or GitLab for project websites, but need to configure the Eclipse Jenkins instance to publish to the website. For more information, see https://wiki.eclipse.org/Jenkins#How_to_build_my_project.27s_website_with_Jenkins.3F[How to build my project website with Jenkins].
-
 [NOTE]
 ====
 If a project website has not already been created for your project, {websiteRequestUrl}[open a bug] to request that the Eclipse Webmaster create one.
 ====
 
 Project websites must implement the <<trademarks-website, branding guidelines for project websites>>.
+
+[#google-analytics]
+
+If your project website uses Google Analytics or otherwise collects information, there may be privacy and data protection concerns that you'll need to address. The xref:dpia[Data Protection Impact Assessment Guidelines] and {hostedServicesPrivacyPolicyUrl}[Eclipse Foundation Hosted Services Privacy and Acceptable Usage Policy] describe the Eclipse Foundation's policy and your obligations.
 
 endif::[]
 ifeval::["{forgeName}"!="Eclipse"]
