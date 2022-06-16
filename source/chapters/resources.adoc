@@ -226,16 +226,17 @@ If a project website has not already been created for your project, {websiteRequ
 
 Project websites must implement the <<trademarks-website, branding guidelines for project websites>>.
 
-[#google-analytics]
-
-If your project website uses Google Analytics or otherwise collects information, there may be privacy and data protection concerns that you'll need to address. The xref:dpia[Data Protection Impact Assessment Guidelines] and {hostedServicesPrivacyPolicyUrl}[Eclipse Foundation Hosted Services Privacy and Acceptable Usage Policy] describe the Eclipse Foundation's policy and your obligations.
-
 endif::[]
 ifeval::["{forgeName}"!="Eclipse"]
 The <<pmi,Project Management Infrastructure>> (PMI) provides the main <<pmi-project-page,project website>>. Website URLs take the form of `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`).
 endif::[]
 
 Websites _not_ hosted by the Eclipse Foundation are considered <<trademark-external-community,community portals>> and are subject to the {trademarkGuidelinesUrl}[Eclipse Foundation Trademark Usage Guidelines] (the Eclipse Foundation asserts ownership of all project name trademarks).
+
+[#resources-analytics]
+=== Analytics and Data Collection
+
+If your project website or any other property maintained by or on behalf the project team uses Google Analytics or otherwise collects information, there may be privacy and data protection concerns that you'll need to address. The xref:dpia[Data Protection Impact Assessment Guidelines] and {hostedServicesPrivacyPolicyUrl}[Eclipse Foundation Hosted Services Privacy and Acceptable Usage Policy] describe the Eclipse Foundation's policy and your obligations.
 
 [[resources-website-services]]
 === Vendor-Specific Links
