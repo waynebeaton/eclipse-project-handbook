@@ -185,6 +185,11 @@ The project team can choose to designate specific individuals as official contri
 
 Contributors can be designed by adding their email address to the _Contributors_ field. The contributor must have an Eclipse Foundation account using the email. In the case of GitHub, the contributor must also provide their GitHub ID in their <<contributing-account,Eclipse Foundation Account>>.
 
+[NOTE]
+====
+To gain the _triage_ role on {aForgeName} project's GitHub repositories, contributors must provide their GitHub ID in their xref:contributing-account[Eclipse Foundation Account].
+====
+
 Any committer or project lead can add or remove contributors for their own project. To set the add or remove contributors: 
 
 * Log into the PMI;
@@ -193,6 +198,11 @@ Any committer or project lead can add or remove contributors for their own proje
 * Open the section labeled _Source Code and Issues/Bugzilla_;
 * Add/remove email addresses to/from the _Contributors_ field;
 * Click btn:[Save].
+
+[NOTE]
+====
+The _sync script_ that propagates contributor information into teams on our GitLab instance or to GitHub runs every two hours. That is, you should expect upwards of two hours of latency between when an individual is added to as a contributor and the corresponding privileges are available to that individual.
+====
 
 [[source-repositories]]
 ==== Source Repositories
