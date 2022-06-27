@@ -341,7 +341,7 @@ A review record, however, does not require a release association. Some reviews a
 
 Each <<release,release>> has its own record in the database. Records are connected directly to a single specific project; a subset of release records associated with a project are displayed on the project page. An existing release can be edited in much the same was as a project. Any logged in project member (committer or project lead) can switch to the _Edit_ tab.
 
-Create a single record for each release. *Do not create release records for milestones.* Enter milestone information in the _Plan_ information for your release.
+Create a single record for each release. **Do not create release records for xref:release-milestones[milestone builds]**. You may optionally enter milestone information in the xref:pmi-release-plan[Plan] information of a release record.
 
 [TIP]
 ====
@@ -355,6 +355,8 @@ Describe the release in the _Description_ section. The description should genera
 
 [[pmi-release-issues]]
 ==== Issues
+
+The _Issues_ tab is populated with descriptions and links to issues in the Eclipse Foundation's Bugzilla instance that are associated with the release. This feature has been flagged for deprecation and removal (see https://gitlab.eclipse.org/eclipsefdn/it/websites/projects.eclipse.org/-/issues/83[issue #83] for more information).
 
 The release record will automatically generate a list of targeted bugs.
 
@@ -374,13 +376,6 @@ The bugs for all projects participating in the release will be included. Bugs ar
 ==== Plan
 
 <<releases-plan,Project plan>> information belongs in the _Plan_ section. This information *should* generally be provided early in the development cycle to allow the various communities the ability to understand and participate in the release. It is expected that the plan will evolve over time. Note that all projects are required to provide a plan for each major and minor release (plans are not required service releases).
-
-[[pmi-release-milestones]]
-==== Milestones
-
-Enter the name, date, and optional description for each <<release-milestones,milestone>> expected with the release. 
-
-Projects should generally include more than one milestone build with each release. To include additional milestones, click the btn:[Add another item] button. Note that milestones can be dragged into the desired order. To remove a milestone, leave the _Name_ field blank.
 
 [[pmi-review]]
 ==== Review

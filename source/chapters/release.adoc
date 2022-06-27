@@ -64,11 +64,27 @@ Producing regular builds is an important part of the release cycle. Builds are a
 All requests for review of <<ip,intellectual property>> contributions must be approved by the IP Team before the products of a release are pushed out onto distribution channels (this includes third-party content and contributions of code to be maintained by the project).
 
 [[release-milestones]]
-=== Milestones and Release Candidates
+=== Pre-release Milestone Builds
 
-Milestone builds and release candidates are not themselves official releases. Per the {edpLink}, milestone and release candidate builds are intended to be consumed by a limited audience to solicit, gather, and incorporate feedback from leading edge consumers. A predictable schedule for the delivery of milestone builds is especially valuable when the period of time between formal releases spans multiple months. 
+Milestone builds and release candidates are not themselves official releases. Per the {edpLink}, milestone and release candidate builds are pre-releases that are intended to be consumed by a limited audience to solicit, gather, and incorporate feedback from leading edge consumers. A predictable schedule for the delivery of milestone builds is especially valuable when the period of time between formal releases spans multiple months. 
 
 Project teams should include at least one milestone build during every release cycle. The timing of milestone and release candidate builds should be included in release plans.
+
+[TIP]
+====
+As described in the Eclipse Foundation Development Process, milestones and release candidates are "almost releases", not releases. You've likely noticed that we to some lengths to avoid using the word _release_ and instead tend to speak of milestone _builds_. While the EMO staff may wince a little when you refer to content as, for example, an _alpha release_, please feel free to do so if that makes sense to you and your community.
+====
+
+There are no governance requirements to produce and distribute a milestone build. Specifically, the project team does not need to engage in any reviews (for example, release or progress reviews) prior to distributing a milestone build. Milestone builds may include intellectual property that has not been fully vetted; the project team **does not** need to wait for specific approvals from the Eclipse Foundation's IP Team to disseminate milestone builds. The project team should, however, take care to ensure that -- to the best of their knowledge and ability -- the licenses of the content included in milestone builds is well-defined and compatible/consistent.
+
+Milestone builds can be hosted where ever the project team hosts downloads. The project team must ensure that milestone builds are clearly described as _pre-release_ software that is intended to engage and prepare consumers, test the build process, and to solicit feedback. Milestone builds can be referred to as _alpha_, _beta_, or whatever other terms make sense to the project team and community (the primary concern is that the community understand the nature of the content that they consume).
+
+[TIP]
+====
+Be sure to specify the channels where milestone adopter should provide feedback.
+====
+
+If you have questions regarding the distribution of milestone builds, contact the {emoEmailLink} for assistance.
 
 [[release-review]]
 === Progress and Release Reviews
@@ -210,7 +226,11 @@ Projects in the incubation phase generally use version numbers that are less tha
 
 How do I name/number milestone builds? ::
 
-Milestone builds should contain the name/number of the release suffixed with "Mn" (e.g. the second milestone for EGit 3.2 may have a file named `egit-3.2M2`). Projects in the incubation phase may produce milestone builds for their graduation release, e.g `myProject-1.0M2`.
+Milestone builds must be named in a manner that that conveys the _pre-release_ nature of the content. It is common for project teams to name their milestone builds _alpha_ or _beta_. Another convention is to use the name/number of the eventual release suffixed with "Mn" (e.g. the second milestone for Eclipse EGit 3.2 may have a file named `egit-3.2M2`). Projects in the incubation phase may produce milestone builds for their graduation release, e.g `myProject-1.0M2`.
+
+Can {forgeName} open source projects in the incubation phase distribute milestone builds? ::
+
+Yes. In fact, the EMO strongly encourages {forgeName} open source projects in the incubation phase to create and distribute milestone builds. 
 
 How can I get help? ::
 
