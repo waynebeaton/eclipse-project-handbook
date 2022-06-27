@@ -1,14 +1,11 @@
 ////
- * Copyright (C) 2015 Eclipse Foundation, Inc. and others. 
+ * Copyright (C) 2015,2022 Eclipse Foundation, Inc. and others. 
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
  * http://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-FileType: SOURCE
- *
- * SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
- * SPDX-FileCopyrightText: 2015 Contributors to the Eclipse Foundation
  *
  * SPDX-License-Identifier: EPL-2.0
 ////
@@ -119,8 +116,12 @@ digraph {
 }
 ----
 
-
 Only project committers may nominate a new committer or vote in a committer election. To be successful, the election must receive a minimum of three positive `pass:[+1]` votes. Any committer can veto the election by casting a `pass:[-1]` vote, or indicate their participation in the process but with no opinion with a `pass:[+0]` vote. For projects with three or fewer committers all committers must vote. Committer elections run for one week, but will end prematurely if all project committers vote `pass:[+1]`.
+
+[TIP]
+====
+Committers can change their vote while the election is in progress. Committers may post questions about the committer or ask for clarification of the merit statement in the project's dev-list, and change their vote based on what they discover. The merit statement itself cannot be changed after the election has started.
+====
 
 Following a successful committer vote, the project's PMC will review the election results and then either approve or veto the election. An election may be vetoed, for example, if the PMC feels that the merit statement is not strong enough.
 
@@ -132,16 +133,17 @@ The <<paperwork, paperwork>> process will automatically be initiated following P
 Similar to a committer election, a project lead election starts with a statement of merit. The merit statement should, rather than focus on specific code contributions, focus instead on the leadership qualities expressed by the individual.
 
 .Project Lead merit statement
-=====================================================================
-Sounak has been part of the Ogee development since before the initial contribution. He played an important role ever since, as he is one of the key
-developers. With regards to the number of commits Sounak is currently the top committer of Ogee:
+====
+Robert Smith has been part of the Eclipse Dash development since before the initial contribution. He played an important role ever since, as he is one of the key developers. With regards to the number of commits Robert is currently the top committer of Eclipse Dash:
 
-http://git.eclipse.org/c/ogee/org.eclipse.ogee.git/stats/?period=q&ofs=10
+++https://github.com/eclipse/dash-licenses/commits?author=RobertSmith++
 
-Apart from that Sounak took care of the project page and the build. For release 0.6 he also handled the review formalities for me. Finally I would like to mention a blog post he did at odata.org to promote Ogee in the OData community:
+Apart from that Robert took care of the project page and the build. He also handed the governance aspects of the 0.6 release. 
 
-http://www.odata.org/blog/eclipse-ogee 
-=====================================================================
+Finally I would like to mention a blog post he did at thecure.com: 
+
+++https://thecure.com/dash++
+====
 
 Project leads are normally also committers. A project may have more than one project lead (so-called _co-leads_).
 
@@ -223,6 +225,16 @@ Yes. Your status as a committer is not tied to your employment status. You may, 
 What happens if committers don't vote? ::
 
 If a project has three or fewer committers, then all committers must vote. If even one out of the three does not vote, then the election will end in failure. If the non-voting committer is also not active, then they can, perhaps, be <<elections-retire-cm,retired>> by the project lead.
+
+Can we change a merit statement? ::
+
+The election infrastructure doesn't permit changing a merit statement after an election has begun (the principle being that changing the question after you start a vote is considered bad form).
++
+In cases where the merit statement is omitted or considered inadequate, or committers have additional questions about a candidate, it's completely reasonable to discuss it on the mailing list, and for committers to then use that discussion as the basis for their vote. Committers who have already voted, you can return to the election record and change their vote. 
+
+Can a committer change their vote on an election? ::
+
+Yes.
 
 How do we transfer committers from one project to another? ::
 
