@@ -7,9 +7,6 @@
  * 
  * SPDX-FileType: SOURCE
  *
- * SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
- * SPDX-FileCopyrightText: 2015 Contributors to the Eclipse Foundation
- *
  * SPDX-License-Identifier: EPL-2.0
 ////
 
@@ -83,7 +80,7 @@ The entry point into the IP Due Diligence Process is the <<ip-cq,Contribution Qu
 [#ip-dash-db]
 === Eclipse Dash License Database
 
-The Eclipse Dash License Database (or, more simply, the _Dash Database_) is a database that contains the license information collected via the Eclipse Foundation Intellectual Property Due Diligence Process. It contains license information gathered and curated by the Eclipse Foundation's IP Team via xref-iplab[IPLab] and xref:ip-ipzilla[IPZilla]. The Dash Database is accessed via API only; the xref:ip-license-tool[Eclipse Dash License Tool] is the primary means of accessing this resource.
+The Eclipse Dash License Database (or, more simply, the _Dash Database_) is a database that contains the license information collected via the Eclipse Foundation Intellectual Property Due Diligence Process. It contains license information gathered and curated by the Eclipse Foundation's IP Team via xref:iplab[IPLab] and xref:ip-ipzilla[IPZilla]. The Dash Database is accessed via API only; the xref:ip-license-tool[Eclipse Dash License Tool] is the primary means of accessing this resource.
 
 [#ip-iplab]
 ==== IPLab

@@ -162,7 +162,7 @@ In all cases, the PMC Lead makes a recommendation to the EMO/ED to appoint a PMC
 
 [TIP]
 ====
-No specific infrastructure is exists for PMC Member elections. PMCs must use their PMC mailing list to nominate and elect new members, and report the results to the {emoEmail}[EMO]. The EMO will get approval from the EMO/ED and make the appointment.
+No specific infrastructure is exists for PMC Member elections. PMCs must use their PMC mailing list to nominate and elect new members, and report the results to the {emoEmailLink}. The EMO will get approval from the EMO/ED and make the appointment.
 ====
 
 [[elections-pmc-lead]]
@@ -208,7 +208,7 @@ image::images/elections_retire_pl.png[]
 [[elections-retire-other]]
 === Retiring Other Roles
 
-Connect with the PMC or mailto:{emoEmail}[EMO] for assistance.
+Connect with the PMC or {emoEmailLink} for assistance.
 
 [[elections-faq]]
 === Frequently Asked Questions
