@@ -126,17 +126,27 @@ Three teams are created for the group, each containing members from the correspo
 For information regarding the privileges available to each of the Maintainer, Developer, and Reporter roles indicated below, consult the https://gitlab.eclipse.org/help/user/permissions.md#project-members-permissions[GitLab Documentation].
 ====
 
-Project Leads ::
+[#resources-gitlab-access]
+==== Access to GitLab Repositories
 
-All project leads are automatically added to this team. All members of the _project leads team_ are granted the _Maintainer_ role on their project's GitLab repositories. When an individual is xref:elections-pl[elected] into the role of project lead, they are automatically added to the _project leads team_. When a project lead is xref:elections-retire-pl[retired], they are automatically removed from the team.
+Project Leads Team ::
 
-Committers ::
+All project leads are automatically added to the _project leads team_. All members of the _project leads team_ are granted the _Maintainer_ role on their project's GitLab repositories. When an individual is xref:elections-pl[elected] into the role of project lead, they are automatically added to the _project leads team_. When a project lead is xref:elections-retire-pl[retired], they are automatically removed from the team.
++
+[WARNING]
+====
+With the _Maintainer_ role, project leads have significant privileges on GitLab repositories. Project leads must not manipulate the configuration of GitLab groups and repositories in a manner that would violate the {edpLink} or the {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy]. 
 
-All committers are automatically added to this team. All members of the _committers team_ are granted the _Developer_ role on their project resources hosted on GitLab. When an individual is xref:elections-committer[elected] into the role of committer, they are automatically added to the _committers team_. When a project lead is xref:elections-retire-cm[retired], they are automatically removed from the team.
+For example, project leads **must not** manipulate teams or privileges and must specifically not add or remove developers directly. See xref:elections-committer[Committer Elections] for information on how to add developers to a project, and xref:elections-retire-cm[Committers Retirement] for information on how to remove developers from a project.
+====
 
-Contributors ::
+Committers Team ::
 
-All contributors are automatically added to this team. All members of the _contributors team_ are granted _Reporter_ level access to project resources hosted on GitLab. When an individual is added to the project's xref:pmi-contributors[Contributors] list, they are automatically added to the _contributors team_. When they are removed from the Contributors list, they are automatically removed from the team.
+All committers are automatically added to the _committers team_. All members of the _committers team_ are granted the _Developer_ role on their project resources hosted on GitLab. When an individual is xref:elections-committer[elected] into the role of committer, they are automatically added to the _committers team_. When a project lead is xref:elections-retire-cm[retired], they are automatically removed from the team.
+
+Contributors Team ::
+
+All contributors are automatically added to the _contributors team_. All members of the _contributors team_ are granted _Reporter_ level access to project resources hosted on GitLab. When an individual is added to the project's xref:pmi-contributors[Contributors] list, they are automatically added to the _contributors team_. When they are removed from the Contributors list, they are automatically removed from the team.
 
 The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook inspects incoming merge requests to ensure that the contributor has a valid ECA on file, and flags those that do not. Project committers should only accept merge requests that pass this validation.
 
@@ -168,19 +178,41 @@ Click on the _Details_ link for more information. Committers must not merge comm
 [[resources-github-access]]
 ==== Access to GitHub Repositories
 
-All project committers have write access to their project's repositories on GitHub.
-
-To gain write access to a project's GitHub repositories a developer must:
-
-* Be <<elections-committer, elected>> as a project committer; and
-* Provide their GitHub Id in their <<contributing-account,Eclipse Foundation Account>>.
-
-Project leads are granted `maintain` level access to their project's GitHub repositories. 
+Eclipse Foundation scripts build and maintain a collection of GitHub Teams, each with permissions appropriate to the corresponding {forgeName} project roles (project lead, committer, and contributor).
 
 [TIP]
 ====
-A project lead may request temporary `admin` level access to their project's repositories by {helpdeskUrl}[creating a Help Desk issue]. The issue must describe what will be done using this new level of access and how long it will be needed.
+The scripts require knowledge of the GitHub Id in order to add any individual to any of the teams. Be sure to include your GitHub Id in your <<contributing-account,Eclipse Foundation Account>>.
 ====
+
+Project Leads Team ::
+
+All project leads are automatically added to the _project leads team_. All members of the _project leads team_ are granted the _Maintain_ role on their project's GitHub repositories. When an individual is xref:elections-pl[elected] into the role of project lead, they are automatically added to the _project leads team_. When a project lead is xref:elections-retire-pl[retired], they are automatically removed from the team.
++
+A project lead may request temporary _Admin_ level access to their project's repositories by {helpdeskUrl}[creating a Help Desk issue] with their request. The issue must describe what will be done using this new level of access and how long it will be needed. 
++
+[WARNING]
+====
+With the _Maintain_ role, project leads have significant privileges on GitHub repositories. Project leads must not manipulate the configuration of GitHub organizations and repositories in a manner that would violate the {edpLink} or the {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy]. 
+
+For example, project leads **must not** manipulate teams or privileges and must specifically not add or remove developers directly. See xref:elections-committer[Committer Elections] for information on how to add developers to a project, and xref:elections-retire-cm[Committers Retirement] for information on how to remove developers from a project.
+====
++
+Project leads must provide their GitHub Id in their <<contributing-account,Eclipse Foundation Account>>.
+
+Committers Team ::
+
+All committers are automatically added to the _committers team_. All members of the _committers team_ are granted the _Write_ role on their project resources hosted on GitHub. When an individual is xref:elections-committer[elected] into the role of committer, they are automatically added to the _committers team_. When a project lead is xref:elections-retire-cm[retired], they are automatically removed from the team.
++
+Committers must provide their GitHub Id in their <<contributing-account,Eclipse Foundation Account>>.
+
+Contributors Team ::
+
+All contributors are automatically added to the _contributors team_. All members of the _contributors team_ are granted _Triage_ level access to project resources hosted on GitHub. When an individual is added to the project's xref:pmi-contributors[Contributors] list, they are automatically added to the _contributors team_. When they are removed from the Contributors list, they are automatically removed from the team.
++
+Contributors must provide their GitHub Id in their <<contributing-account,Eclipse Foundation Account>>.
+
+The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook inspects incoming pull requests to ensure that the contributor has a valid ECA on file, and flags those that do not. Project committers should only merge pull requests that pass this validation.
 
 [#resources-gerrit]
 === Gerrit Code Review
