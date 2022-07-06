@@ -179,7 +179,7 @@ Project teams may seek guidance from the PMC and EMO to ensure that the text is
 
 The official <<resources-website, project website>> is the primary means of learning about the project and getting involved: people who are interested in contributing to the project come here to learn about technical details, and to observe the project's development process.
 
-{forgeName} projects must host all project content on an Eclipse Foundation provided domain,especially the official/primary website for project-related information, communications, access to source code, and downloads. This ensures both that the Eclipse Foundation's Webmaster team can maintain the services, and informs consumers that the content comes from {aForgeName} project, and not a third-party. This further ensures that the project remains independent of any specific vendor or single individual.
+{forgeName} projects must host all project content on an Eclipse Foundation provided domain,especially the official/primary website for project-related information, communications, access to source code, and downloads. This ensures both that the Eclipse Foundation's IT Team can maintain the services, and informs consumers that the content comes from {aForgeName} project, and not a third-party. This further ensures that the project remains independent of any specific vendor or single individual.
 
 All primary links to the project (including, for example, the project’s contribution guide) must point directly to the official website, and not to external sites or domains.
 

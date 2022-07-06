@@ -453,7 +453,7 @@ For a committer to appear on a project's _Who's Involved_ page:
 . The election must complete successfully and be approved by the PMC;
 . The new committer must provide the required <<paperwork,paperwork>>;
 . The paperwork must be processed by the EMO Records Team; and
-. The webmaster must create the committer account.
+. The Eclipse IT Team must create the committer account.
 --
 +
 Each piece takes time. If a committer doesn't appear some number of days after the successful completion of a committer election, then contact the committer to confirm that they've followed the provided instructions and have submitted committer paperwork. Then, connect with mailto:{emoEmail}[EMO] for assistance.

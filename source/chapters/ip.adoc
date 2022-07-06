@@ -164,7 +164,7 @@ digraph {
 	{
 		rankdir=TB;
 		creation[label="EMO declares\nsuccessful\nCreation Review"];
-		provision[label="Eclipse\nWebmaster\nProvisions"];
+		provision[label="Eclipse\nIT Team\nProvisions"];
 	}
 	initial[label="Committer submits\nInitial\nContribution"];
 	
@@ -195,7 +195,7 @@ digraph {
 }
 ----
 
-Following a successful Creation Review, the EMO will initiate the provisioning process (Committers provide required paperwork and the Webmaster creates project resources (Git, downloads, website, etc.);
+Following a successful Creation Review, the EMO will initiate the provisioning process (Committers provide required paperwork and the IT Team creates project resources (Git, downloads, website, etc.);
 
 The initial contribution is a snapshot of the existing code base. The initial contribution, like any other <<ip-project-content,project content>> contribution, should contain *only* project content. Any <<ip-third-party,third-party content>> that might be included in the existing source tree should be excluded from the initial contribution and treated as third-party content. The initial contribution is just a snapshot in time: the IP Team does not review history.
 
@@ -302,7 +302,7 @@ After creating the CQ, the committer will be sent an email with instructions to 
 Be sure to click btn:[Issues addressed, return CQ to IP Team] to release the CQ back to the workflow.
 ====
 
-The IP Team will engage in two phases. In the first phase, they will perform a rudimentary license check. If the licenses represented in the content are found to be compatible with the project license, the project team will grant _check-in_ meaning that the project team may add the content to a project repository (or engage with the Eclipse webmaster to move an existing repository). The IP Team will add the CQ to their queue for further detailed analysis. When that analysis is complete, the IP Team will mark the CQ as `approved`, indicating that the content is fully vetted for use and may be included in a project <<release>>.
+The IP Team will engage in two phases. In the first phase, they will perform a rudimentary license check. If the licenses represented in the content are found to be compatible with the project license, the project team will grant _check-in_ meaning that the project team may add the content to a project repository (or engage with the Eclipse IT Team to move an existing repository). The IP Team will add the CQ to their queue for further detailed analysis. When that analysis is complete, the IP Team will mark the CQ as `approved`, indicating that the content is fully vetted for use and may be included in a project <<release>>.
 
 The IP team may require assistance from the project team as it analyzes content. Once that analysis is complete and the IP Team has made a decision, they will outline the next steps directly on the CQ. 
 

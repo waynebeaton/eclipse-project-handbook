@@ -83,7 +83,7 @@ The new committer must download and print the documents, complete and sign them,
 .Upload the ICA directly into the form
 image::images/committer_questionnaire2.png[]
 
-After all required documents have been received, the EMO Records Team will review them, contact the committer to resolve any issues that need to be addressed, and send a request to the Webmaster to provision a committer account.
+After all required documents have been received, the EMO Records Team will review them, contact the committer to resolve any issues that need to be addressed, and send a request to the Eclipse IT Team to provision a committer account.
 
 Questions regarding this process should be addressed to the mailto:{emoRecordsEmail}[EMO Records Team].
 

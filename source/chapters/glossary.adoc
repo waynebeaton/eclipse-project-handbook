@@ -134,7 +134,7 @@ This Eclipse Foundation uses the ISO 27005 definition of vulnerability: "A weakn
 
 Webmaster ::
 
-The Webmaster team is responsible for maintaining the IT infrastructure of the Eclipse Foundation and the {forgeName} forge. You can contact the Webmaster team directly via email ({webmasterEmail}).
+Webmaster is often used as an alternative name for the Eclipse IT Team. The IT team is responsible for maintaining the IT infrastructure of the Eclipse Foundation and the {forgeName} forge. You can contact the IT team directly by opening a {helpdeskUrl}[Help Desk issue] or via email ({webmasterEmail}).
 	
 Working Group ::
 

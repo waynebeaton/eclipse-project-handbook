@@ -104,7 +104,7 @@ The Eclipse Foundation maintains an instance of GitLab for use by {forgeName} op
 
 [TIP]
 ====
-Any committer can {helpdeskUrl}[create a Help Desk issue] to request that the Eclipse Webmaster create a new repository on, or move an existing repository to, the GitLab instance for their project. Note that the Webmaster will verify the request with the project leads.
+Any committer can {helpdeskUrl}[create a Help Desk issue] to request that the Eclipse IT Team create a new repository on, or move an existing repository to, the GitLab instance for their project. Note that the IT Team will verify the request with the project leads.
 ====
 
 GitLab organizes content into a series of nested groups with `{forgeMachineName}` at the root, and the project's xref:trademarks-project-short[short name].
@@ -155,11 +155,11 @@ The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook inspects incom
 
 Project teams may opt to host some or all of their canonical source code repositories to an organization on GitHub that is maintained by the Eclipse Foundation. Both GitHub Issues and Wiki may also be used.
 
-Any committer can {gitHubRequestUrl}[open an issue] to request that the Eclipse Webmaster create a new repository for their project on, or move an existing repository to, GitHub. A project may have more than one repository on GitHub. When making the request, the committer should describe--specifically and concisely--what they want to make happen. Note that the Webmaster will verify the request with the project leads.
+Any committer can {helpdeskUrl}[open a Help Desk issue] to request that the Eclipse IT Team create a new repository for their project on, or move an existing repository to, GitHub. A project may have more than one repository on GitHub. When making the request, the committer should describe--specifically and concisely--what they want to make happen. Note that the IT Team will verify the request with the project leads.
 
 Repositories can be hosted in the default `{forgeMachineName}` GitHub organization, or a dedicated organization can be created. Dedicated organizations use as their name, the conjunction of `{forgeMachineName}` with the project <<resources-identifiers,short name>> (e.g., `{forgeMachineName}-woolsey`).
 
-The Eclipse Webmaster installs some _hooks_ onto all {forgeName} project repositories on GitHub.
+The Eclipse IT Team installs some _hooks_ onto all {forgeName} project repositories on GitHub.
 
 The _Committers hook_ grants designated project committers write access to the GitHub-hosted project repositories. Project committers must add their GitHub id to their <<contributing-account,Eclipse Foundation account>>, and must use the email address they provide to the Eclipse Foundation as the email address in the author credentials of all commits. 
 
@@ -219,7 +219,7 @@ The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook inspects incom
 
 [#resources-git]
 
-https://www.gerritcodereview.com/[Gerrit] provides web based code review and repository management for the Git version control system. Many projects use Gerrit to reduce barriers and encourage contribution to the project. {gerritRequestUrl}[Open a bug] to request that the Eclipse Webmaster configure your Git repository for Gerrit. 
+https://www.gerritcodereview.com/[Gerrit] provides web based code review and repository management for the Git version control system. Many projects use Gerrit to reduce barriers and encourage contribution to the project. {helpdeskUrl}[Open an issue] to request that the Eclipse IT Team configure your Git repository for Gerrit. 
 
 Commits may be pushed directly to the Git repository through Gerrit by a project committer (e.g. to the `main` branch).
 
@@ -253,7 +253,7 @@ Many project teams opt to create a custom main project website: if so-desired, a
 
 [NOTE]
 ====
-If a project website has not already been created for your project, {websiteRequestUrl}[open a bug] to request that the Eclipse Webmaster create one.
+If a project website has not already been created for your project, {helpdeskUrl}[open a Help Desk issue] to request that the Eclipse IT Team create one.
 ====
 
 Project websites must implement the <<trademarks-website, branding guidelines for project websites>>.
@@ -320,7 +320,7 @@ The following rules apply:
 
 * The Eclipse Foundation's <<trademarks,branding rules>> must be observed;
 * External services must not add legal terms or conditions that invalidate the project licenses or copyrights;
-* One or more project *committers* must have ownership rights; and
+* One or more project **committers** must have ownership rights; and
 * The usual level playing field must be observed.
 
 Even when using services not hosted by the Eclipse Foundation, project teams are required to operate in an open, transparent, meritocratic, and vendor-neutral manner. Use of the service must not add an unreasonable access barrier for contributors, and no single individual or company can exert exclusive control of the service. Administrative level control of the service must be shared by as diverse a subset of the project committers as possible, and a documented policy must be established for managing that control.
@@ -334,10 +334,10 @@ All services require that users conform to some sort of terms of use that likely
 
 External resources can be used for:
 
-* User forum discussions, presentations;
+* User forum discussions (e.g, Slack);
 * Builds and alternative sources for <<resources-downloads,downloads>>; 
-* Container image management (e.g. <<resources-dockerhub,DockerHub>>); and
-* Examples, blogs, social media handles.
+* Container image management (e.g., <<resources-dockerhub,DockerHub>>); and
+* Examples, presentations, blogs, social media handles.
 
 This list is not exhaustive. Project leads should work with their PMC and the EMO to determine the terms and conditions for an external resource are compatible with the project license(s), the {ipPolicyUrl}[Eclipse IP Policy], and {edpLink}.
 
