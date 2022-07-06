@@ -145,17 +145,25 @@ All project leads are automatically added to the projects' namespace (as defined
 With the _Maintainer_ role, project leads have significant privileges on GitLab repositories. Project leads must not manipulate the configuration of GitLab groups and repositories in a manner that would violate the {edpLink} or the {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy]. 
 
 For example, project leads **must not** manipulate privileges and must specifically not add or remove developers directly. See xref:elections-committer[Committer Elections] for information on how to add developers to a project, and xref:elections-retire-cm[Committers Retirement] for information on how to remove developers from a project.
+
+For adding a bot to the projects to assist in CI/CD operations, see the xref:bot-user-access[Bot user access] section.
 ====
 
-Committers Team ::
+Committers ::
 
 All committers are automatically granted the _Developer_ role on their project resources hosted on GitLab. When an individual is xref:elections-committer[elected] into the role of committer, they are automatically added to the as a _Developer_ to the projects' namespace. When a project lead is xref:elections-retire-cm[retired], they are automatically removed from the projects' namespace.
 
-Contributors Team ::
+Contributors ::
 
 All contributors are automatically granted _Reporter_ level access to project resources hosted on GitLab. When an individual is added to the project's xref:pmi-contributors[Contributors] list, they are automatically added as a _Reporter_ in the projects' namespace. When they are removed from the Contributors list, they are automatically removed from the projects' namespace.
 
+[#bot-user-access]
+Bot User Access ::
+
+To assist with CI/CD operations, bots with CI/CD access can be requested by making a request within the https://gitlab.eclipse.org/eclipsefdn/helpdesk/[Eclipse Foundation Helpdesk]. These users may be added directly to project repositories or to the projects' namespace depending on the current need.
+
 The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook inspects incoming merge requests to ensure that the contributor has a valid ECA on file, and flags those that do not. Project committers should only accept merge requests that pass this validation.
+
 
 [[resources-github]]
 === GitHub
