@@ -114,19 +114,19 @@ For example, the {forgeName} Dash project has a group of `{forgeMachineName}/das
 * pass:a[{gitlabUrl}/{forgeMachineName}/dash/handbook]
 * pass:a[{gitlabUrl}/{forgeMachineName}/dash/license-tool]
 
-Additionally, a new option was recently introduced that allows projects to request an alternate nesting strategy which adds the top-level project ID to the group pathing. This allows for like projects to be grouped together.
+A second option is available that allows projects to request an alternate nesting strategy which adds the top-level project ID to the group pathing. This allows for like projects to be grouped together.
 
-For example, the {forgeName} Dash project could also have a group of `{forgeMachineName}/technology/dash`, where technology is the Dash projects' top-level project. This group might have repositories with the following URLs (note that these URLs are provided as examples and may not actually be real):
+For example, the {forgeName} Dash project could also have a group of `{forgeMachineName}/technology/dash`, where technology is the Dash project's top-level project. This group might have repositories with the following URLs (note that these URLs are provided as examples and may not actually be real):
 
 * pass:a[{gitlabUrl}/{forgeMachineName}/technology/dash/handbook]
 * pass:a[{gitlabUrl}/{forgeMachineName}/technology/dash/license-tool]
 
 [NOTE]
 ====
-If a top-level project is set with the initial strategy of `{forgeMachineName}` at the root followed by the project ID, there will be potential for some users to gain indirect access to subprojects. Any user within the top-level project will be granted access to subprojects nested within it at the level they have for the top-level project, as permissions in Gitlab work with inheritance.
+If a top-level project is set with the initial strategy of `{forgeMachineName}` at the root followed by the project ID,  some users will gain indirect access to subprojects. Any user within the top-level project will be granted access to subprojects nested within it at the level they have for the top-level project, as permissions in Gitlab work with inheritance.
 ====
 
-Three teams are created for the group, each containing members from the corresponding {forgeName} open source project. 
+Contributing users within each project will be given access to the project group as defined in the PMI, according to their role within the project.
 
 [TIP]
 ====
@@ -138,7 +138,7 @@ For information regarding the privileges available to each of the Maintainer, De
 
 Project Leads ::
 
-All project leads are automatically added to the projects' namespace (as defined in the above section). All _project leads_ are granted the _Maintainer_ role on their project's GitLab root group/namespace. When an individual is xref:elections-pl[elected] into the role of project lead, they are automatically granted these permissions within the group. When a project lead is xref:elections-retire-pl[retired], they are automatically removed from the group.
+All project leads are automatically granted the _Maintainer_ role on their project resources hosted on GitLab. When an individual is xref:elections-pl[elected] into the role of project lead, they are automatically granted these permissions within the group. When a project lead is xref:elections-retire-pl[retired], they are automatically removed from the group.
 +
 [WARNING]
 ====
@@ -151,16 +151,16 @@ For adding a bot to the projects to assist in CI/CD operations, see the xref:bot
 
 Committers ::
 
-All committers are automatically granted the _Developer_ role on their project resources hosted on GitLab. When an individual is xref:elections-committer[elected] into the role of committer, they are automatically added to the as a _Developer_ to the projects' namespace. When a project lead is xref:elections-retire-cm[retired], they are automatically removed from the projects' namespace.
+All committers are automatically granted the _Developer_ role on their project resources hosted on GitLab. When an individual is xref:elections-committer[elected] into the role of committer, they are automatically added to the as a _Developer_ to the project's namespace. When a project lead is xref:elections-retire-cm[retired], they are automatically removed from the project's namespace.
 
 Contributors ::
 
-All contributors are automatically granted _Reporter_ level access to project resources hosted on GitLab. When an individual is added to the project's xref:pmi-contributors[Contributors] list, they are automatically added as a _Reporter_ in the projects' namespace. When they are removed from the Contributors list, they are automatically removed from the projects' namespace.
+All contributors are automatically granted _Reporter_ level access to project resources hosted on GitLab. When an individual is added to the project's xref:pmi-contributors[Contributors] list, they are automatically added as a _Reporter_ in the project's namespace. When they are removed from the Contributors list, they are automatically removed from the project's namespace.
 
 [#bot-user-access]
 Bot User Access ::
 
-To assist with CI/CD operations, bots with CI/CD access can be requested by making a request within the https://gitlab.eclipse.org/eclipsefdn/helpdesk/[Eclipse Foundation Helpdesk]. These users may be added directly to project repositories or to the projects' namespace depending on the current need.
+To assist with CI/CD operations, bots with CI/CD access can be requested by making a request within the https://gitlab.eclipse.org/eclipsefdn/helpdesk/[Eclipse Foundation Helpdesk] by either a Project Lead or a committer with approval from a Project Lead. These bots may be added directly to project repositories or to the project's namespace depending on the current need.
 
 The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook inspects incoming merge requests to ensure that the contributor has a valid ECA on file, and flags those that do not. Project committers should only accept merge requests that pass this validation.
 
