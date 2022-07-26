@@ -104,37 +104,82 @@ The Eclipse Foundation maintains an instance of GitLab for use by {forgeName} op
 
 [TIP]
 ====
+Some of the terms used by GitLab -- _project_ in particular -- have different meanings from those in the Eclipse Foundation Development Process (EDP). In order to make our meaning as clear as possible, we refer to GitLab projects as _repositories_ and to {forgeName} projects as _{forgeName} open source projects_ or (in the case where we mean a xref:4_Structure_and_Organization[top-level project]) _{forgeName} top-level projects_.
+====
+
+[TIP]
+====
 Any committer can {helpdeskUrl}[create a Help Desk issue] to request that the Eclipse IT Team create a new repository on, or move an existing repository to, the GitLab instance for their project. Note that the IT Team will verify the request with the project leads.
 ====
 
-GitLab organizes content into a series of nested groups with `{forgeMachineName}` at the root, and the project's xref:trademarks-project-short[short name].
+On GitLab, the root group for all {forgeName} open source project repositories is `{forgeMachineName}`. Under that root, two nesting options are available: {aForgeName} open source project's group can be nested directly under the root, or can be nested in a group corresponding to the {forgeName} top-level project.
 
-For example, the {forgeName} Dash project has a group of `{forgeMachineName}/dash` might have repositories with the following URLs (note that these URLs are provided as examples and may not actually be real):
+[#resources-gitlab-project-group]
+==== Project Group
+
+A group can be configured as the immediate descendant of the root group, using the {forgeName} open source project's xref:trademarks-project-short[short name].
+
+.Project short name as the root
+[source,subs="verbatim,attributes"]
+----
+{forgeMachineName}
+ ├── <short name A>
+ │   ├── <repository 1>
+ │   ├── <repository 2>
+ │   └── ...
+ ├── <short name B>
+ │   ├── <repository 1>
+ │   ├── <repository 2>
+ │   └── ...
+ └── ...
+----
+
+For example, the {forgeName} Dash project (short name: `dash`) has a group of `{forgeMachineName}/dash` that might have repositories with the following URLs (note that these URLs are provided as examples and may not actually be real):
 
 * pass:a[{gitlabUrl}/{forgeMachineName}/dash/handbook]
 * pass:a[{gitlabUrl}/{forgeMachineName}/dash/license-tool]
 
-A second option is available that allows projects to request an alternate nesting strategy which adds the top-level project ID to the group pathing. This allows for like projects to be grouped together.
+[#resources-gitlab-tlp-group]
+==== Top-level Project Group
 
-For example, the {forgeName} Dash project could also have a group of `{forgeMachineName}/technology/dash`, where technology is the Dash project's top-level project. This group might have repositories with the following URLs (note that these URLs are provided as examples and may not actually be real):
+A group can be configured as a descendant of the {forgeName} open source project's corresponding {forgeName} top-level project's group, which itself is an immediate descendant of the root group, using the xref:trademarks-project-short[short names]. Configuring the {forgeName} open source project's GitLab group in this manner enables aggregation features such as the ability to list and search issues across related {forgeName} open source project groups and repositories. 
+
+[TIP]
+====
+Configuring GitLab in this manner requires approval from the corresponding {forgeName} top-level project's xref:4_6_1_PMC[Project Management Committee] (PMC).
+====
+
+.Top-level project short name as the root
+[source,subs="verbatim,attributes"]
+----
+{forgeMachineName}
+ ├── <top-level project short name>
+ |   ├── <short name A>
+ |   │   ├── <repository 1>
+ |   │   ├── <repository 2>
+ |   │   └── ...
+ |   ├── <short name B>
+ |   │   ├── <repository 1>
+ |   │   ├── <repository 2>
+ |   │   └── ...
+ │   └── ...
+ └── ...
+----
+
+For example, the {forgeName} Dash project which is an Eclipse Technology (short name: `technology`) subproject could have a group of `{forgeMachineName}/technology/dash` that might have repositories with the following URLs (note that these URLs are provided as examples and may not actually be real):
 
 * pass:a[{gitlabUrl}/{forgeMachineName}/technology/dash/handbook]
 * pass:a[{gitlabUrl}/{forgeMachineName}/technology/dash/license-tool]
 
-[NOTE]
-====
-If a top-level project is set with the initial strategy of `{forgeMachineName}` at the root followed by the project ID,  some users will gain indirect access to subprojects. Any user within the top-level project will be granted access to subprojects nested within it at the level they have for the top-level project, as permissions in Gitlab work with inheritance.
-====
+[#resources-gitlab-access]
+==== Access to GitLab Repositories
 
-Contributing users within each project will be given access to the project group as defined in the PMI, according to their role within the project.
+Project leads, committers, and contributors for each project are granted access to their project group according to their role within the project.
 
 [TIP]
 ====
 For information regarding the privileges available to each of the Maintainer, Developer, and Reporter roles indicated below, consult the https://gitlab.eclipse.org/help/user/permissions.md#project-members-permissions[GitLab Documentation].
 ====
-
-[#resources-gitlab-access]
-==== Access to GitLab Repositories
 
 Project Leads ::
 
@@ -144,26 +189,23 @@ All project leads are automatically granted the _Maintainer_ role on their proje
 ====
 With the _Maintainer_ role, project leads have significant privileges on GitLab repositories. Project leads must not manipulate the configuration of GitLab groups and repositories in a manner that would violate the {edpLink} or the {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy]. 
 
-For example, project leads **must not** manipulate privileges and must specifically not add or remove developers directly. See xref:elections-committer[Committer Elections] for information on how to add developers to a project, and xref:elections-retire-cm[Committers Retirement] for information on how to remove developers from a project.
-
-For adding a bot to the projects to assist in CI/CD operations, see the xref:bot-user-access[Bot user access] section.
+For example, project leads **must not** manipulate privileges and must specifically **not** add or remove developers directly. See xref:elections-committer[Committer Elections] for information on how to add developers to a project, and xref:elections-retire-cm[Committers Retirement] for information on how to remove developers from a project.
 ====
 
 Committers ::
 
-All committers are automatically granted the _Developer_ role on their project resources hosted on GitLab. When an individual is xref:elections-committer[elected] into the role of committer, they are automatically added to the as a _Developer_ to the project's namespace. When a project lead is xref:elections-retire-cm[retired], they are automatically removed from the project's namespace.
+All committers are automatically granted the _Developer_ role on their {forgeName} open source project resources hosted on GitLab. When an individual is xref:elections-committer[elected] into the role of committer, they are automatically added to the as a _Developer_ to the {forgeName} open source project's group. When a project lead is xref:elections-retire-cm[retired], they are automatically removed from the group.
 
 Contributors ::
 
-All contributors are automatically granted _Reporter_ level access to project resources hosted on GitLab. When an individual is added to the project's xref:pmi-contributors[Contributors] list, they are automatically added as a _Reporter_ in the project's namespace. When they are removed from the Contributors list, they are automatically removed from the project's namespace.
+All contributors are automatically granted _Reporter_ level access to {forgeName} open source project resources hosted on GitLab. When an individual is added to the xref:pmi-contributors[contributors] list, they are automatically added as a _Reporter_ in the {forgeName} open source project's group. When they are removed from the contributors list, they are automatically removed from the group.
++
+The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook inspects incoming merge requests to ensure that the contributor has a valid ECA on file, and flags those that do not. {forgeName} open source project committers should only accept merge requests that pass this validation.
 
-[#bot-user-access]
-Bot User Access ::
+[#resources-gitlab-bot-users]
+==== Bot Users
 
-To assist with CI/CD operations, bots with CI/CD access can be requested by making a request within the https://gitlab.eclipse.org/eclipsefdn/helpdesk/[Eclipse Foundation Helpdesk] by either a Project Lead or a committer with approval from a Project Lead. These bots may be added directly to project repositories or to the project's namespace depending on the current need.
-
-The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook inspects incoming merge requests to ensure that the contributor has a valid ECA on file, and flags those that do not. Project committers should only accept merge requests that pass this validation.
-
+To assist with CI/CD operations, bots with CI/CD access can be requested by making a request within the {helpdeskUrl}[Eclipse Foundation Helpdesk] by either a project lead, or a committer with approval from a project lead. These bots may be added directly to repositories or to groups depending on the requirements.
 
 [[resources-github]]
 === GitHub
