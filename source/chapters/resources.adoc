@@ -242,6 +242,8 @@ Eclipse Foundation scripts build and maintain a collection of GitHub Teams, each
 The scripts require knowledge of the GitHub Id in order to add any individual to any of the teams. Be sure to include your GitHub Id in your <<contributing-account,Eclipse Foundation Account>>.
 ====
 
+GitHub's https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-roles-for-an-organization[Repository roles for an organization] document describes the permissions granted for each of the roles (_Maintain_, _Write_, and _Triage_) described below.
+
 Project Leads Team ::
 
 All project leads are automatically added to the _project leads team_. All members of the _project leads team_ are granted the _Maintain_ role on their project's GitHub repositories. When an individual is xref:elections-pl[elected] into the role of project lead, they are automatically added to the _project leads team_. When a project lead is xref:elections-retire-pl[retired], they are automatically removed from the team.
