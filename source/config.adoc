@@ -105,9 +105,9 @@
 :eventsUrl: https://events.eclipse.org/
 :newsroomUrl: https://newsroom.eclipse.org/
 
-:adoptersProgrammeUrl: https://github.com/EclipseFdn/eclipsefdn-project-adopters
-:adoptersProgrammeAdopters: https://github.com/EclipseFdn/eclipsefdn-project-adopters#project-adopters
-:adoptersProgrammeApi: https://github.com/EclipseFdn/eclipsefdn-project-adopters#javascript-plugin
+:adoptersProgrammeUrl: https://gitlab.eclipse.org/eclipsefdn/it/api/eclipsefdn-project-adopters
+:adoptersProgrammeAdopters: {adoptersProgrammeUrl}#project-adopters
+:adoptersProgrammeApi: {adoptersProgrammeUrl}#javascript-plugin
 
 :clearlyDefinedMinimumScore: 60
 
