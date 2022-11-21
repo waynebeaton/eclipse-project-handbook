@@ -110,14 +110,15 @@ Logos are important to recognize as trademarks. For a project's official logo, t
 
 Projects may request to use an Eclipse logo within their project logo, or otherwise create a derivative of the Eclipse logo. However, they must contact the EMO by opening a {emoApprovalsUrl}[issue] to request the Eclipse Foundation's Board of Directors' permission to do so.
 
-[#promoting-project-logo-design]
-
-Projects teams can engage a graphic design crowdsourcing site or similar service to create a logo. The project leader and committers are responsible for setting up the design process and providing the feedback to the graphic designers. Based on past experience, faster and more detailed feedback to the designers yields better results. The Eclipse Foundation will help fund the creation of project logo. A project leader or committer will have to pay for the logo design in advance. Once the logo is created, the project can then send the invoice to the Eclipse Foundation {marketingEmail}[marketing team]. The Foundation will reimburse up to {euro}500 for the logo design. Project team members should contact the Eclipse Foundation's marketing team with any questions regarding logo design.
-
 [NOTE]
 ====
 Add your project logo to your project's metadata via the <<pmi-project-logos,PMI>>.
 ====
+
+[#promoting-project-logo-design]
+==== Crowdsourcing a Project Logo
+
+Projects teams can engage a graphic design crowdsourcing site or similar service to create a logo. The project leader and committers are responsible for setting up the design process and providing the feedback to the graphic designers. Based on past experience, faster and more detailed feedback to the designers yields better results. The Eclipse Foundation will help fund the creation of project logo. A project leader or committer will have to pay for the logo design in advance. Once the logo is created, the project can then send the invoice to the Eclipse Foundation {marketingEmail}[marketing team]. The Foundation will reimburse up to {euro}500 for the logo design. Project team members should contact the Eclipse Foundation's marketing team with any questions regarding logo design.
 
 [#promotion-adopters]
 === Adopters Programme
