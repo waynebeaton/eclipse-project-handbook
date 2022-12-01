@@ -210,6 +210,15 @@ image::images/elections_retire_pl.png[]
 
 Connect with the PMC or {emoEmailLink} for assistance.
 
+=== Troubleshooting
+
+In the case where the project is dysfunctional (e.g., there is no active project lead and an insufficient number of active committers to offset inactive committers), options are available to the PMC to add and/or remove committers. 
+
+[TIP]
+====
+If you believe that a project is in a dysfunctional state, contact the PMC via their mailing list to request assistance.
+====
+
 [[elections-faq]]
 === Frequently Asked Questions
 
@@ -230,11 +239,13 @@ Can we change a merit statement? ::
 
 The election infrastructure doesn't permit changing a merit statement after an election has begun (the principle being that changing the question after you start a vote is considered bad form).
 +
-In cases where the merit statement is omitted or considered inadequate, or committers have additional questions about a candidate, it's completely reasonable to discuss it on the mailing list, and for committers to then use that discussion as the basis for their vote. Committers who have already voted, you can return to the election record and change their vote. 
+In cases where the merit statement is omitted or considered inadequate, or committers have additional questions about a candidate, it's completely reasonable to discuss it on the mailing list, and for committers to then use that discussion as the basis for their vote. Committers who have already voted, can return to the election record and change their vote.
++
+Committers can also add information via the comment that accompanies their vote on an election.
 
 Can a committer change their vote on an election? ::
 
-Yes.
+Yes. A committer can change their vote while an election is still in progress.
 
 How do we transfer committers from one project to another? ::
 
