@@ -58,7 +58,9 @@ The project lead is not the technical lead. So it's not strictly their responsib
 A project lead is not necessary a technical lead. We have no formal designation of technical lead; this tends to occur organically.
 ====
 
-Any committer can initiate a xref:release-review[review] with the EMO, but the EMO will always copy the project lead(s) in related communication to ensure that they are aware that the committer is acting as their delegate.
+Any committer can initiate a xref:release-review[review] with the EMO, but the EMO will always copy the project lead(s) in related communication to ensure that they are aware that the committer is acting as their delegate. 
+
+Project Leads can also request the EMO to initiate a restructuring review in case a project needs to change the meaning of the scope or make any other significant changes to one or more Projects. 
 
 [#roles-pmc]
 == Project Management Committee
@@ -132,7 +134,7 @@ Every PMC is entitled to appoint one representative to the Eclipse Architecture 
 [#roles-emo]
 == Eclipse Management Organization (EMO)
 
-The Eclipse Management Organization (EMO) consists of the Eclipse Foundation staff, and the Eclipse Architecture Council. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the Eclipse Foundation Development Process. The best method of contact with the EMO is by email (emo@eclipse.org). If you have a question that cannot be answered by project lead, mentor, or PMC, ask the EMO.
+The Eclipse Management Organization (EMO) consists of the Eclipse Foundation staff, and the Eclipse Architecture Council. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the Eclipse Foundation Development Process. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead, mentor, or PMC, ask the EMO.
 
 [#roles-faq]
 == Frequently Asked Questions
