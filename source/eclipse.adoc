@@ -39,6 +39,8 @@ include::chapters/preamble.adoc[]
 
 include::chapters/starting.adoc[]
 
+include::chapters/roles.adoc[leveloffset=+1]
+
 include::chapters/resources.adoc[]
 
 include::chapters/security.adoc[leveloffset=+1]
