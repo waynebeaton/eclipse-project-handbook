@@ -115,10 +115,10 @@ Projects are where the real work happens. Each project has code, committers, and
 
 Project Lead ::
 
-The project lead is more of a position of responsibility than one of power. The project lead is immediately responsible for the overall well-being of the project. They own and manage the project's development process, coordinate development, facilitate discussion among project committers, ensure that the Eclipse IP policy is being observed by the project and more. If you have questions about your project, the {edpLink}, or anything else, ask your project lead.
+The xref:#roles-pl[project lead] is more of a position of responsibility than one of power. The project lead is immediately responsible for the overall well-being of the project. They own and manage the project's development process, coordinate development, facilitate discussion among project committers, ensure that the Eclipse IP policy is being observed by the project and more. If you have questions about your project, the {edpLink}, or anything else, ask your project lead.
 
 Project Management Committee (PMC) ::
-Each top-level project is governed by a Project Management Committee (PMC). The PMC has one or more leads along with several members. The PMC has numerous responsibilities, including the ultimate approval of committer elections, and approval of intellectual property contributions. Effectively, the PMC provides oversight for each of the projects that are part of the top-level project. If you have a question that your project lead cannot answer, ask the PMC.
+Each top-level project is governed by a xref:#roles-pmc[Project Management Committee] (PMC). The PMC has one or more leads along with several members. The PMC has numerous responsibilities, including the ultimate approval of committer elections, and approval of intellectual property contributions. Effectively, the PMC provides oversight for each of the projects that are part of the top-level project. If you have a question that your project lead cannot answer, ask the PMC.
 
 Project Management Infrastructure (PMI) ::
 

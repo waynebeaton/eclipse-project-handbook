@@ -37,7 +37,7 @@ Project metadata is:
 2.  Historical information such as previous release downloads, review materials, etc.
 3.  Status and future looking information such as the project and milestone plans, the features scheduled for the current release, release dates, etc.
 
-PMC members and the Eclipse Foundation staff also have the ability to make changes on behalf of a project.
+xref:#roles-pmc[Project Management Committee] (PMC) members and the Eclipse Foundation staff also have the ability to make changes on behalf of a project.
 
 [[pmi-viewing]]
 === Viewing
@@ -148,7 +148,7 @@ The _scope_ is intended for a more select audience; generally speaking the scope
 
 [WARNING]
 ====
-Project members have the ability to change the text of the project scope, but should be careful to **avoid changing the meaning**. If the meaning of the scope needs to change, the Project Management Committee (PMC) must be contacted regarding a potential restructuring review.
+Project members have the ability to change the text of the project scope, but should be careful to **avoid changing the meaning**. If the meaning of the scope needs to change, the xref:#roles-pmc[Project Management Committee] (PMC) must be contacted regarding a potential restructuring review.
 ====
 
 To edit the description and/or scope:

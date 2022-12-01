@@ -142,7 +142,7 @@ If the project is using a {githubSecurityAdvisoryInfoUrl}[GitHub Security Adviso
 
 In what form should a disclosure be published? Is publishing the bug on the {knownVulnerabilitiesUrl}[Known Vulnerabilities page] enough? ::
 
-Publishing on the Known Vulnerabilities page will happen automatically. This is mimimal disclosure. Whether or not you should do more is a project team decision. If you  need help with that decision, connect with your PMC or the Security Team.
+Publishing on the Known Vulnerabilities page will happen automatically. This is mimimal disclosure. Whether or not you should do more is a project team decision. If you  need help with that decision, connect with your xref:#roles-pmc[Project Management Committee] (PMC) or the Security Team.
 +
 If the vulnerability real and is in release software (i.e., it's likely to have been adopted), you should <<vulnerability-cve,request a CVE>>.
 +

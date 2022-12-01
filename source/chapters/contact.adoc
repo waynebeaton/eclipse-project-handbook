@@ -16,7 +16,7 @@
 [[contact]]
 == Getting Help
 
-If you have any questions, or are unsure of your responsibilities as a project lead or committer, please contact your project mentors or {emoEmail}.
+If you have any questions, or are unsure of your responsibilities as a xref:#roles-pl[project lead] or xref:roles-cm[committer], please contact your project mentors, xref:#roles-pmc[Project Management Committee] (PMC), or the xref:#roles-emo[Eclipse Management Organization] (EMO) at {emoEmail}.
 
 To report vulnerabilities or report security issues contact {securityTeamEmail}. Please see <<vulnerability, Managing and Reporting Vulnerabilities>>.
 

@@ -146,7 +146,7 @@ A group can be configured as a descendant of the {forgeName} open source project
 
 [TIP]
 ====
-Configuring GitLab in this manner requires approval from the corresponding {forgeName} top-level project's xref:4_6_1_PMC[Project Management Committee] (PMC).
+Configuring GitLab in this manner requires approval from the corresponding {forgeName} top-level project's xref:#roles-pmc[Project Management Committee] (PMC).
 ====
 
 .Top-level project short name as the root
@@ -398,7 +398,7 @@ External resources can be used for:
 * Container image management (e.g., <<resources-dockerhub,DockerHub>>); and
 * Examples, presentations, blogs, social media handles.
 
-This list is not exhaustive. Project leads should work with their PMC and the EMO to determine the terms and conditions for an external resource are compatible with the project license(s), the {ipPolicyUrl}[Eclipse IP Policy], and {edpLink}.
+This list is not exhaustive. Project leads should work with their xref:#roles-pmc[Project Management Committee] (PMC) and the EMO to determine the terms and conditions for an external resource are compatible with the project license(s), the {ipPolicyUrl}[Eclipse IP Policy], and {edpLink}.
 
 [[resources-dockerhub]]
 ==== DockerHub

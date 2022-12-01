@@ -246,7 +246,7 @@ When a project has reached its logical conclusion, its resources are archived. T
 
 Why are some committer (but not all) names rendered as links on project proposal pages? ::
 
-When the list of committers provided for a new project proposal are rendered, a link to more information for each individual committer will be included when possible. The link will render, for example, when an individual already has a role on another existing Eclipse open source project (e.g. is a committer, project lead, PMC member, etc.). No link indicates that no existing project relationships exist for that individual.
+When the list of committers provided for a new project proposal are rendered, a link to more information for each individual committer will be included when possible. The link will render, for example, when an individual already has a role on another existing Eclipse open source project (e.g. is a xref:#roles-cm[committer], xref:#roles-pl[project lead], xref:#roles-pmc[Project Management Committee] (PMC) member, etc.). No link indicates that no existing project relationships exist for that individual.
 
 How do I find Eclipse Architecture Council mentors? ::
 

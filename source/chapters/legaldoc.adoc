@@ -67,7 +67,7 @@ This structure need not necessarily be reflected in the source tree. How a proje
 
 When the unit level of distribution is an individual file (e.g. JavaScript), the file must contain a header with copyright and license information, and the best effort must be undertaken to associate the file with the notices (e.g. a link to the source repository in the header).
 
-Project teams should consult with their PMCs for input and advice regarding alternate names and locations for legal documentation.
+Project teams should consult with their xref:#roles-pmc[Project Management Committee] (PMC) for input and advice regarding alternate names and locations for legal documentation.
 
 [[legaldoc-end-user]]
 == End User Content

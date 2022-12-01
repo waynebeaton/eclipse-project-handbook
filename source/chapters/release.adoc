@@ -57,7 +57,7 @@ At the start of the release cycle, a plan should minimally include a release num
 Think of the description of the project plan as an _elevator pitch_: how would you describe the release in a fifteen second elevator ride? 
 ====
 
-The _Plan_ tab in the release record contains numerous fields for capturing plan information. The amount of information that you should capture for a release plan varies by top-level project, so consult with your Project Management Committee (PMC) for advice.
+The _Plan_ tab in the release record contains numerous fields for capturing plan information. The amount of information that you should capture for a release plan varies by top-level project, so consult with your xref:#roles-pmc[Project Management Committee] (PMC) for advice.
 
 Producing regular builds is an important part of the release cycle. Builds are an important means of engaging with the community: adopters can help you test your code and test their own so that they can be ready for the eventual release. Project teams should plan to produce at least one _milestone_ build (more are better, depending on the length of your release cycle), and capture the planned date for that milestone in the release record. It is also common practice to generate nightly and weekly integration builds. Project teams must ensure that their project's downloads page provides the information required for the community to obtain builds.
 
@@ -127,7 +127,7 @@ digraph {
 
 The project team must prepare the review documentation well in advance of the start of the review period. See this <<checklist,checklist>> used as part of evaluation during a Release Review. The release record which contains the project plan also includes a _Review_ tab with appropriate fields for a review. As with the plan fields, all of the review fields are optional and the level of detail required varies by top-level project. Project teams can assemble review information during the release cycle (there's no need to wait until the end)
 
-The review materials must be approved by the PMC; the project lead or a designated project committer should send an email to the PMC's mailing list with a request for approval. The PMC will respond with feedback or a simple `pass:[+1]` indicating approval.
+The review materials must be approved by the xref:#roles-pmc[Project Management Committee] (PMC); the project lead or a designated project committer should send an email to the PMC's mailing list with a request for approval. The PMC will respond with feedback or a simple `pass:[+1]` indicating approval.
 
 [TIP]
 ====
@@ -210,7 +210,7 @@ The short answer is _yes_. Please do accept contributions. If you require a new 
 
 How do I obtain PMC approval? ::
 
-Send the the PMC a note via the top-level project's _PMC_ mailing list with a link to the release record. Note that the release record page has a handy link labeled menu:Committer Tools[Send Email the PMC].
+Send the the xref:#roles-pmc[Project Management Committee] (PMC) a note via the top-level project's _PMC_ mailing list with a link to the release record. Note that the release record page has a handy link labeled menu:Committer Tools[Send Email the PMC].
 
 I need to do a release now. Can you fast-track the review? ::
 
@@ -222,7 +222,7 @@ Yes. In fact, we encourage projects to do at least one release while in incubati
 
 What restrictions are placed on version names for incubating projects? ::
 
-Projects in the incubation phase generally use version numbers that are less than 1.0. This is, however, a convention not a rule. If it makes sense for you community and adopters to use higher numbers, then do so. If you're not sure, ask your top-level project PMC for advice.
+Projects in the incubation phase generally use version numbers that are less than 1.0. This is, however, a convention not a rule. If it makes sense for you community and adopters to use higher numbers, then do so. If you're not sure, ask your xref:#roles-pmc[Project Management Committee] (PMC) for advice.
 
 How do I name/number milestone builds? ::
 
@@ -234,4 +234,4 @@ Yes. In fact, the EMO strongly encourages {forgeName} open source projects in th
 
 How can I get help? ::
 
-Contact your mentors (for projects in the incubation phase), top-level project PMC, or the mailto:{emoEmail}[EMO].
+Contact your mentors (for projects in the incubation phase), xref:#roles-pmc[Project Management Committee] (PMC), or the mailto:{emoEmail}[EMO].

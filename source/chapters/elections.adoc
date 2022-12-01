@@ -13,7 +13,7 @@
 [[elections]]
 == Elections
 
-Roles in a project are assigned based on merit demonstrated in a publicly-accessible forum, in the form of an election. Elections start with a nomination that contains a statement of merit. The nature of a statement of merit varies widely, but is generally expected to to concisely state the impact that the nominee has had on the project.
+xref:#roles[Roles] in a project are assigned based on merit demonstrated in a publicly-accessible forum, in the form of an election. Elections start with a nomination that contains a statement of merit. The nature of a statement of merit varies widely, but is generally expected to to concisely state the impact that the nominee has had on the project.
 
 [NOTE]
 ====
@@ -123,7 +123,7 @@ Only project committers may nominate a new committer or vote in a committer elec
 Committers can change their vote while the election is in progress. Committers may post questions about the committer or ask for clarification of the merit statement in the project's dev-list, and change their vote based on what they discover. The merit statement itself cannot be changed after the election has started.
 ====
 
-Following a successful committer vote, the project's PMC will review the election results and then either approve or veto the election. An election may be vetoed, for example, if the PMC feels that the merit statement is not strong enough.
+Following a successful committer vote, the project's xref:#roles-pmc[Project Management Committee] (PMC) will review the election results and then either approve or veto the election. An election may be vetoed, for example, if the PMC feels that the merit statement is not strong enough.
 
 The <<paperwork, paperwork>> process will automatically be initiated following PMC approval of an election. 
 
@@ -156,7 +156,7 @@ Following a successful committer vote, the project's PMC will review the electio
 [[elections-pmc-member]]
 === PMC Member Elections
 
-PMC members are elected by the existing PMC leads and members, and approved by the EMO/ED. The criteria by which a PMC _Member_ is selected varies by PMC. Some PMCs are set up to have a representative from each of the projects in the top-level project. Other PMCs are more exclusive and require a demonstration of merit.
+xref:#roles-pmc[Project Management Committee] (PMC) members are elected by the existing PMC leads and members, and approved by the EMO/ED. The criteria by which a PMC _Member_ is selected varies by PMC. Some PMCs are set up to have a representative from each of the projects in the top-level project. Other PMCs are more exclusive and require a demonstration of merit.
 
 In all cases, the PMC Lead makes a recommendation to the EMO/ED to appoint a PMC Member. The final decision rests with the EMO/ED.
 
@@ -168,7 +168,7 @@ No specific infrastructure is exists for PMC Member elections. PMCs must use the
 [[elections-pmc-lead]]
 === PMC Lead Appointments
 
-PMC _Leads_ are not elected. They are vetted by the EMO, approved by the Eclipse Board of Directors, and appointed by the EMO/ED.
+xref:#roles-pmc[Project Management Committee] (PMC) _Leads_ are not elected. They are vetted by the EMO, approved by the Eclipse Board of Directors, and appointed by the EMO/ED.
 
 [[elections-retire-cm]]
 === Committer Retirement
