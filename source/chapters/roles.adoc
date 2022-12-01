@@ -13,7 +13,7 @@
 [#roles]
 = Project Roles
 
-The Eclipse Foundation Development Process defines multiple roles. Primary among the roles are those of xref:roles-cm[committer], xref:roles-pl[project lead], and xref:roles-pmc[Project Management Committee].
+The Eclipse Foundation Development Process defines multiple roles. Primary among the roles are those of xref:roles-cm[Committer], xref:roles-pl[Project Lead], and xref:roles-pmc[Project Management Committee].
 
 [#roles-cm]
 == Committers
