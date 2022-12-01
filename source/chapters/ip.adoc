@@ -1,5 +1,5 @@
 ////
- * Copyright (C) 2015, 2020 Eclipse Foundation, Inc. and others. 
+ * Copyright (C) 2015, 2022 Eclipse Foundation, Inc. and others. 
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
@@ -29,36 +29,19 @@ The terms "intellectual property", "project content" and "third-party content" a
 [[ip]]
 == Intellectual Property
 
+[WARNING]
+====
+This section is being revised following the July 2022 update to the Eclipse Foundation's IP Policy. These updates should be complete by the end of 2022.
+====
+
 The term intellectual property (IP) refers to any sort of creative work, be it literature, art, or software. In the realm of open source software, artifacts like source code, documentation, and images are considered intellectual property. Unless otherwise stated, intellectual property is the property of its creator, who may grant permission for others to use that intellectual property by providing a license.
 
 The ease with which software can be copied and combined makes it challenging to know with confidence if content can be used without running into legal issues. Any sort of serious software development effort must be accompanied by a well-defined IP due diligence process that can ferret out issues and mitigate the risk of leveraging the work of others. IP due diligence is a time consuming process that requires specialized skills and a keen eye for detail.
 
-____
-In October 2019, The Eclipse Foundation's Board of Directors approved an update to the IP Policy that introduces several significant changes in our IP due diligence process.
-
-**License certification only for third-party content.** This change removes the requirement to perform deep copyright, provenance and scanning of anomalies for third-party content unless it is being modified and/or if there are _special_ considerations regarding the content. Instead, the focus for third-party content is on _license compatibility_ only, which had previously been referred to as _Type A_ due diligence.
-
-**Leverage other sources of license information for third-party content.** With this change to license certification only for third-party content, we are able to leverage existing sources of information license information. That is, the requirement that the  IP Team personally review every bit of third-party content has been removed and we can now leverage other _trusted_ sources.
-
-**ClearlyDefined is a _trusted_ source of license information.** We currently have two trusted sources of license information: The Eclipse Foundation’s <<ip-ipzilla,IPZilla>> and <<ip-clearlydefined, ClearlyDefined>>. The IPZilla database has been painstakingly built over most of the lifespan of the Eclipse Foundation; it contains a vast wealth of deeply vetted information about many versions of many third-party libraries. ClearlyDefined is an OSI project that combines automated harvesting of software repositories and curation by trusted members of the community to produce a massive database of license (and other) information about content.
-
-**Piggyback CQs are no longer required.** CQs had previously been used for tracking both the vetting process and the use of third-party content. With the changes, we are no longer required track the use of third-party content using CQs, so piggyback CQs are no longer necessary.
-
-**Parallel IP is used in all cases.** Previously, our so-called _Parallel IP_ process, the means by which project teams could leverage content during development while the IP Team completed their due diligence review was available only to projects in the _incubation phase_ and only for content with specific conditions. This is no longer the case: full vetting is now always applied in parallel in all cases.
-
-**CQs are not required for third-party content in all cases.** In the case of third-party content due diligence, <<ip-cq,CQs>> are now only used to track the vetting process. 
-
-**CQs are no longer required _before_ third-party content is introduced.** Previously, the IP Policy required that all third-party content must be vetted by the IP Team before it can be used by {aForgeName} Project. The IP Policy updates turn this around. {forgeName} project teams may now introduce new third-party content during a development cycle without first checking with the IP Team. That is, a project team may commit build scripts, code references, etc. to third-party content to their source code repository without first creating a <<ip-cq,CQ>> to request IP Team review and approval of the third-party content. At least during the development period between releases, the onus is on the project team to -- with reasonable confidence -- ensure any third-party content that they introduce is license compatible with the project’s license. Before any content may be included in any formal release the project team must engage in the <<ip-prereq-diligence, due diligence process>> to validate that the third-party content licenses are compatible with the project license.
-
-**History may be retained when an existing project moves to the Eclipse Foundation.** We had previously required that the commit history for a project moving to the Eclipse Foundation be squashed and that the <<ip-initial-contribution, initial contribution>> be the very first commit in the repository. This is no longer the case; existing projects are now encouraged (but not required) to retain their commit history. The initial contribution must still be provided to the IP Team via <<ip-cq, CQ>> as a snapshot of the `HEAD` state of the existing repository (if any).
-
-The due diligence process for project content is unchanged.
-
 [WARNING]
 ====
-We are in the process of updating this documentation to reflect these changes. All historical information is technically correct, but may no longer be required. If something appears confusing, please connect with {emoEmailLink} for assistance.
+If you've been around for a while, you may be looking for things that no longer exist. We've retired IPZilla along with the term _Contribution Questionnaire_, we're now able to leverage a wider variety of open source licenses, and we lean much more heavily on automation than ever before. There's more information about these changes in the xref:#ip-history[History] section of this chapter.
 ====
-____
 
 There are different kinds of content (e.g., source code, documentation, and images) to consider. <<ip-project-content,_Project content_>> is content (typically source code) that is produced and maintained by the open source project committers and contributors. <<ip-third-party,_Third-party content_>> generally takes the form of libraries (e.g. modules, or components), source files, images, or other forms of IP that are produced and maintained outside of the scope of the open source project. To mitigate the risk associated with adopting open source in products, the _project content_ and the _third-party content_ that it leverages need to be vetted to ensure that the copyrights expressed are correct, licensing is valid and compatible, and that other issues have been uncovered and properly investigated.
 
@@ -759,6 +742,11 @@ Piggyback CQs are not longer required or supported.
 [[ip-other-projects]]
 ==== Content from Other Eclipse Projects
 
+[WARNING]
+====
+We do not generally require that content from other {forgeName} open source projects be scanned for license information in the same manner that we do third-party. We do, however, require that when one {forgeName} open source project leverages content from another, that the licenses of the content be consistent. That is, the status of one open source project being {aForgeName} open source project does not give permission to violate licenses.
+====
+
 IP Team review or approval is *not* required for {aForgeName} open source project to use _released_ content from another {forgeName} open source project as part of a release (a project may use unreleased content from another project in milestone builds). A release of one project should *never* include unreleased content from another project.
 
 When {aForgeName} projects makes direct use of third-party content inherited by consuming another {forgeName} open source project, that content must be treated as a prerequisite dependency.
@@ -826,86 +814,80 @@ $ mvn org.eclipse.dash:license-tool-plugin:license-check -Ddash.projectId=techno
 Do not share your access token.
 ====
 
-[[ip-iplog]]
-=== IP Logs
+[#ip-sbom]
+=== Software Bill of Materials
 
-An IP Log is a record of the intellectual property contributions to a project. This includes such as a list of all committers, past and present, that have worked on the code and (especially) those who have made contributions to the current code base.
+[#ip-iplog][#ip-iplog-generator]
 
-[NOTE]
+[WARNING]
 ====
-An IP Log is a record of intellectual property for an entire project. The purpose of the IP Log review is to confirm that the project team understands the {ipPolicyUrl}[Eclipse IP Policy] and is implementing the supporting processes. An IP Log is not intended to reflect the intellectual property included with any particular release.
+IP Logs are no longer required in the form previously described in this document. The IP Log Generator has been deprecated and will be retired. 
+
+This section is under construction.
 ====
 
-The IP Log is a big part of the official <<release, release cycle>>. You are required to submit your project's IP Log prior to scheduling a release, or restructuring review. We encourage you to keep your IP log current rather than rushing at the end. The IP Log includes important information about your project that lets adopters know where all the code comes from, who owns the copyrights, and so forth. 
+{forgeName} open source projects are required to track their intellectual property contributions, as well as their use of third-party content. We rely on the Git log to track contributors and contributions.
 
-Specifically, the log tracks:
-
-* Licenses;
-* Past and present committers;
-* Third-party content; and
-* Contributions from outside the project (i.e. non-committers)
-
-[[ip-iplog-generator]]
-==== IP Log Generator
-
-The Automated IP Log Tool automatically generates an IP Log using information that is available to the Eclipse Foundation. The list of contributors, for example is automatically generated using information extracted out of the project's source code repositories.
-
-The IP Log generator pulls information from multiple location to assemble the log:
-
-[graphviz, images/ip-log-generator, svg]
-.Sources for the IP Log generator
-----
-digraph {
-	// Graph properties
-	bgcolor=transparent
-	
-    graph [ranksep="0.25", nodesep="0.25"];
-    
-	// Nodes that define the key points in the process
-	node [shape=box;style=filled;fillcolor=white;fontsize=12]
-	git [label="Git", group="g1"]
-	committer [label="Committer Activity", group="g2"]
-	pmi [label="Repositories\n(PMI)", group="g1"]
-	contributions [label="Git Contributions"]
-	licenses [label="Licenses\n(Foundation DB)", group="g2"]
-	generator [label="IP Log Generator", group="g1"]
-	contributions_bugzilla [label="Contributions\n(Bugzilla)"]
-	iplog [label="IP Log", group="g1"]
-	
-	git -> committer
-	git -> contributions
-	pmi -> generator
-	pmi -> committer
-	pmi -> contributions
-	committer -> generator
-	contributions -> generator
-	licenses -> generator
-	contributions_bugzilla ->generator
-	generator -> iplog
-}
-----
-
-* The list of third-party content used by the project comes from _IPZilla_;
-* The project source code repositories are scanned to identify non-committer authors of contributions; 
-* The committer list, which includes everybody who has ever held committer status the project (regardless of whether or not they have ever made any contributions of intellectual property) comes from the _Foundation_ database; and
-* License information is obtained from the _Foundation_ database
-
-To fully leverage the value of the Automated IP Log Tool, the project team needs to:
-
-* Keep project <<pmi-metadata,metadata>> up-to-date;
-* Follow the guidelines for handling <<resources-commit,Git contributions>>; and
-* Create <<ip-cq,CQ>> (CQs) where appropriate
-
-The Automated IP Log tool populates the _Contributors_ section with information gathered from the project's source code repositories (source code repository paths specified in the the _Source Repositories_ section in the project metadata). This section lists contributions from non-committers (this is time-sensitive, so contributions made by current committers before they became committers will also be included). Only non-committer contributions are recorded in the generated log. 
-
-<<resources-commit,Git commits>> contributed by non-committers are identified by the author credentials on the commit record; the _Author_ field must be set to the identity of the actual author of the commit.
-
-The Third-party Software section of the log is populated from IPZilla. The IP Team will mark your contributions in such a way that they will appear in the log. If third-party software is not appearing properly, contact the {ipTeamEmailLink} to make corrections.
+{forgeName} open source projects are required to maintain a software bill of materials (SBOM). xref:legaldoc-plugins-abouts["About" files] (`about.html`) serve this purpose in Eclipse Platform plug-ins, and xref:legaldoc-notice[`NOTICE`] files or summary files generated using the Eclipse Dash License Tool serve as SBOMs. In the future, the EMO will work with projects to leverage standard SBOM formats such as SPDX or CycloneDX. 
 
 [TIP]
 ====
-Use the <<pmi-commands-iplog, Generate IP Log>> tool on a specific <<pmi-project-page, project page>> in the <<pmi,Project Management Interface (PMI)>> to generate and submit the IP Log for review.
+Please ensure that any merge/pull requests that come to you project correctly identify the contributor and that the contributor is covered by the xref:contributing-eca[Eclipse Contributor Agreement]. Further, ensure that your project's third-party content is accounted for in either a xref:legaldoc-notice[notice] file (consider using the _summary_ output from the xref:ip-license-tool[Eclipse Dash License Tool] to generate this).
 ====
+
+[#ip-history]
+== Changes in the IP Policy
+
+The Eclipse Foundation's Board of Directors has approved various updates to the Eclipse Foundation's IP Policy over the years that have introduced significant changes in our IP due diligence process. In this section, we highlight some of them.
+
+[#ip-history-2022]
+=== 2022
+
+The 2022 update to the Eclipse Foundation's IP Policy, approved by the Board of Directors in June 2022, resulted in the following changes:
+
+**The Eclipse Public License is no longer special.** The Eclipse Foundation was originally conceived as a single-license foundation, but that hasn't been true for a very long time. With this change, we acknowledge that our open source projects leverage a variety of licenses and that no single one among them is special (but we still love and highly recommend the Eclipse Public License). All language and provisions that positioned the Eclipse Public License as being in any way special have been removed from the IP Policy.
+
+**Focus on License Compliance.** With this change we've switched to focus entirely on license compliance. Specifically, our IP Due Diligence focuses on ensuring that the licenses involved (both project and third-party) are co-compatible (that is, do the licenses actually work together) rather than conforming to a list of licenses that have been deemed acceptable. The IP due diligence process still reviews content to ensure that we understand the state of the content licenses, and continues to rely on existing sources of license information in the reviewing process.
+
+[NOTE]
+====
+With this change, we can no longer assume that {forgeName} open source projects can just use the products of other {forgeName} open source projects without license compatibility checks. Due to the fact that our projects have been using a variety of licenses for some time, this isn't actually new, but we've highlighted it here to draw attention to the fact that we are putting additional focus into reviewing license compatibility, and this extends to {forgeName} open source projects using other {forgeName} open source projects.
+====
+
+**License approval processes are managed by the EMO without requirement for Board approvals.** We are no longer required to go to the Board of Directors to get approval for our open source projects to use content under licenses that we haven't encountered. We no longer have a strict "approved licenses" list. There are still restrictions on what licenses can be used, but these restrictions are based on whether or not the licenses actually work together and whether or not license terms align with our open source rules of engagement (e.g., licenses do not restrict fundamental freedoms).
+
+**The Guidelines for the Review of Third-Party Dependencies as been revoked.** This is related to our focus on license compliance. The Guidelines for the Review of Third-Party Dependencies described notions of _prerequisite_, _works with_, and _exempt prerequisite_ dependencies which provided different mechanisms by which third-party content could be consumed by {forgeName} open source projects (_works with_ and _exempt prerequisite_ in particular described means by which we could short circuit the due diligence process for content under licenses that might otherwise not be supported by the then-IP Policy). WIth our focus on license compliance, these considerations are no longer necessary.
+
+**IPLab replaces IPZilla.** We announced the retirement of IPZilla in September 2022 and moved aggressively to retire it completely by the end of December 2022. IPZilla was the tool that we used to request and track the progress of intellectual property reviews. With this update to our process, we now use xref:#ip-iplab[IPLab], an issue tracker and repository on our GitLab infrastructure that we use to request and track intellectual property reviews. The xref:ip-license-tool[Eclipse Dash License Tool] integrates with IPLab to automate much of the process of requesting reviews (which required significant manual work with IPZilla).
+
+**No more Contribution Questionnaires.** With the retirement of IPZilla, we also retired the term _contribution questionnaire_ along with its acronym, _CQ_. You can call the issues on IPLab whatever you want: issues, IP review requests, 
+
+**SBOMs replace IPLogs.** {forgeName} open source projects are no longer required to submit an IP Log as part of a progress or release review. Instead, we rely on the Git log to track contributions to a project along with a Software Bill of Materials (SBOM). At the time of this writing, SBOMs take several different forms. For our immediate purposes, xref:legaldoc-plugins-abouts[about.html files] serve this purpose in Eclipse Platform plug-ins, and xref:legaldoc-notice[`NOTICE`] files or summary files generated using the Eclipse Dash License Tool serve as SBOMs. In the future, the EMO will work with projects to leverage standard SBOM formats such as SPDX or CycloneDX.
+
+**Automate everything that can be automated.** We've implemented some tools, starting with the Eclipse Dash License Tool to automate as much of the process as possible. We continue to investigate options that improve the quality of our results while reducing the amount of investment required by committers and the EMO.
+
+[#ip-history-2019]
+=== 2019
+
+The 2019 update to the Eclipse Foundation's IP Policy, approved by the Board of Directors in October 2019, makes the following changes:
+
+**License certification only for third-party content.** This change removes the requirement to perform deep copyright, provenance and scanning of anomalies for third-party content unless it is being modified and/or if there are _special_ considerations regarding the content. Instead, the focus for third-party content is on _license compatibility_ only, which had previously been referred to as _Type A_ due diligence.
+
+**Leverage other sources of license information for third-party content.** With this change to license certification only for third-party content, we are able to leverage existing sources of information license information. That is, the requirement that the  IP Team personally review every bit of third-party content has been removed and we can now leverage other _trusted_ sources.
+
+**ClearlyDefined is a _trusted_ source of license information.** We currently have two trusted sources of license information: The Eclipse Foundation’s <<ip-ipzilla,IPZilla>> and <<ip-clearlydefined, ClearlyDefined>>. The IPZilla database has been painstakingly built over most of the lifespan of the Eclipse Foundation; it contains a vast wealth of deeply vetted information about many versions of many third-party libraries. ClearlyDefined is an OSI project that combines automated harvesting of software repositories and curation by trusted members of the community to produce a massive database of license (and other) information about content.
+
+**Piggyback CQs are no longer required.** CQs had previously been used for tracking both the vetting process and the use of third-party content. With the changes, we are no longer required track the use of third-party content using CQs, so piggyback CQs are no longer necessary.
+
+**Parallel IP is used in all cases.** Previously, our so-called _Parallel IP_ process, the means by which project teams could leverage content during development while the IP Team completed their due diligence review was available only to projects in the _incubation phase_ and only for content with specific conditions. This is no longer the case: full vetting is now always applied in parallel in all cases.
+
+**CQs are not required for third-party content in all cases.** In the case of third-party content due diligence, <<ip-cq,CQs>> are now only used to track the vetting process. 
+
+**CQs are no longer required _before_ third-party content is introduced.** Previously, the IP Policy required that all third-party content must be vetted by the IP Team before it can be used by {aForgeName} Project. The IP Policy updates turn this around. {forgeName} project teams may now introduce new third-party content during a development cycle without first checking with the IP Team. That is, a project team may commit build scripts, code references, etc. to third-party content to their source code repository without first creating a <<ip-cq,CQ>> to request IP Team review and approval of the third-party content. At least during the development period between releases, the onus is on the project team to -- with reasonable confidence -- ensure any third-party content that they introduce is license compatible with the project’s license. Before any content may be included in any formal release the project team must engage in the <<ip-prereq-diligence, due diligence process>> to validate that the third-party content licenses are compatible with the project license.
+
+**History may be retained when an existing project moves to the Eclipse Foundation.** We had previously required that the commit history for a project moving to the Eclipse Foundation be squashed and that the <<ip-initial-contribution, initial contribution>> be the very first commit in the repository. This is no longer the case; existing projects are now encouraged (but not required) to retain their commit history. The initial contribution must still be provided to the IP Team via <<ip-cq, CQ>> as a snapshot of the `HEAD` state of the existing repository (if any).
+
+The due diligence process for project content is unchanged.
 
 [[ip-faq]]
 === Frequently Asked Questions
