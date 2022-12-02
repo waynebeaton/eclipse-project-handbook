@@ -17,7 +17,6 @@ We regard the following to be proper names:
 IP Due Diligence Process (when referring to the Eclipse IP DD process)
 IP Team
 Contribution Questionnaire
-Piggyback CQ
 Prerequisite
 Exempt Prerequisite
 Works With Dependency
@@ -731,14 +730,6 @@ You will need PMC approval. You may be able to hasten approval if you work with 
 
 If you have any questions or concerns, please contact EMO.
 
-[[ip-piggyback]]
-==== Piggyback CQs
-
-[WARNING]
-====
-Piggyback CQs are not longer required or supported.
-====
-
 [[ip-other-projects]]
 ==== Content from Other Eclipse Projects
 
@@ -877,7 +868,7 @@ The 2019 update to the Eclipse Foundation's IP Policy, approved by the Board of 
 
 **ClearlyDefined is a _trusted_ source of license information.** We currently have two trusted sources of license information: The Eclipse Foundation’s <<ip-ipzilla,IPZilla>> and <<ip-clearlydefined, ClearlyDefined>>. The IPZilla database has been painstakingly built over most of the lifespan of the Eclipse Foundation; it contains a vast wealth of deeply vetted information about many versions of many third-party libraries. ClearlyDefined is an OSI project that combines automated harvesting of software repositories and curation by trusted members of the community to produce a massive database of license (and other) information about content.
 
-**Piggyback CQs are no longer required.** CQs had previously been used for tracking both the vetting process and the use of third-party content. With the changes, we are no longer required track the use of third-party content using CQs, so piggyback CQs are no longer necessary.
+[#ip-piggyback]**Piggyback CQs are no longer required.** CQs had previously been used for tracking both the vetting process and the use of third-party content. With the changes, we are no longer required track the use of third-party content using CQs, so piggyback CQs are no longer necessary.
 
 **Parallel IP is used in all cases.** Previously, our so-called _Parallel IP_ process, the means by which project teams could leverage content during development while the IP Team completed their due diligence review was available only to projects in the _incubation phase_ and only for content with specific conditions. This is no longer the case: full vetting is now always applied in parallel in all cases.
 
