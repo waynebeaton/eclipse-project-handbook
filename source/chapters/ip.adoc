@@ -827,12 +827,12 @@ Please ensure that any merge/pull requests that come to you project correctly id
 ====
 
 [#ip-history]
-== Changes in the IP Policy
+=== Changes in the IP Policy
 
 The Eclipse Foundation's Board of Directors has approved various updates to the Eclipse Foundation's IP Policy over the years that have introduced significant changes in our IP due diligence process. In this section, we highlight some of them.
 
 [#ip-history-2022]
-=== 2022
+==== 2022
 
 The 2022 update to the Eclipse Foundation's IP Policy, approved by the Board of Directors in June 2022, resulted in the following changes:
 
@@ -858,7 +858,7 @@ With this change, we can no longer assume that {forgeName} open source projects 
 **Automate everything that can be automated.** We've implemented some tools, starting with the Eclipse Dash License Tool to automate as much of the process as possible. We continue to investigate options that improve the quality of our results while reducing the amount of investment required by committers and the EMO.
 
 [#ip-history-2019]
-=== 2019
+==== 2019
 
 The 2019 update to the Eclipse Foundation's IP Policy, approved by the Board of Directors in October 2019, makes the following changes:
 
