@@ -200,14 +200,6 @@ Progress reviews were added to the {edpLink} primarily to support the {efspUrl}[
 +
 In cases where, for example, a project team has gone an extended period of time without having engaged in a review, the project leadership chain may  compel the project team to engage in a progress review to ensure that the project team is following the processes and is generally engaging in the sorts of activities required for success.
 
-How do I submit the IP Log for review? ::
-
-Click the btn:[Submit] button on the <<ip-iplog-generator,IP Log generator>>. You need to be logged in as project committer to have access to this button.
-
-Can I accept contributions after I submit the IP Log for review? ::
-
-The short answer is _yes_. Please do accept contributions. If you require a new contribution questionnaire (for either a third-party library or code contribution) after submitting the IP Log for review, please ask the mailto:{ipTeamEmail}[IP Team] if they want you to resubmit the IP Log.
-
 How do I obtain PMC approval? ::
 
 Send the the xref:#roles-pmc[Project Management Committee] (PMC) a note via the top-level project's _PMC_ mailing list with a link to the release record. Note that the release record page has a handy link labeled menu:Committer Tools[Send Email the PMC].

@@ -40,6 +40,7 @@
 :proprietaryToolsUrl: https://www.eclipse.org/org/documents/Eclipse_Using_Proprietary_Tools_Final.php
 :clearlyDefinedUrl: http://clearlydefined.io/
 :licenseToolUrl: https://github.com/eclipse/dash-licenses
+:licenseToolLink: {licenseToolUrl}[Eclipse Dash License Tool]
 
 :webmasterEmailLink: mailto:{webmasterEmail}[Eclipse Webmaster]
 :ipTeamEmailLink: mailto:{ipTeamEmail}[EMO IP Team]

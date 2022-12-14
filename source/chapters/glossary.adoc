@@ -47,7 +47,7 @@ A contributor is anybody who makes contributions to the project. Contributions g
 
 Dash Process ::
 
-The Dash Process, or simply _Dash_, is a collection of scripts and processes that harvest project data for dissemination in charts, <<ip-iplog,IP Logs>>, and more. 
+The Dash Process, or simply _Dash_, is a collection of scripts and processes that harvest project data for dissemination in charts, and various services.
 
 Dev-list ::
 
@@ -96,18 +96,10 @@ The purpose of the incubation phase is to establish a fully-functioning open-sou
 IP Due Diligence Process ::
 
 The <<ip,Intellectual Property Due Diligence Process>> defines the process by which intellectual property is added to a project. All {forgeName} committers must be familiar with this process.
-
-Intellectual Property (IP) Log ::
-
-An <<ip-iplog,Intellectual Property Log>> (commonly referred to as an _IP Log_) is a record of the intellectual property (IP) contributions to a project. This includes such as a list of all committers, past and present, that have worked on the code and (especially) those who have made contributions to the current code base.
 	
 Member Company ::
 
 The Eclipse Foundation and Eclipse community is supported by our {memberUrl}[member organizations]. Through this support, the Eclipse Foundation provides the open source community with IT, intellectual property, and marketing services.
-
-Prerequisite (Dependency)::
-
-A <<ip-third-party-prereq,Prerequisites>> (or _prereqs_) are third-party content that is required by the Eclipse project content to provide core functionality. 
 
 Project::
 
@@ -123,6 +115,10 @@ Each top-level project is governed by a xref:#roles-pmc[Project Management Commi
 Project Management Infrastructure (PMI) ::
 
 The <<pmi,Project Management Infrastructure>> (PMI) is the system that tracks the state and progress of {forgeName} projects. Project committers can modify the the information represented in the PMI, including the project description, and information about project releases. Automated systems use this information to, for example, generate dashboard and chart information for the project, intellectual property logs, etc.
+
+Third-party Content (Dependency)::
+
+A xref:ip-third-party[Third-party Content] is content that is leveraged by a {forgeName} project that is not produced and/or maintained as an asset of the project.
 	
 Top-Level Project (TLP) ::
 
@@ -139,7 +135,3 @@ Webmaster is often used as an alternative name for the Eclipse IT Team. The IT t
 Working Group ::
 
 Eclipse {wgUrl}[Working Groups] provide a vendor-neutral governance structure that allow organizations to freely collaborate on new technology development. 
-
-Works With Dependency ::
-
-A <<ip-third-party-workswith,Works With Dependency>> is defined as third-party content that Eclipse Project Code will work with when it is available. The fundamental requirement is the Eclipse Project Code must be useful and adoptable without the Works With Dependency. That is, either the Project Code provides useful functionality without the Works With Dependency or the Works With Dependency is a suitable alternative for a <<ip-third-party-prereq,Prerequisite>>.

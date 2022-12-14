@@ -80,18 +80,6 @@ To create a Contribution Questionnaire:
 The CQ creation process works in two parts. First you create the CQ, then (when required) you attach the source code. You can attach the source code immediately after creating the CQ (otherwise the system will email you with instructions).
 ====
 
-[[pmi-commands-iplog]]
-==== Submit a Project's IP Log for Review
-
-Any project committer generate the <<ip-iplog, Intellectual Property (IP) Log>> and submit it for review by the Eclipse IP Team. An IP Log review is required, for example, for all <<release-review, release and progress reviews>>.
-
-To generate an IP Log:
-
-1. Log in to the {forgeUrl}[PMI];
-2. Navigate to a <<pmi-project-page,project page>>;
-3. Click menu:Committer Tools[Intellectual Property > Generate IP Log]; and
-4. Follow the workflow.
-
 [[pmi-commands-release]]
 ==== Create a New Release
 
