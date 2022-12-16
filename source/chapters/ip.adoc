@@ -31,18 +31,18 @@ This section is being revised following the July 2022 update to the Eclipse Foun
 
 The term intellectual property (IP) refers to any sort of creative work, be it literature, art, or software. In the realm of open source software, artifacts like source code, documentation, and images are considered intellectual property. Unless otherwise stated, intellectual property is the property of its creator, who may grant permission for others to use that intellectual property by providing a license.
 
-The ease with which software can be copied and combined makes it challenging to know with confidence if content can be used without running into legal issues. Any sort of serious software development effort must be accompanied by a well-defined IP due diligence process that can ferret out issues and mitigate the risk of leveraging the work of others. IP due diligence is a time consuming process that requires specialized skills and a keen eye for detail.
+The ease with which software can be copied and combined makes it challenging to know with confidence if content can be used without running into legal issues. Any sort of serious software development effort must be accompanied by a well-defined IP due diligence process that can identify issues and mitigate the risk of leveraging the work of others. IP due diligence is a time consuming process that requires specialized skills and a keen eye for detail.
 
 [WARNING]
 ====
 If you've been around for a while, you may be looking for things that no longer exist. We've retired IPZilla along with the term _Contribution Questionnaire_, we're now able to leverage a wider variety of open source licenses, and we lean much more heavily on automation than ever before. There's more information about these changes in the xref:#ip-history[History] section of this chapter.
 ====
 
-There are different kinds of content (e.g., source code, documentation, and images) to consider. xref:ip-project-content[Project content] is content (typically source code) that is produced and maintained by the open source project committers and contributors. xref:ip-third-party[Third-party content] generally takes the form of libraries (e.g. modules, or components), source files, images, or other forms of IP that are produced and maintained outside of the scope of the open source project. To mitigate the risk associated with adopting open source in products, the _project content_ and the _third-party content_ that it leverages need to be vetted to ensure that the copyrights expressed are correct, licensing is valid and compatible, and that other issues have been uncovered and properly investigated.
+There are different kinds of content (e.g., source code, documentation, and images) to consider. For the purposes of the Eclipse Foundation's IP Due Diligence Process, we consider all types of content, not just code, to be intellectual property that is subject to the process (even when we say _code_--especially in the context of IP due diligence--you should assume that we mean _content_).
 
-The Eclipse Foundation has a well-defined {ipPolicyUrl}[IP Policy], corresponding IP Due Diligence Process, and an _IP Team_ of dedicated professional IP specialists who perform the heavy lifting in the due diligence process. Committers, the software developers who decide what will become _project content_ and how {aForgeName} open source project will leverage _third-party content_, are responsible for bringing IP issues to the attention of the IP Team.
+xref:ip-project-content[Project content] is content (typically source code) that is produced and maintained by the open source project committers and contributors. Most of the _project content_ produced by committers can be pushed into a project repository without any sort of legal review. However, at least in some cases, the IP Team needs to be engaged to review project content that comes from contributors (who are not committers); and there are some cases where even the work of committers needs to be reviewed.
 
-Most of the _project content_ produced by committers can be pushed into a project repository without any sort of legal review. However, at least in some cases, the IP Team needs to be engaged to review project content that comes from contributors (who are not committers); and there are some cases where even the work of committers needs to be reviewed.
+xref:ip-third-party[Third-party content] generally takes the form of libraries (e.g. modules, or components), source files, images, or other forms of IP that are produced and maintained outside of the scope of the open source project. To mitigate the risk associated with adopting open source in products, the _project content_ and the _third-party content_ that it leverages need to be vetted to ensure that the copyrights expressed are correct, licensing is valid and compatible, and that other issues have been uncovered and properly investigated.
 
 The IP Due Diligence Process focuses on source content. For the purposes of the IP Due Diligence Process, the term _source code_ (or _source content_) refers to the pre-compiled content, including programming language source, configuration and property files, as well as binary things that don't have a pre-compiled form like images or icons. The IP Due Diligence Process is concerned with reviewing the IP that is either consumed (third-party content) or produced (project content) by the Eclipse open source project. The process doesn't generally focus on compiled content (e.g., the IP Team looks at source code, not JAR files).
 
@@ -55,6 +55,13 @@ The {edpLink} does restrict how content can be disseminated based on the state o
 
 The means for committers to engage in the IP Due Diligence Process is by xref:ip-request[creating a review request issue].
 
+[#ip-team]
+=== Eclipse Foundation IP Team
+
+The Eclipse Foundation has a well-defined {ipPolicyUrl}[IP Policy], corresponding IP Due Diligence Process, and an _IP Team_ of dedicated professional IP specialists who perform the heavy lifting in the due diligence process. 
+
+xref:roles-cm[Committers], the software developers who decide what will become _project content_ and how {aForgeName} open source project will leverage _third-party content_, are responsible for bringing IP issues to the attention of the IP Team.
+
 [#ip-dash-db]
 === Eclipse Dash License Database
 
@@ -64,6 +71,8 @@ The Eclipse Dash License Database (or, more simply, the _Dash Database_) is a da
 ==== IPLab
 
 {iplabUrl}[_IPLab_] is a repository on the Eclipse Foundation's GitLab infrastructure that is dedicated to tracking the due diligence review process and conclusions for {forgeName} project and third-party content. Issues on that repository are used to xref:ip-request[request reviews], and track the review process and results.
+
+Data collected in IPLab is used as a source for the xref:ip-dash-db[Eclipse Dash License Database].
 
 [[ip-clearlydefined]]
 === ClearlyDefined
@@ -107,14 +116,14 @@ When an existing project migrates to the Eclipse Foundation, we refer to the exi
 
 [WARNING]
 ====
-All {forgeName} open source project content must be kept in source code repositories that are managed by the Eclipse Foundation IT Team. Our current options are xref:resource-gitlab[GitLab] or xref:resources-github[GitHub].
+All {forgeName} open source project content must be kept in source code repositories that are managed by the Eclipse Foundation IT Team. Our current options are xref:resources-gitlab[GitLab] or xref:resources-github[GitHub].
 ====
 
 In the case of an existing repository, the project team has some choices:
 
 **Move the existing repository.** At the project team's request, the Eclipse Foundation IT Team can move existing source code repositories on xref:resources-github[GitHub] into an organisation managed by the Eclipse Foundation. This is the best option when a project team wants to preserve their repositories's status with existing forks, retain existing issues, stars, etc. Note that GitHub does a good job of setting up redirects that will ensure that the project's existing community can find them.
 
-**Push an existing repository.** At the project team's request, the Eclipse Foundation IT Team can create new source code repositories on either xref:resource-gitlab[GitLab] or xref:resources-github[GitHub] into which the project team can push existing content. This option is best in the case that there is good reason to leave an existing repository in place, or when a project team needs to move an existing private repository into the open. The project team can decide whether or not to push the entire history or just a snapshot from the existing repository. As a best practice, an existing repository that gets "left behind" should be updated to include a pointer to the new repository and marked as _archived_.
+**Push an existing repository.** At the project team's request, the Eclipse Foundation IT Team can create new source code repositories on either xref:resources-gitlab[GitLab] or xref:resources-github[GitHub] into which the project team can push existing content. This option is best in the case that there is good reason to leave an existing repository in place, or when a project team needs to move an existing private repository into the open. The project team can decide whether or not to push the entire history or just a snapshot from the existing repository. As a best practice, an existing repository that gets "left behind" should be updated to include a pointer to the new repository and marked as _archived_.
 
 Combinations are also possible. As part of the {forgeName} open source xref:starting[project creation process], the EMO asks the project team to capture their requirements and will facilitate discussion between the project team and the Eclipse Foundation IT Team to implement those requirements.
 
@@ -195,36 +204,6 @@ The _applicable license_ is typically the project license. Contributions may, ho
 ==== CQ Workflow for Project Content
 
 In the case where review by the IP Team is required, a project committer must create a <<ip-cq, CQ>>.
-
-[graphviz, images/projectcode-cq, svg]
-.CQ Workflow for Project Content
-----
-digraph {
-   graph [ranksep="0.25"; nodesep="0.25"; fontsize=12];
-   bgcolor=transparent;
-   rankdir=TB;
-   splines=curved;
-   
-   node [shape=box;style=filled;fillcolor=white;fontsize=12]
-   edge [fontsize=12]
-   
-   create [style="filled,bold",label="Create CQ"];
-   
-   {
-      attach [label="Attach code"];
-      rank=same; rankdir=LR;
-      pmc [label="PMC Approval"];
-      checkin [label="Check-in"];
-   }
-   
-   approval [style="filled,bold", label="Approved"]
-   
-   create -> attach;
-   attach -> pmc;
-   pmc -> checkin;
-   checkin -> approval;
-}
-----
 
 Creating a CQ for a project content contribution requires two steps. In the first step, a committer must <<pmi-commands-cq, create the CQ record>> by providing basic information about the content. In the second step, the committer must then attach the source code for the content to the newly created CQ. When all information and the source code has been collected, the workflow will connect with the PMC for their approval.
 
@@ -389,7 +368,8 @@ Project teams are not required to engage with the IP Team to review service rele
 [[ip-prereq-diligence]]
 ==== Due Diligence for Prerequisites
 
-[[ip-third-party-due-diligence]]All prerequisites must be available under a license that is on the Eclipse Foundation's list of {approvedLicensesUrl}[approved licenses for third-party content]. Further, the nature of the license must be verified by a _trusted_ source. When the license for content can be verified by a trusted source of license information, no further action is required (there is no need to seek approval from the IP Team); if there is any question regarding the nature of the license, then project team should create a <<ip-cq, CQ>> to request that the IP Team perform the necessary due diligence on the content.
+[#ip-third-party-due-diligence]
+All prerequisites must be available under a license that is on the Eclipse Foundation's list of {approvedLicensesUrl}[approved licenses for third-party content]. Further, the nature of the license must be verified by a _trusted_ source. When the license for content can be verified by a trusted source of license information, no further action is required (there is no need to seek approval from the IP Team); if there is any question regarding the nature of the license, then project team should create a <<ip-cq, CQ>> to request that the IP Team perform the necessary due diligence on the content.
 
 [TIP]
 ====

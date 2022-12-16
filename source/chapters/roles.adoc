@@ -42,7 +42,7 @@ Project leads are responsible for ensuring that project committers are following
 Project leads should seek help/advice from the xref:roles-pmc[Project Management Committee] and xref:roles-emo[Eclipse Management Organization] when they need assistance.
 ====
 
-Project leads have the ability to xref:elections-retire-cm[retire committers]: this is a power that must be used responsibly. A project lead needs to be able to support their decision to retire a committer. As a best practice, the project lead should give committers reasonable opportunity to retrain their status, and -- should the decision be made to retire -- committer retirements should be announced on the project's primary communication channels including the dev-list. 
+Project leads have the ability to xref:elections-retire-cm[retire committers]: this is a power that must be used responsibly. A project lead needs to be able to support their decision to retire a committer. As a best practice, the project lead should give committers reasonable opportunity to retrain their status, and -- should the decision be made to retire -- committer retirements should be announced on the project's primary communication channels including the xref:resources-dev-list[dev-list]. 
 
 When committers are disruptive or otherwise behaving in a manner that is detrimental to the project, the project lead should work with the PMC and the EMO to resolve the issue.  
 

@@ -51,7 +51,7 @@ The Dash Process, or simply _Dash_, is a collection of scripts and processes tha
 
 Dev-list ::
 
-Every project has a _development list_ or _dev-list_. All project committers must subscribe to the list. The _dev-list_ should be the primary means of communication between project committers and is the means through which the Eclipse Foundation's automated systems communicate with the project team.
+Every project has a _development list_ or _dev-list_. All project committers must subscribe to the list. The xref:resources-dev-list[dev-list] should be the primary means of communication between project committers and is the means through which the EMO and Eclipse Foundation's automated systems communicate with the project team.
 
 Ecosystem ::
 

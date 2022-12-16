@@ -19,7 +19,7 @@ Open source projects at the Eclipse Foundation are _required_ to make use of cer
 * Source code must be maintained in source code repositories assigned to the project (<<resources-gitlab, Eclipse Foundation GitLab>>, <<resources-github, Eclipse Foundation-managed GitHub>>, or <<resources-gerrit, Eclipse Foundation Gerrit>>);
 * All third-party content used by the project must be <<ip-third-party,vetted>>;
 * Downloads (when provided) must be distributed via xref:resources-downloads[{aForgeName} downloads] server;
-* Developer (committer) communication must occur in the _dev-list_ provided to the project by the Eclipse Foundation; and
+* Developer (committer) communication must occur in the xref:resources-dev-list[dev-list] provided to the project by the Eclipse Foundation; and
 * Projects must keep their <<pmi-metadata, Project Metadata>> up-to-date.
 
 [[resources-identifiers]]
@@ -293,6 +293,48 @@ You can {gerritUrl}[browse {forgeName} repositories] directly on the Gerrit serv
 === Issue Trackers
 
 {forgeName} projects must use an Eclipse Foundation-provided issue tracker. Project teams may opt to use either the {bugzillaUrl}[{forgeName} Bugzilla] instance or -- for projects that use <<resources-github,GitHub>> -- GitHub Issues instances associated with Eclipse Foundation-managed GitHub project repositories. 
+
+[#resources-mailing-list]
+=== Mailing Lists
+
+{forgeName} projects have one or more mailing lists.
+
+Mailing lists take the following form: `<shortname>-<extension>@eclipse.org`, where `<shortname>` is the project's xref:resources-identifiers[short name] and `<extension>` signifies the nature of the list (e.g., `woolsey-users@eclipse.org` or `woolsey-ci@eclipse.org`).
+
+[TIP]
+====
+To create additional mailing lists for a project, a xref:roles-pl[project leads] should make the request by opening a {helpDeskUrl}[Help Desk request].
+====
+
+With the exception of channels created to discuss security issues while they are in quarantine, there are no private channels for project work. This means that we do not provide private mailing lists for any project activity and that all mailing lists use for project activity are configured to have a public archive.
+
+Mailing list subscriptions are managed via your xref:contributing-account[Eclipse Foundation Account].
+
+[#resources-dev-list]
+==== Project Dev Lists
+
+All projects are assigned a _development list_ or _dev-list_ that takes the form `<shortname>-dev@eclipse.org` (e.g., `woolsey-dev@eclipse.org`). 
+
+All project committers must subscribe to the list. The dev-list should be the primary means of communication between project committers and is the means through which the EMO and the Eclipse Foundation’s automated systems communicate with the project team.
+
+[#resources-pmc-list]
+==== PMC Lists
+
+Every xref:roles-pmc[Project Management Committee] (PMC) is assigned a _PMC list_ that takes the form `<shortname>-pmc@eclipse.org` where `<shortname>` is the short name of the corresponding top-level project (e.g., `technology-pmc@eclipse.org`). 
+
+All PMC members must subscribe to this list. Project leads and committers from open source projects operating under the purview of the PMC may also subscribe to the list to monitor the activities of the PMC and interact as necessary (it's common that project teams will designate one or more representatives to the PMC who will subscribe to the PMC list). 
+
+The PMC list should be the primary means of communication between PMC members and is the means through which the EMO and the Eclipse Foundation’s automated systems communicate with the PMC.
+
+[#resources-committers-mailing-list]
+==== Committers Mailing List
+
+All xref:roles-cm[committers] are automatically subscribed to the `eclipse.org-committers@eclipse.org` mailing list. This list is used primarily as a means for the EMO and the Eclipse Foundation IT Team to communicate important information to all committers. We use this list sparingly.
+
+[TIP]
+====
+Subscription to the committers mailing list is an obligation that comes with having committer status on {aForgeName} open source project. The only way to remove yourself from this list is to xref:elections-retire-cm[retire yourself] as a committer.
+====
 
 [[resources-forums]]
 === Forums and Outbound Communication
