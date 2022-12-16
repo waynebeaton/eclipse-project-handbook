@@ -105,7 +105,7 @@ Provisioning starts with an email message being sent to each of the committers l
 
 [NOTE]
 ====
-The provisioning process will not start until after the paperwork for at least one project committer is received and processed by the EMO Records Team. If you can be ready with the paperwork in time for the completion of the creation review, then we can move quickly through the provisioning process. 
+The provisioning process will not start until after the xref:paperwork[committer agreement] for at least one project committer is received and processed by the EMO Records Team. If you can be ready with the paperwork in time for the completion of the creation review, then we can move quickly through the provisioning process. 
 
 When we initiate provisioning, committers will be sent an email with instructions; please don't send any paperwork in until after you receive those instructions.
 ====
