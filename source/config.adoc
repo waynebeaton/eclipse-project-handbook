@@ -16,7 +16,7 @@
 
 :emoEmail: emo@eclipse-foundation.org
 :ipTeamEmail: emo-ip-team@eclipse.org
-:emoRecordsEmail: emo-records@eclipse.org
+:emoRecordsEmail: emo-records@eclipse-foundation.org
 :webmasterEmail: webmaster@eclipse-foundation.org
 :legalEmail: license@eclipse-foundation.org
 :licenseEmail: license@eclipse-foundation.org
