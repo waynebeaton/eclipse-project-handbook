@@ -16,10 +16,6 @@ We regard the following to be proper names:
 
 IP Due Diligence Process (when referring to the Eclipse IP DD process)
 IP Team
-Contribution Questionnaire
-Prerequisite
-Exempt Prerequisite
-Works With Dependency
 Third-party (use a hyphen)
 
 The terms "intellectual property", "project content" and "third-party content" are not considered proper nouns.
@@ -42,39 +38,39 @@ The ease with which software can be copied and combined makes it challenging to 
 If you've been around for a while, you may be looking for things that no longer exist. We've retired IPZilla along with the term _Contribution Questionnaire_, we're now able to leverage a wider variety of open source licenses, and we lean much more heavily on automation than ever before. There's more information about these changes in the xref:#ip-history[History] section of this chapter.
 ====
 
-There are different kinds of content (e.g., source code, documentation, and images) to consider. <<ip-project-content,_Project content_>> is content (typically source code) that is produced and maintained by the open source project committers and contributors. <<ip-third-party,_Third-party content_>> generally takes the form of libraries (e.g. modules, or components), source files, images, or other forms of IP that are produced and maintained outside of the scope of the open source project. To mitigate the risk associated with adopting open source in products, the _project content_ and the _third-party content_ that it leverages need to be vetted to ensure that the copyrights expressed are correct, licensing is valid and compatible, and that other issues have been uncovered and properly investigated.
+There are different kinds of content (e.g., source code, documentation, and images) to consider. xref:ip-project-content[Project content] is content (typically source code) that is produced and maintained by the open source project committers and contributors. xref:ip-third-party[Third-party content] generally takes the form of libraries (e.g. modules, or components), source files, images, or other forms of IP that are produced and maintained outside of the scope of the open source project. To mitigate the risk associated with adopting open source in products, the _project content_ and the _third-party content_ that it leverages need to be vetted to ensure that the copyrights expressed are correct, licensing is valid and compatible, and that other issues have been uncovered and properly investigated.
 
 The Eclipse Foundation has a well-defined {ipPolicyUrl}[IP Policy], corresponding IP Due Diligence Process, and an _IP Team_ of dedicated professional IP specialists who perform the heavy lifting in the due diligence process. Committers, the software developers who decide what will become _project content_ and how {aForgeName} open source project will leverage _third-party content_, are responsible for bringing IP issues to the attention of the IP Team.
 
 Most of the _project content_ produced by committers can be pushed into a project repository without any sort of legal review. However, at least in some cases, the IP Team needs to be engaged to review project content that comes from contributors (who are not committers); and there are some cases where even the work of committers needs to be reviewed.
 
-The IP Due Diligence Process focuses on source content. For the purposes of the IP Due Diligence Process, the term _source code_ (or _source content_) refers to the pre-compiled content, including programming language source, configuration and property files, as well as binary things that don't have a pre-compiled form like icons. The IP Due Diligence Process is concerned with reviewing the IP that is either consumed (third-party content) or produced (project content) by the Eclipse open source project. The process doesn't generally focus on compiled content (e.g., the IP Team looks at source code, not JAR files).
+The IP Due Diligence Process focuses on source content. For the purposes of the IP Due Diligence Process, the term _source code_ (or _source content_) refers to the pre-compiled content, including programming language source, configuration and property files, as well as binary things that don't have a pre-compiled form like images or icons. The IP Due Diligence Process is concerned with reviewing the IP that is either consumed (third-party content) or produced (project content) by the Eclipse open source project. The process doesn't generally focus on compiled content (e.g., the IP Team looks at source code, not JAR files).
 
-The IP Due Diligence Process does not dictate how source code repositories are structured. When the IP Team signals that content can be used, the project team can put content into their repositories in whatever structure makes the most sense. Similarly, the IP Due Diligence Process is not concerned with how third-party content is represented (e.g. how it is integrated into builds) or how it is disseminated.
+The IP Due Diligence Process does not dictate how source code repositories are structured. Project teams should organise content in their source code repositories in whatever structure makes the most sense. Similarly, the IP Due Diligence Process is not concerned with how third-party content is represented (e.g. how it is integrated into builds) or how it is disseminated.
 
 [NOTE] 
 ====
-The {edpLink} does restrict how content can be disseminated based on the state of the IP review. A Project team can create and distribute milestone builds of any content that has been granted _check-in_ from the IP Team. All content must be approved by the IP Team before the project can engage in a formal <<release, release>>.
+The {edpLink} does restrict how content can be disseminated based on the state of the IP review. A Project team can create and distribute milestone builds of their content before it is fully vetted by the IP Due Diligence Process, but all content must be fully vetted before the project can engage in a formal xref:release[release].
 ====
 
-The entry point into the IP Due Diligence Process is the xref:ip-request[Content Review Request]. Project teams should create a single CQ for the <<ip-initial-contribution,initial contribution>> of project content. The initial contribution is a special type of project content contribution in the sense that it is the first thing that the IP Team will review on behalf of the project team. 
+The means for committers to engage in the IP Due Diligence Process is by xref:ip-request[creating a review request issue].
 
 [#ip-dash-db]
 === Eclipse Dash License Database
 
-The Eclipse Dash License Database (or, more simply, the _Dash Database_) is a database that contains the license information collected via the Eclipse Foundation Intellectual Property Due Diligence Process. It contains license information gathered and curated by the Eclipse Foundation's IP Team via xref:ip-iplab[IPLab] and xref:ip-ipzilla[IPZilla] (retired). The Dash Database is accessed via API only; the xref:ip-license-tool[Eclipse Dash License Tool] is the primary means of accessing this resource.
+The Eclipse Dash License Database (or, more simply, the _Dash Database_) is a database that contains the license information collected via the Eclipse Foundation Intellectual Property Due Diligence Process. It contains license information gathered and curated by the Eclipse Foundation's IP Team. The Dash Database is accessed via API only; the xref:ip-license-tool[Eclipse Dash License Tool] is the primary means of accessing this resource.
 
 [#ip-iplab]
 ==== IPLab
 
-{iplabUrl}[_IPLab_] is a repository on the Eclipse Foundation's GitLab infrastructure that is dedicated to tracking the due diligence review process and conclusions for {forgeName} project and third-party content. Issues on that repository are used to request reviews, and track the review process and results.
+{iplabUrl}[_IPLab_] is a repository on the Eclipse Foundation's GitLab infrastructure that is dedicated to tracking the due diligence review process and conclusions for {forgeName} project and third-party content. Issues on that repository are used to xref:ip-request[request reviews], and track the review process and results.
 
 [[ip-clearlydefined]]
 === ClearlyDefined
 
-{clearlyDefinedUrl}[ClearlyDefined] is an OSI project that combines automated harvesting of software repositories and curation by trusted members of the community to produce a massive database of license (and other) information about content. The Eclipse Foundation's IP Team works closely with the ClearlyDefined team, providing input into their processes and helping to curate their data.
+{clearlyDefinedUrl}[ClearlyDefined] is an OSI project that combines automated harvesting of copyright and license information from software repositories and curation thereof by trusted members of the community to produce a massive database of information about content. The Eclipse Foundation's IP Team works with the ClearlyDefined team, providing input into their processes and helping to curate their data.
 
-In rough terms, if the license information for third-party content can be validated by the Eclipse Foundation's <<ip-prereq-diligence, due diligence process>> using ClearlyDefined data, then no further action is required.
+In rough terms, if the license information for third-party content can be validated by the Eclipse Foundation's <<ip-prereq-diligence, due diligence process>> using ClearlyDefined data, then no further action is required. The xref:ip-license-tool[Eclipse Dash License Tool] uses ClearlyDefined as a source of license information (and is the easiest way for {forgeName} committers to leverage ClearlyDefined).
 
 [[ip-clearlydefined-identifiers]]
 ==== ClearlyDefined Identifiers
@@ -83,12 +79,12 @@ In order to facilitate the use of automation in the IP due diligence process, th
 
 The notion of an identifier for content is pretty natural for developers who are familiar with technologies like Apache Maven which has well defined means of uniquely identifying content in a well-defined software repository. Maven coordinates -- which combine `groupid`, `artifactid`, and `version` (often referred to as a “GAV”) -- identify a very specific bit of content (especially when combined with a specific source, e.g. Maven Central). For example, `org.junit.jupiter:junit-jupiter:5.5.2` unambiguously identifies content on Maven Central that is known to be under the Eclipse Public License version 2.0 (EPL-2.0). Other systems use different means of identifying content: `node.js`, for example, uses a pURL-like identifier for content in the NPM repository (e.g., `@babel/generator@7.62`).
 
-To bridge the gap between the different means of identifying content (and fill in some of the blanks), we’ve adopted the ClearlyDefined project’s five part identifiers which includes the type of content, its software repository source, its name space and name, and version. ClearlyDefined coordinates are roughly analogous to Maven coordinates, but -- by including the type and source -- provide a greater degree of precision. ClearlyDefined uses slashes to separate the parts of the identifier, so the Maven GAV `org.junit.jupiter:junit-jupiter:5.5.2` maps to `maven/mavencentral/org.junit.jupiter/junit-jupiter/5.5.2` and the NPM identifier `@babel/generator@7.62` maps to `npm/npmjs/@babel/generator/7.6.2`.
+To bridge the gap between the different means of identifying content (and fill in some of the blanks), we’ve adopted the ClearlyDefined project’s five part identifiers which includes the type of content, its software repository source, its name space and name, and version/revision. ClearlyDefined coordinates are roughly analogous to Maven coordinates, but -- by including the type and source -- provide a greater degree of precision. ClearlyDefined uses slashes to separate the parts of the identifier, so the Maven GAV `org.junit.jupiter:junit-jupiter:5.5.2` maps to `maven/mavencentral/org.junit.jupiter/junit-jupiter/5.5.2` and the NPM identifier `@babel/generator@7.62` maps to `npm/npmjs/@babel/generator/7.6.2`.
 
 [[ip-clearlydefined-using]]
 ==== Using ClearlyDefined
 
-ClearlyDefined is used as _part_ of the overall <<ip-prereq-diligence, due diligence process for third-party prerequisites>>. The xref:ip-dash-db[Dash Database] is the primary source of information regarding third-party licensing for {forgeName} projects. In cases where the Dash Database and ClearlyDefined results differ, the Dash Database results take precedence.
+ClearlyDefined is used as _part_ of the overall xref:ip-prereq-diligence[due diligence process for third-party prerequisites]. The xref:ip-dash-db[Dash Database] is the primary source of information regarding third-party licensing for {forgeName} projects. In cases where the Dash Database and ClearlyDefined results differ, the Dash Database results take precedence.
 
 [TIP]
 ====
@@ -97,7 +93,7 @@ Don't use ClearlyDefined directly. Instead, use the xref:ip-license-tool[Eclipse
 
 When content is known to ClearlyDefined and has a _Licensed_ score of at least {clearlyDefinedMinimumScore}, the _declared_ and all _discovered_ licenses are on the Eclipse Foundation's {approvedLicensesUrl}[approved licenses list], and all of the licenses are mutually consistent, then the content can be used without further action. 
 
-Note that when the ClearlyDefined record shows any of the following, a project committer must xref:ip-project-content-cq[engage with the IP Team to review the content]:
+Note that when the ClearlyDefined record shows any of the following, a project committer must xref:ip-project-content-cq[engage with the IP Team to review the content] (use the Eclipse Dash License Tool):
 
 * `NOASSERTION` appearing as a _declared license_;
 * `NOASSERTION` appearing as a _discovered license_;
@@ -107,53 +103,38 @@ Note that when the ClearlyDefined record shows any of the following, a project c
 [[ip-initial-contribution]]
 === Initial Contribution
 
-Code provenance tracking is critical (the source of all code that ends up in Eclipse Foundation repositories must be well known). To that end, all new projects are required to make an _initial contribution_ before *any* code is committed to a project's source code repository.
+When an existing project migrates to the Eclipse Foundation, we refer to the existing code (when one exists) as the {forgeName} open source project's _initial contribution_. An initial contribution is basically the first set of xref:ip-project-code[project code] contributions to the new {forgeName} project. An initial contribution typically takes the form of an entire existing source code repository or some snapshot of an existing code base.
 
-[graphviz, images/ip_ic_overview, svg, width=800px]
-.How The Initial Contribution Fits into the Project Creation Process
-----
-digraph {
-	bgcolor=transparent;
-	rank=same;rankdir=LR
-	
-	node [shape=box;style=filled;fillcolor=white;fontsize=12];
-	{
-		rankdir=TB;
-		creation[label="EMO declares\nsuccessful\nCreation Review"];
-		provision[label="Eclipse\nIT Team\nProvisions"];
-	}
-	initial[label="Committer submits\nInitial\nContribution"];
-	
-	{
-		rankdir=TB;
-		checkin[label="IP Team\ngrants\n\"check-in\""];
-		parallel[label="IP Team\ncompletes review"];
-		approval[label="IP Team\ngrants\n\"approval\""];
-	}
-	
-	{
-		rankdir=TB;
-		push[label="Committer\npushes to\nProject Git"];
-		develop[label="Committers and\ncontributors engage"];
-		review[label="Project Team\nengages in a\nRelease Review"];
-		release[label="First Release"; style="filled,bold"];
-	}
-	creation -> provision;
-	provision -> initial;
-	initial -> checkin;
-	checkin -> push;
-	checkin -> parallel;
-	parallel -> approval;
-	push -> develop;
-	develop -> review;
-	approval -> review;
-	review -> release;
-}
-----
+[WARNING]
+====
+All {forgeName} open source project content must be kept in source code repositories that are managed by the Eclipse Foundation IT Team. Our current options are xref:resource-gitlab[GitLab] or xref:resources-github[GitHub].
+====
 
-Following a successful Creation Review, the EMO will initiate the provisioning process (Committers provide required paperwork and the IT Team creates project resources (Git, downloads, website, etc.);
+In the case of an existing repository, the project team has some choices:
 
-The initial contribution is a snapshot of the existing code base. The initial contribution, like any other <<ip-project-content,project content>> contribution, should contain *only* project content. Any <<ip-third-party,third-party content>> that might be included in the existing source tree should be excluded from the initial contribution and treated as third-party content. The initial contribution is just a snapshot in time: the IP Team does not review history.
+**Move the existing repository.** At the project team's request, the Eclipse Foundation IT Team can move existing source code repositories on xref:resources-github[GitHub] into an organisation managed by the Eclipse Foundation. This is the best option when a project team wants to preserve their repositories's status with existing forks, retain existing issues, stars, etc. Note that GitHub does a good job of setting up redirects that will ensure that the project's existing community can find them.
+
+**Push an existing repository.** At the project team's request, the Eclipse Foundation IT Team can create new source code repositories on either xref:resource-gitlab[GitLab] or xref:resources-github[GitHub] into which the project team can push existing content. This option is best in the case that there is good reason to leave an existing repository in place, or when a project team needs to move an existing private repository into the open. The project team can decide whether or not to push the entire history or just a snapshot from the existing repository. As a best practice, an existing repository that gets "left behind" should be updated to include a pointer to the new repository and marked as _archived_.
+
+Combinations are also possible. As part of the {forgeName} open source xref:starting[project creation process], the EMO asks the project team to capture their requirements and will facilitate discussion between the project team and the Eclipse Foundation IT Team to implement those requirements.
+
+[NOTE]
+====
+We must complete the open source xref:starting[project creation process] before we move any existing source code repositories or create new ones. Following a successful xref:starting-creation-review[Creation Review], the EMO will initiate the xref:starting-provisioning[provisioning] process. It is during the provisioning process that we activate project committers, move/create source code repositories, and create other project resources.
+====
+
+The short version of the process is this:
+
+* Complete the xref:starting-proposal[proposal process] and xref:starting-creation-review[creation review];
+* Project team and EMO works with Eclipse Foundation IT Team to set up source code repositories;
+* The EMO initiates the intellectual property review of the default branch of all repositories;
+* The EMO IP Team will inform the EMO when the reviews are complete
+
+As a general rule third-party content should not be included in project repositories. Typically, third-party content is pulled in by some form of build process after developers have cloned the repository (for example, developers might pull in required NPM modules via a `package-lock.json` file).
+
+In the case where third-party content must be represented in a project repository, we would consider that a project code. Whether or not the content is modified, it would effectively be considered a xref:ip-forks[fork].
+
+In the case where third-party content must be present in the repository in binary form. TBD
 
 Any project committer can start the initial contribution review process by creating a <<ip-cq,CQ>>. The IP Team will review the initial contribution to ensure that it hasn't been copied inappropriately, that licenses are being used correctly, and so forth. As part of this process, the IP Team  will research the source of all code; depending on the size of the contribution, this can be a time-consuming process.
 
@@ -194,6 +175,11 @@ When the contributor has signed the <<contributing-eca, Eclipse Contributor Agre
 If all of these conditions have **not** been met, then a project committer must <<ip-project-content-cq, open a CQ>> to request review by the IP Team before the contribution is pushed/merged.
 
 Any project committer can <<ip-project-content-cq, create>> a <<ip-cq,CQ>> to submit a project content contribution for review by the IP Team. The project content must be attached to the CQ in source form. A full review can be time-consuming; the IP Team will start with a cursory review of the content, and—​assuming that no significant issues are uncovered by that cursory review—will grant _check-in_ indicating that the project team can push/merge the initial contribution into their Git repository and start working on it while the IP team continues their review in _parallel_. A project cannot make a release that includes the content under review until the due diligence process ​is complete and the content has been approved.
+
+[#ip-forks]
+==== Forks
+
+TBD
 
 [[ip-ownership]]
 ==== Copyright

@@ -86,6 +86,9 @@ The Eclipse Foundation holds the _trademark_ for all {forgeName} projects. Trade
 
 The proposal must list at least one mentor from the Eclipse Architecture Council. Members of the Eclipse Architecture Council have considerable experience with Eclipse Foundation practices, and the {edpLink}. The EMO will engage directly with the Architecture Council to identify mentors as necessary. Mentors are assigned to the project through the incubation phase; they are released from their duties when the project <<release-graduation,graduates>>.
 
+[#starting-creation-review]
+=== Creation Review
+
 When the project name trademark has been secured, a mentor has been identified, and the proposal contents are finalized, the EMO will schedule a _creation review_. Reviews -- which run for a minimum of one week -- are scheduled twice a month, generally concluding on the first and third Wednesday of each month. The creation review may overlap with the _community review_ period.
 
 [NOTE]
