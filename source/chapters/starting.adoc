@@ -115,16 +115,11 @@ When the paperwork is received and processed for one committer, the Eclipse IT T
 [[starting-after-provisioning]]
 === After Provisioning
 
+TBD
+
 Before pushing any code into an official {forgeName} project repository, the project team must submit the project's <<ip-initial-contribution,_initial contribution_>> of project code and wait for the Eclipse Intellectual Property (IP) Team to grant `checkin` of that contribution. 
 
-Project teams interact with the Eclipse IP Team via the <<ip-ipzilla,IPZilla>> system using <<ip-cq,Contribution Questionnaires>> (CQs). Those members of the project team that are included in the CQ's _CC_ list will be informed of progress via email.
-    
-[WARNING]
-====
-The IP Team will indicate check-in permission by adding the `checkin` keyword and final approval by setting the state of the CQ to `approved`. *Do not* push any code into the project repository until after the Eclipse IP Team has indicated that you are ready to do so.
-====
-
-<<ip-third-party,Third-party content>> that is required by the project code must also be reviewed by the Eclipse IP Team. Project teams that are new to the process should start by raising no more than three CQs for third-party content in order to gain an understanding of the third-party review process before proceeding to enter all requests.
+<<ip-third-party,Third-party content>> that is required by the project code must also be reviewed by the Eclipse IP Team. 
 
 [graphviz, images/post-creation, svg]
 .Post creation activities

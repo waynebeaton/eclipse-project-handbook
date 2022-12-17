@@ -63,23 +63,6 @@ The URL for a project page takes the form `pass:c,a[{forgeUrl}/projects/<project
 
 Committers have access to several committer-specific commands and tools in the _Committer Tools_ block on the right side of project pages. The selection of commands available are context sensitive; only those commands that make sense for the logged in user are shown.
 
-[[pmi-commands-cq]]
-==== Create a Contribution Questionnaire
-
-Any project committer create <<ip-cq, Contribution Questionnaire>> (CQ). CQs are required to track the due diligence review of contributions of project content and third-party content
-
-To create a Contribution Questionnaire:
-
-1. Log in to the {forgeUrl}[PMI];
-2. Navigate to a <<pmi-project-page,project page>>;
-3. Click menu:Committer Tools[Intellectual Property > Create a Contribution Questionnaire]; and
-4. Follow the workflow.
-
-[NOTE]
-====
-The CQ creation process works in two parts. First you create the CQ, then (when required) you attach the source code. You can attach the source code immediately after creating the CQ (otherwise the system will email you with instructions).
-====
-
 [[pmi-commands-release]]
 ==== Create a New Release
 

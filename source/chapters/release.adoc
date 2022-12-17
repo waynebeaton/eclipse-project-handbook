@@ -134,13 +134,6 @@ The review materials must be approved by the xref:#roles-pmc[Project Management 
 Click the handy menu:Committer Tools[Communication > Send Email to the PMC] link on the release record page to connect with the PMC.
 ====
 
-The IP Team must approve the IP Log before the EMO can schedule the review, so submitting this early is important. The <<ip-iplog-generator,IP Log generator>> automatically collects information based on the information that the project team has provided to the IP Team through <<ip-cq,contribution questionnaires>> in IPZilla, commits in the project's source code repository, and other information in our databases. The project team should review the IP Log before submitting to the IP Team for their review.
-
-[TIP]
-====
-Use the <<pmi-commands-iplog, Generate IP Log>> tool on a specific <<pmi-project-page, project page>> in the <<pmi,Project Management Interface (PMI)>> to generate and submit the IP Log for review.
-====
-
 The information used to generate an IP Log should always be up-to-date (don't wait until the end of the release cycle to make it right).
 
 At any point in this process, the project lead or a designated committer can request that the review be initiated by clicking the menu:Schedule a review for this release[] link that appears at the top of the release record page.

@@ -597,6 +597,7 @@ With this change, we can no longer assume that {forgeName} open source projects 
 **IPLab replaces IPZilla.** We announced the retirement of IPZilla in September 2022 and moved aggressively to retire it completely by the end of December 2022. IPZilla was the tool that we used to request and track the progress of intellectual property reviews. With this update to our process, we now use xref:#ip-iplab[IPLab], an issue tracker and repository on our GitLab infrastructure that we use to request and track intellectual property reviews. The xref:ip-license-tool[Eclipse Dash License Tool] integrates with IPLab to automate much of the process of requesting reviews (which required significant manual work with IPZilla).
 
 [#ip-cq]
+[#pmi-commands-cq]
 **No more Contribution Questionnaires.** With the retirement of IPZilla, we also retired the term _contribution questionnaire_ along with its acronym, _CQ_. You can call the issues on IPLab whatever you want: issues, IP review requests, 
 
 [#pmi-commands-iplog]

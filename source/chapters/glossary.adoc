@@ -37,10 +37,6 @@ Community ::
 
 Community is a nebulous sort of term. Community is the group of individuals and organizations that gather around your project. In the case of some projects, the community is enormous. Other projects have smaller communities. Developing a community is a very important part of being {aForgeName} project as it is from the community that you get feedback, contributions, fresh ideas, and ultimately new committers to help you implement your shared vision. The _{forgeName} Community_ is formed from the union of the communities that grow around individual projects.
 
-Contribution Questionnaire ::
-
-Prior to committing a significant contribution of content from a non-committer to {aforgeName} project, the committer must fill out a <<ip-cq,contribution questionnaire>> (CQ) and submit it to the IP Team for approval. In addition to the EMO, the relevant PMC must also provide a technical review and approval of the contribution. In general, ongoing development by project committers does not require EMO or PMC approval. When in doubt, consult the xref:ip[Eclipse IP Due Diligence Process].
-
 Contributor ::
 
 A contributor is anybody who makes contributions to the project. Contributions generally take the form of code patches, but may take other forms like comments on issues, additions to the documentation, answers to questions in forums, and more. All contributors must sign the Eclipse Contributor Agreement (ECA).

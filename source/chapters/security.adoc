@@ -42,11 +42,6 @@ Bugzilla Records marked with the `committers-only` flag are visible to all Eclip
 Bugzilla sends out emails as issues are modified. Email is inherently insecure.
 ====
 
-[TIP]
-====
-The Eclipse IP Team will give priority to <<ip-cq,contribution questionnaires>> (CQs) required to resolve vulnerabilities.
-====
-
 [[vulnerability-disclosure]]
 == Disclosure
 
