@@ -77,10 +77,6 @@ EMO Records ::
 
 The EMO Records Team (commonly referred to as _EMO Records_) is responsible for managing committer paperwork and other records on behalf of the Eclipse Foundation. Contact the EMO Records team via email ({emoRecordsEmail}).
 
-Exempt Prerequisite (Dependency) ::
-
-An <<ip-third-party-exempt,Exempt Prerequisite>> is defined as third-party content which is used by Eclipse project code but is not not subject to review by the IP Team. Content may be considered exempt if it is "is pervasive in nature, expected to be already on the user's machine, and/or an IP review would be either impossible, impractical, or inadvisable."
-
 Genie ::
 
 _Genie_ is the generic term given to automated processes that perform various functions on behalf of project teams, generally focused around builds. The _Eclipse Genie_ performs various tasks (e.g. automated portions of the <<ip, IP Due Diligence Process>>) on behalf of the Eclipse Foundation.
