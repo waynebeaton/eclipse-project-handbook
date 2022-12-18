@@ -584,24 +584,6 @@ Website content is separate from project content. Project teams are expected to 
 What is "Type A" and "Type B" due diligence?::
 Versions of the Eclipse Foundation's Intellectual Property Policy prior to October 2019 referred to two different types of intellectual property due diligence, named _Type A_ and _Type B_. Project teams were able to choose the type of IP due diligence that they wanted for their project: Type A which was concerned with validating that the licenses of the content were compatible with the project license, and Type B which offered a more thorough check including provenance and other deep analysis. We phased out Type B in October 2019, and now focus solely on license compatibility for third-party content.
 
-What do you do with the IP Log? ::
-IP Log reviews occur in two stages. In the first stage, the EMO performs a technical assessment to make sure that the artifacts produced by the project are properly accounted for in the IP log. You may be asked to assist with the resolution of any discrepancies found during this assessment. In the second stage, the IP Team reviews the log to ensure that it matches their records. The IP log review concludes with approval by the IP Team.
-
-When should I submit the IP Log for review? ::
-The IP Log should be submitted for review by the IP Team two weeks before the planned end date for a <<release-review, review>> or (if code moves are involved) a restructuring review. Note that the date of your review may be different from the date of the actual release.
-
-How precise must the "required by" date for the IP Log be? ::
-The "required by" date is intended to give the IP Team help to prioritize the processing of the IP Log against other requirements. The date selected should be at least one week in advance of the conclusion date of any corresponding <<release-review, review>>. 
-
-We submitted an IP Log for our release, but we've made some changes since then that will end up in the release, should we resubmit the IP Log? ::
-The purpose of the IP Log review is to checkpoint the IP Due Diligence Process and ensure that nothing is slipping through the cracks; an IP Log is not intended to be an accurate reflection of exactly what is in any particular release.
-
-Are there other reasons to submit the IP Log for review? ::
-Generally no. If the IP Team requires an IP Log review outside of the context of a release or restructuring review, they'll ask for it. It is not generally necessary to submit an IP Log for review outside of the context of a review. It is, however, good practice to do your own review of the generated IP Log periodically to make sure that it accurately reflects the state of the project.
-	
-How do I fix problems with the generated IP Log? ::
-The IP Log is generated based on data from Eclipse Foundation servers. If the log is being generated incorrectly, then the underlying data needs to be fixed. If you spot a problem, send a note to mailto:{emoEmail}[EMO].
-
 [[ip-parallel-ip]]What is Parallel IP? ::
 
 The parallel IP Process allows {aForgeName} projects to make use of project code contributions and third-party content before they are fully approved by the IP Team. In versions of the IP Policy prior to 2019, projects needed to meet specific requirements to be able to leverage the Parallel IP. This is no longer the case: full vetting is now always applied in parallel in all cases.
