@@ -329,9 +329,7 @@ Project teams are not required to engage with the IP Team to review service rele
 [#ip-license-compatibility]
 ==== License Compatibility
 
-[#ip-other-projects]
-
-TBD
+[[ip-other-projects]]TBD
 
 [[ip-third-party-test]]
 ==== Test and Build Dependencies
@@ -348,21 +346,17 @@ If you have any questions or concerns, please contact EMO.
 [#ip-request]
 === Requesting a Review
 
-[#ip-project-content-cq]
-[#ip-third-party-due-diligence]
-[#ip-prereq-diligence]
-
-If your project leverages build technology that pulls third-party content from well-defined software repositories (e.g., Apache Maven pulling from Maven Central, a `yarn.lock` or `package-lock.json` file), consider using the https://github.com/eclipse/dash-licenses[Eclipse Dash License Tool] to https://github.com/eclipse/dash-licenses#automatic-ip-team-review-requests[automatically create] IPLab issues for you.
+[[ip-project-content-cq]][[ip-third-party-due-diligence]][[ip-prereq-diligence]]If your project leverages build technology that pulls third-party content from well-defined software repositories (e.g., Apache Maven pulling from Maven Central, a `yarn.lock` or `package-lock.json` file), consider using the https://github.com/eclipse/dash-licenses[Eclipse Dash License Tool] to {licenseToolUrl}#automatic-ip-team-review-requests[automatically create] IPLab issues for you.
 
 [NOTE]
 ====
-Note that the **Eclipse Dash License Tool** is only capable of creating issues for content that it either discovers from your build or that you feed to it. It will not, for example, find third-party content that is buried in your code. If you've, for example, added some JavaScript library in a `lib` directory or similar, then you may have to manually https://gitlab.eclipse.org/eclipsefdn/emo-team/iplab/-/issues/new?issuable_template=vet-third-party[create a request] to vet that content and manually track your project's use of that library.
+Note that the **Eclipse Dash License Tool** is only capable of creating issues for content that it either discovers from your build or that you feed to it. It will not, for example, find third-party content that is buried in your code. If you've, for example, added some JavaScript library in a `lib` directory or similar, then you may have to manually {iplabThirdPartyTemplate}[create a request] to vet that content and manually track your project's use of that library.
 ====
 
 If you cannot use the Eclipse Dash License Tool, you can manually create a request:
 
-* https://gitlab.eclipse.org/eclipsefdn/emo-team/iplab/-/issues/new?issuable_template=vet-project[Create a request] to review Project Content; or
-* https://gitlab.eclipse.org/eclipsefdn/emo-team/iplab/-/issues/new?issuable_template=vet-third-party[Create a request] to review Third-party content
+* {iplabProjectTemplate}[Create a request] to review Project Content; or
+* {iplabThirdPartyTemplate}[Create a request] to review Third-party Content.
 
 xref:ip-project-content[Project Content] is any content that will be maintained by the project team. Basically anything that a contributor or committer will put into a project's source code repository (generally in source form) is project content. This includes content that the project team forks (the premise being that forked content effectively becomes indistinguishable, at least conceptually, from project content).
 
@@ -372,8 +366,9 @@ xref:ip-third-party[Third-party Content] is defined as content that is leveraged
 
 When creating a review request issue, please provide as much information as you can. If information is missing, or you are not certain how information should be provided, provide what you can and the IP Team will work with you to sort it out.
 
-GitLab issue uses markdown, so use Markdown syntax when specifying information. Our scanners parse information out of the issue description, and so are most likely to be successful (and require less time-consuming manual intervention) if you stick to the format specified.
+GitLab issue use Markdown, so use Markdown syntax when specifying information. Our scanners parse information out of the issue description, and so are most likely to be successful (and require less time-consuming manual intervention) if you stick to the format specified.
 
+[#ip-request-instructions]
 ==== Instructions
 
 ===== Set the title to a valid ClearlyDefined id
@@ -439,7 +434,7 @@ What the License Tool does is relatively simple:
 * it first queries the Eclipse Foundation's xref:ip-dash-db[Dash Database]; 
 ** if an entry has been vetted by the IP Team and has been approved for use, then it is marked as `approved`;
 ** if an entry has been vetted by the IP Team and flagged as somehow problematic, it will be marked as `restricted`
-* it then sends the content that has **not** been flagged as either `approved` or `restricted` to <<ip-clearlydefined, ClearlyDefined>>
+* it then sends the content that has **not** already been flagged as either `approved` or `restricted` to <<ip-clearlydefined, ClearlyDefined>>
 ** ClearlyDefined xref:ip-clearlydefined-using[matches] are marked as `approved`;
 * Everything else is marked `restricted`. 
 
@@ -490,8 +485,7 @@ Do not share your access token.
 [#ip-sbom]
 === Software Bill of Materials
 
-[#ip-iplog]
-[#ip-iplog-generator]
+[[ip-iplog]][[ip-iplog-generator]]{forgeName} open source projects are required to track their intellectual property contributions, as well as their use of third-party content. We rely on the Git log to track contributors and contributions.
 
 [WARNING]
 ====
@@ -499,8 +493,6 @@ IP Logs are no longer required in the form previously described in this document
 
 This section is under construction.
 ====
-
-{forgeName} open source projects are required to track their intellectual property contributions, as well as their use of third-party content. We rely on the Git log to track contributors and contributions.
 
 {forgeName} open source projects are required to maintain a software bill of materials (SBOM). xref:legaldoc-plugins-abouts["About" files] (`about.html`) serve this purpose in Eclipse Platform plug-ins, and xref:legaldoc-notice[`NOTICE`] files or summary files generated using the Eclipse Dash License Tool serve as SBOMs. In the future, the EMO will work with projects to leverage standard SBOM formats such as SPDX or CycloneDX. 
 

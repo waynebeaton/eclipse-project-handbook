@@ -87,6 +87,9 @@
 
 :emoGitUrl: https://gitlab.eclipse.org/eclipsefdn/emo-team/emo
 :iplabUrl: https://gitlab.eclipse.org/eclipsefdn/emo-team/iplab
+:iplabWiki: {iplabUrl}/-/wikis/home
+:iplabProjectTemplate: {iplabUrl}/-/issues/new?issuable_template=vet-project
+:iplabThirdPartyTemplate: {iplabUrl}/-/issues/new?issuable_template=vet-third-party
 :cveRequestUrl: {emoGitUrl}/-/issues/new?issuable_template=cve
 :cveUrl: https://cve.mitre.org/
 :cweUrl: https://cwe.mitre.org/
