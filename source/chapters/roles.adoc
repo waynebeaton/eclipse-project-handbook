@@ -119,7 +119,7 @@ image::images/notifications.png[]
 
 As part of the project leadership chain, the PMC is tasked with approving progress, release, and graduation reviews.
 
-The criteria by which the PMC determines whether or not to approve a review, and the process that they follow to grant approval varies by PMC.
+The criteria by which the PMC determines whether or not to approve a review, and the process that they follow to grant approval varies by PMC. In general, with this request for approval, the EMO seeks the advice of the PMC regarding whether or not projects under its purview are operating according to the open source rules of engagement. That is, the EMO expects that the PMC has some insight into the operation of the projects operating under their purview, and know whether or not project teams have what they need to be successful.
 
 A project lead or committer must request PMC approval via email to the xref:resources-pmc-list[PMC's mailing list]. Any member of the PMC may approve the review by responding directly to the request with a `pass:[+1]` (that is, the EMO will interpret any single PMC member's `pass:[+1]` as the PMC's affirmative response).
 
