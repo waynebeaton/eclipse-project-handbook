@@ -24,11 +24,6 @@ The terms "intellectual property", "project content" and "third-party content" a
 [#ip]
 == Intellectual Property
 
-[WARNING]
-====
-This section is being revised following the July 2022 update to the Eclipse Foundation's IP Policy. These updates should be complete by the end of 2022.
-====
-
 The term intellectual property (IP) refers to any sort of creative work, be it literature, art, or software. In the realm of open source software, artifacts like source code, documentation, and images are considered intellectual property. Unless otherwise stated, intellectual property is the property of its creator, who may grant permission for others to use that intellectual property by providing a license.
 
 The ease with which software can be copied and combined makes it challenging to know with confidence if content can be used without running into legal issues. Any sort of serious software development effort must be accompanied by a well-defined IP due diligence process that can identify issues and mitigate the risk of leveraging the work of others. IP due diligence is a time consuming process that requires specialized skills and a keen eye for detail.
@@ -74,14 +69,14 @@ The Eclipse Dash License Database (or, more simply, the _Dash Database_) is a da
 
 Data collected in IPLab is used as a source for the xref:ip-dash-db[Eclipse Dash License Database].
 
-[[ip-clearlydefined]]
+[#ip-clearlydefined]
 === ClearlyDefined
 
 {clearlyDefinedUrl}[ClearlyDefined] is an OSI project that combines automated harvesting of copyright and license information from software repositories and curation thereof by trusted members of the community to produce a massive database of information about content. The Eclipse Foundation's IP Team works with the ClearlyDefined team, providing input into their processes and helping to curate their data.
 
 In rough terms, if the license information for third-party content can be validated by the Eclipse Foundation's <<ip-prereq-diligence, due diligence process>> using ClearlyDefined data, then no further action is required. The xref:ip-license-tool[Eclipse Dash License Tool] uses ClearlyDefined as a source of license information (and is the easiest way for {forgeName} committers to leverage ClearlyDefined).
 
-[[ip-clearlydefined-identifiers]]
+[#ip-clearlydefined-identifiers]
 ==== ClearlyDefined Identifiers
 
 In order to facilitate the use of automation in the IP due diligence process, the Eclipse Foundation has adopted ClearlyDefined identifiers to identify content.
@@ -90,7 +85,7 @@ The notion of an identifier for content is pretty natural for developers who are
 
 To bridge the gap between the different means of identifying content (and fill in some of the blanks), we’ve adopted the ClearlyDefined project’s five part identifiers which includes the type of content, its software repository source, its name space and name, and version/revision. ClearlyDefined coordinates are roughly analogous to Maven coordinates, but -- by including the type and source -- provide a greater degree of precision. ClearlyDefined uses slashes to separate the parts of the identifier, so the Maven GAV `org.junit.jupiter:junit-jupiter:5.5.2` maps to `maven/mavencentral/org.junit.jupiter/junit-jupiter/5.5.2` and the NPM identifier `@babel/generator@7.62` maps to `npm/npmjs/@babel/generator/7.6.2`.
 
-[[ip-clearlydefined-using]]
+[#ip-clearlydefined-using]
 ==== Using ClearlyDefined
 
 ClearlyDefined is used as _part_ of the overall xref:ip-prereq-diligence[due diligence process for third-party prerequisites]. The xref:ip-dash-db[Dash Database] is the primary source of information regarding third-party licensing for {forgeName} projects. In cases where the Dash Database and ClearlyDefined results differ, the Dash Database results take precedence.
@@ -109,7 +104,7 @@ Note that when the ClearlyDefined record shows any of the following, a project c
 * No declared license; or
 * A _License_ score of less than {clearlyDefinedMinimumScore}.
 
-[[ip-initial-contribution]]
+[#ip-initial-contribution]
 === Initial Contribution
 
 When an existing project migrates to the Eclipse Foundation, we refer to the existing code (when one exists) as the {forgeName} open source project's _initial contribution_. An initial contribution is basically the first set of xref:ip-project-code[project code] contributions to the new {forgeName} project. An initial contribution typically takes the form of an entire existing source code repository or some snapshot of an existing code base.
@@ -145,11 +140,10 @@ In the case where third-party content must be represented in a project repositor
 
 A project cannot make a xref:release[release] until the due diligence on the IP contained in that release--including xref:ip-project-content[project content] contributions and xref:ip-third-party[third-party content]--is complete. 
 
-[[ip-project-content]]
+[#ip-project-content]
 === Project Content
 
-[#ip-project-code]
-Project content is content that is managed by the project team. This includes content that is produced by project committers, along with content that is contributed to the project by outside contributors. Essentially, all content that is contained in a source code repository that is owned and managed by the Eclipse Foundation on behalf of {aForgeName} open source project team is considered project content. We use "content" in a general sense, independent of any particular technology or means of delivery; code, scripts, documentation, and configuration files are all (non-exhaustive) examples of content. 
+[[ip-project-code]]Project content is content that is managed by the project team. This includes content that is produced by project committers, along with content that is contributed to the project by outside contributors. Essentially, all content that is contained in a source code repository that is owned and managed by the Eclipse Foundation on behalf of {aForgeName} open source project team is considered project content. We use "content" in a general sense, independent of any particular technology or means of delivery; code, scripts, documentation, and configuration files are all (non-exhaustive) examples of content. 
 
 Contributions made by {forgeName} committers **do not** require review by the Eclipse IP Team and can be pushed directly into a project repository. Notwithstanding project-specific rules, project committers can push their own content directly into project repositories. While content produced by other {forgeName} committers _does not_ require review by the Eclipse IP Team, it must still be accepted by project committers. Project committers should engage the {forgeName} IP Team if they have concerns regarding the provenance of any contribution.
 
@@ -166,7 +160,7 @@ If all of these conditions have **not** been met, then a project committer must 
 
 Any project committer can xref:ip-request[engage with the IP Team] to review a project content contribution. A project cannot make a release that includes the content under review until the due diligence process ​is complete and the content has been approved.
 
-[[ip-ownership]]
+[#ip-ownership]
 ==== Copyright
 
 The author of a contribution (or their employer) retains copyright of the intellectual property contained in the contribution. As part of the contribution process, the contributor licenses their contribution under the applicable license(s).
@@ -179,9 +173,7 @@ The _applicable license_ is typically the project license. Contributions may, ho
 [#ip-third-party]
 === Third-party Content
 
-[#ip-prereq]
-[#ip-third-party-prereq]
-The term _third-party content_ refers to any content that is leveraged by the {forgeName} project that is not produced and/or maintained as an asset of the project. This includes content from other {forgeName} projects.
+[[ip-prereq]][[ip-third-party-prereq]]The term _third-party content_ refers to any content that is leveraged by the {forgeName} project that is not produced and/or maintained as an asset of the project. This includes content from other {forgeName} projects.
 
 This includes (for example):
 
@@ -324,7 +316,7 @@ Project teams are not required to engage with the IP Team to review service rele
 
 [[ip-other-projects]]TBD
 
-[[ip-third-party-test]]
+[#ip-third-party-test]
 ==== Test and Build Dependencies
 
 [WARNING]
@@ -412,7 +404,7 @@ The scanner will only automatically scan issues under the following conditions:
 
 Issues that do not meet these criteria are ignored.
 
-[[ip-license-tool]]
+[#ip-license-tool]
 === Eclipse Dash License Tool
 
 The {licenseToolUrl}[Eclipse Dash License Tool] takes a list of dependencies as input, matches content to license information obtained from trusted sources, and identifies the content that needs further scrutiny (i.e., it lists all content for which license information cannot be found in one of the approved sources). It is available as both a xref:ip-license-tool-cli[command-line interface] and a xref:ip-license-tool-mvn[Maven plugin].
