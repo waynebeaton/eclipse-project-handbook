@@ -141,7 +141,7 @@ The short version of the process is this:
 
 As a general rule third-party content should not be included in project repositories. Typically, third-party content is pulled in by some form of build process after developers have cloned the repository (for example, developers might pull in required NPM modules via a `package-lock.json` file).
 
-In the case where third-party content must be represented in a project repository, we would consider that a project code. Whether or not the content is modified, it would effectively be considered a xref:ip-forks[fork].
+In the case where third-party content must be represented in a project repository, we would consider that a project code. Whether or not the content is modified, it would effectively be considered a fork.
 
 A project cannot make a xref:release[release] until the due diligence on the IP contained in that release--including xref:ip-project-content[project content] contributions and xref:ip-third-party[third-party content]--is complete. 
 
@@ -165,11 +165,6 @@ When the contributor has signed the <<contributing-eca, Eclipse Contributor Agre
 If all of these conditions have **not** been met, then a project committer must xref:ip-request[engage with the IP Team] to request review by the IP Team before the contribution is pushed/merged.
 
 Any project committer can xref:ip-request[engage with the IP Team] to review a project content contribution. A project cannot make a release that includes the content under review until the due diligence process ​is complete and the content has been approved.
-
-[#ip-forks]
-==== Forks
-
-TBD
 
 [[ip-ownership]]
 ==== Copyright
