@@ -40,17 +40,17 @@ digraph {
 	
 	// Nodes that define the key points in the process
 	node [shape=box;style=filled;fillcolor=white;fontsize=12;width=2]
-	doc [label="Review\nDocumentation", group=g1]
+	doc [label="Prepare Review\nDocumentation", group=g1]
 	pmc [label="PMC\nApproval", group=g1]
-	ipteam [label="IP Log Approval\n(IP Team)", group=g2]
+	emo [label="EMO Approval", group=g2]
 	ballot [label="Specification Committee\nBallot", group=g3]
 	start [label="Start\Review", group=g3]
 	end [label="End\nRelease Review", group=g3]
 	publish [label="Publish Release", group=g3]
 	
 	doc -> start
-	pmc -> start
-	ipteam -> start
+	pmc -> end
+	emo -> end
 	ballot -> end
 	start -> end -> publish
 }

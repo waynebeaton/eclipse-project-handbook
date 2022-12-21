@@ -38,7 +38,7 @@ A project team may declare official major or minor releases and distribute assoc
 
 [[NOTE]]
 ====
-*Intellectual property must be properly accounted for and tracked at all times.* The project team must engage in the Eclipse IP Due Diligence Process on an ongoing basis. The IP Log review and approval that occurs at the time of either a release review or progress review should be regarded as a means of confirming that intellectual property is being properly managed and not as a trigger to engage in a last minute clean up.
+*Intellectual property must be properly accounted for and tracked at all times.* The project team must engage in the Eclipse IP Due Diligence Process on an ongoing basis. The IP review and approval that occurs at the time of either a release review or progress review should be regarded as a means of confirming that intellectual property is being properly managed and not as a trigger to engage in a last minute clean up.
 
 All tracking of project and third-party content must be current and correct at all times.
 ====
@@ -111,16 +111,16 @@ digraph {
 	
 	// Nodes that define the key points in the process
 	node [shape=box;style=filled;fillcolor=white;fontsize=12;width=2]
-	doc [label="Review\nDocumentation", group=g1]
 	pmc [label="PMC\nApproval", group=g1]
-	ipteam [label="IP Log Approval\n(IP Team)", group=g2]
-	start [label="Start\Review", group=g3]
-	end [label="End\nRelease Review", group=g3]
-	publish [label="Publish Release", group=g3]
+	doc [label="Prepare Review\nDocumentation", group=g2]
+	start [label="Start\Review", group=g2]
+	emo [label="EMO Approval", group=g3]
+	end [label="End\nRelease Review", group=g2]
+	publish [label="Publish Release", group=g2]
 	
+	pmc -> end
 	doc -> start
-	pmc -> start
-	ipteam -> start
+	emo -> end
 	start -> end -> publish
 }
 ----
@@ -134,13 +134,11 @@ The review materials must be approved by the xref:#roles-pmc[Project Management 
 Click the handy menu:Committer Tools[Communication > Send Email to the PMC] link on the release record page to connect with the PMC.
 ====
 
-The information used to generate an IP Log should always be up-to-date (don't wait until the end of the release cycle to make it right).
-
 At any point in this process, the project lead or a designated committer can request that the review be initiated by clicking the menu:Schedule a review for this release[] link that appears at the top of the release record page.
 
 [NOTE]
 ====
-The EMO will likely notice that you've created the release record, connected with your PMC, and submitted an IP Log for review by the IP team and will take steps to initiate the actual review. However, since there is a great deal of variability in this process, send an email to mailto:{emoEmail}[EMO] stating your intent to release.
+Send an email to mailto:{emoEmail}[EMO] to initiate a review.
 ====
 
 The EMO will conclude the review on the scheduled end date and advise the project team of the outcome.

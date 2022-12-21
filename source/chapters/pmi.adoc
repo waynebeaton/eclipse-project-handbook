@@ -68,7 +68,7 @@ Committers have access to several committer-specific commands and tools in the _
 
 A project lead or committer can create a new <<release,release>> record. This opens a dialog requesting that a date and name be specified. Both of these values can be changed later.
 
-To generate an IP Log:
+To create a new release record:
 
 1. Log in to the {forgeUrl}[PMI];
 2. Navigate to a <<pmi-project-page,project page>>;
