@@ -13,12 +13,12 @@
 [#roles]
 = Project Roles
 
-The Eclipse Foundation Development Process defines multiple roles. Primary among the roles are those of xref:roles-cm[Committer], xref:roles-pl[Project Lead], and xref:roles-pmc[Project Management Committee].
+The Eclipse Foundation Development Process defines multiple formal open source project roles. Primary among the roles are those of xref:roles-cm[Committer], xref:roles-pl[Project Lead], and xref:roles-pmc[Project Management Committee].
 
 [#roles-cm]
 == Committers
 
-For {forgeName} projects (and the open source world in general), committers are the ones who hold the keys. Committers decide what code goes into the code base, they decide how a project builds, and they ultimately decide what gets delivered to the adopter community. With awesome power, comes awesome responsibility, and so the Open Source Rules of Engagement described by the {edpLink}, puts _meritocracy_ on equal footing with _transparency_ and _openness_: becoming a committer isn’t necessarily hard, but it does require a demonstration of merit.
+For {forgeName} projects (and the open source world in general), xref:contributing-committers[committers] are the ones who hold the keys. Committers decide what code goes into the code base, they decide how a project builds, and they ultimately decide what gets delivered to the adopter community. With awesome power, comes awesome responsibility, and so the Open Source Rules of Engagement described by the {edpLink}, puts _meritocracy_ on equal footing with _transparency_ and _openness_: becoming a committer isn’t necessarily hard, but it does require a demonstration of merit.
 
 Committers:
 
@@ -117,7 +117,18 @@ image::images/notifications.png[]
 [#roles-pmc-reviews]
 === PMC Role in Reviews
 
-Literally put a `pass:[+1]` on the email thread when approving a review.
+As part of the project leadership chain, the PMC is tasked with approving progress, release, and graduation reviews.
+
+The criteria by which the PMC determines whether or not to approve a review, and the process that they follow to grant approval varies by PMC.
+
+A project lead or committer must request PMC approval via email to the xref:resources-pmc-list[PMC's mailing list]. Any member of the PMC may approve the review by responding directly to the request with a `pass:[+1]` (that is, the EMO will interpret any single PMC member's `pass:[+1]` as the PMC's affirmative response).
+
+[NOTE]
+====
+The EMO monitors all PMC mailing lists and so will likely observe the PMC's approval response. The EMO will acknowledge the approval via the issue being used to track the review.
+
+Since any single member of the PMC may approve a review on behalf of the entire PMC, the EMO purposely delays recording the approval in order to give other PMC members an opportunity to challenge their colleague.
+====
 
 [#roles-pmc-grievance-handling]
 === PMC Role in Grievance Handling
