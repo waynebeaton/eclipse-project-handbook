@@ -314,7 +314,20 @@ Project teams are not required to engage with the IP Team to review service rele
 [#ip-license-compatibility]
 ==== License Compatibility
 
-[[ip-other-projects]]TBD
+[[ip-other-projects]]Perhaps the most challenging aspect of intellectual property due diligence is determining whether or not content distributed under one license may consume content distributed under a different license. All too often, the answer is: "it depends".
+
+[WARNING]
+====
+The Eclipse Foundation's IP Team **does not (and cannot) give legal advice**. Rather, the team leverages their experience, along with various resources, to make judgment calls as to whether or not licenses be being used in a consistent and compatible manner.
+
+Our goal is to provide as much information as possible so that, ultimately, the adopters of {forgeName} project code (with assistance from their own legal counsel) can decide whether or not licenses are consistent and compatible.
+====
+
+Our {approvedLicensesUrl}[approved licenses page] lists licenses that we believe are generally compatible with most {forgeName} project licenses. As stated on the page, "licenses on this list are not necessarily compatible with every Eclipse Foundation project license, or with each other."
+
+Licenses that are not included on this list are not necessary prohibited. Rather, they may require more thought and careful review.
+
+When in doubt, check with the {ipTeamEmailLink}.
 
 [#ip-third-party-test]
 ==== Test and Build Dependencies
@@ -326,7 +339,7 @@ This section applies specifically to open-source libraries and tools only; it do
 
 Test and build dependencies are those third-party libraries and tools that are considered non-distribution contributions. That is, these libraries are not actively distributed by the project via any generally-accessible `eclipse.org` property. These libraries and tools may, for example, persist on the build server which is accessible only to Eclipse committers; they may not, for example, persist on the `eclipse.org` download or archive servers, web server, or any source code repository. Eclipse project content (e.g., build scripts) distributed via `eclipse.org` source code repositories may contain references to these libraries and tools (but not the libraries/tools themselves). Project documentation should list these dependencies, how they are obtained (either manually or automatically via scripts), and other issues (especially licensing).
 
-If you have any questions or concerns, please contact EMO.
+If you have any questions or concerns, please contact {emoEmailLink}.
 
 [#ip-request]
 === Requesting a Review
