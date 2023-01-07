@@ -30,7 +30,7 @@ The ease with which software can be copied and combined makes it challenging to 
 
 [WARNING]
 ====
-If you've been around for a while, you may be looking for things that no longer exist. We've retired IPZilla along with the term _Contribution Questionnaire_, we're now able to leverage a wider variety of open source licenses, and we lean much more heavily on automation than ever before. There's more information about these changes in the xref:#ip-history[History] section of this chapter.
+The Eclipse Foundation's IP Team **does not (and cannot) give legal advice**. Rather, the team leverages their experience, along with various resources, to identify licenses in content, and make judgment calls as to whether or not licenses be being used in a consistent and compatible manner.
 ====
 
 There are different kinds of content (e.g., source code, documentation, and images) to consider. For the purposes of the Eclipse Foundation's IP Due Diligence Process, we consider all types of content, not just code, to be intellectual property that is subject to the process (even when we say _code_--especially in the context of IP due diligence--you should assume that we mean _content_).
@@ -38,6 +38,11 @@ There are different kinds of content (e.g., source code, documentation, and imag
 xref:ip-project-content[Project content] is content (typically source code) that is produced and maintained by the open source project committers and contributors. Most of the _project content_ produced by committers can be pushed into a project repository without any sort of legal review. However, at least in some cases, the IP Team needs to be engaged to review project content that comes from contributors (who are not committers); and there are some cases where even the work of committers needs to be reviewed.
 
 xref:ip-third-party[Third-party content] generally takes the form of libraries (e.g. modules, or components), source files, images, or other forms of IP that are produced and maintained outside of the scope of the open source project. To mitigate the risk associated with adopting open source in products, the _project content_ and the _third-party content_ that it leverages need to be vetted to ensure that the copyrights expressed are correct, licensing is valid and compatible, and that other issues have been uncovered and properly investigated.
+
+[WARNING]
+====
+If you've been around for a while, you may be looking for things that no longer exist. We've retired IPZilla along with the term _Contribution Questionnaire_, we're now able to leverage a wider variety of open source licenses, and we lean much more heavily on automation than ever before. There's more information about these changes in the xref:#ip-history[History] section of this chapter.
+====
 
 The IP Due Diligence Process focuses on source content. For the purposes of the IP Due Diligence Process, the term _source code_ (or _source content_) refers to the pre-compiled content, including programming language source, configuration and property files, as well as binary things that don't have a pre-compiled form like images or icons. The IP Due Diligence Process is concerned with reviewing the IP that is either consumed (third-party content) or produced (project content) by the Eclipse open source project. The process doesn't generally focus on compiled content (e.g., the IP Team looks at source code, not JAR files).
 
@@ -311,24 +316,6 @@ This applies specifically to major and minor versions of prerequisites.
 
 Project teams are not required to engage with the IP Team to review service releases for third-party content, provided that the service release is based on a release that has either been vetted by the due diligence process. A service release is defined as a release that is backwards compatible and contains only bug fixes. If a project team isn't sure whether or not a particular release is a service release, they should submit the content for review by the IP Team.
 
-[#ip-license-compatibility]
-==== License Compatibility
-
-[[ip-other-projects]]Perhaps the most challenging aspect of intellectual property due diligence is determining whether or not content distributed under one license may consume content distributed under a different license. All too often, the answer is: "it depends".
-
-[WARNING]
-====
-The Eclipse Foundation's IP Team **does not (and cannot) give legal advice**. Rather, the team leverages their experience, along with various resources, to make judgment calls as to whether or not licenses be being used in a consistent and compatible manner.
-
-Our goal is to provide as much information as possible so that, ultimately, the adopters of {forgeName} project code (with assistance from their own legal counsel) can decide whether or not licenses are consistent and compatible.
-====
-
-Our {approvedLicensesUrl}[approved licenses page] lists licenses that we believe are generally compatible with most {forgeName} project licenses. As stated on the page, "licenses on this list are not necessarily compatible with every Eclipse Foundation project license, or with each other."
-
-Licenses that are not included on this list are not necessary prohibited. Rather, they may require more thought and careful review.
-
-When in doubt, check with the {ipTeamEmailLink}.
-
 [#ip-third-party-test]
 ==== Test and Build Dependencies
 
@@ -340,6 +327,22 @@ This section applies specifically to open-source libraries and tools only; it do
 Test and build dependencies are those third-party libraries and tools that are considered non-distribution contributions. That is, these libraries are not actively distributed by the project via any generally-accessible `eclipse.org` property. These libraries and tools may, for example, persist on the build server which is accessible only to Eclipse committers; they may not, for example, persist on the `eclipse.org` download or archive servers, web server, or any source code repository. Eclipse project content (e.g., build scripts) distributed via `eclipse.org` source code repositories may contain references to these libraries and tools (but not the libraries/tools themselves). Project documentation should list these dependencies, how they are obtained (either manually or automatically via scripts), and other issues (especially licensing).
 
 If you have any questions or concerns, please contact {emoEmailLink}.
+
+[#ip-license-compatibility]
+=== License Compatibility
+
+[[ip-other-projects]]Perhaps the most challenging aspect of intellectual property due diligence is determining whether or not content distributed under one license may consume content distributed under a different license. All too often, the answer is: "it depends".
+
+[WARNING]
+====
+Our goal is to provide as much information as possible so that, ultimately, the adopters of {forgeName} project code (with assistance from their own legal counsel) can decide whether or not licenses are consistent and compatible.
+====
+
+Our {approvedLicensesUrl}[approved licenses page] lists licenses that we believe are generally compatible with most {forgeName} project licenses. As stated on the page, "licenses on this list are not necessarily compatible with every Eclipse Foundation project license, or with each other."
+
+Licenses that are not included on this list are not necessary prohibited. Rather, they may require more thought and careful review.
+
+When in doubt, check with the {ipTeamEmailLink}.
 
 [#ip-request]
 === Requesting a Review
@@ -403,6 +406,11 @@ For example:
 
 NOTE that we need to have a source pointer. If you cannot (or do not) provide it, processing will be delayed while we hunt it down.
 
+[TIP]
+====
+If it makes sense to do so, you can xref:ip-request-attachments[upload an attachment] containing source content. You might do this when, for example, you need to leverage some small part of a much larger work.
+====
+
 ===== Provide additional Information
 
 Please provide any additional information that you think might be useful to assist the IP Team in resolving this issue in free form text after the basic information.
@@ -416,6 +424,23 @@ The scanner will only automatically scan issues under the following conditions:
 3. The issue either has no labels or has the `Review Needed` label applied.
 
 Issues that do not meet these criteria are ignored.
+
+[#ip-request-attachments]
+==== Scanning Attachments
+
+If you're only pulling in a subset of the source code and have the means to bundle that up into a ZIP file, you can use that ZIP file as an attachment. 
+
+When you drop an attachment on the GitLab issue, you'll see something like this in the text:
+
+`[built-in-extensions-1.64.2.tar.gz](/uploads/9d97a24028eb76fab91a139945d1e005/built-in-extensions-1.64.2.tar.gz)`
+
+The scanner will know what to do if you change it to:
+
+`[Source](/uploads/9d97a24028eb76fab91a139945d1e005/built-in-extensions-1.64.2.tar.gz)`
+
+FWIW, it also handles the case when just drop the attachment as the URL (this is not supported by Markdown, so it may not render as expected, but the tool can deal with it):
+
+`[Source]([built-in-extensions-1.64.2.tar.gz](/uploads/9d97a24028eb76fab91a139945d1e005/built-in-extensions-1.64.2.tar.gz))`
 
 [#ip-license-tool]
 === Eclipse Dash License Tool

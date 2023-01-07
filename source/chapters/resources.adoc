@@ -477,7 +477,7 @@ How do I get write access to a particular GitLab/GitHub project? ::
 
 Only committers have the ability to write to GitLab/GitHub projects that are managed by the Eclipse Foundation on behalf of {forgeName} open source project repositories.
 +
-In order to get write access, you must be elected as a xref:contributing-committers[committer] on the corresponding {forgeName } by an existing committer. In order to get access to a GitHub project, you must also provide your GitHub Id in your xref:contributing-account[Eclipse Foundation Account].
+In order to get write access, you must be elected as a xref:contributing-committers[committer] on the corresponding {forgeName} by an existing committer. In order to get access to a GitHub project, you must also provide your GitHub Id in your xref:contributing-account[Eclipse Foundation Account].
 
 Can a project use the _gh-pages_ support from GitHub to host at `<project>.github.io`?::
 

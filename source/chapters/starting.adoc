@@ -115,8 +115,6 @@ When the paperwork is received and processed for one committer, the Eclipse IT T
 [[starting-after-provisioning]]
 === After Provisioning
 
-TBD
-
 Before pushing any code into an official {forgeName} project repository, the project team must submit the project's <<ip-initial-contribution,_initial contribution_>> of project code and wait for the Eclipse Intellectual Property (IP) Team to grant `checkin` of that contribution. 
 
 <<ip-third-party,Third-party content>> that is required by the project code must also be reviewed by the Eclipse IP Team. 
