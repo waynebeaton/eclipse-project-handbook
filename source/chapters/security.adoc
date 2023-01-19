@@ -21,7 +21,7 @@ The {securityPolicyUrl}[Eclipse Security Policy] contains information regarding 
 [[vulnerability-team]]
 == Security Team
 
-The Eclipse Security Team provides help and advice to Eclipse projects on security issues and is the first point of contact for handling security vulnerabilities. Members of the Security Team are committers on Eclipse Projects and members of the Eclipse Architecture Council.
+The Eclipse Security Team provides help and advice to Eclipse projects on security issues and is the first point of contact for handling security vulnerabilities. Members of the Security Team are committers on Eclipse Projects and members of the xref:roles-ac[Eclipse Architecture Council].
 
 [[vulnerability-reporting]]
 == Reporting

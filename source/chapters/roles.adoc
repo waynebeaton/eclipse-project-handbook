@@ -140,7 +140,28 @@ The PMC is an important link in the project leadership chain, which is composed 
 [#roles-pmc-representation]
 === PMC Representation
 
-Every PMC is entitled to appoint one representative to the Eclipse Architecture Council. The Architecture Council’s main roles are to provide general architectural oversight for projects, and maintain the EDP. In particular, a representative of EE4J on the Architecture Council could advocate for modifications to the Eclipse Development Process if there are requirements that are counter-productive for a large runtime project such as EE4J.
+Every PMC is entitled to appoint one representative to the xref:roles-ac[Eclipse Architecture Council].
+
+[#roles-ac]
+== Eclipse Architecture Council
+
+The Eclipse Architecture Council serves the community by identifying and tackling any issues that hinder Eclipse’s continued technological success and innovation, widespread adoption, and future growth. This involves technical architecture as well as open source processes and social aspects. Comprising the finest technical leaders from all community stake holders, it is the council’s goal to keep the projects successful and healthy, the processes simple and smooth, and the communities vibrant and cohesive.
+
+More concretely, the Eclipse Architecture Council serves four basic purposes:
+
+- To maintain and interpret the Eclipse Foundation Development Process;
+- To provide advice to the xref:roles-emo[Eclipse Management Organization];
+- To provide mentoring services to new projects; and
+- To contribute best practices and advice to {forgeName} open source projects.
+
+Every xref:roles-pmc[Project Management Committee] may appoint a representative to the Architecture Council to represent the interests of the PMC and corresponding Top-level Project. Every Strategic Member of the Eclipse Foundation may also appoint a representative. Other Architecture Council Members are nominated and voted on by the Architecture Council itself, and appointed by the council by the Eclipse Foundation's Executive Director. Appointed members serve a two year renewable term.
+
+[TIP]
+====
+In practice, the two year renewable term for appointed members of the Architecture Council are automatically renewed with no formal ceremony.
+====
+
+The Architecture Council interacts primarily via their https://accounts.eclipse.org/mailing-list/eclipse.org-architecture-council[mailing list]. List participation is limited only to Architecture Council members and subscription to the list is automatic. Additionally, the Architecture Council meets (remotely) every month for a one-hour closed discussion (with public minutes).
 
 [#roles-emo]
 == Eclipse Management Organization (EMO)
