@@ -13,7 +13,7 @@
 [#roles]
 = Project Roles
 
-The Eclipse Foundation Development Process defines multiple formal open source project roles. Primary among the roles are those of xref:roles-cm[Committer], xref:roles-pl[Project Lead], and xref:roles-pmc[Project Management Committee].
+The {edpLink} defines multiple formal open source project roles. Primary among the roles are those of xref:roles-cm[Committer], xref:roles-pl[Project Lead], and xref:roles-pmc[Project Management Committee].
 
 [#roles-cm]
 == Committers
@@ -149,12 +149,12 @@ The Eclipse Architecture Council serves the community by identifying and tacklin
 
 More concretely, the Eclipse Architecture Council serves four basic purposes:
 
-- To maintain and interpret the Eclipse Foundation Development Process;
+- To maintain and interpret the {edpLink};
 - To provide advice to the xref:roles-emo[Eclipse Management Organization];
-- To provide mentoring services to new projects; and
+- To provide xref:starting-proposal-mentor[mentoring services] to new projects; and
 - To contribute best practices and advice to {forgeName} open source projects.
 
-Every xref:roles-pmc[Project Management Committee] may appoint a representative to the Architecture Council to represent the interests of the PMC and corresponding Top-level Project. Every Strategic Member of the Eclipse Foundation may also appoint a representative. Other Architecture Council Members are nominated and voted on by the Architecture Council itself, and appointed by the council by the Eclipse Foundation's Executive Director. Appointed members serve a two year renewable term.
+Every xref:roles-pmc[PMC] may appoint a representative to the Architecture Council to represent the interests of the PMC and corresponding Top-level Project. Every Strategic Member of the Eclipse Foundation may also appoint a representative. Other Architecture Council Members are nominated and voted on by the Architecture Council itself, and appointed by the council by the Eclipse Foundation's Executive Director. Appointed members serve a two year renewable term.
 
 [TIP]
 ====
@@ -162,6 +162,8 @@ In practice, the two year renewable term for appointed members of the Architectu
 ====
 
 The Architecture Council interacts primarily via their https://accounts.eclipse.org/mailing-list/eclipse.org-architecture-council[mailing list]. List participation is limited only to Architecture Council members and subscription to the list is automatic. Additionally, the Architecture Council meets (remotely) every month for a one-hour closed discussion (with public minutes).
+
+xref:roles-cm[Committers] and xref:roles-pl[Project Leads] should connect with the Architecture Council via their PMC.
 
 [#roles-emo]
 == Eclipse Management Organization (EMO)

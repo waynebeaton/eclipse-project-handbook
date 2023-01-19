@@ -26,7 +26,7 @@
 
 :proposalsForum: http://www.eclipse.org/forums/eclipse.proposals
 :activityUrl: http://www.eclipse.org/projects/project_activity.php
-:edpUrl: http://www.eclipse.org/projects/dev_process/development_process.php
+:edpUrl: xref:edp
 :efspUrl: https://www.eclipse.org/projects/efsp/
 :efslUrl: https://www.eclipse.org/legal/efsl.php
 :eftcklUrl: https://www.eclipse.org/legal/tck.php
