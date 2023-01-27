@@ -53,8 +53,6 @@ include::chapters/paperwork.adoc[]
 
 include::chapters/specifications.adoc[leveloffset=+1]
 
-include::chapters/tlp.adoc[leveloffset=+1]
-
 include::chapters/ip.adoc[]
 
 include::chapters/legaldoc.adoc[leveloffset=+1]
