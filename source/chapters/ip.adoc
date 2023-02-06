@@ -121,7 +121,7 @@ All {forgeName} open source project content must be kept in source code reposito
 
 In the case of an existing repository, the project team has some choices:
 
-**Move the existing repository.** At the project team's request, the Eclipse Foundation IT Team can move existing source code repositories on xref:resources-github[GitHub] into an organisation managed by the Eclipse Foundation. This is the best option when a project team wants to preserve their repositories's status with existing forks, retain existing issues, stars, etc. Note that GitHub does a good job of setting up redirects that will ensure that the project's existing community can find them.
+**Move the existing repository.** At the project team's request, the Eclipse Foundation IT Team can move existing source code repositories on xref:resources-github[GitHub] into an organisation managed by the Eclipse Foundation. This is the best option when a project team wants to preserve their repository's status with existing forks, retain existing issues, stars, etc. Note that GitHub does a good job of setting up redirects that will ensure that the project's existing community can find them.
 
 **Push to a new repository.** At the project team's request, the Eclipse Foundation IT Team can create new source code repositories on either xref:resources-gitlab[GitLab] or xref:resources-github[GitHub] into which the project team can push existing content. This option is best in the case that there is good reason to leave an existing repository in place, or when a project team needs to move an existing private repository into the open. The project team can decide whether or not to push the entire history or just a snapshot from the existing repository. As a best practice, an existing repository that gets "left behind" should be updated to include a pointer to the new repository and marked as _archived_.
 
@@ -189,7 +189,7 @@ This includes (for example):
 * References to Go modules via a `go.sum` file;
 * Entries in the `dependencies` section of a Maven `pom.xml` file;
 * Use of reflection or other means to reference APIs and implementation;
-* Use of OSGi Services to make a reference to a specific implementation of a service; or
+* Use of OSGi Services to make a reference to a specific implementation of a service; and
 * Invocation of a _command line interface_.
 
 This is list is **not exhaustive**. The exact nature of the dependencies and how they are specified varies from technology to technology.
@@ -232,7 +232,7 @@ For example:
 
 * For a Java-based application, the Java runtime would be the platform;
 * For an application based on Jakarta EE technology, the application server would be the platform;
-* For an NPM appliation, node would be the platform; and
+* For an NPM application, node would be the platform; and
 * For a native application, a Linux based operating system, Windows, or MacOS would be the platform.
 
 This is list is **not exhaustive**.
@@ -242,7 +242,7 @@ This is list is **not exhaustive**.
 We regard the platform as something that the adopter installs and agrees to the licensing terms independently from the project content. If you're bundling the platform with your project's binaries, for example, then the platform is a dependency. If a layer of software is installed as part of installing your project's artifacts (e.g., via Maven), then that layer of software is a dependency.
 ====
 
-If you're not sure ask the {ipTeamEmail}[IP Team] for assistance.
+If you're not sure ask the mailto:{ipTeamEmail}[IP Team] for assistance.
 
 [#ip-example-maven]
 ==== Maven Example
