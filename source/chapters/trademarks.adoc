@@ -236,7 +236,7 @@ Other Eclipse Foundation trademarks (e.g. project names) may be used in events, 
 
 The trademark should not generally be concatenated with any other words. Exceptions for established conventions (e.g. *WoolseyCon*) may be granted on a case-by-case basis.
 
-Trademark attribution must indicate that the trademarks are used with the permission of the Eclipse Foundation (e.g. "Woolsey is a trademark of the Eclipse Foundation, Inc. and is used with permission.").
+Trademark xref:trademarks-external-attribution[attribution] must indicate that the trademarks are owned and managed by Eclipse Foundation on behalf of the community.
 
 [NOTE]
 ====
@@ -278,7 +278,7 @@ Projects with widely-used historical domain names may continue using the domain 
 * The domain must be regarded and used exclusively as a community portal (and not as an official project website).
 
 [[trademarks-external-attribution]]
-==== Trademark Attributions
+==== Trademark Attribution
 
 The external uses of Eclipse Foundation trademarks must include a prominent trademark attribution of all applicable Eclipse Foundation marks.
 
@@ -287,6 +287,13 @@ For example:
 ____
 Eclipse Woolsey Intellectual Property Tools, Eclipse Woolsey, Woolsey, Eclipse, the Eclipse logo, and the Eclipse Woolsey project logo are Trademarks of The Eclipse Foundation.
 ____
+
+[NOTE]
+====
+As a general rule, you must respect trademark usage guidelines and provide attribution for trademarks held by others. 
+
+e.g., "Java is a registered trademark of Oracle. Other names may be trademarks of their respective owners."
+====
 
 [[trademarks-notes]]
 === Important Notes
