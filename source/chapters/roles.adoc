@@ -100,12 +100,23 @@ The PMC might, for example, know that the license for some content had been, at 
 The PMC should not perform any detailed intellectual property analysis of content. The IP Team will engage in detailed analysis, identify license compatibility issues, and determine whether or not license headers have been appropriately applied, for example.
 ====
 
+The IP Team will connect with the PMC when their assistance is required.
+
 [#roles-pmc-elections]
 === PMC Role in Elections
 
-The PMC reviews and approves (or vetos) xref:elections-committer[committer] and xref:elections-pl[project lead] elections, first validating that candidates have demonstrated sufficient merit. 
+The PMC reviews and approves (or vetos) xref:elections-committer[committer] and xref:elections-pl[project lead] elections. The role of the PMC is validate that the election was run according to the open source rules of engagement and election process described in the {edpLink}, and consistent with the Top-Level Project Charter. 
 
-PMC members can review elections that require their attention on the _Notifications_ page. 
+In practical terms, the EMO depends on the PMC to validate that elections provide (either via the nomination statement, or by statements made by committers during the voting period) a transparent record of relevant contribution by the nominee and maintain vendor/employer neutrality.
+
+From the EMO's perspective, any single PMC member can review the election and -- if they feel that the election was correctly run -- approve it. Any single member can do this on behalf of the PMC. PMCs tend to do this opportunistically: the first PMC member who receives notice of the completed election does a quick review and approves (or not). In the general case, a PMC member will independently review and approve an election; in specific individual cases, the PMC member may decide that further investigation is required and engage with the rest of the PMC for guidance.
+
+[NOTE]
+====
+The PMC may, at its discretion, add requirements for elections involving projects that operate under its purview. The PMC must capture additional requirements (ideally in the Top-Level Project Charter or in a companion document) and apply them consistently. 
+====
+
+The xref:resources-pmc-list[PMC list] is notified when elections require the PMC's attention. Alternatively, PMC members can review elections that require their attention on the _Notifications_ page. 
 
 [TIP]
 ====
