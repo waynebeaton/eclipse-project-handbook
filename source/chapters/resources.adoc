@@ -479,13 +479,23 @@ Only committers have the ability to write to GitLab/GitHub projects that are man
 +
 In order to get write access, you must be elected as a xref:contributing-committers[committer] on the corresponding {forgeName} by an existing committer. In order to get access to a GitHub project, you must also provide your GitHub Id in your xref:contributing-account[Eclipse Foundation Account].
 
+Can we connect service X to {aForgeName} project's GitHub Repositories? ::
+
+Our primary concern is that all decision making and planning (and related discussion) for the {forgeName} open source project must be done in a manner consistent with the Open Source Rules of Engagement (open, transparent, and meritocratic) defined in the {edpLink}.
++
+Growing a community and diversifying the project committers is a goal of every {forgeName} open source project. Nothing quite kills a community's enthusiasm like pointers to related issues that they don't have access to, hints that there is a higher level of planning that they do not have access to, or otherwise suggest that the project is not being run in an entirely vendor-neutral manner.
++
+Care must be taken to ensure that all decisions regarding the direction taken by the project are being driven the committers.
++
+If you believe that the {forgeName} project can be run as independent vendor neutral open source with the service attached, that is transparent and open to all comers and that there is a level playing field with a path that community members can follow to demonstrate merit and earn equal access to all project planning (that is, become committers), then you can request that the service be attached by creating a {helpDeskUrl}[Help Desk] issue.
+
 Can a project use the _gh-pages_ support from GitHub to host at `<project>.github.io`?::
 
-The project's primary website must be hosted on Eclipse Foundation infrastructure. GitHub's _gh-pages_ support can be used to host supplementary content only as a <<trademark-external-community,Community Portal>> (and is subject to the branding requirements).
+Yes.
 
-Can we use GitHub for our project website? ::
+Can we use a GitHub reposotpru for our project website source? ::
 
-The process that publishes website content pulls from the project's designated _website_ repository on `git.{forgeMachineName}.org`. A project team can put website source in a GitHub repository, but in order to actually get it on the website, some sort of process must set something up to push it to the website repository. <<resources-builds, Build infrastructure>> can be used for this.
+Yes. Create a {helpDeskUrl}[Help Desk] issue to request support.
 
 Do we have to use the Eclipse Foundation-provided download server? ::
 
