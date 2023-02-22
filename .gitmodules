@@ -8,4 +8,4 @@
 	ignore = dirty
 [submodule "source/efsp"]
 	path = source/efsp
-	url = git://github.com/EclipseFdn/EFSP.git
+	url = https://github.com/EclipseFdn/EFSP
