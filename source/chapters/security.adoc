@@ -1,5 +1,5 @@
 ////
- * Copyright (C) 2019,2020 Eclipse Foundation, Inc. and others. 
+ * Copyright (C) 2019,2020,2023 Eclipse Foundation, Inc. and others.
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
@@ -16,76 +16,124 @@
 [[vulnerability]]
 = Managing and Reporting Vulnerabilities
 
-The {securityPolicyUrl}[Eclipse Security Policy] contains information regarding obligations and specific practices regarding the reporting and disclosure of vulnerabilities.
+The {securityPolicyUrl}[Eclipse Foundation Vulnerability Reporting Policy] contains information regarding obligations and specific practices regarding the reporting and disclosure of vulnerabilities.
 
 [[vulnerability-team]]
-== Security Team
+== Eclipse Foundation Security Team
 
-The Eclipse Security Team provides help and advice to Eclipse projects on security issues and is the first point of contact for handling security vulnerabilities. Members of the Security Team are committers on Eclipse Projects and members of the xref:roles-ac[Eclipse Architecture Council].
+The Eclipse Foundation Security Team provides help and advice to Eclipse projects on security issues and is the first point of contact for handling security vulnerabilities. Members of the Security Team are selected from committers on Eclipse Projects, members of the xref:roles-ac[Eclipse Architecture Council], and Eclipse Foundation staff.
 
 [[vulnerability-reporting]]
 == Reporting
 
-Vulnerabilities can be reported either via email to {securityTeamEmail} or directly with a project via the Eclipse Foundation's Bugzilla instance.
+Vulnerabilities can be reported either via email to {securityTeamEmail} or directly with a project via the Eclipse Foundation's issue tracker.
 
-The general mailto:{securityTeamEmail}[security team email address] can also be used to report vulnerabilities. Members of the Eclipse Security Team will receive messages sent to this address. This address should be used only for reporting undisclosed vulnerabilities; regular issue reports and questions unrelated to vulnerabilities in Eclipse project software will be ignored. Note that this email address is not encrypted.
+The general mailto:{securityTeamEmail}[security team email address] can also be used to report vulnerabilities. Members of the Eclipse Foundation Security Team will receive messages sent to this address. This address should be used only for reporting undisclosed vulnerabilities; regular issue reports and questions unrelated to vulnerabilities in Eclipse Foundation project software will be ignored. Note that this email address is not encrypted.
 
-The community is encouraged to report vulnerabilities using the standard Eclipse Bugzilla instance in a project-specific product and component. If the project teams does not have a Bugzilla product of their own, or if a reporter is unable to determine an appropriate product and component, the reporter may use {vulnerabilityReportUrl}[Community/Vulnerability Reports] product/component. Issue reports related to vulnerabilities must be marked with the `committers-only` flag, either by the reporter, or by a committer during the triage process.
+The community is encouraged to report vulnerabilities using the standard project-specific issue tracker. The appropriate link should be available in the project's `SECURITY.md` file. In case of a doubt, use the {vulnerabilityReportUrl}[general vulnerability issue tracker].
 
 [NOTE]
 ====
-Bugzilla Records marked with the `committers-only` flag are visible to all Eclipse committers. By default, a `committers-only` Bugzilla record is also accessible to the reporter, assignee, and individuals explicitly indicated in the `cc` list. 
-====
-
-[WARNING]
-====
-Bugzilla sends out emails as issues are modified. Email is inherently insecure.
+Security vulnerabilities should be reported as confidential issues (on GitLab), private security advisories (GitHub) or other confidential means. If unsure, use the {vulnerabilityReportUrl}[general vulnerability issue tracker] with the default template.
 ====
 
 [[vulnerability-disclosure]]
 == Disclosure
 
-Disclosure is initially limited to the reporter and all Eclipse Committers, but is expanded to include other individuals, and the general public. The timing and manner of disclosure is governed by the {securityPolicyUrl}[Eclipse Security Policy].
-
-[NOTE]
-====
-Knowledge of a vulnerability can be easily extended to individuals by adding them to the `cc` list on the corresponding Bugzilla report 
-
-Contacts added to an unresolved vulnerability must be _individuals_. Groups (e.g. mailing lists with open subscription and public archives) -- with the exception of the mailto:{securityTeamEmail}[Security Team email address] -- should never be copied on a vulnerability issue.
-
-The `committers-only` must be removed and the `security` keyword must be added on Bugzilla records for disclosed vulnerabilities.
-====
+Disclosure is initially limited to the reporter, the project team and the Eclipse Foundation Security Team, but is expanded to include other individuals, and the general public. The timing and manner of disclosure is governed by the {securityPolicyUrl}[Eclipse Foundation Vulnerability Reporting Policy].
 
 Publicly disclosed issues are listed on the {knownVulnerabilitiesUrl}[Known Eclipse Security Vulnerabilities] page.
 
 [[vulnerability-cve]]
-== Common Vulnerabilities and Exposure
+== Common Vulnerabilities and Exposure (CVE)
 
 The Eclipse Foundation is a {cveUrl}[Common Vulnerabilities and Exposures] (CVE) Numbering Authority.
+
+A unique vulnerability number like a CVE allows developers, distributions and security researchers to talk about the same issue using a common name. It also helps the project documentation.
+
+The project team can ask for a number when they learn about the vulnerability: by receiving a report or simply by discovering it. They can request the number before the fix is ready, as the request will be confidential until the project tells the Eclipse Foundation Security Team to publish it.
 
 [TIP]
 ====
 If you're not sure whether or not a CVE is required, err on the side of caution and request one.
 
+A CVE number related to a bugfix release gives users a clear sign that an update is strongly recommended.
+
 Think of a first CVE for your open source project as a rite of passage. Alerting your adopters of a vulnerability is a signal of maturity and responsibility to the open source community.
 ====
 
-Any project committer can request a CVE assignment, by creating a {cveRequestUrl}[CVE Request issue]. Upon creation, the request issue will be marked as confidential. 
+Project can request CVE numbers in different ways depending on the project setup.
+
+=== General case
+
+For most projects the process looks as follows:
+
+* *Request the number*: When you know that there is a security issue (the fix is not yet needed at this point), go to {cveRequestUrl}[the CVE Request form] and fill it. Make sure to keep the issue confidential for now. If you want to make the issue visible to multiple project members, add them as assignees or CC them when creating the ticket (it will be hard later on).
+
+* *Receive the number*: The Eclipse Foundation Security Team will come back to you with the assigned number. You can start using it internally when preparing documentation of the release containing the fix.
+
+* *Prepare the fix* (with backports to all supported branches) and the release: The common practice is to avoid using the CVE number in the fix commit message or the fix itself. Use generic terms instead. The goal is to allow time for all users to upgrade without giving potential attackers too much information. See also the next step (you can do them in parallel).
+
+* *Ask for publication of the issue*: When you have the fix ready and published, update the ticket. Make sure that you specify the version (or versions) where the bug is fixed, including all stable branches. Fill in the description of the issue. You may also consider removing some of the comments (for example containing sensitive or incorrect information). At this stage you may decide to publish only partial information (for example without the link to the commit with the fix). Then ask the security team to make the CVE and the discussion of the CVE assignment public. Ideally your release and the publication happen at the same time. You can ask for a publication at your specific date, for example at your planned release date.
+
+* *See it publicly*: The ticket becomes public and the Eclipse Foundation Security Team publishes the CVE entry.
+
+* (Optional, a few days later) *Update the entry* with all additional information that might be helpful. That includes, for example, the link to the fix commit.
 
 [NOTE]
 ====
-Project committers should only request a CVE when the timing for disclosure is imminent. Due to the nature by which CVEs are allocated to the Eclipse Foundation, there is some risk that _reserving_ a CVE for a protracted period of time may block other CVE assignment requests. Plan to disclose the CVE within two days of the CVE being assigned by the EMO.
+Project commiters should make it clear if their request is a reservation of a CVE number, or a publication.
 ====
 
-The request must provide:
+The _Tracking_ section of the request issue includes some checkboxes for the project team and for the Security Team. The Security Team will assign the CVE upon receipt of the request, but will not escalate (that is, they will not report the assignment of the CVE to the central authority) until after a project committer clearly indicates that they are ready to disclose the vulnerability.
+
+****
+...
+
+*This section will completed by the project team*.
+
+* [ ] Reserve an entry only
+* [ ] We're ready for this issue to be reported to the central authority (i.e., make this public now)
+* [ ] (when applicable) The GitHub Security Advisory is ready to be published now
+
+...
+****
+
+Check the second checkbox when you're ready for the Eclipse Foundation Security Team to submit the request to the central authority (that is, when you're ready for the issue to be disclosed publicly).
+
+If the project is using a {githubSecurityAdvisoryInfoUrl}[GitHub Security Advisory] to track mitigation of the vulnerability, the Security Team intervention will likely be required to submit the advisory. Click the second checkbox to indicate that you're ready for the Security Team to submit the advisory on the project team's behalf.
+
+=== Projects Using Exclusively GitHub Security Advisories
+
+If the project receives reports exclusively by private reporting with GitHub Security Advisories, the procedure is as follows:
+
+* *Prepare the initial data*: The project receives initial data in the report and asseses that it is a real vulnerability.
+
+* *Request the number*: When you know that there is a security issue (the fix is not yet needed at this point), contact the Eclipse Foundation Security Team to request the number.
+
+* *Receive the number*: The Eclipse Foundation Security Team will request a number and GitHub will assign one (or ask for more information in the report). You can start using it internally when preparing documentation of the release containing the fix.
+
+* *Prepare the fix* (with backports to all supported branches) and the release: The common practice is to avoid using the CVE number in the fix commit message or the fix itself. Use generic terms instead. The goal is to allow time for all users to upgrade without giving potential attackers too much information. See also the next step (you can do them in parallel).
+
+* *Ask for publication of the issue*: When you have the fix ready and published, as the Eclipse Foundation Security team to publish the advisory. Make sure that you specify the version (or versions) where the bug is fixed, including all stable branches. Fill in the description of the issue. You may also consider removing some of the comments (for example containing sensitive or incorrect information). At this stage you may decide to publish only partial information (for example without the link to the commit with the fix). Ideally your release happens earlier or at the same time as the publication. You can ask for a publication at your specific date, for example at your planned release date.
+
+* *See it publicly*: The advisory becomes public, so is the CVE entry.
+
+* (Optional, a few days later) *Update the entry* with all additional information that might be helpful. That includes, for example, the link to the fix commit.
+
+=== Required Information
+
+For all types of request, the project needs to prepare information about the vulnerability.
+
+The request for a publication must provide:
 
 * The name of the impacted project and product;
 * A description of the versions impacted (which may include ranges);
-* A {cweUrl}[Common Weakness Enumeration] (CWE) code; 
+* A {cweUrl}[Common Weakness Enumeration] (CWE) code;
 * A one or two sentence summary of the issue which clearly identifies the Eclipse project/product and impacted versions; and
 * A pointer (URL) to the issue used to track mitigation of the vulnerability.
 
-The request may optionally include additional information, such as a Common Vulnerability Scoring System (CVSS) code.
+The request may optionally include additional information, such as a Common Vulnerability Scoring System (CVSS) code, a link to the commit fixing the issue etc.
 
 .Example CVE Report data
 ----
@@ -95,40 +143,23 @@ Project id: rt.vertx
 
 Versions affected: [3.0, 3.5.1]
 
-Common Weakness Enumeration: 
+Common Weakness Enumeration:
 
 - CWE-93: Improper Neutralization of CRLF Sequences ('CRLF Injection')
 
-Summary: 
+Summary:
 
-In Eclipse Vert.x version 3.0 to 3.5.1, the HttpServer response 
-headers and HttpClient request headers do not filter carriage return and 
-line feed characters from the header value. This allow unfiltered values 
+In Eclipse Vert.x version 3.0 to 3.5.1, the HttpServer response
+headers and HttpClient request headers do not filter carriage return and
+line feed characters from the header value. This allow unfiltered values
 to inject a new header in the client request or server response.
 
 Links:
 
-- https://bugs.eclipse.org/123456
+- https://gitlab.eclipse.org/eclipse/myproject/-/issues/12345
 ----
 
-The _Tracking_ section of the request issue includes some checkboxes for the project team and for the EMO. The EMO will assign the CVE upon receipt of the request, but will not escalate (that is, they will not report the assignment of the CVE to the central authority) until after a project committer clicks the first checkbox indicating that they are ready to disclose the vulnerability.
-
-****
-...
-
-*This section will completed by the project team*.
-
-* [ ] We're ready for this issue to be reported to the central authority (i.e., make this public now)
-* [ ] (when applicable) The GitHub Security Advisory is ready to be published now
-
-Note that for those projects that host their repositories on GitHub, the use of GitHub Security Advisories is recommended but is not required.
-
-...
-****
-
-Click the first checkbox when you're ready for the EMO to submit the request to the central authority (that is, when you're ready for the issue to be disclosed publicly). 
-
-If the project is using a {githubSecurityAdvisoryInfoUrl}[GitHub Security Advisory] to track mitigation of the vulnerability, EMO intervention will likely be required to submit the advisory. Click the second checkbox to indicate that you're ready for the EMO to submit the advisory on the project team's behalf.
+If unsure on how to fill the form, ask the Eclipse Foundation Security Team for assistance.
 
 [[security-faq]]
 == Frequently Asked Questions
@@ -143,27 +174,23 @@ If the vulnerability real and is in release software (i.e., it's likely to have 
 +
 You should let your community know about the vulnerability though your usual communication channels.
  
-Who can/will update {knownVulnerabilitiesUrl}[Known Vulnerabilities page] and when? ::
-
-When a {bugzillaUrl}[Eclipse Bugzilla] record has the "committers-only" flag turned off, includes the `security` keyword, is in the `RESOLVED`, `VERIFIED`, or `CLOSED` state, and is resolved `FIXED`, it will appear on this page.
- 
 Can I already commit the fixes to our repository and provide a service release, or shall I wait for some part of the disclosure process first? ::
 
-In general, you should fix the issue first.
+In general, you should fix the issue first and prepare a bugfix release.
 +
-Whether or not we disclose in advance of making the fix available is a judgement call. When there is a real risk that somebody may exploit the vulnerability, you generally want to inform your adopters as quicky and discretely as possible so that they can prepare themselves.
+Whether or not we disclose in advance of making the fix available is a judgement call. Many projects notify of a date of an imminent security bugfix release in advance, without releasing the details. Users can then plan their update. When there is a real risk that somebody may exploit the vulnerability, you generally want to inform your adopters as quicky and discretely as possible so that they can prepare themselves.
 +
-If the issue is particularly sensitive and you need to make that fix in a private repository and coordinate disclosure, connect with EMO and we'll help. Very few projects actually need to go to this extreme.
+If the issue is particularly sensitive and you need to make that fix in a private repository and coordinate disclosure, connect with Security Team and we'll help. Very few projects actually need to go to this extreme.
  
 Is there something specific I should add (or something I should avoid mentioning) in the commit message? ::
 
-That depends. In general, you should avoid adding anything that calls particular attention to the vulnerability. Just state what the commit contains.
+That depends. In general, you should avoid adding anything that calls particular attention to the vulnerability. Just state what the commit contains. Especially avoid expressions like `vulnerability` or using a reserved CVE number.
  
 Do we need a <<vulnerability-cve,CVE>>? ::
 
 It's up to the project team. We need the project team to engage with the process of gathering the information required to report the vulnerability to the central authority; the first step in that process is deciding whether or not a CVE is desired/required.
 +
-The general rule is that a CVE is required when a vulnerability impacts release software. The Eclipse Security Team has given this advice (paraphrased):
+The general rule is that a CVE is required when a vulnerability impacts release software. The Eclipse Foundation Security Team has given this advice (paraphrased):
 +
 [quote]
 ____
@@ -172,7 +199,7 @@ ____
 +
 If you're not sure, check with your PMC or the <<vulnerability-team, Security Team>>.
 +
-It's a bit of a rite of passage for an open source project to disclose their first vulnerability.
+It's a bit of a rite of passage for an open source project to disclose their first vulnerability. If in doubt, ask the Eclipse Foundation Security Team for guidance.
 
 Do we need a <<vulnerability-cve,CVE>> for versions of software that we released before moving our project to the Eclipse Foundation? ::
 
