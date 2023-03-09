@@ -81,18 +81,18 @@
 :suaPropertiesUrl: http://www.eclipse.org/legal/epl/feature.properties.txt
 
 :securityPolicyUrl: https://www.eclipse.org/security/policy.php
-:securityTeamEmail: security@eclipse.org
-:vulnerabilityReportUrl: https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Community&component=Vulnerability+Reports&keywords=security&groups=Security_Advisories
+:securityTeamEmail: security@eclipse-foundation.org
+:vulnerabilityReportUrl: https://gitlab.eclipse.org/security/vulnerability-reports/-/issues/new?issuable_template=new_vulnerability
 :knownVulnerabilitiesUrl: https://www.eclipse.org/security/known.php
+:cveRequestUrl: https://gitlab.eclipse.org/security/cve-assignement/-/issues/new?issuable_template=cve
+:cveUrl: https://cve.mitre.org/
+:cweUrl: https://cwe.mitre.org/
 
 :emoGitUrl: https://gitlab.eclipse.org/eclipsefdn/emo-team/emo
 :iplabUrl: https://gitlab.eclipse.org/eclipsefdn/emo-team/iplab
 :iplabWiki: {iplabUrl}/-/wikis/home
 :iplabProjectTemplate: {iplabUrl}/-/issues/new?issuable_template=vet-project
 :iplabThirdPartyTemplate: {iplabUrl}/-/issues/new?issuable_template=vet-third-party
-:cveRequestUrl: {emoGitUrl}/-/issues/new?issuable_template=cve
-:cveUrl: https://cve.mitre.org/
-:cweUrl: https://cwe.mitre.org/
 
 :githubSecurityAdvisoryInfoUrl: https://docs.github.com/en/code-security/security-advisories/about-github-security-advisories
 
