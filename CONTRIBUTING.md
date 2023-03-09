@@ -30,14 +30,14 @@ committer quality and cooperation.
 The source for the Eclipse Project Handbook is maintained in the the following 
 source code repository.
 
-* http://git.eclipse.org/c/dash/org.eclipse.dash.handbook.git
+* https://gitlab.eclipse.org/eclipse/technology/dash/org.eclipse.dash.handbook
 
 Note that the repository includes some submodules, clone using 
 `--recurse-submodules` to ensure that you have all of the content. 
 
 e.g.
 
-    git clone --recurse-submodules git://git.eclipse.org/gitroot/dash/org.eclipse.dash.handbook.git
+    git clone --recurse-submodules git@gitlab.eclipse.org:eclipse/technology/dash/org.eclipse.dash.handbook.git
 
 This project uses GitLab issues to track ongoing development and issues.
 
