@@ -21,5 +21,3 @@ Copyright (C) Eclipse Foundation, Inc. and others.
 Made available under the {epl20Url}[Eclipse Public License v 2.0].
 
 This document includes content originally authored on the http://wiki.eclipse.org[Eclipsepedia wiki] by Wayne Beaton, Fabian Steeg, Denis Roy, Dave Carver, Ed Merks, Bjorn Freeman-Benson, Anne Jacko, Ian Skerrett, Mike Milinkovich, and John Arthorne.
-
-Version {project-version}.

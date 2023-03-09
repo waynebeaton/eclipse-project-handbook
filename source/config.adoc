@@ -121,8 +121,6 @@
 :stylesdir: ./resources
 :scriptsdir: ./resources
 
-:toc:
-:toc-placement: auto
 :icons: font
 
 :doctype: book

@@ -17,6 +17,7 @@
 
 .imageblock img {
 	max-width: 100%;
+	height: auto;
 }
 #toc { border-bottom: 0 solid #dddddd; padding-bottom: 0.5em; }
 #toc > ul { margin-left: 0.13333em; }

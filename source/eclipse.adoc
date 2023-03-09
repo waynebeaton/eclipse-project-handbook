@@ -31,7 +31,10 @@ include::config.adoc[]
 
 :pmiSampleImage: images/pmi-egit25.png
 
+
 = Eclipse Foundation Project Handbook
+
+Current as of {localdate}.
 
 include::chapters/notices.adoc[]
 
