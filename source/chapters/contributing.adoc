@@ -102,7 +102,9 @@ When a contributor becomes a committer, they must be covered by a committer agre
 [[contributing-account]]
 == Eclipse Foundation Account
 
-Eclipse Foundation project resources are accessible without an account. That is, members of the community may browse code, documentation, issues, help, etc. without creating an Eclipse Foundation Account. For those members of the community that wish to contribute code patches, open issues, add content to wikis, etc., an {accountUrl}[Eclipse Foundation Account] is required.
+Eclipse Foundation project resources are accessible without an account. That is, members of the community may browse code, documentation, issues, help, etc. without creating an Eclipse Foundation Account. 
+
+Those members of the community that wish to contribute code patches, open issues, add content to wikis, etc. must create an {accountUrl}[Eclipse Foundation Account].
 
 For contributors and committers, their Eclipse Foundation account is their primary portal into their relationship with the Eclipse Foundation. From their account page, individuals can sign the <<contributing-eca, Eclipse Contributor Agreement>>, manage their mailing list subscriptions, access build resources, and more.
 
@@ -110,6 +112,28 @@ For contributors and committers, their Eclipse Foundation account is their prima
 ====
 If you're working with projects that use GitHub, be sure to add your GitHub Id to your Eclipse Foundation Account so that our scripts can add you to the GitHub Teams that we use to manage access to Eclipse Foundation repositories hosted on GitHub. When you become a committer on an Eclipse project that hosts their source code repositories on GitHub, you will be sent an invitation to join the GitHub Team associated with that project.
 ====
+
+[[contributing-account-member]]
+=== Employed by a Member Company
+
+If you are employed by an {memberUrl}[Eclipse Foundation Member Company] when you create your {accountUrl}[Eclipse Foundation Account], you must align your account with your employer.
+
+In the field where it asks "What is your employment status?":
+
+* Highlight "Work for an Eclipse Member Organization"; and 
+* Pick your employer from the list.
+
+.Specify that you work for a member organization.
+image::images/organization-selection.png[width=75%]
+
+[TIP]
+====
+Specifying your employer information in this manner will ensure that your contributions can be traced back to your employer and we can, for example, correctly display xref:pmi-company-logos[company logos] based on your contributions. This will also ensure that you are automatically covered by the xref:contributing-eca[ECA] in the case where your employer has already signed the agreement on behalf of their employees.
+====
+
+If your employer is not listed and you believe that this is an error, contact {emoEmailLink} for assistance.
+
+If you change employers, contact the {emoRecordsEmailLink} to request that they update your employment status information.
 
 [[contributing-eca]]
 == Eclipse Contributor Agreement
