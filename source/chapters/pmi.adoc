@@ -232,17 +232,15 @@ To exit from the incubation phase into a mature project, a project must meet all
 Company logos automatically appear on the _Overview_ and _Who's Involved_ page under the following conditions:
 
 * The company must be a {memberUrl}[member] of the Eclipse Foundation;
-* The company needs to have their logo uploaded to the Portal;
-* At least one committer has to be listed as an employee of the company in question;
-* The committer must be on this project; and
-* The committer must be active (must have made at least one commit in the last three months)
+* The company needs to have their logo uploaded to the https://membership.eclipse.org/portal[Eclipse Foundation Member Portal]; and
+* An employee of the company has authored a commit in the last three months that's been merged into a project repository.
 
 [TIP]
 ====
 The display of company logos is _entirely automatic_ based on the criteria listed above.
 ====
 
-If all of those conditions are met and the logo is still not showing up, then it's possible that the project meta-data doesn't have the correct source code repository information specified. Contact the {emoEmailLink} for assistance.
+If all of those conditions are met and the logo is still not showing up, then it's possible that a gap exists in our data. Contact the {emoEmailLink} for assistance.
 
 [[pmi-build-technology]]
 ==== Build Technology
