@@ -24,7 +24,7 @@ Releases are broadly categorized as:
 * _Minor_ releases add new functionality, but are API compatible with previous versions; and
 * _Service_ releases include bug fixes only and include no significant new functionality.
 
-For many {forgeName} projects, the release lifecycle follows the traditional pattern of every release being preceded by a release review. This is especially true for projects with release cycles that span a year or more.
+{forgeName} projects are expected to engage in an iterative release process.
 
 [graphviz, images/release-cycle, svg]
 .The Release Cycle
@@ -32,15 +32,18 @@ For many {forgeName} projects, the release lifecycle follows the traditional pat
 include::diagrams/edp_release_lifecycle.dot[]
 ----
 
-Every release cycle starts with a <<releases-plan, plan>> that is created in an open and transparent manner and made available the community both for review and to solicit input. The development process must be iterative, with the regular delivery of <<release-milestones, milestone builds>> to solicit feedback. The release cycle ends with the delivery of a final release candidate, a <<release-review, release review>>, and general availability of the products of the release.
+Every release cycle starts with a xref:releases-plan[plan] that is created in an open and transparent manner and made available the community both for review and to solicit input. The development process must be iterative, with the regular delivery of xref:release-milestones[milestone builds] to solicit feedback. The release cycle ends with the delivery of a final release candidate, and general availability of the products of the release.
 
-A project team may declare official major or minor releases and distribute associated products for up to one year following a successful _<<release-review,release or progress review>>_. Reviews are not required for bug-fix/service releases.
-
-[[NOTE]]
+[WARNING]
 ====
-*Intellectual property must be properly accounted for and tracked at all times.* The project team must engage in the Eclipse IP Due Diligence Process on an ongoing basis. The IP review and approval that occurs at the time of either a release review or progress review should be regarded as a means of confirming that intellectual property is being properly managed and not as a trigger to engage in a last minute clean up.
+Specification projects must engage in a xref:specification-project-reviews[release review] for _every_ major or minor release.
+====
 
-All tracking of project and third-party content must be current and correct at all times.
+**Only project teams that are in good standing can produce official major or minor releases.** A project is considered to be in good standing when they have engaged in a progress review within the last year. Put another way, a project team may declare official major or minor releases and distribute associated products for up to one year following a successful xref:progress-review[progress review]. Reviews are not required for service releases that are based on an official major or minor release.
+
+[WARNING]
+====
+*Intellectual property must be properly accounted for and tracked at all times.* The project team must engage in the Eclipse IP Due Diligence Process on an ongoing basis. The IP review and approval that occurs at the time of a progress review should be regarded as a means of confirming that intellectual property is being properly managed and not as a trigger to engage in a last minute clean up.
 ====
 
 [[releases-plan]]
@@ -48,20 +51,16 @@ All tracking of project and third-party content must be current and correct at a
 
 A project plan is _required_ for each major and minor project release. The plan should lay out in broad terms what the goals are for the release. As plans are a valuable means for the community to get involved with your project, the plan should be created at the beginning of the release cycle. By establishing the plan early, you give prospective contributors help in determining how they can most usefully contribute, and adopters can prepare their own development schedule and themes. Plans can change during the release cycle.
 
-Release records are used to capture a project plan. All project leads and committers can use the <<pmi-commands-release, Create a new release>> command on their <<pmi-project-page, project page>> in the <<pmi,Project Management Interface (PMI)>> to create a new release record.
-
-At the start of the release cycle, a plan should minimally include a release number, date, and short description. All aspects of a plan can change during the release cycle (including the date). If you do change the plan, make sure that the change is communicated via your project's xref:resources-dev-list[dev-list] and other project channels.
+A plan can be formal or informal. It's completely reasonable to set up a project board, or tag issues and call that the plan. What is critical is that the plan be communicated via standard project channels (e.g., the project's xref:resources-dev-list[dev-list]) in a manner that allows community members to be aware of the project team's priorities for the and how they can best contribute to the success of the release.
 
 [TIP]
 ====
-Think of the description of the project plan as an _elevator pitch_: how would you describe the release in a fifteen second elevator ride? 
+Release records _can_ be used to capture a project plan. All project leads and committers can use the xref:pmi-commands-release[Create a new release] command on their xref:pmi-project-page[project page] to create a new release record.At the start of the release cycle, a plan should minimally include a release number, date, and short description.
 ====
 
-The _Plan_ tab in the release record contains numerous fields for capturing plan information. The amount of information that you should capture for a release plan varies by top-level project, so consult with your xref:#roles-pmc[Project Management Committee] (PMC) for advice.
+All aspects of a plan can change during the release cycle (including the date). If you do change the plan, make sure that the change is communicated via your project's communication channels.
 
 Producing regular builds is an important part of the release cycle. Builds are an important means of engaging with the community: adopters can help you test your code and test their own so that they can be ready for the eventual release. Project teams should plan to produce at least one _milestone_ build (more are better, depending on the length of your release cycle), and capture the planned date for that milestone in the release record. It is also common practice to generate nightly and weekly integration builds. Project teams must ensure that their project's downloads page provides the information required for the community to obtain builds.
-
-All requests for review of <<ip,intellectual property>> contributions must be approved by the IP Team before the products of a release are pushed out onto distribution channels (this includes third-party content and contributions of code to be maintained by the project).
 
 [[release-milestones]]
 === Pre-release Milestone Builds
@@ -72,12 +71,12 @@ Project teams should include at least one milestone build during every release c
 
 [TIP]
 ====
-As described in the Eclipse Foundation Development Process, milestones and release candidates are "almost releases", not releases. You've likely noticed that we to some lengths to avoid using the word _release_ and instead tend to speak of milestone _builds_. While the EMO staff may wince a little when you refer to content as, for example, an _alpha release_, please feel free to do so if that makes sense to you and your community.
+As described in the Eclipse Foundation Development Process, milestones and release candidates are "almost releases", not releases. You've likely noticed that we to some lengths to avoid using the word _release_ and instead tend to speak of milestone _builds_. While the EMO may wince a little when you refer to content as, for example, an _alpha release_, please feel free to do so if that makes sense to you and your community.
 ====
 
-There are no governance requirements to produce and distribute a milestone build. Specifically, the project team does not need to engage in any reviews (for example, release or progress reviews) prior to distributing a milestone build. Milestone builds may include intellectual property that has not been fully vetted; the project team **does not** need to wait for specific approvals from the Eclipse Foundation's IP Team to disseminate milestone builds. The project team should, however, take care to ensure that -- to the best of their knowledge and ability -- the licenses of the content included in milestone builds is well-defined and compatible/consistent.
+There are no governance requirements to produce and distribute a milestone build. Specifically, the project team does not need to engage in any reviews (for example, release or progress reviews) prior to distributing a milestone build. Milestone builds may include intellectual property that has not been fully vetted; the project team **does not** need to wait for specific approvals from the Eclipse Foundation's IP Team to disseminate milestone builds. The project team should, however, take care to ensure that--to the best of their knowledge and ability--the licenses of the content included in milestone builds is well-defined and compatible/consistent.
 
-Milestone builds can be hosted where ever the project team hosts downloads. The project team must ensure that milestone builds are clearly described as _pre-release_ software that is intended to engage and prepare consumers, test the build process, and to solicit feedback. Milestone builds can be referred to as _alpha_, _beta_, or whatever other terms make sense to the project team and community (the primary concern is that the community understand the nature of the content that they consume).
+Milestone builds can be hosted wherever the project team hosts downloads. The project team must ensure that milestone builds are clearly described as _pre-release_ software that is intended to engage and prepare consumers, test the build process, and to solicit feedback. Milestone builds can be referred to as _alpha_, _beta_, or whatever other terms make sense to the project team and community (the primary concern is that the community understand the nature of the content that they consume).
 
 [TIP]
 ====
@@ -86,24 +85,26 @@ Be sure to specify the channels where milestone adopter should provide feedback.
 
 If you have questions regarding the distribution of milestone builds, contact the {emoEmailLink} for assistance.
 
-[[release-review]]
-=== Progress and Release Reviews
+[#progress-review]
+=== Progress Reviews
 
-Progress and release reviews differ only in timing. A progress review can be scheduled at any point in a project's release cycle; a release review is scheduled at the end of the release cycle. A _release review_ can be thought of as a formal announcement of a release to the community. 
+[[release-review]]Progress serve as a means for a project to engage in a retrospective of the progress made, discover areas for potential improvement or mitigation, demonstrate that the project is operating according to the open source rules of engagement (open, transparent, and meritocratic), and ensure that the development process and intellectual due diligence processes are being followed.
 
-These reviews generally serve as a means for a project to engage in a retrospective of the progress made during the release, discover areas of potential improvement, demonstrate that the project is operating in an open and transparent manner, and ensure that the development process and intellectual due diligence processes have been followed.
-
-Reviews run for a week and always conclude on a Wednesday. 
+Following a successful progress review, {aForgeName} open source project is considered to be in _good standing_ for a year. Only projects in good standing can make official releases.
 
 [NOTE]
 ====
-We schedule reviews to conclude on the _first and third Wednesdays of the month_. Your release date does not have to  coincide with the review date (you can set the release date as necessary). The review must, however, conclude successfully before you can make the release official.
+Historically, {forgeName} open source projects were required to engage in a **release review** before publishing an official release. The notion of a release review still exists, but is fundamentally the same as a progress review. 
+
+Progress and release reviews differ only in timing. A progress review can be scheduled at any point in a project's release cycle; a release review tends to be scheduled at the end of the release cycle.
+
+Specification projects must engage in a xref:specification-project-reviews[release review] for _every_ major or minor release.
 ====
 
-_Release and progress reviews_ require review documentation and an intellectual property (IP) log check. The review process must be initiated at least two weeks in advance of the anticipated review date.
+Progress reviews provide a means for the EMO, PMC, and community to provide feedback and input.
 
-[graphviz, images/release-review, svg]
-.Release review work flow
+[graphviz, images/progress-review, svg]
+.Progress review work flow
 ----
 digraph {
 	// Graph properties
@@ -111,46 +112,47 @@ digraph {
 	
 	// Nodes that define the key points in the process
 	node [shape=box;style=filled;fillcolor=white;fontsize=12;width=2]
-	pmc [label="PMC\nApproval", group=g1]
-	doc [label="Prepare Review\nDocumentation", group=g2]
-	start [label="Start\Review", group=g2]
-	emo [label="EMO Approval", group=g3]
-	end [label="End\nRelease Review", group=g2]
-	publish [label="Publish Release", group=g2]
+	pmc [label="PMC Review\nand approval", group=g1]
+	start [label="Initiate\nProgress Review", group=g2]
+	community [label="Community Review", group=g2]
+	success [label="Declare Success!", group=g2]
+	emo [label="EMO Review\nand Approval", group=g3]
 	
-	pmc -> end
-	doc -> start
-	emo -> end
-	start -> end -> publish
+	start -> pmc
+	start -> emo
+	start -> community
+	pmc -> success
+	emo -> success
+	community -> success
 }
 ----
 
-The project team must prepare the review documentation well in advance of the start of the review period. See this <<checklist,checklist>> used as part of evaluation during a Release Review. The release record which contains the project plan also includes a _Review_ tab with appropriate fields for a review. As with the plan fields, all of the review fields are optional and the level of detail required varies by top-level project. Project teams can assemble review information during the release cycle (there's no need to wait until the end)
+A progress review can be initiated by the project team, by the PMC, or by the EMO. Send an email to mailto:{emoEmail}[EMO] to initiate a progress review. 
 
-The review materials must be approved by the xref:#roles-pmc[Project Management Committee] (PMC); the project lead or a designated project committer should send an email to the PMC's mailing list with a request for approval. The PMC will respond with feedback or a simple `pass:[+1]` indicating approval.
+A progress review provides the xref:roles-emo[EMO] with an opportunity to review the project team's practices to make sure that the the team is doing the right sorts of things to grow the project and attract diversity, has the recommended documentation in place, and is correctly implementing the {edpLink} and xref:ip[intellectual property due diligence process]. The xref:checklist[project checklist] describes the sorts of things that the EMO looks for when they engage in a review. Note that the checklist is used primarily as a means of identifying opportunities for the project to improve their open source practices and that absolute conformity with the list is considered aspirational, not an absolute requirement.
 
-[TIP]
+[WARNING]
 ====
-Click the handy menu:Committer Tools[Communication > Send Email to the PMC] link on the release record page to connect with the PMC.
+**Intellectual property must be properly accounted for and tracked at all times.** All intellectual property must be vetted via the xref:ip[Intellectual Property Due Diligence Process] before it it can be included any any release.
 ====
 
-At any point in this process, the project lead or a designated committer can request that the review be initiated by clicking the menu:Schedule a review for this release[] link that appears at the top of the release record page.
+The xref:roles-pmc-reviews[PMC's role] in a progress review is to determine whether or not the project is operating within its scope, and within the mission and scope of the top-level project. The EMO also depends on the PMC to have some sense for how well the project is implementing the open source rules of engagement and is otherwise operating in a vendor neutral open source project. To engage the PMC, the project lead or a designated project committer should send an email to the PMC's mailing list with a request for approval of the progress review. The PMC will respond with feedback or a simple `pass:[+1]` indicating approval.
+
+Finally, a progress review provides the community and the Eclipse Foundation Membership with an opportunity to provide feedback and express concerns about the progress of the project.
 
 [NOTE]
 ====
-Send an email to mailto:{emoEmail}[EMO] to initiate a review.
+{forgeName} open source projects don't operate in a vacuum. While a progress review provides an opportunity for the EMO, PMC, and community to have a look at the project, our expectation is that the open source project is operating as part of the community and that all of these parties will have ongoing opportunities to interact and provide guidance.
 ====
-
-The EMO will conclude the review on the scheduled end date and advise the project team of the outcome.
 
 [[release-graduation]]
 === Graduation Reviews
 
 The purpose of a _graduation review_ is to confirm that the project has a working and demonstrable code base of sufficiently high quality active and sufficiently diverse communities; has adopters, developers, and users operating fully in the open following the {edpLink}; and is a credit to {forgeName} and is functioning well within the larger {forgeName} community
 
-Graduation reviews are generally combined with a _<<release-review, release review>>_ (typically, but not necessarily the `1.0` release). Upon successful completion of a graduation review, a project will leave the incubation phase and be designated as a _mature_ project.
+Graduation reviews are generally combined with a xref:progress-review[progress review] (typically, but not necessarily in advance of the open source project's `1.0` release). Upon successful completion of a graduation review, a project will leave the incubation phase and be designated as a _mature_ project.
 
-For a graduation review, release review documentation must be augmented to include demonstration of:
+For a graduation review, review documentation must be provided by the project team that includes demonstration of:
 
 * solid working code with stable APIs; 
 * an established and growing community around the project;
@@ -163,9 +165,9 @@ The graduation review documentation should demonstrate that members have learned
 === Frequently Asked Questions
 
 [qanda]
-Can a release review fail? ::
+Can a progress review fail? ::
 
-Technically, yes. A release review can fail. In our history, however, this occurrs very rarely. We set up release reviews to succeed.
+Technically, yes. A release review can fail. In our history, however, this occurs very rarely. We set up release reviews to succeed.
 
 Do we really need to do this? ::
 
@@ -177,11 +179,11 @@ This depends very much on the nature of your project and the expectations of you
 
 How much effort should we put into this? ::
 
-The amount of effort varies based on the nature of the team, and expectations of the community and stake holders. Generally, though, a project team shouldn't spend more than a couple of hours working directly on the formal aspects of the release review. If the amount of effort seems too onerous, you may be trying too hard. Connect with your project mentors, top-level project's PMC, or the mailto:{emoEmail}[EMO] for guidance.
+The amount of effort varies based on the nature of the team, and expectations of the community and stake holders. Generally, though, a project team shouldn't spend more than a couple of hours working directly on the formal aspects of a progress review. If the amount of effort seems too onerous, you may be trying too hard. Connect with your project mentors, top-level project's PMC, or the mailto:{emoEmail}[EMO] for guidance.
 
-Do I need to engage in a release review? ::
+Do I need to engage in a progress review? ::
 
-If the the project team wants to issue an official major or minor release and has not engaged in a release review (or progress review) within a year of the planned release date, then a release review is required.
+If the the project team wants to issue an official major or minor release and has not engaged in a progress review within a year of the planned release date, then a progress review is required.
 
 What is the difference between a release review and progress review? ::
 
@@ -189,11 +191,11 @@ In practice, there is really no difference. The activities involved are the same
 +
 Progress reviews were added to the {edpLink} primarily to support the {efspUrl}[Eclipse Foundation Specification Process], which requires that specification project teams engage periodic reviews that do not necessarily align with releases.
 +
-In cases where, for example, a project team has gone an extended period of time without having engaged in a review, the project leadership chain may  compel the project team to engage in a progress review to ensure that the project team is following the processes and is generally engaging in the sorts of activities required for success.
+In cases where, for example, a project team has gone an extended period of time without having engaged in a review, the project leadership chain may compel the project team to engage in a progress review to ensure that the project team is following the processes and is generally engaging in the sorts of activities required for success.
 
 How do I obtain PMC approval? ::
 
-Send the the xref:#roles-pmc[Project Management Committee] (PMC) a note via the top-level project's _PMC_ mailing list with a link to the release record. Note that the release record page has a handy link labeled menu:Committer Tools[Send Email the PMC].
+Send the the xref:roles-pmc[Project Management Committee] (PMC) a note via the top-level project's _PMC_ mailing list with a link to the release record. Note that the release record page has a handy link labeled menu:Committer Tools[Send Email the PMC].
 
 I need to do a release now. Can you fast-track the review? ::
 
@@ -217,4 +219,4 @@ Yes. In fact, the EMO strongly encourages {forgeName} open source projects in th
 
 How can I get help? ::
 
-Contact your mentors (for projects in the incubation phase), xref:#roles-pmc[Project Management Committee] (PMC), or the mailto:{emoEmail}[EMO].
+Contact your mentors (for projects in the incubation phase), xref:roles-pmc[Project Management Committee] (PMC), or the mailto:{emoEmail}[EMO].

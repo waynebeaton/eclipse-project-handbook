@@ -20,7 +20,7 @@ This section defines how {forgeName} projects must use and display all Eclipse F
 
 These requirements are meant to promote and improve the image of all projects that are part of the {forgeName} community, as well as to show that all {forgeName} projects are part of our community of developers, adopters and users that we believe is an important factor in our mutual success. While every project manages their own development within the broader {edpLink}, a consistent public branding and web presence that ties all of our projects together benefits all of us.
 
-All projects must conform to these branding requirements before engaging in any <<release-review, release>> or <<release-graduation, graduation>> review.
+All projects must conform to these branding requirements before engaging in any xref:release[release] or xref:release-graduation[graduation review].
 
 [[trademarks-brands]]
 === Brands

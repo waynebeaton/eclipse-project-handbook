@@ -70,7 +70,7 @@ Individual working groups may have additional requirements for some lifecycle ev
 
 Super-majority approval of a particular review is obtained via a ballot that is initiated and tallied by the specification committee (typically by the specification committee chair or their designate).
 
-The process described in the <<release-review, Progress and Release Reviews>> section is the same for specification projects.
+The process described in the xref:progress-review[Progress Reviews] (which are the same as release reviews) section is the same for specification projects.
 
 [TIP]
 ====

@@ -349,13 +349,13 @@ The bugs for all projects participating in the release will be included. Bugs ar
 [[pmi-review]]
 ==== Review
 
-The release record has a <<release-review,_Review_>> section that can be used to provide information for the associated review. If you provide information in the _Review_ section, the release record itself can be used as review documentation; no further documentation is required.
+The release record has a _Review_ section that can be used to provide information for an associated xref:progress-review[release review]. If you provide information in the _Review_ section, the release record itself can be used as review documentation; no further documentation is required.
 
 Each section on the review page includes a little help to describe the sort of information that you should provide.
 
 [NOTE]
 ====
-A review is not necessarily required for every release. A project team may declare official major or minor releases and distribute associated products for up to one year following a successful _<<release-review,release or progress review>>_ and reviews are never required for bug-fix/service releases. 
+A review is not necessarily required for every release. A project team may declare official major or minor releases and distribute associated products for up to one year following a successful xref:progress-review[progress review] and reviews are never required for bug-fix/service releases. 
 ====
 
 If a release requires a review, you can schedule one by clicking the menu:Schedule a review[] link. The drop-down list above the button contains  several options for review dates. Pick the one that works best for you.

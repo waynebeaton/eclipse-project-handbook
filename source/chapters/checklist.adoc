@@ -23,9 +23,9 @@ This checklist is provided as a convenience and is included primarily as a guide
 With this checklist, we've tried to strike a balance between being concise while being as comprehensive as possible. Many of the entries apply for specific technologies only. If an entry on the list doesn't make sense for some particular type of technology in your project, skip it (e.g., file headers do not make sense for JSON content).
 ====
 
-The Eclipse Foundation staff and Project Management Committee members will use this checklist as part of their evaluation during a <<release-review,Release Review>>.
+The xref:roles-emo[EMO] and xref:roles-pmc[Project Management Committee] will use this checklist as part of their evaluation during a xref:progress-review[Progress Review].
 
-All projects must conform to the <<trademarks,branding guidelines>> before engaging in any <<release-review,release>> or <<release-graduation,graduation>> review (specific examples are described below).
+All projects must conform to the <<trademarks,branding guidelines>> before engaging in any <<release,release>> (specific examples are described below).
 
 [discrete]
 == General

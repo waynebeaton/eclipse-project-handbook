@@ -45,7 +45,7 @@ The _adopter_ community contains individuals and organizations that build soluti
 
 The _developer_ contains that group of individuals who contribute directly to open source projects in the form of patches and/or contributions new functionality. xref:contributing-contributors[Contributors] tend to participate directly in an open source project by providing code, ideas, answers to questions in community forums, and more. xref:contributing-committers[Committers] are a subset of the contributors with write access to the resources maintained by a project (committer access is provided on a project-by-project basis). The idea is that a contributor is invited to become a committer and xref:elections-committer[elected] into that position based on credibility established over a period of time. 
 
-Developing a community is an important part of being {aForgeName} open source project. In fact, developing community is an integral part of the Eclipse Foundation Development Process: as part of the project xref:release-review[review process], a project is required to demonstrate their community-building activities, like blogging, speaking opportunities, and more.
+Developing a community is an important part of being {aForgeName} open source project. In fact, developing community is an integral part of the Eclipse Foundation Development Process: as part of the xref:progress-review[project review], a project is required to demonstrate their community-building activities, like blogging, speaking opportunities, and more.
 
 == Engage the Community
 
