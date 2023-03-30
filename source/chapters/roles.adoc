@@ -18,7 +18,9 @@ The {edpLink} defines multiple formal open source project roles. Primary among t
 [#roles-cm]
 == Committers
 
-For {forgeName} projects (and the open source world in general), xref:contributing-committers[committers] are the ones who hold the keys. Committers decide what code goes into the code base, they decide how a project builds, and they ultimately decide what gets delivered to the adopter community. With awesome power, comes awesome responsibility, and so the Open Source Rules of Engagement described by the {edpLink}, puts _meritocracy_ on equal footing with _transparency_ and _openness_: becoming a committer isn’t necessarily hard, but it does require a demonstration of merit.
+For {forgeName} projects (and the open source world in general), xref:contributing-committers[committers] are the ones who hold the keys. Committers are either appointed at the time of project creation, or xref:elections-committer[elected] by the existing project team.
+
+Committers decide what code goes into the code base, they decide how a project builds, and they ultimately decide what gets delivered to the adopter community. With awesome power, comes awesome responsibility, and so the Open Source Rules of Engagement described by the {edpLink}, puts _meritocracy_ on equal footing with _transparency_ and _openness_: becoming a committer isn’t necessarily hard, but it does require a demonstration of merit.
 
 Committers:
 
@@ -30,10 +32,11 @@ Committers:
 * Engage in the project planning process; and
 * Otherwise represent the interests of the open source project.
 
+
 [#roles-pl]
 == Project Lead
 
-{forgeName} projects must have at least one project lead, and may have more than one. The project leads form the first link in the project leadership chain and are the primary liaison between the project team and the xref:roles-emo[Eclipse Management Organization](EMO). 
+{forgeName} projects must have at least one project lead, and may have more than one. The project leads form the first link in the project leadership chain and are the primary liaison between the project team and the xref:roles-emo[Eclipse Management Organization](EMO). Project leads are either appointed at the time of project creation or xref:elections-pl[elected] by their xref:roles-cm[committer] peers (an individual is generally expected to have served as a committer before being nominated for the project lead role). Project leads must also be committers, but the two roles are distinct.
 
 Project leads are responsible for ensuring that project committers are following the rules. At the most basic level, _the rules_ are the open source rules of engagement defined in the {edpLink} (openness, transparency, and meritocracy), and we depend on them to make sure that team members understand their obligations under the {ipPolicyUrl}[Eclipse Foundation's Intellectual Property Policy] and and the xref:ip[Intellectual Property Due Diligence Process].
 
@@ -51,6 +54,8 @@ When committers are disruptive or otherwise behaving in a manner that is detrime
 The six months of inactivity is more of a suggested period of time for considering retirement of committers; we defer to the judgment of the project lead to determine when and if somebody who is inactive should be retired.
 ====
 
+Project leads have some extra privileges on xref:resources-gitlab-access[GitLab] and xref:resources-github-access[GitHub].
+
 The project lead is not the technical lead. So it's not strictly their responsibility to develop things like coding standards, project policies, and such. They are responsible, however, for making sure that those sorts of things get created and for making sure that the project team is working to complete shared goals. 
 
 [NOTE]
@@ -60,7 +65,7 @@ A project lead is not necessary a technical lead. We have no formal designation 
 
 Any committer can initiate a xref:progress-review[review] with the EMO, but the EMO will always copy the project lead(s) in related communication to ensure that they are aware that the committer is acting as their delegate. 
 
-Project Leads can also request the EMO to initiate a restructuring review in case a project needs to change the meaning of the scope or make any other significant changes to one or more Projects. 
+Project leads can also request the EMO to initiate a restructuring review in case a project needs to change the meaning of the scope or make any other significant changes to one or more Projects. 
 
 [#roles-pmc]
 == Project Management Committee
