@@ -90,15 +90,13 @@ If you have questions regarding the distribution of milestone builds, contact th
 
 [[release-review]]Progress serve as a means for a project to engage in a retrospective of the progress made, discover areas for potential improvement or mitigation, demonstrate that the project is operating according to the open source rules of engagement (open, transparent, and meritocratic), and ensure that the development process and intellectual due diligence processes are being followed.
 
-Following a successful progress review, {aForgeName} open source project is considered to be in _good standing_ for a year. Only projects in good standing can make official releases.
+Following a successful progress review, {aForgeName} open source project is considered to be in _good standing_ for a year. Only projects in good standing can make official releases. Specification projects must engage in a xref:specification-project-reviews[release review] for _every_ major or minor release.
 
 [NOTE]
 ====
 Historically, {forgeName} open source projects were required to engage in a **release review** before publishing an official release. The notion of a release review still exists, but is fundamentally the same as a progress review. 
 
 Progress and release reviews differ only in timing. A progress review can be scheduled at any point in a project's release cycle; a release review tends to be scheduled at the end of the release cycle.
-
-Specification projects must engage in a xref:specification-project-reviews[release review] for _every_ major or minor release.
 ====
 
 Progress reviews provide a means for the EMO, PMC, and community to provide feedback and input.
