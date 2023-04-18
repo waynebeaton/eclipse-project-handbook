@@ -32,13 +32,16 @@ Projects that implement Eclipse Platform Plug-ins and Features under the EPL-1.0
 
 {forgeName} projects may have one or more source code repositories. Since it is possible for source code repositories to be cloned and rehosted, it is important that legal information is captured directly in the root of every repository.
 
-As described below, <<legaldoc-license,_license_>> and <<legaldoc-notice,_notice_>> files must be included in the root of every source code repository.
+As described below, legal and other metadata files must be included in the root of every source code repository.
 
 [source,subs="verbatim,attributes"]
 ----
-git.{forgeMachineName}.org/project.git
- ├── LICENSE
- ├── NOTICE
+../project.git
+ ├── CODE_OF_CONDUCT.md
+ ├── CONTRIBUTING.md
+ ├── LICENSE.md
+ ├── NOTICE.md
+ ├── README.md
  └── ...
 ----
 
@@ -226,7 +229,7 @@ ____
 
 Other information, as deemed necessary by the project team may also be included.
 
-.Example `NOTICE` file
+.Example `NOTICE.md` file
 [source]
 ----
 # Notices for Dash, Tools for Committers
@@ -335,9 +338,10 @@ Minimally, the CONTRIBUTING file should include:
 
 * The name and brief description of the project;
 * A link to the project's website and documentation;
+* A pointer to the Eclipse Foundation's Terms of Use (https://www.eclipse.org/legal/termsofuse.php);
 * A link to the primary Communication channel (how do potential contributors contact the project team?);
 * A pointer to the canonical source code repositories;
-* Mechanics of how to actually contribute (pull requests accepted, via Gerrit, etc.);
+* Mechanics of how to actually contribute (e.g., merge/pull requests);
 * Link to sign the ECA (https://www.eclipse.org/legal/ECA.php)
 
 Additionally, the guide might include:
@@ -381,6 +385,48 @@ The `CONTRIBUTING` file can optionally provide guidance for developers who want 
 ====
 Keeping a help-wanted list up-to-date can be challenging. Consider including a query (e.g. for "helpwanted" issues) rather than (or in addition to) specific work area recommendations.
 ====
+
+[[legaldoc-security]]
+== SECURITY File
+
+The `SECURITY` file describes products and product versions that for which security updates may be applied and the means by which vulnerabilities are reported. The `SECURITY` file may have an extension, and should be placed in the root of all project repositories.
+
+It should:
+
+* Provide a pointer to the Eclipse Foundation's Vulnerability Reporting landing page;
+* Describe supported versions (with regard to security patches); and
+* Provide a communication channel for reporting vulnerabilities.
+
+.Example `SECURITY.md` file
+[source]
+----
+# Security Policy
+
+This project implements the Eclipse Foundation Security Policy
+
+* https://www.eclipse.org/security
+
+## Supported Versions
+
+These versions of Eclipse Dash are currently being supported with security
+updates.
+
+| Version      | Released   | Supported          | 
+| ------------ | ---------- | ------------------ | 
+| 1.0 Handbook | 2021-10-06 | :white_check_mark: | 
+
+## Reporting a Vulnerability
+
+Please report vulnerabilities to the Eclipse Foundation Security Team at
+security@eclipse.org
+----
+
+[[legaldoc-codeOfConduct]]
+== Community Code of Conduct
+
+The `CODE_OF_CONDUCT` file should provide a copy of the Eclipse Foundation's {codeOfConductUrl}[Community Code of Conduct]. The `CODE_OF_CONDUCT` file may have an extension, and should be placed in the root of all project repositories. 
+
+The Community Code of Conduct is provided in ({codeOfConductMdUrl}[markdown]) format.
 
 [[legaldoc-faq]]
 == Frequently Asked Questions

@@ -10,7 +10,10 @@
  * SPDX-License-Identifier: EPL-2.0
 ////
 
+:privacyPolicyUrl: https://www.eclipse.org/legal/privacy.php
+:termsOfUse: https://www.eclipse.org/legal/termsofuse.php
 :codeOfConductUrl: https://www.eclipse.org/org/documents/Community_Code_of_Conduct.php
+:codeOfConductMdUrl: https://raw.githubusercontent.com/eclipse/.github/master/CODE_OF_CONDUCT.md
 :communicationChannelGuidelinesUrl: https://www.eclipse.org/org/documents/communication-channel-guidelines/
 :socialMediaGuidelinesUrl: https://www.eclipse.org/org/documents/social_media_guidelines.php
 

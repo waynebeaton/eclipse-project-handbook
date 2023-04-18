@@ -442,6 +442,19 @@ External resources can be used for:
 
 This list is not exhaustive. Project leads should work with their xref:#roles-pmc[Project Management Committee] (PMC) and the EMO to determine the terms and conditions for an external resource are compatible with the project license(s), the {ipPolicyUrl}[Eclipse IP Policy], and {edpLink}.
 
+[[resources-external-legal]]
+==== Legal Documentation for External Resources
+
+External resources must, where possible, include links to:
+
+* The {forgeName} open source project's official website;
+* The Eclipse Foundation's {termsOfUse}[Terms of Use];
+* The Eclipse Foundation's {privacyPolicyUrl}[Privacy Policy];
+* The Eclipse Foundation's {codeOfConductUrl}[Community Code of Conduct]; and
+* The Eclipse Foundation's {communicationChannelGuidelinesUrl}[Communication Channel Guidelines].
+
+These links can be provided in a field, a README, or on directly accessible (i.e., linked) web page.
+
 [[resources-dockerhub]]
 ==== DockerHub
 
