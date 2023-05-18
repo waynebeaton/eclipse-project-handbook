@@ -241,6 +241,33 @@ When a project has reached its logical conclusion, its resources are archived. T
 
 [qanda]
 
+[[starting-component]] Do I have to create an entirely new project? Can I extend an existing project? ::
+
+If new functionality falls within the scope of an existing project, then it may make sense to instead create a component within the project. Components are an informal concept for {forgeName} open source projects; the notion of a component generally manifests as a separate Git repository with access to that repository managed via social convention. 
++
+All project committers have uniform write access to all project resources, which means that when a new component is added to a project everybody who already has push access to the Git repositories already in that project can also push to the new component's Git repository.
++
+Different components within a project can be built separately, but they generally release on a shared schedule with shared release reviews (although there is some precedent for projects releasing different components separately).
++
+A component may be the right choice if the new functionality:
++
+--
+- Is within the scope of the project;
+- Shares the same licensing of the project;
+- Can reasonably share the development schedule of the project; and/or
+- Will be delivered alongside other project functionality.
+--
++
+You might instead choose to create a new project if the new functionality:
++
+--
+- Does not reasonably fall within the scope of an existing project (and an existing scope cannot be reasonably changed to accommodate);
+- Absolutely must be delivered on a separate schedule;
+- Must be delivered independently (i.e. a completely separate downloads area is required);
+- Has different licensing requirements; and/or
+- Would benefit from separate branding.
+--
+
 Why are some committer (but not all) names rendered as links on project proposal pages? ::
 
 When the list of committers provided for a new project proposal are rendered, a link to more information for each individual committer will be included when possible. The link will render, for example, when an individual already has a role on another existing Eclipse open source project (e.g. is a xref:#roles-cm[committer], xref:#roles-pl[project lead], xref:#roles-pmc[Project Management Committee] (PMC) member, etc.). No link indicates that no existing project relationships exist for that individual.

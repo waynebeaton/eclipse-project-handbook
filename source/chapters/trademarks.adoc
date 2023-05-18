@@ -211,9 +211,11 @@ An appropriate footer is included automatically by the default website infrastru
 [[trademarks-code]]
 === Code Namespaces
 
-Where applicable and supported by the programming languages and style used by the project, code namespaces must include the project’s short name.
+Where applicable and supported by the programming languages and style used by the project, code namespaces must include the project’s xref:resources-identifiers[short name].
 
-In Java, for example, package names must start with `{namespace}` and use their short name in the third-segment  (i.e. follow the pattern `{namespace}.<shortname>.<component>`), e.g. `{namespace}.foo.core`, `{namespace}.foo.ui`, and `{namespace}.foo.connector`. Component names are left to the discretion of the project team.
+[[trademarks-code-java]] In Java, for example, package names must start with `{namespace}` and use their short name in the third-segment  (that is, follow the pattern `{namespace}.<shortname>.<component>`), for example `{namespace}.foo.core`, `{namespace}.foo.ui`, and `{namespace}.foo.connector`. Component names are left to the discretion of the project team.
+
+[[trademarks-code-maven]] Per Maven naming conventions, the Maven `groupId` must follow the standard reverse DNS naming convention, qualified with the project's short name by following the pattern `org.{namespace}.<shortname>`. The use of a more specific `groupId` extended with a component identifier is also possible by following the pattern `org.{namespace}.<shortname>.<component>.*`. 
 
 The project team must get approval for exceptions from their PMC.
 
