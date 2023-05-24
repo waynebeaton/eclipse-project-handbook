@@ -104,9 +104,9 @@ An Eclipse Foundation open source project is _not_ a legal entity. Further, the 
 
 _Copyright statements_ take the form `Copyright (c) \{year} \{owner}`. 
 
-The `\{year}` is the year in which the content was created (e.g. "`2004`"). The date may optionally be set to a range of years with the first and last years of the range separated by a comma (e.g. "`2004, 2017`"); in this case, the first year is when the content was first created and the last year is when the content was last modified. 
+The `\{year}` is the year in which the content was created (e.g. "`2004`"). 
 
-The `\{owner}` is the name of the copyright holder. If the content is subsequently modified and appended to by other copyright owners, the words "and others" are typically appended. So for example: "XYZ Corp." or "XYZ Corp. and others". The words "and others" are used to avoid having to list every copyright owner and because often, most of the content in the file was contributed by the initial copyright owner with subsequent modifications by others being smaller. However, especially if the number of copyright owners is small (e.g. two), there is nothing wrong with listing all of them especially if their contributions are more proportionately equal. For example: "XYZ Corp., John Smith, and ABC Enterprises."
+The `\{owner}` is the name of the copyright holder. If the content is subsequently modified and appended to by other copyright owners, the words "and others" are typically appended. So for example: "XYZ Corp." or "XYZ Corp. and others". The words "and others" are used to avoid having to list every copyright owner and because often, most of the content in the file was contributed by the initial copyright owner with subsequent modifications by others being smaller. However, especially if the number of copyright owners is small (e.g. two), they may all be listed in a single copyright statement (for example: "XYZ Corp., John Smith, and ABC Enterprises."). Alternatively, additional copyright holders may be added by including multiple copyright statements.
 
 Copyright headers can take one of two forms. In the traditional form, the identities of the copyright holders must be indicated in the copyright statement on the first line of the header.
 
@@ -437,6 +437,41 @@ How do file headers change when content is refactored?::
 When you split a file during a refactoring exercise, any new files that you create must automatically inherit the header of the original. If even fragment of text from a single line of the original content survives the refactoring (whether generated, rote, or otherwise), then the original copyright statement and author information should be retained.
 +
 Even a refactoring exercise that does not change behaviour, may add intellectual property. When refactoring adds content, copyright statements should be updated to reflect the addition. In concrete terms, you can either add the new copyright holders to the existing copyright statement or append "and others" (especially when the list of copyright holders gets long). 
+
+Do we need to specify a range of years in the copyright statement? ::
+
+No. In the past, legal advice was that the year of the initial creation of the content and the year of the last change should be reflected in the copyright header. This is no longer the case. Specify the year that the content was initially created in the copyright statement.
+
+Do I need to update the year in the copyright statement when I make changes to the file? ::
+
+No. The year in the copyright header should be the year that the content was created.
+
+How does the copyright header change when we accept a change to an existing file? ::
+
+You have some options. 
++
+If the current copyright statement indicates copyright of a single entity, and the contribution comes from a different entity, then you can generally append "and others" to the existing copyright statement.
++
+[source]
+----
+/********************************************************************************
+ * Copyright (c) 2007 Milo Bloom and others
+ * 
+ ...
+----
++
+Or, you can add a separate line for the new copyright holder (with the year of the new contribution).
++
+[source]
+----
+/********************************************************************************
+ * Copyright (c) 2007 Milo Bloom
+ * Copyright (c) 2023 Mike Binkley
+ * 
+ ...
+----
++
+Both options are acceptable, so you can pick whichever works best for the situation.
 
 Do the _license_ and _notice_ files need to be named `LICENSE` and `NOTICE`?::
 
