@@ -14,7 +14,7 @@
 ////
  
 image:https://api.reuse.software/badge/gitlab.eclipse.org/eclipse/dash/org.eclipse.dash.handbook[link=https://api.reuse.software/info/gitlab.eclipse.org/eclipse/dash/org.eclipse.dash.handbook]
-image:https://eclipse.org/projects/services/openchain.php?id=technology.dash[link=https://eclipse.org/projects/tools/openchain.php?id=technology.dash]
+image:https://eclipse.org/projects/services/status.php?id=technology.dash[link=https://eclipse.org/projects/tools/status.php?id=technology.dash]
 
 = Eclipse Project Handbook
 
