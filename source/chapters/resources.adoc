@@ -112,7 +112,7 @@ Some of the terms used by GitLab -- _project_ in particular -- have different me
 Any committer can {helpdeskUrl}[create a Help Desk issue] to request that the Eclipse IT Team create a new repository on, or move an existing repository to, the GitLab instance for their project. Note that the IT Team will verify the request with the project leads.
 ====
 
-On GitLab, the root group for all {forgeName} open source project repositories is `{forgeMachineName}`. Under that root, two nesting options are available: {aForgeName} open source project's group can be nested directly under the root, or can be nested in a group corresponding to the {forgeName} top-level project.
+On GitLab, the root group for all {forgeName} open source project repositories is `{forgeMachineName}`. Under that root, two nesting options are available: {aForgeName} open source project's group can be nested directly under the root, or can be nested in a group corresponding to the {forgeName} top-level project. In both nesting options, repositories may be arbitrarily nested in subgroups created under the projects' group to organize the repositories. The custom subgroups are cosmetic only, as the same permissions are applied to the nested groups and do not provide any extra functionality.
 
 [#resources-gitlab-project-group]
 ==== Project Group
@@ -130,6 +130,8 @@ A group can be configured as the immediate descendant of the root group, using t
  ├── <short name B>
  │   ├── <repository 1>
  │   ├── <repository 2>
+ │   ├── <custom group 1>
+ │   │   ├── <repository 3>
  │   └── ...
  └── ...
 ----
@@ -161,6 +163,8 @@ Configuring GitLab in this manner requires approval from the corresponding {forg
  |   ├── <short name B>
  |   │   ├── <repository 1>
  |   │   ├── <repository 2>
+ │   │   ├── <custom group 1>
+ │   │   │   ├── <repository 3>
  |   │   └── ...
  │   └── ...
  └── ...
@@ -206,6 +210,11 @@ The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook inspects incom
 ==== Bot Users
 
 To assist with CI/CD operations, bots with CI/CD access can be requested by making a request within the {helpdeskUrl}[Eclipse Foundation Helpdesk] by either a project lead, or a committer with approval from a project lead. These bots may be added directly to repositories or to groups depending on the requirements.
+
+[#resources-gitlab-excluded-subgroups]
+==== Excluded Subgroups
+
+Excluded Subgroups have been added to <<pmi,Project Management Infrastructure>> (PMI) <<pmi-project-page,project page>> to better support cases where third-party non-project code needs to exist within a project group for stability, such as forks and mirrors. Once configured, these subgroups within the project groups to exclude from automated tooling such as the ECA checks. The excluded subgroups follow the standard access permissions and Project Leads can request updates to this field through the {helpdeskUrl}[Gitlab Helpdesk].
 
 [[resources-github]]
 === GitHub
