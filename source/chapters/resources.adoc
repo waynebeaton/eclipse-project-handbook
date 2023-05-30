@@ -234,12 +234,18 @@ The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect i
 .Notification that the commit is properly structured and permissions are in place.
 image::images/Github-cla-success.png[]
 
-Since the GitHub API does not provide a means of absolutely denying a merge, the hook warns committers when the contributors have not signed a ECA.
+Since the GitHub API does not provide a way for a _Committers hook_ to absolutely deny a merge by itself, the hook warns committers when the contributors have not signed an ECA.
 
 .Notification that there is something wrong with the commit.
 image::images/Github-cla-failure.png[]
 
 Click on the _Details_ link for more information. Committers must not merge commits unless they are certain that the contributor does have a valid ECA on file.
+
+It is however possible to set up {https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule}[Branch Protection Rule] for branches to prevent that pull requests which fail the ECA validation are getting merged into them:
+
+.Setup of a Branch Protection Rule with require ECA validation status checks.
+image::images/Github-branch-protection-rule.png[]
+
 
 [[resources-github-access]]
 ==== Access to GitHub Repositories
@@ -282,6 +288,52 @@ Contributors must provide their GitHub Id in their <<contributing-account,Eclips
 
 The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook inspects incoming pull requests to ensure that the contributor has a valid ECA on file, and flags those that do not. Project committers should only merge pull requests that pass this validation.
 
+[[resources-github-self-service]]
+==== Self-Service of GitHub Resources
+
+The Eclipse Foundation offers self-service of GitHub resources via a tool named https://gitlab.eclipse.org/eclipsefdn/security/otterdog[Otterdog].
+
+Upon opting-in, a new repository _.eclipsefdn-private_ will be created that hosts the GitHub configuration as code and is accessible by any committer of the project.
+
+.Example Otterdog configuration
+[source,jsonnet]
+----
+orgs.newOrg('adoptium') {
+    settings+: {
+      blog: "https://adoptium.net",
+      default_repository_permission: "none",
+      default_workflow_permissions: "write",
+      description: "The Adoptium Working Group promotes and supports high-quality runtimes and associated technology for use across the Java ecosystem",
+      members_can_change_project_visibility: true,
+      members_can_change_repo_visibility: true,
+      members_can_delete_repositories: true,
+      name: "Eclipse Adoptium",
+      readers_can_create_discussions: true,
+      security_managers+: [
+        "adoptium-project-leads",
+      ],
+      twitter_username: "adoptium",
+      web_commit_signoff_required: false,
+    },
+   ...
+}
+----
+
+The following resource configurations are available:
+
+* Organization Settings
+* Organization Webhooks
+* Repositories and their settings
+* Branch Protection Rules
+
+Committers can create pull requests for this repo with suggested changes. A workflow will automatically run and validate and highlight the suggested changes:
+
+.Validation of suggested configuration changes.
+image::images/Github-self-service-pull-request-comment.png[]
+
+The pull request needs to be approved by an Eclipse Foundation staff member and once its merged the changes will get applied to GitHub.
+
+The baseline configuration used by the Eclipse Foundation can be found in the https://github.com/EclipseFdn/otterdog-defaults/blob/main/otterdog-defaults.libsonnet[Otterdog defaults].
 [#resources-gerrit]
 === Gerrit Code Review
 
