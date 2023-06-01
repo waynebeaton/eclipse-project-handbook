@@ -23,12 +23,20 @@ The {securityPolicyUrl}[Eclipse Foundation Vulnerability Reporting Policy] conta
 
 The Eclipse Foundation Security Team provides help and advice to Eclipse projects on security issues and is the first point of contact for handling security vulnerabilities. Members of the Security Team are selected from committers on Eclipse Projects, members of the xref:roles-ac[Eclipse Architecture Council], and Eclipse Foundation staff.
 
+== Project Setup for Vulnerability Reporting
+
+The default project setup is to use general Eclipse Foundation reporting (see below). The strong recommendation is to list reporting methods clearly inside a `SECURITY.md` file in the main repository (also in other repositories if it makes sense) to help security researchers to communicate with the project in a secure way. Similar information should be available in the project's documentation.
+
+If the project decides to activate reporting via confidential issues (GitLab) or private security advisories (GitHub), please make a request via the {Helpdesk}[https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/new]. The Eclipse Foundation Security team can train the project in using those means. When new reporting methods are set up, update your `SECURITY.md` accordingly.
+
+In order to be able to set up, monitor, and also help projects dealing with security settings, new project are set up with members of the EF Security team. Also, in GitHub repositories, if self-management is enabled, the project will include `.eclipsefdn` repository. Please refer to the <<resources-github-self-service, documentation>> for more information.
+
 [[vulnerability-reporting]]
 == Reporting
 
-Vulnerabilities can be reported either via email to {securityTeamEmail} or directly with a project via the Eclipse Foundation's issue tracker.
+Vulnerabilities can be reported via a project-specific security tracker, or via general Eclipse Foundation means: an email to {securityTeamEmail} or and issue in the {vulnerabilityReportUrl}[general vulnerability issue tracker].
 
-The general mailto:{securityTeamEmail}[security team email address] can also be used to report vulnerabilities. Members of the Eclipse Foundation Security Team will receive messages sent to this address. This address should be used only for reporting undisclosed vulnerabilities; regular issue reports and questions unrelated to vulnerabilities in Eclipse Foundation project software will be ignored. Note that this email address is not encrypted.
+The general mailto:{securityTeamEmail}[security team email address] can be used to report vulnerabilities in any Eclipse Foundation project. Members of the Eclipse Foundation Security Team will receive messages sent to this address. This address should be used only for reporting undisclosed vulnerabilities; regular issue reports and questions unrelated to vulnerabilities in Eclipse Foundation project software will be ignored. Note that this email address is not encrypted.
 
 The community is encouraged to report vulnerabilities using the standard project-specific issue tracker. The appropriate link should be available in the project's `SECURITY.md` file. In case of a doubt, use the {vulnerabilityReportUrl}[general vulnerability issue tracker].
 
@@ -217,3 +225,19 @@ Ultimately, whether or not we should create a CVE is the project team's call.
 I think that my project hasn't received all notifications about security issues? ::
 
 In this case, please contact the <<vulnerability-team, Security Team>>. Please note that the Eclipse Foundation Security Team notifies project leads by default.
+
+I can't see a confidential issue in the Eclipse Foundation GitLab instance ::
+
+If you have received a notification of a confidential issue by email, make sure to log in to the EF instance of GitLab first, before following the link. Otherwise you will get a 404 error page.
+
+If you are following a link, verify with the person managing the issue (for example the reporter) if you have been added to the issue. Currently, in the general issue tracker, each person needs to be added manually. In case of difficulties, ask the EF Security team for assistance.
+
+Also please note that we need an activated GitLab account to add a user to a confidential issue. In practice, the user needs to log in into the EF instance at least once.
+
+Confidential issues are not visible to all committers ::
+
+Currently, in the general issue tracker, each person needs to be added manually. In case of difficulties, ask the EF Security team for assistance.
+
+I can see `.eclipsefdn` repository in my project. What is it? ::
+
+This repository is used to keep project management data. See the related <<resources-github-self-service, documentation>> or ask the Eclipse Foundation staff for help.
