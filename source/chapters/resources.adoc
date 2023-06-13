@@ -241,7 +241,7 @@ image::images/Github-cla-failure.png[]
 
 Click on the _Details_ link for more information. Committers must not merge commits unless they are certain that the contributor does have a valid ECA on file.
 
-It is however possible to set up {https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule}[Branch Protection Rule] for branches to prevent that pull requests which fail the ECA validation are getting merged into them:
+It is however possible to set up a https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule[Branch Protection Rule] for branches to prevent that pull requests which fail the ECA validation are getting merged into them:
 
 .Setup of a Branch Protection Rule with require ECA validation status checks.
 image::images/Github-branch-protection-rule.png[]
@@ -293,7 +293,7 @@ The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook inspects incom
 
 The Eclipse Foundation offers self-service of GitHub resources via a tool named https://gitlab.eclipse.org/eclipsefdn/security/otterdog[Otterdog].
 
-Upon opting-in, a new repository _.eclipsefdn-private_ will be created that hosts the GitHub configuration as code and is accessible by any committer of the project.
+Upon opting-in, a new repository _.eclipsefdn_ will be created that hosts the GitHub configuration as code.
 
 .Example Otterdog configuration
 [source,jsonnet]
@@ -326,14 +326,14 @@ The following resource configurations are available:
 * Repositories and their settings
 * Branch Protection Rules
 
-Committers can create pull requests for this repo with suggested changes. A workflow will automatically run and validate and highlight the suggested changes:
+Committers can create pull requests for this repo with suggested changes. A workflow will automatically run, validate and highlight the changes:
 
 .Validation of suggested configuration changes.
 image::images/Github-self-service-pull-request-comment.png[]
 
-The pull request needs to be approved by an Eclipse Foundation staff member and once its merged the changes will get applied to GitHub.
+The pull request needs to be approved by an Eclipse Foundation staff member and once its merged, the changes will get applied to GitHub.
 
-The baseline configuration used by the Eclipse Foundation can be found in the https://github.com/EclipseFdn/otterdog-defaults/blob/main/otterdog-defaults.libsonnet[Otterdog defaults].
+The baseline configuration used by the Eclipse Foundation can be accessed https://github.com/EclipseFdn/otterdog-defaults/blob/main/otterdog-defaults.libsonnet[here].
 [#resources-gerrit]
 === Gerrit Code Review
 
@@ -567,7 +567,7 @@ Can a project use the _gh-pages_ support from GitHub to host at `<project>.githu
 
 Yes.
 
-Can we use a GitHub reposotpru for our project website source? ::
+Can we use a GitHub repository for our project website source? ::
 
 Yes. Create a {helpDeskUrl}[Help Desk] issue to request support.
 
