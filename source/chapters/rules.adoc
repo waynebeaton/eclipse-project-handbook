@@ -15,15 +15,6 @@
 
 Summary of "the rules" based on the fundamental principles defined in the Eclipse Foundation Development Process
 
-[qand]
-Committers must work day-to-day in the {forgeName} project repositories ::
-
-Making it so that people who are outside of the development team (that is, the contributors) have the ability to access the most up-to-date version of the project code is an absolute requirement. To that end, committers must push content directly into designated open repositories. {forgeName} project committers must never stage to a private or semi-private repository and then “periodically sync” to the open repository; employing this sort of strategy raises a significant barrier for entry that makes it impossible for anybody else to participate.
-
-Project-related issues must be tracked via issue trackers managed by the Eclipse Foundation on the project's behalf ::
-
-Committers must work in an open, transparent, and meritocratic manner ::
-
 For many open source organisations, open means the same thing as _transparent_: open as in _open_ book. At the Eclipse Foundation, we regard being _transparent_ as the practice of making sure that the community can see and understand what the project is doing; and being _open_ as the act of giving up absolute control and welcoming the community to participate as an equal player on a _level playing field_ (i.e. being _open_ to participation by the others).
 +
 At the Eclipse Foundation, we take the _open_ part of open source very seriously. It’s codified in the Open Source Rules of Engagement found in the [Eclipse Foundation Development Process](https://www.eclipse.org/projects/dev_process/).
@@ -38,10 +29,26 @@ Note that it’s also perfectly reasonable for a project team to require that si
 +
 Regardless of the rules that define the level playing field for any particular project, any content destined for the project’s code base should have some _public record of contribution_. Otherwise, the project would be operating (at least in part) hidden from community involvement and so counter to the open source rules of engagement. That public record can take the form of a Gerrit review, merged GitHub pull request, GitLab merge request, or (if you’re in a pinch) an attachment on a Bugzilla or GitHub Issue record.
 
+Eclipse Projects are also required to implement the Eclipse Foundation's IP Policy. Tracking intellectual property grants and ensuring that all contributors and committers are covered by agreements that
+
+[qand]
+Committers must work day-to-day in the repositories assigned to the {forgeName} project by the Eclipse Foundation ::
+
+Making it so that people who are outside of the development team (that is, the contributors) have the ability to access the most up-to-date version of the project code is an absolute requirement. To that end, committers must push content directly into designated open repositories. {forgeName} project committers must never stage to a private or semi-private repository and then “periodically sync” to the open repository; employing this sort of strategy raises a significant barrier for entry that makes it impossible for anybody else to participate.
+
+Project-related issues must be tracked via issue trackers assigned to the {forgeName} project by the Eclipse Foundation ::
+
+That is, the issue trackers associated with the project's GitLab and GitHub repositories must be used for all issues related to the open source project.
+
+Committers must be covered by a Committer Agreement ::
+
+Either an MCCA or an ICA. When you change employers, you may need sign a new agreement.
+
 Contributors must sign the Eclipse Contributor Agreement (ECA) ::
 
 Regardless of how a contribution is presented, the contributor must be listed as the author in the [Git commit record](https://www.eclipse.org/projects/handbook/#resources-commit) and must complete the [Eclipse Contributor Agreement](https://www.eclipse.org/legal/ECA.php) before any contribution can be accepted.
-
++
+Note that committers, who must already been covered by either an MCCA or an ICA, are, by virtue of that agreement, considered to have signed the ECA.
 
 Committers must work in a vendor neutral manner ::
 
