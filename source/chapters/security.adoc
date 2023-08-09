@@ -1,5 +1,5 @@
 ////
- * Copyright (C) 2019,2020,2023 Eclipse Foundation, Inc. and others.
+ * Copyright (C) 2019 Eclipse Foundation, Inc. and others.
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
@@ -7,8 +7,8 @@
  * 
  * SPDX-FileType: SOURCE
  *
- * SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
- * SPDX-FileCopyrightText: 2015 Contributors to the Eclipse Foundation
+ * SPDX-FileCopyrightText: 2019 Eclipse Foundation, Inc.
+ * SPDX-FileCopyrightText: 2019 Contributors to the Eclipse Foundation
  *
  * SPDX-License-Identifier: EPL-2.0
 ////
@@ -23,13 +23,15 @@ The {securityPolicyUrl}[Eclipse Foundation Vulnerability Reporting Policy] conta
 
 The Eclipse Foundation Security Team provides help and advice to Eclipse projects on security issues and is the first point of contact for handling security vulnerabilities. Members of the Security Team are selected from committers on Eclipse Projects, members of the xref:roles-ac[Eclipse Architecture Council], and Eclipse Foundation staff.
 
+You can contact the Eclipse Foundation Security Team by sending email to {securityTeamEmail} or by open an issue in the {vulnerabilityReportUrl}[general vulnerability issue tracker].
+
 == Project Setup for Vulnerability Reporting
 
 The default project setup is to use general Eclipse Foundation reporting (see below). The strong recommendation is to list reporting methods clearly inside a `SECURITY.md` file in the main repository (also in other repositories if it makes sense) to help security researchers to communicate with the project in a secure way. Similar information should be available in the project's documentation.
 
 If the project decides to activate reporting via confidential issues (GitLab) or private security advisories (GitHub), please make a request via the {Helpdesk}[https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/new]. The Eclipse Foundation Security team can train the project in using those means. When new reporting methods are set up, update your `SECURITY.md` accordingly.
 
-In order to be able to set up, monitor, and also help projects dealing with security settings, new project are set up with members of the EF Security team. Also, in GitHub repositories, if self-management is enabled, the project will include `.eclipsefdn` repository. Please refer to the <<resources-github-self-service, documentation>> for more information.
+In order to be able to set up, monitor, and also help projects dealing with security settings, new project are set up with members of the Eclipse Foundation Security team. Also, in GitHub repositories, if self-management is enabled, the project will include `.eclipsefdn` repository. Please refer to the xref:resources-github-self-service[documentation] for more information.
 
 [[vulnerability-reporting]]
 == Reporting
@@ -185,7 +187,7 @@ In what form should a disclosure be published? Is publishing the bug on the {kno
 
 Publishing on the Known Vulnerabilities page will happen automatically. This is mimimal disclosure. Whether or not you should do more is a project team decision. If you  need help with that decision, connect with your xref:#roles-pmc[Project Management Committee] (PMC) or the Security Team.
 +
-If the vulnerability real and is in release software (i.e., it's likely to have been adopted), you should <<vulnerability-cve,request a CVE>>.
+If the vulnerability real and is in release software (i.e., it's likely to have been adopted), you should xref:vulnerability-cve[request a CVE].
 +
 You should let your community know about the vulnerability though your usual communication channels.
  
@@ -201,7 +203,7 @@ Is there something specific I should add (or something I should avoid mentioning
 
 That depends. In general, you should avoid adding anything that calls particular attention to the vulnerability. Just state what the commit contains. Especially avoid expressions like `vulnerability` or using a reserved CVE number.
  
-Do we need a <<vulnerability-cve,CVE>>? ::
+Do we need a xref:vulnerability-cve[CVE]? ::
 
 It's up to the project team. We need the project team to engage with the process of gathering the information required to report the vulnerability to the central authority; the first step in that process is deciding whether or not a CVE is desired/required.
 +
@@ -212,11 +214,11 @@ ____
 If someone can download compiled (e.g., JAR) files and use them without any sort of compilation process then we are inclined to say that there exists a tangible risk to consumers and so a CVE should be requested. That is, unless that version string specifically says alpha or beta, or the content has otherwise clear warnings to not use it in a production context, then we should -- as good citizens -- create a CVE. Merely being versioned 0.x instead of 1.x doesn't absolve the situation.
 ____
 +
-If you're not sure, check with your PMC or the <<vulnerability-team, Security Team>>.
+If you're not sure, check with your PMC or the xref:vulnerability-team[Security Team].
 +
 It's a bit of a rite of passage for an open source project to disclose their first vulnerability. If in doubt, ask the Eclipse Foundation Security Team for guidance.
 
-Do we need a <<vulnerability-cve,CVE>> for versions of software that we released before moving our project to the Eclipse Foundation? ::
+Do we need a xref:vulnerability-cve[CVE] for versions of software that we released before moving our project to the Eclipse Foundation? ::
 
 The answer to this is not obvious, but as a general rule... no. The answer is not obvious because the continuity of the source of affected products may not be obvious (or relevant) to consumers, and it is not strictly wrong for a CVE Numbering Authority to create a CVE for a version of a product not immediately in their purview. 
 +
@@ -224,20 +226,20 @@ Ultimately, whether or not we should create a CVE is the project team's call.
 
 I think that my project hasn't received all notifications about security issues? ::
 
-In this case, please contact the <<vulnerability-team, Security Team>>. Please note that the Eclipse Foundation Security Team notifies project leads by default.
+In this case, please contact the xref:vulnerability-team[Security Team]. Please note that the Eclipse Foundation Security Team notifies project leads by default.
 
 I can't see a confidential issue in the Eclipse Foundation GitLab instance ::
 
-If you have received a notification of a confidential issue by email, make sure to log in to the EF instance of GitLab first, before following the link. Otherwise you will get a 404 error page.
-
-If you are following a link, verify with the person managing the issue (for example the reporter) if you have been added to the issue. Currently, in the general issue tracker, each person needs to be added manually. In case of difficulties, ask the EF Security team for assistance.
-
-Also please note that we need an activated GitLab account to add a user to a confidential issue. In practice, the user needs to log in into the EF instance at least once.
+If you have received a notification of a confidential issue by email, make sure to log in to the Eclipse Foundation instance of GitLab first, before following the link. Otherwise you will get a 404 error page.
++
+If you are following a link, verify with the person managing the issue (for example the reporter) if you have been added to the issue. Currently, in the general issue tracker, each person needs to be added manually. In case of difficulties, ask the Eclipse Foundation Security team for assistance.
++
+Also please note that we need an activated GitLab account to add a user to a confidential issue. In practice, the user needs to log in into the Eclipse Foundation GitLab instance at least once.
 
 Confidential issues are not visible to all committers ::
 
-Currently, in the general issue tracker, each person needs to be added manually. In case of difficulties, ask the EF Security team for assistance.
+Currently, in the general issue tracker, each person needs to be added manually. In case of difficulties, ask the Eclipse Foundation Security team for assistance.
 
-I can see `.eclipsefdn` repository in my project. What is it? ::
+I can see `.eclipsefdn` repository in my project. What is this? ::
 
-This repository is used to keep project management data. See the related <<resources-github-self-service, documentation>> or ask the Eclipse Foundation staff for help.
+This repository is used to keep project management data. See the related xref:resources-github-self-service[documentation] or ask the Eclipse Foundation staff for help.
