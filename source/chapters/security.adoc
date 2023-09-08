@@ -29,7 +29,7 @@ You can contact the Eclipse Foundation Security Team by sending email to {securi
 
 The default project setup is to use general Eclipse Foundation reporting (see below). The strong recommendation is to list reporting methods clearly inside a `SECURITY.md` file in the main repository (also in other repositories if it makes sense) to help security researchers to communicate with the project in a secure way. Similar information should be available in the project's documentation.
 
-If the project decides to activate reporting via confidential issues (GitLab) or private security advisories (GitHub), please make a request via the {Helpdesk}[https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/new]. The Eclipse Foundation Security team can train the project in using those means. When new reporting methods are set up, update your `SECURITY.md` accordingly.
+If the project decides to activate reporting via confidential issues (GitLab) or private security advisories (GitHub), please make a request via the {helpdeskUrl}[Help Desk]. The Eclipse Foundation Security team can train the project in using those means. When new reporting methods are set up, update your `SECURITY.md` accordingly.
 
 In order to be able to set up, monitor, and also help projects dealing with security settings, new project are set up with members of the Eclipse Foundation Security team. Also, in GitHub repositories, if self-management is enabled, the project will include `.eclipsefdn` repository. Please refer to the xref:resources-github-self-service[documentation] for more information.
 
