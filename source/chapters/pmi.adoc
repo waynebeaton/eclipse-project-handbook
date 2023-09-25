@@ -119,7 +119,7 @@ The _scope_ is intended for a more select audience; generally speaking the scope
 
 [WARNING]
 ====
-Project members have the ability to change the text of the project scope, but should be careful to **avoid changing the meaning**. If the meaning of the scope needs to change, the xref:#roles-pmc[Project Management Committee] (PMC) must be contacted regarding a potential restructuring review.
+Project members have the ability to change the text of the project scope, but should be careful to **avoid changing the meaning**. If the meaning of the scope needs to change, the xref:#roles-pmc[Project Management Committee] (PMC) must be contacted regarding a potential xref:release-restructuring[restructuring review].
 ====
 
 To edit the description and/or scope:
