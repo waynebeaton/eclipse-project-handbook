@@ -55,7 +55,7 @@ Specification projects must engage in a xref:specification-project-reviews[relea
 *Intellectual property must be properly accounted for and tracked at all times.* The project team must engage in the Eclipse IP Due Diligence Process on an ongoing basis. The IP review and approval that occurs at the time of a progress review should be regarded as a means of confirming that intellectual property is being properly managed and not as a trigger to engage in a last minute clean up.
 ====
 
-[[release-plan]]
+[[releases-plan]]
 === Release Plan
 
 A project plan is _required_ for each major and minor project release. The plan should lay out in broad terms what the goals are for the release. As plans are a valuable means for the community to get involved with your project, the plan should be created at the beginning of the release cycle. By establishing the plan early, you give prospective contributors help in determining how they can most usefully contribute, and adopters can prepare their own development schedule and themes. Plans can change during the release cycle.
@@ -94,15 +94,15 @@ Be sure to specify the channels where milestone adopter should provide feedback.
 
 If you have questions regarding the distribution of milestone builds, contact the {emoEmailLink} for assistance.
 
-[#reviews]
+[[reviews]]
 === Reviews
 
-[[release-reviews]]
+[[progress-review]]
 ==== Release and Progress Reviews
 
-Reviews within the Eclipse Foundation can be categorized into two types: _Release Reviews_, which are associated with specific software releases, and _Progress Reviews_, which are not tied to any particular release. It's important to note that both types of reviews cover the same aspects.
-
 Reviews serve as a means for a project to engage in a retrospective of the progress made, discover areas for potential improvement or mitigation, demonstrate that the project is operating according to the open source rules of engagement (open, transparent, and meritocratic), and ensure that the development process and intellectual due diligence processes are being followed.
+
+Reviews within the Eclipse Foundation can be categorized into: _Release Reviews_, which are associated with specific software releases, and _Progress Reviews_, which are not tied to any particular release. A Release Review is a type of Progress Review that is aligned directly with a specific Release. A Release Review must be concluded successfully before the corresponding Release is announced to the community.
 
 Following a successful release or progress review, {aForgeName} open source project is considered to be in _good standing_ for a year. Only projects in good standing can make official releases. Specification projects must engage in a xref:specification-project-reviews[release review] for _every_ major or minor release.
 
