@@ -13,8 +13,17 @@
  * SPDX-License-Identifier: EPL-2.0
 ////
 
-[[release]]
-== Releases
+[[releasesandreviews]]
+== Project Releases and Project Reviews
+
+Releases and reviews are crucial aspects of the project lifecycle within the Eclipse Development Process. Through regular and transparent releases, Eclipse projects ensure that their software remains up-to-date and reliable.
+
+Annually (more frequent for specification projects), Eclipse projects undergo a thorough review process in close collaboration with the Eclipse Management Organization (EMO) and the Project Management Committee (PMC). This collaborative effort ensures that each project adheres to high-quality standards and follows the best open-source software (OSS) practices and guidelines established by the Eclipse Foundation. Reviews may be associated with a specific release, referred to as a "Release Review", or may not be linked to any particular release, known as a "Progress Review".
+
+Additionally, there are other, less common but equally important types of reviews at the Eclipse Foundation, including Graduation Reviews, Restructuring Reviews, and Termination Reviews.  In the following section, we will go into the specifics of these release and review processes.
+
+[[releasesandreviews-releases]]
+=== Releases
 
 Releases are formal for {forgeName} projects. 
 
@@ -46,7 +55,7 @@ Specification projects must engage in a xref:specification-project-reviews[relea
 *Intellectual property must be properly accounted for and tracked at all times.* The project team must engage in the Eclipse IP Due Diligence Process on an ongoing basis. The IP review and approval that occurs at the time of a progress review should be regarded as a means of confirming that intellectual property is being properly managed and not as a trigger to engage in a last minute clean up.
 ====
 
-[[releases-plan]]
+[[releasesandreviews-plan]]
 === Release Plan
 
 A project plan is _required_ for each major and minor project release. The plan should lay out in broad terms what the goals are for the release. As plans are a valuable means for the community to get involved with your project, the plan should be created at the beginning of the release cycle. By establishing the plan early, you give prospective contributors help in determining how they can most usefully contribute, and adopters can prepare their own development schedule and themes. Plans can change during the release cycle.
@@ -62,8 +71,8 @@ All aspects of a plan can change during the release cycle (including the date). 
 
 Producing regular builds is an important part of the release cycle. Builds are an important means of engaging with the community: adopters can help you test your code and test their own so that they can be ready for the eventual release. Project teams should plan to produce at least one _milestone_ build (more are better, depending on the length of your release cycle), and capture the planned date for that milestone in the release record. It is also common practice to generate nightly and weekly integration builds. Project teams must ensure that their project's downloads page provides the information required for the community to obtain builds.
 
-[[release-milestones]]
-=== Pre-release Milestone Builds
+[[releasesandreviews-milestones]]
+==== Pre-release Milestone Builds
 
 Milestone builds and release candidates are not themselves official releases. Per the {edpLink}, milestone and release candidate builds are pre-releases that are intended to be consumed by a limited audience to solicit, gather, and incorporate feedback from leading edge consumers. A predictable schedule for the delivery of milestone builds is especially valuable when the period of time between formal releases spans multiple months. 
 
@@ -85,12 +94,17 @@ Be sure to specify the channels where milestone adopter should provide feedback.
 
 If you have questions regarding the distribution of milestone builds, contact the {emoEmailLink} for assistance.
 
-[#progress-review]
-=== Progress Reviews
+[#reviews]
+=== Reviews
 
-[[release-review]]Progress serve as a means for a project to engage in a retrospective of the progress made, discover areas for potential improvement or mitigation, demonstrate that the project is operating according to the open source rules of engagement (open, transparent, and meritocratic), and ensure that the development process and intellectual due diligence processes are being followed.
+[[releasesandreviews-reviews]]
+==== Release and Progress Reviews
 
-Following a successful progress review, {aForgeName} open source project is considered to be in _good standing_ for a year. Only projects in good standing can make official releases. Specification projects must engage in a xref:specification-project-reviews[release review] for _every_ major or minor release.
+Reviews within the Eclipse Foundation can be categorized into two types: _Release Reviews_, which are associated with specific software releases, and _Progress Reviews_, which are not tied to any particular release. It's important to note that both types of reviews cover the same aspects.
+
+Reviews serve as a means for a project to engage in a retrospective of the progress made, discover areas for potential improvement or mitigation, demonstrate that the project is operating according to the open source rules of engagement (open, transparent, and meritocratic), and ensure that the development process and intellectual due diligence processes are being followed.
+
+Following a successful release or progress review, {aForgeName} open source project is considered to be in _good standing_ for a year. Only projects in good standing can make official releases. Specification projects must engage in a xref:specification-project-reviews[release review] for _every_ major or minor release.
 
 [NOTE]
 ====
@@ -125,9 +139,19 @@ digraph {
 }
 ----
 
-A progress review can be initiated by the project team, by the PMC, or by the EMO. Send an email to mailto:{emoEmail}[EMO] to initiate a progress review. 
+[NOTE]
+====
+A progress review can be initiated by the project team, by the PMC, or by the EMO. 
 
-A progress review provides the xref:roles-emo[EMO] with an opportunity to review the project team's practices to make sure that the the team is doing the right sorts of things to grow the project and attract diversity, has the recommended documentation in place, and is correctly implementing the {edpLink} and xref:ip[intellectual property due diligence process]. The xref:checklist[project checklist] describes the sorts of things that the EMO looks for when they engage in a review. Note that the checklist is used primarily as a means of identifying opportunities for the project to improve their open source practices and that absolute conformity with the list is considered aspirational, not an absolute requirement.
+Send an email to mailto:{emoEmail}[EMO] to initiate a progress review. 
+====
+
+A progress review provides the xref:roles-emo[EMO] with an opportunity to review the project team's practices to make sure that the the team is doing the right sorts of things to grow the project and attract diversity, has the recommended documentation in place, and is correctly implementing the {edpLink} and xref:ip[intellectual property due diligence process]. The xref:checklist[project checklist] describes the sorts of things that the EMO looks for when they engage in a review. Note that the checklist is used primarily as a means of identifying opportunities for the project to improve their open source practices and that absolute conformity with the list is considered aspirational, not an absolute requirement. 
+
+[NOTE]
+====
+The EMO is using GitLab issues to track the status of project's reviews, you can see the template for a Project Review https://gitlab.eclipse.org/eclipsefdn/emo-team/emo/-/blob/main/.gitlab/issue_templates/project_review.md?ref_type=heads/[here]. 
+====
 
 [WARNING]
 ====
@@ -143,8 +167,8 @@ Finally, a progress review provides the community and the Eclipse Foundation Mem
 {forgeName} open source projects don't operate in a vacuum. While a progress review provides an opportunity for the EMO, PMC, and community to have a look at the project, our expectation is that the open source project is operating as part of the community and that all of these parties will have ongoing opportunities to interact and provide guidance.
 ====
 
-[[release-graduation]]
-=== Graduation Reviews
+[[releasesandreviews-graduation]]
+==== Graduation Reviews
 
 The purpose of a _graduation review_ is to confirm that the project has a working and demonstrable code base of sufficiently high quality active and sufficiently diverse communities; has adopters, developers, and users operating fully in the open following the {edpLink}; and is a credit to {forgeName} and is functioning well within the larger {forgeName} community
 
@@ -159,7 +183,43 @@ For a graduation review, review documentation must be provided by the project te
 
 The graduation review documentation should demonstrate that members have learned the ropes and logistics of being {aForgeName} project. That is, the project "gets the {forgeName} way".
 
-[[release-faq]]
+
+[[releasesandreviews-restructuring]]
+==== Restructuring Reviews
+
+A Restructuring review is a type of Review that is used to notify the community of substantial changes to one or more existing project's structure, governance, or scope.
+
+The purpose of a Restructuring Review is to notify the community of significant changes to one or more Projects. Examples of "significant changes" include:
+* Movement of significant chunks of functionality from one Project to another.
+* Modification of the Project structure, e.g. combining multiple Projects into a single Project, or decomposing a single Project into multiple Projects.
+* Change of Project Scope.
+
+[NOTE]
+====
+Send an email to mailto:{emoEmail}[EMO] to initiate a restructuring review. 
+====
+
+Restructuring reviews begin with a formal proposal submitted by project leaders to the EMO. The proposal should outline the rationale for the restructuring and provide a detailed implementation plan (a paragraph with some context is considered formal enough). Once submitted, the project team has the responsibility to inform their community and PMC using the appropriate public channels. The EMO will then schedule a formal restructuring review that will run for at least a week, during which the Eclipse community engages in a thorough evaluation, providing feedback and participating in relevant discussions related to the impact of the restructuring.
+
+The EMO uses this https://gitlab.eclipse.org/eclipsefdn/emo-team/emo/-/blob/main/.gitlab/issue_templates/project_restructuring.md?ref_type=heads/[GitLab template] as a starting point to track the status of restructuring reviews. Please note that due to the variety of restructuring cases that may arise, the template will be modified to align with the specific review rationale.
+
+[[releasesandreviews-termination]]
+==== Termination Reviews
+Initiating a termination review is a crucial step in managing projects that have reached the end of their lifecycle or are no longer sustainable. This process is typically initiated when project leaders or stakeholders believe that a project should be retired or terminated. 
+
+To kickstart the termination review, a formal proposal is submitted to the EMO and PMC. This proposal should provide a rationale for the termination, outlining the reasons behind it, such as lack of activity or relevance, and the potential implications for the Eclipse community. Once submitted, the EMO schedules a formal review period, during which the Eclipse community can provide feedback and comments on the termination.
+
+[NOTE]
+====
+Send an email to mailto:{emoEmail}[EMO] to initiate a termination review. 
+====
+
+Once the termination request is submitted, the EMO will schedule a formal review that will run for at least a week. The project team has the responsibility to inform their community and PMC using the appropriate public channels. During the termination review period the Eclipse community engages in a thorough evaluation, providing feedback and participating in relevant discussions related to the impact of the termination. During this period, there is always the possibility that someone may express interest in taking over the project. In such cases, the termination review is withdrawn, and instead, a restructuring or progress review is scheduled, depending on the specific circumstances.
+
+The EMO uses this https://gitlab.eclipse.org/eclipsefdn/emo-team/emo/-/blob/main/.gitlab/issue_templates/project_termination.md?ref_type=heads/[GitLab template] as a starting point to track the status of termination reviews. The template is always modified to align with the specific review rationale.
+
+
+[[releasesandreviews-faq]]
 === Frequently Asked Questions
 
 [qanda]
