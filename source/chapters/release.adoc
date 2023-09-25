@@ -14,7 +14,7 @@
 ////
 
 [[releasesandreviews]]
-== Project Releases and Project Reviews
+== Project Releases and Reviews
 
 Releases and reviews are crucial aspects of the project lifecycle within the Eclipse Development Process. Through regular and transparent releases, Eclipse projects ensure that their software remains up-to-date and reliable.
 
