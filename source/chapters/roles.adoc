@@ -69,7 +69,7 @@ A project lead is not necessary a technical lead. We have no formal designation 
 
 Any committer can initiate a xref:progress-review[review] with the EMO, but the EMO will always copy the project lead(s) in related communication to ensure that they are aware that the committer is acting as their delegate. 
 
-Project leads can also request the EMO to initiate a restructuring review in case a project needs to change the meaning of the scope or make any other significant changes to one or more Projects. 
+Project leads can also request the EMO to initiate a xref:release-restructuring[restructuring review] in case a project needs to change the meaning of the scope or make any other significant changes to one or more Projects. 
 
 [#roles-pmc]
 == Project Management Committee
