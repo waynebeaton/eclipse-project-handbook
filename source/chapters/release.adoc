@@ -233,11 +233,11 @@ Yes.
 
 How often should we do releases? ::
 
-This depends very much on the nature of your project and the expectations of your community and stake holders. If you're not sure, connect with your mentors and top-level project for guidance.
+This depends very much on the nature of your project and the expectations of your community and stake holders. If you're not sure, connect with your xref:roles-pmc[PMC] for guidance.
 
 How much effort should we put into this? ::
 
-The amount of effort varies based on the nature of the team, and expectations of the community and stake holders. Generally, though, a project team shouldn't spend more than a couple of hours working directly on the formal aspects of a progress review. If the amount of effort seems too onerous, you may be trying too hard. Connect with your project mentors, top-level project's PMC, or the mailto:{emoEmail}[EMO] for guidance.
+The amount of effort varies based on the nature of the team, and expectations of the community and stake holders. Generally, though, a project team shouldn't spend more than a couple of hours working directly on the formal aspects of a progress review. If the amount of effort seems too onerous, you may be trying too hard. Connect with your xref:roles-pmc[PMC] or the mailto:{emoEmail}[EMO] for guidance.
 
 Do I need to engage in a progress review? ::
 
@@ -277,4 +277,4 @@ Yes. In fact, the EMO strongly encourages {forgeName} open source projects in th
 
 How can I get help? ::
 
-Contact your mentors (for projects in the incubation phase), xref:roles-pmc[Project Management Committee] (PMC), or the mailto:{emoEmail}[EMO].
+Post your question on the {incubationListUrl}[Incubation Mailing list], or contact your xref:roles-pmc[Project Management Committee] (PMC) or the mailto:{emoEmail}[EMO].

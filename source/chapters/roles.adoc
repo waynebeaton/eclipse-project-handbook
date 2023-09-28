@@ -170,8 +170,7 @@ The Eclipse Architecture Council serves the community by identifying and tacklin
 More concretely, the Eclipse Architecture Council serves four basic purposes:
 
 - To maintain and interpret the {edpLink};
-- To provide advice to the xref:roles-emo[Eclipse Management Organization];
-- To provide xref:starting-proposal-mentor[mentoring services] to new projects; and
+- To provide advice to the xref:roles-emo[Eclipse Management Organization];and
 - To contribute best practices and advice to {forgeName} open source projects.
 
 Every xref:roles-pmc[PMC] may appoint a representative to the Architecture Council to represent the interests of the PMC and corresponding Top-level Project. Every Strategic Member of the Eclipse Foundation may also appoint a representative. Other Architecture Council Members are nominated and voted on by the Architecture Council itself, and appointed by the council by the Eclipse Foundation's Executive Director. Appointed members serve a two year renewable term.
@@ -188,7 +187,7 @@ xref:roles-cm[Committers] and xref:roles-pl[Project Leads] should connect with t
 [#roles-emo]
 == Eclipse Management Organization (EMO)
 
-The Eclipse Management Organization (EMO) consists of the Eclipse Foundation staff, and the Eclipse Architecture Council. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the Eclipse Foundation Development Process. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead, mentor, or PMC, ask the EMO.
+The Eclipse Management Organization (EMO) consists of the Eclipse Foundation staff, and the Eclipse Architecture Council. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the Eclipse Foundation Development Process. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead, or xref:roles-pmc[PMC], ask the EMO.
 
 [#roles-faq]
 == Frequently Asked Questions

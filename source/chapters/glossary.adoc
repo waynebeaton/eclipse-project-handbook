@@ -21,11 +21,7 @@ Architecture Council ::
 
 The xref:roles-ac[Eclipse Architecture Council] (AC) serves the community by identifying and tackling any issues that hinder Eclipse's continued technological success and innovation, widespread adoption, and future growth. This involves technical architecture as well as open source processes and social aspects. Comprising the finest technical leaders from all community stake holders, it is the council's goal to keep the projects successful and healthy, the processes simple and smooth, and the communities vibrant and cohesive.
 
-Architecture Council Mentor ::
-
-The xref:roles-ac[Eclipse Architecture Council] (AC) is a body of battle-hardened Eclipse committers. All new projects are required to have at least one mentor taken from the ranks of the AC. Your project mentors will help you find answers to any questions you may have about the {edpLink} and life-in-general within the Eclipse community. If your mentor doesn't have an answer to your question, they can draw on the wisdom of the full AC and the EMO.
-
-Board of Directors ::	
+Board of Directors ::
 
 The business and technical affairs of the Eclipse Foundation are managed by or under the direction of the Eclipse Board of Directors (or more simply, _The Board_). 
 
@@ -63,7 +59,7 @@ The purpose of the Eclipse Contributor Agreement (ECA) is to provide a written r
 
 Eclipse Management Organization (EMO) ::
 
-The Eclipse Management Organization (EMO) consists of the Eclipse Foundation staff, and the xref:roles-ac[Eclipse Architecture Council]. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the {edpLink}. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead, mentor, or PMC, ask the EMO.
+The Eclipse Management Organization (EMO) consists of the Eclipse Foundation staff, and the xref:roles-ac[Eclipse Architecture Council]. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the {edpLink}. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead or PMC, ask the EMO.
 
 EMO Executive Director ::
 
