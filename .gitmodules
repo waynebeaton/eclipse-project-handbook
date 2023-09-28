@@ -9,5 +9,6 @@
     ignore = dirty
 [submodule "source/efsp"]
 	path = source/efsp
-	url = https://gitlab.eclipse.org/eclipsefdn/emo-team/policies/specification-process
+	url = https://gitlab.eclipse.org/eclipsefdn/emo-team/policies/specification-process.git
+	branch = version_1_3
     ignore = dirty
