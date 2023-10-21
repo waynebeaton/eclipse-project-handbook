@@ -366,21 +366,12 @@ The baseline configuration used by the Eclipse Foundation can be accessed https:
 
 [#resources-git]
 
-https://www.gerritcodereview.com/[Gerrit] provides web based code review and repository management for the Git version control system. Many projects use Gerrit to reduce barriers and encourage contribution to the project. {helpdeskUrl}[Open an issue] to request that the Eclipse IT Team configure your Git repository for Gerrit. 
-
-Commits may be pushed directly to the Git repository through Gerrit by a project committer (e.g. to the `main` branch).
-
-Anybody can push to a `refs/for/*` branch for review in a Gerrit repository. A push that includes commits that do not conform to the required form will be rejected. Commits intended for review should have a {gerritUrl}/Documentation/user-changeid.html[`Change-Id`]. The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect incoming Gerrit review requests to ensure that the contributor has a valid ECA on file; attempts to push will fail in the case where the author credentials cannot be matched to an Eclipse Foundation account with a signed ECA.
-
-[TIP]
-====
-You can {gerritUrl}[browse {forgeName} repositories] directly on the Gerrit server.
-====
+https://www.gerritcodereview.com/[Gerrit] provides web based code review and repository management for the Git version control system. Many projects use Gerrit to reduce barriers and encourage contribution to the project. As Gerrit is deprecated, we encourage projects to use GitLab or GitHub for code hosting. 
 
 [[resources-issues]]
 === Issue Trackers
 
-{forgeName} projects must use an Eclipse Foundation-provided issue tracker. Project teams may opt to use either the {bugzillaUrl}[{forgeName} Bugzilla] instance or -- for projects that use <<resources-github,GitHub>> -- GitHub Issues instances associated with Eclipse Foundation-managed GitHub project repositories. 
+{forgeName} projects must use an Eclipse Foundation-provided issue tracker. Project teams may opt to use either the <<resources-gitlab, Eclipse Foundation GitLab>> instance or -- for projects that use <<resources-github,GitHub>> -- GitHub Issues instances associated with Eclipse Foundation-managed GitHub project repositories. 
 
 [#resources-mailing-list]
 === Mailing Lists
@@ -452,7 +443,7 @@ ifeval::["{forgeName}"!="Eclipse"]
 The <<pmi,Project Management Infrastructure>> (PMI) provides the main <<pmi-project-page,project website>>. Website URLs take the form of `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`).
 endif::[]
 
-Websites _not_ hosted by the Eclipse Foundation are considered <<trademark-external-community,community portals>> and are subject to the {trademarkGuidelinesUrl}[Eclipse Foundation Trademark Usage Guidelines] (the Eclipse Foundation asserts ownership of all project name trademarks).
+Websites _not_ hosted by the Eclipse Foundation are considered <<trademark-external-community,community portals>> and are subject to the {trademarkGuidelinesUrl}[Eclipse Foundation Trademark Usage Guidelines] (the Eclipse Foundation asserts ownership of all project name trademarks). Furthermore, projects may be required to comply to specific security guidelines and requirements outlined by the Eclipse Foundation’s Security team.
 
 [#resources-analytics]
 === Analytics and Data Collection
