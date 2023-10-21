@@ -16,7 +16,7 @@
 [[release]]
 == Project Releases and Reviews
 
-Releases and reviews are crucial aspects of the project lifecycle within the Eclipse Development Process. Through regular and transparent releases, Eclipse projects ensure that their software remains up-to-date and reliable.
+Releases and reviews are crucial aspects of the project life cycle within the Eclipse Development Process. Through regular and transparent releases, Eclipse projects ensure that their software remains up-to-date and reliable.
 
 Annually (more frequent for specification projects), Eclipse projects undergo a thorough review process in close collaboration with the Eclipse Management Organization (EMO) and the Project Management Committee (PMC). This collaborative effort ensures that each project adheres to high-quality standards and follows the best open-source software (OSS) practices and guidelines established by the Eclipse Foundation. Reviews may be associated with a specific release, referred to as a "Release Review", or may not be linked to any particular release, known as a "Progress Review".
 
@@ -205,7 +205,7 @@ The EMO uses this https://gitlab.eclipse.org/eclipsefdn/emo-team/emo/-/blob/main
 
 [[release-termination]]
 ==== Termination Reviews
-Initiating a termination review is a crucial step in managing projects that have reached the end of their lifecycle or are no longer sustainable. This process is typically initiated when project leaders or stakeholders believe that a project should be retired or terminated. 
+Initiating a termination review is a crucial step in managing projects that have reached the end of their life cycle or are no longer sustainable. This process is typically initiated when project leaders or stakeholders believe that a project should be retired or terminated. 
 
 To kickstart the termination review, a formal proposal is submitted to the EMO and PMC. This proposal should provide a rationale for the termination, outlining the reasons behind it, such as lack of activity or relevance, and the potential implications for the Eclipse community. Once submitted, the EMO schedules a formal review period, during which the Eclipse community can provide feedback and comments on the termination.
 
