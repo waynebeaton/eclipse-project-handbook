@@ -1,0 +1,101 @@
+////
+ * Copyright (C) 2023 Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-FileType: SOURCE
+ *
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+[#cm-badges]
+= Committer Badges
+
+image::images/credly_committer.png["The Committer Badge",150,150,float="right"]
+
+The role of a committer is one of great responsibility within open source communities. Committers are individuals who have demonstrated their expertise, commitment, and contribution to a project or community and have earned the trust of the existing committers or project maintainers.
+
+Committers have write access to the source code repositories. They have the authority to directly contribute changes to the codebase and have their contributions integrated into the project. This role often involves reviewing and merging code submissions from other contributors, ensuring that the code meets the project's standards and maintaining the stability and quality of the codebase.
+
+Being a committer requires technical skills, knowledge of the project's codebase and development practices, and a strong understanding of the project's goals and objectives. Committers are responsible for making important decisions related to the project's direction, resolving conflicts, and ensuring that the project evolves according to its roadmap.
+
+The role of a committer comes with a set of obligations and responsibilities, such as actively participating in discussions, providing guidance and support to other contributors, and upholding the project's values and standards. Committers play a crucial role in shaping the project, maintaining its integrity, and fostering a collaborative and inclusive community.
+
+Becoming an Eclipse committer is a significant accomplishment, reflecting the continuous dedication, contribution, and earned trust of the community.
+
+The Eclipse Foundation awards this badge to certify developers who have attained committer status within the Eclipse Foundation's Community. 
+
+[discrete]
+== Who is Entitled to Receive the Badge?
+
+Everybody who has committer status on one or more Eclipse Projects is eligible to receive the badge.
+
+[discrete]
+== How Do I Get the Badge?
+
+Roll out starts after EclipseCon 2023 (November 2023). From that point forward, we will offer the badge to all new committers when we have their fully executed committer agreement. 
+
+[TIP]
+====
+If you work for a member company, then we most likely already have a Member Committer and Contributor Agreement on file for you; we might otherwise require that you complete an Individual Committer Agreement. The EMO Records Team will help you sort this out.
+====
+
+Roll out to existing committers will occur in stages with anticipated completion in early 2024.
+
+Former committers can request the badge by sending a note to {emoRecordsEmailLink}.
+
+[#cm-badges-faq]
+== Frequently Asked Questions
+
+[qanda]
+
+Do I have to accept the Committer badge? ::
+
+No.
+
+Do I have to be an Eclipse Committer to receive the badge? ::
+
+Yes.
+
+How do I become an Eclipse Committer? ::
+
+The most common way for somebody to join an Eclipse Foundation open source project as a committer is to be elected to an active project. All Eclipse open source projects operate in an open, transparent, and meritocratic manner, so the path to becoming a committer starts with participation: clone the repository, make some changes, and contribute those changes as a merge/pull request. Then do it again.
++
+After you have demonstrated, through a pattern of high quality contributions, that you understand how the open source project works, and that you understand the Eclipse Foundation Development Process and are prepared to implement the Eclipse IP Policy, an existing committer will invite you to join the team and initiate an election. Committer elections start with a nomination by an existing committer that includes a statement of merit that usually takes the form of a list of the various contributions that the individual has made to the project. 
++
+What constitutes a sufficient demonstration of merit varies by project team.
++
+For more information, please see xref:roles-cm[Committers].
+
+Do I have to make a specific number of contributions to receive the badge? ::
+
+No. The role of Eclipse committer is awarded to individuals who have already demonstrated to the project team and community that they understand the responsibilities inherent in the role. If the contributions that you’ve made are sufficient enough for the project team to elect you into the role, then you’re eligible to receive the badge.
+
+How do I request the Committer badge? ::
+
+Current and former committers can send a note to {emoRecordsEmailLink} to request the badge.
+
+I’m a committer on multiple Eclipse open source projects, do I get multiple badges? ::
+
+No. You get one. Don’t be greedy.
+
+I was an Eclipse committer in the past, but no longer have committer status; am I entitled to the badge? ::
+
+Yes. Send a note to {emoRecordsEmailLink} to request the badge.
+
+What can I do with the badge? ::
+
+You can add the badge to your professional profiles, such as LinkedIn, to highlight your expertise and stand out to potential employers or clients.
+By sharing your badge on social media platforms, you can increase your visibility and attract the attention of potential employers, colleagues, or collaborators. It serves as a powerful endorsement of your skills and can lead to networking opportunities.
++
+Show it to your mom.
+
+What is Credly? ::
+
+Credly is a digital credentialing platform that allows individuals and organizations to create, issue, and manage digital badges. 
+
+Do I need an account with Credly to accept the badge? ::
+
+Yes. You have the option to create an account or you can sign into Credly using your existing Google or Apple account.
