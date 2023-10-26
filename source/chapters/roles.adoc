@@ -192,7 +192,7 @@ The Eclipse Management Organization (EMO) consists of the Eclipse Foundation sta
 [#roles-faq]
 == Frequently Asked Questions
 
-[qand]
+[qanda]
 
 Is the Project Lead a super-committer? ::
 
