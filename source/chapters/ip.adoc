@@ -26,11 +26,11 @@ The terms "intellectual property", "project content" and "third-party content" a
 
 The term intellectual property (IP) refers to any sort of creative work, be it literature, art, or software. In the realm of open source software, artifacts like source code, documentation, and images are considered intellectual property. Unless otherwise stated, intellectual property is the property of its creator, who may grant permission for others to use that intellectual property by providing a license.
 
-The ease with which software can be copied and combined makes it challenging to know with confidence if content can be used without running into legal issues. Any sort of serious software development effort must be accompanied by a well-defined IP due diligence process that can identify issues and mitigate the risk of leveraging the work of others. IP due diligence is a time consuming process that requires specialized skills and a keen eye for detail.
+The ease with which software can be copied and combined makes it challenging to know with confidence if content can be used without running into legal issues. Any sort of serious software development effort must be accompanied by a well-defined IP due diligence process that can identify issues and mitigate the risk of leveraging the work of others. IP due diligence is a time consuming process that requires specialised skills and a keen eye for detail.
 
 [WARNING]
 ====
-The Eclipse Foundation's IP Team **does not (and cannot) give legal advice**. Rather, the team leverages their experience, along with various resources, to identify licenses in content, and make judgment calls as to whether or not licenses be being used in a consistent and compatible manner.
+The Eclipse Foundation's IP Team **does not (and cannot) give legal advice**. Rather, the team leverages their experience, along with various resources, to identify licenses in content, and make judgement calls as to whether or not licenses be being used in a consistent and compatible manner.
 ====
 
 There are different kinds of content (e.g., source code, documentation, and images) to consider. For the purposes of the Eclipse Foundation's IP Due Diligence Process, we consider all types of content, not just code, to be intellectual property that is subject to the process (even when we say _code_--especially in the context of IP due diligence--you should assume that we mean _content_).
@@ -79,7 +79,7 @@ Data collected in IPLab is used as a source for the xref:ip-dash-db[Eclipse Dash
 
 {clearlyDefinedUrl}[ClearlyDefined] is an OSI project that combines automated harvesting of copyright and license information from software repositories and curation thereof by trusted members of the community to produce a massive database of information about content. The Eclipse Foundation's IP Team works with the ClearlyDefined team, providing input into their processes and helping to curate their data.
 
-In rough terms, if the license information for third-party content can be validated by the Eclipse Foundation's <<ip-prereq-diligence, due diligence process>> using ClearlyDefined data, then no further action is required. The xref:ip-license-tool[Eclipse Dash License Tool] uses ClearlyDefined as a source of license information (and is the easiest way for {forgeName} committers to leverage ClearlyDefined).
+In rough terms, if the license information for third-party content can be validated by the Eclipse Foundation's xref:ip-prereq-diligence[due diligence process] using ClearlyDefined data, then no further action is required. The xref:ip-license-tool[Eclipse Dash License Tool] uses ClearlyDefined as a source of license information (and is the easiest way for {forgeName} committers to leverage ClearlyDefined).
 
 [#ip-clearlydefined-identifiers]
 ==== ClearlyDefined Identifiers
@@ -88,7 +88,7 @@ In order to facilitate the use of automation in the IP due diligence process, th
 
 The notion of an identifier for content is pretty natural for developers who are familiar with technologies like Apache Maven which has well defined means of uniquely identifying content in a well-defined software repository. Maven coordinates -- which combine `groupid`, `artifactid`, and `version` (often referred to as a “GAV”) -- identify a very specific bit of content (especially when combined with a specific source, e.g. Maven Central). For example, `org.junit.jupiter:junit-jupiter:5.5.2` unambiguously identifies content on Maven Central that is known to be under the Eclipse Public License version 2.0 (EPL-2.0). Other systems use different means of identifying content: `node.js`, for example, uses a pURL-like identifier for content in the NPM repository (e.g., `@babel/generator@7.62`).
 
-To bridge the gap between the different means of identifying content (and fill in some of the blanks), we’ve adopted the ClearlyDefined project’s five part identifiers which includes the type of content, its software repository source, its name space and name, and version/revision. ClearlyDefined coordinates are roughly analogous to Maven coordinates, but -- by including the type and source -- provide a greater degree of precision. ClearlyDefined uses slashes to separate the parts of the identifier, so the Maven GAV `org.junit.jupiter:junit-jupiter:5.5.2` maps to `maven/mavencentral/org.junit.jupiter/junit-jupiter/5.5.2` and the NPM identifier `@babel/generator@7.62` maps to `npm/npmjs/@babel/generator/7.6.2`.
+To bridge the gap between the different means of identifying content (and fill in some of the blanks), we've adopted the ClearlyDefined project’s five part identifiers which includes the type of content, its software repository source, its namespace and name, and version/revision. ClearlyDefined coordinates are roughly analogous to Maven coordinates, but -- by including the type and source -- provide a greater degree of precision. ClearlyDefined uses slashes to separate the parts of the identifier, so the Maven GAV `org.junit.jupiter:junit-jupiter:5.5.2` maps to `maven/mavencentral/org.junit.jupiter/junit-jupiter/5.5.2` and the NPM identifier `@babel/generator@7.62` maps to `npm/npmjs/@babel/generator/7.6.2`.
 
 [#ip-clearlydefined-using]
 ==== Using ClearlyDefined
@@ -154,7 +154,7 @@ Contributions made by {forgeName} committers **do not** require review by the Ec
 
 Contributions by others (i.e., developers who are not committers) must be received via an Eclipse Foundation channel (e.g., GitHub pull request, GitLab merge request, Gerrit review, or attachment on an issue). 
 
-When the contributor has signed the <<contributing-eca, Eclipse Contributor Agreement>> (ECA) and the following conditions are met, further investigation is not required:
+When the contributor has signed the xref:contributing-eca[Eclipse Contributor Agreement] (ECA) and the following conditions are met, further investigation is not required:
 
 * Was developed from scratch; written 100% by submitting contributor;
 * Was submitted under the terms of the project license;
@@ -280,7 +280,7 @@ $ mvn dependency:tree
 Every library in the entire transitive closure of the dependency graph is a prerequisite.
 
 [graphviz, images/mvn-example-dependencies, svg]
-.Visualization of the dependency graph (the Maven _type_ and _scope_ have been removed for brevity)
+.Visualisation of the dependency graph (the Maven _type_ and _scope_ have been removed for brevity)
 ----
 digraph {
    graph [ranksep="0.25"; nodesep="0.25"; fontsize=12];
@@ -305,7 +305,7 @@ digraph {
 }
 ----
 
-In this example, `commons-httpclient:commons-httpclient:3.1`, `commons-logging:commons-logging:1.0.4`, and `commons-codec:commons-codec:1.2` must all be <<ip-prereq-diligence, vetted for license compatibility>>.
+In this example, `commons-httpclient:commons-httpclient:3.1`, `commons-logging:commons-logging:1.0.4`, and `commons-codec:commons-codec:1.2` must all be xref:ip-prereq-diligence[vetted for license compatibility].
 
 [#ip-prereq-versions]
 ==== Versions of Dependencies
@@ -457,7 +457,7 @@ What the License Tool does is relatively simple:
 * it first queries the Eclipse Foundation's xref:ip-dash-db[Dash Database]; 
 ** if an entry has been vetted by the IP Team and has been approved for use, then it is marked as `approved`;
 ** if an entry has been vetted by the IP Team and flagged as somehow problematic, it will be marked as `restricted`
-* it then sends the content that has **not** already been flagged as either `approved` or `restricted` to <<ip-clearlydefined, ClearlyDefined>>
+* it then sends the content that has **not** already been flagged as either `approved` or `restricted` to xref:ip-clearlydefined[ClearlyDefined]
 ** ClearlyDefined xref:ip-clearlydefined-using[matches] are marked as `approved`;
 * Everything else is marked `restricted`. 
 
@@ -564,7 +564,7 @@ The 2019 update to the Eclipse Foundation's IP Policy, approved by the Board of 
 
 **Leverage other sources of license information for third-party content.** With this change to license certification only for third-party content, we are able to leverage existing sources of information license information. That is, the requirement that the  IP Team personally review every bit of third-party content has been removed and we can now leverage other _trusted_ sources.
 
-**ClearlyDefined is a _trusted_ source of license information.** We currently have two trusted sources of license information: The Eclipse Foundation’s xref:ip-dash-db[Dash Database] and xref:ip-clearlydefined[ClearlyDefined]. The xref:ip-dash-db[Dash Database] has been painstakingly built over most of the lifespan of the Eclipse Foundation; it contains a vast wealth of deeply vetted information about many versions of many third-party libraries. ClearlyDefined is an OSI project that combines automated harvesting of software repositories and curation by trusted members of the community to produce a massive database of license (and other) information about content.
+**ClearlyDefined is a _trusted_ source of license information.** We currently have two trusted sources of license information: The Eclipse Foundation’s xref:ip-dash-db[Dash Database] and xref:ip-clearlydefined[ClearlyDefined]. The xref:ip-dash-db[Dash Database] has been painstakingly built over most of the life span of the Eclipse Foundation; it contains a vast wealth of deeply vetted information about many versions of many third-party libraries. ClearlyDefined is an OSI project that combines automated harvesting of software repositories and curation by trusted members of the community to produce a massive database of license (and other) information about content.
 
 [[ip-piggyback]]**Piggyback CQs are no longer required.** CQs had previously been used for tracking both the vetting process and the use of third-party content. With the changes, we are no longer required track the use of third-party content using CQs, so piggyback CQs are no longer necessary.
 
@@ -572,9 +572,9 @@ The 2019 update to the Eclipse Foundation's IP Policy, approved by the Board of 
 
 **CQs are not required for third-party content in all cases.** In the case of third-party content due diligence, xref:ip-cq[CQs] are now only used to track the vetting process. 
 
-**CQs are no longer required _before_ third-party content is introduced.** Previously, the IP Policy required that all third-party content must be vetted by the IP Team before it can be used by {aForgeName} Project. The IP Policy updates turn this around. {forgeName} project teams may now introduce new third-party content during a development cycle without first checking with the IP Team. That is, a project team may commit build scripts, code references, etc. to third-party content to their source code repository without first creating a <<ip-cq,CQ>> to request IP Team review and approval of the third-party content. At least during the development period between releases, the onus is on the project team to -- with reasonable confidence -- ensure any third-party content that they introduce is license compatible with the project’s license. Before any content may be included in any formal release the project team must engage in the <<ip-prereq-diligence, due diligence process>> to validate that the third-party content licenses are compatible with the project license.
+**CQs are no longer required _before_ third-party content is introduced.** Previously, the IP Policy required that all third-party content must be vetted by the IP Team before it can be used by {aForgeName} Project. The IP Policy updates turn this around. {forgeName} project teams may now introduce new third-party content during a development cycle without first checking with the IP Team. That is, a project team may commit build scripts, code references, etc. to third-party content to their source code repository without first creating a xref:ip-cq[CQ] to request IP Team review and approval of the third-party content. At least during the development period between releases, the onus is on the project team to -- with reasonable confidence -- ensure any third-party content that they introduce is license compatible with the project’s license. Before any content may be included in any formal release the project team must engage in the xref:ip-prereq-diligence[due diligence process] to validate that the third-party content licenses are compatible with the project license.
 
-**History may be retained when an existing project moves to the Eclipse Foundation.** We had previously required that the commit history for a project moving to the Eclipse Foundation be squashed and that the <<ip-initial-contribution, initial contribution>> be the very first commit in the repository. This is no longer the case; existing projects are now encouraged (but not required) to retain their commit history. The initial contribution must still be provided to the IP Team via xref:ip-cq[CQ] as a snapshot of the `HEAD` state of the existing repository (if any).
+**History may be retained when an existing project moves to the Eclipse Foundation.** We had previously required that the commit history for a project moving to the Eclipse Foundation be squashed and that the xref:ip-initial-contribution[initial contribution] be the very first commit in the repository. This is no longer the case; existing projects are now encouraged (but not required) to retain their commit history. The initial contribution must still be provided to the IP Team via xref:ip-cq[CQ] as a snapshot of the `HEAD` state of the existing repository (if any).
 
 The due diligence process for project content is unchanged.
 
@@ -582,17 +582,17 @@ The due diligence process for project content is unchanged.
 === Frequently Asked Questions
 
 [qanda]
-Can <<ip-third-party,third-party content>>  be included in an Eclipse project's source code repository? ::
+Can xref:ip-third-party[third-party content]  be included in an Eclipse project's source code repository? ::
 
 Yes. Third-party content can be included in binary form (e.g. source and binary JAR files) in a project's source code repository if that makes technical sense for the project.
 +
-Third-party content that is stored in the project repository as source code is effectively a _fork_ of that third-party content. This is a bit of a grey area in that it is _third-party content_ that will be ultimately treated as <<ip-project-content,_project content_>> (i.e. contributors may potentially modify it). 
+Third-party content that is stored in the project repository as source code is effectively a _fork_ of that third-party content. This is a bit of a grey area in that it is _third-party content_ that will be ultimately treated as xref:ip-project-content[_project content_] (i.e. contributors may potentially modify it). 
 +
 Third-party _source code_ must be reviewed by the IP Team (that is, open a xref:ip-request[Content Review Request]) before it may be included in a project repository.
 
 The IP Due Diligence Process says that I need to request a review for project content contributions that exceed 1,000 lines of code; how do I calculate lines of code? ::
 
-The short version is that the Eclipse Foundation trusts the judgment of Eclipse committers regarding how lines of code should be calculated. What we're interested in is net new intellectual property. With this in mind, it's not generally correct to just add the number of lines added to the lines removed; it's also not generally correct to use the difference of these numbers to determine the true number of lines in a contribution. Again, as a committer we trust your judgment.
+The short version is that the Eclipse Foundation trusts the judgement of Eclipse committers regarding how lines of code should be calculated. What we're interested in is net new intellectual property. With this in mind, it's not generally correct to just add the number of lines added to the lines removed; it's also not generally correct to use the difference of these numbers to determine the true number of lines in a contribution. Again, as a committer we trust your judgement.
 +
 If a contribution contains significant new functionality, or if you are not certain of the provenance or are otherwise concerned that there may be intellectual property issues with a contribution (of any size), then the IP Team needs to be engaged.
 +
@@ -604,7 +604,7 @@ No. A release may only use released content from other projects. A project may d
 Are project websites subject to the IP Due Diligence Process? ::
 Website content is separate from project content. Project teams are expected to respect licenses for all web site content, but are not required to submit website content (including third-party libraries) for review by the IP Team.
 
-What is "Type A" and "Type B" due diligence?::
+What is "Type A" and "Type B" due diligence? ::
 Versions of the Eclipse Foundation's Intellectual Property Policy prior to October 2019 referred to two different types of intellectual property due diligence, named _Type A_ and _Type B_. Project teams were able to choose the type of IP due diligence that they wanted for their project: Type A which was concerned with validating that the licenses of the content were compatible with the project license, and Type B which offered a more thorough check including provenance and other deep analysis. We phased out Type B in October 2019, and now focus solely on license compatibility for third-party content.
 
 [[ip-parallel-ip]]What is Parallel IP? ::

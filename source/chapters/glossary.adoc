@@ -47,19 +47,19 @@ Every project has a _development list_ or _dev-list_. All project committers mus
 
 Ecosystem ::
 
-A commercial ecosystem is a system in which companies, organizations, and individuals all work together for mutual benefit. There already exists a vast ecosystem of companies that base significant parts of their business on {forgeName} technology. This takes the form of including {forgeName} code in products, providing support, and other services. You become part of an ecosystem by filling the needs of commercial interests, being open and transparent, and being responsive to feedback. Ultimately, being part of a commercial ecosystem is a great way to ensure the longevity of your project: companies that build their business around your project are very motivated to contribute to your project.
+A commercial ecosystem is a system in which companies, organisations, and individuals all work together for mutual benefit. There already exists a vast ecosystem of companies that base significant parts of their business on {forgeName} technology. This takes the form of including {forgeName} code in products, providing support, and other services. You become part of an ecosystem by filling the needs of commercial interests, being open and transparent, and being responsive to feedback. Ultimately, being part of a commercial ecosystem is a great way to ensure the longevity of your project: companies that build their business around your project are very motivated to contribute to your project.
 
 Eclipse ::
 
-This is a tough one. For most people in the broader community, _Eclipse_ refers to the _Eclipse Java IDE_ which based on the Java development tools (JDT) project and assembled by the Eclipse Packaging Project. However, the term _Eclipse_ is also used to refer to the Eclipse Foundation, the eclipse.org website, the community, the ecosystem, and -- of course -- The Eclipse Project (which is just one of the top-level projects hosted by the Eclipse Foundation). Confusing? Yes.
+This is a tough one. For a significant number of people in the broader community, _Eclipse_ refers to the _Eclipse Java IDE_ which based on the Java development tools (JDT) project and assembled by the Eclipse Packaging Project. However, the term _Eclipse_ is also used to refer to the Eclipse Foundation, the eclipse.org website, the community, the ecosystem, and -- of course -- The Eclipse Project (which is just one of the top-level projects hosted by the Eclipse Foundation). Confusing? Yes.
 
 Eclipse Contributor Agreement (ECA) ::
 
 The purpose of the Eclipse Contributor Agreement (ECA) is to provide a written record that a contributor has agreed to provide their contributions of code and documentation under the licenses used by the Eclipse Project(s) to which they are contributing. All contributors who are not already committers on the Eclipse Project to which they are contributing must {ecaUrl}[digitally sign the ECA].
 
-Eclipse Management Organization (EMO) ::
+Eclipse Management Organisation (EMO) ::
 
-The Eclipse Management Organization (EMO) consists of the Eclipse Foundation staff, and the xref:roles-ac[Eclipse Architecture Council]. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the {edpLink}. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead or PMC, ask the EMO.
+The Eclipse Management Organisation (EMO) consists of the Eclipse Foundation staff, and the xref:roles-ac[Eclipse Architecture Council]. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the {edpLink}. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead or PMC, ask the EMO.
 
 EMO Executive Director ::
 
@@ -75,7 +75,7 @@ The EMO Records Team (commonly referred to as _EMO Records_) is responsible for 
 
 Genie ::
 
-_Genie_ is the generic term given to automated processes that perform various functions on behalf of project teams, generally focused around builds. The _Eclipse Genie_ performs various tasks (e.g. automated portions of the <<ip, IP Due Diligence Process>>) on behalf of the Eclipse Foundation.
+_Genie_ is the generic term given to automated processes that perform various functions on behalf of project teams, generally focused around builds. The _Eclipse Genie_ performs various tasks (e.g. automated portions of the xref:ip[IP Due Diligence Process]) on behalf of the Eclipse Foundation.
 
 Incubation Phase ::
 
@@ -83,7 +83,7 @@ The purpose of the incubation phase is to establish a fully-functioning open-sou
 
 IP Due Diligence Process ::
 
-The <<ip,Intellectual Property Due Diligence Process>> defines the process by which intellectual property is added to a project. All {forgeName} committers must be familiar with this process.
+The xref:ip[Intellectual Property Due Diligence Process] defines the process by which intellectual property is added to a project. All {forgeName} committers must be familiar with this process.
 	
 Member Company ::
 
@@ -91,7 +91,7 @@ The Eclipse Foundation and Eclipse community is supported by our {memberUrl}[mem
 
 Project::
 
-Projects are where the real work happens. Each project has code, committers, and resources including a web site, source code repositories, space on the build and download server, etc. Projects may act as a parent for one or more child projects. Each child project has its own identity, committers, and resource. Projects may, but do not necessarily, have a dedicated web site. Projects are sometimes referred to as _subprojects_ or as _components_.  The {edpLink}, however, treats the terms _project_, _subproject_, and _component_ as equivalent.
+Projects are where the real work happens. Each project has code, committers, and resources including a website, source code repositories, space on the build and download server, etc. Projects may act as a parent for one or more child projects. Each child project has its own identity, committers, and resource. Projects may, but do not necessarily, have a dedicated website. Projects are sometimes referred to as _subprojects_ or as _components_.  The {edpLink}, however, treats the terms _project_, _subproject_, and _component_ as equivalent.
 
 Project Lead ::
 
@@ -102,7 +102,7 @@ Each top-level project is governed by a xref:#roles-pmc[Project Management Commi
 
 Project Management Infrastructure (PMI) ::
 
-The <<pmi,Project Management Infrastructure>> (PMI) is the system that tracks the state and progress of {forgeName} projects. Project committers can modify the the information represented in the PMI, including the project description, and information about project releases. Automated systems use this information to, for example, generate dashboard and chart information for the project, intellectual property logs, etc.
+The xref:pmi[Project Management Infrastructure] (PMI) is the system that tracks the state and progress of {forgeName} projects. Project committers can modify the the information represented in the PMI, including the project description, and information about project releases. Automated systems use this information to, for example, generate dashboard and chart information for the project, intellectual property logs, etc.
 
 Third-party Content (Dependency)::
 

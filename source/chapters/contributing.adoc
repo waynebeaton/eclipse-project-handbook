@@ -25,8 +25,8 @@ For contributions that contain intellectual property (e.g., source code or docum
 
 To contribute to {aForgeName} open source project, a contributor must:
 
-. Create an <<contributing-account,Eclipse Foundation Account>>;
-. Sign the <<contributing-eca,Eclipse Contributor Agreement>>;
+. Create an xref:contributing-account[Eclipse Foundation Account];
+. Sign the xref:contributing-eca[Eclipse Contributor Agreement];
 . Read the project's contribution guide to learn about coding style and other guidelines for contributions (contribution guidelines are typically found a `CONTRIBUTING` or `README` file in the root of every source code repository);
 . Create a commit:
  * Ensure that the author credentials on the commit record match the email address associated with their Eclipse Foundation Account
@@ -71,33 +71,33 @@ digraph {
 
 [NOTE]
 ====
-{forgeName} committers must engage with the EMO Intellectual Property Team to review your <<ip-project-code, project code>> contributions, or <<ip-third-party, third-party>> content that your contributions leverage. The committers will take are of this, but may need your help as part of the process.
+{forgeName} committers must engage with the EMO Intellectual Property Team to review your xref:ip-project-code[project code] contributions, or xref:ip-third-party[third-party] content that your contributions leverage. The committers will take are of this, but may need your help as part of the process.
 ====
 
-After establishing a pattern of contributing high quality contributions a contributor may be invited to join the project as a committer; an existing project committer will nominate a contributor to be a committer via <<elections-committer, committer election>>.
+After establishing a pattern of contributing high quality contributions a contributor may be invited to join the project as a committer; an existing project committer will nominate a contributor to be a committer via xref:elections-committer[committer election].
 
 [NOTE]
 ====
-In order to grant the ability to assign issues and merge/pull requests to a non-committer contributor on repositories that are hosted either on GitLab or GitHub, a <<contributing-committers,committer>> must designate the individual as a contributor by providing their email address in the <<pmi-contributors,Contributors field>> in the project's metadata (PMI).
+In order to grant the ability to assign issues and merge/pull requests to a non-committer contributor on repositories that are hosted either on GitLab or GitHub, a xref:contributing-committers[committer] must designate the individual as a contributor by providing their email address in the xref:pmi-contributors[Contributors field] in the project's metadata (PMI).
 ====
 
 [[contributing-committers]]
 == Committers
 
-For {forgeName} projects (and the open source world in general), committers are the ones who hold the keys. Committers decide what code goes into the code base, they decide how a project builds, and they ultimately decide what gets delivered to the adopter community. With awesome power, comes awesome responsibility, and so the Open Source Rules of Engagement described by the {edpLink}, puts _meritocracy_ on equal footing with _transparency_ and _openness_: becoming a committer isn’t necessarily hard, but it does require a demonstration of merit.
+For {forgeName} projects (and the open source world in general), committers are the ones who hold the keys. Committers decide what code goes into the code base, they decide how a project builds, and they ultimately decide what gets delivered to the adopter community. With awesome power, comes awesome responsibility, and so the Open Source Rules of Engagement described by the {edpLink}, puts _meritocracy_ on equal footing with _transparency_ and _openness_: becoming a committer isn't necessarily hard, but it does require a demonstration of merit.
 
 In practical terms, there are two ways to become {aForgeName} Committer. 
 
-The first way is to be listed as an initial committer on a new <<starting-proposal,project proposal>>. When projects come to the Eclipse Foundation we need them to actually start with committers, and so we include this as part of the bootstrapping. As part of the process of community vetting a new project proposal, the committers listed are themselves vetted by the community. In effect, the project proposal process also acts as a committer election that’s open to the entire community.
+The first way is to be listed as an initial committer on a new xref:starting-proposal[project proposal]. When projects come to the Eclipse Foundation we need them to actually start with committers, and so we include this as part of the bootstrapping. As part of the process of community vetting a new project proposal, the committers listed are themselves vetted by the community. In effect, the project proposal process also acts as a committer election that’s open to the entire community.
 
-The second way to become a committer is to get voted in via <<elections-committer,committer election>>. After an individual has made a small number of high quality contributions that demonstrate that they understand how the project works, understand the {edpLink} and are prepared to implement the {ipDueDiligenceLink}, a committer will invite them to join the team and initiate the election. Committer elections start with a nomination by an existing committer that includes a statement of merit that usually takes the form of a list various contributions that the individual has made to the project. What constitutes a sufficient demonstration of merit varies by project team.
+The second way to become a committer is to get voted in via xref:elections-committer[committer election]. After an individual has made a small number of high quality contributions that demonstrate that they understand how the project works, understand the {edpLink} and are prepared to implement the {ipDueDiligenceLink}, a committer will invite them to join the team and initiate the election. Committer elections start with a nomination by an existing committer that includes a statement of merit that usually takes the form of a list various contributions that the individual has made to the project. What constitutes a sufficient demonstration of merit varies by project team.
 
 [NOTE]
 ====
 Committer status is assigned on a project-by-project basis. That is, individuals have committer rights only on those projects for which they hold committer status. For all other projects, they are contributors.
 ====
 
-When a contributor becomes a committer, they must be covered by a committer agreement (either a <<paperwork-mcca,Member Committer and Contributor Agreement>> (MCCA) or an <<paperwork-ica,Individual Committer Agreement>> (ICA). Committers on specification projects must be covered by <<specifications-agreements, additional agreements>>. As the last step in the committer election process, the Eclipse Foundation systems will determine which agreement applies and engage a <<paperwork,committer paperwork>> workflow with the new committer to ensure that everything is in place.
+When a contributor becomes a committer, they must be covered by a committer agreement (either a xref:paperwork-mcca[Member Committer and Contributor Agreement] (MCCA) or an xref:paperwork-ica[Individual Committer Agreement] (ICA). Committers on specification projects must be covered by xref:specifications-agreements[additional agreements]. As the last step in the committer election process, the Eclipse Foundation systems will determine which agreement applies and engage a xref:paperwork[committer paperwork] workflow with the new committer to ensure that everything is in place.
 
 [[contributing-account]]
 == Eclipse Foundation Account
@@ -106,7 +106,7 @@ Eclipse Foundation project resources are accessible without an account. That is,
 
 Those members of the community that wish to contribute code patches, open issues, add content to wikis, etc. must create an {accountUrl}[Eclipse Foundation Account].
 
-For contributors and committers, their Eclipse Foundation account is their primary portal into their relationship with the Eclipse Foundation. From their account page, individuals can sign the <<contributing-eca, Eclipse Contributor Agreement>>, manage their mailing list subscriptions, access build resources, and more.
+For contributors and committers, their Eclipse Foundation account is their primary portal into their relationship with the Eclipse Foundation. From their account page, individuals can sign the xref:contributing-eca[Eclipse Contributor Agreement], manage their mailing list subscriptions, access build resources, and more.
 
 [TIP]
 ====
@@ -120,10 +120,10 @@ If you are employed by an {memberUrl}[Eclipse Foundation Member Company] when yo
 
 In the field where it asks "What is your employment status?":
 
-* Highlight "Work for an Eclipse Member Organization"; and 
+* Highlight "Work for an Eclipse Member Organisation"; and 
 * Pick your employer from the list.
 
-.Specify that you work for a member organization.
+.Specify that you work for a member organisation.
 image::images/organization-selection.png[width=75%]
 
 [TIP]
@@ -140,7 +140,7 @@ If you change employers, contact the {emoRecordsEmailLink} to request that they 
 
 [[resources-eca]]The purpose of the Eclipse Contributor Agreement (ECA) is to provide a written record that contributors have agreed to provide their contributions of code and documentation under the licenses used by the Eclipse project(s) they’re contributing to. It also makes it clear that contributors are promising that what they are contributing to Eclipse is code that they wrote, and that they have the necessary rights to contribute it to Eclipse projects. And finally, it documents a commitment from the contributor that their open source contributions will be permanently on the public record.
 
-All contributors, who are not committers on the {forgeName} project, must sign the {ecaUrl}[Eclipse Contributor Agreements] (ECA) to ensure that the necessary <<ip,intellectual property>> (IP) rights to the contribution are granted.
+All contributors, who are not committers on the {forgeName} project, must sign the {ecaUrl}[Eclipse Contributor Agreements] (ECA) to ensure that the necessary xref:ip[intellectual property] (IP) rights to the contribution are granted.
 
 Contributors who are already covered by a committer agreement (either an MCCA or ICA) are not required to also sign the ECA.
 
@@ -165,7 +165,7 @@ It is generally considered good practice (or a nice-to-have) to request a review
 
 Do I need to sign the Eclipse Contributor Agreement (ECA)? ::
 
-If you are not a committer on a particular Eclipse open source project, to contribute (e.g., make pull requests) to that project, you need to be covered by an ECA. If you are already a committer on any Eclipse open source project, then you are already covered by an ECA through your committer agreement and do not need to sign the ECA separately. If your employer has signed the <<paperwork-mcca,Member Committer and Contributor Agreement>>, then you are already covered by an ECA and you do not need to sign the ECA separately.
+If you are not a committer on a particular Eclipse open source project, to contribute (e.g., make pull requests) to that project, you need to be covered by an ECA. If you are already a committer on any Eclipse open source project, then you are already covered by an ECA through your committer agreement and do not need to sign the ECA separately. If your employer has signed the xref:paperwork-mcca[Member Committer and Contributor Agreement], then you are already covered by an ECA and you do not need to sign the ECA separately.
 +
 If you are a committer on a project you do not need an ECA to contribute to that project. 
 +
@@ -173,7 +173,7 @@ Assuming that you are empowered to do so, you can individually sign the ECA even
 
 How do I know if I’m covered by an Eclipse Contributor Agreement? ::
 
-Visit your Eclipse Account page. Your <<contributing-eca, Eclipse Contributor Agreement>> (ECA) status is shown in the top-right corner.
+Visit your Eclipse Account page. Your xref:contributing-eca[Eclipse Contributor Agreement] (ECA) status is shown in the top-right corner.
 +
 For example, this contributor is covered by the ECA (and is a committer on one or more Eclipse Foundation open source projects).
 +
@@ -181,7 +181,7 @@ image::images/accounts-status.png[]
 
 How do I know if somebody else is covered by an Eclipse Contributor Agreement (ECA)? ::
 
-Visit your <<contributing-account,Eclipse Foundation Account>> page and click on "Eclipse Contributor Agreement" in the _Status_ block. Use the ECA Validation Tool on _My Eclipse Contributor Agreement_ page to verify the ECA status of an individual using their email address.
+Visit your xref:contributing-account[Eclipse Foundation Account] page and click on "Eclipse Contributor Agreement" in the _Status_ block. Use the ECA Validation Tool on _My Eclipse Contributor Agreement_ page to verify the ECA status of an individual using their email address.
 +
 image::images/eca_validation_tool.png[]
 
@@ -195,8 +195,8 @@ Check with your manager. If your manager doesn't know, you can contact the {emoR
 
 I know that my employer has signed the Member Committer and Contributor Agreement (MCCA), but my account page shows that I am not covered by the ECA. What should I do? ::
 
-It's likely that you haven't provided us with employer information. In order for our systems to know that you are affiliated with a particular organization, you must specify your employer in your <<contributing-account, Eclipse Foundation Account>>.
+It's likely that you haven't provided us with employer information. In order for our systems to know that you are affiliated with a particular organization, you must specify your employer in your xref:contributing-account[Eclipse Foundation Account].
 
 I am a committer on a project, but I cannot push to that project's GitHub repositories. What should I do? ::
 
-It's likely that you haven't provided us with your GitHub Id. Our systems manage the composition of the GitHub teams that have the necessary privileges on project repositories. For that, we need your GitHub Id, which you must provide us with in your <<contributing-account, Eclipse Foundation Account>>.
+It's likely that you haven't provided us with your GitHub Id. Our systems manage the composition of the GitHub teams that have the necessary privileges on project repositories. For that, we need your GitHub Id, which you must provide us with in your xref:contributing-account[Eclipse Foundation Account].

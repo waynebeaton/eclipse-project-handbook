@@ -85,4 +85,4 @@ You are successful if (not an exclusive list):
 * A significant number of bugs raised against your project come from non-committers;
 * Non-committers are blogging about your project;
 * Articles, presentations, podcasts, webinars, etc. are being developed and presented by non-committers; and/or
-* You cease to be the center of the universe for your project.
+* You cease to be the centre of the universe for your project.
