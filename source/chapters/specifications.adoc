@@ -74,7 +74,7 @@ The process described in the xref:progress-review[Progress Reviews] (which are t
 
 [TIP]
 ====
-In the lead up to a review, it is in the best interests of a specification project team to engage with the specification committee in their designated community/public channel to socialise plans and expectations. You must get supermajority approval from the specification committee before you can make an official release of your specification, so giving them every opportunity to understand and provide feedback on what they’ll be voting on is in your best interests. Besides, operating in an open and transparent manner is a critical success criteria for all open source projects.
+In the lead up to a review, it is in the best interests of a specification project team to engage with the specification committee in their designated community/public channel to socialise plans and expectations. You must get supermajority approval from the specification committee before you can make an official release of your specification, so giving them every opportunity to understand and provide feedback on what they'll be voting on is in your best interests. Besides, operating in an open and transparent manner is a critical success criteria for all open source projects.
 ====
 
 [[specifications-ip]]
@@ -100,7 +100,7 @@ There is no specific rule in this regard, but it considered good form to inform 
 
 Following their appointment, participant representatives become indistinguishable from other committers on a specification project. As such, following appointment, participant representative committers are subject to the same rules as any other committer: they do not hold any special status or formal role beyond that of committer once appointed, and they retain their committer status if they change employers. 
 
-An organisation’s specification committee representative may send a note to mailto:{emoEmail}[EMO] with a request to appoint a participant representative.
+An organisation’s specification committee representative may send a note to {emoEmailLink} with a request to appoint a participant representative.
 
 [[specifications-contributors]]
 == Contributors
@@ -121,7 +121,7 @@ To become a contributor, an individual must:
 
 [NOTE]
 ====
-If you are already a committer, your committer agreement includes an ECA; so you’re already covered. If your employer is a member of the Eclipse Foundation and your employer has signed the xref:paperwork-mcca[Member Committer and Contributor Agreement] (MCCA), then you’re already covered. You can check your status on the xref:contributing-account[Eclipse Foundation account] page (your ECA status is in the top-right corner). If you’re not sure contact mailto:{emoRecordsEmail}[EMO Records] for assistance.
+If you are already a committer, your committer agreement includes an ECA; so you’re already covered. If your employer is a member of the Eclipse Foundation and your employer has signed the xref:paperwork-mcca[Member Committer and Contributor Agreement] (MCCA), then you’re already covered. You can check your status on the xref:contributing-account[Eclipse Foundation account] page (your ECA status is in the top-right corner). If you’re not sure contact the {emoRecordsEmailLink} for assistance.
 ====
 
 Regular contributors of high quality content should be invited to join the specification project team as a committer (via xref:elections-committer[committer election]).
@@ -247,7 +247,7 @@ The specification committee needs to approve of the creation of a specification 
 
 [TIP]
 ====
-Contact the mailto:{emoEmail}[EMO] to initiate a creation review.
+Contact the {emoEmailLink} to initiate a creation review.
 ====
 
 Following successful creation and provisioning of project resources, a specification project team begins development. 
@@ -267,7 +267,7 @@ A development cycle begins when a either a creation review or a xref:specificati
 [[specifications-progress-review]]
 === Progress Review
 
-For a progress review, the xref:#roles-pmc[Project Management Committee] (PMC) and Eclipse Management Organisation (EMO) validate that the specification project team is following the EDP and EFSP, and that the Eclipse Foundation’s Intellectual Property Policy is being correctly implemented. The EFSP requires that the specification committee approve a progress review by xref:specifications-ballots[supermajority ballot].
+For a progress review, the xref:roles-pmc[Project Management Committee] (PMC) and Eclipse Management Organisation (EMO) validate that the specification project team is following the EDP and EFSP, and that the Eclipse Foundation’s Intellectual Property Policy is being correctly implemented. The EFSP requires that the specification committee approve a progress review by xref:specifications-ballots[supermajority ballot].
 
 [NOTE]
 ====
@@ -283,7 +283,7 @@ At the end of every development cycle, the project team must produce a _release 
 
 [TIP]
 ====
-To engage in a release review, create a xref:pmi-releases[release record] (if one has not already been created as part of the planning process) and contact the mailto:{emoEmail}[EMO] to schedule the review. Your PMC and specification committee may provide additional requirements and documentation that must be met to get their approval of the review.
+To engage in a release review, create a xref:pmi-releases[release record] (if one has not already been created as part of the planning process) and contact the {emoEmailLink} to schedule the review. Your PMC and specification committee may provide additional requirements and documentation that must be met to get their approval of the review.
 ====
 
 [[specifications-plan-review]]
@@ -295,7 +295,7 @@ The plan itself must be in-scope (i.e. all new work must fall within the bounds 
 
 [TIP]
 ====
-To engage in a plan review, create a xref:pmi-releases[release record] and contact the mailto:{emoEmail}[EMO] to schedule a review.
+To engage in a plan review, create a xref:pmi-releases[release record] and contact the {emoEmailLink} to schedule a review.
 ====
 
 After the Plan is approved, the Project Team engages in Development as before.
@@ -339,7 +339,7 @@ Yes. The specification committee’s supermajority approval of the release is an
 
 Can you provide more information regarding why these agreements are necessary? ::
 
-Explaining these documents would be a form of legal advice, and we simply cannot provide that. The short version is that we need these agreements and if you want somebody to explain them to you, you’ll need to consult with your lawyer.
+Explaining these documents would be a form of legal advice, and we simply cannot provide that. The short version is that we need these agreements and if you want somebody to explain them to you, you'll need to consult with your lawyer.
 
 Do I need to arrange for my employer to sign the Employer Consent Agreement for Eclipse Specification Projects? ::
 

@@ -85,7 +85,7 @@ image::images/committer_questionnaire2.png[]
 
 After all required documents have been received, the EMO Records Team will review them, contact the committer to resolve any issues that need to be addressed, and send a request to the Eclipse IT Team to provision a committer account.
 
-Questions regarding this process should be addressed to the mailto:{emoRecordsEmail}[EMO Records Team].
+Questions regarding this process should be addressed to the {emoRecordsEmailLink}.
 
 [[paperwork-mcca]]
 ==== Member Committer and Contributor Agreement[[paperwork-mca]]
@@ -94,7 +94,7 @@ The {mccaUrl}[Member Committer and Contributor Agreement] (MCCA) is used by orga
 
 [NOTE]
 ====
-If your employer is a member of the Eclipse Foundation and  has not already provided an MCCA, consult with your management team to determine who has the necessary authority to sign it on your company's behalf. Provide the MCCA in advance of the completion of your committer election or new project creation to streamline the committer provisioning process. If you and your management team are not sure whether or not your employer has an MCCA, ask the mailto:{emoRecordsEmail}[EMO Records Team].
+If your employer is a member of the Eclipse Foundation and  has not already provided an MCCA, consult with your management team to determine who has the necessary authority to sign it on your company's behalf. Provide the MCCA in advance of the completion of your committer election or new project creation to streamline the committer provisioning process. If you and your management team are not sure whether or not your employer has an MCCA, ask the {emoRecordsEmailLink}.
 ====
 
 If the committer's employer is a member of the Eclipse Foundation that cannot provide a signed MCCA, then the committer will have to complete an _Individual Committer Agreement_.
@@ -119,7 +119,7 @@ If the individual is already a committer on an existing Eclipse Foundation proje
 [[paperwork-not-employed]]
 ==== Not Employed or Student
 
-If the committer is not employed or is a student, they must send a note to the mailto:{emoRecordsEmail}[EMO Records Team] explaining their status.
+If the committer is not employed or is a student, they must send a note to the {emoRecordsEmailLink} explaining their status.
 
 [[paperwork-faq]]
 === Frequently Asked Questions
@@ -153,4 +153,3 @@ What Email address should I use to send completed documents? ::
 What if a I change employers? ::
 
 Edit your {accountUrl}[Eclipse Account Profile] to update your employment status.
-	

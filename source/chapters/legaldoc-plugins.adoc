@@ -16,14 +16,7 @@
 [[legaldoc-plugins]]
 = Legal Documentation for Eclipse Platform Plug-ins and Fragments
 
-[WARNING]
-====
-This is draft content. If you have an issue, please open a report against https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Dash&component=Handbook[Dash/Handbook].
-
-Projects that implement Eclipse Platform Plug-ins and Features under the EPL-1.0 should follow the http://www.eclipse.org/legal/guidetolegaldoc-EPL-1.0.php[Guide to the Legal Documentation for Eclipse Plug-ins and Features under the EPL-1.0].
-====
-
-Eclipse Platform Plug-ins and Fragments are highly modularized to facilitate ease of delivery, extensibility, and upgradeability. A typical Eclipse Platform-based product may potentially include plug-ins and features authored and/or distributed by many different parties including Eclipse Foundation open source projects, other open-source organizations, and commercial vendors.
+Eclipse Platform Plug-ins and Fragments are highly modularised to facilitate ease of delivery, extensibility, and upgradeability. A typical Eclipse Platform-based product may potentially include plug-ins and features authored and/or distributed by many different parties including Eclipse Foundation open source projects, other open-source organizations, and commercial vendors.
 
 == Software User Agreement
 

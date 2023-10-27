@@ -20,7 +20,7 @@ The {edpLink} defines multiple formal open source project roles. Primary among t
 
 For {forgeName} projects (and the open source world in general), xref:contributing-committers[committers] are the ones who hold the keys. Committers are either appointed at the time of project creation, or xref:elections-committer[elected] by the existing project team.
 
-Committers decide what code goes into the code base, they decide how a project builds, and they ultimately decide what gets delivered to the adopter community. With awesome power, comes awesome responsibility, and so the Open Source Rules of Engagement described by the {edpLink}, puts _meritocracy_ on equal footing with _transparency_ and _openness_: becoming a committer isn’t necessarily hard, but it does require a demonstration of merit.
+Committers decide what code goes into the code base, they decide how a project builds, and they ultimately decide what gets delivered to the adopter community. With awesome power, comes awesome responsibility, and so the Open Source Rules of Engagement described by the {edpLink}, puts _meritocracy_ on equal footing with _transparency_ and _openness_: becoming a committer isn't necessarily hard, but it does require a demonstration of merit.
 
 Committers:
 
@@ -55,7 +55,7 @@ When committers are disruptive or otherwise behaving in a manner that is detrime
 
 [TIP]
 ====
-The six months of inactivity is more of a suggested period of time for considering retirement of committers; we defer to the judgment of the project lead to determine when and if somebody who is inactive should be retired.
+The six months of inactivity is more of a suggested period of time for considering retirement of committers; we defer to the judgement of the project lead to determine when and if somebody who is inactive should be retired.
 ====
 
 Project leads have some extra privileges on xref:resources-gitlab-access[GitLab] and xref:resources-github-access[GitHub].
@@ -114,7 +114,7 @@ The IP Team will connect with the PMC when their assistance is required.
 [#roles-pmc-elections]
 === PMC Role in Elections
 
-The PMC reviews and approves (or vetos) xref:elections-committer[committer] and xref:elections-pl[project lead] elections. The role of the PMC is validate that the election was run according to the open source rules of engagement and election process described in the {edpLink}, and consistent with the Top-Level Project Charter. 
+The PMC reviews and approves (or vetoes) xref:elections-committer[committer] and xref:elections-pl[project lead] elections. The role of the PMC is validate that the election was run according to the open source rules of engagement and election process described in the {edpLink}, and consistent with the Top-Level Project Charter. 
 
 In practical terms, the EMO depends on the PMC to validate that elections provide (either via the nomination statement, or by statements made by committers during the voting period) a transparent record of relevant contribution by the nominee and maintain vendor/employer neutrality.
 

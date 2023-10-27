@@ -18,9 +18,7 @@
 
 This document provides you with the information that you need to create a new {forgeName} open source project or become a committer on an existing one.
 
-ifeval::["{forgeName}"!="Eclipse"]
 While this document is focused on {forgeName}, it makes several "Eclipse" references, including the _Eclipse Foundation_, _{edpLink}_, and _Eclipse Management Organization_. The Eclipse Foundation is the legal entity that manages the operations of the {forgeName} working group, software development forge, and community.Many of the provided services and contacts are so-named on that basis.
-endif::[]
 
 The _{edpLink}_ (EDP) is the foundational document for {forgeName} projects and committers. It describes the manner in which we do open source software. The EDP does not prescribe any particular development methodology; it is more concerned with the larger-scale aspects of open source project life cycle, including such things as reviews, processes for running votes and elections, bringing new committers onto a project, etc. This document elaborates on some key points of the EDP.
 

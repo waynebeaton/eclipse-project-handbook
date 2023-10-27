@@ -68,12 +68,12 @@ Use the {createUrl}[web form] to create a new project proposal. Instructions are
 
 [NOTE]
 ====
-Keep track of the URL of the proposal. The website does not provide public links to the document until after the proposal is opened for community review. If you do lose track of the URL, ask mailto:{emoEmail}[the EMO] for assistance.
+Keep track of the URL of the proposal. The website does not provide public links to the document until after the proposal is opened for community review. If you do lose track of the URL, ask {emoEmailLink} for assistance.
 ====
 
 A proposal must minimally include a description of the project, a declaration of scope, and a list of prospective members (project leads and committers) before we make it accessible to the public for _community review_.
 
-When you feel that the proposal is ready, send a note to the mailto:{emoEmail}[Eclipse Management Organisation] (EMO) requesting that the proposal be made available to the public for review. The EMO will review the proposal and may provide feedback before initiating the _community review_ period.
+When you feel that the proposal is ready, send a note to the Eclipse Management Organisation ({emoEmailLink}) requesting that the proposal be made available to the public for review. The EMO will review the proposal and may provide feedback before initiating the _community review_ period.
 
 At the beginning of the _community review_ period, the EMO will announce the proposal on several channels (the {activityUrl}[Project Activity News] page, Twitter, blog post, and an email note to the Eclipse Foundation members and committers). The EMO will also open a record in the Eclipse Foundation's issue tracker -- an instance of GitLab -- to track the progress of the proposal; the proposal's author, and project leads will be copied on that record.
 
@@ -192,15 +192,14 @@ The classification of a project in the incubation phase is not a statement about
 
 Incubating projects are encouraged to produce milestone builds, make releases, and grow their community.
 
-When the project code is ready (e.g. stable APIs) and the project team has learned to operate as an open source project according to the {edpLink}, the project may opt to _graduate_ (via xref:release-graduation[graduation review] into the _mature phase_.
+When the project code is ready (e.g. stable APIs) and the project team has learned to operate as an open source project according to the {edpLink}, the project may opt to _graduate_ (via xref:release-graduation[graduation review]) into the _mature phase_.
 
 [[starting-incubation-branding]]
 ===== Incubation branding
 
-In order to alert potential consumers of the incubating nature, projects in the incubation phase must include _incubation branding_. 
+image::images/incubating.png[width=150px,float="right"]
 
-.The Incubation Logo
-image::images/incubating.png[width=200px]
+In order to alert potential consumers of the incubating nature, projects in the incubation phase must include _incubation branding_. 
 
 The project team must:
 
@@ -264,11 +263,11 @@ You might instead choose to create a new project if the new functionality:
 
 Why are some committer (but not all) names rendered as links on project proposal pages? ::
 
-When the list of committers provided for a new project proposal are rendered, a link to more information for each individual committer will be included when possible. The link will render, for example, when an individual already has a role on another existing Eclipse open source project (e.g. is a xref:#roles-cm[committer], xref:#roles-pl[project lead], xref:#roles-pmc[Project Management Committee] (PMC) member, etc.). No link indicates that no existing project relationships exist for that individual.
+When the list of committers provided for a new project proposal are rendered, a link to more information for each individual committer will be included when possible. The link will render, for example, when an individual already has a role on another existing Eclipse open source project (e.g. is a xref:roles-cm[committer], xref:roles-pl[project lead], xref:roles-pmc[Project Management Committee] (PMC) member, etc.). No link indicates that no existing project relationships exist for that individual.
 
 What license(s) can I use for my project? ::
 
-{forgeName} top level projects define the standard licensing for their projects. When a project has nonstandard licensing requirements, they may need to make an appeal to the Eclipse board of directors to request their approval. Connect with mailto:{emoEmail}[EMO] for assistance.
+{forgeName} top level projects define the standard licensing for their projects. When a project has nonstandard licensing requirements, they may need to make an appeal to the Eclipse board of directors to request their approval. Connect with {emoEmailLink} for assistance.
 
 Can I change the proposal after it is posted? ::
 

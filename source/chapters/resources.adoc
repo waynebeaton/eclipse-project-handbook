@@ -16,11 +16,11 @@
 Open source projects at the Eclipse Foundation are _required_ to make use of certain Eclipse Foundation services:
 
 * All project issues must be tracked in the issue tracker assigned to the project;
-* Source code must be maintained in source code repositories assigned to the project (<<resources-gitlab, Eclipse Foundation GitLab>>, <<resources-github, Eclipse Foundation-managed GitHub>>, or <<resources-gerrit, Eclipse Foundation Gerrit>>);
-* All third-party content used by the project must be <<ip-third-party,vetted>>;
+* Source code must be maintained in source code repositories assigned to the project (xref:resources-gitlab[Eclipse Foundation GitLab], xref:resources-github[Eclipse Foundation-managed GitHub], or xref:resources-gerrit[Eclipse Foundation Gerrit]);
+* All third-party content used by the project must be xref:ip-third-party[vetted];
 * Downloads (when provided) must be distributed via xref:resources-downloads[{aForgeName} downloads] server;
 * Developer (committer) communication must occur in the xref:resources-dev-list[dev-list] provided to the project by the Eclipse Foundation; and
-* Projects must keep their <<pmi-metadata, Project Metadata>> up-to-date.
+* Projects must keep their xref:pmi-metadata[Project Metadata] up-to-date.
 
 The Eclipse Foundation provides the following services (high level) for {forgeName} open source projects:
 
@@ -34,7 +34,7 @@ The Eclipse Foundation provides the following services (high level) for {forgeNa
   * Security audits;
   * xref:vulnerability-cve[Vulnerability reporting] (the Eclipse Foundation is a CNA);
 * xref:promotion-resources[Promotion resources]
-  * Financial support to subsidize the creation of a xref:promoting-project-logo-design[project logo];
+  * Financial support to subsidise the creation of a xref:promoting-project-logo-design[project logo];
   * The xref:promotion-adopters[Adopters Programme];
   * Space on our web server for a xref:resources-website[project website];
 * Intellectual Property
@@ -50,8 +50,8 @@ The Eclipse Foundation provides the following services (high level) for {forgeNa
   * Best practices based on industry trends (e.g., SBOMs and AI in open source)
   
 [[resources-identifiers]]
-=== Identifers
-Project resources make use of two sorts of ids:
+=== Identifiers
+Project resources make use of two sorts of IDs:
 
 Short name::
 The short name is used in various parts of Eclipse Foundation infrastructure (e.g. the name of the project's directory on the downloads and Git servers, and the URL for the project website). The short name may contain lowercase alphanumeric characters, dashes, and underlines; but does not contain periods.
@@ -118,11 +118,11 @@ The _summary_ line is used in many places where Git commits are listed, ensure t
 
 If the bug id is included in the summary line (using the form "Bug 12345 - xxx" or "[12345] xxx") Gerrit Code Review will automatically add a link in the corresponding Bugzilla record back to the Gerrit record (this, of course, only applies to commits pushed to Gerrit).
 
-The `Change-Id` is used by <<resources-gerrit,Gerrit Code Review>> to associate new versions of a change back to its original review. This field need only be specified if the repository is managed by Gerrit.
+The `Change-Id` is used by xref:resources-gerrit[Gerrit Code Review] to associate new versions of a change back to its original review. This field need only be specified if the repository is managed by Gerrit.
 
 An `Also-by` (or `Co-authored-by`) entry can be added for each additional author of a commit (one committer per entry). This might apply, for example, if a commit has been authored via pair-programming, or the commit is the result of collapsing multiple commits authored by multiple developers. To be considered valid the entry must take the form `Also-by: Name <email>`.
 
-Authors who are not committers on the project receiving the commit must have an Eclipse Foundation Account and must have a signed <<contributing-eca,Eclipse Contributor Agreement>> (ECA) on file.
+Authors who are not committers on the project receiving the commit must have an Eclipse Foundation Account and must have a signed xref:contributing-eca[Eclipse Contributor Agreement] (ECA) on file.
 
 [#resources-gitlab]
 === GitLab
@@ -139,7 +139,7 @@ Some of the terms used by GitLab -- _project_ in particular -- have different me
 Any committer can {helpdeskUrl}[create a Help Desk issue] to request that the Eclipse IT Team create a new repository on, or move an existing repository to, the GitLab instance for their project. Note that the IT Team will verify the request with the project leads.
 ====
 
-On GitLab, the root group for all {forgeName} open source project repositories is `{forgeMachineName}`. Under that root, two nesting options are available: {aForgeName} open source project's group can be nested directly under the root, or can be nested in a group corresponding to the {forgeName} top-level project. In both nesting options, repositories may be arbitrarily nested in subgroups created under the projects' group to organize the repositories. The custom subgroups are cosmetic only, as the same permissions are applied to the nested groups and do not provide any extra functionality.
+On GitLab, the root group for all {forgeName} open source project repositories is `{forgeMachineName}`. Under that root, two nesting options are available: {aForgeName} open source project's group can be nested directly under the root, or can be nested in a group corresponding to the {forgeName} top-level project. In both nesting options, repositories may be arbitrarily nested in subgroups created under the projects' group to organise the repositories. The custom subgroups are cosmetic only, as the same permissions are applied to the nested groups and do not provide any extra functionality.
 
 [#resources-gitlab-project-group]
 ==== Project Group
@@ -231,17 +231,17 @@ Contributors ::
 
 All contributors are automatically granted _Reporter_ level access to {forgeName} open source project resources hosted on GitLab. When an individual is added to the xref:pmi-contributors[contributors] list, they are automatically added as a _Reporter_ in the {forgeName} open source project's group. When they are removed from the contributors list, they are automatically removed from the group.
 +
-The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook inspects incoming merge requests to ensure that the contributor has a valid ECA on file, and flags those that do not. {forgeName} open source project committers should only accept merge requests that pass this validation.
+The xref:contributing-eca[Eclipse Contributor Agreement] (ECA) hook inspects incoming merge requests to ensure that the contributor has a valid ECA on file, and flags those that do not. {forgeName} open source project committers should only accept merge requests that pass this validation.
 
 [#resources-gitlab-bot-users]
 ==== Bot Users
 
-To assist with CI/CD operations, bots with CI/CD access can be requested by making a request within the {helpdeskUrl}[Eclipse Foundation Helpdesk] by either a project lead, or a committer with approval from a project lead. These bots may be added directly to repositories or to groups depending on the requirements.
+To assist with CI/CD operations, bots with CI/CD access can be requested by making a request within the {helpdeskUrl}[help desk] by either a project lead, or a committer with approval from a project lead. These bots may be added directly to repositories or to groups depending on the requirements.
 
 [#resources-gitlab-excluded-subgroups]
 ==== Excluded Subgroups
 
-Excluded Subgroups have been added to <<pmi,Project Management Infrastructure>> (PMI) <<pmi-project-page,project page>> to better support cases where third-party non-project code needs to exist within a project group for stability, such as forks and mirrors. Once configured, these subgroups within the project groups to exclude from automated tooling such as the ECA checks. The excluded subgroups follow the standard access permissions and Project Leads can request updates to this field through the {helpdeskUrl}[Gitlab Helpdesk].
+Excluded Subgroups have been added to xref:pmi[Project Management Infrastructure] (PMI) xref:pmi-project-page[project page] to better support cases where third-party non-project code needs to exist within a project group for stability, such as forks and mirrors. Once configured, these subgroups within the project groups to exclude from automated tooling such as the ECA checks. The excluded subgroups follow the standard access permissions and Project Leads can request updates to this field through the {helpdeskUrl}[help desk].
 
 [[resources-github]]
 === GitHub
@@ -250,13 +250,13 @@ Project teams may opt to host some or all of their canonical source code reposit
 
 Any committer can {helpdeskUrl}[open a Help Desk issue] to request that the Eclipse IT Team create a new repository for their project on, or move an existing repository to, GitHub. A project may have more than one repository on GitHub. When making the request, the committer should describe--specifically and concisely--what they want to make happen. Note that the IT Team will verify the request with the project leads.
 
-Repositories can be hosted in the default `{forgeMachineName}` GitHub organization, or a dedicated organization can be created. Dedicated organizations use as their name, the conjunction of `{forgeMachineName}` with the project <<resources-identifiers,short name>> (e.g., `{forgeMachineName}-woolsey`).
+Repositories can be hosted in the default `{forgeMachineName}` GitHub organization, or a dedicated organization can be created. Dedicated organizations use as their name, the conjunction of `{forgeMachineName}` with the project xref:resources-identifiers[short name] (e.g., `{forgeMachineName}-woolsey`).
 
 The Eclipse IT Team installs some _hooks_ onto all {forgeName} project repositories on GitHub.
 
-The _Committers hook_ grants designated project committers write access to the GitHub-hosted project repositories. Project committers must add their GitHub id to their <<contributing-account,Eclipse Foundation account>>, and must use the email address they provide to the Eclipse Foundation as the email address in the author credentials of all commits. 
+The _Committers hook_ grants designated project committers write access to the GitHub-hosted project repositories. Project committers must add their GitHub id to their xref:contributing-account[Eclipse Foundation account], and must use the email address they provide to the Eclipse Foundation as the email address in the author credentials of all commits. 
 
-The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook will inspect incoming GitHub pull requests to ensure that the contributor has a valid ECA on file. Project committers should only merge _green_ pull requests:
+The xref:contributing-eca[Eclipse Contributor Agreement] (ECA) hook will inspect incoming GitHub pull requests to ensure that the contributor has a valid ECA on file. Project committers should only merge _green_ pull requests:
 
 .Notification that the commit is properly structured and permissions are in place.
 image::images/Github-cla-success.png[]
@@ -281,7 +281,7 @@ Eclipse Foundation scripts build and maintain a collection of GitHub Teams, each
 
 [TIP]
 ====
-The scripts require knowledge of the GitHub Id in order to add any individual to any of the teams. Be sure to include your GitHub Id in your <<contributing-account,Eclipse Foundation Account>>.
+The scripts require knowledge of the GitHub Id in order to add any individual to any of the teams. Be sure to include your GitHub Id in your xref:contributing-account[Eclipse Foundation Account].
 ====
 
 GitHub's https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-roles-for-an-organization[Repository roles for an organization] document describes the permissions granted for each of the roles (_Maintain_, _Write_, and _Triage_) described below.
@@ -299,21 +299,21 @@ With the _Maintain_ role, project leads have significant privileges on GitHub re
 For example, project leads **must not** manipulate teams or privileges and must specifically not add or remove developers directly. See xref:elections-committer[Committer Elections] for information on how to add developers to a project, and xref:elections-retire-cm[Committers Retirement] for information on how to remove developers from a project.
 ====
 +
-Project leads must provide their GitHub Id in their <<contributing-account,Eclipse Foundation Account>>.
+Project leads must provide their GitHub Id in their xref:contributing-account[Eclipse Foundation Account].
 
 Committers Team ::
 
 All committers are automatically added to the _committers team_. All members of the _committers team_ are granted the _Write_ role on their project resources hosted on GitHub. When an individual is xref:elections-committer[elected] into the role of committer, they are automatically added to the _committers team_. When a project lead is xref:elections-retire-cm[retired], they are automatically removed from the team.
 +
-Committers must provide their GitHub Id in their <<contributing-account,Eclipse Foundation Account>>.
+Committers must provide their GitHub Id in their xref:contributing-account[Eclipse Foundation Account].
 
 Contributors Team ::
 
 All contributors are automatically added to the _contributors team_. All members of the _contributors team_ are granted _Triage_ level access to project resources hosted on GitHub. When an individual is added to the project's xref:pmi-contributors[Contributors] list, they are automatically added to the _contributors team_. When they are removed from the Contributors list, they are automatically removed from the team.
 +
-Contributors must provide their GitHub Id in their <<contributing-account,Eclipse Foundation Account>>.
+Contributors must provide their GitHub Id in their xref:contributing-account[Eclipse Foundation Account].
 
-The <<contributing-eca,Eclipse Contributor Agreement>> (ECA) hook inspects incoming pull requests to ensure that the contributor has a valid ECA on file, and flags those that do not. Project committers should only merge pull requests that pass this validation.
+The xref:contributing-eca[Eclipse Contributor Agreement] (ECA) hook inspects incoming pull requests to ensure that the contributor has a valid ECA on file, and flags those that do not. Project committers should only merge pull requests that pass this validation.
 
 [[resources-github-self-service]]
 ==== Self-Service of GitHub Resources
@@ -353,7 +353,7 @@ The following resource configurations are available:
 * Repositories and their settings
 * Branch Protection Rules
 
-Committers can create pull requests for this repo with suggested changes. A workflow will automatically run, validate and highlight the changes:
+Committers can create pull requests for this repository with suggested changes. A workflow will automatically run, validate and highlight the changes:
 
 .Validation of suggested configuration changes.
 image::images/Github-self-service-pull-request-comment.png[]
@@ -371,7 +371,7 @@ https://www.gerritcodereview.com/[Gerrit] provides web based code review and rep
 [[resources-issues]]
 === Issue Trackers
 
-{forgeName} projects must use an Eclipse Foundation-provided issue tracker. Project teams may opt to use either the <<resources-gitlab, Eclipse Foundation GitLab>> instance or -- for projects that use <<resources-github,GitHub>> -- GitHub Issues instances associated with Eclipse Foundation-managed GitHub project repositories. 
+{forgeName} projects must use an Eclipse Foundation-provided issue tracker. Project teams may opt to use either the xref:resources-gitlab[Eclipse Foundation GitLab] instance or -- for projects that use xref:resources-github[GitHub] -- GitHub Issues instances associated with Eclipse Foundation-managed GitHub project repositories. 
 
 [#resources-mailing-list]
 === Mailing Lists
@@ -425,9 +425,7 @@ The EMO strongly encourages the use of alternative communication channels for co
 [[resources-website]]
 === Project Websites
 
-// Project-specific websites are only supported on the Eclipse forge.
-ifeval::["{forgeName}"=="Eclipse"]
-Project websites are an excellent way to connect an open source project with the community. Many projects opt to use the <<pmi,Project Management Infrastructure>> (PMI) <<pmi-project-page,project page>> as their webite.  PMI-based website URLs take the form of `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`). 
+Project websites are an excellent way to connect an open source project with the community. Many projects opt to use the xref:pmi[Project Management Infrastructure] (PMI) xref:pmi-project-page[project page] as their website.  PMI-based website URLs take the form of `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`). 
 
 Many project teams opt to create a custom main project website: if so-desired, a project may host a website on Eclipse Foundation-hosted servers. Project website URLs generally take the form `pass:c,a[{wwwUrl}/<shortname>]` (e.g. `pass:c,a[{wwwUrl}/foo]`). Custom project website content is maintained in Git repositories hosted on Eclipse Foundation infrastructure. A background job moves content from the Git repository to the website; content pushed to the repository will appear on the live website within five minutes.
 
@@ -436,14 +434,11 @@ Many project teams opt to create a custom main project website: if so-desired, a
 If a project website has not already been created for your project, {helpdeskUrl}[open a Help Desk issue] to request that the Eclipse IT Team create one.
 ====
 
-Project websites must implement the <<trademarks-website, branding guidelines for project websites>>.
+Project websites must implement the xref:trademarks-website[branding guidelines for project websites].
 
-endif::[]
-ifeval::["{forgeName}"!="Eclipse"]
-The <<pmi,Project Management Infrastructure>> (PMI) provides the main <<pmi-project-page,project website>>. Website URLs take the form of `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`).
-endif::[]
+The xref:pmi[Project Management Infrastructure] (PMI) provides the main xref:pmi-project-page[project website]. Website URLs take the form of `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`).
 
-Websites _not_ hosted by the Eclipse Foundation are considered <<trademark-external-community,community portals>> and are subject to the {trademarkGuidelinesUrl}[Eclipse Foundation Trademark Usage Guidelines] (the Eclipse Foundation asserts ownership of all project name trademarks). Furthermore, projects may be required to comply to specific security guidelines and requirements outlined by the Eclipse Foundation’s Security team.
+Websites _not_ hosted by the Eclipse Foundation are considered xref:trademark-external-community[community portals] and are subject to the {trademarkGuidelinesUrl}[Eclipse Foundation Trademark Usage Guidelines] (the Eclipse Foundation asserts ownership of all project name trademarks). Furthermore, projects may be required to comply to specific security guidelines and requirements outlined by the Eclipse Foundation’s Security team.
 
 [#resources-analytics]
 === Analytics and Data Collection
@@ -489,16 +484,16 @@ The project is allocated space on the {forgeName} download and archive servers.
 
 Project artifacts (e.g. downloads) can be distributed via third-party services (e.g. Maven Central), but -- where technically sensible -- the Eclipse Foundation-provided infrastructure must be considered the primary source of project downloads.
 
-Project committers can {downloadsUrl}[upload project artifacts] to the project's directory on the download server. The short name is used to denote the area available to the project (e.g. `pass:a[{downloadsHost}/dash]` for the `technology.dash` project) via SFTP or SCP, or from a <<resources-builds,Eclipse Foundation hosted build infrastructure>>.
+Project committers can {downloadsUrl}[upload project artifacts] to the project's directory on the download server. The short name is used to denote the area available to the project (e.g. `pass:a[{downloadsHost}/dash]` for the `technology.dash` project) via SFTP or SCP, or from a xref:resources-builds[Eclipse Foundation hosted build infrastructure].
 
 [[resources-external]]
 === External Resources
 
-Project teams may use services that are not hosted by the Eclipse Foundation (e.g. <<resources-github,GitHub>> or <<resources-dockerhub,DockerHub>>).
+Project teams may use services that are not hosted by the Eclipse Foundation (e.g. xref:resources-github[GitHub] or xref:resources-dockerhub[DockerHub]).
 
 The following rules apply:
 
-* The Eclipse Foundation's <<trademarks,branding rules>> must be observed;
+* The Eclipse Foundation's xref:trademarks[branding rules] must be observed;
 * External services must not add legal terms or conditions that invalidate the project licenses or copyrights;
 * One or more project **committers** must have ownership rights; and
 * The usual level playing field must be observed.
@@ -509,14 +504,14 @@ All services require that users conform to some sort of terms of use that likely
 
 [WARNING]
 ====
-<<resources-source,Source code>>, documentation, <<resources-issues,issues/tickets/bug reports>> must all be maintained using resources that are provided and managed by the Eclipse Foundation.
+xref:resources-source[Source code], documentation, xref:resources-issues[issues/tickets/bug reports] must all be maintained using resources that are provided and managed by the Eclipse Foundation.
 ====
 
 External resources can be used for:
 
 * User forum discussions (e.g, Slack);
-* Builds and alternative sources for <<resources-downloads,downloads>>; 
-* Container image management (e.g., <<resources-dockerhub,DockerHub>>); and
+* Builds and alternative sources for xref:resources-downloads[downloads]; 
+* Container image management (e.g., xref:resources-dockerhub[DockerHub]); and
 * Examples, presentations, blogs, social media handles.
 
 This list is not exhaustive. Project leads should work with their xref:#roles-pmc[Project Management Committee] (PMC) and the EMO to determine the terms and conditions for an external resource are compatible with the project license(s), the {ipPolicyUrl}[Eclipse IP Policy], and {edpLink}.
@@ -546,7 +541,7 @@ For more information, please see https://wiki.eclipse.org/CBI#Docker_Hub[CBI/Doc
 Content distributed via official Eclipse Foundation channels must be complete enough that a consumer can (with reasonable effort) use it without needing the DockerHub distribution. That is, the DockerHub distribution needs to be considered a convenient way to leverage the content, not the only way. Please make sure that you treat any links or related discussion that you have on an Eclipse Foundation property about images distributed via DockerHub as an unofficial channel.
 ====
 
-Subject to the <<resources-external,rules for the use of external resources>>, a project team can create and maintain their own organization on DockerHub. The organization name must follow the pattern `{forgeMachineName}-<shortname>` (e.g. `{forgeMachineName}-woolsey`) or some variation (e.g. `{forgeMachineName}woolsey`). As indicated in the rules, ownership of the organization must be shared by a subset of project *committers* and the project must have a documented policy regarding how access to that organization is managed.
+Subject to the xref:resources-external[rules for the use of external resources], a project team can create and maintain their own organization on DockerHub. The organization name must follow the pattern `{forgeMachineName}-<shortname>` (e.g. `{forgeMachineName}-woolsey`) or some variation (e.g. `{forgeMachineName}woolsey`). As indicated in the rules, ownership of the organization must be shared by a subset of project *committers* and the project must have a documented policy regarding how access to that organization is managed.
 
 Additionally, a PMC may decide to create and manage an organization for the Top-Level Project. The PMC may have their own policy regarding the use of DockerHub. Project teams should consult with their PMC to determine which approach is best suited for the project.
 
@@ -555,9 +550,9 @@ Additionally, a PMC may decide to create and manage an organization for the Top-
 
 The Eclipse Foundation has no formal relationship with Maven Central or staging providers like OSSRH. Eclipse project teams are, however, welcome to use these services as a distribution channel.
 
-By convention, the `groupid` should be of the form `pass:a,c[{namespace}.<shortname>]` (e.g. `{namespace}.dash` for the `technology.dash` project). Project teams should work with their PMC if some exception to this convention is required (and take care to avoid infringing on the namespaces of other projects). The form of the `artifactid` should be determined by the project team. The version number should follow the standard Semantic Versioning pattern. All pre-release builds must be appropriately labeled (e.g. `1.0M3` for pre-release builds of version `1.0`). 
+By convention, the `groupid` should be of the form `pass:a,c[{namespace}.<shortname>]` (e.g. `{namespace}.dash` for the `technology.dash` project). Project teams should work with their PMC if some exception to this convention is required (and take care to avoid infringing on the namespaces of other projects). The form of the `artifactid` should be determined by the project team. The version number should follow the standard Semantic Versioning pattern. All pre-release builds must be appropriately labelled (e.g. `1.0M3` for pre-release builds of version `1.0`). 
 
-Project teams must engage in the <<release>> process before labeling any software as a release version.
+Project teams must engage in the <<release>> process before labelling any software as a release version.
 
 The Eclipse Release Engineering Team has provided some help regarding the use of Maven Central in the https://wiki.eclipse.org/IT_Infrastructure_Doc#Publish_to_Maven_Central[Eclipsepedia Wiki].
 
@@ -595,7 +590,7 @@ If you provide content to your community via any form of click-to-download notio
 
 Can we host pre-release software (e.g. milestone builds) on Maven Central? ::
 
-Reasonable steps must be taken to ensure that the consumer understands the pre-release nature of software. At a minimum, pre-release software must be labeled as such. A milestone build for version 1.0, for example, must be labeled as "1.0M1" (or similar). Pre-release software can be pushed to Maven Central, but due to the permanent nature of content that is pushed there, it will persist there indefinitely. Whether or not this is desirable is a decision that the project team should make with help from their PMC.
+Reasonable steps must be taken to ensure that the consumer understands the pre-release nature of software. At a minimum, pre-release software must be labelled as such. A milestone build for version 1.0, for example, must be labelled as "1.0M1" (or similar). Pre-release software can be pushed to Maven Central, but due to the permanent nature of content that is pushed there, it will persist there indefinitely. Whether or not this is desirable is a decision that the project team should make with help from their PMC.
 
 Can we use external services like OSSRH to stage pre-release builds? ::
 

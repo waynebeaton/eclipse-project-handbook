@@ -19,11 +19,11 @@ For many open source organisations, open means the same thing as _transparent_: 
 +
 At the Eclipse Foundation, we take the _open_ part of open source very seriously. It’s codified in the Open Source Rules of Engagement found in the [Eclipse Foundation Development Process](https://www.eclipse.org/projects/dev_process/).
 +
-Everybody needs to play by the same set of rules. A level playing field doesn’t necessarily mean that a project team needs to accept every single contribution that comes their way. Rather, it means that the project team needs to have a set of rules by which _everybody_ participates; and these rules can’t include things like for whom the contributor works.
+Everybody needs to play by the same set of rules. A level playing field doesn't necessarily mean that a project team needs to accept every single contribution that comes their way. Rather, it means that the project team needs to have a set of rules by which _everybody_ participates; and these rules can’t include things like for whom the contributor works.
 +
 Contribution rules can require that contributions fall within the project’s scope and current release plan. The rules can require that all code contributions be accompanied by unit tests and documentation; or that contributions implement a solution for an issue that’s been discussed by the project team in their issue tracker. Some sort of quality bar is a reasonable part of any set of contribution rules.
 +
-For most open source projects, these contribution rules aren’t formally captured. However, most of the rules that I’ve listed so far collectively form a pretty reasonable default set of participation rules. A quality bar is (obviously) hard to quantify, but for many project teams it’s enough that any committer feels that the contribution should be accepted (some projects require that two committers _sign off_ on a contribution before it can be accepted).
+For most open source projects, these contribution rules aren't formally captured. However, most of the rules that I've listed so far collectively form a pretty reasonable default set of participation rules. A quality bar is (obviously) hard to quantify, but for many project teams it’s enough that any committer feels that the contribution should be accepted (some projects require that two committers _sign off_ on a contribution before it can be accepted).
 +
 Note that it’s also perfectly reasonable for a project team to require that significant contributions come with a promise of continued investment in the form of the contributor becoming a member of the project team.
 +
@@ -31,7 +31,8 @@ Regardless of the rules that define the level playing field for any particular p
 
 Eclipse Projects are also required to implement the Eclipse Foundation's IP Policy. Tracking intellectual property grants and ensuring that all contributors and committers are covered by agreements that
 
-[qand]
+[qanda]
+
 Committers must work day-to-day in the repositories assigned to the {forgeName} project by the Eclipse Foundation ::
 
 Making it so that people who are outside of the development team (that is, the contributors) have the ability to access the most up-to-date version of the project code is an absolute requirement. To that end, committers must push content directly into designated open repositories. {forgeName} project committers must never stage to a private or semi-private repository and then “periodically sync” to the open repository; employing this sort of strategy raises a significant barrier for entry that makes it impossible for anybody else to participate.

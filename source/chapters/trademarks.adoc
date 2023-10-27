@@ -137,13 +137,13 @@ Acronyms often become brand names.
 To avoid confusion between {forgeName} projects and commercial products, {forgeName} projects may not be named after commercial products and vice versa. To ensure that users understand the source of software products--i.e. from {aForgeName} project, or from a third-party vendor--the brand for {aForgeName} project must not include or be directly reminiscent of a commercial product.
 
 [[trademarks-project-short]]
-==== Short Names and Ids
+==== Short Names and IDs
 
 Projects require a short name; this name is used to as an ID for the project in various parts of Eclipse Foundation infrastructure and should be as reflective of the formal name as possible.  It may, for example, be a lowercase rendering of the brand name, or an acronym of a descriptive name.
 
 The short name may contain lowercase alphanumeric characters, dashes, and underlines. The short name may not contain periods (.). Short names are used in some project URLs, download directories, the build server, and in the technical namespaces of other parts of the supported infrastructure.
 
-The short name is joined with the short name of the parent project(s) to form a qualified identifier for the project that is used as a key on many of the webpages and services generated and/or maintained for the project by the Eclipse Foundation. e.g. the _{forgeName} Woolsey_ project has a short name of `woolsey`; its qualified name is `technology.dash.woolsey`, indicating that it is a subproject of the {aForgeName} _Dash_ Project which is itself a subproject of the {forgeName} _Technology_ Top Level Project.
+The short name is joined with the short name of the parent project(s) to form a qualified identifier for the project that is used as a key on many of the web pages and services generated and/or maintained for the project by the Eclipse Foundation. e.g. the _{forgeName} Woolsey_ project has a short name of `woolsey`; its qualified name is `technology.dash.woolsey`, indicating that it is a subproject of the {aForgeName} _Dash_ Project which is itself a subproject of the {forgeName} _Technology_ Top Level Project.
 
 Project names should always be referred to in a consistent casing, and used as an adjective (never as a noun or verb) like any trademark should be used (e.g. "Download {forgeName} Woolsey software here", using the Woolsey name as an adjective for software).
 
@@ -186,7 +186,7 @@ All primary links to the project (including, for example, the project’s contri
 [[trademarks-website-name]]
 ==== Name References
 
-The first reference to a project or product on every web page--especially in page titles or headers--must use the <<trademarks-project-formal,formal name>> and must include the relevant trademark (™) or registered trademark (®) symbol (e.g. _{forgeName} Woolsey Intellectual Property Tools™_). When a webpage features an otherwise prominent reference to the project or product (e.g. in a callout), that reference should also use the formal name. Other references may use  the nickname or acronym (e.g. _{forgeName} Woolsey_ or _Woolsey_) as appropriate.
+The first reference to a project or product on every web page--especially in page titles or headers--must use the <<trademarks-project-formal,formal name>> and must include the relevant trademark (™) or registered trademark (®) symbol (e.g. _{forgeName} Woolsey Intellectual Property Tools™_). When a web page features an otherwise prominent reference to the project or product (e.g. in a callout), that reference should also use the formal name. Other references may use  the nickname or acronym (e.g. _{forgeName} Woolsey_ or _Woolsey_) as appropriate.
 
 [[trademarks-website-footer]]
 ==== Footers
@@ -227,7 +227,7 @@ The use of Eclipse Foundation trademarks outside of the immediate scope of the o
 [[trademarks-external-events]]
 ==== Conferences and Events
 
-Use of the terms _Eclipse_, _EclipseCon_, and _Eclipse Day_ are reserved for exclusive use by events authorized by the Eclipse Foundation. 
+Use of the terms _Eclipse_, _EclipseCon_, and _Eclipse Day_ are reserved for exclusive use by events authorised by the Eclipse Foundation. 
 
 Other Eclipse Foundation trademarks (e.g. project names) may be used in events, but must be approved by the EMO subject to the following considerations:
 

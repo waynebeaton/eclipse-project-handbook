@@ -13,7 +13,7 @@
 [[promotion]]
 = Promoting your Project
 
-It’s certainly true that great technology is an important part of what makes {forgeName} open source projects great. However, technology alone isn’t enough. Technology needs to have a xref:community[community]. Open source projects need to bring the community together to do great things.
+It’s certainly true that great technology is an important part of what makes {forgeName} open source projects great. However, technology alone isn't enough. Technology needs to have a xref:community[community]. Open source projects need to bring the community together to do great things.
 
 Developing a community is an important part of being an open source project. It is from a community of users, adopters, and contributors that a project draws strength and longevity. Without a community, an open source project is just a bunch of code that might as well buried on a server behind a firewall somewhere in parts unknown.
 
@@ -74,13 +74,13 @@ _Know what kind of community you want to build._ Tailor your efforts to address 
 
 _Develop an elevator pitch for your project._ An elevator pitch is a thirty second to two-minute “sound bite” that describes your project in a way that be understood by a layperson. When done well, an elevator pitch motivates the listener to spend more time investigating your project. Make sure your developers can recite it. Make sure that the the project provides a means for the listener to go and find more information (e.g., a xref:promotion-website[website]).
 
-_Establish drum beat of outward communication_ Identify team members who can regularly blog, Tweet, podcast, host webinars, and otherwise provide outward communication. Coordinate their efforts so that communication is regular: daily, weekly, or monthly. It’s hard to ignore regular communication.
+_Establish drum beat of outward communication_ Identify team members who can regularly blog, podcast, host webinars, and otherwise provide outward communication. Coordinate their efforts so that communication is regular: daily, weekly, or monthly. It’s hard to ignore regular communication.
 
 _Leverage the existing community._ Leverage services provided by the Eclipse Foundation, like the {planetEclipseUrl}[Planet Eclipse] blog aggregator which provides a window into the world, work, and lives of Eclipse committers and contributors.
 
 _Present and represent._ Engage in demo camps, user groups, and other local networking opportunities on behalf of your project.
 
-_Make community development a part of your project’s regular work._ Interacting with and growing the community is every bit as important as writing the actual code. Make sure that all of your developers understand that community development is important and encourage them all to participate. Assume that it’s going to take a while. You’ll know that you’ve been successful when it starts to take on a life of it’s own (e.g. when people from your community start writing articles, blog posts, doing talks about your project at conferences, .,.).
+_Make community development a part of your project’s regular work._ Interacting with and growing the community is every bit as important as writing the actual code. Make sure that all of your developers understand that community development is important and encourage them all to participate. Assume that it’s going to take a while. You'll know that you've been successful when it starts to take on a life of it’s own (e.g. when people from your community start writing articles, blog posts, doing talks about your project at conferences, .,.).
 
 While the reviews and processes described by the EDP may seem onerous, they are a necessary part of community development. You should anticipate spending a significant amount of time responding to questions posed in various forums (community forums, mailing lists, and other places where your community gathers. You should plan on attending conferences, presenting webinars, writing papers, and more to support your project.
 
@@ -103,16 +103,16 @@ All {forgeName} projects are encouraged to create a unique logo to identify thei
 
 [TIP]
 ====
-The Eclipse Foundation will use the project logo to promote a project. Project teams should be sure to create their project logo with a transparent background so that it will display well on arbitrary background colors. Square logos are preferred and should be sized to display well at the 200x200 pixels resolution maximum permitted by the project metadata.
+The Eclipse Foundation will use the project logo to promote a project. Project teams should be sure to create their project logo with a transparent background so that it will display well on arbitrary background colours. Square logos are preferred and should be sized to display well at the 200x200 pixels resolution maximum permitted by the project metadata.
 ====
 
-Logos are important to recognize as trademarks. For a project's official logo, the designer must ensure that it includes a small trademark (™) or registered trademark (®) symbol (as appropriate) in the graphic or immediately adjacent to it.
+Logos are important to recognise as trademarks. For a project's official logo, the designer must ensure that it includes a small trademark (™) or registered trademark (®) symbol (as appropriate) in the graphic or immediately adjacent to it.
 
 Projects may request to use an Eclipse logo within their project logo, or otherwise create a derivative of the Eclipse logo. However, they must contact the EMO by opening a {emoApprovalsUrl}[issue] to request the Eclipse Foundation's Board of Directors' permission to do so.
 
 [NOTE]
 ====
-Add your project logo to your project's metadata via the <<pmi-project-logos,PMI>>.
+Add your project logo to your project's metadata via the xref:pmi-project-logos[PMI].
 ====
 
 [#promoting-project-logo-design]

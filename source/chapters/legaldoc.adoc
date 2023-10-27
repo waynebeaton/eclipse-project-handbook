@@ -22,7 +22,7 @@ Where possible we adopt standards and conventions in order to be good open sourc
 
 [NOTE]
 ====
-This document describes a set of general guidelines for legal documentation. Projects that implement Eclipse Platform Plug-ins and Features under the EPL-2.0 should follow the <<legaldoc-plugins,Legal Documentation for Eclipse Platform Plug-ins and Features>>.
+This document describes a set of general guidelines for legal documentation. Projects that implement Eclipse Platform Plug-ins and Features under the EPL-2.0 should follow the xref:legaldoc-plugins[Legal Documentation for Eclipse Platform Plug-ins and Features].
 
 Projects that implement Eclipse Platform Plug-ins and Features under the EPL-1.0 should follow the http://www.eclipse.org/legal/guidetolegaldoc-EPL-1.0.php[Guide to the Legal Documentation for Eclipse Plug-ins and Features under the EPL-1.0].
 ====
@@ -190,7 +190,7 @@ In SPDX, disjunction is used to express dual licensing and conjunction is used t
 
 The license file contains the exact text of the project’s declared licenses in human readable form. The declared licenses are those that the project team’s content is distributed under. This does not, for example, include the licenses of third-party content or incidental fragments of code that is incorporated into the project content (the license of any such content should be indicated in the source file itself and the notice file that accompanies it).
 
-If the project code is distributed under multiple licenses then the text of those licenses must be included. The file should start with a short paragraph that describes how the licenses are combined. This statement should in most cases, be exactly the same as the license statement in the file <<ip-copyright-headers,copyright and license headers>> (see the example below).
+If the project code is distributed under multiple licenses then the text of those licenses must be included. The file should start with a short paragraph that describes how the licenses are combined. This statement should in most cases, be exactly the same as the license statement in the file xref:ip-copyright-headers[copyright and license headers] (see the example below).
 
 Use inclusive disjunction (`OR`) when talking about dual licenses (e.g. "choose one or the other (or both)").
 
@@ -218,7 +218,7 @@ The notice file must include basic project metadata, an expression of the declar
 
 Project metadata provides the identity of the originating project, along with pointers to the project’s website and canonical source code repositories.
 
-The declared licenses statement should in most case, be exactly the same as the license statement in the file <<ip-copyright-headers,copyright and license headers>>.
+The declared licenses statement should in most case, be exactly the same as the license statement in the file xref:ip-copyright-headers[copyright and license headers].
 
 If cryptography is included with the content, then the following statement must be included in a comment in the _notice_ file:
 
@@ -357,7 +357,7 @@ The CONTRIBUTING file should make it easy for people who got interested in the p
 * Instructions for obtaining the sources;
 * Clear instructions for setting up any additional tools needed for the development;
 * A description of the dependencies of the project, or even better how to easily get all the necessary content the project depends on; and
-* A list of necessary steps to build the artifacts of the project (e.g. bundles, features, standalone products). 
+* A list of necessary steps to build the artifacts of the project (e.g. bundles, features, stand-alone products). 
 
 [[legaldoc-contributor-contributing]]
 === Contributing Code
@@ -383,7 +383,7 @@ The `CONTRIBUTING` file can optionally provide guidance for developers who want 
 
 [NOTE]
 ====
-Keeping a help-wanted list up-to-date can be challenging. Consider including a query (e.g. for "helpwanted" issues) rather than (or in addition to) specific work area recommendations.
+Keeping a help-wanted list up-to-date can be challenging. Consider including a query (e.g. for `helpwanted` issues) rather than (or in addition to) specific work area recommendations.
 ====
 
 [[legaldoc-security]]
@@ -413,7 +413,7 @@ updates.
 
 | Version      | Released   | Supported          | 
 | ------------ | ---------- | ------------------ | 
-| 1.0 Handbook | 2021-10-06 | :white_check_mark: | 
+| 1.0 Handbook | 2021-10-06 | Yes                | 
 
 ## Reporting a Vulnerability
 
@@ -495,4 +495,4 @@ We follow the lead of the https://spdx.org/[SPDX community] with regard to the w
 
 How do I get help?::
 
-If you have any questions or concerns, contact mailto:{legalEmail}[{legalEmail}].
+If you have any questions or concerns, contact {legalEmail}.
