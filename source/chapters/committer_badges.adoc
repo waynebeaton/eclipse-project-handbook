@@ -99,3 +99,8 @@ Credly is a digital credentialing platform that allows individuals and organizat
 Do I need an account with Credly to accept the badge? ::
 
 Yes. You have the option to create an account or you can sign into Credly using your existing Google or Apple account.
++
+[NOTE]
+====
+You will have to agree to Credly’s privacy policy and terms of use in order to access the badge.
+====
