@@ -94,7 +94,7 @@ Show it to your mom.
 
 What is Credly? ::
 
-Credly is a digital credentialing platform that allows individuals and organizations to create, issue, and manage digital badges. 
+Credly is a digital credentialing platform that allows individuals and organisations to create, issue, and manage digital badges. 
 
 Do I need an account with Credly to accept the badge? ::
 

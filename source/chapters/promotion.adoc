@@ -41,7 +41,7 @@ digraph {
 
 The first community, _users_, tends to regard open source primarily as consumable technology.
 
-The _adopter_ community contains individuals and organizations that build solutions based on open source technology. This includes those individuals and organizations who base a business on providing development assistance and support for open source technology. 
+The _adopter_ community contains individuals and organisations that build solutions based on open source technology. This includes those individuals and organisations who base a business on providing development assistance and support for open source technology. 
 
 The _developer_ contains that group of individuals who contribute directly to open source projects in the form of patches and/or contributions new functionality. xref:contributing-contributors[Contributors] tend to participate directly in an open source project by providing code, ideas, answers to questions in community forums, and more. xref:contributing-committers[Committers] are a subset of the contributors with write access to the resources maintained by a project (committer access is provided on a project-by-project basis). The idea is that a contributor is invited to become a committer and xref:elections-committer[elected] into that position based on credibility established over a period of time. 
 
@@ -123,7 +123,7 @@ Projects teams can engage a graphic design crowdsourcing site or similar service
 [#promotion-adopters]
 === Adopters Programme
 
-The {adoptersProgrammeUrl}[Eclipse Project Adopters Programme] provides a means for projects to highlight the various organizations, groups, and other open source projects that leverage their content. 
+The {adoptersProgrammeUrl}[Eclipse Project Adopters Programme] provides a means for projects to highlight the various organisations, groups, and other open source projects that leverage their content. 
 
 The Eclipse Project Adopters Programme provides:
 
@@ -133,7 +133,7 @@ The Eclipse Project Adopters Programme provides:
 
 [WARNING]
 ====
-An important aspect of the Eclipse Project Adopters Programme is that adopter organizations are themselves responsible for providing the Eclipse Foundation with their logos, links, and other information. To avoid confusion and liability, {forgeName} project teams should not manage these resources directly.
+An important aspect of the Eclipse Project Adopters Programme is that adopter organisations are themselves responsible for providing the Eclipse Foundation with their logos, links, and other information. To avoid confusion and liability, {forgeName} project teams should not manage these resources directly.
 ====
 
 [#promoting-marketing]

@@ -36,7 +36,7 @@ Committers:
 [#roles-pl]
 == Project Lead
 
-{forgeName} projects must have at least one project lead, and may have more than one. The project leads are the primary liaison between the project team and the xref:roles-emo[Eclipse Management Organization](EMO). As the first link in the project leadership chain, project leads have responsibility to ensure that the project team is able to successfully implement the goals of the project in accordance with the {edpLink} and {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy]. 
+{forgeName} projects must have at least one project lead, and may have more than one. The project leads are the primary liaison between the project team and the xref:roles-emo[Eclipse Management Organisation](EMO). As the first link in the project leadership chain, project leads have responsibility to ensure that the project team is able to successfully implement the goals of the project in accordance with the {edpLink} and {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy]. 
 
 The EMO considers it a good practice to have more than one person in that role to ensure that there is continuity. There is no artificial maximum number of project leads for {aForgeName} project: the main thing that the EMO is concerned with is that project leads are elected in a vendor neutral manner following public demonstrations of leadership (documented as comments on issues, contributions to mailing list discussions, etc.) that are cited in the nomination statement. The EMO specifically watches elections to ensure that vendor neutrality is observed.
 
@@ -46,7 +46,7 @@ Project leads are responsible for ensuring that project committers are following
 
 [TIP]
 ====
-Project leads should seek help/advice from the xref:roles-pmc[Project Management Committee] and xref:roles-emo[Eclipse Management Organization] when they need assistance.
+Project leads should seek help/advice from the xref:roles-pmc[Project Management Committee] and xref:roles-emo[Eclipse Management Organisation] when they need assistance.
 ====
 
 Project leads have the ability to xref:elections-retire-cm[retire committers]: this is a power that must be used responsibly. A project lead needs to be able to support their decision to retire a committer. As a best practice, the project lead should give committers reasonable opportunity to retrain their status, and -- should the decision be made to retire -- committer retirements should be announced on the project's primary communication channels including the xref:resources-dev-list[dev-list]. 
@@ -82,7 +82,7 @@ Top-level projects do not generally maintain open source content of their own, b
 
 The primary role of the PMC is to ensure that project teams are implementing the EDP and operating within the terms outlined by the top-level project's charter. In particular, the PMC monitors project activity to ensure that project teams are operating in an open and transparent manner. 
 
-The PMC is responsible for defining and managing the structure of the top level project and the organization of the open source (software and specification) projects contained within.
+The PMC is responsible for defining and managing the structure of the top level project and the organisation of the open source (software and specification) projects contained within.
 
 The PMC provides other oversight regarding the operation of open source projects. They review and approve xref:progress-review[progress reviews], and facilitate cross-project communication within the top level project.
 
@@ -170,7 +170,7 @@ The Eclipse Architecture Council serves the community by identifying and tacklin
 More concretely, the Eclipse Architecture Council serves four basic purposes:
 
 - To maintain and interpret the {edpLink};
-- To provide advice to the xref:roles-emo[Eclipse Management Organization];and
+- To provide advice to the xref:roles-emo[Eclipse Management Organisation];and
 - To contribute best practices and advice to {forgeName} open source projects.
 
 Every xref:roles-pmc[PMC] may appoint a representative to the Architecture Council to represent the interests of the PMC and corresponding Top-level Project. Every Strategic Member of the Eclipse Foundation may also appoint a representative. Other Architecture Council Members are nominated and voted on by the Architecture Council itself, and appointed by the council by the Eclipse Foundation's Executive Director. Appointed members serve a two year renewable term.
@@ -185,9 +185,9 @@ The Architecture Council interacts primarily via their https://accounts.eclipse.
 xref:roles-cm[Committers] and xref:roles-pl[Project Leads] should connect with the Architecture Council via their PMC.
 
 [#roles-emo]
-== Eclipse Management Organization (EMO)
+== Eclipse Management Organisation (EMO)
 
-The Eclipse Management Organization (EMO) consists of the Eclipse Foundation staff, and the Eclipse Architecture Council. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the Eclipse Foundation Development Process. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead, or xref:roles-pmc[PMC], ask the EMO.
+The Eclipse Management Organisation (EMO) consists of the Eclipse Foundation staff, and the Eclipse Architecture Council. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the Eclipse Foundation Development Process. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead, or xref:roles-pmc[PMC], ask the EMO.
 
 [#roles-faq]
 == Frequently Asked Questions

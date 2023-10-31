@@ -31,7 +31,7 @@ A committer is a software developer who has the necessary rights to write code i
 
 Community ::
 
-Community is a nebulous sort of term. Community is the group of individuals and organizations that gather around your project. In the case of some projects, the community is enormous. Other projects have smaller communities. Developing a community is a very important part of being {aForgeName} project as it is from the community that you get feedback, contributions, fresh ideas, and ultimately new committers to help you implement your shared vision. The _{forgeName} Community_ is formed from the union of the communities that grow around individual projects.
+Community is a nebulous sort of term. Community is the group of individuals and organisations that gather around your project. In the case of some projects, the community is enormous. Other projects have smaller communities. Developing a community is a very important part of being {aForgeName} project as it is from the community that you get feedback, contributions, fresh ideas, and ultimately new committers to help you implement your shared vision. The _{forgeName} Community_ is formed from the union of the communities that grow around individual projects.
 
 Contributor ::
 
@@ -87,7 +87,7 @@ The xref:ip[Intellectual Property Due Diligence Process] defines the process by 
 	
 Member Company ::
 
-The Eclipse Foundation and Eclipse community is supported by our {memberUrl}[member organizations]. Through this support, the Eclipse Foundation provides the open source community with IT, intellectual property, and marketing services.
+The Eclipse Foundation and Eclipse community is supported by our {memberUrl}[member organisations]. Through this support, the Eclipse Foundation provides the open source community with IT, intellectual property, and marketing services.
 
 Project::
 
@@ -122,4 +122,4 @@ Webmaster is often used as an alternative name for the Eclipse IT Team. The IT t
 	
 Working Group ::
 
-Eclipse {wgUrl}[Working Groups] provide a vendor-neutral governance structure that allow organizations to freely collaborate on new technology development. 
+Eclipse {wgUrl}[Working Groups] provide a vendor-neutral governance structure that allow organisations to freely collaborate on new technology development. 

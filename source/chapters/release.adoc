@@ -18,7 +18,7 @@
 
 Releases and reviews are crucial aspects of the project life cycle within the Eclipse Development Process. Through regular and transparent releases, Eclipse projects ensure that their software remains up-to-date and reliable.
 
-Annually (more frequent for specification projects), Eclipse projects undergo a thorough review process in close collaboration with the Eclipse Management Organization (EMO) and the Project Management Committee (PMC). This collaborative effort ensures that each project adheres to high-quality standards and follows the best open-source software (OSS) practices and guidelines established by the Eclipse Foundation. Reviews may be associated with a specific release, referred to as a "Release Review", or may not be linked to any particular release, known as a "Progress Review".
+Annually (more frequent for specification projects), Eclipse projects undergo a thorough review process in close collaboration with the Eclipse Management Organisation (EMO) and the Project Management Committee (PMC). This collaborative effort ensures that each project adheres to high-quality standards and follows the best open-source software (OSS) practices and guidelines established by the Eclipse Foundation. Reviews may be associated with a specific release, referred to as a "Release Review", or may not be linked to any particular release, known as a "Progress Review".
 
 Additionally, there are other, less common but equally important types of reviews at the Eclipse Foundation, including Graduation Reviews, Restructuring Reviews, and Termination Reviews.  In the following section, we will go into the specifics of these release and review processes.
 
@@ -178,7 +178,7 @@ For a graduation review, review documentation must be provided by the project te
 
 * solid working code with stable APIs; 
 * an established and growing community around the project;
-* diverse multi-organization committer/contributor/developer activity; and
+* diverse multi-organisation committer/contributor/developer activity; and
 * operation in the open using open source rules of engagement.
 
 The graduation review documentation should demonstrate that members have learned the ropes and logistics of being {aForgeName} project. That is, the project "gets the {forgeName} way".

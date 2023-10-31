@@ -64,9 +64,9 @@ All project and product names must be vetted and approved by the EMO.
 Project teams may request legal trademark registration for their project or product name. Since trademark registration requires a significant investment in time money and ongoing maintenance  project teams must work with the EMO to determine whether trademark registration is necessary, determine in which jurisdictions the trademark must be registered, and how that registration will impact the project (e.g. adding registration marks on the website and in products).
 
 [[trademarks-background-orgs]]
-==== Other Organization’s Trademarks
+==== Other Organisations' Trademarks
 
-Project teams must ensure that product names that include other organizations’ Trademarks in names must conform to those organizations’ trademark usage guidelines. For example, "{forgeName} Foo Perl" is not appropriate, since it improperly uses the trademark "Perl" (which is a trademark of The Perl Foundation); a better project name would likely be "{forgeName} Foo for Perl" (assuming that is permitted by the Perl Foundation). Use of another organization’s trademark should be limited and approved on a case by case basis.
+Project teams must ensure that product names that include other organisations’ Trademarks in names must conform to those organisations’ trademark usage guidelines. For example, "{forgeName} Foo Perl" is not appropriate, since it improperly uses the trademark "Perl" (which is a trademark of The Perl Foundation); a better project name would likely be "{forgeName} Foo for Perl" (assuming that is permitted by the Perl Foundation). Use of another organisation’s trademark should be limited and approved on a case by case basis.
 
 [[trademarks-background-name]]
 ==== Choosing a Name
@@ -91,7 +91,7 @@ Renaming projects (i.e. after a project has been created and provisioned) requir
 
 A project, as defined by the {edpLink}, is the main operational unit; all open source software development at {forgeName} occurs within the context of a project. The Eclipse Foundation holds the trademark for all {forgeName} Projects.
 
-All project names must be approved by the Eclipse Management Organization (EMO) either before a project is created or before an existing project is renamed.
+All project names must be approved by the Eclipse Management Organisation (EMO) either before a project is created or before an existing project is renamed.
 
 [[trademarks-project-formal]]
 ==== Formal Name
@@ -159,7 +159,7 @@ Most open source projects produce products that share the project name. There ar
 
 Product names should also be prefixed with an Eclipse Foundation <<trademarks-brands,brand>> when used in any formal context (e.g. _{forgeName} Widgets_).
 
-Project teams should work with their xref:#roles-pmc[Project Management Committee] (PMC) to determine whether or not to pursue assertion of ownership of the trademark for product names. Project teams should work with the Eclipse Management Organization (EMO) to assert ownership of product trademarks.
+Project teams should work with their xref:#roles-pmc[Project Management Committee] (PMC) to determine whether or not to pursue assertion of ownership of the trademark for product names. Project teams should work with the Eclipse Management Organisation (EMO) to assert ownership of product trademarks.
 
 [[trademarks-project-description]]
 === Project Descriptions
@@ -302,7 +302,7 @@ e.g., "Java is a registered trademark of Oracle. Other names may be trademarks o
 
 Nothing in this Eclipse Foundation document shall be interpreted to allow any third-party to claim any association with the Eclipse Foundation or any of its projects or to imply any approval or support by the Eclipse Foundation for any third-party products, services, or events, unless specifically covered by an Eclipse Membership agreement.
 
-Questions? Project participants who have questions about Eclipse Foundation trademarks either used here or at third-party sites should contact the EMO. Other organizations looking for information on how to use or refer to any Eclipse Foundation project trademarks or logos should see the {trademarkGuidelinesLink}.
+Questions? Project participants who have questions about Eclipse Foundation trademarks either used here or at third-party sites should contact the EMO. Other organisations looking for information on how to use or refer to any Eclipse Foundation project trademarks or logos should see the {trademarkGuidelinesLink}.
 
 Thanks and credit to the Apache Software Foundation's http://www.apache.org/foundation/marks/pmcs[Project Branding Requirements] (licensed under the Apache License, v2.0) for parts of this trademark section.
 

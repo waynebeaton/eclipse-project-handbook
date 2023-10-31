@@ -29,7 +29,7 @@ digraph {
 	}
 	
 	subgraph cluster_github {
-		label="Github Organization";
+		label="Github Organisation";
 		committers;
 		leads;
 		contributors;
