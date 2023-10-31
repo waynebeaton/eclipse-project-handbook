@@ -183,6 +183,10 @@ For a graduation review, review documentation must be provided by the project te
 
 The graduation review documentation should demonstrate that members have learned the ropes and logistics of being {aForgeName} project. That is, the project "gets the {forgeName} way".
 
+[NOTE]
+====
+Connect with your xref:roles-pmc[PMC] to discuss whether or not the project is ready for graduation. Contact the {emoEmailLink} to schedule the review.
+====
 
 [[release-restructuring]]
 ==== Restructuring Reviews
