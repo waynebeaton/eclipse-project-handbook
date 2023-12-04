@@ -398,18 +398,23 @@ The _Source_ field is the important one. The scanner looks for content of the fo
 
 `[Source](<url>)`
 
-We need pointers to specific versions of content, ideally in an archive format (e.g. ZIP file). That is, please do not provide a pointer to a repository on GitHub; rather, provide a pointer to a specific downloadable ZIP archive associated with the particular release.
+We need pointers to specific versions of content, ideally in an archive format (e.g. a `ZIP` file). That is, please do not provide a pointer to a repository on GitHub; rather, provide a pointer to a specific downloadable ZIP archive associated with the particular release.
 
 For example:
 
 `[Source](https://github.com/kataras/iris/archive/refs/tags/v12.1.8.zip)`
 
-NOTE that we need to have a source pointer. If you cannot (or do not) provide it, processing will be delayed while we hunt it down.
+[NOTE]
+====
+We need to have a source pointer. If you cannot (or do not) provide it, processing will be delayed while we hunt it down.
+====
 
-[TIP]
-====
-If it makes sense to do so, you can xref:ip-request-attachments[upload an attachment] containing source content. You might do this when, for example, you need to leverage some small part of a much larger work.
-====
+The source must be one of the following:
+
+* A URL pointing to an archive (e.g., `*.zip`, `*.tar.gz`)
+* An xref:ip-request-attachments[attachment];
+* The URL for an Eclipse GitLab merge request (e.g., pass::[https://gitlab.eclipse.org/eclipse/technology/dash/org.eclipse.dash.handbook/-/merge_requests/1]); or
+* The URL for a GitHub pull request, (e.g. pass::[https://github.com/eclipse/dash-licenses/pull/278]).
 
 ===== Provide additional Information
 
