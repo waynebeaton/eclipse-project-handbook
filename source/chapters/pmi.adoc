@@ -368,7 +368,7 @@ To create a simultaneous release record and update its contents, the supervising
 
 [TIP]
 ====
-The Eclipse Planning Council manages the https://wiki.eclipse.org/Category:SimRel[Eclipse IDE Simultaneous Release], and maintains the https://wiki.eclipse.org/SimRel/Simultaneous_Release_Requirements[participation rules] (in particular, see the https://wiki.eclipse.org/SimRel/Simultaneous_Release_Requirements#State_intent_early[process for joining]). 
+The Eclipse Planning Council manages the https://github.com/eclipse-simrel[Eclipse IDE Simultaneous Release], and maintains the https://github.com/eclipse-simrel/.github/blob/main/wiki/SimRel/Simultaneous_Release_Requirements.md[participation rules]. 
 ====
 
 [TIP]
