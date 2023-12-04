@@ -62,7 +62,7 @@ Many projects provide binary/compiled _downloads_ of their software, intended fo
 * The project website and xref:pmi-project-page[project page] includes links for artifacts;
 * xref:starting-incubation-branding[Incubation branding] (when applicable) is included on distributed artifacts; 
 * All download artifacts are (if technical feasible) {jarSigningUrl}[signed]; and
-* Subject to limitations of specific technologies, the {versionNumberingUrl}[Version numbering] rules are followed.
+* Subject to limitations of specific technologies, the https://semver.org/[Semantic Versioning] rules are followed.
 
 [discrete]
 == Project Metadata

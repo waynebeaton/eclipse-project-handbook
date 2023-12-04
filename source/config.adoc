@@ -69,12 +69,11 @@
 :ecaSignUrl: https://dev.eclipse.org/site_login/myaccount.php#open_tab_cla
 :dcoUrl: https://www.eclipse.org/legal/DCO.php
 :incubationListUrl: https://dev.eclipse.org/mailman/listinfo/incubation
-:incubationBrandingUrl: http://wiki.eclipse.org/Development_Resources/HOWTO/Conforming_Incubation_Branding
+:incubationBrandingUrl: xref:starting-incubation-branding
 :membershipAgreementUrl: https://www.eclipse.org/org/documents/eclipse_membership_agreement.pdf
 
-:jarSigningUrl: https://wiki.eclipse.org/IT_Infrastructure_Doc#Sign_my_plugins.2FZIP_files.3F
+:jarSigningUrl: https://github.com/eclipse-cbi/cbi/wiki/Signing
 :downloadsUrl: https://wiki.eclipse.org/IT_Infrastructure_Doc#Downloads
-:versionNumberingUrl: https://wiki.eclipse.org/Version_Numbering
 
 :helpdeskUrl: https://gitlab.eclipse.org/eclipsefdn/helpdesk
 
