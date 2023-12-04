@@ -322,25 +322,6 @@ Use the xref:pmi-commands-release[Create a new release] command on a specific xr
 
 Describe the release in the _Description_ section. The description should generally be a concise paragraph describing the focus of the release (e.g. adding certain functionality, fixing bugs, etc.) in a form that is appropriate in an aggregation (e.g. a page that displays the release information for all projects participating in an instance of the Simultaneous release). The description should provide enough information to encourage the reader to click the menu:find out more[] link.
 
-[[pmi-release-issues]]
-==== Issues
-
-The _Issues_ tab is populated with descriptions and links to issues in the Eclipse Foundation's Bugzilla instance that are associated with the release. This feature has been flagged for deprecation and removal (see https://gitlab.eclipse.org/eclipsefdn/it/websites/projects.eclipse.org/-/issues/83[issue #83] for more information).
-
-The release record will automatically generate a list of targeted bugs.
-
-To populate this list:
-
-* Ensure that the Bugzilla _Product_ is set the to correct value in the project metadata;
-* Set the _target milestones_ in Bugzilla need to match the name of your release.
-
-[NOTE]
-====
-The matching algorithm tries to be as forgiving as possible, a release named `3.5`, `3.5.0`, or `3.5 (Luna)` will -- for example -- match target milestones named `3.5` ,`3.5M1`, `3.5 M2`, `3.5.0M3`, etc., but will not match `3.5.1`.
-====
-
-The bugs for all projects participating in the release will be included. Bugs are grouped by Bugzilla product and component.
-
 [[pmi-release-plan]]
 ==== Plan
 
@@ -432,3 +413,7 @@ If the new committer will be working with projects that use GitHub, they must be
 What is the difference between a _Committer_ and an _Historic Committer_? ::
 
 The _Who's Involved_ page lists committers and (in many cases) historic committers. Committers are those individuals who currently hold committer status (i.e., they can write to project resources). Historic committers are retired former committers. While they hold a special place in our hearts, they have no official status on the project. To turn an historic committer back into a committer, they must be xref:elections-committer[re-elected] to the project.
+
+[[pmi-release-issues]] Where did the _Issues_ Tab go? ::
+
+This feature was deprecated and removed (see https://gitlab.eclipse.org/eclipsefdn/it/websites/projects.eclipse.org/-/issues/83[issue #83] for more information).
