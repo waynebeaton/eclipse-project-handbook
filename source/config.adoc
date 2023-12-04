@@ -63,7 +63,7 @@
 :icaUrl: http://www.eclipse.org/legal/committer_process/EclipseIndividualCommitterAgreementFinal.pdf
 :ipzillaUrl: https://dev.eclipse.org/ipzilla
 
-:cbiUrl: http://wiki.eclipse.org/CBI
+:cbiUrl: https://github.com/eclipse-cbi/cbi/wiki
 :emoApprovalsUrl: https://gitlab.eclipse.org/eclipsefdn/emo-team/emo/-/issues/new?issue
 :ecaUrl: https://www.eclipse.org/legal/ECA.php
 :ecaSignUrl: https://dev.eclipse.org/site_login/myaccount.php#open_tab_cla

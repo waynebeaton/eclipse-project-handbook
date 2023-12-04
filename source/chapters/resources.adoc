@@ -534,7 +534,7 @@ These links can be provided in a field, a README, or on directly accessible (i.e
 
 The Eclipse Foundation owns several organizations on DockerHub, including https://hub.docker.com/u/eclipse/[eclipse], https://hub.docker.com/u/locationtech/[locationtech], and https://hub.docker.com/u/polarsys/[polarsys], but does not formally support or strictly manage the use of these organizations. 
 
-For more information, please see https://wiki.eclipse.org/CBI#Docker_Hub[CBI/DockerHub] in the Eclipse wiki.
+For more information, please see {cbiUrl}#docker-hub[CBI/DockerHub] in the Eclipse wiki.
 
 [NOTE]
 ====
