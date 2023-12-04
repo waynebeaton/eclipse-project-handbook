@@ -413,8 +413,8 @@ The source must be one of the following:
 
 * A URL pointing to an archive (e.g., `*.zip`, `*.tar.gz`)
 * An xref:ip-request-attachments[attachment];
-* The URL for an Eclipse GitLab merge request (e.g., pass::[https://gitlab.eclipse.org/eclipse/technology/dash/org.eclipse.dash.handbook/-/merge_requests/1]); or
-* The URL for a GitHub pull request, (e.g. pass::[https://github.com/eclipse/dash-licenses/pull/278]).
+* The URL for an Eclipse GitLab merge request (e.g., `pass:[https://gitlab.eclipse.org/eclipse/technology/dash/org.eclipse.dash.handbook/-/merge_requests/1]`); or
+* The URL for a GitHub pull request, (e.g. `pass:[https://github.com/eclipse/dash-licenses/pull/278]`).
 
 ===== Provide additional Information
 
