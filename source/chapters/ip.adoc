@@ -386,7 +386,7 @@ We need you to identify the _Eclipse open source project_ that is accepting this
 
 In the template replace <project name> with the name of your Eclipse project (e.g., Eclipse Dash) and <project id> with the project's id (e.g., `technology.dash`):
 
-`Project: [Eclipse Dash](https://projects.eclipse.org/projects/technology.dash)`
+`Project: [Eclipse Dash](pass:[https://projects.eclipse.org/projects/technology.dash])`
 
 ===== Provide Basic Information
 
@@ -402,7 +402,7 @@ We need pointers to specific versions of content, ideally in an archive format (
 
 For example:
 
-`[Source](https://github.com/kataras/iris/archive/refs/tags/v12.1.8.zip)`
+`[Source](pass:[https://github.com/kataras/iris/archive/refs/tags/v12.1.8.zip])`
 
 [NOTE]
 ====
@@ -616,3 +616,15 @@ Versions of the Eclipse Foundation's Intellectual Property Policy prior to Octob
 [[ip-parallel-ip]]What is Parallel IP? ::
 
 The parallel IP Process allows {aForgeName} projects to make use of project code contributions and third party content before they are fully approved by the IP Team. In versions of the IP Policy prior to 2019, projects needed to meet specific requirements to be able to leverage the Parallel IP. This is no longer the case: full vetting is now always applied in parallel in all cases.
+
+Do I have to use the Eclipse Dash License Tool? ::
+
+No. The xref:ip-license-tool[Eclipse Dash License Tool] is provided as a convenience. It works with a variety of technologies, but not all.
+
+Can I count on the Eclipse Dash License Tool to detect all of my third party dependencies? ::
+
+No. In fact, the Eclipse Dash License Tool doesn't actually detect any dependencies. The Maven plugin uses the dependency resolution mechanism that is built into Maven, so the Maven plugin only knows what Maven knows. If your Maven-based build does funky things like grab code from random URLs, the tool won't detect that. For other technologies, the command-line version of the Dash License Tool only knows about the dependencies that you send to it.
+
+What happened to IPZilla and Contribution Questionnaires (CQs)? ::
+
+IPZilla was retired in 2022 and replaced with xref:ip-iplab[IPLab]. We're all taking steps to purge the term _CQ_ from our brains.
