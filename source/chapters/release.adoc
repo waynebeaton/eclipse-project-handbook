@@ -97,6 +97,34 @@ If you have questions regarding the distribution of milestone builds, contact th
 [[reviews]]
 === Reviews
 
+[#release-creation]
+==== Creation Reviews
+
+The creation review is only part of the overall project creation process which starts with a project proposal and ends with your code being available for distribution. Please see xref:starting[Starting an Open Source Project at the Eclipse Foundation] for a discussion of the overall process.
+
+Creation reviews occur over five generally-accepted business days. They are an extension of, and a natural conclusion to, the community review period for your project proposal. As such, your only real commitment during the review is to continue to monitor the proposal's communication channel and answer any questions related to your project.
+
+At the end of the review period, the EMO will declare the review complete (reviews tend to end successfully).
+
+[NOTE]
+====
+There are no calls. We used to have a phone call at the end of each review period; we don't do this anymore.
+====
+
+After the review, the EMO will initiate the provisioning process. As part of the committer provisioning process there will be paperwork requirements initiated via email; _please make sure that your project's committers respond to these email requests in a timely manner_ as the IT Team cannot provision any project resources until after at least one project committer's xref:paperwork[paperwork] has been processed.
+
+Prior to scheduling the creation review, the EMO will check for the following things:
+
+* Proposal document is complete:
+** Top-level project is captured;
+** Project has a well-defined scope;
+** xref:roles-pl[Project leads] are identified; 
+** The specified email addresses for project committers are correct (note that the proposal document will display warning messages for any committer email addresses that are not already registered to an Eclipse Foundation account); and
+** Biographical information (as it relates to the project) is provided for each initial committer;
+* xref:roles-pmc-reviews[PMC approval] has been obtained;
+* xref:trademarks-background[Trademark assignment] is complete; and
+* All questions have been satisfactorily answered in the communication channel.
+
 [[progress-review]]
 ==== Release and Progress Reviews
 

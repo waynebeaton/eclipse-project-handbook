@@ -129,12 +129,12 @@ Combinations are also possible. As part of the {forgeName} open source xref:star
 
 [NOTE]
 ====
-We must complete the open source xref:starting[project creation process] before we move any existing source code repositories or create new ones. Following a successful xref:starting-creation-review[Creation Review], the EMO will initiate the xref:starting-provisioning[provisioning] process. It is during the provisioning process that we activate project committers, move/create source code repositories, and create other project resources.
+We must complete the open source xref:starting[project creation process] before we move any existing source code repositories or create new ones. Following a successful xref:release-creation[Creation Review], the EMO will initiate the xref:starting-provisioning[provisioning] process. It is during the provisioning process that we activate project committers, move/create source code repositories, and create other project resources.
 ====
 
 The short version of the process is this:
 
-* Complete the xref:starting-proposal[proposal process] and xref:starting-creation-review[creation review];
+* Complete the xref:starting-proposal[proposal process] and xref:release-creation[creation review];
 * Project team and EMO works with Eclipse Foundation IT Team to set up source code repositories;
 * The EMO initiates the intellectual property review of the default branch of all repositories; and
 * The EMO IP Team will inform the EMO when the reviews are complete

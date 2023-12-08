@@ -23,7 +23,7 @@ It's also important to know what new projects don't give up. The project team re
 [[starting-proposal]]
 === Project Proposal
 
-{forgeName} open source projects start with a proposal that is made available to the community for review. At the end of the _community review_ period, we engage in a _creation review_, and then provision the project resources.
+{forgeName} open source projects start with a proposal that is made available to the community for review. At the end of the _community review_ period, we engage in a xref:release-creation[creation review], and then provision the project resources.
 
 [graphviz, images/starting_overview, svg]
 .An overview of the Project Creation Process
@@ -64,13 +64,6 @@ digraph {
 }
 ----
 
-Use the {createUrl}[web form] to create a new project proposal. Instructions are provided on the form. All new proposals are created in _draft_ mode, and are accessible only by the original author and anybody designated as a project lead or committer in the proposal. Only those individuals designated as a project lead may edit the proposal.
-
-[NOTE]
-====
-Keep track of the URL of the proposal. The website does not provide public links to the document until after the proposal is opened for community review. If you do lose track of the URL, ask {emoEmailLink} for assistance.
-====
-
 A proposal must minimally include a description of the project, a declaration of scope, and a list of prospective members (project leads and committers) before we make it accessible to the public for _community review_.
 
 When you feel that the proposal is ready, send a note to the Eclipse Management Organisation ({emoEmailLink}) requesting that the proposal be made available to the public for review. The EMO will review the proposal and may provide feedback before initiating the _community review_ period.
@@ -79,12 +72,41 @@ At the beginning of the _community review_ period, the EMO will announce the pro
 
 A proposal will be open for community review for a minimum of two weeks.
 
-The Eclipse Foundation holds the _trademark_ for all {forgeName} projects. Trademark assignment is undertaken prior to the creation of any new project. If you already have a trademark on your project name, that trademark must be assigned to the Eclipse Foundation. Be advised that trademark assignment can be a time-consuming process (it can take hours, days, or weeks depending on the circumstances surrounding the name). If you currently hold the trademark, you will be asked to complete a {trademarkTransferUrl}[Trademark Transfer Agreement].
+[[starting-proposal-document]]
+=== Project Proposal Document
+
+Use the {createUrl}[web form] to create a new project proposal. 
+
+Instructions are provided on the form. All new proposals are created in _draft_ mode, and are accessible only by the original author and anybody designated as a project lead or committer in the proposal. Only those individuals designated as a project lead may edit the proposal.
+
+[NOTE]
+====
+Keep track of the URL of the proposal. The website does not provide public links to the document until after the proposal is opened for community review. If you do lose track of the URL, ask {emoEmailLink} for assistance.
+====
+
+When making the decision to initiate the xref:release-creation[creation review] that will turn the project proposal into {aForgeName} open source project, the EMO will consider the following:
+
+Scope :: Does the project have a technology scope and focus which will have a reasonable likelihood of success? Projects that are too big will definitely fail; projects that are too small are unlikely to be interesting.
+
+Clear and Concise Description :: If the community found any aspects of the proposal confusing, unclear, or using unfamiliar jargon, those areas must be clarified. This is a hard and fast requirement: because the Eclipse community must be able to evaluate the proposal. To do that, they must be able to understand the proposal and thus it must be clear and straightforward and free of marketing-speak.
+
+Committers :: The xref:release-creation[creation review] serves as the new xref:elections-committer[committer election] for the initial Committers and thus the proposal must contain the same level of nomination justification and background as an election would. The committer biographies don't have to be long or involved, but they should describe each committer's relationship to and history with the incoming code, and/or involvement with the area or technologies covered by the proposal.
++
+The project must have sufficient committed developers to achieve its goals. The Eclipse Foundation is not a place to "abandon in public" code; rather, the Eclipse Foundation strives to have active projects with active communities and thus enough developers to move the project along.
+
+Communities :: Does the project have a community of contributors and users, outside the core developers, who are willing to work towards making this a success? This is a bit of a Catch-22 situation because it is sometimes hard to attract a community before any milestones or releases, but it is also true that projects with limited developers and even fewer users tend not to have much technical impact.
+
+Collaborations :: Successful Eclipse projects are those that collaborate with existing Eclipse, or other open source, projects. Again, it can be hard to start a collaboration before demonstrating the technology, but at the same time it is never too early to start discussing collaborations with other projects. Additionally, it never hurts to join and help an existing project to start establishing those social networks that will make future collaborations on the new project possible.
+
+Sufficient Time for the Community :: Project proposals are held in community review for a minimum of two weeks. Anything less than two weeks of general accepted business days does not give the Eclipse membership sufficient notice of new initiatives.
+
+Diversity :: Is this a single company project or a multi-organization effort? If all the committers and contributors are in the same organisation or have financial ties to the same organisation, the project is at a greater risk of being de-staffed. Brand new projects are not required to be diverse, but projects cannot graduate from incubation without appropriate diversity.
+
+Trademarks :: The Eclipse Foundation holds the _trademark_ for all {forgeName} projects. Trademark assignment is undertaken prior to the creation of any new project. If you already have a trademark on your project name, that trademark must be assigned to the Eclipse Foundation. Be advised that trademark assignment can be a time-consuming process (it can take hours, days, or weeks depending on the circumstances surrounding the name). If you currently hold the trademark, you will be asked to complete a {trademarkTransferUrl}[Trademark Transfer Agreement].
 
 [#starting-creation-review]
-=== Creation Review
 
-When the project name trademark has been secured and the proposal contents are finalised, the EMO will schedule a _creation review_. Reviews -- which run for a minimum of one week -- are scheduled twice a month, generally concluding on the first and third Wednesday of each month. The creation review may overlap with the _community review_ period.
+When the project name trademark has been secured and the proposal contents are finalised, the EMO will schedule a xref:release-creation[creation review].
 
 [NOTE]
 ====
@@ -234,6 +256,18 @@ When a project has reached its logical conclusion, its resources are archived. T
 
 [qanda]
 
+Can we keep the project proposal in draft form (private) until a certain date? ::
+
+Yes. You can ask the EMO to keep a proposal private until you a ready.
+
+Can we create the project right now? Do we have to wait? ::
+
+Our process requires that a proposal be made available for community review (and review by our members) for a minimum of two weeks. The required xref:release-creation[creation review] requires one full week. In exceptional circumstances, we can overlap the community review and creation review, meaning that the best we can do for project creation is two weeks. Timely responses to our queries will help: we cannot for example, create a project until after we have transferred applicable trademarks and domains.
+
+Can we delay the creation review? ::
+
+Our practice is to move as quickly as we can, so the EMO will do its best to schedule a xref:release-creation[creation review] as quickly as possible. We can, however, hold off scheduling a creation review until you and the community are ready.
+
 [[starting-component]] Do I have to create an entirely new project? Can I extend an existing project? ::
 
 If new functionality falls within the scope of an existing project, then it may make sense to instead create a component within the project. Components are an informal concept for {forgeName} open source projects; the notion of a component generally manifests as a separate Git repository with access to that repository managed via social convention. 
@@ -271,7 +305,7 @@ What license(s) can I use for my project? ::
 
 Can I change the proposal after it is posted? ::
 
-Yes. The proposal can be changed any time before the start of the creation review.
+Yes. The proposal can be changed any time before the start of the xref:release-creation[creation review].
 
 When do I submit my code for review by the IP team? ::
 

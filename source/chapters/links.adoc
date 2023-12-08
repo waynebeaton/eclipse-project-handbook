@@ -27,7 +27,7 @@ Eclipse Foundation Forges;
 http://eclipse.org/proposals/mpc/[Marketplace Client]
 * link:Architecture Council[Architecture Council] - The role of the
 Architecture Council in a new project;
-* link:Development Resources/HOWTO/Creation Reviews[Creation Reviews] -
+* xref:release-creation[Creation Reviews] -
 Scheduling the proposal's creation review; and
 * link:Development Resources/HOWTO/Incubation Phase[Incubation Phase] -
 After the project has been created.

@@ -29,7 +29,7 @@ Individual working groups may add requirements for specification projects over a
 
 == Specification Project Reviews
 
-The EDP defines a number of life cycle reviews for Eclipse projects. All projects start with a creation review, but the most common type is the release review. In addition to those reviews defined by the EDP, the EFSP further defines plan reviews. 
+The EDP defines a number of life cycle reviews for Eclipse projects. All projects start with a xref:specifications-creation[creation review], but the most common type is the release review. In addition to those reviews defined by the EDP, the EFSP further defines plan reviews. 
 
 [graphviz, images/spec-release-review, svg]
 .Release review work flow
@@ -241,7 +241,7 @@ In the event of a failure, the specification committee will provide feedback reg
 [[specifications-creation]]
 === Creation Review
 
-Creation reviews give the community a last opportunity to review and comment on a new project proposal before it is created.
+xref:release-creation[Creation reviews] give the community a last opportunity to review and comment on a new project proposal before it is created.
 
 The specification committee needs to approve of the creation of a specification project from a proposal by taking a role in the creation review. The expectation is that the specification committee members will consider the details of a proposed specification project (with particular focus on the scope) before making their decision. In addition to the requirements defined by the {edpLink} (EDP), a xref:specifications-ballots[supermajority ballot] of the entire specification committee is required to approve a creation review.
 
@@ -262,7 +262,7 @@ During the development cycle, the project team will produce one or more _milesto
 A milestone build must never be used to claim compatibility with a specification. An implementation of a specification may only be considered _compatible_ when it is based on a xref:specifications-final[_final specification_].
 ====
 
-A development cycle begins when a either a creation review or a xref:specifications-plan-review[plan review] is declared successful. A specification project team must engage in a xref:specifications-progress-review[_progress review_] when a development cycle exceeds one year in duration. 
+A development cycle begins when a either a xref:specifications-creation[creation review] or a xref:specifications-plan-review[plan review] is declared successful. A specification project team must engage in a xref:specifications-progress-review[_progress review_] when a development cycle exceeds one year in duration. 
 
 [[specifications-progress-review]]
 === Progress Review
