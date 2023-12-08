@@ -48,7 +48,14 @@ The Eclipse Foundation provides the following services (high level) for {forgeNa
   * A programme for creating xref:specifications[specifications];
 * Thought leadership
   * Best practices based on industry trends (e.g., SBOMs and AI in open source)
-  
+
+[#resources-roe]
+=== Open, Transparent, and Meritocratic
+
+As discussed in the {edpLink} and throughout this document, {forgeName} open source projects operate in an open, transparent, and meritocratic manner.
+
+In this regard, _all_ project resources are publicly accessible. Put another way, {forgeName} open source projects have _no_ private resources. All content repositories, mailing lists, discussion forums, etc. are publicly accessible. Exceptions may be made with the approval of the PMC and EMO; and only when there is some legal reason or technical limitation that requires an exception. 
+
 [[resources-identifiers]]
 === Identifiers
 Project resources make use of two sorts of IDs:
@@ -220,7 +227,9 @@ All project leads are automatically granted the _Maintainer_ role on their proje
 ====
 With the _Maintainer_ role, project leads have significant privileges on GitLab repositories. Project leads must not manipulate the configuration of GitLab groups and repositories in a manner that would violate the {edpLink} or the {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy]. 
 
-For example, project leads **must not** manipulate privileges and must specifically **not** add or remove developers directly. See xref:elections-committer[Committer Elections] for information on how to add developers to a project, and xref:elections-retire-cm[Committers Retirement] for information on how to remove developers from a project.
+For example, project leads **must not** manipulate privileges and must specifically **not** add or remove developers directly. See xref:elections-committer[Committer Elections] for information on how to add developers to a project, and xref:elections-retire-cm[Committers Retirement] for information on how to remove developers from a project. 
+
+Project leads must also not use their privileges to create private repositories, as this would violate the xref:resources-roe[open source rules of engagement].
 ====
 
 Committers ::
