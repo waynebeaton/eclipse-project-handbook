@@ -25,29 +25,29 @@ Open source projects at the Eclipse Foundation are _required_ to make use of cer
 The Eclipse Foundation provides the following services (high level) for {forgeName} open source projects:
 
 * IT and Infrastructure
-  * Git hosting on xref:resources-gitlab[GitLab] or xref:resources-github[GitHub] (including issue tracking, wikis, CI/CD pipelines, etc.);
-  * Jenkins-based build infrastructure via our xref:resources-builds[Common Build Infrastructure];
-  * Artifact xref:resources-signing[signing];
-  * xref:resources-mailing-list[Mailing lists];
-  * IT support via the {helpdeskUrl}[Help Desk];
+** Git hosting on xref:resources-gitlab[GitLab] or xref:resources-github[GitHub] (including issue tracking, wikis, CI/CD pipelines, etc.);
+** Jenkins-based build infrastructure via our xref:resources-builds[Common Build Infrastructure];
+** Artifact xref:resources-signing[signing];
+** xref:resources-mailing-list[Mailing lists];
+** IT support via the {helpdeskUrl}[Help Desk];
 * Security
-  * Security audits;
-  * xref:vulnerability-cve[Vulnerability reporting] (the Eclipse Foundation is a CNA);
+** Security audits;
+** xref:vulnerability-cve[Vulnerability reporting] (the Eclipse Foundation is a CNA);
 * xref:promotion-resources[Promotion resources]
-  * Financial support to subsidise the creation of a xref:promoting-project-logo-design[project logo];
-  * The xref:promotion-adopters[Adopters Programme];
-  * Space on our web server for a xref:resources-website[project website];
+** Financial support to subsidise the creation of a xref:promoting-project-logo-design[project logo];
+** The xref:promotion-adopters[Adopters Programme];
+** Space on our web server for a xref:resources-website[project website];
 * Intellectual Property
-  * xref:ip[Intellectual property due diligence] support;
-  * Legal framework and infrastructure to mitigate the legal risk associated with contribution via the xref:contributing-eca[Eclipse Contributor Agreement] (ECA) and Developer's Certificate of Origin (DCO);
-  * Guidance for projects to ensure that xref:legaldoc[legal documentation] and xref:pmi[metadata] is provided in a vendor neutral and consistent manner;
+** xref:ip[Intellectual property due diligence] support;
+** Legal framework and infrastructure to mitigate the legal risk associated with contribution via the xref:contributing-eca[Eclipse Contributor Agreement] (ECA) and Developer's Certificate of Origin (DCO);
+** Guidance for projects to ensure that xref:legaldoc[legal documentation] and xref:pmi[metadata] is provided in a vendor neutral and consistent manner;
 * Open source project governance
-  * xref:elections-committer[Committer elections];
-  * Project trademark assistance and management;
+** xref:elections-committer[Committer elections];
+** Project trademark assistance and management;
 * Specifications
-  * A programme for creating xref:specifications[specifications];
+** A programme for creating xref:specifications[specifications];
 * Thought leadership
-  * Best practices based on industry trends (e.g., SBOMs and AI in open source)
+** Best practices based on industry trends (e.g., SBOMs and AI in open source)
 
 [#resources-roe]
 === Open, Transparent, and Meritocratic
