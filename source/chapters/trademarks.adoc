@@ -272,12 +272,14 @@ Naming exceptions may be granted for names that follow established conventions (
 
 Websites on external domains that use a project name trademark (e.g. `www.mosquitto.com`) that point to servers that are not hosted by the Eclipse Foundation, may be employed as community portals. External domains may be appropriate for some forms of documentation, community-generated content, and pointers to community forums. 
 
-Only existing, well-known domains that are already heavily linked and known by the community are permitted as external domains. For other historical domains that are not an important part of the project's brand, permanent (301) redirects should point to the official project website hosted on Eclipse Foundation infrastructure.
+For domains that leverage Eclipse Foundation trademarks, ownership of the domain name must be transferred to the Eclipse Foundation.
 
-Projects with widely-used historical domain names may continue using the domain with these considerations:
+[NOTE]
+====
+If a project team takes it upon themselves to acquire a domain, they must transfer ownership of that domain to the Eclipse Foundation. The Eclipse Foundation does not generally acquire domains on behalf of projects. Selecting a domain (and how to pay for the initial acquisition of that domain) are matters for the project team to sort out.
+====
 
-* Ownership of the domain name must be transferred to the Eclipse Foundation; and
-* The domain must be regarded and used exclusively as a community portal (and not as an official project website).
+The domain must be regarded and used exclusively as a community portal (and not as an official project website).
 
 [[trademarks-external-attribution]]
 ==== Trademark Attribution
