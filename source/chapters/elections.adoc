@@ -130,7 +130,7 @@ The <<paperwork, paperwork>> process will automatically be initiated following P
 [[elections-pl]]
 === Project Lead Elections
 
-Similar to a committer election, a project lead election starts with a statement of merit. The merit statement should, rather than focus on specific code contributions, focus instead on the leadership qualities expressed by the individual.
+Similar to a committer election, a xref:roles-pl[project lead] election starts with a statement of merit. The merit statement should, rather than focus on specific code contributions, focus instead on the leadership qualities expressed by the individual.
 
 .Project Lead merit statement
 ====
