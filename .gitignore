@@ -9,4 +9,11 @@ source/images/*.svg
 target/*
 /target/
 .asciidoctor
-/source/chapters/images
+.project
+.classpath
+.settings/*
+source/chapters/images/*
+source/chapters/diagrams/*.png
+
+# Ignore generated content (see /releng/build.sh)
+source/chapters/commits.adoc

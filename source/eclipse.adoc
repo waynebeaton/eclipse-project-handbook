@@ -62,6 +62,8 @@ include::chapters/ip.adoc[]
 
 include::chapters/legaldoc.adoc[leveloffset=+1]
 
+include::chapters/legaldoc-plugins.adoc[leveloffset=+1]
+
 include::chapters/release.adoc[]
 
 include::chapters/pmi.adoc[]
@@ -80,10 +82,8 @@ include::chapters/glossary.adoc[]
 
 include::chapters/contact.adoc[]
 
-= Appendices
-
-include::chapters/legaldoc-plugins.adoc[leveloffset=+1]
-
 include::efdp/source/development_process.adoc[leveloffset=+1]
 
 include::chapters/dpia.adoc[leveloffset=+1]
+
+include::chapters/document-history.adoc[leveloffset=+1]
