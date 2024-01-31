@@ -126,7 +126,7 @@ Copyright headers can take one of two forms. In the traditional form, the identi
  *   {name} - initial API and implementation
  ********************************************************************************/
 ----
-<1> Name of the initial copyright owner (this must be a legal entity); other organisations that have contributed are either listed individually or grouped together by appending "and others". The year is expressed either as a single year or a range spanning the year of the initial creation and that of the most recent change.
+<1> Name of the initial copyright owner (this must be a legal entity); other organisations that have contributed are either listed individually or grouped together by appending "and others". The \{year} is the year of the initial creation.
 <2> Declared project licenses described in human readable form.
 <3> Declared project licenses indicated using SPDX codes and expressions.
 <4> The names of the contributors and the nature of their contribution (this section may be excluded).
@@ -156,7 +156,7 @@ Alternatively, project teams can adopt a more generic copyright header for each 
  * SPDX-License-Identifier: EPL-2.0 <4>
  ********************************************************************************/
 ----
-<1> The year is expressed as a single year or a range spanning the year of the very initial assertion and that of the most recent change.
+<1> The \{year} is the year of the initial creation
 <2> Statement that indicates where the actual copyright information is located.
 <3> Declared project licenses described in human readable form.
 <4> Declared project licenses indicated using SPDX codes and expressions.
