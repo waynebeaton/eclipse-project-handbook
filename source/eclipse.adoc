@@ -52,6 +52,8 @@ include::chapters/security.adoc[leveloffset=+1]
 
 include::chapters/contributing.adoc[leveloffset=+1]
 
+include::chapters/generative-ai-usage.adoc[leveloffset=+1]
+
 include::chapters/elections.adoc[]
 
 include::chapters/paperwork.adoc[]
