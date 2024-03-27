@@ -54,6 +54,104 @@ Nominations such as "we all know Bob, vote for him" may work within the team, bu
 
 A committer nomination should explain the candidate's contributions to the project and thus why they should be elected as a committer. Cite the issues they have fixed via patches; cite the community forum postings they have answered; cite the xref:resources-dev-list[dev-list] design discussions to which they have contributed; etc. In all cases, provide URLs to source material.
 
+[#elections-contribution]
+==== How Much Contribution is Enough?
+
+The project team and xref:roles-pmc[PMC] decide how much contribution is enough. Ideally, a project team should have the standards by which they grant committer responsibility publicly documented (e.g., in the project's xref:legaldoc-contributor[contributor guide] or the top level project's charter). It is natural that these standards will change over the life of the project.
+
+Here are some guidelines:
+
+It's about what they have done, not what they may do ::
+
+Committer elections should be based on actual contribution to the project, not the potential for future contribution.
+
+Contribution is project-specific ::
+
+Contributors should be nominated to join the project team based on their contributions to the specific project.
++
+It is _generally_ inappropriate to nominate a committer for contributions that they've made to some other project.
++
+It may make sense in certain cases to nominate a committer for contributions made to a tightly coupled related project.
+
+At least some form of visible, public contribution is required ::
+
+At least one contribution on a public channel must be cited in the xref:elections-nomination[nomination]. The actual quantity of contributions required varies by project, should be included in the overall standard for the project, and documented by the project team and PMC. 
++
+All contributions in public channels are valid. 
+
+It's always going to be subjective ::
+
+A large number of high-quality small contributions may, in the aggregate, form a solid basis for nomination. Likewise for a smaller number of high-quality large contributions. 
++
+[TIP]
+====
+Rule of thumb: how much of a demonstration of contribution would you like to see from a contributor that you don't know or have never met before? That’s how much of a demonstration you should provide for candidates that you do know.
+====
++
+No matter how rigorously documented the project's standard is, there will always be room for judgement. 
+
+Check the Top Level Project Charter ::
+
+The Top-Level Project Charter may have something to say about the standards for nominating committers, and committers should expect the PMC to apply these standards when approving an election.
+
+Git makes this easy ::
+
+If somebody is ready to be a committer, then they should be able to create merge or pull requests, or participate in discussions on issues and forums.
++
+If a candidate is not prepared to engage with the project in this manner, they may not be ready to take on committer responsibility.
++
+[TIP]
+====
+If project committers get to the point where a particular contributor's merge and pull requests are regularly merged with limited discussion and no modification, it might be time to elect that contributor to be a committer.
+====
+
+It's not just about Git ::
+
+It’s easy to think that the only contributions that matter are Git commits. Committers also participate in committer elections, and in the decision making process.
++
+Contributors contribute in other ways as well: they may contribute to discussion about your project, or answer questions in your project’s communication channels. These contributions can be cited in a committer xref:elections-nomination[nomination].
+
+Significant single contribution ::
+
+Committer status is granted based on a record of contribution. When a project team decides to adopt an entire repository, that repository is a contribution. It would be no different conceptually than when the project team decides to merge a large pull request. 
++
+When a project accepts a significant contribution, it is natural to make the developers who built that contribution committers at the same time (citing the contribution as the merit statement in the xref:elections-nomination[nomination]).
++
+[TIP]
+====
+The definition of _significant_ is subjective. If you're not sure, check with your PMC.
+====
++
+Another way to think about it is that accepting a significant contribution represents a burden/liability for the project and it is actually irresponsible to accept a significant contribution without requiring that an appropriate number of developers of the contribution also commit to joining the project to support it.
+
+Speciality committers ::
+
+The {edpLink} has no notion of committers with different roles or privileges: all committers have the same responsibility and privileges.
++
+It may be unnatural for a build engineer who is concerned with managing a Jenkins build to contribute content to a project via Git. Likewise, it may be difficult for a security expert who is concerned with creating security advisories and filing CVEs on behalf of the project team to contribute content in a public manner.
++
+A potential candidate in a speciality field, may:
++
+- Answer questions related to their speciality from developers via the project's open communication channels;
+- Conduct reviews of the project's current practices and engage in discussions;
+- Create merge and pull requests, and issues for assessments related to their speciality, and actively contribute to their resolution; or
+- Contribute to the development and integration of related tools through merge and pull requests, and participate in related discussions.
+
+Precedent serves as documentation ::
+
+Every committer election becomes part of the public record. That record serves in part as a template for future elections. Every committer election also serves as a reference for other contributors, who are forging their own path to committer status. 
+
+Be mindful of the privileges being granted ::
+
+xref:roles-cm[Committers] get to nominate other committers and project leads, and vote in elections; they can push directly to project repositories, accept merge and pull requests, and more. These are awesome responsibilities that should not be granted lightly.
++
+[TIP]
+====
+All committer candidates should be encouraged to review the {committerTrainingUrl}[Committer Training] content.
+====
++
+The nomination of a new committer has to be weighed against the risk of granting committer privileges to somebody who you only know through the contribution. The committer team still has to have confidence that the nominee knows how to operate as a committer. The team would, for example, have to have some confidence that the new committer won't mess with content that they don't understand, won't violate the IP policy, will respect the open source rules of engagement, etc.
+
 [[elections-how]]
 ==== How does an Election work?
 
@@ -249,7 +347,7 @@ Yes. A committer can change their vote while an election is still in progress.
 
 How do we transfer committers from one project to another? ::
 
-Short answer: you don't
+Short answer: you don't.
 +
 We have no concept of transferring committers. if committers need to move from one project to another, then they must be elected as committers to the new project and retire themselves from the old one.
 

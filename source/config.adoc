@@ -3,7 +3,7 @@
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
- * http://www.eclipse.org/legal/epl-2.0.
+ * https://www.eclipse.org/legal/epl-2.0.
  *  
  * SPDX-FileType: SOURCE
  *
@@ -27,14 +27,13 @@
 :tckEmail: tck@eclipse.org
 :tckMailUrl: mailto:{tckEmail}
 
-:proposalsForum: http://www.eclipse.org/forums/eclipse.proposals
-:activityUrl: http://www.eclipse.org/projects/project_activity.php
+:activityUrl: https://www.eclipse.org/projects/project_activity.php
 :edpUrl: xref:edp
 :roeUrl: xref:2_1_Open_Source_Rules_of_Engagement
 :efspUrl: https://www.eclipse.org/projects/efsp/
 :efslUrl: https://www.eclipse.org/legal/efsl.php
 :eftcklUrl: https://www.eclipse.org/legal/tck.php
-:trademarkTransferUrl: http://eclipse.org/legal/Trademark_Transfer_Agreement.pdf
+:trademarkTransferUrl: https://eclipse.org/legal/Trademark_Transfer_Agreement.pdf
 :trademarkGuidelinesUrl: https://eclipse.org/legal/logo_guidelines.php
 :copyrightUrl: https://www.eclipse.org/legal/copyrightandlicensenotice.php
 :accountUrl: https://accounts.eclipse.org/
@@ -42,7 +41,7 @@
 :wgUrl: https://www.eclipse.org/org/workinggroups/
 :approvedLicensesUrl: https://www.eclipse.org/legal/licenses.php#approved
 :proprietaryToolsUrl: https://www.eclipse.org/org/documents/Eclipse_Using_Proprietary_Tools_Final.php
-:clearlyDefinedUrl: http://clearlydefined.io/
+:clearlyDefinedUrl: https://clearlydefined.io/
 :licenseToolUrl: https://github.com/eclipse/dash-licenses
 :licenseToolLink: {licenseToolUrl}[Eclipse Dash License Tool]
 
@@ -52,16 +51,18 @@
 :emoRecordsEmailLink: mailto:{emoRecordsEmail}[EMO Records Team]
 :trademarkGuidelinesLink: {trademarkGuidelinesUrl}[Eclipse Foundation Trademark Usage Guidelines]
 
-:developerPortalUrl: http://portal.eclipse.org
+// Content specifically for committers
+:committerGuidelinesUrl: https://www.eclipse.org/legal/committerguidelines.php
+:committerTrainingUrl: https://www.eclipse.org/projects/training
+
 :bylawsUrl: https://www.eclipse.org/org/documents/eclipse_foundation-bylaws.pdf
-:committerGuidelinesUrl: http://www.eclipse.org/legal/committerguidelines.php
-:legalDocumentationUrl: http://www.eclipse.org/legal/guidetolegaldoc.php
-:ipThirdParty: http://www.eclipse.org/org/documents/Eclipse_Policy_and_Procedure_for_3rd_Party_Dependencies_Final.pdf
-:ipPolicyUrl: http://eclipse.org/org/documents/Eclipse_IP_Policy.pdf
+:legalDocumentationUrl: https://www.eclipse.org/legal/guidetolegaldoc.php
+:ipThirdParty: https://www.eclipse.org/org/documents/Eclipse_Policy_and_Procedure_for_3rd_Party_Dependencies_Final.pdf
+:ipPolicyUrl: https://eclipse.org/org/documents/Eclipse_IP_Policy.pdf
 :hostedServicesPrivacyPolicyUrl: https://www.eclipse.org/org/documents/eclipse-foundation-hosted-services-privacy-and-acceptable-usage-policy.pdf
 :antitrustPolicyUrl: https://www.eclipse.org/org/documents/Eclipse_Antitrust_Policy.pdf
-:mccaUrl: http://www.eclipse.org/legal/committer_process/EclipseMemberCommitterAgreementFinal.pdf
-:icaUrl: http://www.eclipse.org/legal/committer_process/EclipseIndividualCommitterAgreementFinal.pdf
+:mccaUrl: https://www.eclipse.org/legal/committer_process/EclipseMemberCommitterAgreementFinal.pdf
+:icaUrl: https://www.eclipse.org/legal/committer_process/EclipseIndividualCommitterAgreementFinal.pdf
 :ipzillaUrl: https://dev.eclipse.org/ipzilla
 
 :cbiUrl: https://github.com/eclipse-cbi/cbi/wiki
@@ -78,11 +79,11 @@
 
 :helpdeskUrl: https://gitlab.eclipse.org/eclipsefdn/helpdesk
 
-:epl20Url: http://www.eclipse.org/legal/epl-2.0
-:suaUrl: http://www.eclipse.org/legal/epl/notice.php
-:suaHtmlUrl: http://www.eclipse.org/legal/epl/notice.html
-:suaTxtUrl: http://www.eclipse.org/legal/epl/notice.txt
-:suaPropertiesUrl: http://www.eclipse.org/legal/epl/feature.properties.txt
+:epl20Url: https://www.eclipse.org/legal/epl-2.0
+:suaUrl: https://www.eclipse.org/legal/epl/notice.php
+:suaHtmlUrl: https://www.eclipse.org/legal/epl/notice.html
+:suaTxtUrl: https://www.eclipse.org/legal/epl/notice.txt
+:suaPropertiesUrl: https://www.eclipse.org/legal/epl/feature.properties.txt
 
 :securityPolicyUrl: https://www.eclipse.org/security/policy.php
 :securityTeamEmail: security@eclipse-foundation.org
