@@ -197,3 +197,15 @@ The Eclipse Management Organisation (EMO) consists of the Eclipse Foundation sta
 Is the Project Lead a super-committer? ::
 
 A project lead is **not** a super committer. In fact, the project lead role does not automatically grant the individual committer privileges. The roles are different and an individual must be elected into both of them separately (though it is common that an individual is elected into the project lead role after demonstrating merit while working in the committer role). 
+
+Is there a Project Manager role? ::
+
+The {edpLink} **does not define** a project manager role. The role of a project manager is not typically defined  in open source governance models. Rather the focus is on clearly defining various roles and responsibilities within the community to ensure effective management and contribution.
++
+Vendor neutrality is one of the main drivers for bringing an open source project to the Eclipse Foundation, and when the project is doing open source right (according to our {roeUrl}[rules of engagement]), the project team will have a diversity of interests represented. That is, the project team will have committers on the team that come from a variety of different employers (including self-employed).
++
+In that ideal state where committers represent diverse interests, having a designated manager assigning tasks to specific individuals doesn't actually work. There’s no notion of centralised authority.
++
+The Eclipse Foundation Development Process does not formally define a project manager role. We can think of the project lead role as having project management sorts of responsibilities, but the responsibilities of a project lead are more concerned with ensuring the project team understands their responsibilities and are engaging in practices that are consistent with the {edpLink}, the intellectual property policy, and the goals of the project.
++
+Generally, open source projects are managed though collaboration, consensus building, and compromise. 
