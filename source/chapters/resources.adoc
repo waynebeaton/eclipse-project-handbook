@@ -436,7 +436,7 @@ The EMO strongly encourages the use of alternative communication channels for co
 
 Project websites are an excellent way to connect an open source project with the community. Many projects opt to use the xref:pmi[Project Management Infrastructure] (PMI) xref:pmi-project-page[project page] as their website.  PMI-based website URLs take the form of `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`). 
 
-Many project teams opt to create a custom main project website: if so-desired, a project may host a website on Eclipse Foundation-hosted servers. Project website URLs generally take the form `pass:c,a[{wwwUrl}/<shortname>]` (e.g. `pass:c,a[{wwwUrl}/foo]`). Custom project website content is maintained in Git repositories hosted on Eclipse Foundation infrastructure. A background job moves content from the Git repository to the website; content pushed to the repository will appear on the live website within five minutes.
+Many project teams opt to create a custom main project website: if so-desired, a project may host a website on Eclipse Foundation-hosted servers. Project website URLs generally take the form `https://eclipse.dev/<shortname>` (e.g. `https://eclipse.dev/foo`). Custom project website content is maintained in Git repositories hosted on Eclipse Foundation infrastructure. A background job moves content from the Git repository to the website; content pushed to the repository will appear on the live website within five minutes.
 
 [NOTE]
 ====
