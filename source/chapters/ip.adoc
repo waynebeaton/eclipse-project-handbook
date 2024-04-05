@@ -608,7 +608,7 @@ Can my release use unreleased content from another Eclipse open source project? 
 No. A release may only use released content from other projects. A project may disseminate milestone builds that include unreleased content, but the upstream content must be released before a downstream project can include the content in their own release.
 
 Are project websites subject to the IP Due Diligence Process? ::
-Website content is separate from project content. Project teams are expected to respect licenses for all web site content, but are not required to submit website content (including third party libraries) for review by the IP Team.
+xref:resources-website[Project website] content is separate from project content. Project teams are expected to respect licenses for all website content, but are not required to submit website content (including third party libraries) for review by the IP Team.
 
 What is "Type A" and "Type B" due diligence? ::
 Versions of the Eclipse Foundation's Intellectual Property Policy prior to October 2019 referred to two different types of intellectual property due diligence, named _Type A_ and _Type B_. Project teams were able to choose the type of IP due diligence that they wanted for their project: Type A which was concerned with validating that the licenses of the content were compatible with the project license, and Type B which offered a more thorough check including provenance and other deep analysis. We phased out Type B in October 2019, and now focus solely on license compatibility for third party content.

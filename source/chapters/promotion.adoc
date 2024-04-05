@@ -49,7 +49,7 @@ Developing a community is an important part of being {aForgeName} open source pr
 
 == Engage the Community
 
-Community development is an important part of life as {aForgeName} open source project. Project teams must plan to spend some significant amount of their time courting and informing the community. At least part of that effort involves keeping the project xref:promotion-website[web site] up-to-date. 
+Community development is an important part of life as {aForgeName} open source project. Project teams must plan to spend some significant amount of their time courting and informing the community. At least part of that effort involves keeping the project xref:promotion-website[website] up-to-date. 
 
 Some projects are luckier than others: sometimes a technology is just so compelling that minimal effort returns huge dividends. More often, the overnight success of an open source project comes after weeks, months, and years of a combination of long work and hard work.
 
@@ -88,11 +88,11 @@ While the reviews and processes described by the EDP may seem onerous, they are 
 == Promotion Resources
 
 [#promotion-website]
-=== Project Web Site
+=== Project Website
 
-If your project does not already have an official xref:resources-website[website], create one.
+If your project does not already have an official xref:resources-website[project website], create one.
  
-Web site developers must put themselves into the mindset of the project's target community. You must plan to iterate; you’re not going to get it right the first time. Too many of our project sites are old, contain stale information, and assume too much prior knowledge to be useful tools for growing a vibrant community of users, adopters, and developers.
+Website developers must put themselves into the mindset of the project's target community. You must plan to iterate; you’re not going to get it right the first time. Too many of our project sites are old, contain stale information, and assume too much prior knowledge to be useful tools for growing a vibrant community of users, adopters, and developers.
 
 [#promoting-project-logo]
 === Logos and Graphics
@@ -118,7 +118,7 @@ Add your project logo to your project's metadata via the xref:pmi-project-logos[
 [#promoting-project-logo-design]
 ==== Crowdsourcing a Project Logo
 
-Projects teams can engage a graphic design crowdsourcing site or similar service to create a logo. The project leader and committers are responsible for setting up the design process and providing the feedback to the graphic designers. Based on past experience, faster and more detailed feedback to the designers yields better results. The Eclipse Foundation will help fund the creation of project logo. A project leader or committer will have to pay for the logo design in advance. Once the logo is created, the project can then send the invoice to the Eclipse Foundation {marketingEmail}[marketing team]. The Foundation will reimburse up to {euro}500 for the logo design. Project team members should contact the Eclipse Foundation's marketing team with any questions regarding logo design.
+Project teams can engage a graphic design crowdsourcing site or similar service to create a logo. The project leader and committers are responsible for setting up the design process and providing the feedback to the graphic designers. Based on past experience, faster and more detailed feedback to the designers yields better results. The Eclipse Foundation will help fund the creation of project logo. A project leader or committer will have to pay for the logo design in advance. Once the logo is created, the project can then send the invoice to the Eclipse Foundation {marketingEmail}[marketing team]. The Foundation will reimburse up to {euro}500 for the logo design. Project team members should contact the Eclipse Foundation's marketing team with any questions regarding logo design.
 
 [#promotion-adopters]
 === Adopters Programme

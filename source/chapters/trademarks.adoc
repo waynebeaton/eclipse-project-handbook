@@ -177,7 +177,7 @@ Project teams may seek guidance from the PMC and EMO to ensure that the text is
 [[trademarks-website]]
 === Project Website Branding
 
-The official <<resources-website, project website>> is the primary means of learning about the project and getting involved: people who are interested in contributing to the project come here to learn about technical details, and to observe the project's development process.
+The official xref:resources-website[project website] is the primary means of learning about the project and getting involved: people who are interested in contributing to the project come here to learn about technical details, and to observe the project's development process.
 
 {forgeName} projects must host all project content on an Eclipse Foundation provided domain,especially the official/primary website for project-related information, communications, access to source code, and downloads. This ensures both that the Eclipse Foundation's IT Team can maintain the services, and informs consumers that the content comes from {aForgeName} project, and not a third-party. This further ensures that the project remains independent of any specific vendor or single individual.
 
@@ -195,7 +195,7 @@ All project web pages must include a footer that prominently displays an approve
 
 Approved Eclipse logos are available on the https://www.eclipse.org/artwork[Eclipse Logos and Artwork] page.
 
-The following minimal set of links must be included on the footer of all pages in the official project website:
+The following minimal set of links must be included on the footer of all pages in the official xref:resources-website[project website]:
 
 * Main Eclipse Foundation website (http://www.eclipse.org);
 * Privacy policy (http://www.eclipse.org/legal/privacy.php);
@@ -234,7 +234,7 @@ Other Eclipse Foundation trademarks (e.g. project names) may be used in events, 
 * The name of the event must conform to the terms laid out in the {trademarkGuidelinesLink};
 * The event must include sessions that focus on content provided by the corresponding open source projects;
 * Representatives from corresponding {forgeName} open source projects (e.g. committers, project leads, PMC members) must be directly involved in the event; and
-* Websites, printed materials, and other content associated with the event must provide pointers/links to the project website and trademark attribution.
+* Websites, printed materials, and other content associated with the event must provide pointers/links to the xref:resources-website[project website] and trademark attribution.
 
 The trademark should not generally be concatenated with any other words. Exceptions for established conventions (e.g. *WoolseyCon*) may be granted on a case-by-case basis.
 
@@ -250,7 +250,7 @@ Permission is *not required* to present a talk on {aForgeName} project.
 
 Community portals are generally operated at _arms length_ from the {forgeName} open source project. The community portal may help users  find information about what the project software does and how to get it, or provide a means for the community to contribute to related side projects that are not part of the {forgeName} open source project.
 
-The community portal is not a replacement for a developer portal which takes form in the official project website as described by this document.
+The community portal is not a replacement for a developer portal which takes form in the official xref:resources-website[project website].
 
 A community portal is operated with these considerations:
 
@@ -272,14 +272,12 @@ Naming exceptions may be granted for names that follow established conventions (
 
 Websites on external domains that use a project name trademark (e.g. `www.mosquitto.com`) that point to servers that are not hosted by the Eclipse Foundation, may be employed as community portals. External domains may be appropriate for some forms of documentation, community-generated content, and pointers to community forums. 
 
-For domains that leverage Eclipse Foundation trademarks, ownership of the domain name must be transferred to the Eclipse Foundation.
+Ownership of domains that leverage Eclipse Foundation trademarks (including all project names, regardless of whether or not they are registered trademarks) must be transferred to the Eclipse Foundation.
 
 [NOTE]
 ====
 If a project team takes it upon themselves to acquire a domain, they must transfer ownership of that domain to the Eclipse Foundation. The Eclipse Foundation does not generally acquire domains on behalf of projects. Selecting a domain (and how to pay for the initial acquisition of that domain) are matters for the project team to sort out.
 ====
-
-The domain must be regarded and used exclusively as a community portal (and not as an official project website).
 
 [[trademarks-external-attribution]]
 ==== Trademark Attribution

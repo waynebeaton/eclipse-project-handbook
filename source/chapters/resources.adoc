@@ -61,7 +61,7 @@ In this regard, _all_ project resources are publicly accessible. Put another way
 Project resources make use of two sorts of IDs:
 
 Short name::
-The short name is used in various parts of Eclipse Foundation infrastructure (e.g. the name of the project's directory on the downloads and Git servers, and the URL for the project website). The short name may contain lowercase alphanumeric characters, dashes, and underlines; but does not contain periods.
+The short name is used in various parts of Eclipse Foundation infrastructure (e.g. the name of the project's directory on the downloads and Git servers, and the URL for the xref:resources-website[project website]). The short name may contain lowercase alphanumeric characters, dashes, and underlines; but does not contain periods.
 
 Qualified identifier::
 The project's short name is joined with the short name of the parent project(s) to form a qualified identifier (project id) for the project that is used as a key on services generated and/or maintained for the project by the Eclipse Foundation. 
@@ -440,7 +440,7 @@ Many project teams opt to create a custom main project website: if so-desired, a
 
 [NOTE]
 ====
-If a project website has not already been created for your project, {helpdeskUrl}[open a Help Desk issue] to request that the Eclipse IT Team create one.
+If a project website has not already been created for your project, {helpdeskUrl}[open a Help Desk issue] to request that the Eclipse IT Team create one. The Eclipse Webdev team provides a Hugo-based https://gitlab.eclipse.org/eclipsefdn/it/webdev/hugo-eclipsefdn-website-boilerplate[project website template] that you can use.
 ====
 
 Project websites must implement the xref:trademarks-website[branding guidelines for project websites].
@@ -457,7 +457,7 @@ If your project website or any other property maintained by or on behalf the pro
 [[resources-website-services]]
 === Vendor-Specific Links
 
-Organizations who are investing in an open source project may want to provide links on the project website (or in other content related to a project: a `README` file, for example) to related professional services that they offer. 
+Organizations who are investing in an open source project may want to provide links on the xref:resources-website[project website] (or in other content related to a project: a `README` file, for example) to related professional services that they offer. 
 
 Including links to vendor-specific services related to an Eclipse open source project is completely consistent with the Eclipse Foundation Development Process.
 
@@ -589,9 +589,17 @@ Can a project use the _gh-pages_ support from GitHub to host at `<project>.githu
 
 Yes.
 
+What help is available to create a custom project website? ::
+
+The Eclipse Webdev team provides a Hugo-based https://gitlab.eclipse.org/eclipsefdn/it/webdev/hugo-eclipsefdn-website-boilerplate[project website template] that you can use. {helpdeskUrl}[Open a Help Desk issue] to request assistance. 
+
+How do I build my project's website with Jenkins? ::
+
+There's help https://gitlab.eclipse.org/eclipsefdn/it/webdev/hugo-eclipsefdn-website-boilerplate#how-to-build-my-projects-website-with-jenkins[here].
+
 Can we use a GitHub repository for our project website source? ::
 
-Yes. Create a {helpDeskUrl}[Help Desk] issue to request support.
+Yes, you can use a GitHub repository for your xref:resources-website[project website] source. Create a {helpDeskUrl}[Help Desk] issue to request support.
 
 Do we have to use the Eclipse Foundation-provided download server? ::
 

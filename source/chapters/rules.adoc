@@ -53,7 +53,7 @@ Note that committers, who must already been covered by either an MCCA or an ICA,
 
 Committers must work in a vendor neutral manner ::
 
-Contributors must create a public history of high quality contribution before becoming a committer via committer election ::
+Contributors must create a public record of high quality contribution before becoming a committer via committer election ::
 
 To be considered for committer status a candidate must demonstrate _merit_. Generally, this takes the form of making high-quality contributions to a project in the form of patches or new code, but can manifest in other ways. It may make sense, for example, to nominate a committer based on a history of helping users and adopters.
 +
@@ -72,3 +72,7 @@ I'll admit that I tend to think of committer status in practical terms: when som
 As an to this rule, the set of initial committers are specified at the time a new project is proposed and created. 
 
 Committers must be subscribed to their project's `dev` list ::
+
+Ownership of domains that leverage Eclipse Foundation trademarks must be transferred to the Eclipse Foundation ::
+
+including all project names, regardless of whether or not they are registered trademarks.
