@@ -87,10 +87,20 @@ Keep track of the URL of the proposal. The website does not provide public links
 When making the decision to initiate the xref:release-creation[creation review] that will turn the project proposal into {aForgeName} open source project, the EMO will consider the following:
 
 Scope :: Does the project have a technology scope and focus which will have a reasonable likelihood of success? Projects that are too big will definitely fail; projects that are too small are unlikely to be interesting.
++
+[TIP]
+====
+Write the project scope and description in the present tense (refer to the project as though it already exists). Think of the scope and description as timeless: they should be meaningful today and ten years from now. Be concise: start with a single sentence that summarises the intention of the project in broad terms. A scope of three to five sentences in total is ideal.
+====
 
 Clear and Concise Description :: If the community found any aspects of the proposal confusing, unclear, or using unfamiliar jargon, those areas must be clarified. This is a hard and fast requirement: because the Eclipse community must be able to evaluate the proposal. To do that, they must be able to understand the proposal and thus it must be clear and straightforward and free of marketing-speak.
 
 Committers :: The xref:release-creation[creation review] serves as the new xref:elections-committer[committer election] for the initial Committers and thus the proposal must contain the same level of nomination justification and background as an election would. The committer biographies don't have to be long or involved, but they should describe each committer's relationship to and history with the incoming code, and/or involvement with the area or technologies covered by the proposal.
++
+[NOTE]
+====
+We require that all committers review the {committerGuidelinesUrl}[Eclipse Committer Due Diligence Guidelines]. Further, all committers must be covered by a xref:paperwork[committer agreement] which requires committers to agree to work under various policies, including the {ipPolicyUrl}[Eclipse Foundation's IP Policy]. The EMO staff will help committers determine what specific agreements need to be signed as part of xref:starting-provisioning[project provisioning].
+====
 +
 The project must have sufficient committed developers to achieve its goals. The Eclipse Foundation is not a place to "abandon in public" code; rather, the Eclipse Foundation strives to have active projects with active communities and thus enough developers to move the project along.
 
@@ -327,6 +337,6 @@ Does the mature project code that I'm bring to {forgeName} need to incubate? ::
 
 Yes. All new projects start in the incubation phase. Remember that incubation is as much about the project team learning about how to operate as an open source project as it is about the project code. Project teams that "get it" can opt to exit incubation quickly (e.g. with their first release) if that makes sense for the team and the community.
 	
-What do all these terms (e.g. EMO) mean? ::
+What do all these terms (e.g., EMO) mean? ::
 
 Please see the xref:glossary[glossary].
