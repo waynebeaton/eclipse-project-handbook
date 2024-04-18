@@ -232,7 +232,7 @@ To exit from the incubation phase into a mature project, a project must meet all
 Company logos automatically appear on the _Overview_ and _Who's Involved_ page under the following conditions:
 
 * The company must be a {memberUrl}[member] of the Eclipse Foundation;
-* The company needs to have their logo uploaded to the https://membership.eclipse.org/portal[Eclipse Foundation Member Portal]; and
+* The company needs to have their logo uploaded to the {memberPortalUrl}[Eclipse Foundation Member Portal]; and
 * An employee of the company has authored a commit in the last three months that's been merged into a project repository.
 
 [TIP]
@@ -409,6 +409,25 @@ For a committer to appear on a project's _Who's Involved_ page:
 Each piece takes time. If a committer doesn't appear some number of days after the successful completion of a committer election, then contact the committer to confirm that they've followed the provided instructions and have submitted committer paperwork. Then, connect with {emoEmailLink} for assistance.
 +
 If the new committer will be working with projects that use GitHub, they must be sure to add their GitHub Id to their xref:contributing-account[Eclipse Foundation Account] so that our scripts can add them to the GitHub Teams that we use to manage access to Eclipse Foundation repositories hosted on GitHub.
+
+Why doesn't a particular company's logo appear as an active member company? ::
+
+The _Overview_ and _Who's Involved_ pages in the PMI display xref:pmi-company-logos[company logos] in the _Active Member Companies_ section.
++
+Company logos are displayed automatically based on the contribution record. For a company logo to appear:
++
+--
+. The company must be a member of the Eclipse Foundation; 
+. The company must have provided the Eclipse Foundation with their logo via the {memberPortalUrl}[member company portal]; and
+. At least one developer who works for that company must have authored a commit within the last three months.
+--
++
+For this to work, the developer must use the email address that they've used to register their xref:contributing-account[Eclipse Foundation account] on the commit, and they must xref:contributing-account-member[identify their employer] in their Eclipse Foundation Account.
++
+[TIP]
+====
+If you are aware of any member company that meets this criteria and are not listed, please contact {emoEmailLink}. The problem is usually that the contributor is not correctly aligned with their organisation.
+====
 
 What is the difference between a _Committer_ and an _Historic Committer_? ::
 

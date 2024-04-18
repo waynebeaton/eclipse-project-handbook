@@ -51,6 +51,8 @@
 :emoRecordsEmailLink: mailto:{emoRecordsEmail}[EMO Records Team]
 :trademarkGuidelinesLink: {trademarkGuidelinesUrl}[Eclipse Foundation Trademark Usage Guidelines]
 
+:memberPortalUrl: https://membership.eclipse.org/portal
+
 // Content specifically for committers
 :committerGuidelinesUrl: https://www.eclipse.org/legal/committerguidelines.php
 :committerTrainingUrl: https://www.eclipse.org/projects/training
