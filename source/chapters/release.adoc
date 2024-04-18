@@ -111,7 +111,7 @@ At the end of the review period, the EMO will declare the review complete (revie
 There are no calls. We used to have a phone call at the end of each review period; we don't do this anymore.
 ====
 
-After the review, the EMO will initiate the provisioning process. As part of the committer provisioning process there will be paperwork requirements initiated via email; _please make sure that your project's committers respond to these email requests in a timely manner_ as the IT Team cannot provision any project resources until after at least one project committer's xref:paperwork[paperwork] has been processed.
+After the review, the EMO will initiate the provisioning process. As part of the committer provisioning process there will be paperwork requirements initiated via email; _please make sure that your project's committers respond to these email requests in a timely manner_ as the Eclipse IT Team cannot provision any project resources until after at least one project committer's xref:paperwork[paperwork] has been processed.
 
 Prior to scheduling the creation review, the EMO will check for the following things:
 

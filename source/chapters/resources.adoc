@@ -143,7 +143,7 @@ Some of the terms used by GitLab -- _project_ in particular -- have different me
 
 [TIP]
 ====
-Any committer can {helpdeskUrl}[create a Help Desk issue] to request that the Eclipse IT Team create a new repository on, or move an existing repository to, the GitLab instance for their project. Note that the IT Team will verify the request with the project leads.
+Any committer can {helpdeskUrl}[create a Help Desk issue] to request that the Eclipse IT Team create a new repository on, or move an existing repository to, the GitLab instance for their project. Note that the Eclipse IT Team will verify the request with the project leads.
 ====
 
 On GitLab, the root group for all {forgeName} open source project repositories is `{forgeMachineName}`. Under that root, two nesting options are available: {aForgeName} open source project's group can be nested directly under the root, or can be nested in a group corresponding to the {forgeName} top-level project. In both nesting options, repositories may be arbitrarily nested in subgroups created under the projects' group to organise the repositories. The custom subgroups are cosmetic only, as the same permissions are applied to the nested groups and do not provide any extra functionality.
@@ -257,7 +257,7 @@ Excluded Subgroups have been added to xref:pmi[Project Management Infrastructure
 
 Project teams may opt to host some or all of their canonical source code repositories to an organization on GitHub that is maintained by the Eclipse Foundation. Both GitHub Issues and Wiki may also be used.
 
-Any committer can {helpdeskUrl}[open a Help Desk issue] to request that the Eclipse IT Team create a new repository for their project on, or move an existing repository to, GitHub. A project may have more than one repository on GitHub. When making the request, the committer should describe--specifically and concisely--what they want to make happen. Note that the IT Team will verify the request with the project leads.
+Any committer can {helpdeskUrl}[open a Help Desk issue] to request that the Eclipse IT Team create a new repository for their project on, or move an existing repository to, GitHub. A project may have more than one repository on GitHub. When making the request, the committer should describe--specifically and concisely--what they want to make happen. Note that the Eclipse IT Team will verify the request with the project leads.
 
 Repositories can be hosted in the default `{forgeMachineName}` GitHub organization, or a dedicated organization can be created. Dedicated organizations use as their name, the conjunction of `{forgeMachineName}` with the project xref:resources-identifiers[short name] (e.g., `{forgeMachineName}-woolsey`).
 
@@ -417,7 +417,7 @@ The PMC list should be the primary means of communication between PMC members an
 [#resources-committers-mailing-list]
 ==== Committers Mailing List
 
-All xref:roles-cm[committers] are automatically subscribed to the `eclipse.org-committers@eclipse.org` mailing list. This list is used primarily as a means for the EMO and the Eclipse Foundation IT Team to communicate important information to all committers. We use this list sparingly.
+All xref:roles-cm[committers] are automatically subscribed to the `eclipse.org-committers@eclipse.org` mailing list. This list is used primarily as a means for the EMO and the Eclipse IT Team to communicate important information to all committers. We use this list sparingly.
 
 [TIP]
 ====
