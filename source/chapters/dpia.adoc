@@ -50,7 +50,7 @@ As a best practice the results from creating a DPIA should be published, in orde
 ====
 **Fish Data Protection Impact Assessment**
 
-The Fish IoT project is looking to start combining data from a family of IoT devices (PetFinder Plus series) that are produced by a third-party, and to combine that with data from our public management server in order to produce a contact list of people.  
+The Fish IoT project is looking to start combining data from a family of IoT devices (PetFinder Plus series) that are produced by a third party, and to combine that with data from our public management server in order to produce a contact list of people.  
 
 We will do this by using cloud based virtual servers and cross referencing the email addresses stored in our management server with the registration email stored by the PetFinder plus devices and provided by the device when it is contacted by the registration server.
 

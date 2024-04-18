@@ -38,7 +38,7 @@ The SUA usually appears in place of an actual license in the <<legaldoc-plugins-
 
 Any directory containing content that is licensed under different terms than the project license(s), should be detailed in a file named `about.html`. We call these files _Abouts_. _Abouts_ usually contain licensing terms as well as other information such as whether content contains cryptographic functionality that may be subject to export controls.
 
-Most plug-ins will contain a default _About_ that simply confirms that all the content in that plug-in is made available under the project license, typically the Eclipse Public License (EPL). There are other plug-ins, however, that will contain content licensed under licenses other than or in addition to the EPL and/or third-party content provided under other licenses. If you are the maintainer of a plug-in for an Eclipse project, please see the <<legal-doc-plugins-about-templates,About templates for plug-ins>>.
+Most plug-ins will contain a default _About_ that simply confirms that all the content in that plug-in is made available under the project license, typically the Eclipse Public License (EPL). There are other plug-ins, however, that will contain content licensed under licenses other than or in addition to the EPL and/or third party content provided under other licenses. If you are the maintainer of a plug-in for an Eclipse project, please see the <<legal-doc-plugins-about-templates,About templates for plug-ins>>.
 
 Since most plug-ins do *not* contain specially-licensed content, most plug-ins will contain only the default _About_. The plug-ins with the special _Abouts_ are the interesting ones that most users will want to read.
 
@@ -58,7 +58,7 @@ eclipse
  │   ├── org.eclipse.core.runtime_3.13.0.v20170207-1030.jar - Plug-in packaged as a JAR
  │   │   ├── about.html - Standard _About_ file
  │   │   └── ...
- │   ├──org.apache.ant_1.10.1.v20170504-0840 - Third-party content packaged as a directory
+ │   ├──org.apache.ant_1.10.1.v20170504-0840 - Third party content packaged as a directory
  │   │   ├── about.html
  │   │   ├── about_files - Licenses and notices related to the content
  │   │   │   ├── DOM-LICENSE.html

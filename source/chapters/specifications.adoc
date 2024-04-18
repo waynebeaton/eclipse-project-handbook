@@ -196,7 +196,7 @@ The Employer Consent Agreement for Eclipse Foundation Specification Projects ("E
 [[specifications-efsl]]
 == Eclipse Foundation Specification License
 
-The Eclipse Foundation takes copyright ownership of the specification document of every ratified Final Specification. By asserting copyright ownership on the specification documents, the Eclipse Foundation has the ability to protect the specifications in the event that a third-party fails to follow the terms of the Eclipse Foundation Specification License.
+The Eclipse Foundation takes copyright ownership of the specification document of every ratified Final Specification. By asserting copyright ownership on the specification documents, the Eclipse Foundation has the ability to protect the specifications in the event that a third party fails to follow the terms of the Eclipse Foundation Specification License.
 
 The Eclipse Foundation Specification License is applied to the specification documents for all ratified final specifications. This action  ensures that derivative works of those specification documents cannot be created, thus preventing their use as the basis for incompatible implementations.
 

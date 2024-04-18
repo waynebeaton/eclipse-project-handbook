@@ -17,7 +17,7 @@ Open source projects at the Eclipse Foundation are _required_ to make use of cer
 
 * All project issues must be tracked in the issue tracker assigned to the project;
 * Source code must be maintained in source code repositories assigned to the project (xref:resources-gitlab[Eclipse Foundation GitLab], xref:resources-github[Eclipse Foundation-managed GitHub], or xref:resources-gerrit[Eclipse Foundation Gerrit]);
-* All third-party content used by the project must be xref:ip-third-party[vetted];
+* All third party content used by the project must be xref:ip-third-party[vetted];
 * Downloads (when provided) must be distributed via xref:resources-downloads[{aForgeName} downloads] server;
 * Developer (committer) communication must occur in the xref:resources-dev-list[dev-list] provided to the project by the Eclipse Foundation; and
 * Projects must keep their xref:pmi-metadata[Project Metadata] up-to-date.
@@ -250,7 +250,7 @@ To assist with CI/CD operations, bots with CI/CD access can be requested by maki
 [#resources-gitlab-excluded-subgroups]
 ==== Excluded Subgroups
 
-Excluded Subgroups have been added to xref:pmi[Project Management Infrastructure] (PMI) xref:pmi-project-page[project page] to better support cases where third-party non-project code needs to exist within a project group for stability, such as forks and mirrors. Once configured, these subgroups within the project groups to exclude from automated tooling such as the ECA checks. The excluded subgroups follow the standard access permissions and Project Leads can request updates to this field through the {helpdeskUrl}[help desk].
+Excluded Subgroups have been added to xref:pmi[Project Management Infrastructure] (PMI) xref:pmi-project-page[project page] to better support cases where third party non-project code needs to exist within a project group for stability, such as forks and mirrors. Once configured, these subgroups within the project groups to exclude from automated tooling such as the ECA checks. The excluded subgroups follow the standard access permissions and Project Leads can request updates to this field through the {helpdeskUrl}[help desk].
 
 [[resources-github]]
 === GitHub
@@ -491,7 +491,7 @@ Where technically sensible, all downloadable artifacts should be {jarSigningUrl}
 
 The project is allocated space on the {forgeName} download and archive servers.
 
-Project artifacts (e.g. downloads) can be distributed via third-party services (e.g. Maven Central), but -- where technically sensible -- the Eclipse Foundation-provided infrastructure must be considered the primary source of project downloads.
+Project artifacts (e.g. downloads) can be distributed via third party services (e.g. Maven Central), but -- where technically sensible -- the Eclipse Foundation-provided infrastructure must be considered the primary source of project downloads.
 
 Project committers can {downloadsUrl}[upload project artifacts] to the project's directory on the download server. The short name is used to denote the area available to the project (e.g. `pass:a[{downloadsHost}/dash]` for the `technology.dash` project) via SFTP or SCP, or from a xref:resources-builds[Eclipse Foundation hosted build infrastructure].
 

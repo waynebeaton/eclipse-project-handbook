@@ -33,7 +33,7 @@ All projects must conform to the xref:trademarks[branding guidelines] before eng
 * Project is operating within the mission and scope defined in its top-level project's charter; 
 * Project is operating within the bounds of its own scope;
 * Project is operating in an open and transparent manner;
-* All distributed xref:ip-third-party[third-party] content has been approved by the IP Team;
+* All distributed xref:ip-third-party[third party] content has been approved by the IP Team;
 * Project content correctly uses Eclipse Foundation trademarks; and
 * Project content (code and documentation) does not violate trademarks owned by other organisations.
 

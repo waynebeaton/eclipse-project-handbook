@@ -104,9 +104,9 @@ Project Management Infrastructure (PMI) ::
 
 The xref:pmi[Project Management Infrastructure] (PMI) is the system that tracks the state and progress of {forgeName} projects. Project committers can modify the the information represented in the PMI, including the project description, and information about project releases. Automated systems use this information to, for example, generate dashboard and chart information for the project, intellectual property logs, etc.
 
-Third-party Content (Dependency)::
+Third party Content (Dependency)::
 
-A xref:ip-third-party[Third-party Content] is content that is leveraged by a {forgeName} project that is not produced and/or maintained as an asset of the project.
+A xref:ip-third-party[Third party Content] is content that is leveraged by a {forgeName} project that is not produced and/or maintained as an asset of the project.
 	
 Top-Level Project (TLP) ::
 
