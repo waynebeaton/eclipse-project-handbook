@@ -592,7 +592,7 @@ Can xref:ip-third-party[third party content]  be included in an Eclipse project'
 
 Yes. Third party content can be included in binary form (e.g. source and binary JAR files) in a project's source code repository if that makes technical sense for the project.
 +
-Third party content that is stored in the project repository as source code is effectively a _fork_ of that third party content. This is a bit of a grey area in that it is _third party content_ that will be ultimately treated as xref:ip-project-content[_project content_] (i.e. contributors may potentially modify it). 
+Third party content that is stored in the project repository as source code is effectively a _fork_ of that third party content. This is a bit of a fuzzy area in that it is _third party content_ that will be ultimately treated as xref:ip-project-content[_project content_] (i.e. contributors may potentially modify it). 
 +
 Third party _source code_ must be reviewed by the IP Team (that is, open a xref:ip-request[Content Review Request]) before it may be included in a project repository.
 
