@@ -51,8 +51,6 @@ include::chapters/security.adoc[leveloffset=+1]
 
 include::chapters/contributing.adoc[leveloffset=+1]
 
-include::chapters/generative-ai-usage.adoc[leveloffset=+1]
-
 include::chapters/elections.adoc[]
 
 include::chapters/paperwork.adoc[]
@@ -85,6 +83,12 @@ include::chapters/contact.adoc[]
 
 include::efdp/source/development_process.adoc[leveloffset=+1]
 
-include::chapters/dpia.adoc[leveloffset=+1]
+== Guidelines
+
+include::chapters/dpia.adoc[leveloffset=+2]
+
+include::./guidelines/source/content/generative-ai-usage.adoc[leveloffset=+2]
+
+include::./guidelines/source/content/generative-ai-faq.adoc[leveloffset=+3]
 
 include::chapters/document-history.adoc[leveloffset=+1]
