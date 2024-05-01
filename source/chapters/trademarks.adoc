@@ -139,7 +139,7 @@ To avoid confusion between {forgeName} projects and commercial products, {forgeN
 [[trademarks-project-short]]
 ==== Short Names and IDs
 
-Projects require a short name; this name is used to as an ID for the project in various parts of Eclipse Foundation infrastructure and should be as reflective of the formal name as possible.  It may, for example, be a lowercase rendering of the brand name, or an acronym of a descriptive name.
+Projects require a short name; this name is used as an ID for the project in various parts of Eclipse Foundation infrastructure and should be as reflective of the formal name as possible.  It may, for example, be a lowercase rendering of the brand name, or an acronym of a descriptive name.
 
 The short name may contain lowercase alphanumeric characters, dashes, and underlines. The short name may not contain periods (.). Short names are used in some project URLs, download directories, the build server, and in the technical namespaces of other parts of the supported infrastructure.
 

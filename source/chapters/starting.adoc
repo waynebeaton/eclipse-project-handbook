@@ -64,7 +64,7 @@ digraph {
 }
 ----
 
-A proposal must minimally include a description of the project, a declaration of scope, and a list of prospective members (project leads and committers) before we make it accessible to the public for _community review_.
+A proposal must minimally include a description of the project, a declaration of scope, and a list of initial members (project leads and committers) before we make it accessible to the public for _community review_.
 
 When you feel that the proposal is ready, send a note to the Eclipse Management Organisation ({emoEmailLink}) requesting that the proposal be made available to the public for review. The EMO will review the proposal and may provide feedback before initiating the _community review_ period.
 
