@@ -40,14 +40,22 @@ There are only three requirements around nominating and electing new committers 
 
 Each project is entitled to define how it evaluates "[people] who have the trust of the Project's Committers ... [through] contributing and showing discipline and good judgement". This definition must be consistent with the top-level project charter, and must be transparent and public document on the project's website. It is extremely important to publish these criteria to avoid any issues around cliques or "the in-crowd" preventing others from joining a project. 
 
-There must not be any hint of "we (company W) hired person X to work on project Y thus person X should elected a committer". Committer status is independent of employment; there are well-supported mechanisms for contributors without commit-rights and thus committer status is not required for a team member to be effective. Additionally, the team will want to make sure that they have confidence in the candidate irrespective of employment and management because the committer status will continue even after moves to another job.
-
-The nomination and election process for a new committer is for more than just the project team - it is also for the entire {forgeName} community, current and future. The larger community uses the artifacts of elections as (one of many pieces of) evidence about the maturity of the project team, and thus quality of the frameworks.
+Committer status is independent of employment: there must not be any hint of "we (company W) hired person X to work on project Y thus person X should elected a committer".
 
 [NOTE]
 ====
-Nominations such as "we all know Bob, vote for him" may work within the team, but actually harm the project's reputation in the larger {forgeName} community: that larger community does not know Bob and does not understand why the project team _trusts_ him with the source code.
+Nominations such as "we all know Bob, vote for Bob" may work within the team, but actually harm the project's reputation in the larger {forgeName} community: that larger community does not know Bob and does not understand why the project team _trusts_ them with committer responsibilities.
+
+Like everything else we do, our process for bringing new committers onto a project is open, transparent, and meritocratic. Once a project is up and running, committers always start as xref:contributing-contributors[contributors]. Committer elections provide an opportunity to highlight the contribution record of a candidate and demonstrate to the community that the project is following the open source practices that we value. Committer elections require a nomination statement that provides this demonstration.
+
+What constitutes significant contribution is difficult to quantify. The level of commitment of a candidate to the goals of the project is difficult to quantify. A contributor's understanding of the Eclipse Foundation Development Process and Intellectual Property Due Diligence process is difficult to quantify.
+
+For all of the above reasons, we depend heavily on committers to make a judgement call regarding the contribution record and behaviour of committer candidates, and summarise that judgement in a manner that can be consumed as easily as possible. We're not looking for a dissertation. Rather, we need a few pointers to actual significant contributions that demonstrate that the candidate is ready to take on committer responsibilities (contributions do not necessarily need to be code contributions).
+
+The xref:roles-emo[EMO] depends heavily on xref:roles-pmc[PMCs] to validate that committer elections are operated according to our principles and in good faith. To that end, providing very specific pointers to very specific contributions that demonstrate merit are very helpful, and improve the odds of getting the PMC's approval in a timely manner.
 ====
+
+The nomination and election process for a new committer is for more than just the project team - it is also for the entire {forgeName} community, current and future. The larger community uses the artifacts of elections as (one of many pieces of) evidence about the maturity of the project team, and thus quality of the frameworks.
 
 [[elections-nomination]]
 ==== What Should a Nomination Look Like?
@@ -327,7 +335,7 @@ Yes.
 
 Can I still be a committer if I change employers? ::
 
-Yes. Your status as a committer is not tied to your employment status. You may, however, require <<paperwork>> from your new employer (or if you become self-employed). If you change employers, please contact the mailto:{emoRecordsEmail}[EMO Records Team] for help regarding paperwork requirements.
+Yes. Your status as a committer is not tied to your employment status. You may, however, require xref:paperwork[paperwork] from your new employer (or if you become self-employed). If you change employers, please contact the mailto:{emoRecordsEmail}[EMO Records Team] for help regarding paperwork requirements.
 	
 What happens if committers don't vote? ::
 
