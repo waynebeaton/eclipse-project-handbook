@@ -267,7 +267,7 @@ A development cycle begins when a either a xref:specifications-creation[creation
 [[specifications-progress-review]]
 === Progress Review
 
-For a progress review, the xref:roles-pmc[Project Management Committee] (PMC) and Eclipse Management Organisation (EMO) validate that the specification project team is following the EDP and EFSP, and that the Eclipse Foundation’s Intellectual Property Policy is being correctly implemented. The EFSP requires that the specification committee approve a progress review by xref:specifications-ballots[supermajority ballot].
+For a progress review, the xref:roles-pmc[Project Management Committee] (PMC) and Eclipse Management Organization (EMO) validate that the specification project team is following the EDP and EFSP, and that the Eclipse Foundation’s Intellectual Property Policy is being correctly implemented. The EFSP requires that the specification committee approve a progress review by xref:specifications-ballots[supermajority ballot].
 
 [NOTE]
 ====

@@ -91,7 +91,7 @@ Renaming projects (i.e. after a project has been created and provisioned) requir
 
 A project, as defined by the {edpLink}, is the main operational unit; all open source software development at {forgeName} occurs within the context of a project. The Eclipse Foundation holds the trademark for all {forgeName} Projects.
 
-All project names must be approved by the Eclipse Management Organisation (EMO) either before a project is created or before an existing project is renamed.
+All project names must be approved by the Eclipse Management Organization (EMO) either before a project is created or before an existing project is renamed.
 
 [[trademarks-project-formal]]
 ==== Formal Name
@@ -159,7 +159,7 @@ Most open source projects produce products that share the project name. There ar
 
 Product names should also be prefixed with an Eclipse Foundation <<trademarks-brands,brand>> when used in any formal context (e.g. _{forgeName} Widgets_).
 
-Project teams should work with their xref:#roles-pmc[Project Management Committee] (PMC) to determine whether or not to pursue assertion of ownership of the trademark for product names. Project teams should work with the Eclipse Management Organisation (EMO) to assert ownership of product trademarks.
+Project teams should work with their xref:#roles-pmc[Project Management Committee] (PMC) to determine whether or not to pursue assertion of ownership of the trademark for product names. Project teams should work with the Eclipse Management Organization (EMO) to assert ownership of product trademarks.
 
 [[trademarks-project-description]]
 === Project Descriptions

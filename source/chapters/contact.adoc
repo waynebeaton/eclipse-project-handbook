@@ -16,7 +16,7 @@
 [[contact]]
 == Getting Help
 
-If you have any questions, or are unsure of your responsibilities as a xref:#roles-pl[project lead] or xref:roles-cm[committer], please contact your xref:#roles-pmc[Project Management Committee] (PMC), or the xref:#roles-emo[Eclipse Management Organisation] (EMO) at {emoEmail}.
+If you have any questions, or are unsure of your responsibilities as a xref:#roles-pl[project lead] or xref:roles-cm[committer], please contact your xref:#roles-pmc[Project Management Committee] (PMC), or the xref:#roles-emo[Eclipse Management Organization] (EMO) at {emoEmail}.
 
 To request assistance with matters related to supported project infrastructure (e.g., Git repositories, mailing lists, builds), open a {helpdeskUrl}[Help Desk] issue.
 

@@ -75,7 +75,7 @@ digraph {
 
 A proposal must minimally include a description of the project, a declaration of scope, and a list of initial members (project leads and committers) before we make it accessible to the public for _community review_.
 
-When you feel that the proposal is ready, send a note to the Eclipse Management Organisation ({emoEmailLink}) requesting that the proposal be made available to the public for review. The EMO will review the proposal and may provide feedback before initiating the _community review_ period.
+When you feel that the proposal is ready, send a note to the Eclipse Management Organization ({emoEmailLink}) requesting that the proposal be made available to the public for review. The EMO will review the proposal and may provide feedback before initiating the _community review_ period.
 
 At the beginning of the _community review_ period, the EMO will announce the proposal on several channels (the {activityUrl}[Project Activity News] page, Twitter, blog post, and an email note to the Eclipse Foundation members and committers). The EMO will also open a record in the Eclipse Foundation's issue tracker -- an instance of GitLab -- to track the progress of the proposal; the proposal's author, and project leads will be copied on that record.
 
@@ -345,7 +345,13 @@ It depends. Community expectations are one factor. Team experience with open sou
 Does the mature project code that I'm bring to {forgeName} need to incubate? ::
 
 Yes. All new projects start in the incubation phase. Remember that incubation is as much about the project team learning about how to operate as an open source project as it is about the project code. Project teams that "get it" can opt to exit incubation quickly (e.g. with their first release) if that makes sense for the team and the community.
-	
+
+If Eclipse Projects are vendor neutral, then why do code headers assign copyright to various vendors? ::
+
+Eclipse projects are required to follow the xref:preamble-principles[Open Source Rules of Engagement] and operate in a vendor neutral manner. This is different from copyright. Eclipse projects operate using a symmetrical licensing scheme by which contributors (or, very often, their employers) retain the copyright of their contributions, but license them to the Eclipse Foundation who, in turn, licenses those contributions to adopters under the same terms.
++
+Contributors retain their copyright and express that copyright via xref:ip-copyright-headers[file headers].
+
 What do all these terms (e.g., EMO) mean? ::
 
 Please see the xref:glossary[glossary].

@@ -57,9 +57,9 @@ Eclipse Contributor Agreement (ECA) ::
 
 The purpose of the Eclipse Contributor Agreement (ECA) is to provide a written record that a contributor has agreed to provide their contributions of code and documentation under the licenses used by the Eclipse Project(s) to which they are contributing. All contributors who are not already committers on the Eclipse Project to which they are contributing must {ecaUrl}[digitally sign the ECA].
 
-Eclipse Management Organisation (EMO) ::
+Eclipse Management Organization (EMO) ::
 
-The Eclipse Management Organisation (EMO) consists of the Eclipse Foundation staff, and the xref:roles-ac[Eclipse Architecture Council]. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the {edpLink}. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead or PMC, ask the EMO.
+The Eclipse Management Organization (EMO) consists of the Eclipse Foundation staff, and the xref:roles-ac[Eclipse Architecture Council]. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the {edpLink}. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead or PMC, ask the EMO.
 
 EMO Executive Director ::
 
