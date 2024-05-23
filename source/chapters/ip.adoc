@@ -154,15 +154,19 @@ Contributions made by {forgeName} committers **do not** require review by the Ec
 
 Contributions by others (i.e., developers who are not committers) must be received via an Eclipse Foundation channel (e.g., GitHub pull request, GitLab merge request, Gerrit review, or attachment on an issue). 
 
-When the contributor has signed the xref:contributing-eca[Eclipse Contributor Agreement] (ECA) and the following conditions are met, further investigation is not required:
+All contributors must sign the xref:contributing-eca[Eclipse Contributor Agreement] (ECA). Further investigation is _required_ when any of the following conditions are met:
 
-* Was developed from scratch; written 100% by submitting contributor;
-* Was submitted under the terms of the project license;
-* Contains no cryptography; and
-* Is contains fewer than 1,000 lines of code, configuration files, and other forms of source code.
+* The content has been copied, or is based on content that has been copied (that is, the content was not 100% authored by the submitting contributor);
+* The licence terms of the content are other than the terms of the project license;
+* The content contains cryptography; or
+* The content contains more than 1,000 lines of content (including documentation, code, configuration files, and other forms of source code).
 
-If all of these conditions have **not** been met, then a project committer must xref:ip-request[engage with the IP Team] to request review by the IP Team before the contribution is pushed/merged.
+When further investigation is required, a project committer must xref:ip-request[engage with the IP Team] to request their review before the contribution is pushed/merged.
 
+[WARNING]
+====
+Do not change the licence of content that you copy or fork.
+====
 Any project committer can xref:ip-request[engage with the IP Team] to review a project content contribution. A project cannot make a release that includes the content under review until the due diligence process ​is complete and the content has been approved.
 
 [#ip-ownership]
