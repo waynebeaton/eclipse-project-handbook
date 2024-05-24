@@ -18,7 +18,7 @@ include::config.adoc[]
 :namespace: org.eclipse
 :forgeUrl: https://projects.eclipse.org
 :downloadsHost: https://downloads.eclipse.org
-:createUrl: https://projects.eclipse.org/node/add/project-proposal
+:createUrl: https://projects.eclipse.org/create/project-proposal
 :projectListUrl: http://projects.eclipse.org/list-of-projects
 :bugzillaUrl: https://bugs.eclipse.org/bugs
 :gitUrl: https://git.eclipse.org/c
