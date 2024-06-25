@@ -31,6 +31,8 @@
 :edpUrl: xref:edp
 :roeUrl: xref:2_1_Open_Source_Rules_of_Engagement
 :efspUrl: https://www.eclipse.org/projects/efsp/
+:efspOperationsUrl: {efspUrl}operations.php
+:efspRatificationUrl: {efspUrl}#efsp-ratification
 :efslUrl: https://www.eclipse.org/legal/efsl.php
 :eftcklUrl: https://www.eclipse.org/legal/tck.php
 :trademarkTransferUrl: https://eclipse.org/legal/Trademark_Transfer_Agreement.pdf

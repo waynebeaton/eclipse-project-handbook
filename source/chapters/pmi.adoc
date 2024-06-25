@@ -357,7 +357,7 @@ This can make things a bit confusing when you want to make changes to the metada
 [[pmi-joining-a-simultaneous-release]]
 === Joining a Simultaneous Release
 
-A simultaneous release (also referred to as a _coordinated release_ or _release train_) is a means of grouping together projects that are coordinating their respective releases and need a means of representing the aggregation. Simultaneous releases must themselves coordinated and managed by supervising body (e.g., a PMC or working group specification committee). The rules for joining and participating in a simultaneous release are defined by the supervising body.
+A simultaneous release (also referred to as a _coordinated release_ or _release train_) is a means of grouping together projects that are coordinating their respective releases and need a means of representing the aggregation. Simultaneous releases must themselves coordinated and managed by supervising body (e.g., a xref:roles-pmc[PMC] or working group xref:specifications-committee[specification committee]). The rules for joining and participating in a simultaneous release are defined by the supervising body.
 
 [NOTE]
 ====

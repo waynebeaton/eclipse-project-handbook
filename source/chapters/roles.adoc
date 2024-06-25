@@ -184,6 +184,18 @@ The Architecture Council interacts primarily via their https://accounts.eclipse.
 
 xref:roles-cm[Committers] and xref:roles-pl[Project Leads] should connect with the Architecture Council via their PMC.
 
+[#roles-spec-committee]
+=== Specification Committee
+
+Specification committees are a feature of {wgUrl}[working groups] and operate under the terms defined in the corresponding working group's charter. 
+
+A specification committee plays an important role in the governance of xref:specifications[specification projects] that operate under their purview according to the {efspUrl}[Eclipse Foundation Specification Process] (EFSP). For completeness, specification committees have _no role_ in the governance of _regular_ (technology) open source projects (that is, projects that are not engaged in the process of creating specifications).
+
+[TIP]
+====
+For more information about specification committees, please see xref:specifications-committee[Specification Committee] in the Specifications section of this document.
+====
+
 [#roles-emo]
 == Eclipse Management Organization (EMO)
 

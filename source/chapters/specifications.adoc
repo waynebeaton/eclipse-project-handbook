@@ -18,6 +18,11 @@
 
 The {efspUrl}[Eclipse Foundation Specification Process] (EFSP) defines a means of creating specifications in open source. The EFSP defines specifications as a “... collection of Application Programming Interface (API) definitions, descriptions of semantic behaviour, data formats, protocols, and/or other referenced specifications, along with its TCK, intended to enable the development and testing of independent Compatible Implementations.” 
 
+[TIP]
+====
+For more information about specification development at the Eclipse Foundation, see the {efspOperationsUrl}[Eclipse Foundation Specification Process Operations Guide]. 
+====
+
 Under the EFSP, all specification work must be done in a designated specification project. Specification projects operate according to the {edpLink} (EDP), just like "regular" Eclipse open source projects, but with special consideration for the intellectual property management differences that are inherent in specification development. Specifically, the flow of intellectual property license grants is a critical difference between open source software development and open source specification development that is addressed by the EFSP. Due to these differences in the intellectual property license grants, specification project committers must be covered by additional legal agreements and must engage in additional governance steps. 
 
 Unlike Eclipse open source software projects which have no formal association with {wgUrl}[Eclipse Foundation Working Groups] (“working groups”), every specification project is aligned directly with an Eclipse Foundation working group and operates under the purview of that working group’s specification committee.
@@ -216,7 +221,13 @@ include::../efsp/source/diagrams/efsp_lifecycle.dot[]
 
 Unlike a "regular" {forgeName} open source project, a specification project must be aligned with exactly one {wgUrl}[working group]. Each working group designates a _specification committee_ that maintains and manages the specification process on the working group’s behalf. A specification project must get xref:specifications-ballots[approval] from the corresponding specification committee to pass key project life cycle events. 
 
-The specification committee is responsible for ensuring that the specification teams keep within their defined scope, and generally ensure that the specification versions created by the specification project are implementable and serve the purposes of the working group.
+The specification committee is ultimately responsible for ensuring that the final specifications produced by their working group’s specification projects make sense. The definition of “makes sense” varies by specification committee and specification committee participant, but is generally understood to mean ensuring that the specification teams keep within their defined scope, that the specifications they produce can be implemented, and that those aspects of the {ipPolicyUrl}[Eclipse Intellectual Property Policy] with regard to _essential claims_ are observed. In practical terms, specification committee participants wield power via the ballots that are required to approve key life cycle events per the EFSP.
+
+The Specification Committee is responsible for producing, publishing, and maintaining operational guidance documentation for specification projects. This includes the minimum requirements and process for producing a {efspRatificationUrl}[_final specification_]. It also includes operational guidance for running a specifications TCK for the purpose of testing for compatibility.
+
+The Specification Chair (or their delegate) is responsible for initiating ballots, tallying their results, disseminating them to the community, and (when appropriate; e.g., in the case a xref:specifications-release-review[release review] ballot) reporting them to the EMO.
+
+The Specification Committee is also responsible for defining and refining how they implement the EFSP for those specification projects under their purview.
 
 [[specifications-ballots]]
 ==== Specification Committee Ballots
