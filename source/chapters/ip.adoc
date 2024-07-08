@@ -86,6 +86,11 @@ In rough terms, if the license information for third party content can be valida
 
 In order to facilitate the use of automation in the IP due diligence process, the Eclipse Foundation has adopted ClearlyDefined identifiers to identify content.
 
+[NOTE]
+====
+In the time since we made this decision, https://github.com/package-url[Package URL] has emerged as a superior choice. We will update our services to use Package URLs by early 2025.
+====
+
 The notion of an identifier for content is pretty natural for developers who are familiar with technologies like Apache Maven which has well defined means of uniquely identifying content in a well-defined software repository. Maven coordinates -- which combine `groupid`, `artifactid`, and `version` (often referred to as a “GAV”) -- identify a very specific bit of content (especially when combined with a specific source, e.g. Maven Central). For example, `org.junit.jupiter:junit-jupiter:5.5.2` unambiguously identifies content on Maven Central that is known to be under the Eclipse Public License version 2.0 (EPL-2.0). Other systems use different means of identifying content: `node.js`, for example, uses a pURL-like identifier for content in the NPM repository (e.g., `@babel/generator@7.62`).
 
 To bridge the gap between the different means of identifying content (and fill in some of the blanks), we've adopted the ClearlyDefined project’s five part identifiers which includes the type of content, its software repository source, its namespace and name, and version/revision. ClearlyDefined coordinates are roughly analogous to Maven coordinates, but -- by including the type and source -- provide a greater degree of precision. ClearlyDefined uses slashes to separate the parts of the identifier, so the Maven GAV `org.junit.jupiter:junit-jupiter:5.5.2` maps to `maven/mavencentral/org.junit.jupiter/junit-jupiter/5.5.2` and the NPM identifier `@babel/generator@7.62` maps to `npm/npmjs/@babel/generator/7.6.2`.
@@ -154,7 +159,9 @@ Contributions made by {forgeName} committers **do not** require review by the Ec
 
 Contributions by others (i.e., developers who are not committers) must be received via an Eclipse Foundation channel (e.g., GitHub pull request, GitLab merge request, Gerrit review, or attachment on an issue). 
 
-All contributors must sign the xref:contributing-eca[Eclipse Contributor Agreement] (ECA). Further investigation is _required_ when any of the following conditions are met:
+All contributors must sign the xref:contributing-eca[Eclipse Contributor Agreement] (ECA). 
+
+Further investigation is _required_ when any of the following conditions are met:
 
 * The content has been copied, or is based on content that has been copied (that is, the content was not 100% authored by the submitting contributor);
 * The licence terms of the content are other than the terms of the project license;
@@ -376,62 +383,87 @@ GitLab issue use Markdown, so use Markdown syntax when specifying information. O
 [#ip-request-instructions]
 ==== Instructions
 
-===== Set the title to a valid ClearlyDefined id
+Set the title to a valid identifier ::
 
-Set the title of the issue to the ClearlyDefined id, `type/source/namespace/name/version` for the content. If you're not sure, do your best and the IP Team will assist.
+Multiple kinds of identifiers are supported. When you use one of the supported formats, IPLab will use the information provided locate the source. Issues that have a valid supported identifier for a title will be automatically processed and so will likely be resolved quickly.
++
+The following identifier formats are supported:
++
+--
+* ClearlyDefined ID: `pass:[{type}/{source}/{namespace}/{name}/{revision}]`
+* Maven GAV: `pass:[{groupid}:{artifactid}:{revision}]`
+* Package URL: `pass:[pkg:{type}/{namespace}/{name}@{revision}]`
+* GitHub Commit URL: `pass:[https://github.com/{org}/{project}/commit/{ref}]`
+* GitHub Pull request URL: `pass:[https://github.com/{org}/{project}/pull/{id}]`
+--
++
+Setting the title to any of the following identifiers (which all resolve to the same content), for example, will point IPLab to the same source:
++
+--
+* `maven/mavencentral/org.apache.maven.enforcer/enforcer-api/3.1.0`
+* `org.apache.maven.enforcer:enforcer-api:3.1.0`
+* `pkg:maven/org.apache.maven.enforcer/enforcer-api@3.5.0`
+--
++
+[NOTE]
+====
+IPLab will resolve the source for a pull request to the patch file that corresponds to the pull request. Patch files always require a manual review from the IP Team.
+====
++
+Don't include extra information in the title. If you need to provide extra information, add it to the description.
 
-e.g., `maven/mavencentral/org.apache.maven.enforcer/enforcer-api/3.1.0`
-
-Issues that have a valid xref:ip-clearlydefined[ClearlyDefined identifier] for a title and source pointer (see below) will be automatically processed and so will likely be resolved quickly.
-
-===== Identify the Eclipse open source project
+Identify the Eclipse open source project ::
 
 We need you to identify the _Eclipse open source project_ that is accepting this contribution. Note that we need you to specify an Eclipse open source project, not a GitLab or GitHub project (provide that in the _Git repository_ field).
-
++
 In the template replace <project name> with the name of your Eclipse project (e.g., Eclipse Dash) and <project id> with the project's id (e.g., `technology.dash`):
-
++
 `Project: [Eclipse Dash](pass:[https://projects.eclipse.org/projects/technology.dash])`
 
-===== Provide Basic Information
+Provide Basic Information ::
 
 In the _Basic Information_ section, provide as much information as you can, including the license of the content as you understand it as an https://spdx.org/licenses/[SPDX identifier], and URLs that points to the binary and sources of the content. 
 
-===== Provide a Pointer to Source
+Provide a Pointer to Source ::
 
 The _Source_ field is the important one. The scanner looks for content of the form:
-
++
 `[Source](<url>)`
-
++
 We need pointers to specific versions of content, ideally in an archive format (e.g. a `ZIP` file). That is, please do not provide a pointer to a repository on GitHub; rather, provide a pointer to a specific downloadable ZIP archive associated with the particular release.
-
++
 For example:
-
++
 `[Source](pass:[https://github.com/kataras/iris/archive/refs/tags/v12.1.8.zip])`
-
++
 [NOTE]
 ====
 We need to have a source pointer. If you cannot (or do not) provide it, processing will be delayed while we hunt it down.
 ====
-
++
 The source must be one of the following:
-
-* A URL pointing to an archive (e.g., `*.zip`, `*.tar.gz`)
++
+* A URL pointing to an archive (e.g., `pass:[*.zip]`, `pass:[*.tar.gz]`)
 * An xref:ip-request-attachments[attachment];
 * The URL for an Eclipse GitLab merge request (e.g., `pass:[https://gitlab.eclipse.org/eclipse/technology/dash/org.eclipse.dash.handbook/-/merge_requests/1]`); or
 * The URL for a GitHub pull request, (e.g. `pass:[https://github.com/eclipse/dash-licenses/pull/278]`).
++
+If you're not sure, do not provide source pointer; instead, describe the information you do have and the IP Team will configure the request accordingly.
++
+The value you provide for the source pointer will short circuit any attempt by IPLab to automatically identify the source. That is, IPLab will always use the source pointer that you provide.
 
-===== Provide additional Information
+Provide additional Information ::
 
 Please provide any additional information that you think might be useful to assist the IP Team in resolving this issue in free form text after the basic information.
 
-===== Don't Apply Any Labels
+Don't Apply Any Labels ::
 
 The scanner will only automatically scan issues under the following conditions:
-
++
 1. The issue is open;
 2. The issue has a valid ClearlyDefined id; and
 3. The issue either has no labels or has the `Review Needed` label applied.
-
++
 Issues that do not meet these criteria are ignored.
 
 [#ip-request-attachments]
