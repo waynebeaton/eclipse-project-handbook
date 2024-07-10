@@ -1,5 +1,5 @@
 ////
- * Copyright (C) 2019 Eclipse Foundation, Inc. and others.
+ * Copyright (C) 2019-24 Eclipse Foundation, Inc. and others.
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
@@ -7,8 +7,8 @@
  * 
  * SPDX-FileType: SOURCE
  *
- * SPDX-FileCopyrightText: 2019 Eclipse Foundation, Inc.
- * SPDX-FileCopyrightText: 2019 Contributors to the Eclipse Foundation
+ * SPDX-FileCopyrightText: 2019-24 Eclipse Foundation, Inc.
+ * SPDX-FileCopyrightText: 2019-24 Contributors to the Eclipse Foundation
  *
  * SPDX-License-Identifier: EPL-2.0
 ////
@@ -21,9 +21,27 @@ The {securityPolicyUrl}[Eclipse Foundation Vulnerability Reporting Policy] conta
 [[vulnerability-team]]
 == Eclipse Foundation Security Team
 
-The Eclipse Foundation Security Team provides help and advice to Eclipse projects on security issues and is the first point of contact for handling security vulnerabilities. Members of the Security Team are selected from committers on Eclipse Projects, members of the xref:roles-ac[Eclipse Architecture Council], and Eclipse Foundation staff.
+The Eclipse Foundation Security Team provides help and advice to Eclipse projects on security issues and is the first point of contact for handling security vulnerabilities. Members of the Security Team are selected from the  Eclipse Foundation staff.
 
 You can contact the Eclipse Foundation Security Team by sending email to {securityTeamEmail} or by open an issue in the {vulnerabilityReportUrl}[general vulnerability issue tracker].
+
+== Project's Security Team
+
+All Project Contributors are responsible for ensuring best security practices and following of the {securityPolicyUrl}[Eclipse Foundation Vulnerability Reporting Policy]. However, a specific group called the Project's Security Team is responsible for handling undisclosed vulnerabilities. It is up to the Project and Project's Leadership Chain to organize the Project's Security Team. In the absense of other decisions, the Project's Security Team includes all Committers.
+
+The Project might decide to include a subset of Committers in the team, for example based on their security experience. Any Project Committer can propose a creation of a separate Project's Security Team. This is discussed by the Project Leadership and might be submitted to a vote of all Committers. The same procedure applies to bringing the responsibility back to the complete group of Committers.
+
+The Project must provide a security contact to the Eclipse Foundation Security Team and should communicate that contact information to potential reporters (like security researchers).
+
+The following resources are recommended for each Project's security team:
+
+* A *private mailing list* per project. This list is to be used only for discussion of undisclosed vulnerabilities in this Project. All communication should move to public channels after disclosure;
+
+* A dedicated *security project* under {https://gitlab.eclipse.org/security/}[Eclipse Foundation GitLab instance security tracker] for vulnerability reporting;
+
+* *Enabling private vulnerability reporting* (if using GitHub);
+
+The Project's Security Team members might grant access to specific issues to people outside of the team. Such rules should be defined by the Project's Security Team and the PMI in advance.
 
 == Project Setup for Vulnerability Reporting
 
@@ -57,7 +75,7 @@ Publicly disclosed issues are listed on the {knownVulnerabilitiesUrl}[Known Ecli
 [[vulnerability-cve]]
 == Common Vulnerabilities and Exposure (CVE)
 
-The Eclipse Foundation is a {cveUrl}[Common Vulnerabilities and Exposures] (CVE) Numbering Authority.
+The Eclipse Foundation is a {cveUrl}[Common Vulnerabilities and Exposures] (CVE) Numbering Authority and does assign CVE numbers to projects hosted by the Foundation.
 
 A unique vulnerability number like a CVE allows developers, distributions and security researchers to talk about the same issue using a common name. It also helps the project documentation.
 
@@ -65,7 +83,7 @@ The project team can ask for a number when they learn about the vulnerability: b
 
 [TIP]
 ====
-If you're not sure whether or not a CVE is required, err on the side of caution and request one.
+If you're not sure whether or not a CVE is required, err on the side of caution and request one. If the reporter requests a CVE number, the Eclipse Foundation Security Team will assign one if there is a reasonable probability of a real Vulnerability.
 
 A CVE number related to a bugfix release gives users a clear sign that an update is strongly recommended.
 
@@ -128,11 +146,11 @@ If the project receives reports exclusively by private reporting with GitHub Sec
 
 * *Request the number*: When you know that there is a security issue (the fix is not yet needed at this point), contact the Eclipse Foundation Security Team to request the number.
 
-* *Receive the number*: The Eclipse Foundation Security Team will request a number and GitHub will assign one (or ask for more information in the report). You can start using it internally when preparing documentation of the release containing the fix.
+* *Receive the number*: The Eclipse Foundation Security Team will request a number and update the advisory. You can start using it internally when preparing documentation of the release containing the fix.
 
 * *Prepare the fix* (with backports to all supported branches) and the release: The common practice is to avoid using the CVE number in the fix commit message or the fix itself. Use generic terms instead. The goal is to allow time for all users to upgrade without giving potential attackers too much information. See also the next step (you can do them in parallel).
 
-* *Ask for publication of the issue*: When you have the fix ready and published, as the Eclipse Foundation Security team to publish the advisory. Make sure that you specify the version (or versions) where the bug is fixed, including all stable branches. Fill in the description of the issue. You may also consider removing some of the comments (for example containing sensitive or incorrect information). At this stage you may decide to publish only partial information (for example without the link to the commit with the fix). Ideally your release happens earlier or at the same time as the publication. You can ask for a publication at your specific date, for example at your planned release date.
+* *Ask for publication of the issue*: When you have the fix ready and published, ask the Eclipse Foundation Security team to publish the CVE number and publish the advisory. Make sure that you specify the version (or versions) where the bug is fixed, including all stable branches. Fill in the description of the issue. You may also consider removing some of the comments (for example containing sensitive or incorrect information). At this stage you may decide to publish only partial information (for example without the link to the commit with the fix). Ideally your release happens earlier or at the same time as the publication. You can ask for a publication at your specific date, for example at your planned release date.
 
 * *See it publicly*: The advisory becomes public, so is the CVE entry.
 
@@ -151,6 +169,8 @@ The request for a publication must provide:
 * A pointer (URL) to the issue used to track mitigation of the vulnerability.
 
 The request may optionally include additional information, such as a Common Vulnerability Scoring System (CVSS) code, a link to the commit fixing the issue etc.
+
+Each CVE entry must include at least one public link.
 
 .Example CVE Report data
 ----
@@ -185,7 +205,7 @@ If unsure on how to fill the form, ask the Eclipse Foundation Security Team for 
 
 In what form should a disclosure be published? Is publishing the bug on the {knownVulnerabilitiesUrl}[Known Vulnerabilities page] enough? ::
 
-Publishing on the Known Vulnerabilities page will happen automatically. This is minimal disclosure. Whether or not you should do more is a project team decision. If you  need help with that decision, connect with your xref:roles-pmc[Project Management Committee] (PMC) or the Security Team.
+Publishing on the Known Vulnerabilities page will happen automatically. This is minimal disclosure. Whether or not you should do more is a project team decision. If you  need help with that decision, connect with your xref:roles-pmc[Project Management Committee] (PMC) or the Eclipse Foundation Security Team.
 +
 If the vulnerability real and is in release software (i.e., it's likely to have been adopted), you should xref:vulnerability-cve[request a CVE].
 +
@@ -215,14 +235,21 @@ If someone can download compiled (e.g., JAR) files and use them without any sort
 ____
 +
 If you're not sure, check with your PMC or the xref:vulnerability-team[Security Team].
+
+If the reporter requests a CVE number, the Eclipse Foundation Security team will assign one if there is a reasonable probability of a real Vulnerability.
+
 +
 It's a bit of a rite of passage for an open source project to disclose their first vulnerability. If in doubt, ask the Eclipse Foundation Security Team for guidance.
 
 Do we need a xref:vulnerability-cve[CVE] for versions of software that we released before moving our project to the Eclipse Foundation? ::
 
-The answer to this is not obvious, but as a general rule... no. The answer is not obvious because the continuity of the source of affected products may not be obvious (or relevant) to consumers, and it is not strictly wrong for a CVE Numbering Authority to create a CVE for a version of a product not immediately in their purview. 
-+
-Ultimately, whether or not we should create a CVE is the project team's call.
+The answer to this is not obvious, but as a general rule... no. Ultimately, whether or not we should create a CVE is the project team's call.
+
+It might be that the previous CNA is more appropriate for releasing the CVE.
+
+Do we release CVEs for end-of-life versions? ::
+
+In general, yes. The Project might decide not to release one, but in this case the reporter may request a CVE from another CNA. In this case, the Project will have no control on the content of the entry. The Eclipse Foundation Security team recommends projects to clearly mark supported and unsupported versions, but still release CVEs for all of them, even if some CVEs will never receive a fix.
 
 I think that my project hasn't received all notifications about security issues? ::
 
@@ -232,13 +259,13 @@ I can't see a confidential issue in the Eclipse Foundation GitLab instance ::
 
 If you have received a notification of a confidential issue by email, make sure to log in to the Eclipse Foundation instance of GitLab first, before following the link. Otherwise you will get a 404 error page.
 +
-If you are following a link, verify with the person managing the issue (for example the reporter) if you have been added to the issue. Currently, in the general issue tracker, each person needs to be added manually. In case of difficulties, ask the Eclipse Foundation Security team for assistance.
+If you are following a link, verify with the person managing the issue (for example the reporter) if you have been added to the issue. Currently, in the general issue tracker, each person needs to be added manually. In case of difficulties, ask the Eclipse Foundation Security Team for assistance.
 +
 Also please note that we need an activated GitLab account to add a user to a confidential issue. In practice, the user needs to log in into the Eclipse Foundation GitLab instance at least once.
 
-Confidential issues are not visible to all committers ::
+Confidential issues are not visible to all members of the Project's Security Team ::
 
-Currently, in the general issue tracker, each person needs to be added manually. In case of difficulties, ask the Eclipse Foundation Security team for assistance.
+Currently, in the general issue tracker, each person needs to be added manually. In case of difficulties, ask the Eclipse Foundation Security Team for assistance.
 
 I can see `.eclipsefdn` repository in my project. What is this? ::
 
