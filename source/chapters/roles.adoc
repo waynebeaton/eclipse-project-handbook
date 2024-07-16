@@ -201,6 +201,20 @@ For more information about specification committees, please see xref:specificati
 
 The Eclipse Management Organization (EMO) consists of the Eclipse Foundation staff, and the Eclipse Architecture Council. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the Eclipse Foundation Development Process. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead, or xref:roles-pmc[PMC], ask the EMO.
 
+[#roles-other]
+== Other Roles
+
+While it is natural to have one or more committers become technical leaders in the project team, there is no formal technical lead role defined in the Eclipse Foundation Development Process (EDP). Likewise, while it is natural for certain members of a xref:specifications[specification] project team to become leaders in the specification process, there is no formal notion of specification lead (or "spec lead") defined in the Eclipse Foundation Specification Process (EFSP). Any de facto technical or specification lead does not have any special authority beyond that which is granted to them by the other project committers.
+
+The committers in a project team have some say over who their leaders are and what powers they grant to those leaders. While the role is not specifically defined for this sort of thing, the xref:roles-pl[project lead] role could be granted decision making powers. It is completely reasonable for a project team to decide, for example, that somebody in the project lead role must approve of all commits and anybody with that role can mitigate potential rogue actions by rolling back commits. One of the key benefits of organising in this manner is that project lead is an elected position, so project committers have a build-in process for capturing the decision to grant those extra powers.
+
+For many open source projects, the committers follow the natural leaders. But when a more formal relationship is desired, it must be arrived at by consensus of the project team (via public channels) and documented clearly so that everybody can understand how the project team works (making it very clear how a project team works is a critically important aspect of growing diversity in an open, transparent, and meritocratic open source project team). If the project team decides, for example, that all committers must contribute their updates as pull requests that may only be merged by a project lead, then that must be documented (it's fairly common for project teams to require that pull requests from one committer be merged by a different committer). When the role is formally defined, it's also important to document how a committer ascends to into that role (to be clear, in the spirit of vendor neutrality, this criteria cannot be based on employment status).
+
+[NOTE]
+====
+Any rules that a project team decides to adopt don’t have to apply homogeneously across the entire project; a specification project team could decide, for example, that all contributions of text to a specification document must be approved by project lead before they can be merged, but that all committers can just merge their contributions to an API.
+====
+
 [#roles-faq]
 == Frequently Asked Questions
 
@@ -221,3 +235,7 @@ In that ideal state where committers represent diverse interests, having a desig
 The Eclipse Foundation Development Process does not formally define a project manager role. We can think of the project lead role as having project management sorts of responsibilities, but the responsibilities of a project lead are more concerned with ensuring the project team understands their responsibilities and are engaging in practices that are consistent with the {edpLink}, the intellectual property policy, and the goals of the project.
 +
 Generally, open source projects are managed though collaboration, consensus building, and compromise. 
+
+Can the PMC push content into subproject repositories? ::
+
+No. PMC Members do not automatically have commit privileges. They must earn their place as a committer on subprojects just like any other contributor.
