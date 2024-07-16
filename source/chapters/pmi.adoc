@@ -221,7 +221,7 @@ Any committer or project lead can set the logo for their own project. To set the
 
 [NOTE]
 ====
-On a xref:pmi-project-page[project page], the PMI displays either the project logo or -- when the project is in the xref:starting-project-phases[incubation phase] -- the xref:starting-incubation-branding[incubation logo]. 
+On a xref:pmi-project-page[project page], the PMI displays either the project logo or -- when the project is in the xref:incubation[incubation phase] -- the xref:starting-incubation-branding[incubation logo]. 
 
 To exit from the incubation phase into a mature project, a project must meet all of the requirements and engage in a xref:release-graduation[graduation review].
 ====

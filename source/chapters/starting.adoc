@@ -119,7 +119,7 @@ Collaborations :: Successful Eclipse projects are those that collaborate with ex
 
 Sufficient Time for the Community :: Project proposals are held in community review for a minimum of two weeks. Anything less than two weeks of general accepted business days does not give the Eclipse membership sufficient notice of new initiatives.
 
-Diversity :: Is this a single company project or a multi-organization effort? If all the committers and contributors are in the same organisation or have financial ties to the same organisation, the project is at a greater risk of being de-staffed. Brand new projects are not required to be diverse, but projects cannot graduate from incubation without appropriate diversity.
+Diversity :: Is this a single company project or a multi-organization effort? If all the committers and contributors are in the same organisation or have financial ties to the same organisation, the project is at a greater risk of being de-staffed. Brand new projects are not required to be diverse, but projects cannot graduate from the xref:incubation[incubation phase] without appropriate diversity.
 
 Trademarks :: The Eclipse Foundation holds the _trademark_ for all {forgeName} projects. Trademark assignment is undertaken prior to the creation of any new project. If you already have a trademark on your project name, that trademark must be assigned to the Eclipse Foundation. Be advised that trademark assignment can be a time-consuming process (it can take hours, days, or weeks depending on the circumstances surrounding the name). If you currently hold the trademark, you will be asked to complete a {trademarkTransferUrl}[Trademark Transfer Agreement].
 
@@ -191,7 +191,7 @@ After the project code is pushed into the project repository, the project team c
 [[starting-project-phases]]
 === Project Phases
 
-{forgeName} projects move through various phases. Projects in active phases (incubation or mature) engage in all the normal sorts of development activities: project committers write code, run builds, release software, court contribution, and seek to convert contributors into committers. All new projects start in the _incubation phase_. Projects tend to stay in the incubation phase for a few months (varies depending on the nature and composition of the project) and then move into the mature phase. 
+{forgeName} projects move through various phases. Projects in active phases (xref:incubation[incubation] or mature) engage in all the normal sorts of development activities: project committers write code, run builds, release software, court contribution, and seek to convert contributors into committers. All new projects start in the _incubation phase_. Projects tend to stay in the incubation phase for a few months (varies depending on the nature and composition of the project) and then move into the mature phase. 
 
 
 [graphviz, images/phases, svg]
@@ -227,34 +227,13 @@ Key project life cycle events are gated by reviews; moving from the incubation p
 [[starting-incubation]]
 ==== Incubation Phase
 
-A project in the incubation phase is said to be _incubating_.
+A project in the xref:incubation[incubation phase] is said to be _incubating_.
 
 The classification of a project in the incubation phase is not a statement about the quality of the project's code; rather, the incubation phase is more about the project team's progress in practising the open and transparent processes described by the {edpLink} to establish the three communities (developers, adopters, and users) around the project.
 
 Incubating projects are encouraged to produce milestone builds, make releases, and grow their community.
 
 When the project code is ready (e.g. stable APIs) and the project team has learned to operate as an open source project according to the {edpLink}, the project may opt to _graduate_ (via xref:release-graduation[graduation review]) into the _mature phase_.
-
-[[starting-incubation-branding]]
-===== Incubation branding
-
-image::images/incubating.png[width=150px,float="right"]
-
-In order to alert potential consumers of the incubating nature, projects in the incubation phase must include _incubation branding_. 
-
-The project team must:
-
-* Display the incubation logo on their project web page (if they have one);
-* Display the incubation logo on their project's primary download page;
-* Include the word "incubation" in the filename of all downloadable files (when technically feasible) for builds and milestones; and
-* When technically feasible, include the word "incubation" in features (e.g. about dialogs, feature lists, and installers).
-
-There are no incubation branding requirements for general user interface elements.
-
-[NOTE]
-====
-For projects that produce OSGi artifacts, include the word "incubation" in the _Bundle-Name_, feature names, and p2 repositories. The word "incubation" should not be included in technical namespaces (especially when it may result in confusion when the project leaves incubation). e.g. an OSGi bundle's _Bundle-SymbolicName_, or a Java package name.
-====
 
 [[starting-mature]]
 ==== Mature Phase

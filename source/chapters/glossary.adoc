@@ -79,7 +79,7 @@ _Genie_ is the generic term given to automated processes that perform various fu
 
 Incubation Phase ::
 
-The purpose of the incubation phase is to establish a fully-functioning open-source project. In this context, incubation is about developing the process, the community, and the technology. Incubation is a phase rather than a place: new projects may be incubated under any existing project.
+The purpose of the xref:incubation[incubation phase] is to establish a fully-functioning open source project. In this context, incubation is about developing the process, the community, and the technology. Incubation is a phase rather than a place: new projects may be incubated under any existing project.
 
 IP Due Diligence Process ::
 

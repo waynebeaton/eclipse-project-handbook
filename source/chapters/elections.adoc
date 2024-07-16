@@ -27,7 +27,7 @@ Contributors who have the trust of the project's committers can, through electio
 
 Being a {forgeName} committer is more than just having write-access to the project resources: there are specific IP due diligence and record keeping activities that committers _must_ follow. New committers must ensure that they are familiar with the {committerGuidelinesUrl}[Committer Due Diligence Guidelines].
 
-New committers should be encouraged to join the {incubationListUrl}[Incubation Mailing List]; this list is a good place to ask questions about process, services available, and other aspects of working as a committer.
+New committers should be encouraged to join the xref:incubation-mailinglist[incubation mailing list]; this list is a good place to ask questions about process, services available, and other aspects of working as a committer.
 
 [[elections-requirements]]
 ==== What are the Requirements?

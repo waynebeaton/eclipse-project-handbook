@@ -18,7 +18,7 @@
 
 Releases and reviews are crucial aspects of the project life cycle within the Eclipse Development Process. Through regular and transparent releases, Eclipse projects ensure that their software remains up-to-date and reliable.
 
-Annually (more frequent for specification projects), Eclipse projects undergo a thorough review process in close collaboration with the Eclipse Management Organization (EMO) and the Project Management Committee (PMC). This collaborative effort ensures that each project adheres to high-quality standards and follows the best open-source software (OSS) practices and guidelines established by the Eclipse Foundation. Reviews may be associated with a specific release, referred to as a "Release Review", or may not be linked to any particular release, known as a "Progress Review".
+Annually (more frequent for specification projects), Eclipse projects undergo a thorough review process in close collaboration with the Eclipse Management Organization (EMO) and the Project Management Committee (PMC). This collaborative effort ensures that each project adheres to high-quality standards and follows the best open source software (OSS) practices and guidelines established by the Eclipse Foundation. Reviews may be associated with a specific release, referred to as a "Release Review", or may not be linked to any particular release, known as a "Progress Review".
 
 Additionally, there are other, less common but equally important types of reviews at the Eclipse Foundation, including Graduation Reviews, Restructuring Reviews, and Termination Reviews.  In the following section, we will go into the specifics of these release and review processes.
 
@@ -200,7 +200,7 @@ Finally, a progress review provides the community and the Eclipse Foundation Mem
 
 The purpose of a _graduation review_ is to confirm that the project has a working and demonstrable code base of sufficiently high quality active and sufficiently diverse communities; has adopters, developers, and users operating fully in the open following the {edpLink}; and is a credit to {forgeName} and is functioning well within the larger {forgeName} community
 
-Graduation reviews are generally combined with a xref:progress-review[progress review] (typically, but not necessarily in advance of the open source project's `1.0` release). Upon successful completion of a graduation review, a project will leave the incubation phase and be designated as a _mature_ project.
+Graduation reviews are generally combined with a xref:progress-review[progress review] (typically, but not necessarily in advance of the open source project's `1.0` release). Upon successful completion of a graduation review, a project will leave the xref:incubation[incubation phase] and be designated as a _mature_ project.
 
 For a graduation review, review documentation must be provided by the project team that includes demonstration of:
 
@@ -293,20 +293,20 @@ While we do try to be as accommodating as possible, the answer is no. We have a 
 
 Can a project in the incubation phase do releases? ::
 
-Yes. In fact, we encourage projects to do at least one release while in incubation phase.
+Yes. In fact, we encourage projects to do at least one release while in xref:incubation[incubation phase].
 
 What restrictions are placed on version names for incubating projects? ::
 
-Projects in the incubation phase generally use version numbers that are less than 1.0. This is, however, a convention not a rule. If it makes sense for you community and adopters to use higher numbers, then do so. If you're not sure, ask your xref:#roles-pmc[Project Management Committee] (PMC) for advice.
+Projects in the xref:incubation[incubation phase] generally use version numbers that are less than 1.0. This is, however, a convention not a rule. If it makes sense for you community and adopters to use higher numbers, then do so. If you're not sure, ask your xref:roles-pmc[Project Management Committee] (PMC) for advice.
 
 How do I name/number milestone builds? ::
 
-Milestone builds must be named in a manner that that conveys the _pre-release_ nature of the content. It is common for project teams to name their milestone builds _alpha_ or _beta_. Another convention is to use the name/number of the eventual release suffixed with "Mn" (e.g. the second milestone for Eclipse EGit 3.2 may have a file named `egit-3.2M2`). Projects in the incubation phase may produce milestone builds for their graduation release, e.g `myProject-1.0M2`.
+Milestone builds must be named in a manner that that conveys the _pre-release_ nature of the content. It is common for project teams to name their milestone builds _alpha_ or _beta_. Another convention is to use the name/number of the eventual release suffixed with "Mn" (e.g. the second milestone for Eclipse EGit 3.2 may have a file named `egit-3.2M2`). Projects in the xref:incubation[incubation phase] may produce milestone builds for their graduation release, e.g `myProject-1.0M2`.
 
 Can {forgeName} open source projects in the incubation phase distribute milestone builds? ::
 
-Yes. In fact, the EMO strongly encourages {forgeName} open source projects in the incubation phase to create and distribute milestone builds. 
+Yes. In fact, the EMO strongly encourages {forgeName} open source projects in the xref:incubation[incubation phase] to create and distribute milestone builds. 
 
 How can I get help? ::
 
-Post your question on the {incubationListUrl}[Incubation Mailing list], or contact your xref:roles-pmc[Project Management Committee] (PMC) or the {emoEmailLink}.
+Post your question on the xref:incubation-mailinglist[incubation mailing list], or contact your xref:roles-pmc[Project Management Committee] (PMC) or the {emoEmailLink}.

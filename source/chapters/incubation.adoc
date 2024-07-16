@@ -13,7 +13,7 @@
  * SPDX-License-Identifier: EPL-2.0
 ////
 
-[[incubation]]
+[#incubation]
 = Incubation
 
 The {edpUrl}[Eclipse Foundation Development Process] (EDP) has a notion of phases. Two of those phases are _incubation_ and _mature_.
@@ -31,8 +31,10 @@ Incubation is a phase, or state, for a project. That a project is in the incubat
 
 The xref:ip[intellectual property due diligence process] provides some additional flexibility for projects in incubation; the implication being that there may be some modest increase in intellectual property-related risk while the development team learns to engage in the due diligence process.
 
-[[incubation-branding]]
+[#incubation-branding]
 == Incubation Branding
+
+[[starting-incubation-branding]]
 
 To highlight that a project is in the incubation phase, it must implement incubation branding. Primarily, this takes the form of displaying the incubation logo in prominent locations, including the project’s major web properties and including the word "incubation" or warning that products shipped as part of a release _may include incubating components_.
 
@@ -47,21 +49,22 @@ Incubating branding includes:
 
 There are no incubation branding requirements for any user-facing elements.
 
-[[incbuation-mailinglist]]
+[TIP]
+====
+For projects that produce OSGi artifacts, include the word "incubation" in the _Bundle-Name_, feature names, and p2 repositories. The word "incubation" should **not** be included in technical namespaces, especially when it may result in confusion when the project exits incubation. Do **not** include the word "incubation" in an OSGi bundle's _Bundle-SymbolicName_, or a Java package name.
+====
+
+[#incubation-mailinglist]
 == Incubation Mailing List
 
 The {incubationListUrl}[incubation mailing list] exists to facilitate discussions related to the incubation phase, allowing project committers to ask questions about Eclipse Foundation processes, seek guidance from the xref:roles-ac[Eclipse Architecture Council], xref:roles-emo[Eclipse Management Organization], and connect with other community members involved in projects in the incubation phase.
 
 New committers are encouraged to join the incubation mailing list; this list is a good place to ask questions about process, services available, and other aspects of working as a committer.
 
-[[incubation-development]]
+[#incubation-development]
 == Development
 
 New project teams are usually eager to get started generating content. In addition to creating fantastic content, there are a few things to remember:
-
-Be vendor neutral ::
-
-In order to be truly open, people need to feel welcome to contribute. This is easier if the project is vendor neutral. A vendor neutral project is not dominated by any organisation or organisations; meritocracy should be based on the contributions of an individual, not the goals or hiring practices of any specific organisation. Make growing your xref:incubation-communities[communities] a priority.
 
 Use the resources assigned to the {forgeName} project by the Eclipse Foundation ::
 
@@ -71,6 +74,8 @@ Likewise, the issue trackers associated with the project's GitLab and GitHub rep
 
 Engage in the IP due diligence process ::
 
+Your first contribution (usually existing code) will form the project's xref:ip-initial-contribution[initial contribution]. After you've populated your repositories, the Eclipse IP Team will engage in a review and may provide you with feedback. The team will engage with the project team via the xref:roles[project leads].
++
 The xref:ip[intellectual property due diligence process] is available to assist your Eclipse open source project in vetting xref:ip-project-content[contributions] and referenced xref:ip-third-party[third party content] content.
 
 Ensure that contributors have signed Eclipse Contributor Agreement ::
@@ -95,7 +100,11 @@ Ensure that all metadata in technical resources (e.g., `pom.xml` and `package.js
 * Specify licences as an https://spdx.org[SPDX] identifier or expression; and
 * Specify all possible metadata for your software components (e.g., name, description, organisation, SCM, and issue management).
 
-[[incubation-communities]]
+Be vendor neutral ::
+
+In order to be truly open, people need to feel welcome to contribute. This is easier if the project is vendor neutral. A vendor neutral project is not dominated by any organisation or organisations; meritocracy should be based on the contributions of an individual, not the goals or hiring practices of any specific organisation. Make growing your xref:incubation-communities[communities] a priority.
+
+[#incubation-communities]
 == Communities
 
 Essential to the Purposes of the Eclipse Foundation is the development of the three inter-related communities around each Project, and the Incubation Phase is the best time to start forming those communities:
@@ -121,7 +130,7 @@ An active and engaged adopter community is only way to prove that an Eclipse pro
 
 Projects are expected to make substantial progress on establishing these communities during their Incubation Phase.
 
-[[incubation-graduating]]
+[#incubation-graduating]
 == Graduating from Incubation
 
 Incubation Phase projects will eventually graduate, signifying that the project code base has stabilised and that the project team is familiar with the Eclipse Development Process.
@@ -133,19 +142,6 @@ Graduation Reviews are generally combined with a release review.
 For projects with larger initial code bases, we encourage the project to have at least one interim release before attempting a graduation release. The process of finishing the code, tests, and documentation to a release standard, plus ensuring that community standards have been addressed can be daunting; engaging in the release process while in incubation phase, gives the project team an opportunity to practice.
 ====
 
-Criteria for exiting from the incubation phase and graduating to the mature phase include:
-
-* A working and stable code base
-* An active multi-organization committer/contributor/developer xref:incubation-communities[communities].
-* The project is operating fully in the open using open source rules of engagement
-** Open and transparent issue tracking.
-** Open and transparent project schedules.
-** Working policies and procedures for developing, specifying, testing, and getting feedback on APIs.
-** The project's decision making processes are published, and all project decisions are being made in public.
-* The project team members are familiar with the rules and responsibilities of being an Eclipse project. 
-** Adherence to the Eclipse IP Policy	including an assessment of how well each Committer is following the committer responsibilities and due diligence rules. It is every Committer's responsibility to learn, know, and follow these rules.
-** Participating in the larger Eclipse community. For example, teaching tutorials at EclipseCon or other conferences, writing articles, participating in the Reviews of other projects, etc.
-** Working with other projects in its enclosing top-level Project.
-* The project is a credit to Eclipse and is functioning well within the Eclipse community.
+The xref:checklist[project checklist] provides some general criteria to determine whether or not a project is ready to exit the incubation phase.
 
 The project lead(s) are responsible for requesting a xref:release-graduation[Graduation Review] when the project leadership believes the project meets the exit criteria.
