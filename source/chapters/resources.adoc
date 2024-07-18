@@ -377,6 +377,13 @@ The baseline configuration used by the Eclipse Foundation can be accessed https:
 
 https://www.gerritcodereview.com/[Gerrit] provides web based code review and repository management for the Git version control system. Many projects use Gerrit to reduce barriers and encourage contribution to the project. As Gerrit is deprecated, we encourage projects to use GitLab or GitHub for code hosting. 
 
+[#resources-archiving-repositories]
+=== Archiving Repositories
+
+If a repository belonging to a project is unmaintained or deprecated and will not receive any further updates, it is good practice to clearly indicate that in the corresponding `README.md` and `SECURITY.md` files of the repository with a migration path if applicable.
+
+Committers shall mark a deprecated repository as being `archived` either by using the xref:resources-github-self-service[Self-Service of GitHub Resources] or by {helpdeskUrl}[opening a Help Desk issue] to request assistance from the Eclipse IT Team.
+
 [[resources-issues]]
 === Issue Trackers
 
