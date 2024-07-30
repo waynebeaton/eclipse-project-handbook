@@ -118,7 +118,7 @@ The _Tracking_ section of the request issue includes some checkboxes for the pro
 
 Check the second checkbox when you're ready for the Eclipse Foundation Security Team to submit the request to the central authority (that is, when you're ready for the issue to be disclosed publicly).
 
-If the project is using a {githubSecurityAdvisoryInfoUrl}[GitHub Security Advisory] to track mitigation of the vulnerability, the Security Team intervention will likely be required to submit the advisory. Click the second checkbox to indicate that you're ready for the Security Team to submit the advisory on the project team's behalf.
+If the project is using a {githubSecurityAdvisoryInfoUrl}[GitHub Security Advisory] to track mitigation of the vulnerability, the Security Team intervention may be required to submit the advisory. Click the third checkbox to indicate that you're ready for the Security Team to submit the advisory on the project team's behalf.
 
 === Projects Using Exclusively GitHub Security Advisories
 
@@ -126,13 +126,18 @@ If the project receives reports exclusively by private reporting with GitHub Sec
 
 * *Prepare the initial data*: The project receives initial data in the report and assesses that it is a real vulnerability.
 
-* *Request the number*: When you know that there is a security issue (the fix is not yet needed at this point), contact the Eclipse Foundation Security Team to request the number.
+* *Request the number*: When you know that there is a security issue (the fix is not yet needed at this point), go to {cveRequestUrl}[the CVE Request form] to request the number. You do not need to fill the complete form if all the information is available in your advisory - in this case just submit the link to the advisory in your CVE request.
 
-* *Receive the number*: The Eclipse Foundation Security Team will request a number and GitHub will assign one (or ask for more information in the report). You can start using it internally when preparing documentation of the release containing the fix.
+[WARNING]
+====
+GitHub will reject CVE number requests from Eclipse Foundation projects. Fill the {cveRequestUrl}[the CVE Request form] instead. Both teams are working on a solution to make this process more streamlined.
+====
+
+* *Receive the number*: The Eclipse Foundation Security Team will assign one (or ask for more information in the report). You can start using it internally when preparing documentation of the release containing the fix.
 
 * *Prepare the fix* (with backports to all supported branches) and the release: The common practice is to avoid using the CVE number in the fix commit message or the fix itself. Use generic terms instead. The goal is to allow time for all users to upgrade without giving potential attackers too much information. See also the next step (you can do them in parallel).
 
-* *Ask for publication of the issue*: When you have the fix ready and published, as the Eclipse Foundation Security team to publish the advisory. Make sure that you specify the version (or versions) where the bug is fixed, including all stable branches. Fill in the description of the issue. You may also consider removing some of the comments (for example containing sensitive or incorrect information). At this stage you may decide to publish only partial information (for example without the link to the commit with the fix). Ideally your release happens earlier or at the same time as the publication. You can ask for a publication at your specific date, for example at your planned release date.
+* *Ask for publication of the issue*: When you have the fix ready and published, ask the Eclipse Foundation Security team to publish the advisory. Update your CVE request. Make sure that you specify the version (or versions) where the bug is fixed, including all stable branches. Fill in the description of the issue. You may also consider removing some of the comments (for example containing sensitive or incorrect information). At this stage you may decide to publish only partial information (for example without the link to the commit with the fix). Ideally your release happens earlier or at the same time as the publication. You can ask for a publication at your specific date, for example at your planned release date.
 
 * *See it publicly*: The advisory becomes public, so is the CVE entry.
 
