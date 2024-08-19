@@ -327,7 +327,7 @@ The xref:contributing-eca[Eclipse Contributor Agreement] (ECA) hook inspects inc
 [[resources-github-self-service]]
 ==== Self-Service of GitHub Resources
 
-The Eclipse Foundation offers self-service of GitHub resources via a tool named https://gitlab.eclipse.org/eclipsefdn/security/otterdog[Otterdog].
+The Eclipse Foundation offers self-service of GitHub resources via a tool named https://github.com/eclipse-csi/otterdog[Otterdog].
 
 Upon opting-in, a new repository _.eclipsefdn_ will be created that hosts the GitHub configuration as code.
 
