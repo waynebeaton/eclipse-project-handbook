@@ -21,25 +21,25 @@ The {securityPolicyUrl}[Eclipse Foundation Vulnerability Reporting Policy] conta
 [[vulnerability-team]]
 == Eclipse Foundation Security Team
 
-The Eclipse Foundation Security Team provides help and advice to Eclipse projects on security issues and is the first point of contact for handling security vulnerabilities. Members of the Security Team are selected from the  Eclipse Foundation staff.
+The Eclipse Foundation Security Team provides help and advice to Eclipse projects on security issues and is the first point of contact for handling security vulnerabilities. Members of the Security Team are selected from the Eclipse Foundation staff.
 
 You can contact the Eclipse Foundation Security Team by sending email to {securityTeamEmail} or by open an issue in the {vulnerabilityReportUrl}[general vulnerability issue tracker].
 
 == Project's Security Team
 
-All Project Contributors are responsible for ensuring best security practices and following of the {securityPolicyUrl}[Eclipse Foundation Vulnerability Reporting Policy]. However, a specific group called the Project's Security Team is responsible for handling undisclosed vulnerabilities. It is up to the Project and Project's Leadership Chain to organize the Project's Security Team. In the absense of other decisions, the Project's Security Team includes all Committers.
+All project contributors are responsible for ensuring best security practices and following of the {securityPolicyUrl}[Eclipse Foundation Vulnerability Reporting Policy]. However, a specific group called the Project's Security Team is responsible for handling undisclosed vulnerabilities. It is up to the project and project's leadership chain to organise the Project's Security Team. In the absence of other decisions, the Project's Security Team includes all committers.
 
-The Project might decide to include a subset of Committers in the team, for example based on their security experience. Any Project Committer can propose a creation of a separate Project's Security Team. This is discussed by the Project Leadership and might be submitted to a vote of all Committers. The same procedure applies to bringing the responsibility back to the complete group of Committers.
+The project might decide to include a subset of the committers in the team, for example based on their security experience. Any project committer can propose a creation of a separate Project's Security Team. This is discussed by the project leadership and might be submitted to a vote of all committers. The same procedure applies to bringing the responsibility back to the complete group of committers.
 
-The Project must provide a security contact to the Eclipse Foundation Security Team and should communicate that contact information to potential reporters (like security researchers).
+The project must provide a security contact to the Eclipse Foundation Security Team and should communicate that contact information to potential reporters (like security researchers).
 
-The following resources are recommended for each Project's security team:
+The following resources are recommended for each project's security team:
 
-* A *private mailing list* per project. This list is to be used only for discussion of undisclosed vulnerabilities in this Project. All communication should move to public channels after disclosure;
+* A *private security mailing list* that is to be used only for discussion of undisclosed vulnerabilities in this project. All communication should move to public channels after disclosure;
 
-* A dedicated *security project* under {https://gitlab.eclipse.org/security/}[Eclipse Foundation GitLab instance security tracker] for vulnerability reporting;
+* A dedicated *security project* under the https://gitlab.eclipse.org/security/[Eclipse Foundation GitLab instance security tracker] for vulnerability reporting;
 
-* *Enabling private vulnerability reporting* (if using GitHub);
+* *Enable private vulnerability reporting on GitHub* when the project uses GitHub;
 
 The Project's Security Team members might grant access to specific issues to people outside of the team. Such rules should be defined by the Project's Security Team and the PMI in advance.
 
@@ -54,7 +54,7 @@ In order to be able to set up, monitor, and also help projects dealing with secu
 [[vulnerability-reporting]]
 == Reporting
 
-Vulnerabilities can be reported via a project-specific security tracker, or via general Eclipse Foundation means: an email to {securityTeamEmail} or and issue in the {vulnerabilityReportUrl}[general vulnerability issue tracker].
+Vulnerabilities can be reported via a project-specific security tracker, or via general Eclipse Foundation means: an email to {securityTeamEmail} or an issue in the {vulnerabilityReportUrl}[general vulnerability issue tracker].
 
 The general mailto:{securityTeamEmail}[security team email address] can be used to report vulnerabilities in any Eclipse Foundation project. Members of the Eclipse Foundation Security Team will receive messages sent to this address. This address should be used only for reporting undisclosed vulnerabilities; regular issue reports and questions unrelated to vulnerabilities in Eclipse Foundation project software will be ignored. Note that this email address is not encrypted.
 
