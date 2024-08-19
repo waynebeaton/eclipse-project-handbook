@@ -136,7 +136,7 @@ The _Tracking_ section of the request issue includes some checkboxes for the pro
 
 Check the second checkbox when you're ready for the Eclipse Foundation Security Team to submit the request to the central authority (that is, when you're ready for the issue to be disclosed publicly).
 
-If the project is using a {githubSecurityAdvisoryInfoUrl}[GitHub Security Advisory] to track mitigation of the vulnerability, the Security Team intervention will likely be required to submit the advisory. Click the second checkbox to indicate that you're ready for the Security Team to submit the advisory on the project team's behalf.
+If the project is using a {githubSecurityAdvisoryInfoUrl}[GitHub Security Advisory] to track mitigation of the vulnerability, the Security Team intervention may be required to submit the advisory. Click the third checkbox to indicate that you're ready for the Security Team to submit the advisory on the project team's behalf.
 
 === Projects Using Exclusively GitHub Security Advisories
 
@@ -144,13 +144,18 @@ If the project receives reports exclusively by private reporting with GitHub Sec
 
 * *Prepare the initial data*: The project receives initial data in the report and assesses that it is a real vulnerability.
 
-* *Request the number*: When you know that there is a security issue (the fix is not yet needed at this point), contact the Eclipse Foundation Security Team to request the number.
+* *Request the number*: When you know that there is a security issue (the fix is not yet needed at this point), go to {cveRequestUrl}[the CVE Request form] to request the number. You do not need to fill the complete form if all the information is available in your advisory - in this case just submit the link to the advisory in your CVE request.
 
-* *Receive the number*: The Eclipse Foundation Security Team will request a number and update the advisory. You can start using it internally when preparing documentation of the release containing the fix.
+[WARNING]
+====
+GitHub will reject CVE number requests from Eclipse Foundation projects. Fill the {cveRequestUrl}[the CVE Request form] instead. Both teams are working on a solution to make this process more streamlined.
+====
+
+* *Receive the number*: The Eclipse Foundation Security Team will assign one (or ask for more information in the report). You can start using it internally when preparing documentation of the release containing the fix.
 
 * *Prepare the fix* (with backports to all supported branches) and the release: The common practice is to avoid using the CVE number in the fix commit message or the fix itself. Use generic terms instead. The goal is to allow time for all users to upgrade without giving potential attackers too much information. See also the next step (you can do them in parallel).
 
-* *Ask for publication of the issue*: When you have the fix ready and published, ask the Eclipse Foundation Security team to publish the CVE number and publish the advisory. Make sure that you specify the version (or versions) where the bug is fixed, including all stable branches. Fill in the description of the issue. You may also consider removing some of the comments (for example containing sensitive or incorrect information). At this stage you may decide to publish only partial information (for example without the link to the commit with the fix). Ideally your release happens earlier or at the same time as the publication. You can ask for a publication at your specific date, for example at your planned release date.
+* *Ask for publication of the issue*: When you have the fix ready and published, ask the Eclipse Foundation Security team to publish the advisory. Update your CVE request. Make sure that you specify the version (or versions) where the bug is fixed, including all stable branches. Fill in the description of the issue. You may also consider removing some of the comments (for example containing sensitive or incorrect information). At this stage you may decide to publish only partial information (for example without the link to the commit with the fix). Ideally your release happens earlier or at the same time as the publication. You can ask for a publication at your specific date, for example at your planned release date.
 
 * *See it publicly*: The advisory becomes public, so is the CVE entry.
 
@@ -197,6 +202,26 @@ Links:
 ----
 
 If unsure on how to fill the form, ask the Eclipse Foundation Security Team for assistance.
+
+=== CVSS Scoring
+
+The Eclipse Foundation CNA is currently using Common Vulnerability Scoring System (CVSS) version 4. The CVSS scoring gives an estimation of the impact of the issue. One important thing to know about CVSS is that it describes the situation under a *reasonable worst-case scenario*. This also means there might be differences in the scoring between different people.
+
+The final result (score) of CVSS if a value from 0.0 (minimal impact) to 10.0 (critical impact); in addition to the score, the CVSS also includes a more detailed explanation (vectors) of various factors.
+
+The Eclipse Foundation Security Team recommends to fill the following fields:
+* *Attack Vector*: Does the attacker need physical access to the system, a local account, or a local network (e.g., Bluetooth or the same IP subnet), or can the attack be conducted remotely?
+* *Attack Complexity*: is the attack easy to perform with code that will work every time (low complexity), or require work and preparation, or multiple attempts (to generate a race condition, for example) (high complexity)
+* *Attack Requirements*: shows if the attack is possible in all conditions. "None" means there are no specific conditions. However, "Present" means that the attack can take place in a particular configuration; the attacker needs to control the path between the user and the vulnerable system, and so on.
+* *User Interaction*: what is the involvement of the user? The score might be None (no user interaction required), Passive (involuntary actions from the user who is not working with the attacker), and Active (where the user is working with the attacker—for example, placing a file in a specific place or ignored a security warning).
+* *Privileges Required*: Does the attack require no permission at all? Low permissions (for example, a user account)? Or high permissions (for example, an administrator account)?
+* *Product Confidentiality*: There is either no loss of confidentiality, low loss with either a limited amount of confidential information obtained or limited control of what is obtained, or high loss when all confidential information of a system is available to the attacker.
+* *Product Integrity*: There is either no loss of integrity, a low loss with either limited or partial modification by the attacker, or a complete loss of integrity when the attacker can modify any information in the vulnerable component.
+* *Product Availability*: There is either no loss of availability, limited loss when, for example, the component is working slowly, or a high availability loss in case of a complete denial of service.
+* *Subsequent Confidentiality/Integrity/Availability* are scored as the above, but for systems that are not directly attacked, but might be impacted indirectly.
+* *Vulnerability Response Effort*: How much effort does responding to the vulnerability require? Is it a trivial change in a configuration, a simple update, or does a technician have to have physical access to each affected device?
+* *Urgency*: How urgent is it to remediate this vulnerability?
+
 
 [[security-faq]]
 == Frequently Asked Questions
