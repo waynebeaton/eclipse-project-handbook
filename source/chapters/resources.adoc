@@ -29,6 +29,7 @@ The Eclipse Foundation provides the following services (high level) for {forgeNa
 ** Jenkins-based build infrastructure via our xref:resources-builds[Common Build Infrastructure];
 ** Artifact xref:resources-signing[signing];
 ** xref:resources-mailing-list[Mailing lists];
+** xref:chat-service[Chat service] based on Matrix protocol;
 ** IT support via the {helpdeskUrl}[Help Desk];
 * Security
 ** Security audits;
@@ -571,6 +572,29 @@ By convention, the `groupid` should be of the form `pass:a,c[{namespace}.<shortn
 Project teams must engage in the <<release>> process before labelling any software as a release version.
 
 The Eclipse Release Engineering Team has provided some help regarding the use of Maven Central in the https://wiki.eclipse.org/IT_Infrastructure_Doc#Publish_to_Maven_Central[Eclipsepedia Wiki].
+
+[[chat-service]]
+=== Chat Service
+
+The chat service is a great way for projects to communicate and to connect with the community, provide real-time support, and to discuss project-related topics. 
+
+Projects can request rooms/spaces for their project on the chat service. The channel name is of the form `#<shortname>` by default (e.g. `#dash` for the `technology.dash` project) and located by default in the https://chat.eclipse.org/#/room/#eclipse-projects:matrix.eclipse.org[#eclipse-projects:matrix.eclipse.org] space.
+
+Custom rooms/spaces organization can be requested, see the following examples:
+
+* https://chat.eclipse.org/#/room/#oniro:matrix.eclipse.org[oniro]
+* https://chat.eclipse.org/#/room/#automotive.tractusx:matrix.eclipse.org[automotive.tractusx]
+* ...
+
+All requests for new rooms/spaces have to be made by opening a https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/new?issue%5Btitle%5D=%5BChat%20service%5D%20Create%20room%20and%20space%20for%20%3CProject%3E&issuable_template=chat-service[Help Desk] issue.
+
+The chat service can be accessed via the web client at https://chat.eclipse.org/[chat.eclipse.org] or by using a Matrix client (e.g. Element, NeoChat, or https://matrix.org/ecosystem/clients[any other Matrix client]) via the `matrix.eclipse.org` server.
+
+For more information, please see the documentation https://chat.eclipse.org/docs/[here]:
+
+* https://chat.eclipse.org/docs/getting-started/[Getting started with the chat service]
+* https://chat.eclipse.org/docs/faq/[Frequently Asked Questions]
+
 
 [[resources-faq]]
 === Frequently Asked Questions
