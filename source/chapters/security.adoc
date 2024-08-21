@@ -43,6 +43,10 @@ The following resources are recommended for each project's security team:
 
 The Project's Security Team members might grant access to specific issues to people outside of the team. Such rules should be defined by the Project's Security Team and the PMC in advance.
 
+Project Leads can define Project Security Team via PMI, in the _Security_ section of the _Edit_ tab (see screenshot below).
+
+image::images/pmi_security_section.png["Security Section PMI"]
+
 == Project Setup for Vulnerability Reporting
 
 The default project setup is to use general Eclipse Foundation reporting (see below). The strong recommendation is to list reporting methods clearly inside a `SECURITY.md` file in the main repository (also in other repositories if it makes sense) to help security researchers to communicate with the project in a secure way. Similar information should be available in the project's documentation.
