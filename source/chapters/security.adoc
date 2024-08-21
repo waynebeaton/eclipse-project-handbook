@@ -41,7 +41,7 @@ The following resources are recommended for each project's security team:
 
 * *Enable private vulnerability reporting on GitHub* when the project uses GitHub;
 
-The Project's Security Team members might grant access to specific issues to people outside of the team. Such rules should be defined by the Project's Security Team and the PMI in advance.
+The Project's Security Team members might grant access to specific issues to people outside of the team. Such rules should be defined by the Project's Security Team and the PMC in advance.
 
 == Project Setup for Vulnerability Reporting
 
