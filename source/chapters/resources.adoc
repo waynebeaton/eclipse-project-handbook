@@ -578,13 +578,12 @@ The Eclipse Release Engineering Team has provided some help regarding the use of
 
 The chat service is a great way for projects to communicate and to connect with the community, provide real-time support, and to discuss project-related topics. 
 
-Projects can request rooms/spaces for their project on the chat service. The channel name is of the form `#<shortname>` by default (e.g. `#dash` for the `technology.dash` project) and located by default in the https://chat.eclipse.org/#/room/#eclipse-projects:matrix.eclipse.org[#eclipse-projects:matrix.eclipse.org] space.
+Eclipse project committers can request rooms/spaces for their project on the chat service. By default, the channel name is of the form `pass:[#&lt;shortname&gt;]` where `<shortname>` is the project's xref:resources-identifiers[short name identifier] (e.g. `pass:[#dash]` for the `technology.dash` project) and located by default in the `https://chat.eclipse.org/#/room/#eclipse-projects:matrix.eclipse.org[pass:[#eclipse-projects:matrix.eclipse.org]]` space.
 
-Custom rooms/spaces organization can be requested, see the following examples:
+Custom rooms/spaces organisation can be requested, see the following examples:
 
 * https://chat.eclipse.org/#/room/#oniro:matrix.eclipse.org[oniro]
 * https://chat.eclipse.org/#/room/#automotive.tractusx:matrix.eclipse.org[automotive.tractusx]
-* ...
 
 All requests for new rooms/spaces have to be made by opening a https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/new?issue%5Btitle%5D=%5BChat%20service%5D%20Create%20room%20and%20space%20for%20%3CProject%3E&issuable_template=chat-service[Help Desk] issue.
 
@@ -594,7 +593,6 @@ For more information, please see the documentation https://chat.eclipse.org/docs
 
 * https://chat.eclipse.org/docs/getting-started/[Getting started with the chat service]
 * https://chat.eclipse.org/docs/faq/[Frequently Asked Questions]
-
 
 [[resources-faq]]
 === Frequently Asked Questions
