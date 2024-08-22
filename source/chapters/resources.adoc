@@ -256,11 +256,11 @@ Excluded Subgroups have been added to xref:pmi[Project Management Infrastructure
 [[resources-github]]
 === GitHub
 
-Project teams may opt to host some or all of their canonical source code repositories to an organization on GitHub that is maintained by the Eclipse Foundation. Both GitHub Issues and Wiki may also be used.
+Project teams may opt to host some or all of their canonical source code repositories to an organisation on GitHub that is maintained by the Eclipse Foundation. Both GitHub Issues and Wiki may also be used.
 
 Any committer can {helpdeskUrl}[open a Help Desk issue] to request that the Eclipse IT Team create a new repository for their project on, or move an existing repository to, GitHub. A project may have more than one repository on GitHub. When making the request, the committer should describe--specifically and concisely--what they want to make happen. Note that the Eclipse IT Team will verify the request with the project leads.
 
-Repositories can be hosted in the default `{forgeMachineName}` GitHub organization, or a dedicated organization can be created. Dedicated organizations use as their name, the conjunction of `{forgeMachineName}` with the project xref:resources-identifiers[short name] (e.g., `{forgeMachineName}-woolsey`).
+Repositories can be hosted in the default `{forgeMachineName}` GitHub organisation, or a dedicated organisation can be created. Dedicated organisations use as their name, the conjunction of `{forgeMachineName}` with the project xref:resources-identifiers[short name] (e.g., `{forgeMachineName}-woolsey`).
 
 The Eclipse IT Team installs some _hooks_ onto all {forgeName} project repositories on GitHub.
 
@@ -294,7 +294,7 @@ Eclipse Foundation scripts build and maintain a collection of GitHub Teams, each
 The scripts require knowledge of the GitHub Id in order to add any individual to any of the teams. Be sure to include your GitHub Id in your xref:contributing-account[Eclipse Foundation Account].
 ====
 
-GitHub's https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-roles-for-an-organization[Repository roles for an organization] document describes the permissions granted for each of the roles (_Maintain_, _Write_, and _Triage_) described below.
+GitHub's https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-roles-for-an-organization[Repository roles for an organisation] document describes the permissions granted for each of the roles (_Maintain_, _Write_, and _Triage_) described below.
 
 Project Leads Team ::
 
@@ -304,7 +304,7 @@ A project lead may request temporary _Admin_ level access to their project's rep
 +
 [WARNING]
 ====
-With the _Maintain_ role, project leads have significant privileges on GitHub repositories. Project leads must not manipulate the configuration of GitHub organizations and repositories in a manner that would violate the {edpLink} or the {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy]. 
+With the _Maintain_ role, project leads have significant privileges on GitHub repositories. Project leads must not manipulate the configuration of GitHub organisations and repositories in a manner that would violate the {edpLink} or the {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy]. 
 
 For example, project leads **must not** manipulate teams or privileges and must specifically not add or remove developers directly. See xref:elections-committer[Committer Elections] for information on how to add developers to a project, and xref:elections-retire-cm[Committers Retirement] for information on how to remove developers from a project.
 ====
@@ -358,8 +358,8 @@ orgs.newOrg('adoptium') {
 
 The following resource configurations are available:
 
-* Organization Settings
-* Organization Webhooks
+* Organisation Settings
+* Organisation Webhooks
 * Repositories and their settings
 * Branch Protection Rules
 
@@ -465,7 +465,7 @@ If your project website or any other property maintained by or on behalf the pro
 [[resources-website-services]]
 === Vendor-Specific Links
 
-Organizations who are investing in an open source project may want to provide links on the xref:resources-website[project website] (or in other content related to a project: a `README` file, for example) to related professional services that they offer. 
+Organisations who are investing in an open source project may want to provide links on the xref:resources-website[project website] (or in other content related to a project: a `README` file, for example) to related professional services that they offer. 
 
 Including links to vendor-specific services related to an Eclipse open source project is completely consistent with the Eclipse Foundation Development Process.
 
@@ -549,7 +549,7 @@ These links can be provided in a field, a README, or on directly accessible (i.e
 [[resources-dockerhub]]
 ==== DockerHub
 
-The Eclipse Foundation owns several organizations on DockerHub, including https://hub.docker.com/u/eclipse/[eclipse], https://hub.docker.com/u/locationtech/[locationtech], and https://hub.docker.com/u/polarsys/[polarsys], but does not formally support or strictly manage the use of these organizations. 
+The Eclipse Foundation owns several organisations on DockerHub, including https://hub.docker.com/u/eclipse/[eclipse], https://hub.docker.com/u/locationtech/[locationtech], and https://hub.docker.com/u/polarsys/[polarsys], but does not formally support or strictly manage the use of these organisations. 
 
 For more information, please see {cbiUrl}#docker-hub[CBI/DockerHub] in the Eclipse wiki.
 
@@ -558,9 +558,9 @@ For more information, please see {cbiUrl}#docker-hub[CBI/DockerHub] in the Eclip
 Content distributed via official Eclipse Foundation channels must be complete enough that a consumer can (with reasonable effort) use it without needing the DockerHub distribution. That is, the DockerHub distribution needs to be considered a convenient way to leverage the content, not the only way. Please make sure that you treat any links or related discussion that you have on an Eclipse Foundation property about images distributed via DockerHub as an unofficial channel.
 ====
 
-Subject to the xref:resources-external[rules for the use of external resources], a project team can create and maintain their own organization on DockerHub. The organization name must follow the pattern `{forgeMachineName}-<shortname>` (e.g. `{forgeMachineName}-woolsey`) or some variation (e.g. `{forgeMachineName}woolsey`). As indicated in the rules, ownership of the organization must be shared by a subset of project *committers* and the project must have a documented policy regarding how access to that organization is managed.
+Subject to the xref:resources-external[rules for the use of external resources], a project team can create and maintain their own organisation on DockerHub. The organisation name must follow the pattern `{forgeMachineName}-<shortname>` (e.g. `{forgeMachineName}-woolsey`) or some variation (e.g. `{forgeMachineName}woolsey`). As indicated in the rules, ownership of the organisation must be shared by a subset of project *committers* and the project must have a documented policy regarding how access to that organisation is managed.
 
-Additionally, a PMC may decide to create and manage an organization for the Top-Level Project. The PMC may have their own policy regarding the use of DockerHub. Project teams should consult with their PMC to determine which approach is best suited for the project.
+Additionally, a PMC may decide to create and manage an organisation for the Top-Level Project. The PMC may have their own policy regarding the use of DockerHub. Project teams should consult with their PMC to determine which approach is best suited for the project.
 
 [[resources-maven]]
 ==== Maven Central
