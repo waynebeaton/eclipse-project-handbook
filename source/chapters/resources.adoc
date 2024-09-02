@@ -578,7 +578,7 @@ The Eclipse Release Engineering Team has provided some help regarding the use of
 
 The chat service is a great way for projects to communicate and to connect with the community, provide real-time support, and to discuss project-related topics. 
 
-Eclipse project committers can request rooms/spaces for their project on the chat service. By default, the channel name is of the form `pass:[#&lt;shortname&gt;]` where `<shortname>` is the project's xref:resources-identifiers[short name identifier] (e.g. `pass:[#dash]` for the `technology.dash` project) and located by default in the `https://chat.eclipse.org/#/room/#eclipse-projects:matrix.eclipse.org[pass:[#eclipse-projects:matrix.eclipse.org]]` space.
+Eclipse project committers can request rooms/spaces for their project on the chat service. By default, the channel name is of the form `pass:[#&lt;shortname&gt;]` where `<shortname>` is the project's xref:resources-identifiers[short name identifier] (e.g. `pass:[#dash]` for the `technology.dash` project) and located by default in the https://chat.eclipse.org/#/room/#eclipse-projects:matrix.eclipse.org[#eclipse-projects:matrix.eclipse.org] space.
 
 Custom rooms/spaces organisation can be requested, see the following examples:
 
