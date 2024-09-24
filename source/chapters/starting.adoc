@@ -104,6 +104,17 @@ Write the project scope and description in the present tense (refer to the proje
 
 Clear and Concise Description :: If the community found any aspects of the proposal confusing, unclear, or using unfamiliar jargon, those areas must be clarified. This is a hard and fast requirement: because the Eclipse community must be able to evaluate the proposal. To do that, they must be able to understand the proposal and thus it must be clear and straightforward and free of marketing-speak.
 
+Specifications :: If the project will develop xref:specifications[specifications], then those specifications must be developed under the {efspUrl}[Eclipse Foundation Specification Process]. Specification development requires that the project be aligned with a single working group, designated in the _Is this a specification project?_ field. If you're not sure what working group to select, or the target working group is not in the list, contact the {emoLink}.
++
+[NOTE]
+====
+In their January 2020 meeting, the Eclipse Foundation's Board of Directors passed this resolution:
++
+_RESOLVED, that the Board instructs the EMO to ensure as quickly as practical that all Eclipse Foundation projects which deliver specifications do so under the auspices of the Eclipse Foundation Specification Process (EFSP)._
+====
++
+If the project will implement specifications, indicate this in the scope and description.
+
 Committers :: The xref:release-creation[creation review] serves as the new xref:elections-committer[committer election] for the initial Committers and thus the proposal must contain the same level of nomination justification and background as an election would. The committer biographies don't have to be long or involved, but they should describe each committer's relationship to and history with the incoming code, and/or involvement with the area or technologies covered by the proposal.
 +
 [NOTE]
