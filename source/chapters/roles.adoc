@@ -222,7 +222,9 @@ Any rules that a project team decides to adopt don’t have to apply homogeneous
 
 Is the Project Lead a super-committer? ::
 
-A project lead is **not** a super committer. In fact, the project lead role does not automatically grant the individual committer privileges. The roles are different and an individual must be elected into both of them separately (though it is common that an individual is elected into the project lead role after demonstrating merit while working in the committer role). 
+Sort of. The project lead role does not automatically grant the individual committer privileges, but all project leads must also be committers. In practice, a project lead has all of the privileges of a committer plus the privileges of a project lead, and so are effectively _super-committers_.
++
+There is no specific requirement for project leads to wear capes.
 
 Is there a Project Manager role? ::
 
