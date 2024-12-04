@@ -78,10 +78,7 @@ digraph {
 }
 ----
 
-The new committer must download and print the documents, complete and sign them, and then provide them to the EMO Records Team. The Committer Agreement Workflow provides a means of uploading these documents; alternatively, the team may ask you to provide them via email. 
-
-.Upload the ICA directly into the form
-image::images/committer_questionnaire2.png[]
+The new committer will receive an email with a link to a DropBox sign documentation, they must complete, sign them and submit them electronically.
 
 After all required documents have been received, the EMO Records Team will review them, contact the committer to resolve any issues that need to be addressed, and send a request to the Eclipse IT Team to provision a committer account.
 
