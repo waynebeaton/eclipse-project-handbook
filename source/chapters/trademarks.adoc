@@ -91,6 +91,8 @@ Renaming projects (i.e. after a project has been created and provisioned) requir
 
 A project, as defined by the {edpLink}, is the main operational unit; all open source software development at {forgeName} occurs within the context of a project. The Eclipse Foundation holds the trademark for all {forgeName} Projects.
 
+Project names should always be referred to in a consistent casing, and used as an adjective (never as a noun or verb) like any trademark should be used (e.g. "Download {forgeName} Woolsey software here", using the Woolsey name as an adjective for software).
+
 All project names must be approved by the Eclipse Management Organization (EMO) either before a project is created or before an existing project is renamed.
 
 [[trademarks-project-formal]]
@@ -135,17 +137,6 @@ Acronyms often become brand names.
 ==== Existing Software Product Names
 
 To avoid confusion between {forgeName} projects and commercial products, {forgeName} projects may not be named after commercial products and vice versa. To ensure that users understand the source of software products--i.e. from {aForgeName} project, or from a third party vendor--the brand for {aForgeName} project must not include or be directly reminiscent of a commercial product.
-
-[[trademarks-project-short]]
-==== Short Names and IDs
-
-Projects require a short name; this name is used as an ID for the project in various parts of Eclipse Foundation infrastructure and should be as reflective of the formal name as possible.  It may, for example, be a lowercase rendering of the brand name, or an acronym of a descriptive name.
-
-The short name may contain lowercase alphanumeric characters, dashes, and underlines. The short name may not contain periods (.). Short names are used in some project URLs, download directories, the build server, and in the technical namespaces of other parts of the supported infrastructure.
-
-The short name is joined with the short name of the parent project(s) to form a qualified identifier for the project that is used as a key on many of the web pages and services generated and/or maintained for the project by the Eclipse Foundation. e.g. the _{forgeName} Woolsey_ project has a short name of `woolsey`; its qualified name is `technology.dash.woolsey`, indicating that it is a subproject of the {aForgeName} _Dash_ Project which is itself a subproject of the {forgeName} _Technology_ Top Level Project.
-
-Project names should always be referred to in a consistent casing, and used as an adjective (never as a noun or verb) like any trademark should be used (e.g. "Download {forgeName} Woolsey software here", using the Woolsey name as an adjective for software).
 
 [[trademarks-project-product]]
 ==== Product Names

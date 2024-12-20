@@ -59,15 +59,17 @@ In this regard, _all_ project resources are publicly accessible. Put another way
 
 [[resources-identifiers]]
 === Identifiers
+
 Project resources make use of two sorts of IDs:
 
+[[trademarks-project-short]]
 Short name::
-The short name is used in various parts of Eclipse Foundation infrastructure (e.g. the name of the project's directory on the downloads and Git servers, and the URL for the xref:resources-website[project website]). The short name may contain lowercase alphanumeric characters, dashes, and underlines; but does not contain periods.
+The short name is used in various parts of Eclipse Foundation infrastructure (e.g. the name of the project's directory on the downloads and Git servers, and the URL for the xref:resources-website[project website]). The short name may contain lowercase alphanumeric characters, dashes, and underlines; but may not contain periods. 
 
-Qualified identifier::
-The project's short name is joined with the short name of the parent project(s) to form a qualified identifier (project id) for the project that is used as a key on services generated and/or maintained for the project by the Eclipse Foundation. 
+Project ID ::
+The project's short name is joined with the short name of the parent project(s) to form the _project ID_ for the project that is used as a key on services provided for the project by the Eclipse Foundation. The project ID is composed of between one and three segments, separated by a dot (.); each segment may contain lowercase alphanumeric characters, dashes, and underlines. The segments define a path to the project through the project hierarchy, with the first segment being a top-level project ID.
 
-For example the "{forgeName} Woolsey" project has a _short name_ of "woolsey"; its _qualified identifier_ is "technology.dash.woolsey", indicating that it is a subproject of the {aForgeName} _Dash_ Project which is itself a subproject of the {forgeName} _Technology_ Top Level Project.
+For example the "{forgeName} Woolsey" project has a _short name_ of "woolsey"; its project ID_ is "technology.dash.woolsey", indicating that it is a subproject of the {aForgeName} _Dash_ project which is itself a subproject of the _Eclipse Technology_ top-level project.
 
 [[resources-source]]
 === Source Code Management
@@ -152,7 +154,7 @@ On GitLab, the root group for all {forgeName} open source project repositories i
 [#resources-gitlab-project-group]
 ==== Project Group
 
-A group can be configured as the immediate descendant of the root group, using the {forgeName} open source project's xref:trademarks-project-short[short name].
+A group can be configured as the immediate descendant of the root group, using the {forgeName} open source project's xref:resources-identifiers[short name].
 
 .Project short name as the root
 [source,subs="verbatim,attributes"]
@@ -179,7 +181,7 @@ For example, the {forgeName} Dash project (short name: `dash`) has a group of `{
 [#resources-gitlab-tlp-group]
 ==== Top-level Project Group
 
-A group can be configured as a descendant of the {forgeName} open source project's corresponding {forgeName} top-level project's group, which itself is an immediate descendant of the root group, using the xref:trademarks-project-short[short names]. Configuring the {forgeName} open source project's GitLab group in this manner enables aggregation features such as the ability to list and search issues across related {forgeName} open source project groups and repositories. 
+A group can be configured as a descendant of the {forgeName} open source project's corresponding {forgeName} top-level project's group, which itself is an immediate descendant of the root group, using the xref:resources-identifiers[short names]. Configuring the {forgeName} open source project's GitLab group in this manner enables aggregation features such as the ability to list and search issues across related {forgeName} open source project groups and repositories. 
 
 [TIP]
 ====
@@ -442,7 +444,7 @@ The EMO strongly encourages the use of alternative communication channels for co
 [[resources-website]]
 === Project Websites
 
-Project websites are an excellent way to connect an open source project with the community. Many projects opt to use the xref:pmi[Project Management Infrastructure] (PMI) xref:pmi-project-page[project page] as their website.  PMI-based website URLs take the form of `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`). 
+Project websites are an excellent way to connect an open source project with the community. Many projects opt to use the xref:pmi[Project Management Infrastructure] (PMI) xref:pmi-project-page[project page] as their website.  PMI-based website URLs take the form of `pass:c,a[{forgeUrl}/projects/<project id>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`). 
 
 Many project teams opt to create a custom main project website: if so-desired, a project may host a website on Eclipse Foundation-hosted servers. Project website URLs generally take the form `https://eclipse.dev/<shortname>` (e.g. `https://eclipse.dev/foo`). Custom project website content is maintained in Git repositories hosted on Eclipse Foundation infrastructure. A background job moves content from the Git repository to the website; content pushed to the repository will appear on the live website within five minutes.
 
@@ -453,7 +455,7 @@ If a project website has not already been created for your project, {helpdeskUrl
 
 Project websites must implement the xref:trademarks-website[branding guidelines for project websites].
 
-The xref:pmi[Project Management Infrastructure] (PMI) provides the main xref:pmi-project-page[project website]. Website URLs take the form of `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`).
+The xref:pmi[Project Management Infrastructure] (PMI) provides the main xref:pmi-project-page[project website]. Website URLs take the form of `pass:c,a[{forgeUrl}/projects/<project id>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`).
 
 Websites _not_ hosted by the Eclipse Foundation are considered xref:trademark-external-community[community portals] and are subject to the {trademarkGuidelinesUrl}[Eclipse Foundation Trademark Usage Guidelines] (the Eclipse Foundation asserts ownership of all project name trademarks). Furthermore, projects may be required to comply to specific security guidelines and requirements outlined by the Eclipse Foundation’s Security team.
 
