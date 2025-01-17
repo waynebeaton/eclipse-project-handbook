@@ -109,7 +109,7 @@ Specifications :: If the project will develop xref:specifications[specifications
 [NOTE]
 ====
 In their January 2020 meeting, the Eclipse Foundation's Board of Directors passed this resolution:
-+
+
 _RESOLVED, that the Board instructs the EMO to ensure as quickly as practical that all Eclipse Foundation projects which deliver specifications do so under the auspices of the Eclipse Foundation Specification Process (EFSP)._
 ====
 +
