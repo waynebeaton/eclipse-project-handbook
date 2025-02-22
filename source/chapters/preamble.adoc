@@ -18,36 +18,25 @@
 
 This document provides you with the information that you need to create a new {forgeName} open source project or become a committer on an existing one.
 
-ifeval::["{forgeName}"!="Eclipse"]
-While this document is focused on {forgeName}, it makes several "Eclipse" references, including the _Eclipse Foundation_, _{edpLink}_, and _Eclipse Management Organization_. The Eclipse Foundation is the legal entity that manages the operations of the {forgeName} working group, software development forge, and community.Many of the provided services and contacts are so-named on that basis.
-endif::[]
-
-The _{edpLink}_ (EDP) is the foundational document for {forgeName} projects and committers. It describes the manner in which we do open source software. The EDP does not prescribe any particular development methodology; it is more concerned with the larger-scale aspects of open source project lifecycle, including such things as reviews, processes for running votes and elections, bringing new committers onto a project, etc. This document elaborates on some key points of the EDP.
+The _{edpLink}_ (EDP) is the foundational document for {forgeName} projects and committers. It describes the manner in which we do open source software. The EDP does not prescribe any particular development methodology; it is more concerned with the larger-scale aspects of open source project life cycle, including such things as reviews, processes for running votes and elections, bringing new committers onto a project, etc. This document elaborates on some key points of the EDP.
 
 [[preamble-principles]]
 === Principles
 
-Four basic principles lie at the heart of the EDP:
+The _Open Source Rules of Engagement_ lie at the heart of the EDP:
 
-* Transparency;
-* Openness;
-* Meritocracy; and
-* Vendor-neutrality
+Open :: Eclipse is open to all; Eclipse provides the same opportunity to all. Everyone participates with the same rules; there are no rules to exclude any potential Contributors which include, of course, direct competitors in the marketplace.
 
-We refer to the first three as the "open source rules of engagement".
+Transparent :: Project discussions, minutes, deliberations, Project plans, plans for new features, and other artifacts are open, public, and easily accessible.
 
-To operate with _transparency_, a project's discussions, minutes, deliberations, project plans, plans for new features, and other artifacts are open, public, and easily accessible.
-
-_Openness_ at {forgeName} means quite a lot more than "open book" (which is really a synonym for transparent). The project is open to all; {forgeName} provides the same opportunity to all. Everyone participates with the same rules; there are no rules to exclude any potential contributors which include, of course, direct competitors in the marketplace.
-
-{forgeName} is a _meritocracy_. The more that somebody contributes, the more responsibility they will earn. A pattern of quality contribution to a project may lead to an invitation to join the project as a committer. Leadership roles in {forgeName} are also merit-based and earned by peer acclaim. Merit must be demonstrated in publicly-accessible forums. Committers and project leads are added to a project via <<elections, election>>.
+Meritocratic :: Eclipse is a meritocracy. The more you contribute the more responsibility you will earn. Leadership roles in Eclipse are also merit-based and earned by peer acclaim.
 
 [NOTE]
 ====
-Employment status has no bearing at whether or not somebody can participate in an open source project at {forgeName}. Employment does not guarantee committer status; committer status must be earned by everybody.
+Employment status has no bearing at whether or not somebody can participate in an open source project at {forgeName}. Employment does not guarantee committer status; committer status must be earned by everybody. Committers and project leads are added to a project via xref:elections[election].
 ====
 
-_Vendor-neutrality_ is similar to openness in that it's concerned with maintaining a level playing field. No vendor is permitted to dominate a project, and nobody can be excluded from participating in a project based on their employment status. While project resources will contain copyright statements that assert ownership of various assets by individual vendors, the project itself must remain vendor-neutral.
+The Open Source Rules of Engagement define a foundation for _vendor neutral_ open source development. _Vendor-neutrality_ is concerned with maintaining a level playing field that is open to all comers: no vendor is permitted to dominate a project, and nobody can be excluded from participating in a project based on their employment status.
 
 Quality and intellectual property cleanliness are also important principles.
  
@@ -55,4 +44,4 @@ _Quality_ means extensible frameworks and exemplary tools developed in an open, 
 
 _<<ip,Intellectual property>>_ (IP) is any artifact that is made available from a {forgeName} server (this includes source code management systems, the website, and the downloads server). Artifacts include (but are not limited to) such things as source code, images, XML and configuration files, documentation, and more. Strict rules govern the way that we manage IP and your responsibilities as a committer.
 
-Code produced by an {forgeName} project is used by organizations to build products. These adopters of {forgeName} technology need to have some assurance that the IP they're basing their products on is _clean_: the organization or individuals who claim copyright of the code are the legitimate copyright holders, and the copyright holders legitimately agree to make the code available under the license(s) that the project works under. As a committer, you must be careful that you do not copy code and inadvertently claim it as your own.
+Code produced by an {forgeName} project is used by organisations to build products. These adopters of {forgeName} technology need to have some assurance that the IP they're basing their products on is _clean_: the organisation or individuals who claim copyright of the code are the legitimate copyright holders, and the copyright holders legitimately agree to make the code available under the license(s) that the project works under. As a committer, you must be careful that you do not copy code and inadvertently claim it as your own.

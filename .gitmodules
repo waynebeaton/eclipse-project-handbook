@@ -4,8 +4,16 @@
 
 [submodule "source/efdp"]
 	path = source/efdp
-	url = https://github.com/EclipseFdn/EFDP
-	ignore = dirty
+	url = https://gitlab.eclipse.org/eclipsefdn/emo-team/policies/development-process.git
+	branch = 1.11
+    ignore = dirty
 [submodule "source/efsp"]
 	path = source/efsp
-	url = git://github.com/EclipseFdn/EFSP.git
+	url = https://gitlab.eclipse.org/eclipsefdn/emo-team/policies/specification-process.git
+	branch = version_1_3
+    ignore = dirty
+[submodule "source/guidelines"]
+	path = source/guidelines
+	url = https://gitlab.eclipse.org/eclipsefdn/emo-team/policies/project-guidelines.git
+	branch = main
+    ignore = dirty

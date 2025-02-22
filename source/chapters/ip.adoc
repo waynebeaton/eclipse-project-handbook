@@ -1,14 +1,11 @@
 ////
- * Copyright (C) 2015, 2020 Eclipse Foundation, Inc. and others. 
+ * Copyright (C) 2015, 2022 Eclipse Foundation, Inc. and others. 
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
  * http://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-FileType: SOURCE
- *
- * SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
- * SPDX-FileCopyrightText: 2015 Contributors to the Eclipse Foundation
  *
  * SPDX-License-Identifier: EPL-2.0
 ////
@@ -19,200 +16,141 @@ We regard the following to be proper names:
 
 IP Due Diligence Process (when referring to the Eclipse IP DD process)
 IP Team
-Contribution Questionnaire
-Piggyback CQ
-Prerequisite
-Exempt Prerequisite
-Works With Dependency
-Third-party (use a hyphen)
+Third party (no hyphen)
 
-The terms "intellectual property", "project content" and "third-party content" are not considered proper nouns.
+The terms "intellectual property", "project content" and "third party content" are not considered proper nouns.
 ////
 
-[[ip]]
+[#ip]
 == Intellectual Property
 
 The term intellectual property (IP) refers to any sort of creative work, be it literature, art, or software. In the realm of open source software, artifacts like source code, documentation, and images are considered intellectual property. Unless otherwise stated, intellectual property is the property of its creator, who may grant permission for others to use that intellectual property by providing a license.
 
-The ease with which software can be copied and combined makes it challenging to know with confidence if content can be used without running into legal issues. Any sort of serious software development effort must be accompanied by a well-defined IP due diligence process that can ferret out issues and mitigate the risk of leveraging the work of others. IP due diligence is a time consuming process that requires specialized skills and a keen eye for detail.
-
-____
-In October 2019, The Eclipse Foundation's Board of Directors approved an update to the IP Policy that introduces several significant changes in our IP due diligence process.
-
-**License certification only for third-party content.** This change removes the requirement to perform deep copyright, provenance and scanning of anomalies for third-party content unless it is being modified and/or if there are _special_ considerations regarding the content. Instead, the focus for third-party content is on _license compatibility_ only, which had previously been referred to as _Type A_ due diligence.
-
-**Leverage other sources of license information for third-party content.** With this change to license certification only for third-party content, we are able to leverage existing sources of information license information. That is, the requirement that the  IP Team personally review every bit of third-party content has been removed and we can now leverage other _trusted_ sources.
-
-**ClearlyDefined is a _trusted_ source of license information.** We currently have two trusted sources of license information: The Eclipse Foundation’s <<ip-ipzilla,IPZilla>> and <<ip-clearlydefined, ClearlyDefined>>. The IPZilla database has been painstakingly built over most of the lifespan of the Eclipse Foundation; it contains a vast wealth of deeply vetted information about many versions of many third-party libraries. ClearlyDefined is an OSI project that combines automated harvesting of software repositories and curation by trusted members of the community to produce a massive database of license (and other) information about content.
-
-**Piggyback CQs are no longer required.** CQs had previously been used for tracking both the vetting process and the use of third-party content. With the changes, we are no longer required track the use of third-party content using CQs, so piggyback CQs are no longer necessary.
-
-**Parallel IP is used in all cases.** Previously, our so-called _Parallel IP_ process, the means by which project teams could leverage content during development while the IP Team completed their due diligence review was available only to projects in the _incubation phase_ and only for content with specific conditions. This is no longer the case: full vetting is now always applied in parallel in all cases.
-
-**CQs are not required for third-party content in all cases.** In the case of third-party content due diligence, <<ip-cq,CQs>> are now only used to track the vetting process. 
-
-**CQs are no longer required _before_ third-party content is introduced.** Previously, the IP Policy required that all third-party content must be vetted by the IP Team before it can be used by {aForgeName} Project. The IP Policy updates turn this around. {forgeName} project teams may now introduce new third-party content during a development cycle without first checking with the IP Team. That is, a project team may commit build scripts, code references, etc. to third-party content to their source code repository without first creating a <<ip-cq,CQ>> to request IP Team review and approval of the third-party content. At least during the development period between releases, the onus is on the project team to -- with reasonable confidence -- ensure any third-party content that they introduce is license compatible with the project’s license. Before any content may be included in any formal release the project team must engage in the <<ip-prereq-diligence, due diligence process>> to validate that the third-party content licenses are compatible with the project license.
-
-**History may be retained when an existing project moves to the Eclipse Foundation.** We had previously required that the commit history for a project moving to the Eclipse Foundation be squashed and that the <<ip-initial-contribution, initial contribution>> be the very first commit in the repository. This is no longer the case; existing projects are now encouraged (but not required) to retain their commit history. The initial contribution must still be provided to the IP Team via <<ip-cq, CQ>> as a snapshot of the `HEAD` state of the existing repository (if any).
-
-The due diligence process for project content is unchanged.
+The ease with which software can be copied and combined makes it challenging to know with confidence if content can be used without running into legal issues. Any sort of serious software development effort must be accompanied by a well-defined IP due diligence process that can identify issues and mitigate the risk of leveraging the work of others. IP due diligence is a time consuming process that requires specialised skills and a keen eye for detail.
 
 [WARNING]
 ====
-We are in the process of updating this documentation to reflect these changes. All historical information is technically correct, but may no longer be required. If something appears confusing, please connect with {emoEmailLink} for assistance.
+The Eclipse Foundation's IP Team **does not (and cannot) give legal advice**. Rather, the team leverages their experience, along with various resources, to identify licenses in content, and make judgement calls as to whether or not licenses be being used in a consistent and compatible manner.
 ====
-____
 
-There are different kinds of content (e.g., source code, documentation, and images) to consider. <<ip-project-content,_Project content_>> is content (typically source code) that is produced and maintained by the open source project committers and contributors. <<ip-third-party,_Third-party content_>> generally takes the form of libraries (e.g. modules, or components), source files, images, or other forms of IP that are produced and maintained outside of the scope of the open source project. To mitigate the risk associated with adopting open source in products, the _project content_ and the _third-party content_ that it leverages need to be vetted to ensure that the copyrights expressed are correct, licensing is valid and compatible, and that other issues have been uncovered and properly investigated.
+There are different kinds of content (e.g., source code, documentation, and images) to consider. For the purposes of the Eclipse Foundation's IP Due Diligence Process, we consider all types of content, not just code, to be intellectual property that is subject to the process (even when we say _code_--especially in the context of IP due diligence--you should assume that we mean _content_).
 
-The Eclipse Foundation has a well-defined {ipPolicyUrl}[IP Policy], corresponding IP Due Diligence Process, and an _IP Team_ of dedicated professional IP specialists who perform the heavy lifting in the due diligence process. Committers, the software developers who decide what will become _project content_ and how {aForgeName} open source project will leverage _third-party content_, are responsible for bringing IP issues to the attention of the IP Team.
+xref:ip-project-content[Project content] is content (typically source code) that is produced and maintained by the open source project committers and contributors. Most of the _project content_ produced by committers can be pushed into a project repository without any sort of legal review. However, at least in some cases, the IP Team needs to be engaged to review project content that comes from contributors (who are not committers); and there are some cases where even the work of committers needs to be reviewed.
 
-Most of the _project content_ produced by committers can be pushed into a project repository without any sort of legal review. However, at least in some cases, the IP Team needs to be engaged to review project content that comes from contributors (who are not committers); and there are some cases where even the work of committers needs to be reviewed.
+xref:ip-third-party[Third party content] generally takes the form of libraries (e.g. modules, or components), source files, images, or other forms of IP that are produced and maintained outside of the scope of the open source project. To mitigate the risk associated with adopting open source in products, the _project content_ and the _third party content_ that it leverages need to be vetted to ensure that the copyrights expressed are correct, licensing is valid and compatible, and that other issues have been uncovered and properly investigated.
 
-The IP Due Diligence Process focuses on source content. For the purposes of the IP Due Diligence Process, the term _source code_ (or _source content_) refers to the pre-compiled content, including programming language source, configuration and property files, as well as binary things that don't have a pre-compiled form like icons. The IP Due Diligence Process is concerned with reviewing the IP that is either consumed (third-party content) or produced (project content) by the Eclipse open source project. The process doesn't generally focus on compiled content (e.g., the IP Team looks at source code, not JAR files).
+[WARNING]
+====
+If you've been around for a while, you may be looking for things that no longer exist. We've retired IPZilla along with the term _Contribution Questionnaire_, we're now able to leverage a wider variety of open source licenses, and we lean much more heavily on automation than ever before. There's more information about these changes in the xref:#ip-history[History] section of this chapter.
+====
 
-The IP Due Diligence Process does not dictate how source code repositories are structured. When the IP Team signals that content can be used, the project team can put content into their repositories in whatever structure makes the most sense. Similarly, the IP Due Diligence Process is not concerned with how third-party content is represented (e.g. how it is integrated into builds) or how it is disseminated.
+The IP Due Diligence Process focuses on source content. For the purposes of the IP Due Diligence Process, the term _source code_ (or _source content_) refers to the pre-compiled content, including programming language source, configuration and property files, as well as binary things that don't have a pre-compiled form like images or icons. The IP Due Diligence Process is concerned with reviewing the IP that is either consumed (third party content) or produced (project content) by the Eclipse open source project. The process doesn't generally focus on compiled content (e.g., the IP Team looks at source code, not JAR files).
+
+The IP Due Diligence Process does not dictate how source code repositories are structured. Project teams should organise content in their source code repositories in whatever structure makes the most sense. Similarly, the IP Due Diligence Process is not concerned with how third party content is represented (e.g. how it is integrated into builds) or how it is disseminated.
 
 [NOTE] 
 ====
-The {edpLink} does restrict how content can be disseminated based on the state of the IP review. A Project team can create and distribute milestone builds of any content that has been granted _check-in_ from the IP Team. All content must be approved by the IP Team before the project can engage in a formal <<release, release>>.
+The {edpLink} does restrict how content can be disseminated based on the state of the IP review. A Project team can create and distribute milestone builds of their content before it is fully vetted by the IP Due Diligence Process, but all content must be fully vetted before the project can engage in a formal xref:release[release].
 ====
 
-The entry point into the IP Due Diligence Process is the <<ip-cq,Contribution Questionnaire>>, or _CQ_. Project teams should create a single CQ for the <<ip-initial-contribution,initial contribution>> of project content. The initial contribution is a special type of project content contribution in the sense that it is the first thing that the IP Team will review on behalf of the project team. 
+The means for committers to engage in the IP Due Diligence Process is by xref:ip-request[creating a review request issue].
 
-[[ip-ipzilla]]
-=== IPZilla
+[#ip-team]
+=== Eclipse Foundation IP Team
 
-{ipzillaUrl}[IPZilla] is a modified instance of Bugzilla that tracks the progress of the IP due diligence review and approval process. It is the main interaction point between committers and the IP Team. IPZilla is accessible only by committers, Eclipse Foundation member company representatives, and other specifically-designated individuals. Authorized users can review both completed and ongoing reviews via IPZilla. 
+The Eclipse Foundation has a well-defined {ipPolicyUrl}[IP Policy], corresponding IP Due Diligence Process, and an _IP Team_ of dedicated professional IP specialists who perform the heavy lifting in the due diligence process. 
 
-[[ip-clearlydefined]]
+xref:roles-cm[Committers], the software developers who decide what will become _project content_ and how {aForgeName} open source project will leverage _third party content_, are responsible for bringing IP issues to the attention of the IP Team.
+
+[#ip-dash-db]
+=== Eclipse Dash License Database
+
+The Eclipse Dash License Database (or, more simply, the _Dash Database_) is a database that contains the license information collected via the Eclipse Foundation Intellectual Property Due Diligence Process. It contains license information gathered and curated by the Eclipse Foundation's IP Team. The Dash Database is accessed via API only; the xref:ip-license-tool[Eclipse Dash License Tool] is the primary means of accessing this resource.
+
+[#ip-iplab]
+==== IPLab
+
+{iplabUrl}[_IPLab_] is a repository on the Eclipse Foundation's GitLab infrastructure that is dedicated to tracking the due diligence review process and conclusions for {forgeName} project and third party content. Issues on that repository are used to xref:ip-request[request reviews], and track the review process and results.
+
+Data collected in IPLab is used as a source for the xref:ip-dash-db[Eclipse Dash License Database].
+
+[#ip-clearlydefined]
 === ClearlyDefined
 
-{clearlyDefinedUrl}[ClearlyDefined] is an OSI project that combines automated harvesting of software repositories and curation by trusted members of the community to produce a massive database of license (and other) information about content. The Eclipse Foundation's IP Team works closely with the ClearlyDefined team, providing input into their processes and helping to curate their data.
+{clearlyDefinedUrl}[ClearlyDefined] is an OSI project that combines automated harvesting of copyright and license information from software repositories and curation thereof by trusted members of the community to produce a massive database of information about content. The Eclipse Foundation's IP Team works with the ClearlyDefined team, providing input into their processes and helping to curate their data.
 
-In rough terms, if the license information for third-party content can be validated by the Eclipse Foundation's <<ip-prereq-diligence, due diligence process>> using ClearlyDefined data, then no further action is required (i.e., no <<ip-cq,CQ>> is required).
+In rough terms, if the license information for third party content can be validated by the Eclipse Foundation's xref:ip-prereq-diligence[due diligence process] using ClearlyDefined data, then no further action is required. The xref:ip-license-tool[Eclipse Dash License Tool] uses ClearlyDefined as a source of license information (and is the easiest way for {forgeName} committers to leverage ClearlyDefined).
 
-[[ip-clearlydefined-identifiers]]
+[#ip-clearlydefined-identifiers]
 ==== ClearlyDefined Identifiers
 
 In order to facilitate the use of automation in the IP due diligence process, the Eclipse Foundation has adopted ClearlyDefined identifiers to identify content.
 
-The notion of an identifier for content is pretty natural for developers who are familiar with technologies like Apache Maven which has well defined means of uniquely identifying content in a well-defined software repository. Maven coordinates -- which combine `groupid`, `artifactid`, and `version` (often referred to as a “GAV”) -- identify a very specific bit of content (especially when combined with a specific source, e.g. Maven Central). For example, `org.junit.jupiter:junit-jupiter:5.5.2` unambiguously identifies content on Maven Central that is known to be under the Eclipse Public License version 2.0 (EPL-2.0). Other systems use different means of identifying content: `node.js`, for example, uses a pURL-like identifier for content in the NPM repository (e.g., `@babel/generator@7.62`).
-
-To bridge the gap between the different means of identifying content (and fill in some of the blanks), we’ve adopted the ClearlyDefined project’s five part identifiers which includes the type of content, its software repository source, its name space and name, and version. ClearlyDefined coordinates are roughly analogous to Maven coordinates, but -- by including the type and source -- provide a greater degree of precision. ClearlyDefined uses slashes to separate the parts of the identifier, so the Maven GAV `org.junit.jupiter:junit-jupiter:5.5.2` maps to `maven/mavencentral/org.junit.jupiter/junit-jupiter/5.5.2` and the NPM identifier `@babel/generator@7.62` maps to `npm/npmjs/@babel/generator/7.6.2`.
-
-[[ip-clearlydefined-using]]
-==== Using ClearlyDefined
-
-ClearlyDefined is used as part of the overall <<ip-prereq-diligence, due diligence process for third-party prerequisites>>.
-
 [NOTE]
 ====
-The Eclipse Foundation's <<ip-ipzilla, IPZilla>> is the primary source of information regarding third-party licensing for {forgeName} projects. In cases where IPZilla and ClearlyDefined results differ, IPZilla results take precedence.
+In the time since we made this decision, https://github.com/package-url[Package URL] has emerged as a superior choice. We will update our services to use Package URLs by early 2025.
 ====
 
-When content is known to ClearlyDefined and has a _Licensed_ score of at least {clearlyDefinedMinimumScore}, and the _declared_ and all _discovered_ licenses are on the Eclipse Foundation's {approvedLicensesUrl}[approved licenses list], then the content can be used without further action. 
+The notion of an identifier for content is pretty natural for developers who are familiar with technologies like Apache Maven which has well defined means of uniquely identifying content in a well-defined software repository. Maven coordinates -- which combine `groupid`, `artifactid`, and `version` (often referred to as a “GAV”) -- identify a very specific bit of content (especially when combined with a specific source, e.g. Maven Central). For example, `org.junit.jupiter:junit-jupiter:5.5.2` unambiguously identifies content on Maven Central that is known to be under the Eclipse Public License version 2.0 (EPL-2.0). Other systems use different means of identifying content: `node.js`, for example, uses a pURL-like identifier for content in the NPM repository (e.g., `@babel/generator@7.62`).
 
-ClearlyDefined provides three different scores. For example:
+To bridge the gap between the different means of identifying content (and fill in some of the blanks), we've adopted the ClearlyDefined project’s five part identifiers which includes the type of content, its software repository source, its namespace and name, and version/revision. ClearlyDefined coordinates are roughly analogous to Maven coordinates, but -- by including the type and source -- provide a greater degree of precision. ClearlyDefined uses slashes to separate the parts of the identifier, so the Maven GAV `org.junit.jupiter:junit-jupiter:5.5.2` maps to `maven/mavencentral/org.junit.jupiter/junit-jupiter/5.5.2` and the NPM identifier `@babel/generator@7.62` maps to `npm/npmjs/@babel/generator/7.6.2`.
 
-image::images/clearlydefined-example.png[Screenshot from ClearlyDefined]
+[#ip-clearlydefined-using]
+==== Using ClearlyDefined
 
-Three numbers are highlighted in this screenshot:
+ClearlyDefined is used as _part_ of the overall xref:ip-prereq-diligence[due diligence process for third party prerequisites]. The xref:ip-dash-db[Dash Database] is the primary source of information regarding third party licensing for {forgeName} projects. In cases where the Dash Database and ClearlyDefined results differ, the Dash Database results take precedence.
 
-// These will generate warnings; the callouts are included
-// part of the above image.
+[TIP]
+====
+Don't use ClearlyDefined directly. Instead, use the xref:ip-license-tool[Eclipse Dash License Tool].
+====
 
-<1> The overall score;
-<2> The _Described_ score (i.e., completeness of the metadata); and
-<3> The _Licensed_ score (i.e., confidence in the licensing). 
+When content is known to ClearlyDefined and has a _Licensed_ score of at least {clearlyDefinedMinimumScore}, the _declared_ and all _discovered_ licenses are on the Eclipse Foundation's {approvedLicensesUrl}[approved licenses list], and all of the licenses are mutually consistent, then the content can be used without further action. 
 
-In this particular example, the declared and discovered licenses are all on the approved licenses list, and the _Licensed_ score meets the threshold. This content can be used by {aForgeName} project without further consideration.
-
-Note that when the ClearlyDefined record shows any of the following, a project committer must <<ip-project-content-cq, engage with the IP Team via CQ>>:
+Note that when the ClearlyDefined record shows any of the following, a project committer must xref:ip-request[engage with the IP Team to review the content] (use the Eclipse Dash License Tool):
 
 * `NOASSERTION` appearing as a _declared license_;
 * `NOASSERTION` appearing as a _discovered license_;
 * No declared license; or
 * A _License_ score of less than {clearlyDefinedMinimumScore}.
 
-[[ip-cq]]
-=== Contribution Questionnaires
-
-A Contribution Questionnaire (CQ) is the main interface between {forgeName} committers and the IP Team. CQs are used to engage the IP Team in a review of intellectual property when their assistance is required.
-
-A CQ is started when a committer completes a _questionnaire_ regarding a <<ip-project-content-cq, project content>> contribution or <<ip-prereq-cq, third-party content>>. In literal terms, a CQ is a record in <<ip-ipzilla, IPZilla>> that tracks the progress of the approval process. The CQ record is the primary communication channel between the submitting committer and the IP Team. CQ records persist indefinitely.
-
-All significant contributions of content to be maintained by {aForgeName} project (<<ip-project-content, project content>>) require a CQ. Projects further may also require a CQ for some pieces of <<ip-third-party, third-party content>> that project content makes direct use of (regardless of whether or not the content is directly distributed by the project. 
-
-CQs are not generally required for ongoing work done by project committers. 
-
-[[ip-initial-contribution]]
+[#ip-initial-contribution]
 === Initial Contribution
 
-Code provenance tracking is critical (the source of all code that ends up in Eclipse Foundation repositories must be well known). To that end, all new projects are required to make an _initial contribution_ before *any* code is committed to a project's source code repository.
+When an existing project migrates to the Eclipse Foundation, we refer to the existing code (when one exists) as the {forgeName} open source project's _initial contribution_. An initial contribution is basically the first set of xref:ip-project-code[project code] contributions to the new {forgeName} project. An initial contribution typically takes the form of an entire existing source code repository or some snapshot of an existing code base.
 
-[graphviz, images/ip_ic_overview, svg, width=800px]
-.How The Initial Contribution Fits into the Project Creation Process
-----
-digraph {
-	bgcolor=transparent;
-	rank=same;rankdir=LR
-	
-	node [shape=box;style=filled;fillcolor=white;fontsize=12];
-	{
-		rankdir=TB;
-		creation[label="EMO declares\nsuccessful\nCreation Review"];
-		provision[label="Eclipse\nWebmaster\nProvisions"];
-	}
-	initial[label="Committer submits\nInitial\nContribution"];
-	
-	{
-		rankdir=TB;
-		checkin[label="IP Team\ngrants\n\"check-in\""];
-		parallel[label="IP Team\ncompletes review"];
-		approval[label="IP Team\ngrants\n\"approval\""];
-	}
-	
-	{
-		rankdir=TB;
-		push[label="Committer\npushes to\nProject Git"];
-		develop[label="Committers and\ncontributors engage"];
-		review[label="Project Team\nengages in a\nRelease Review"];
-		release[label="First Release"; style="filled,bold"];
-	}
-	creation -> provision;
-	provision -> initial;
-	initial -> checkin;
-	checkin -> push;
-	checkin -> parallel;
-	parallel -> approval;
-	push -> develop;
-	develop -> review;
-	approval -> review;
-	review -> release;
-}
-----
-
-Following a successful Creation Review, the EMO will initiate the provisioning process (Committers provide required paperwork and the Webmaster creates project resources (Git, downloads, website, etc.);
-
-The initial contribution is a snapshot of the existing code base. The initial contribution, like any other <<ip-project-content,project content>> contribution, should contain *only* project content. Any <<ip-third-party,third-party content>> that might be included in the existing source tree should be excluded from the initial contribution and treated as third-party content. The initial contribution is just a snapshot in time: the IP Team does not review history.
-
-Any project committer can start the initial contribution review process by creating a <<ip-cq,CQ>>. The IP Team will review the initial contribution to ensure that it hasn't been copied inappropriately, that licenses are being used correctly, and so forth. As part of this process, the IP Team  will research the source of all code; depending on the size of the contribution, this can be a time-consuming process.
-
-Because a full review can be time-consuming, the IP Team will in most cases start with a cursory review of the content, and -- assuming that no significant issues are uncovered by that cursory review -- will grant _check-in_ indicating that the project team can push/merge the initial contribution into their Git repository (or initiate the transfer of their existing repository) and start working with the code while the IP team continues their review in _parallel_ (they will add completing the review to their work queue and address it in turn).
-
-After _check-in_ has been granted for the initial contribution, the project team should start the due diligence process for their <<ip-third-party,third-party content>>.
-
-[TIP]
+[WARNING]
 ====
-Eclipse Foundation systems use email to inform and remind interested parties of the various steps in this process. Only the committer who creates a CQ is notified by default, but other committers can be added to a CQ's _CC list_ to be included in the communication. 
-
-The email address that is associated with your Eclipse Foundation account is used; be sure to check spam filters to ensure that these messages are not missed. Send a note to mailto:{emoEmail}[EMO] if you are concerned that you are not receiving these notification.
+All {forgeName} open source project content must be kept in source code repositories that are managed by the Eclipse IT Team. Our current options are xref:resources-gitlab[GitLab] or xref:resources-github[GitHub].
 ====
 
-A project cannot make a <<release, release>> until the due diligence on the IP contained in that release -- including project content contributions and third-party content -- is complete. 
+In the case of an existing repository, the project team has some choices:
 
-[[ip-project-content]]
+**Move the existing repository.** At the project team's request, the Eclipse IT Team can move existing source code repositories on xref:resources-github[GitHub] into an organisation managed by the Eclipse Foundation. This is the best option when a project team wants to preserve their repository's status with existing forks, retain existing issues, stars, etc. If the repository is private, it must be made public before the move. Note that GitHub does a good job of setting up redirects that will ensure that the project's existing community can find them. 
+
+**Push to a new repository.** At the project team's request, the Eclipse IT Team can create new source code repositories on either xref:resources-gitlab[GitLab] or xref:resources-github[GitHub] into which the project team can push existing content. This option is best in the case that there is good reason to leave an existing repository in place, or when a project team needs to move an existing private repository into the open. The project team can decide whether or not to push the entire history or just a snapshot from the existing repository. As a best practice, an existing repository that gets "left behind" should be updated to include a pointer to the new repository and marked as _archived_.
+
+Combinations are also possible. As part of the {forgeName} open source xref:starting[project creation process], the EMO asks the project team to capture their requirements and will facilitate discussion between the project team and the Eclipse IT Team to implement those requirements.
+
+[NOTE]
+====
+We must complete the open source xref:starting[project creation process] before we move any existing source code repositories or create new ones. Following a successful xref:release-creation[Creation Review], the EMO will initiate the xref:starting-provisioning[provisioning] process. It is during the provisioning process that we activate project committers, move/create source code repositories, and create other project resources.
+====
+
+The short version of the process is this:
+
+* Complete the xref:starting-proposal[proposal process] and xref:release-creation[creation review];
+* Project team and EMO works with Eclipse IT Team to set up source code repositories;
+* The EMO initiates the intellectual property review of the default branch of all repositories; and
+* The EMO IP Team will inform the EMO when the reviews are complete
+
+As a general rule third party content should not be included in project repositories. Typically, third party content is pulled in by some form of build process after developers have cloned the repository (for example, developers might pull in required NPM modules via a `package-lock.json` file).
+
+In the case where third party content must be represented in a project repository, we would consider that a project code. Whether or not the content is modified, it would effectively be considered a fork.
+
+A project cannot make a xref:release[release] until the due diligence on the IP contained in that release--including xref:ip-project-content[project content] contributions and xref:ip-third-party[third party content]--is complete. 
+
+[#ip-project-content]
 === Project Content
 
 [[ip-project-code]]Project content is content that is managed by the project team. This includes content that is produced by project committers, along with content that is contributed to the project by outside contributors. Essentially, all content that is contained in a source code repository that is owned and managed by the Eclipse Foundation on behalf of {aForgeName} open source project team is considered project content. We use "content" in a general sense, independent of any particular technology or means of delivery; code, scripts, documentation, and configuration files are all (non-exhaustive) examples of content. 
@@ -221,105 +159,53 @@ Contributions made by {forgeName} committers **do not** require review by the Ec
 
 Contributions by others (i.e., developers who are not committers) must be received via an Eclipse Foundation channel (e.g., GitHub pull request, GitLab merge request, Gerrit review, or attachment on an issue). 
 
-[NOTE]
+All contributors must sign the xref:contributing-eca[Eclipse Contributor Agreement] (ECA). 
+
+Further investigation is _required_ when any of the following conditions are met:
+
+* The content has been copied, or is based on content that has been copied (that is, the content was not 100% authored by the submitting contributor);
+* The licence terms of the content are other than the terms of the project license;
+* The content contains cryptography; or
+* The content contains more than 1,000 lines of content (including documentation, code, configuration files, and other forms of source code).
+
+When further investigation is required, a project committer must xref:ip-request[engage with the IP Team] to request their review before the contribution is pushed/merged.
+
+[WARNING]
 ====
-Historically, the IP due diligence process treated committers from other projects as complete strangers. That is, historically, a contribution to a project by {aForgeName} committer from a different project were treated as though they came from a contributor. This is no longer the case: contributions authored by {forgeName} committers who are not project committers (that is, they are committers on one or more other Eclipse projects) do not require a CQ.
+Do not change the licence of content that you copy or fork.
 ====
+Any project committer can xref:ip-request[engage with the IP Team] to review a project content contribution. A project cannot make a release that includes the content under review until the due diligence process ​is complete and the content has been approved.
 
-When the contributor has signed the <<contributing-eca, Eclipse Contributor Agreement>> (ECA) and the following conditions are met, a CQ is not required:
-
-* Was developed from scratch; written 100% by submitting contributor;
-* Was submitted under the terms of the project license;
-* Contains no cryptography; and
-* Is contains fewer than 1,000 lines of code, configuration files, and other forms of source code.
-
-If all of these conditions have **not** been met, then a project committer must <<ip-project-content-cq, open a CQ>> to request review by the IP Team before the contribution is pushed/merged.
-
-[TIP]
-====
-If you're not sure whether or not a CQ is required, or are otherwise concerned that there may be issues with a contribution, create a CQ.
-====
-
-All contributions of project content must be tracked in the project's <<ip-iplog,IP Log>>. This is done automatically when the author information is correctly specified in <<resources-commit,Git commit records>> (e.g., the content creator's credentials are correctly recorded in the `author` field of  Git commit records).
-
-Any project committer can <<ip-project-content-cq, create>> a <<ip-cq,CQ>> to submit a project content contribution for review by the IP Team. The project content must be attached to the CQ in source form. A full review can be time-consuming; the IP Team will start with a cursory review of the content, and—​assuming that no significant issues are uncovered by that cursory review—will grant _check-in_ indicating that the project team can push/merge the initial contribution into their Git repository and start working on it while the IP team continues their review in _parallel_. A project cannot make a release that includes the content under review until the due diligence process ​is complete and the content has been approved.
-
-[[ip-ownership]]
+[#ip-ownership]
 ==== Copyright
 
 The author of a contribution (or their employer) retains copyright of the intellectual property contained in the contribution. As part of the contribution process, the contributor licenses their contribution under the applicable license(s).
 
 [TIP]
 ====
-The _applicable license_ is typically the project license. Contributions may, however, be received and distributed under different licenses in some circumstances. If you need to accept content under a license that is not the project license, engage with the IP Team for assistance (<<ip-project-content-cq, create a CQ>>).
+The _applicable license_ is typically the project license. Contributions may, however, be received and distributed under different licenses in some circumstances. If you need to accept content under a license that is not the project license, xref:ip-request[engage with the IP Team] to request assistance.
 ====
 
-[[ip-project-content-cq]]
-==== CQ Workflow for Project Content
+[#ip-third-party]
+=== Third Party Content
 
-In the case where review by the IP Team is required, a project committer must create a <<ip-cq, CQ>>.
+[[ip-prereq]][[ip-third-party-prereq]]The term _third party content_ refers to any content that is leveraged by the {forgeName} project that is not produced and/or maintained as an asset of the project. This includes content from other {forgeName} projects.
 
-[graphviz, images/projectcode-cq, svg]
-.CQ Workflow for Project Content
-----
-digraph {
-   graph [ranksep="0.25"; nodesep="0.25"; fontsize=12];
-   bgcolor=transparent;
-   rankdir=TB;
-   splines=curved;
-   
-   node [shape=box;style=filled;fillcolor=white;fontsize=12]
-   edge [fontsize=12]
-   
-   create [style="filled,bold",label="Create CQ"];
-   
-   {
-      attach [label="Attach code"];
-      rank=same; rankdir=LR;
-      pmc [label="PMC Approval"];
-      checkin [label="Check-in"];
-   }
-   
-   approval [style="filled,bold", label="Approved"]
-   
-   create -> attach;
-   attach -> pmc;
-   pmc -> checkin;
-   checkin -> approval;
-}
-----
+This includes (for example):
 
-Creating a CQ for a project content contribution requires two steps. In the first step, a committer must <<pmi-commands-cq, create the CQ record>> by providing basic information about the content. In the second step, the committer must then attach the source code for the content to the newly created CQ. When all information and the source code has been collected, the workflow will connect with the PMC for their approval.
+* References in a Java&reg;/OSGi manifest that makes a direct reference to third party content (either a bundle or package);
+* Imports of packages in Java source;
+* Includes of header files in C/C++;
+* References to NPM modules via a `package.json`, `package-lock.json`, or `yarn.lock` file;
+* References to Go modules via a `go.sum` file;
+* Entries in the `dependencies` section of a Maven `pom.xml` file;
+* Use of reflection or other means to reference APIs and implementation;
+* Use of OSGi Services to make a reference to a specific implementation of a service; and
+* Invocation of a _command line interface_.
 
-[TIP]
-====
-When engaged in the workflow to create a CQ for a project content contribution, indicate that the CQ is for "Project Content" on the first page of the wizard and provide the information requested on the following page. Set the value of the "Contribution Record" to some publicly accessible link. This could be a link to a pull request, or -- in the case of an <<ip-initial-contribution, initial contribution>> -- a link to the proposal tracking bug.
+This is list is **not exhaustive**. The exact nature of the dependencies and how they are specified varies from technology to technology.
 
-After creating the CQ, the committer will be sent an email with instructions to attach the corresponding source code. Bundle the `HEAD` state of the source code into a ZIP file for the attachment.
-
-Be sure to click btn:[Issues addressed, return CQ to IP Team] to release the CQ back to the workflow.
-====
-
-The IP Team will engage in two phases. In the first phase, they will perform a rudimentary license check. If the licenses represented in the content are found to be compatible with the project license, the project team will grant _check-in_ meaning that the project team may add the content to a project repository (or engage with the Eclipse webmaster to move an existing repository). The IP Team will add the CQ to their queue for further detailed analysis. When that analysis is complete, the IP Team will mark the CQ as `approved`, indicating that the content is fully vetted for use and may be included in a project <<release>>.
-
-The IP team may require assistance from the project team as it analyzes content. Once that analysis is complete and the IP Team has made a decision, they will outline the next steps directly on the CQ. 
-
-Be advised that this process may take a while. The actual amount of time that it takes to process a CQ depends on numerous factors including the size of the IP Team's work queue, and the nature and size of the contribution.
-
-[[ip-third-party]]
-=== Third-party Content
-
-The sort of effort that the IP Team brings to bear on third-party content varies depending on the type. The {ipThirdParty}[Guidelines for the Review of Third-party Dependencies] defines three different types: _Prerequisite_, _Exempt Prerequisite_, and _Works With Dependency_.
-
-[NOTE]
-====
-The term contribution questionnaire is a bit misleading when it comes to third-party content. Third-party content is not really a contribution to the project, but since the requirements for tracking project content and third-party content is very similar, the same mechanism is used for both.
-====
-
-[[ip-prereq]]
-==== Prerequisites
-
-[[ip-third-party-prereq]]The simplest form of third-party content is the _prerequisite_ (which is frequently referred to as a _prereq_). Prerequisites are required by the Eclipse project content to provide core functionality (i.e., adopters of Eclipse project content are compelled to adopt the prerequisite content). Prerequisite content is not generally stored in an Eclipse project's source code repositories, but is likely included in build scripts and referenced as runtime dependencies. The entire transitive closure of a prerequisite's dependencies are themselves prerequisites (the dependencies of a prerequisite are themselves prerequisites, recursively).
+The set of dependencies also includes third party content that is referenced by third party content, whether or not it is directly referenced by the {forgeName} project content. That is, the dependencies of {aForgeName} project includes the entire transitive closure of the immediate dependencies.
 
 [graphviz, images/prereq_dependencies, svg]
 .Eclipse Project Dependencies
@@ -334,11 +220,11 @@ digraph {
    root[label="Eclipse Project\nContent"];
 
    subgraph cluster_prereq {
-      node [fontsize=10;label="Third-party\nContent"]
+      node [fontsize=10;label="Third party\nContent"]
       prereq1; prereq2;
       ref1; ref2; ref3; ref4;
-      label="\"Prerequisite\" Dependencies\n(licenses must be verified)";
       graph[style=dotted];
+      label="Dependencies";
    }
    
    root -> prereq1;
@@ -349,59 +235,28 @@ digraph {
 }
 ----
 
-Examples of Prerequisite dependencies:
+The pedantic reader will observe that one can follow the chain of dependencies all the way down to silicon.
 
-* The Java/OSGi manifest for one of the project bundles makes a direct reference to third-party content (either a bundle or package);
-* The project content includes an import statement for a package from third-party content;
-* The project content imports a third-party library's header file;
-* The project content references NPM modules via a `package.json`, `package-lock.json`, or `yarn.lock` file;
-* The project's Maven-based build lists a module as a `compile` phase dependency;
-* The project content uses reflection or other means to reference APIs and implementation;
-* The project content uses OSGi Services to make a reference to a specific implementation of a service; or
-* The project content invokes a _command line interface_ (this may actually be an <<ip-third-party-exempt, exempt prerequisite>>).
+We cut the dependency graph off at the _platform_. The definition of _platform_ varies by technology and intention. In general, we regard the platform as the layer(s) that adopters of the {forgeName} software install independently as a foundation for the project software. 
 
-This list is not intended to be exhaustive, but rather to provide common examples. Fundamentally, when project content makes some kind of use of third-party content, then that content is likely a Prerequisite. Under certain conditions, the content may also be classified as an <<ip-third-party-exempt,exempt prerequisite>> or a <<ip-third-party-workswith,works with dependency>>. 
+For example:
 
-In the case where {aForgeName} project references code from <<ip-other-projects,another {forgeName} project>> that itself references prerequisites, no further review of that chain of prerequisites is required. Eclipse project teams must only reference release versions of other Eclipse projects in their own releases to ensure that the IP Due Diligence Process has been completed.
+* For a Java-based application, the Java runtime would be the platform;
+* For an application based on Jakarta EE technology, the application server would be the platform;
+* For an NPM application, node would be the platform; and
+* For a native application, a Linux based operating system, Windows, or MacOS would be the platform.
 
-[graphviz, images/eclipse_dependencies, svg]
-.Eclipse Project Dependencies
-----
-digraph {
-   graph [ranksep="0.25"; nodesep="0.25"; fontsize=12];
-   bgcolor=transparent
-   rankdir=LR;
+This is list is **not exhaustive**.
 
-   node [shape=box;style=filled;fillcolor=white;fontsize=12;label="Content"]
-   edge [fontsize=12]
-   root[label="Eclipse Project\nContent"];
+[NOTE]
+====
+We regard the platform as something that the adopter installs and agrees to the licensing terms independently from the project content. If you're bundling the platform with your project's binaries, for example, then the platform is a dependency. If a layer of software is installed as part of installing your project's artifacts (e.g., via Maven), then that layer of software is a dependency.
+====
 
-   subgraph cluster_eclipse {
-      graph[style=dotted];
-      label="No further review required";
-      node [fontsize=10;label="Content from\na different\nEclipse Project"]
-      prereq1; 
-      node [fontsize=10;label="Third-party\nContent"]
-      ref1;
-   }
-   
-   subgraph cluster_thirdparty {
-      graph[style=dotted];
-      label="\"Prerequisite\" Dependencies\n(licenses must be verified)";
-      node [fontsize=10;label="Third-party\nContent"]
-      prereq2;
-      ref2;
-   }
-   
-   root -> prereq1;
-   root -> prereq2;
-   prereq1 -> ref1;
-   prereq2 -> ref2;
-}
-----
+If you're not sure ask the mailto:{ipTeamEmail}[IP Team] for assistance.
 
-[[ip-example-maven]]
-===== Maven Example
+[#ip-example-maven]
+==== Maven Example
 
 The following snippet from a Maven `pom.xml` file includes a single dependency that itself has dependencies.
 
@@ -436,7 +291,7 @@ $ mvn dependency:tree
 Every library in the entire transitive closure of the dependency graph is a prerequisite.
 
 [graphviz, images/mvn-example-dependencies, svg]
-.Visualization of the dependency graph (the Maven _type_ and _scope_ have been removed for brevity)
+.Visualisation of the dependency graph (the Maven _type_ and _scope_ have been removed for brevity)
 ----
 digraph {
    graph [ranksep="0.25"; nodesep="0.25"; fontsize=12];
@@ -449,7 +304,7 @@ digraph {
    projectcode [label="org.eclipse.dash:\ngood-stuff:0.0.1"];
    subgraph cluster_dependencies {
       graph[style=dotted];
-      label="\"Prereq\" Dependencies\n(licenses must be verified)";
+      label="Dependencies";
       httpclient [label="commons-httpclient:\ncommons-httpclient:3.1"];
       logging [label="commons-logging:\ncommons-logging:1.0.4"];
       codec [label="commons-codec:\ncommons-codec:1.2"];
@@ -461,470 +316,365 @@ digraph {
 }
 ----
 
-In this example, `commons-httpclient:commons-httpclient:3.1`, `commons-logging:commons-logging:1.0.4`, and `commons-codec:commons-codec:1.2` must all be <<ip-prereq-diligence, vetted for license compatibility>>.
+In this example, `commons-httpclient:commons-httpclient:3.1`, `commons-logging:commons-logging:1.0.4`, and `commons-codec:commons-codec:1.2` must all be xref:ip-prereq-diligence[vetted for license compatibility].
 
-[[ip-prereq-versions]]
-===== Versions of Prerequisites
+[#ip-prereq-versions]
+==== Versions of Dependencies
 
 [[ip-third-party-versions]]Prerequisites are version specific. Since it is possible that problematic intellectual property may be added in a new version of a prerequisite, every version of a prerequisite is treated as distinct content. In practical terms, this means that project teams are required to engage the due diligence process with each separate version of Prerequisite content they require. 
 
 This applies specifically to major and minor versions of prerequisites. 
 
-Project teams are not required to engage with the IP Team to review service releases for third-party content, provided that the service release is based on a release that has either been vetted by the due diligence process. A service release is defined as a release that is backwards compatible and contains only bug fixes. If a project team isn't sure whether or not a particular release is a service release, they should submit the content for review by the IP Team.
+Project teams are not required to engage with the IP Team to review service releases for third party content, provided that the service release is based on a release that has either been vetted by the due diligence process. A service release is defined as a release that is backwards compatible and contains only bug fixes. If a project team isn't sure whether or not a particular release is a service release, they should submit the content for review by the IP Team.
 
-[[ip-prereq-diligence]]
-===== Due Diligence for Prerequisites
-
-[[ip-third-party-due-diligence]]All prerequisites must be available under a license that is on the Eclipse Foundation's list of {approvedLicensesUrl}[approved licenses for third-party content]. Further, the nature of the license must be verified by a _trusted_ source. When the license for content can be verified by a trusted source of license information, no further action is required (there is no need to seek approval from the IP Team); if there is any question regarding the nature of the license, then project team should create a <<ip-cq, CQ>> to request that the IP Team perform the necessary due diligence on the content.
-
-[TIP]
-====
-Content that claims to be distributed under a particular license may in fact include content that is distributed under alternative licenses, meaning that the licensing of a particular piece of content may be more complex than even the content authors know.
-====
-
-The Eclipse Foundation has two trusted sources of license information: <<ip-ipzilla, IPZilla>> and <<ip-clearlydefined, ClearlyDefined>>.
-
-IPZilla is the primary source of license information for third-party content. If the IPZilla record (<<ip-cq,CQ>>) for third-party content is marked as `approved` or `license_certified`, then it can be used without further action. If, however, third-party content is otherwise marked (e.g., `withdrawn` or `rejected`), then the project team must engage with the IP Team via CQ to get approval to use the content.
-
-If third-party content is not known to IPZilla, then <<ip-clearlydefined, ClearlyDefined>> can be used. When an entry is known to ClearlyDefined and has a _Licensed_ score of at least {clearlyDefinedMinimumScore} and all discovered licenses are on the Eclipse Foundation's {approvedLicensesUrl}[approved licenses list], then the content can be used without further action (for more information see <<ip-clearlydefined-using, Using ClearlyDefined>>). 
-
-[NOTE]
-====
-The Eclipse Foundation's <<ip-ipzilla, IPZilla>> is the primary source of information regarding third-party licensing for {forgeName} projects. In cases where IPZilla and ClearlyDefined results differ, IPZilla results take precedence.
-====
-
-[graphviz, images/ip_prereq_diligence, svg, subs="attributes"]
-.Due Diligence for Prerequisites
-----
-digraph {
-	graph [ranksep="0.25"; nodesep="0.25"; fontsize=12];
-	bgcolor=transparent;
-	rankdir=TB;
-	splines=curved;
-	
-	node [shape=box;style=filled;fillcolor=white;fontsize=12]
-	edge [fontsize=12]
-	
-	search [style="filled,bold",label="Search IPZilla\nfor Existing CQ"];
-	{
-		rank=same; rankdir=LR;
-		foundCq[shape=diamond;label="Found in\nIPZilla?"];
-		cd [label="Search\nClearlyDefined", href="#ip-clearlydefined"];
-		cd_score[shape=diamond;label="Score is\n≥ {clearlyDefinedMinimumScore}"];
-	}
-	
-	{
-		rank=same;rankdir=LR;
-		isApproved[shape=diamond;label="Approved\nfor use?"];
-		cd_licenses[shape=diamond;label="Licenses are\ncompatible?"];
-	}
-	
-	{
-		rank=same;rankdir=LR;
-		approved[style="filled,bold",label="No further investigation;\nmay be used by\nEclipse Project"];
-		cq[style="filled,bold",label="Engage with IP Team\nfor assistance\n(create a CQ)", href="#ip-prereq-cq"];
-	}
-	
-	search -> foundCq;
-	foundCq -> cd [label="No"; weight=1000];
-	foundCq -> isApproved[label="Yes"];
-	isApproved -> approved[taillabel="Yes"];
-	isApproved -> cq[taillabel="No"];
-	cd -> cd_score;
-	cd_score -> cd_licenses[label="Yes"];
-	cd_score -> cq:e[xlabel="No"]
-	cd_licenses -> approved[taillabel="Yes"];
-	cd_licenses -> cq[label="No"];
-}
-----
-
-When content fails to meet these requirements, the project team must engage with the IP Team via CQ to get approval to use the content.
-
-[TIP]
-====
-The Eclipse Dash project's <<ip-license-tool, IP License Tool>> will help you determine whether or not a CQ is required.
-====
-
-When in doubt, committers should check with the {ipTeamEmailLink}.
-
-[[ip-prereq-cq]]
-===== CQ Workflow for Prerequisites
-
-[[ip-cq-workflow]]In the case where review by the IP Team is required, a project committer must create a CQ.
-
-The workflow for creating a CQ for a prerequisite starts with a search of existing CQs. If an existing CQ, marked as either _approved_ or _license_certified_, can be found that is concerned with the same content and version, then no further action is required. That is, committers should **not** create an additional CQ for any content that is already approved; if the content is already approved by an existing CQ, then it can be used without additional due diligence (notwithstanding any caveats or limitations outlined on the CQ).
-
-[graphviz, images/cq_workflow, svg]
-.CQ Workflow for Prerequisites
-----
-digraph {
-   graph [ranksep="0.25"; nodesep="0.25"; fontsize=12];
-   bgcolor=transparent;
-   rankdir=TB;
-   splines=curved;
-   
-   node [shape=box;style=filled;fillcolor=white;fontsize=12]
-   edge [fontsize=12]
-   
-   search [style="filled,bold",label="Search for\nExisting CQ"];
-   {
-      rank=same; rankdir=LR;
-      found[shape=diamond;label="Found?"];
-      create [label="Create CQ"];
-      attach [label="Attach code"];
-   }
-   
-   {
-      rank=same; rankdir=LR;
-      none [label="No CQ\nrequired"];
-      pmc [label="PMC Approval"];
-      checkin [label="Check-in"];
-      approval [label="License\nCertified"]
-   }
-   
-   approved [style="filled,bold",label="May be used by\nEclipse Project"];
-   
-   search -> found;
-   found -> none [label="Yes"; weight=1000];
-   none -> pmc [style=invis; weight=1000];
-   found -> create [xlabel="No"];
-   create -> attach;
-   attach -> pmc;
-   pmc -> checkin;
-   checkin -> approval;
-   
-   none -> approved;
-   approval -> approved;
-}
-----
-
-Creating a CQ for a prerequisite requires two steps. In the first step, a committer must <<pmi-commands-cq, create the CQ record>> by providing basic information about the content. In the second step, the committer must then attach the source code for the content to the newly created CQ. 
-
-When all information and the source code has been collected, the workflow will connect with the PMC for their approval. The PMC's role is to engage in a technical assessment to ensure that the information provided makes sense from a technical perspective; with their approval, the IP Team will engage in their review.
-
-[TIP]
-====
-When engaged in the workflow to create a CQ for a prerequisite:
-
-* On the first page of the wizard, indicate that the CQ is for a "Third-Party Code Request";
-* When specifying the "Name and Version" on the second page of the wizard, use Node, Maven, or <<ip-clearlydefined-identifiers, ClearlyDefined>> identifiers when possible; and 
-* On the third page of the wizard, indicate that it is a "Request IP Team Assistance".
-
-After creating the CQ, the committer will be sent an email with instructions to attach the corresponding source code. Bundle the source code into a ZIP file for the attachment.
-
-Be sure to click btn:[Issues addressed, return CQ to IP Team] to release the CQ back to the workflow.
-====
-
-The IP Team may require assistance from the project team as it analyzes content. Once that analysis is complete and the IP Team has made a decision, they will outline the next steps. These next steps may -- in the event that the content is rejected -- require that the content be removed from the project's source code repository, or that some part be removed. Most often, the content is _approved_ and the CQ is marked as such.
-
-Be advised that this process may take a while. The actual amount of time that it takes to process a CQ depends on numerous factors including the size of the IP Team's work queue, and the nature and size of the contribution.
-
-[[ip-third-party-exempt]]
-==== Exempt Prerequisites
-
-When one follows a dependency graph all the way to the bottom, the entire runtime environment including virtual machines and the operating system are included in the transitive closure of dependencies. Clearly, having the IP team review virtual machines and operating systems is not a great use of time, and -- in the case of closed source operating systems -- just not be possible.
-
-The Eclipse IP Due Diligence Process guidelines provide for a notion of _Exempt Prerequisite_ dependencies, which are not subject to review. According to the guide, content may be considered exempt if it "is pervasive in nature, expected to be already on the user's machine, and/or an IP review would be either impossible, impractical, or inadvisable." The IP Team does not review the source code associated with an Exempt Prerequisite.
-
-One of the key aspects of an Exempt Prerequisite is that the user or adopter is typically the one that actually installs the software and so is the one who must agree to the licensing terms. Content that is declared an Exempt Prerequisite should never be directly distributed by an Eclipse project or otherwise made available without some explicit action from the consumer. 
-
-Any project committer can create a <<ip-cq,CQ>> to submit an Exempt Prerequisite for review by the IP Team. Exempt Prerequisites must be approved by the Eclipse Foundation's Executive Director.
-
-[[ip-third-party-workswith]]
-==== Works With Dependencies
-
-The Eclipse IP Due Diligence Process guidelines also define the notion of a _Works With Dependency_ (commonly referred to simply as a Works With) that applies in two different cases. Third-party content may be declared a Works With Dependency when:
-
-* the functionality of Eclipse <<ip-project-content,project content>> is enhanced by the presence of the software, but is otherwise functional and useful without it; or
-* there are multiple choices and reviewing all of them is impractical or impossible.
-
-A Works With Dependency is, literally, a dependency that the Eclipse project content will work with when it is available. The fundamental requirement is the Eclipse project content must be useful and adoptable without the Works With Dependency. That is, either the project content provides useful functionality without the Works With Dependency or the Works With Dependency is a suitable alternative for a <<ip-third-party-prereq,Prerequisite>>.
-
-[graphviz, images/prereq_and_workswith, svg]
-.Prerequisite and "Works with" Dependencies
-----
-digraph {
-   graph [ranksep="0.25"; nodesep="0.25"; fontsize=12];
-   bgcolor=transparent
-   rankdir=LR;
-   
-   node [shape=box;style=filled;fillcolor=white;fontsize=12;label="Content"]
-   edge [fontsize=12]
-   
-   adopter[label="Consumer"];
-   root[label="Eclipse Project\nContent"];
-
-   subgraph cluster_prereq {
-      label="\"Prereq\" Dependencies\n(licenses must be verified)";
-      graph[style=dotted];
-      node [fontsize=10;label="Third-party\nContent"]
-      prereq1; prereq2;
-      ref1; ref2; ref3; ref4;
-   }
-   
-   subgraph cluster_workswith {
-      graph[style=dotted];
-      
-      node [fontsize=10;label="Third-party\n\"Works With\" Content\n(must be reviewed by IP Team)"]
-      workswith;
-      subgraph cluster_workswith_transitive {
-         label="\"Works With\" Dependencies\n(No due diligence required)";
-         graph[style=dotted];
-         node [fontsize=10;label="Third-party\nContent"]
-         workswith1; workswith2; workswith3;
-      }
-   }
-   
-   adopter -> root;
-   adopter -> workswith [xlabel="requires"];
-   
-   root -> prereq1 [label="requires"];
-   root -> prereq2 [label="requires"];
-   prereq1 -> ref1;
-   prereq2 -> ref2 -> ref3
-   ref2 -> ref4;
-   
-   root -> workswith[style="dotted";label="optional"];
-   workswith -> workswith1;
-   workswith -> workswith2 -> workswith3;
-}
-----
-
-As with an <<ip-third-party-exempt,Exempt Prerequisite>>, a Works With Dependency should never be directly distributed or otherwise made available without some explicit action from the consumer. The consumer is responsible for making the Works With Dependency content available and otherwise agreeing to the terms for that content.
-
-It's enough to just create a <<ip-cq,CQ>> to register the use of Works With Dependency without seeking IP Team approval for its dependencies. Works With Dependencies must be approved by the Eclipse project's PMC.
-
-[[ip-third-party-test]]
+[#ip-third-party-test]
 ==== Test and Build Dependencies
-
-Test and Build Dependencies are also categorized as <<ip-third-party-workswith, works-with dependencies>>.
 
 [WARNING]
 ====
-This document applies specifically to open-source libraries and tools only; it does not apply to the use of proprietary tools. Use of proprietary tools is covered by the {proprietaryToolsUrl}[Using Proprietary Tools] Eclipse Board resolution.
+This section applies specifically to open source libraries and tools only; it does not apply to the use of proprietary tools. Use of proprietary tools is covered by the {proprietaryToolsUrl}[Using Proprietary Tools] Eclipse Board resolution.
 ====
 
-Test and build dependencies are those third-party libraries and tools that are considered non-distribution contributions. That is, these libraries are not actively distributed by the project via any generally-accessible `eclipse.org` property. These libraries and tools may, for example, persist on the build server which is accessible only to Eclipse committers; they may not, for example, persist on the `eclipse.org` download or archive servers, web server, or any source code repository. Eclipse project content (e.g., build scripts) distributed via `eclipse.org` source code repositories may contain references to these libraries and tools (but not the libraries/tools themselves). Project documentation should list these dependencies, how they are obtained (either manually or automatically via scripts), and other issues (especially licensing).
+Test and build dependencies are those third party libraries and tools that are considered non-distribution contributions. That is, these libraries are not actively distributed by the project via any generally-accessible `eclipse.org` property. These libraries and tools may, for example, persist on the build server which is accessible only to Eclipse committers; they may not, for example, persist on the `eclipse.org` download or archive servers, web server, or any source code repository. Eclipse project content (e.g., build scripts) distributed via `eclipse.org` source code repositories may contain references to these libraries and tools (but not the libraries/tools themselves). Project documentation should list these dependencies, how they are obtained (either manually or automatically via scripts), and other issues (especially licensing).
+
+If you have any questions or concerns, please contact {emoEmailLink}.
+
+[#ip-license-compatibility]
+=== License Compatibility
+
+[[ip-other-projects]]Perhaps the most challenging aspect of intellectual property due diligence is determining whether or not content distributed under one license may consume content distributed under a different license. All too often, the answer is: "it depends".
+
+[WARNING]
+====
+Our goal is to provide as much information as possible so that, ultimately, the adopters of {forgeName} project code (with assistance from their own legal counsel) can decide whether or not licenses are consistent and compatible.
+====
+
+Our {approvedLicensesUrl}[approved licenses page] lists licenses that we believe are generally compatible with most {forgeName} project licenses. As stated on the page, "licenses on this list are not necessarily compatible with every Eclipse Foundation project license, or with each other."
+
+Licenses that are not included on this list are not necessary prohibited. Rather, they may require more thought and careful review.
+
+When in doubt, check with the {ipTeamEmailLink}.
+
+[#ip-request]
+=== Requesting a Review
+
+[[ip-project-content-cq]][[ip-third-party-due-diligence]][[ip-prereq-diligence]]If your project leverages build technology that pulls third party content from well-defined software repositories (e.g., Apache Maven pulling from Maven Central, a `yarn.lock` or `package-lock.json` file), consider using the https://github.com/eclipse/dash-licenses[Eclipse Dash License Tool] to {licenseToolUrl}#automatic-ip-team-review-requests[automatically create] IPLab issues for you.
 
 [NOTE]
 ====
-This applies to third-party content that is required exclusively to facilitate build and test. Any dependencies that are required by downstream consumers of the Eclipse software are <<ip-third-party-prereq, prerequisites>> as defined by the Guidelines for the Review of Third-party Software)  and must be taken through the due diligence process as such. 
+Note that the **Eclipse Dash License Tool** is only capable of creating issues for content that it either discovers from your build or that you feed to it. It will not, for example, find third party content that is buried in your code. If you've, for example, added some JavaScript library in a `lib` directory or similar, then you may have to manually {iplabThirdPartyTemplate}[create a request] to vet that content and manually track your project's use of that library.
 ====
 
-To declare build and test test dependencies, create a <<ip-cq, CQ>>:
+If you cannot use the Eclipse Dash License Tool, you can manually create a request:
 
-* Enter a title containing the terms "test-only dependencies", "build-only dependencies", or "build- and test-only dependencies" (or similar);
-* Enter a description that indicates that the CQ is for test/build-only dependencies, and set the CQ type to "works with"; and
-* Enter "various" in the _license_ field and "binary" in the ;
+* {iplabProjectTemplate}[Create a request] to review Project Content; or
+* {iplabThirdPartyTemplate}[Create a request] to review Third party Content.
 
-* List all the third-party dependencies -- one on each line -- along with version information.
+xref:ip-project-content[Project Content] is any content that will be maintained by the project team. Basically anything that a contributor or committer will put into a project's source code repository (generally in source form) is project content. This includes content that the project team forks (the premise being that forked content effectively becomes indistinguishable, at least conceptually, from project content).
+
+Note our careful use of the term _content_. This includes source code, documentation, configuration, etc.
+
+xref:ip-third-party[Third party Content] is defined as content that is leveraged or otherwise referenced by project code. Third party content is typically (although not necessarily) acquired from software repositories (e.g., Maven Central or NPMJS) during builds.
+
+When creating a review request issue, please provide as much information as you can. If information is missing, or you are not certain how information should be provided, provide what you can and the IP Team will work with you to sort it out.
+
+GitLab issue use Markdown, so use Markdown syntax when specifying information. Our scanners parse information out of the issue description, and so are most likely to be successful (and require less time-consuming manual intervention) if you stick to the format specified.
+
+[#ip-request-instructions]
+==== Instructions
+
+Set the title to a valid identifier ::
+
+Multiple kinds of identifiers are supported. When you use one of the supported formats, IPLab will use the information provided locate the source. Issues that have a valid supported identifier for a title will be automatically processed and so will likely be resolved quickly.
++
+The following identifier formats are supported:
++
+--
+* ClearlyDefined ID: `pass:[{type}/{source}/{namespace}/{name}/{revision}]`
+* Maven GAV: `pass:[{groupid}:{artifactid}:{revision}]`
+* Package URL: `pass:[pkg:{type}/{namespace}/{name}@{revision}]`
+* GitHub Commit URL: `pass:[https://github.com/{org}/{project}/commit/{ref}]`
+* GitHub Pull request URL: `pass:[https://github.com/{org}/{project}/pull/{id}]`
+--
++
+Setting the title to any of the following identifiers (which all resolve to the same content), for example, will point IPLab to the same source:
++
+--
+* `maven/mavencentral/org.apache.maven.enforcer/enforcer-api/3.1.0`
+* `org.apache.maven.enforcer:enforcer-api:3.1.0`
+* `pkg:maven/org.apache.maven.enforcer/enforcer-api@3.5.0`
+--
++
+[NOTE]
+====
+IPLab will resolve the source for a pull request to the patch file that corresponds to the pull request. Patch files always require a manual review from the IP Team.
+====
++
+Don't include extra information in the title. If you need to provide extra information, add it to the description.
+
+Identify the Eclipse open source project ::
+
+We need you to identify the _Eclipse open source project_ that is accepting this contribution. Note that we need you to specify an Eclipse open source project, not a GitLab or GitHub project (provide that in the _Git repository_ field).
++
+In the template replace <project name> with the name of your Eclipse project (e.g., Eclipse Dash) and <project id> with the project's id (e.g., `technology.dash`):
++
+`Project: [Eclipse Dash](pass:[https://projects.eclipse.org/projects/technology.dash])`
+
+Provide Basic Information ::
+
+In the _Basic Information_ section, provide as much information as you can, including the license of the content as you understand it as an https://spdx.org/licenses/[SPDX identifier], and URLs that points to the binary and sources of the content. 
+
+Provide a Pointer to Source ::
+
+The _Source_ field is the important one. The scanner looks for content of the form:
++
+`[Source](<url>)`
++
+We need pointers to specific versions of content, ideally in an archive format (e.g. a `ZIP` file). That is, please do not provide a pointer to a repository on GitHub; rather, provide a pointer to a specific downloadable ZIP archive associated with the particular release.
++
+For example:
++
+`[Source](pass:[https://github.com/kataras/iris/archive/refs/tags/v12.1.8.zip])`
++
+[NOTE]
+====
+We need to have a source pointer. If you cannot (or do not) provide it, processing will be delayed while we hunt it down.
+====
++
+The source must be one of the following:
++
+* A URL pointing to an archive (e.g., `pass:[*.zip]`, `pass:[*.tar.gz]`)
+* An xref:ip-request-attachments[attachment];
+* The URL for an Eclipse GitLab merge request (e.g., `pass:[https://gitlab.eclipse.org/eclipse/technology/dash/org.eclipse.dash.handbook/-/merge_requests/1]`); or
+* The URL for a GitHub pull request, (e.g. `pass:[https://github.com/eclipse/dash-licenses/pull/278]`).
++
+If you're not sure, do not provide source pointer; instead, describe the information you do have and the IP Team will configure the request accordingly.
++
+The value you provide for the source pointer will short circuit any attempt by IPLab to automatically identify the source. That is, IPLab will always use the source pointer that you provide.
+
+Provide additional Information ::
+
+Please provide any additional information that you think might be useful to assist the IP Team in resolving this issue in free form text after the basic information.
+
+Don't Apply Any Labels ::
+
+The scanner will only automatically scan issues under the following conditions:
++
+1. The issue is open;
+2. The issue has a valid ClearlyDefined id; and
+3. The issue either has no labels or has the `Review Needed` label applied.
++
+Issues that do not meet these criteria are ignored.
+
+[#ip-request-attachments]
+==== Scanning Attachments
+
+If you're only pulling in a subset of the source code and have the means to bundle that up into a ZIP file, you can use that ZIP file as an attachment. 
+
+When you drop an attachment on the GitLab issue, you'll see something like this in the text:
+
+`[built-in-extensions-1.64.2.tar.gz](/uploads/9d97a24028eb76fab91a139945d1e005/built-in-extensions-1.64.2.tar.gz)`
+
+The scanner will know what to do if you change it to:
+
+`[Source](/uploads/9d97a24028eb76fab91a139945d1e005/built-in-extensions-1.64.2.tar.gz)`
+
+FWIW, it also handles the case when just drop the attachment as the URL (this is not supported by Markdown, so it may not render as expected, but the tool can deal with it):
+
+`[Source]([built-in-extensions-1.64.2.tar.gz](/uploads/9d97a24028eb76fab91a139945d1e005/built-in-extensions-1.64.2.tar.gz))`
+
+[#ip-license-tool]
+=== Eclipse Dash License Tool
+
+The {licenseToolUrl}[Eclipse Dash License Tool] takes a list of dependencies as input, matches content to license information obtained from trusted sources, and identifies the content that needs further scrutiny (i.e., it lists all content for which license information cannot be found in one of the approved sources). It is available as both a xref:ip-license-tool-cli[command-line interface] and a xref:ip-license-tool-mvn[Maven plugin].
+
+[WARNING]
+====
+The Eclipse Dash License Tool is intended to assist with the process of determining the licenses of third party content and help committers identify intellectual property that require further scrutiny. The tool, like any tool, is only as good as the input provided. The License Tool's documentation provides examples of how dependency lists can be generated; these examples should be regarded as such: examples of how to construct a dependency list. Ultimately, is the responsibility of committers to understand the nature of their project and the third party content it requires.
+====
+
+What the License Tool does is relatively simple: 
+
+* it first queries the Eclipse Foundation's xref:ip-dash-db[Dash Database]; 
+** if an entry has been vetted by the IP Team and has been approved for use, then it is marked as `approved`;
+** if an entry has been vetted by the IP Team and flagged as somehow problematic, it will be marked as `restricted`
+* it then sends the content that has **not** already been flagged as either `approved` or `restricted` to xref:ip-clearlydefined[ClearlyDefined]
+** ClearlyDefined xref:ip-clearlydefined-using[matches] are marked as `approved`;
+* Everything else is marked `restricted`. 
+
+The License Tool lists all content that ended up marked as `restricted` as requiring xref:ip-license-tool-review[further scrutiny]. 
+
+[#ip-license-tool-mvn]
+==== Maven Plugin
+An {licenseToolUrl}#example-maven-plugin[Maven plugin] is provided that can be used by project teams that leverage Maven `pom.xml` files for build.
+
+.The Eclipse Dash License Tool's Maven plugin in action
+image::images/licenseTool-mvn.png[]
+
+[#ip-license-tool-cli]
+==== Command-line Interface
+A {licenseToolUrl}#usage[CLI interface] is also provided. For many build technologies, it is relatively easy to generate lists of dependencies directly (e.g., the Maven Dependencies plugin). There are some specific examples in the Eclipse Dash License Tool's `README` (e.g., Gradle-, NPM-, and Yarn-based systems). Project teams that use technologies that do not provide easily parsed/converted dependency lists can manually generate a list and feed that to the tool. 
+
+[#ip-license-tool-review]
+==== Automatic IP Team Review Requests
+
+The Eclipse Dash License Tool can create issue against xref:ip-iplab[IPLab] for content that any content that the tool determines requires further review by the IP Team. 
+
+To use this feature, you must:
+
+* have committer status on an Eclipse project; and
+* get an https://gitlab.eclipse.org/-/profile/personal_access_tokens[authentication token] (scope: api) from gitlab.eclipse.org;
+
+When using the command-line version of the tool:
+
+* include the `-review` option;
+* pass the token via the `-token` option; and
+* pass the project id via the `-project` option.
+
+When using the Maven plugin:
+
+* pass the token via the `-Ddash.iplab.token=<token>` option; and
+* pass the project id via the `-Ddash.projectId=<project>` option. 
 
 For example:
 
-----
-This is an umbrella CQ for all dependencies of the Eclipse Tycho project which are only needed to compile and execute unit and integration tests for Tycho. 
-
-These artifacts are *not* redistributed by the Tycho project and are strictly only needed to compile and run tests for tycho itself. 
-
-The following bundles from orbit are required by Tycho as test-only dependencies:
-
-Bundle-SymbolicName : Bundle-Version
-=============================================
-com.ibm.icu:4.2.1.v20100412
-javax.xml:1.3.4.v201005080400
-org.apache.ant:1.7.1.v20090120-1145
-org.junit:3.8.2.v20080602-1318
-org.junit:3.8.2.v20090203-1005
-----
-
-[TIP]
-====
-When the list of build and test dependencies is long, it might be easier to include it in a comment after the CQ is created.
-====
-
-Project teams may create multiple test and build CQs.
-
-[TIP]
-====
-You will need PMC approval. You may be able to hasten approval if you work with your PMC prior to creating the CQ to ensure that they understand your requirements.
-====
-
-If you have any questions or concerns, please contact EMO.
-
-[[ip-piggyback]]
-==== Piggyback CQs
+[source, bash]
+$ mvn org.eclipse.dash:license-tool-plugin:license-check -Ddash.projectId=technology.dash -Ddash.iplab.token=...
 
 [WARNING]
 ====
-Piggyback CQs are not longer required or supported.
+Do not share your access token.
 ====
 
-[[ip-other-projects]]
-==== Content from Other Eclipse Projects
+[#ip-sbom]
+=== Software Bill of Materials
 
-IP Team review or approval is *not* required for {aForgeName} open source project to use _released_ content from another {forgeName} open source project as part of a release (a project may use unreleased content from another project in milestone builds). A release of one project should *never* include unreleased content from another project.
-
-When {aForgeName} projects makes direct use of third-party content inherited by consuming another {forgeName} open source project, that content must be treated as a prerequisite dependency.
-
-[[ip-license-tool]]
-=== License Tool
-
-The {licenseToolUrl}[License Tool] was created with a command line interface that takes a list of dependencies as input and generates output that matches content to license information obtained from trusted sources, and identifies the content that needs further scrutiny (i.e., it lists all content for which license information cannot be found in one of the approved sources). We created it with a command line interface so that the initial version of the tool could be used on a variety of technologies.
+[[ip-iplog]][[ip-iplog-generator]]{forgeName} open source projects are required to track their intellectual property contributions, as well as their use of third party content. We rely on the Git log to track contributors and contributions.
 
 [WARNING]
 ====
-The License Tool is a prototype that is intended to assist with the process of determining the licenses of third-party content and help the committer identify intellectual property that require further scrutiny. The tool, like any tool, is only as good as the input provided. The License Tool's documentation provides examples of how dependency lists can be generated; these examples should be regarded as such: examples of how to construct a dependency list. Ultimately, is the responsibility of committers to understand the nature of their project and the third-party content it requires.
+IP Logs are no longer required in the form previously described in this document. The IP Log Generator has been deprecated and will be retired. 
+
+This section is under construction.
 ====
 
-What the License Tool does is relatively simple:
+{forgeName} open source projects are required to maintain a software bill of materials (SBOM). xref:legaldoc-plugins-abouts["About" files] (`about.html`) serve this purpose in Eclipse Platform plug-ins, and xref:legaldoc-notice[`NOTICE`] files or summary files generated using the Eclipse Dash License Tool serve as SBOMs. In the future, the EMO will work with projects to leverage standard SBOM formats such as SPDX or CycloneDX. 
 
-It first sends the content list to <<ip-ipzilla, IPZilla>>; if an entry has been vetted by the IP Team and has been approved for use, then it is marked as `approved` . If an entry has been vetted by the IP Team and flagged as somehow problematic, it will be marked as `restricted`.
+[TIP]
+====
+Please ensure that any merge/pull requests that come to you project correctly identify the contributor and that the contributor is covered by the xref:contributing-eca[Eclipse Contributor Agreement]. Further, ensure that your project's third party content is accounted for in either a xref:legaldoc-notice[notice] file (consider using the _summary_ output from the xref:ip-license-tool[Eclipse Dash License Tool] to generate this).
+====
 
-It then sends the content that has not been flagged as either `approved` or `restricted` to <<ip-clearlydefined, ClearlyDefined>>; ClearlyDefined matches are marked as `approved`.
+[#ip-openchain]
+=== OpenChain
 
-Everything else is marked `restricted`. The License Tool lists all content that ended up marked as `restricted` as requiring further scrutiny. It is this list of content that requires further scrutiny that the project team must engage on with the <<ip-prereq-diligence, IP Team via CQ>>.
+https://openchainproject.org/license-compliance[OpenChain ISO/IEC 5230:2020] defines the key requirements of a quality open source license compliance program. The Eclipse Foundation xref:ip[IP Due Diligence Process] is self-certified as OpenChain ISO/IEC 5230:2020 conformant.
 
-For many build technologies, it is relatively easy to generate lists of dependencies directly (e.g., the Maven Dependencies plugin). There are some specific examples in the prototype tool’s README (e.g., Maven-, Gradle-, NPM-, and Yarn-based systems). Project teams that use technologies that do not provide easily parsed/converted dependency lists can manually generate a list and feed that to the tool. 
-
-[[ip-iplog]]
-=== IP Logs
-
-An IP Log is a record of the intellectual property contributions to a project. This includes such as a list of all committers, past and present, that have worked on the code and (especially) those who have made contributions to the current code base.
+As part of a xref:progress-review[progress or release review], the EMO validates that the project is correctly implementing the Eclipse Foundation intellectual property due diligence process. Upon successful completion of the review, the project can claim OpenChain conformance for a year (after which the project team need to engage with in another review).
 
 [NOTE]
 ====
-An IP Log is a record of intellectual property for an entire project. The purpose of the IP Log review is to confirm that the project team understands the {ipPolicyUrl}[Eclipse IP Policy] and is implementing the supporting processes. An IP Log is not intended to reflect the intellectual property included with any particular release.
+The EMO  list of projects that we consider to be in https://www.eclipse.org/projects/tools/goodstanding-releases.php[good standing] with regard to implementing the Eclipse Foundation Development Process and Intellectual Property Due Diligence Process, and -- by extension -- are regarded as OpenChain conformant. Eclipse projects in good standing can claim ISO/IEC 5230:2000 conformance.
+
+Eclipse projects that are in good standing may opt to display an https://openchainproject.org/news/2023/05/17/updated-openchain-conformance-badges[OpenChain ISO/IEC 5230:2020 Conformance Badge] on their website.
 ====
 
-The IP Log is a big part of the official <<release, release cycle>>. You are required to submit your project's IP Log prior to scheduling a release, or restructuring review. We encourage you to keep your IP log current rather than rushing at the end. The IP Log includes important information about your project that lets adopters know where all the code comes from, who owns the copyrights, and so forth. 
+[#ip-history]
+=== Changes in the IP Policy
 
-Specifically, the log tracks:
+The Eclipse Foundation's Board of Directors has approved various updates to the Eclipse Foundation's IP Policy over the years that have introduced significant changes in our IP due diligence process. In this section, we highlight some of them.
 
-* Licenses;
-* Past and present committers;
-* Third-party content; and
-* Contributions from outside the project (i.e. non-committers)
+[#ip-history-2022]
+==== 2022
 
-[[ip-iplog-generator]]
-==== IP Log Generator
+The 2022 update to the Eclipse Foundation's IP Policy, approved by the Board of Directors in June 2022, resulted in the following changes:
 
-The Automated IP Log Tool automatically generates an IP Log using information that is available to the Eclipse Foundation. The list of contributors, for example is automatically generated using information extracted out of the project's source code repositories.
+**The Eclipse Public License is no longer special.** The Eclipse Foundation was originally conceived as a single-license foundation, but that hasn't been true for a very long time. With this change, we acknowledge that our open source projects leverage a variety of licenses and that no single one among them is special (but we still love and highly recommend the Eclipse Public License). All language and provisions that positioned the Eclipse Public License as being in any way special have been removed from the IP Policy.
 
-The IP Log generator pulls information from multiple location to assemble the log:
+**Focus on License Compliance.** With this change we've switched to focus entirely on license compliance. Specifically, our IP Due Diligence focuses on ensuring that the licenses involved (both project and third party) are co-compatible (that is, do the licenses actually work together) rather than conforming to a list of licenses that have been deemed acceptable. The IP due diligence process still reviews content to ensure that we understand the state of the content licenses, and continues to rely on existing sources of license information in the reviewing process.
 
-[graphviz, images/ip-log-generator, svg]
-.Sources for the IP Log generator
-----
-digraph {
-	// Graph properties
-	bgcolor=transparent
-	
-    graph [ranksep="0.25", nodesep="0.25"];
-    
-	// Nodes that define the key points in the process
-	node [shape=box;style=filled;fillcolor=white;fontsize=12]
-	git [label="Git", group="g1"]
-	committer [label="Committer Activity", group="g2"]
-	pmi [label="Repositories\n(PMI)", group="g1"]
-	contributions [label="Git Contributions"]
-	licenses [label="Licenses\n(Foundation DB)", group="g2"]
-	generator [label="IP Log Generator", group="g1"]
-	contributions_bugzilla [label="Contributions\n(Bugzilla)"]
-	iplog [label="IP Log", group="g1"]
-	
-	git -> committer
-	git -> contributions
-	pmi -> generator
-	pmi -> committer
-	pmi -> contributions
-	committer -> generator
-	contributions -> generator
-	licenses -> generator
-	contributions_bugzilla ->generator
-	generator -> iplog
-}
-----
-
-* The list of third-party content used by the project comes from _IPZilla_;
-* The project source code repositories are scanned to identify non-committer authors of contributions; 
-* The committer list, which includes everybody who has ever held committer status the project (regardless of whether or not they have ever made any contributions of intellectual property) comes from the _Foundation_ database; and
-* License information is obtained from the _Foundation_ database
-
-To fully leverage the value of the Automated IP Log Tool, the project team needs to:
-
-* Keep project <<pmi-metadata,metadata>> up-to-date;
-* Follow the guidelines for handling <<resources-commit,Git contributions>>; and
-* Create <<ip-cq,CQ>> (CQs) where appropriate
-
-The Automated IP Log tool populates the _Contributors_ section with information gathered from the project's source code repositories (source code repository paths specified in the the _Source Repositories_ section in the project metadata). This section lists contributions from non-committers (this is time-sensitive, so contributions made by current committers before they became committers will also be included). Only non-committer contributions are recorded in the generated log. 
-
-<<resources-commit,Git commits>> contributed by non-committers are identified by the author credentials on the commit record; the _Author_ field must be set to the identity of the actual author of the commit.
-
-The Third-party Software section of the log is populated from IPZilla. The IP Team will mark your contributions in such a way that they will appear in the log. If third-party software is not appearing properly, contact the {ipTeamEmailLink} to make corrections.
-
-[TIP]
+[NOTE]
 ====
-Use the <<pmi-commands-iplog, Generate IP Log>> tool on a specific <<pmi-project-page, project page>> in the <<pmi,Project Management Interface (PMI)>> to generate and submit the IP Log for review.
+With this change, we can no longer assume that {forgeName} open source projects can just use the products of other {forgeName} open source projects without license compatibility checks. Due to the fact that our projects have been using a variety of licenses for some time, this isn't actually new, but we've highlighted it here to draw attention to the fact that we are putting additional focus into reviewing license compatibility, and this extends to {forgeName} open source projects using other {forgeName} open source projects.
 ====
 
-[[ip-faq]]
+**License approval processes are managed by the EMO without requirement for Board approvals.** We are no longer required to go to the Board of Directors to get approval for our open source projects to use content under licenses that we haven't encountered. We no longer have a strict "approved licenses" list. There are still restrictions on what licenses can be used, but these restrictions are based on whether or not the licenses actually work together and whether or not license terms align with our open source rules of engagement (e.g., licenses do not restrict fundamental freedoms).
+
+[[ip-third-party-workswith]][[ip-third-party-exempt]]**The Guidelines for the Review of Third Party Dependencies as been revoked.** This is related to our focus on license compliance. The Guidelines for the Review of Third party Dependencies described notions of _prerequisite_, _works with_, and _exempt prerequisite_ dependencies which provided different mechanisms by which third party content could be consumed by {forgeName} open source projects (_works with_ and _exempt prerequisite_ in particular described means by which we could short circuit the due diligence process for content under licenses that might otherwise not be supported by the then-IP Policy). WIth our focus on license compliance, these considerations are no longer necessary.
+
+[[ip-ipzilla]]**IPLab replaces IPZilla.** We announced the retirement of IPZilla in September 2022 and moved aggressively to retire it completely by the end of December 2022. IPZilla was the tool that we used to request and track the progress of intellectual property reviews. With this update to our process, we now use xref:#ip-iplab[IPLab], an issue tracker and repository on our GitLab infrastructure that we use to request and track intellectual property reviews. The xref:ip-license-tool[Eclipse Dash License Tool] integrates with IPLab to automate much of the process of requesting reviews (which required significant manual work with IPZilla).
+
+[[ip-cq]][[pmi-commands-cq]]**No more Contribution Questionnaires.** With the retirement of IPZilla, we also retired the term _contribution questionnaire_ along with its acronym, _CQ_. You can call the issues on IPLab whatever you want: issues, IP review requests, tickets, etc.
+
+[[pmi-commands-iplog]]**SBOMs replace IPLogs.** {forgeName} open source projects are no longer required to submit an IP Log as part of a progress or release review. Instead, we rely on the Git log to track contributions to a project along with a Software Bill of Materials (SBOM). At the time of this writing, SBOMs take several different forms. For our immediate purposes, xref:legaldoc-plugins-abouts[about.html files] serve this purpose in Eclipse Platform plug-ins, and xref:legaldoc-notice[`NOTICE`] files or summary files generated using the Eclipse Dash License Tool serve as SBOMs. In the future, the EMO will work with projects to leverage standard SBOM formats such as SPDX or CycloneDX.
+
+**Automate everything that can be automated.** We've implemented some tools, starting with the Eclipse Dash License Tool to automate as much of the process as possible. We continue to investigate options that improve the quality of our results while reducing the amount of investment required by committers and the EMO.
+
+[#ip-history-2019]
+==== 2019
+
+The 2019 update to the Eclipse Foundation's IP Policy, approved by the Board of Directors in October 2019, makes the following changes:
+
+**License certification only for third party content.** This change removes the requirement to perform deep copyright, provenance and scanning of anomalies for third party content unless it is being modified and/or if there are _special_ considerations regarding the content. Instead, the focus for third party content is on _license compatibility_ only, which had previously been referred to as _Type A_ due diligence.
+
+**Leverage other sources of license information for third party content.** With this change to license certification only for third party content, we are able to leverage existing sources of information license information. That is, the requirement that the  IP Team personally review every bit of third party content has been removed and we can now leverage other _trusted_ sources.
+
+**ClearlyDefined is a _trusted_ source of license information.** We currently have two trusted sources of license information: The Eclipse Foundation’s xref:ip-dash-db[Dash Database] and xref:ip-clearlydefined[ClearlyDefined]. The xref:ip-dash-db[Dash Database] has been painstakingly built over most of the life span of the Eclipse Foundation; it contains a vast wealth of deeply vetted information about many versions of many third party libraries. ClearlyDefined is an OSI project that combines automated harvesting of software repositories and curation by trusted members of the community to produce a massive database of license (and other) information about content.
+
+[[ip-piggyback]]**Piggyback CQs are no longer required.** CQs had previously been used for tracking both the vetting process and the use of third party content. With the changes, we are no longer required track the use of third party content using CQs, so piggyback CQs are no longer necessary.
+
+**Parallel IP is used in all cases.** Previously, our so-called _Parallel IP_ process, the means by which project teams could leverage content during development while the IP Team completed their due diligence review was available only to projects in the _incubation phase_ and only for content with specific conditions. This is no longer the case: full vetting is now always applied in parallel in all cases.
+
+**CQs are not required for third party content in all cases.** In the case of third party content due diligence, xref:ip-cq[CQs] are now only used to track the vetting process. 
+
+**CQs are no longer required _before_ third party content is introduced.** Previously, the IP Policy required that all third party content must be vetted by the IP Team before it can be used by {aForgeName} Project. The IP Policy updates turn this around. {forgeName} project teams may now introduce new third party content during a development cycle without first checking with the IP Team. That is, a project team may commit build scripts, code references, etc. to third party content to their source code repository without first creating a xref:ip-cq[CQ] to request IP Team review and approval of the third party content. At least during the development period between releases, the onus is on the project team to -- with reasonable confidence -- ensure any third party content that they introduce is license compatible with the project’s license. Before any content may be included in any formal release the project team must engage in the xref:ip-prereq-diligence[due diligence process] to validate that the third party content licenses are compatible with the project license.
+
+**History may be retained when an existing project moves to the Eclipse Foundation.** We had previously required that the commit history for a project moving to the Eclipse Foundation be squashed and that the xref:ip-initial-contribution[initial contribution] be the very first commit in the repository. This is no longer the case; existing projects are now encouraged (but not required) to retain their commit history. The initial contribution must still be provided to the IP Team via xref:ip-cq[CQ] as a snapshot of the `HEAD` state of the existing repository (if any).
+
+The due diligence process for project content is unchanged.
+
+[#ip-faq]
 === Frequently Asked Questions
 
 [qanda]
-Can <<ip-third-party,third-party content>>  be included in an Eclipse project's source code repository? ::
 
-Yes. Third-party content can be included in binary form (e.g. source and binary JAR files) in a project's source code repository if that makes technical sense for the project.
+Can xref:ip-third-party[third party content]  be included in an Eclipse project's source code repository? ::
+
+Yes. Third party content can be included in binary form (e.g. source and binary JAR files) in a project's source code repository if that makes technical sense for the project.
 +
-Third-party content that is stored in the project repository as source code is effectively a _fork_ of that third-party content. This is a bit of a grey area in that it is _third-party content_ that will be ultimately treated as <<ip-project-content,_project content_>> (i.e. contributors may potentially modify it). 
+Third party content that is stored in the project repository as source code is effectively a _fork_ of that third party content. This is a bit of a fuzzy area in that it is _third party content_ that will be ultimately treated as xref:ip-project-content[_project content_] (i.e. contributors may potentially modify it). 
 +
-Third-party _source code_ must be reviewed by the IP Team (i.e., open a <<ip-cq,CQ>>) before it may be included in a project repository.
+Third party _source code_ must be reviewed by the IP Team (that is, open a xref:ip-request[Content Review Request]) before it may be included in a project repository.
 
-The IP Due Diligence Process says that I need to create a CQ for project content contributions that exceed 1,000 lines of code; how do I calculate lines of code? ::
+The IP Due Diligence Process says that I need to request a review for project content contributions that exceed 1,000 lines of code; how do I calculate lines of code? ::
 
-The short version is that the Eclipse Foundation trusts the judgment of Eclipse committers regarding how lines of code should be calculated. What we're interested in is net new intellectual property. With this in mind, it's not generally correct to just add the number of lines added to the lines removed; it's also not generally correct to use the difference of these numbers to determine the true number of lines in a contribution. Again, as a committer we trust your judgment.
+The short version is that the Eclipse Foundation trusts the judgement of Eclipse committers regarding how lines of code should be calculated. What we're interested in is net new intellectual property. With this in mind, it's not generally correct to just add the number of lines added to the lines removed; it's also not generally correct to use the difference of these numbers to determine the true number of lines in a contribution. Again, as a committer we trust your judgement.
 +
 If a contribution contains significant new functionality, or if you are not certain of the provenance or are otherwise concerned that there may be intellectual property issues with a contribution (of any size), then the IP Team needs to be engaged.
 +
-If you're not sure, create the <<ip-cq,CQ>>.
+If you're not sure, create a xref:ip-request[Content Review Request].
 
 Can my release use unreleased content from another Eclipse open source project? ::
 No. A release may only use released content from other projects. A project may disseminate milestone builds that include unreleased content, but the upstream content must be released before a downstream project can include the content in their own release.
 
 Are project websites subject to the IP Due Diligence Process? ::
-Website content is separate from project content. Project teams are expected to respect licenses for all web site content, but are not required to submit website content (including third-party libraries) for review by the IP Team.
+xref:resources-website[Project website] content is separate from project content. Project teams are expected to respect licenses for all website content, but are not required to submit website content (including third party libraries) for review by the IP Team.
 
-My IP Log contains outdated third-party dependency information. How do I update this information?::
-Send an email to the {ipTeamEmailLink}, providing a list of CQs to be marked as either:
-+
-* "unused" - not currently used, but potentially may be in the future or 
-* "obsolete" - obsolete and no longer in use.
-+
-The IP Team will make the necessary adjustments
-
-What is "Type A" and "Type B" due diligence?::
-Versions of the Eclipse Foundation's Intellectual Property Policy prior to October 2019 referred to two different types of intellectual property due diligence, named _Type A_ and _Type B_. Project teams were able to choose the type of IP due diligence that they wanted for their project: Type A which was concerned with validating that the licenses of the content were compatible with the project license, and Type B which offered a more thorough check including provenance and other deep analysis. We phased out Type B in October 2019, and now focus solely on license compatibility for third-party content.
-
-Do I need to create a CQ for a service release of third-party content? ::
-A CQ is not required for a service release that is based on an resolved version of third-party content.
-
-What do you do with the IP Log? ::
-IP Log reviews occur in two stages. In the first stage, the EMO performs a technical assessment to make sure that the artifacts produced by the project are properly accounted for in the IP log. You may be asked to assist with the resolution of any discrepancies found during this assessment. In the second stage, the IP Team reviews the log to ensure that it matches their records. The IP log review concludes with approval by the IP Team.
-
-When should I submit the IP Log for review? ::
-The IP Log should be submitted for review by the IP Team two weeks before the planned end date for a <<release-review, review>> or (if code moves are involved) a restructuring review. Note that the date of your review may be different from the date of the actual release.
-
-How precise must the "required by" date for the IP Log be? ::
-The "required by" date is intended to give the IP Team help to prioritize the processing of the IP Log against other requirements. The date selected should be at least one week in advance of the conclusion date of any corresponding <<release-review, review>>. 
-
-We submitted an IP Log for our release, but we've made some changes since then that will end up in the release, should we resubmit the IP Log? ::
-The purpose of the IP Log review is to checkpoint the IP Due Diligence Process and ensure that nothing is slipping through the cracks; an IP Log is not intended to be an accurate reflection of exactly what is in any particular release.
-
-Are there other reasons to submit the IP Log for review? ::
-Generally no. If the IP Team requires an IP Log review outside of the context of a release or restructuring review, they'll ask for it. It is not generally necessary to submit an IP Log for review outside of the context of a review. It is, however, good practice to do your own review of the generated IP Log periodically to make sure that it accurately reflects the state of the project.
-	
-How do I fix problems with the generated IP Log? ::
-The IP Log is generated based on data from Eclipse Foundation servers. If the log is being generated incorrectly, then the underlying data needs to be fixed. If you spot a problem, send a note to mailto:{emoEmail}[EMO].
+What is "Type A" and "Type B" due diligence? ::
+Versions of the Eclipse Foundation's Intellectual Property Policy prior to October 2019 referred to two different types of intellectual property due diligence, named _Type A_ and _Type B_. Project teams were able to choose the type of IP due diligence that they wanted for their project: Type A which was concerned with validating that the licenses of the content were compatible with the project license, and Type B which offered a more thorough check including provenance and other deep analysis. We phased out Type B in October 2019, and now focus solely on license compatibility for third party content.
 
 [[ip-parallel-ip]]What is Parallel IP? ::
 
-The parallel IP Process allows {aForgeName} projects to make use of project code contributions and third-party content before they are fully approved by the IP Team. In versions of the IP Policy prior to 2019, projects needed to meet specific requirements to be able to leverage the Parallel IP. This is no longer the case: full vetting is now always applied in parallel in all cases.
+The parallel IP Process allows {aForgeName} projects to make use of project code contributions and third party content before they are fully approved by the IP Team. In versions of the IP Policy prior to 2019, projects needed to meet specific requirements to be able to leverage the Parallel IP. This is no longer the case: full vetting is now always applied in parallel in all cases.
+
+Do I have to use the Eclipse Dash License Tool? ::
+
+No. The xref:ip-license-tool[Eclipse Dash License Tool] is provided as a convenience. It works with a variety of technologies, but not all.
+
+Can I count on the Eclipse Dash License Tool to detect all of my third party dependencies? ::
+
+No. In fact, the Eclipse Dash License Tool doesn't actually detect any dependencies. The Maven plugin uses the dependency resolution mechanism that is built into Maven, so the Maven plugin only knows what Maven knows. If your Maven-based build does funky things like grab code from random URLs, the tool won't detect that. For other technologies, the command-line version of the Dash License Tool only knows about the dependencies that you send to it.
+
+What happened to IPZilla and Contribution Questionnaires (CQs)? ::
+
+IPZilla was retired in 2022 and replaced with xref:ip-iplab[IPLab]. We're all taking steps to purge the term _CQ_ from our brains.

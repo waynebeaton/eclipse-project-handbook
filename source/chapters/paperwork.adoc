@@ -16,30 +16,40 @@
 [[paperwork]]
 == Committer Paperwork
 
-The Eclipse Foundation needs to ensure that all committers with write access to the code, websites, and issue tracking systems understand their role in the intellectual property process. The Eclipse Foundation also needs to ensure that we have accurate records of the people who are acting as change agents on the projects. To ensure that committers understand their role, and that the Eclipse Foundation has accurate records, committers must provide documentation asserting that they have read, understood, and will follow the committer guidelines. Committers must also gain their employers consent to their participation in Eclipse Foundation open source projects.
-
-All committers must complete the _Committer Agreement Workflow_, which includes the _Committer Questionnaire_ and documentation as described below.
+The Eclipse Foundation needs to ensure that all xref:roles-cm[committers] with write access to the code, websites, and issue tracking systems understand their role in the intellectual property process. The Eclipse Foundation also needs to ensure that we have accurate records of the people who are acting as change agents on the projects. To ensure that committers understand their role, and that the Eclipse Foundation has accurate records, committers must provide documentation asserting that they have read, understood, and will follow the committer guidelines. 
 
 [[paperwork-questionnaire]]
 === Committer Questionnaire
 
-The _Committer Questionnaire_ is an online form that must be completed by all new committers. This form offers two separate paths: one for committers who work for a member company that has provided a signed {mccaUrl}[Member Committer and Contributor Agreement] (MCCA), and one for everyone else.
+When you are granted committer status (either by xref:elections-committer[election] or appointment), you will receive an email from our automated process asking you to complete the _Committer Questionnaire_. This form's workflow determines which agreements we need from you.
 
 .The Committer Agreement Workflow starts by asking for employment status.
 image::images/committer_questionnaire.png[]
 
-The _Committer Questionnaire_ is accessible only after an individual has been elected into the role of a committer on a project (note that all committer relationships are between an individual and a specific project), either as an initial committer on a new project, or via <<elections-committer,_Committer Election_>> on an existing project. New committers will be sent a link to the questionnaire via email.
+If you indicate that you are employed, you will be asked to identify your employer. Only member companies that have provided an xref:paperwork-mcca[MCCA] will be listed as member companies in the _Committer Questionnaire_. If you work for a company that is not an Eclipse Foundation Member Company, or your employer has not provided the Eclipse Foundation with a _MCCA_ you must list your employer as "Other". 
+
+[WARNING]
+====
+Whether or not you have the necessary authority to sign these forms is a matter between you and your employer. Check with your manager.
+====
+
+The _Committer Questionnaire_ is accessible only after you have been granted the role of committer on a project (note that all committer relationships are between an individual and a specific project). You will not be granted committer privileges until after we have the necessary agreements in place. 
 
 [NOTE]
 ====
-If you indicate that you are employed, you will be asked to identify your employer. Only member companies that have provided a *signed* _MCCA_ will be listed as member companies in the _Committer Questionnaire_. If you work for a company that is not an Eclipse Foundation Member Company, or your employer has not provided the Eclipse Foundation with a _MCCA_ you must list your employer as "Other".
+Committer documents are all handled electronically. _Do not send signed documents via email unless the EMO Records Team asks you to do so._
+
+The Eclipse Foundation uses Dropbox Sign to handle electronic documents. Our automated process will contact you via email to notify you when an electronic document needs to be signed. You will also receive separate email from Dropbox Sign with information regarding the specific forms that require your signature. If you do not receive an email within a few hours of a successful committer election, please check your spam folder. 
+
+If you have questions or concerns, contact the {emoRecordsEmailLink}.
 ====
 
 [[paperwork-documents]]
 === Documents
 
 The specific agreements required depends on the nature of the project and the employment status of the individual. For committers on an open source _software_ project (i.e., most {forgeName} projects), the agreements described below are required. 
-For committers on an open source _specification_ project, additional <<specifications-agreements,working group agreements>> are required.
+
+For committers on an open source _specification_ project, additional xref:specifications-agreements[working group agreements] are required.
 
 [graphviz, images/paperwork, svg]
 .What agreements are required?
@@ -78,23 +88,18 @@ digraph {
 }
 ----
 
-The new committer must download and print the documents, complete and sign them, and then provide them to the EMO Records Team. The Committer Agreement Workflow provides a means of uploading these documents; alternatively, the team may ask you to provide them via email. 
+After all required documents have been received, the EMO Records Team will review them, contact the committer to resolve any issues that need to be addressed, and send a request to the Eclipse IT Team to provision a committer account.
 
-.Upload the ICA directly into the form
-image::images/committer_questionnaire2.png[]
-
-After all required documents have been received, the EMO Records Team will review them, contact the committer to resolve any issues that need to be addressed, and send a request to the Webmaster to provision a committer account.
-
-Questions regarding this process should be addressed to the mailto:{emoRecordsEmail}[EMO Records Team].
+Questions regarding this process should be addressed to the {emoRecordsEmailLink}.
 
 [[paperwork-mcca]]
 ==== Member Committer and Contributor Agreement[[paperwork-mca]]
 
-The {mccaUrl}[Member Committer and Contributor Agreement] (MCCA) is used by organizations that are members of the Eclipse Foundation to cover all of their employees who participate in Eclipse Foundation projects as committers. 
+The {mccaUrl}[Member Committer and Contributor Agreement] (MCCA) is used by organisations that are members of the Eclipse Foundation to cover all of their employees who participate in Eclipse Foundation projects as committers. 
 
 [NOTE]
 ====
-If your employer is a member of the Eclipse Foundation and  has not already provided an MCCA, consult with your management team to determine who has the necessary authority to sign it on your company's behalf. Provide the MCCA in advance of the completion of your committer election or new project creation to streamline the committer provisioning process. If you and your management team are not sure whether or not your employer has an MCCA, ask the mailto:{emoRecordsEmail}[EMO Records Team].
+If your employer is a member of the Eclipse Foundation and  has not already provided an MCCA, consult with your management team to determine who has the necessary authority to sign it on your company's behalf. Provide the MCCA in advance of the completion of your committer election or new project creation to streamline the committer provisioning process. If you and your management team are not sure whether or not your employer has an MCCA, ask the {emoRecordsEmailLink}.
 ====
 
 If the committer's employer is a member of the Eclipse Foundation that cannot provide a signed MCCA, then the committer will have to complete an _Individual Committer Agreement_.
@@ -103,6 +108,11 @@ If the committer's employer is a member of the Eclipse Foundation that cannot pr
 ==== Individual Committer Agreement
 
 The {icaUrl}[Individual Committer Agreement] (ICA) is used by committers who are not covered by a {mccaUrl}[MCCA].
+
+[NOTE]
+====
+The link to the Individual Committer Agreement is provided for **informational purposes only**. All committer forms are managed electronically. The EMO Records Team will contact you if we need you to sign the ICA.
+====
 
 An ICA is required when:
 
@@ -119,7 +129,7 @@ If the individual is already a committer on an existing Eclipse Foundation proje
 [[paperwork-not-employed]]
 ==== Not Employed or Student
 
-If the committer is not employed or is a student, they must send a note to the mailto:{emoRecordsEmail}[EMO Records Team] explaining their status.
+If the committer is not employed or is a student, they must send a note to the {emoRecordsEmailLink} explaining their status.
 
 [[paperwork-faq]]
 === Frequently Asked Questions
@@ -128,11 +138,11 @@ If the committer is not employed or is a student, they must send a note to the m
 
 What is the difference between an Individual Committer Agreement, the Member Committer and Contributor Agreement, and the Eclipse Contributor Agreement? ::
 
-The <<paperwork-ica, Individual Committer Agreement>> (ICA) is for committers whose employers are either not {memberUrl}[members] of the Eclipse Foundation or are members that have not signed the Member Committer and Contributor Agreement.
+The xref:paperwork-ica[Individual Committer Agreement] (ICA) is for committers whose employers are either not {memberUrl}[members] of the Eclipse Foundation or are members that have not signed the Member Committer and Contributor Agreement.
 +
-The <<paperwork-mcca, Member Committer and Contributor Agreement>> (MCCA) is used by organizations that are members of the Eclipse Foundation to cover all of their employees who participate in Eclipse Foundation open source projects as committers.
+The xref:paperwork-mcca[Member Committer and Contributor Agreement] (MCCA) is used by organisations that are members of the Eclipse Foundation to cover all of their employees who participate in Eclipse Foundation open source projects as committers.
 +
-The <<contributing-eca, Eclipse Contributor Agreement>> (ECA) is for everybody else. The ECA covers contributors who are not otherwise covered for their contributions by an ICA or MCCA.
+The xref:contributing-eca[Eclipse Contributor Agreement] (ECA) is for everybody else. The ECA covers contributors who are not otherwise covered for their contributions by an ICA or MCCA.
 
 What happens if I do not fill out the agreements?::
 
@@ -153,4 +163,3 @@ What Email address should I use to send completed documents? ::
 What if a I change employers? ::
 
 Edit your {accountUrl}[Eclipse Account Profile] to update your employment status.
-	

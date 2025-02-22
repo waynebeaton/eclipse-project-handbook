@@ -1,34 +1,41 @@
 ////
- * Copyright (C) 2015,2021 Eclipse Foundation, Inc. and others. 
+ * Copyright (C) 2015,2022 Eclipse Foundation, Inc. and others. 
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
- * http://www.eclipse.org/legal/epl-2.0.
+ * https://www.eclipse.org/legal/epl-2.0.
  *  
  * SPDX-FileType: SOURCE
- *
- * SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
- * SPDX-FileCopyrightText: 2015 Contributors to the Eclipse Foundation
  *
  * SPDX-License-Identifier: EPL-2.0
 ////
 
+:privacyPolicyUrl: https://www.eclipse.org/legal/privacy.php
+:termsOfUse: https://www.eclipse.org/legal/termsofuse.php
 :codeOfConductUrl: https://www.eclipse.org/org/documents/Community_Code_of_Conduct.php
+:codeOfConductMdUrl: https://raw.githubusercontent.com/eclipse/.github/master/CODE_OF_CONDUCT.md
 :communicationChannelGuidelinesUrl: https://www.eclipse.org/org/documents/communication-channel-guidelines/
 :socialMediaGuidelinesUrl: https://www.eclipse.org/org/documents/social_media_guidelines.php
 
-:emoEmail: emo@eclipse.org
+:emoEmail: emo@eclipse-foundation.org
 :ipTeamEmail: emo-ip-team@eclipse.org
-:emoRecordsEmail: emo-records@eclipse.org
+:emoRecordsEmail: emo-records@eclipse-foundation.org
 :webmasterEmail: webmaster@eclipse-foundation.org
-:legalEmail: license@eclipse.org
-:proposalsForum: http://www.eclipse.org/forums/eclipse.proposals
-:activityUrl: http://www.eclipse.org/projects/project_activity.php
-:edpUrl: http://www.eclipse.org/projects/dev_process/development_process.php
+:legalEmail: license@eclipse-foundation.org
+:licenseEmail: license@eclipse-foundation.org
+:licenseEmailUrl: mailto:{licenseEmail}
+:tckEmail: tck@eclipse.org
+:tckMailUrl: mailto:{tckEmail}
+
+:activityUrl: https://www.eclipse.org/projects/project_activity.php
+:edpUrl: xref:edp
+:roeUrl: xref:2_1_Open_Source_Rules_of_Engagement
 :efspUrl: https://www.eclipse.org/projects/efsp/
+:efspOperationsUrl: {efspUrl}operations.php
+:efspRatificationUrl: {efspUrl}#efsp-ratification
 :efslUrl: https://www.eclipse.org/legal/efsl.php
 :eftcklUrl: https://www.eclipse.org/legal/tck.php
-:trademarkTransferUrl: http://eclipse.org/legal/Trademark_Transfer_Agreement.pdf
+:trademarkTransferUrl: https://eclipse.org/legal/Trademark_Transfer_Agreement.pdf
 :trademarkGuidelinesUrl: https://eclipse.org/legal/logo_guidelines.php
 :copyrightUrl: https://www.eclipse.org/legal/copyrightandlicensenotice.php
 :accountUrl: https://accounts.eclipse.org/
@@ -36,8 +43,9 @@
 :wgUrl: https://www.eclipse.org/org/workinggroups/
 :approvedLicensesUrl: https://www.eclipse.org/legal/licenses.php#approved
 :proprietaryToolsUrl: https://www.eclipse.org/org/documents/Eclipse_Using_Proprietary_Tools_Final.php
-:clearlyDefinedUrl: http://clearlydefined.io/
+:clearlyDefinedUrl: https://clearlydefined.io/
 :licenseToolUrl: https://github.com/eclipse/dash-licenses
+:licenseToolLink: {licenseToolUrl}[Eclipse Dash License Tool]
 
 :webmasterEmailLink: mailto:{webmasterEmail}[Eclipse Webmaster]
 :ipTeamEmailLink: mailto:{ipTeamEmail}[EMO IP Team]
@@ -45,48 +53,55 @@
 :emoRecordsEmailLink: mailto:{emoRecordsEmail}[EMO Records Team]
 :trademarkGuidelinesLink: {trademarkGuidelinesUrl}[Eclipse Foundation Trademark Usage Guidelines]
 
-:developerPortalUrl: http://portal.eclipse.org
+:memberPortalUrl: https://membership.eclipse.org/portal
+
+// Content specifically for committers
+:committerGuidelinesUrl: https://www.eclipse.org/legal/committerguidelines.php
+:committerTrainingUrl: https://www.eclipse.org/projects/training
+
 :bylawsUrl: https://www.eclipse.org/org/documents/eclipse_foundation-bylaws.pdf
-:committerGuidelinesUrl: http://www.eclipse.org/legal/committerguidelines.php
-:legalDocumentationUrl: http://www.eclipse.org/legal/guidetolegaldoc.php
-:ipThirdParty: http://www.eclipse.org/org/documents/Eclipse_Policy_and_Procedure_for_3rd_Party_Dependencies_Final.pdf
-:ipPolicyUrl: http://eclipse.org/org/documents/Eclipse_IP_Policy.pdf
-:mccaUrl: http://www.eclipse.org/legal/committer_process/EclipseMemberCommitterAgreementFinal.pdf
-:icaUrl: http://www.eclipse.org/legal/committer_process/EclipseIndividualCommitterAgreementFinal.pdf
+:legalDocumentationUrl: https://www.eclipse.org/legal/guidetolegaldoc.php
+:ipThirdParty: https://www.eclipse.org/org/documents/Eclipse_Policy_and_Procedure_for_3rd_Party_Dependencies_Final.pdf
+:ipPolicyUrl: https://eclipse.org/org/documents/Eclipse_IP_Policy.pdf
+:hostedServicesPrivacyPolicyUrl: https://www.eclipse.org/org/documents/eclipse-foundation-hosted-services-privacy-and-acceptable-usage-policy.pdf
+:antitrustPolicyUrl: https://www.eclipse.org/org/documents/Eclipse_Antitrust_Policy.pdf
+:mccaUrl: https://www.eclipse.org/legal/committer_process/EclipseMemberCommitterAgreementFinal.pdf
+:icaUrl: https://www.eclipse.org/legal/committer_process/EclipseIndividualCommitterAgreementFinal.pdf
 :ipzillaUrl: https://dev.eclipse.org/ipzilla
 
-:cbiUrl: http://wiki.eclipse.org/CBI
-:gitRequestUrl: https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Community&component=Git
-:gitHubRequestUrl: https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Community&component=GitHub
-:gerritRequestUrl: https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Community&component=Gerrit
-:websiteRequestUrl: https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Community&component=Website
+:cbiUrl: https://github.com/eclipse-cbi/cbi/wiki
 :emoApprovalsUrl: https://gitlab.eclipse.org/eclipsefdn/emo-team/emo/-/issues/new?issue
 :ecaUrl: https://www.eclipse.org/legal/ECA.php
 :ecaSignUrl: https://dev.eclipse.org/site_login/myaccount.php#open_tab_cla
 :dcoUrl: https://www.eclipse.org/legal/DCO.php
 :incubationListUrl: https://dev.eclipse.org/mailman/listinfo/incubation
-:incubationBrandingUrl: http://wiki.eclipse.org/Development_Resources/HOWTO/Conforming_Incubation_Branding
+:incubationBrandingUrl: xref:starting-incubation-branding
 :membershipAgreementUrl: https://www.eclipse.org/org/documents/eclipse_membership_agreement.pdf
 
-:jarSigningUrl: https://wiki.eclipse.org/IT_Infrastructure_Doc#Sign_my_plugins.2FZIP_files.3F
+:jarSigningUrl: https://github.com/eclipse-cbi/cbi/wiki/Signing
 :downloadsUrl: https://wiki.eclipse.org/IT_Infrastructure_Doc#Downloads
-:versionNumberingUrl: https://wiki.eclipse.org/Version_Numbering
 
-:bugzillaGitHubUrl: https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Community&component=GitHub
+:helpdeskUrl: https://gitlab.eclipse.org/eclipsefdn/helpdesk
 
-:epl20Url: http://www.eclipse.org/legal/epl-2.0
-:suaUrl: http://www.eclipse.org/legal/epl/notice.php
-:suaHtmlUrl: http://www.eclipse.org/legal/epl/notice.html
-:suaTxtUrl: http://www.eclipse.org/legal/epl/notice.txt
-:suaPropertiesUrl: http://www.eclipse.org/legal/epl/feature.properties.txt
+:epl20Url: https://www.eclipse.org/legal/epl-2.0
+:suaUrl: https://www.eclipse.org/legal/epl/notice.php
+:suaHtmlUrl: https://www.eclipse.org/legal/epl/notice.html
+:suaTxtUrl: https://www.eclipse.org/legal/epl/notice.txt
+:suaPropertiesUrl: https://www.eclipse.org/legal/epl/feature.properties.txt
 
 :securityPolicyUrl: https://www.eclipse.org/security/policy.php
-:securityTeamEmail: security@eclipse.org
-:vulnerabilityReportUrl: https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Community&component=Vulnerability+Reports&keywords=security&groups=Security_Advisories
+:securityTeamEmail: security@eclipse-foundation.org
+:vulnerabilityReportUrl: https://gitlab.eclipse.org/security/vulnerability-reports/-/issues/new?issuable_template=new_vulnerability
 :knownVulnerabilitiesUrl: https://www.eclipse.org/security/known.php
-:cveRequestUrl: https://gitlab.eclipse.org/eclipsefdn/iplab/emo/-/issues/new?issuable_template=cve
+:cveRequestUrl: https://gitlab.eclipse.org/security/cve-assignement/-/issues/new?issuable_template=cve
 :cveUrl: https://cve.mitre.org/
 :cweUrl: https://cwe.mitre.org/
+
+:emoGitUrl: https://gitlab.eclipse.org/eclipsefdn/emo-team/emo
+:iplabUrl: https://gitlab.eclipse.org/eclipsefdn/emo-team/iplab
+:iplabWiki: {iplabUrl}/-/wikis/home
+:iplabProjectTemplate: {iplabUrl}/-/issues/new?issuable_template=vet-project
+:iplabThirdPartyTemplate: {iplabUrl}/-/issues/new?issuable_template=vet-third-party
 
 :githubSecurityAdvisoryInfoUrl: https://docs.github.com/en/code-security/security-advisories/about-github-security-advisories
 
@@ -103,7 +118,9 @@
 :eventsUrl: https://events.eclipse.org/
 :newsroomUrl: https://newsroom.eclipse.org/
 
-:adoptersProgrammeUrl: https://github.com/EclipseFdn/eclipsefdn-project-adopters
+:adoptersProgrammeUrl: https://gitlab.eclipse.org/eclipsefdn/it/api/eclipsefdn-project-adopters
+:adoptersProgrammeAdopters: {adoptersProgrammeUrl}#project-adopters
+:adoptersProgrammeApi: {adoptersProgrammeUrl}#javascript-plugin
 
 :clearlyDefinedMinimumScore: 60
 
@@ -113,8 +130,6 @@
 :stylesdir: ./resources
 :scriptsdir: ./resources
 
-:toc:
-:toc-placement: auto
 :icons: font
 
 :doctype: book

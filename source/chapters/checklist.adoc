@@ -23,9 +23,9 @@ This checklist is provided as a convenience and is included primarily as a guide
 With this checklist, we've tried to strike a balance between being concise while being as comprehensive as possible. Many of the entries apply for specific technologies only. If an entry on the list doesn't make sense for some particular type of technology in your project, skip it (e.g., file headers do not make sense for JSON content).
 ====
 
-The Eclipse Foundation staff and Project Management Committee members will use this checklist as part of their evaluation during a <<release-review,Release Review>>.
+The xref:roles-emo[EMO] and xref:roles-pmc[Project Management Committee] will use this checklist as part of their evaluation during a xref:progress-review[Progress Review].
 
-All projects must conform to the <<trademarks,branding guidelines>> before engaging in any <<release-review,release>> or <<release-graduation,graduation>> review (specific examples are described below).
+All projects must conform to the xref:trademarks[branding guidelines] before engaging in any xref:release[release] (specific examples are described below).
 
 [discrete]
 == General
@@ -33,9 +33,9 @@ All projects must conform to the <<trademarks,branding guidelines>> before engag
 * Project is operating within the mission and scope defined in its top-level project's charter; 
 * Project is operating within the bounds of its own scope;
 * Project is operating in an open and transparent manner;
-* All distributed <<ip-third-party,third-party>> content has been approved by the IP Team;
+* All distributed xref:ip-third-party[third party] content has been approved by the IP Team;
 * Project content correctly uses Eclipse Foundation trademarks; and
-* Project content (code and documentation) does not violate trademarks owned by other organizations.
+* Project content (code and documentation) does not violate trademarks owned by other organisations.
 
 [discrete]
 == Code
@@ -45,12 +45,12 @@ All projects must conform to the <<trademarks,branding guidelines>> before engag
 ** e.g. `{namespace}.<shortname>.<component>[.*]` for Java packages and OSGi Bundles;
 * Provider information is set to the project's formal name:
 ** e.g. the `Bundle-Vendor` entry set to "Eclipse Foo" in OSGi Bundles; or
-** e.g. the `project` and `organization` names are set to "{forgeName} Foo" in Maven `pom.xml` files;
-* <<legaldoc,Legal documentation>> is provided:
+** e.g. the `project` and `organisation` names are set to "{forgeName} Foo" in Maven `pom.xml` files;
+* xref:legaldoc[Legal documentation] is provided:
 ** All source files include a copyright and license header (when technically feasible);
-** All source code repositories include a <<legaldoc-license, `LICENSE`>> file (or equivalent) in the root; and
-** All source code repositories include a <<legaldoc-notice, `NOTICES`>> file (or--for projects that produce Eclipse Platform plug-ins--`about.html` files as described by the <<legaldoc-plugins>>); 
-* All source code repositories include a <<legaldoc-contributor, `CONTRIBUTING`>> file (or equivalent) in the root; and
+** All source code repositories include a xref:legaldoc-license[`LICENSE`] file (or equivalent) in the root; and
+** All source code repositories include a xref:legaldoc-notice[`NOTICES`] file (or--for projects that produce Eclipse Platform plug-ins--`about.html` files as described by the <<legaldoc-plugins>>); 
+* All source code repositories include a xref:legaldoc-contributor[`CONTRIBUTING`] file (or equivalent) in the root; and
 * All feature names and descriptions are captured, are spelled correctly, use proper grammar, and contain content that is actually useful for the intended audience.
 
 [discrete]
@@ -58,18 +58,18 @@ All projects must conform to the <<trademarks,branding guidelines>> before engag
 
 Many projects provide binary/compiled _downloads_ of their software, intended for consumption by their various communities. 
  
-* All generated artifacts include only intellectual property that has been subject to the <<ip,IP Due Diligence Process>>;
-* The project website and <<pmi-project-page, project page>> includes links for artifacts;
-* <<starting-incubation-branding,Incubation branding>> (when applicable) is included on distributed artifacts; 
+* All generated artifacts include only intellectual property that has been subject to the xref:ip[IP Due Diligence Process];
+* The xref:resources-website[project website] and xref:pmi-project-page[project page] includes links for artifacts;
+* xref:starting-incubation-branding[Incubation branding] (when applicable) is included on distributed artifacts; 
 * All download artifacts are (if technical feasible) {jarSigningUrl}[signed]; and
-* Subject to limitations of specific technologies, the {versionNumberingUrl}[Version numbering] rules are followed.
+* Subject to limitations of specific technologies, the https://semver.org/[Semantic Versioning] rules are followed.
 
 [discrete]
 == Project Metadata
 
-Project metadata is specified and maintained using the <<pmi, Project Management Infrastructure>>.
+Project metadata is specified and maintained using the xref:pmi[Project Management Infrastructure].
 
-* The formal name, e.g. _{forgeName} Foo(TM)_, is used in the project title; 
+* The formal name, e.g. _{forgeName} Foo_, is used in the project title; 
 * The formal name including appropriate marks is used in the first mention in the text of the project description, and scope;
 * The project description starts with a single paragraph that can serve as an _executive summary_;
 * Source code repository references are up-to-date; and
@@ -78,33 +78,36 @@ Project metadata is specified and maintained using the <<pmi, Project Management
 [discrete]
 == Release Metadata
 
-Release metadata is specified and maintained using the <<pmi, Project Management Infrastructure>>. Project teams are required to create a metadata entry for every official release (including major, minor, and service releases).
+Release metadata is specified and maintained using the xref:pmi[Project Management Infrastructure]. Project teams are required to create a metadata entry for every official release (including major, minor, and service releases).
 
 * At least one release record describes a future release; and
 * The release record includes a description that starts with a single paragraph that can serve as an _executive summary_.
 
 [TIP]
 ====
-Use the <<pmi-commands-release, Create a new release>> command on a specific <<pmi-project-page, project page>> in the <<pmi,Project Management Interface (PMI)>> to create a new release record.
+Use the xref:pmi-commands-release[Create a new release] command on a specific xref:pmi-project-page[project page] in the xref:pmi[Project Management Interface (PMI)] to create a new release record.
 ==== 
 
 [discrete]
-== Development Website
+== Project Website
+
+The xref:resources-website[Project Website]:
+
 * Is hosted on Eclipse Foundation-provided infrastructure;
 * Uses the formal name including appropriate marks, e.g. _{forgeName} Foo(TM)_, on the page title, first mention in the text, and on all prominent references to the project;
-* <<starting-incubation-branding,Incubation branding>> (when applicable) is displayed; 
+* xref:starting-incubation-branding[Incubation branding] (when the project is in the xref:starting-incubation[incubation phase]) is displayed; 
 * Includes a concise description of the project (with all necessary marks); and
-* The <<trademarks-website-footer,standard navigation>> links (e.g. `{wwwUrl}`) are included in the website footer.
+* The xref:trademarks-website-footer[standard navigation] links are included in the website footer.
 
 [discrete]
 == Logos and graphics
-* <<trademarks-project-logo,Project logo>> includes the trademark symbol; and
+* xref:trademarks-project-logo[Project logo] includes the trademark symbol; and
 * Project logo is used consistently.
 
 [discrete]
 == Company Logos
 
-Company logos may optionally be included on a project website, but only if the following conditions are met.
+Company logos may optionally be included on a xref:resources-website[project website], but only if the following conditions are met.
 
 * The company is a {memberUrl}[member] of the Eclipse Foundation;
 * At least one project committer is an employee of the company in question; and
@@ -113,13 +116,13 @@ Company logos may optionally be included on a project website, but only if the f
 [discrete]
 == Community Portals and Related Websites
 
-<<trademark-external-community,Community portals>>, regardless of who owns and maintains them must conform to the branding guidelines. If you discover a website that does not conform to these guidelines (and it is not within your power to effect the changes yourself), send a note to mailto:{emoEmail}[EMO] to request assistance.
+xref:trademark-external-community[Community portals], regardless of who owns and maintains them must conform to the branding guidelines. If you discover a website that does not conform to these guidelines (and it is not within your power to effect the changes yourself), send a note to mailto:{emoEmail}[EMO] to request assistance.
 
 * The formal name including appropriate marks, e.g. _{forgeName} Foo(TM)_, is used on the page title, first mention in the text, and on all prominent references to the project;
-* <<trademarks-external-attribution,Attributions>> are provided for all Eclipse Foundation marks;
+* xref:trademarks-external-attribution[Attributions] are provided for all Eclipse Foundation marks;
 * All references to {forgeName} open source projects use the formal name with appropriate marks;
 * Trademark and registered trademark symbols are used appropriately;
-* Developers are directed to the official project website for information regarding contribution or related development activities;
+* Developers are directed to the official xref:resources-website[project website] for information regarding contribution or related development activities;
 * Ownership of the domain name (especially if it includes the project name) has been transferred to the Eclipse Foundation; and
 * The domain is regarded and used exclusively as a community portal (i.e. is is not presented as the official project website).
 
@@ -129,5 +132,5 @@ Company logos may optionally be included on a project website, but only if the f
 All announcements regarding project milestones issued by the project must conform to the branding guidelines.
 
 * The formal name including appropriate marks, e.g. _{forgeName} Foo(TM)_, is used in the title, first mention in the text, and on all prominent references to the project;
-* <<trademarks-external-attribution,Attributions>> are provided for all Eclipse Foundation marks; and
+* xref:trademarks-external-attribution[Attributions] are provided for all Eclipse Foundation marks; and
 * All references to {forgeName} open source projects use the formal name with appropriate marks.

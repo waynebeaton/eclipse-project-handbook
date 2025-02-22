@@ -14,10 +14,13 @@
 ////
  
 image:https://api.reuse.software/badge/gitlab.eclipse.org/eclipse/dash/org.eclipse.dash.handbook[link=https://api.reuse.software/info/gitlab.eclipse.org/eclipse/dash/org.eclipse.dash.handbook]
+image:https://eclipse.org/projects/services/status.php?id=technology.dash[link=https://eclipse.org/projects/tools/status.php?id=technology.dash]
 
 = Eclipse Project Handbook
 
 This repository contains the sources for the Eclipse Project Handbook. All content is represented in Asciidoc format and Asciidoctor is used to render the content into HTML, PDF, and EPUB formats. Note that the documents are all rendered complete (i.e. images and other resources are embedded).
+
+The official website of the Eclipse Project Handbook is: https://www.eclipse.org/projects/handbook/
 
 The CONTRIBUTING.md file contains information regarding how to contribute to this project.
 

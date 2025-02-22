@@ -30,14 +30,14 @@ committer quality and cooperation.
 The source for the Eclipse Project Handbook is maintained in the the following 
 source code repository.
 
-* http://git.eclipse.org/c/dash/org.eclipse.dash.handbook.git
+* https://gitlab.eclipse.org/eclipse/technology/dash/org.eclipse.dash.handbook
 
 Note that the repository includes some submodules, clone using 
 `--recurse-submodules` to ensure that you have all of the content. 
 
 e.g.
 
-    git clone --recurse-submodules git://git.eclipse.org/gitroot/dash/org.eclipse.dash.handbook.git
+    git clone --recurse-submodules git@gitlab.eclipse.org:eclipse/technology/dash/org.eclipse.dash.handbook.git
 
 This project uses GitLab issues to track ongoing development and issues.
 
@@ -50,9 +50,15 @@ contributions are always welcome!
 
 We use Maven to build.
 
-    mvn compile
+    mvn clean verify
 
-Content is rendered into the `./target` folder in HTML, PDF, and EPUB formats.
+Content is rendered into the `./target` folder in HTML, and PDF formats.
+
+Publishing the build currently requires some manual steps. Assuming that the `/projects` website repository is cloned at `/gitroot/www.eclipse.org/projects` (if otherwise, adjust accordingly), use the following command to build and push the result to the local copy of the website:
+
+    mvn clean verify && cp target/generated-docs/eclipse.html /gitroot/www.eclipse.org/projects/handbook/.
+
+When ready to publish, use the standard Git mechanism to create a new commit and push to the `/projects` repository.
 
 The `README.md` file contains information regarding how we structure documents
 and other guidelines regarding content.

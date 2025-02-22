@@ -1,5 +1,5 @@
 ////
- * Copyright (C) 2015 Eclipse Foundation, Inc. and others. 
+ * Copyright (C) 2015,2022 Eclipse Foundation, Inc. and others. 
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
@@ -7,7 +7,7 @@
  * 
  * SPDX-FileType: SOURCE
  *
- * SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
+ * SPDX-FileCopyrightText: 2015,2022 Eclipse Foundation, Inc.
  * SPDX-FileCopyrightText: 2015 Contributors to the Eclipse Foundation
  *
  * SPDX-License-Identifier: EPL-2.0
@@ -24,7 +24,7 @@ _Improved consistency._ Configuration/data-driven project web presence, direct l
 
 _All-in-one-place._ Project leads and committers are able to edit information in place on the project information pages. Text/information in one place with links in another is eliminated where possible. Comments and discussion related to reviews, elections, etc. are connected directly to the item being discussed.
 
-_Get started faster._ By default, projects are provided with a data-driven website that includes consistent links to project releases, reviews, downloads, etc. Projects can opt to override the default and provide their own customized web presence. Setting up a project presence is a matter of configuration, not PHP programming against proprietary APIs.
+_Get started fast._ By default, projects are provided with a data-driven website (a so-called _PMI Page_) that includes consistent links to project releases, reviews, downloads, etc. With the data-driven website, setting up project presence is a matter of providing metadata. Projects can opt provide their own xref:promotion-website[custom website]. 
 
 [[pmi-metadata]]
 === Project Metadata
@@ -33,73 +33,45 @@ Project committers and project leads are responsible for maintaining their proje
 
 Project metadata is:
 
-1.  Relatively static structural information such as the project description and scope, the names of the project's mailing lists and forums, the bugzilla products, source code repositories, etc.
-2.  Historical information such as previous release downloads, review slides and IP logs, etc.
+1.  Relatively static structural information such as the project description and scope, the names of the project's mailing lists and forums, pointers to source code repositories and issues, etc.
+2.  Historical information such as previous release downloads, review materials, etc.
 3.  Status and future looking information such as the project and milestone plans, the features scheduled for the current release, release dates, etc.
 
-PMC members and the Eclipse Foundation staff also have the ability to make changes on behalf of a project.
+xref:#roles-pmc[Project Management Committee] (PMC) members and the Eclipse Foundation staff also have the ability to make changes on behalf of a project.
 
 [[pmi-viewing]]
 === Viewing
 
-The complete listing of all current {projectListUrl}[{forgeName} projects] provides one starting point for viewing projects. From here, you can link directly to a <<pmi-project-page,project page>>. Navigation options are provided to help you move from one project to another.
+The complete listing of all current {projectListUrl}[{forgeName} projects] provides one starting point for viewing projects. From here, you can link directly to a xref:pmi-project-page[project page]. Navigation options are provided to help you move from one project to another.
 
 [[pmi-project-page]]
 === Project Pages
 
-The PMI provides a website for every project based on the <<pmi-metadata,project metadata>>. This website includes an _Overview_ page that shows basic information about the project, a _Downloads_ page that provides links to downloads, a _Developer Resources_ page that includes links to <<source-repositories,source code repositories>>, and more. 
+The PMI provides a website for every project based on the xref:pmi-metadata[project metadata]. This website includes an _Overview_ page that shows basic information about the project, a _Downloads_ page that provides links to downloads, a _Developer Resources_ page that includes links to xref:source-repositories[source code repositories], and more. 
 
-An example project page is shown below. The _Overview_ page includes the name and description of the project, list of project licenses, a table of recent releases, and various charts and other information (note that more charts are displayed on the _Who's Involved_ page. The website also includes links to project-specific <<pmi-commands-and-tools,commands and tools>> when the user is logged in as a project committer.
+An example project page is shown below. The _Overview_ page includes the name and description of the project, list of project licenses, a table of recent releases, and various charts and other information (note that more charts are displayed on the _Who's Involved_ page. The website also includes links to project-specific xref:pmi-commands-and-tools[commands and tools] when the user is logged in as a project committer.
 
-.A logged in committer can access commands and tools from the _Committer Tools_ block on the right side of the project page.
-
+.An example project page
 image::images/project-page.png[]
 
-The URL for a project page takes the form `pass:c,a[{forgeUrl}/projects/<projectid>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`), where `pass:c,a[<projectid>]` is the qualified <<resources-identifiers,identifier>> for the project.
+A logged in committer can access xref:pmi-commands-and-tools[commands and tools] from the _Committer Tools_ block on the right side of the project page; they can also xref:pmi-editing[edit project metadata] by clicking the _Edit_ link at the far right of the tab list.
+
+The URL for a project page takes the form `pass:c,a[{forgeUrl}/projects/<project id>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`), where `pass:c,a[<project id>]` is the xref:resources-identifiers[project ID].
 
 [[pmi-commands-and-tools]]
 === Commands and Tools
 
 Committers have access to several committer-specific commands and tools in the _Committer Tools_ block on the right side of project pages. The selection of commands available are context sensitive; only those commands that make sense for the logged in user are shown.
 
-[[pmi-commands-cq]]
-==== Create a Contribution Questionnaire
-
-Any project committer create <<ip-cq, Contribution Questionnaire>> (CQ). CQs are required to track the due diligence review of contributions of project content and third-party content
-
-To create a Contribution Questionnaire:
-
-1. Log in to the {forgeUrl}[PMI];
-2. Navigate to a <<pmi-project-page,project page>>;
-3. Click menu:Committer Tools[Intellectual Property > Create a Contribution Questionnaire]; and
-4. Follow the workflow.
-
-[NOTE]
-====
-The CQ creation process works in two parts. First you create the CQ, then (when required) you attach the source code. You can attach the source code immediately after creating the CQ (otherwise the system will email you with instructions).
-====
-
-[[pmi-commands-iplog]]
-==== Submit a Project's IP Log for Review
-
-Any project committer generate the <<ip-iplog, Intellectual Property (IP) Log>> and submit it for review by the Eclipse IP Team. An IP Log review is required, for example, for all <<release-review, release and progress reviews>>.
-
-To generate an IP Log:
-
-1. Log in to the {forgeUrl}[PMI];
-2. Navigate to a <<pmi-project-page,project page>>;
-3. Click menu:Committer Tools[Intellectual Property > Generate IP Log]; and
-4. Follow the workflow.
-
 [[pmi-commands-release]]
 ==== Create a New Release
 
-A project lead or committer can create a new <<release,release>> record. This opens a dialog requesting that a date and name be specified. Both of these values can be changed later.
+A project lead or committer can create a new xref:release[release] record. This opens a dialog requesting that a date and name be specified. Both of these values can be changed later.
 
-To generate an IP Log:
+To create a new release record:
 
 1. Log in to the {forgeUrl}[PMI];
-2. Navigate to a <<pmi-project-page,project page>>;
+2. Navigate to a xref:pmi-project-page[project page];
 3. Click menu:Committer Tools[Releases > Create a new release]; and
 4. Follow the workflow.
 
@@ -108,10 +80,30 @@ To generate an IP Log:
 
 Committers have the ability to edit the information managed and displayed on the project page. There are several sections on the page. When you switch the page into _Edit_ mode, you will be provided with lots of help regarding the contents of each of the fields (note that the help text is currently rendered below the fields).
 
+.Editing project metadata.
+image::images/edit-project-metadata.png[]
+
+To set the edit project metadata: 
+
+* Log into the PMI;
+* Navigate to the xref:pmi-project-page[project page];
+* Click btn:[Edit];
+* Expand sections to expose the various topic areas, and edit as required; and
+* Click btn:[Save].
+
+[TIP]
+====
+The changes that you make to the project metadata will be reflected immediately on the project information page.
+====
+
+If you require assistance editing the project metadata, contact the {emoEmailLink}.
+
 Some of the fields are described below.
 
 [[pmi-description-and-scope]]
 ==== Description and Scope
+
+The project description is displayed on the _Overview_ page; the scope is displayed on the _Governance_ page.
 
 The _description_ should start with a concise paragraph of three to five sentences (e.g. suitable for display with a collection of other projects). A single paragraph is generally appropriate for the description.
 
@@ -119,74 +111,117 @@ If more than a single simple paragraph is required to fully describe the project
 
 [NOTE]
 ====
-Providing a summary gives you control over what will get rendered. In views where we are displaying more than one project, the system will artifically cut short descriptions that are too long, potentially resulting in a description that looks _weird_.
+Providing a summary gives you control over what will get rendered. In views where we are displaying more than one project, the system will artificially cut short descriptions that are too long, potentially resulting in a description that looks _weird_.
 ====
 
-The _scope_ is intended for a more select audience; generally speaking the scope should be taken directly from the project's proposal. Project members have the ability to change the text of the project scope, but should be careful to avoid changing the meaning. If the meaning of the scope needs to change, the Project Management Committee (PMC) must be contacted regarding a potential restructuring review.
+The _scope_ is intended for a more select audience; generally speaking the scope should be taken directly from the project's proposal. 
+
+
+[WARNING]
+====
+Project members have the ability to change the text of the project scope, but should be careful to **avoid changing the meaning**. If the meaning of the scope needs to change, the xref:#roles-pmc[Project Management Committee] (PMC) must be contacted regarding a potential xref:release-restructuring[restructuring review].
+====
+
+To edit the description and/or scope:
+
+* Log into the PMI;
+* Navigate to the xref:pmi-project-page[project page];
+* Click btn:[Edit];
+* Open the section labelled _The Basics_;
+* Update the fields as required; and
+* Click btn:[Save].
 
 [[pmi-downloads]]
 ==== Downloads
 
 You can provide download information for your project in the _Downloads_ section.
 
-The first entry is the main "Downloads URL". This manifests as a _Big Button_ Download on the project page. What you put here is left to the project team to decide. It can be a link to a webpage, a direct link to a file download, or whatever else makes sense the project and community.
+The first entry is the main "Downloads URL". This manifests as a _Big Button_ Download on the project page. What you put here is left to the project team to decide. It can be a link to a website, a direct link to a file download, or whatever else makes sense the project and community.
 
 Optional text can be included along with the _Big Button_ Download, as well as links to zero or more Eclipse Marketplace, update/p2 sites, or other downloads. Each of the links can have an optional title (the link itself will be displayed if no title is provided). Note that no validation is done on the links to ensure that they are meaningful. 
 
-ifeval::["{forgeName}"=="Eclipse"]
-_The Eclipse Foundation strongly encourages all projects (especially those that produce Eclipse Platform Plug-ins and Features) to create an maintain and http://marketplace.eclipse.org[Eclipse Marketplace] presence._
-endif::[]
+To edit the download information:
+
+* Log into the PMI;
+* Navigate to the xref:pmi-project-page[project page];
+* Click btn:[Edit];
+* Open the section labelled _Downloads, Software Repositories, and Marketplace_;
+* Update the fields as required; and
+* Click btn:[Save].
 
 [[pmi-contributors]]
 ==== Contributors
 
-In order to grant the ability to assign issues and merge/pull requests to non-committers on repositories that are hosted on GitLab or GitHub, developers must be designated as _contributors_.
+The project team can choose to designate specific individuals as official contributors. On xref:resources-gitlab[GitLab], designated contributors are granted the _Reporter_ role in the project's repositories. On xref:resources-github[GitHub], designated contributors are granted the _triage_ permission. Contributors can create merge and pull requests regardless of whether or not they are designated as an official contributor.
 
-Contributors can be designed by adding their email address to the _Contributors_ field. The contributor must have an Eclipse Foundation account using the email. In the case of GitHub, the contributor must also provide their GitHub ID in their <<contributing-account,Eclipse Foundation Account>>.
+Contributors can be designed by adding their email address to the _Contributors_ field. The contributor must have an Eclipse Foundation account using the email. In the case of GitHub, the contributor must also provide their GitHub ID in their xref:contributing-account[Eclipse Foundation Account].
+
+[NOTE]
+====
+To gain the _triage_ role on {aForgeName} project's GitHub repositories, contributors must provide their GitHub ID in their xref:contributing-account[Eclipse Foundation Account].
+====
+
+Any committer or project lead can add or remove contributors for their own project. To set the add or remove contributors: 
+
+* Log into the PMI;
+* Navigate to the xref:pmi-project-page[project page];
+* Click btn:[Edit];
+* Open the section labelled _Source Code and Issues/Bugzilla_;
+* Add/remove email addresses to/from the _Contributors_ field;
+* Click btn:[Save].
+
+[NOTE]
+====
+The _sync script_ that propagates contributor information into teams on our GitLab instance or to GitHub runs every two hours. That is, you should expect upwards of two hours of latency between when an individual is added to as a contributor and the corresponding privileges are available to that individual.
+====
 
 [[source-repositories]]
 ==== Source Repositories
 
-The project can specify zero or more *source repositories*. These are displayed in the Developer Resources_ section.
+Source repositories are listed on the _Developer Resources_ page.
 
-The values specified are used to query against a database of known existing source repositories (this database is updated nightly by a discovery process). Those repositories that are found in the database will be displayed with enhanced information (including links to repository mirrors, Gerrit, etc.). All values that you provide will be displayed, whether they point to real repositories or not. If the database does not contain your repository, the PMI will assume that the value is correct and try its best to display the information.
+Metadata regarding source repositories is maintained by EMO staff.
 
-Repositories should be specified using the file system path, e.g. `/gitroot/egit/egit.git`. The name that is displayed for the repository is extracted from the last segment of the URL.
+A _Contribution Message_, which is -- when provided -- displayed at the top of the _Developer Resources_ page. Arbitrary text is permitted, but we recommend that you limit this content to a single paragraph with a few sentences that include a link to more information. 
 
-If a description file exists in the Git repository, the contents are automatically displayed under the repository name.
-
-[NOTE]
+[TIP]
 ====
-The script that we us to identify repositories attempts to identify a corresponding Gerrit interface for the repository. If it exists, the Gerrit URL is used in place of the Git one. If the repository uses Gerrit, then only the Gerrit URL is displayed. Otherwise, the `git://` and `ssh://` URLs are displayed.
+It is more likely that potential contributors will find your project's source code repositories before they find the project page; be sure to provide a xref:legaldoc-contributor[Contributor Guide] in the root of your project repositories.
 ====
 
-You can use wildcards to match multiple repositories, e.g. `/gitroot/virgo/*`. Note that wildcards only work for repositories that exist on {forgeName} infrastructure (they do not work for GitHub-based repositories, for example). 
+To edit information about contribution and provide pointers to information about contributing to your project:
 
-Repositories are displayed in the order they are specified. The order can be changed in the edit screen by dragging entries into the desired order. All wildcard matches are sorted alphabetically by name at the end of the list.
-
-A _Contribution Message_ should be provided; it is displayed at the top of the section and is one of the primary means by which the community will find the project code. Arbitrary text is permitted, but we recommend that you limit this content to a single paragraph with a few sentences that include a link to more information.
+* Log into the PMI;
+* Navigate to the xref:pmi-project-page[project page];
+* Click btn:[Edit];
+* Open the section labelled _Source Code and Issues/Bugzilla_;
+* Update the fields as required;
+* Click btn:[Save].
 
 [[pmi-project-logos]]
 ==== Project Logos
 
-Any member of the project team can set the project's logo. The logo will be resized to a maximum of 200x200 pixels. Project logos are considered trademarks of the Eclipse Foundation (see <<trademarks-project-logo>> for more information).
+Project Logos appear in the right navigation area on the project page. They also appear on summary or list pages (for example, the {projectListUrl}[Project List Page]).
+
+Any member of the project team can set the project's logo. The logo will be resized to a maximum of 200x200 pixels. Project logos are considered trademarks of the Eclipse Foundation (see xref:promoting-project-logo[Logos and Graphics] for more information).
 
 [TIP]
 ====
-The Eclipse Foundation will use your logo to promote your project. Be sure to create your project logo with a transparent background so that it will display well on arbitrary background colors.
+The Eclipse Foundation will use your logo to promote your project. Be sure to create your project logo with a transparent background so that it will display well on arbitrary background colours.
 ====
 
 Any committer or project lead can set the logo for their own project. To set the project logo: 
 
 * Log into the PMI;
-* Navigate to the <<pmi-project-page,project page>>;
-* click <<pmi-editing,_Edit_>>;
-* Open the section labeled _Basics_; and
-* Upload your logo to the _Logo_ field.
+* Navigate to the xref:pmi-project-page[project page];
+* Click btn:[Edit];
+* Open the section labelled _The Basics_;
+* Upload your logo to the _Logo_ field;
+* Click btn:[Save].
 
 [NOTE]
 ====
-On a xref:pmi-project-page[project page], the PMI displays either the project logo or -- when the project is in the xref:starting-project-phases[incubation phase] -- the xref:starting-incubation-branding[incubation logo]. 
+On a xref:pmi-project-page[project page], the PMI displays either the project logo or -- when the project is in the xref:incubation[incubation phase] -- the xref:starting-incubation-branding[incubation logo]. 
 
 To exit from the incubation phase into a mature project, a project must meet all of the requirements and engage in a xref:release-graduation[graduation review].
 ====
@@ -194,27 +229,54 @@ To exit from the incubation phase into a mature project, a project must meet all
 [[pmi-company-logos]]
 ==== Company Logos
 
-Company logos automatically appear on the _Who's Involved_ page under the following conditions:
+Company logos automatically appear on the _Overview_ and _Who's Involved_ page under the following conditions:
 
 * The company must be a {memberUrl}[member] of the Eclipse Foundation;
-* The company needs to have their logo uploaded to the Portal;
-* At least one committer has to be listed as an employee of the company in question;
-* The committer must be on this project; and
-* The committer must be active (must have made at least one commit in the last three months)
+* The company needs to have their logo uploaded to the {memberPortalUrl}[Eclipse Foundation Member Portal]; and
+* An employee of the company has authored a commit in the last three months that's been merged into a project repository.
 
-If all of those conditions are met and the logo is still not showing up, then it's possible that the project meta-data doesn't have the correct source code repository information specified.
+[TIP]
+====
+The display of company logos is _entirely automatic_ based on the criteria listed above.
+====
+
+If all of those conditions are met and the logo is still not showing up, then it's possible that a gap exists in our data. Contact the {emoEmailLink} for assistance.
 
 [[pmi-build-technology]]
 ==== Build Technology
 
-A project can specify a section of text, links, and a selection of the build technologies employed. Specifying this information makes it easier for members from the community to understand your build. Links can include direct links into the Hudson builds, pages of build instructions, or whatever else the project team feels will help the community build the project.
+Build information appears on the _Developer Resources_ page.
+
+A project can specify a section of text, links, and a selection of the build technologies employed. Specifying this information makes it easier for members from the community to understand your build. Links can include direct links into the CI builds, pages of build instructions, or whatever else the project team feels will help the community build the project.
+
+To set build technology information: 
+
+* Log into the PMI;
+* Navigate to the xref:pmi-project-page[project page];
+* Click btn:[Edit];
+* Open the section labelled _Build_;
+* Upload your logo to the _Logo_ field;
+* Click btn:[Save].
 
 [[pmi-technology-types]]
 ==== Technology Types
 
-A project can specify the types of technology produced by the project. This is specified in rather broad terms like _OSGi_ or _Runtime_. Th various technology types manifest as checkboxes on the edit screen. This information is used to form connections between projects to assist in navigation and discovery.
+Technology types are displayed in the _Tags_ block in the right navigation area of the project page.
+
+A project can specify the types of technology produced by the project. This is specified in rather broad terms like _OSGi_ or _Runtime_. The various technology types manifest as checkboxes on the edit screen. This information is used to form connections between projects to assist in navigation and discovery.
 
 Clicking on one of the technology types, will take the user to a page that lists the projects that produce that particular type of technology, along with the summary of their description and project logo (if specified).
+
+To configure technology types: 
+
+* Log into the PMI;
+* Navigate to the xref:pmi-project-page[project page];
+* Click btn:[Edit];
+* Open the section labelled _Categorisation, Relationships, and Tags_;
+* Select technology types from the list;
+* Click btn:[Save].
+
+You can also specify arbitrary tags and related projects (projects that share some link or synergy) in the _Categorisation, Relationships, and Tags_ section.
 
 [[pmi-releases]]
 === Releases and Reviews
@@ -246,13 +308,13 @@ digraph {
 
 A review record, however, does not require a release association. Some reviews are associated with proposals. Other have no other association (e.g. termination reviews).
 
-Each <<release,release>> has its own record in the database. Records are connected directly to a single specific project; a subset of release records associated with a project are displayed on the project page. An existing release can be edited in much the same was as a project. Any logged in project member (committer or project lead) can switch to the _Edit_ tab.
+Each xref:release[release] has its own record in the database. Records are connected directly to a single specific project; a subset of release records associated with a project are displayed on the project page. An existing release can be edited in much the same was as a project. Any logged in project member (committer or project lead) can switch to the _Edit_ tab.
 
-Create a single record for each release. *Do not create release records for milestones.* Enter milestone information in the _Plan_ information for your release.
+Create a single record for each release. **Do not create release records for xref:release-milestones[milestone builds]**. You may optionally enter milestone information in the xref:pmi-release-plan[Plan] information of a release record.
 
 [TIP]
 ====
-Use the <<pmi-commands-release, Create a new release>> command on a specific <<pmi-project-page, project page>> in the <<pmi,Project Management Interface (PMI)>> to create a new release record.
+Use the xref:pmi-commands-release[Create a new release] command on a specific xref:pmi-project-page[project page] in the xref:pmi[Project Management Interface (PMI)] to create a new release record.
 ==== 
 
 [[pmi-release-description]]
@@ -260,45 +322,21 @@ Use the <<pmi-commands-release, Create a new release>> command on a specific <<p
 
 Describe the release in the _Description_ section. The description should generally be a concise paragraph describing the focus of the release (e.g. adding certain functionality, fixing bugs, etc.) in a form that is appropriate in an aggregation (e.g. a page that displays the release information for all projects participating in an instance of the Simultaneous release). The description should provide enough information to encourage the reader to click the menu:find out more[] link.
 
-[[pmi-release-issues]]
-==== Issues
-
-The release record will automatically generate a list of targeted bugs.
-
-To populate this list:
-
-* Ensure that the Bugzilla _Product_ is set the to correct value in the project metadata;
-* Set the _target milestones_ in Bugzilla need to match the name of your release.
-
-[NOTE]
-====
-The matching algorithm tries to be as forgiving as possible, a release named `3.5`, `3.5.0`, or `3.5 (Luna)` will -- for example -- match target milestones named `3.5` ,`3.5M1`, `3.5 M2`, `3.5.0M3`, etc., but will not match `3.5.1`.
-====
-
-The bugs for all projects participating in the release will be included. Bugs are grouped by Bugzilla product and component.
-
 [[pmi-release-plan]]
 ==== Plan
 
-<<releases-plan,Project plan>> information belongs in the _Plan_ section. This information *should* generally be provided early in the development cycle to allow the various communities the ability to understand and participate in the release. It is expected that the plan will evolve over time. Note that all projects are required to provide a plan for each major and minor release (plans are not required service releases).
-
-[[pmi-release-milestones]]
-==== Milestones
-
-Enter the name, date, and optional description for each <<release-milestones,milestone>> expected with the release. 
-
-Projects should generally include more than one milestone build with each release. To include additional milestones, click the btn:[Add another item] button. Note that milestones can be dragged into the desired order. To remove a milestone, leave the _Name_ field blank.
+xref:releases-plan[Project plan] information belongs in the _Plan_ section. This information *should* generally be provided early in the development cycle to allow the various communities the ability to understand and participate in the release. It is expected that the plan will evolve over time. Note that all projects are required to provide a plan for each major and minor release (plans are not required service releases).
 
 [[pmi-review]]
 ==== Review
 
-The release record has a <<release-review,_Review_>> section that can be used to provide information for the associated review. If you provide information in the _Review_ section, the release record itself can be used as review documentation; no further documentation is required.
+The release record has a _Review_ section that can be used to provide information for an associated xref:progress-review[release review]. If you provide information in the _Review_ section, the release record itself can be used as review documentation; no further documentation is required.
 
 Each section on the review page includes a little help to describe the sort of information that you should provide.
 
 [NOTE]
 ====
-A review is not necessarily required for every release. A project team may declare official major or minor releases and distribute associated products for up to one year following a successful _<<release-review,release or progress review>>_ and reviews are never required for bug-fix/service releases. 
+A review is not necessarily required for every release. A project team may declare official major or minor releases and distribute associated products for up to one year following a successful xref:progress-review[progress review] and reviews are never required for bug-fix/service releases. 
 ====
 
 If a release requires a review, you can schedule one by clicking the menu:Schedule a review[] link. The drop-down list above the button contains  several options for review dates. Pick the one that works best for you.
@@ -319,7 +357,7 @@ This can make things a bit confusing when you want to make changes to the metada
 [[pmi-joining-a-simultaneous-release]]
 === Joining a Simultaneous Release
 
-A simultaneous release (also referred to as a _coordinated release_ or _release train_) is a means of grouping together projects that are coordinating their respective releases and need a means of representing the aggregation. Simultaneous releases must themselves coordinated and managed by supervising body (e.g., a PMC or working group specification committee). The rules for joining and participating in a simultaneous release are defined by the supervising body.
+A simultaneous release (also referred to as a _coordinated release_ or _release train_) is a means of grouping together projects that are coordinating their respective releases and need a means of representing the aggregation. Simultaneous releases must themselves coordinated and managed by supervising body (e.g., a xref:roles-pmc[PMC] or working group xref:specifications-committee[specification committee]). The rules for joining and participating in a simultaneous release are defined by the supervising body.
 
 [NOTE]
 ====
@@ -330,7 +368,7 @@ To create a simultaneous release record and update its contents, the supervising
 
 [TIP]
 ====
-The Eclipse Planning Council manages the https://wiki.eclipse.org/Category:SimRel[Eclipse IDE Simultaneous Release], and maintains the https://wiki.eclipse.org/SimRel/Simultaneous_Release_Requirements[participation rules] (in particular, see the https://wiki.eclipse.org/SimRel/Simultaneous_Release_Requirements#State_intent_early[process for joining]). 
+The Eclipse Planning Council manages the https://github.com/eclipse-simrel[Eclipse IDE Simultaneous Release], and maintains the https://github.com/eclipse-simrel/.github/blob/main/wiki/SimRel/Simultaneous_Release_Requirements.md[participation rules]. 
 ====
 
 [TIP]
@@ -341,7 +379,7 @@ The https://jakarta.ee/committees/specification/[Jakarta EE Specification Commit
 To join a simultaneous release, {aForgeName} project committer must
 
 1. Meet the requirements defined by the supervising body;
-2. Create a <<pmi-releases,release record>>:
+2. Create a xref:pmi-releases[release record]:
 * The record must include at least brief description of the release (that can be changed later); and
 * The date of the release should generally match that of the simultaneous release;
 3. The committer must then connect with the supervising body and the {emoEmailLink} to add their release record to the simultaneous release record.
@@ -361,17 +399,40 @@ Why doesn't a committer appear on the project's _Who's Involved_ page? ::
 For a committer to appear on a project's _Who's Involved_ page:
 +
 --
-. The new committer must be <<elections-committer,elected>> (or be listed as an initial committer on a <<starting-proposal,project proposal>>);
+. The new committer must be xref:elections-committer[elected] (or be listed as an initial committer on a xref:starting-proposal[project proposal]);
 . The election must complete successfully and be approved by the PMC;
-. The new committer must provide the required <<paperwork,paperwork>>;
+. The new committer must provide the required xref:paperwork[paperwork];
 . The paperwork must be processed by the EMO Records Team; and
-. The webmaster must create the committer account.
+. The Eclipse IT Team must create the committer account.
 --
 +
-Each piece takes time. If a committer doesn't appear some number of days after the successful completion of a committer election, then contact the committer to confirm that they've followed the provided instructions and have submitted committer paperwork. Then, connect with mailto:{emoEmail}[EMO] for assistance.
+Each piece takes time. If a committer doesn't appear some number of days after the successful completion of a committer election, then contact the committer to confirm that they've followed the provided instructions and have submitted committer paperwork. Then, connect with {emoEmailLink} for assistance.
 +
-If the new committer will be working with projects that use GitHub, they must be sure to add their GitHub Id to their <<contributing-account,Eclipse Foundation Account>> so that our scripts can add them to the GitHub Teams that we use to manage access to Eclipse Foundation repositories hosted on GitHub.
+If the new committer will be working with projects that use GitHub, they must be sure to add their GitHub Id to their xref:contributing-account[Eclipse Foundation Account] so that our scripts can add them to the GitHub Teams that we use to manage access to Eclipse Foundation repositories hosted on GitHub.
+
+Why doesn't a particular company's logo appear as an active member company? ::
+
+The _Overview_ and _Who's Involved_ pages in the PMI display xref:pmi-company-logos[company logos] in the _Active Member Companies_ section.
++
+Company logos are displayed automatically based on the contribution record. For a company logo to appear:
++
+--
+. The company must be a member of the Eclipse Foundation; 
+. The company must have provided the Eclipse Foundation with their logo via the {memberPortalUrl}[member company portal]; and
+. At least one developer who works for that company must have authored a commit within the last three months.
+--
++
+For this to work, the developer must use the email address that they've used to register their xref:contributing-account[Eclipse Foundation account] on the commit, and they must xref:contributing-account-member[identify their employer] in their Eclipse Foundation Account.
++
+[TIP]
+====
+If you are aware of any member company that meets this criteria and are not listed, please contact {emoEmailLink}. The problem is usually that the contributor is not correctly aligned with their organisation.
+====
 
 What is the difference between a _Committer_ and an _Historic Committer_? ::
 
-The _Who's Involved_ page lists committers and (in many cases) historic committers. Committers are those individuals who currently hold committer status (i.e., they can write to project resources). Historic committers are retired former committers. While they hold a special place in our hearts, they have no official status on the project. To turn an historic committer back into a committer, they must be <<elections-committer,re-elected>> to the project.
+The _Who's Involved_ page lists committers and (in many cases) historic committers. Committers are those individuals who currently hold committer status (i.e., they can write to project resources). Historic committers are retired former committers. While they hold a special place in our hearts, they have no official status on the project. To turn an historic committer back into a committer, they must be xref:elections-committer[re-elected] to the project.
+
+[[pmi-release-issues]] Where did the _Issues_ Tab go? ::
+
+This feature was deprecated and removed (see https://gitlab.eclipse.org/eclipsefdn/it/websites/projects.eclipse.org/-/issues/83[issue #83] for more information).

@@ -7,9 +7,6 @@
  * 
  * SPDX-FileType: SOURCE
  *
- * SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
- * SPDX-FileCopyrightText: 2015 Contributors to the Eclipse Foundation
- *
  * SPDX-License-Identifier: EPL-2.0
  */
 
@@ -20,6 +17,7 @@
 
 .imageblock img {
 	max-width: 100%;
+	height: auto;
 }
 #toc { border-bottom: 0 solid #dddddd; padding-bottom: 0.5em; }
 #toc > ul { margin-left: 0.13333em; }
@@ -51,7 +49,7 @@ div.admonitionblock td.icon div.title {
 
 div.admonitionblock div.title {
 	visibility: hidden;
-	width: 0;'
+	width: 0;
 }
 
 div.note td.icon {

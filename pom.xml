@@ -1,5 +1,5 @@
 <!--
- * Copyright (C) 2015,2021 Eclipse Foundation, Inc. and others. 
+ * Copyright (C) 2015 Eclipse Foundation, Inc. and others. 
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
@@ -21,19 +21,44 @@
 	<name>Eclipse Foundation Project Handbook</name>
 	<organization>
 		<name>Eclipse Dash Project</name>
+		<url>https://projects.eclipse.org/projects/technology.dash</url>
 	</organization>
 
 	<groupId>org.eclipse.dash</groupId>
 	<artifactId>org.eclipse.dash.handbook</artifactId>
-	<version>2021.12.08</version>
+	<version>2023.06.01</version>
+
+	<licenses>
+		<license>
+			<name>Eclipse Public License 2.0</name>
+			<url>https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.txt</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Wayne Beaton</name>
+			<organization>The Eclipse Foundation</organization>
+			<organizationUrl>https://eclipse.org</organizationUrl>
+		</developer>
+	</developers>
+
+	<scm>
+		<url>https://github.com/eclipse/dash-licenses</url>
+		<developerConnection>scm:git@gitlab.eclipse.org:eclipse/technology/dash/org.eclipse.dash.handbook.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+	<issueManagement>
+		<system>GitHub</system>
+		<url>https://gitlab.eclipse.org/eclipse/technology/dash/org.eclipse.dash.handbook/-/issues</url>
+	</issueManagement>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<asciidoctor.maven.plugin.version>2.1.0</asciidoctor.maven.plugin.version>
-		<asciidoctorj.version>2.4.1</asciidoctorj.version>
-		<asciidoctorj.diagram.version>2.0.2</asciidoctorj.diagram.version>
-		<asciidoctorj.pdf.version>1.5.3</asciidoctorj.pdf.version>
-		<jruby.version>9.2.13.0</jruby.version>
+		<asciidoctor.maven.plugin.version>2.2.4</asciidoctor.maven.plugin.version>
+		<asciidoctorj.version>2.5.8</asciidoctorj.version>
+		<asciidoctorj.diagram.version>2.2.8</asciidoctorj.diagram.version>
 	</properties>
 
 	<build>
@@ -45,11 +70,6 @@
 				<version>${asciidoctor.maven.plugin.version}</version>
 				<dependencies>
 					<dependency>
-						<groupId>org.jruby</groupId>
-						<artifactId>jruby-complete</artifactId>
-						<version>${jruby.version}</version>
-					</dependency>
-					<dependency>
 						<groupId>org.asciidoctor</groupId>
 						<artifactId>asciidoctorj</artifactId>
 						<version>${asciidoctorj.version}</version>
@@ -58,11 +78,6 @@
 						<groupId>org.asciidoctor</groupId>
 						<artifactId>asciidoctorj-diagram</artifactId>
 						<version>${asciidoctorj.diagram.version}</version>
-					</dependency>
-					<dependency>
-						<groupId>org.asciidoctor</groupId>
-						<artifactId>asciidoctorj-pdf</artifactId>
-						<version>${asciidoctorj.pdf.version}</version>
 					</dependency>
 				</dependencies>
 				<configuration>

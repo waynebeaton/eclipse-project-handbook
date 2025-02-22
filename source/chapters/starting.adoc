@@ -16,14 +16,23 @@
 [[starting]]
 == Starting an Open Source Project at the Eclipse Foundation
 
-Before getting started, it's important to know what is required of {aForgeName} project. The Eclipse Foundation will take ownership of many aspects of the project to ensure that the project and its assets are managed in an open and vendor-neutral manner. This takes the form, for example, of the Eclipse Foundation retaining ownership of the project's trademarks on behalf of the community, and carefully managing who has write access on project resources such as source code repositories and distribution channels. {forgeName} projects are obligated to use certain <<project-resources-and-services,resources>> assigned to the project by the Eclipse Foundation and conform to logo and trademark guidelines. New project sponsors must engage in the process of transitioning an existing project with the intent to continue development of the project code and growth of the community and ecosystem around the project.
+Before getting started, it's important to know what is required of {aForgeName} project. The Eclipse Foundation will take ownership of many aspects of the project to ensure that the project and its assets are managed in an open and vendor-neutral manner. This takes the form, for example, of the Eclipse Foundation retaining ownership of the project's trademarks on behalf of the community, and carefully managing who has write access on project resources such as source code repositories and distribution channels. {forgeName} projects are obligated to use certain xref:project-resources-and-services[resources] assigned to the project by the Eclipse Foundation and conform to logo and trademark guidelines. New project sponsors must engage in the process of transitioning an existing project with the intent to continue development of the project code and growth of the community and ecosystem around the project.
+
+[WARNING]
+====
+When you move your project to the Eclipse Foundation, it becomes an _Eclipse_ project. Specifically, it ceases to be _your_ project and becomes a vendor-neutral _community_ project that operates under the governance of the Eclipse Foundation.
+
+This means, for example, that the open source project name and the names of any products produced by the project will be trademarks (either registered or common-law) of the Eclipse Foundation and you are required to follow the same {trademarkGuidelinesUrl}[trademark guidelines] as everybody else when you refer to the project. If you were to, for example, contribute the "Woolsey" product to the Eclipse Foundation, you would be required to transfer all rights that you have to the name "Woolsey" to the Eclipse Foundation, and the use of the "Woolsey" name in your products, website, marketing materials, etc. would be then be subject to the trademark guidelines (you would be required to rename your products from "Woolsey" to "[Product Name] for Eclipse Woolsey" or similar).
+
+If the name important to your organisation, consider choosing a different name for the Eclipse open source project.
+====
 
 It's also important to know what new projects don't give up. The project team retains control of the project's direction by virtue of regular contribution to the project. The contributors to the project retain ownership of their contributions (those contributions are used under license by the project). Project leads are required to ensure that other individuals who present themselves to the project are given uniform opportunity to participate, but the project team gets to establish the rules for participation (within certain parameters). The project team is responsible for determining development methodology, establishing plans, etc. Existing owners of the project code retain their ownership.
 
 [[starting-proposal]]
 === Project Proposal
 
-{forgeName} open source projects start with a proposal that is made available to the community for review. At the end of the _community review_ period, we engage in a _creation review_, and then provision the project resources.
+{forgeName} open source projects start with a proposal that is made available to the community for review. At the end of the _community review_ period, we engage in a xref:release-creation[creation review], and then provision the project resources.
 
 [graphviz, images/starting_overview, svg]
 .An overview of the Project Creation Process
@@ -43,7 +52,6 @@ digraph {
 	node [shape=plaintext;fillcolor=transparent;fontsize=10]
 	approval [label="EMO\nApproval"]
 	trademark [label="Trademark\nReview"]
-	mentors [label="Mentors"]
 	paperwork [label="Committer\nPaperwork"]
 
 	// Stitch the key points together
@@ -52,41 +60,83 @@ digraph {
 	// Use grey lines to add in the things we need
 	edge [color=grey]
 	approval -> community
-	mentors -> review
 	trademark -> review
 	paperwork -> provision
 	
-	// Force the trademark and mentors boxes to
-	// be on either side of the main process points.
+	// Force the trademark box to
+	// be on the side of the main process points.
 	// Do this by creating invisible lines that would
 	// cross if they are on the same side.
 	node[style=invis] ic
 	edge [style=invis]
 	trademark -> ic
-	mentors->provision
 }
 ----
 
-Use the {createurl}[web form] to create a new project proposal. Instructions are provided on the form. All new proposals are created in _draft_ mode, and are accessible only by the original author and anybody designated as a project lead or committer in the proposal. Only those individuals designated as a project lead may edit the proposal.
+A proposal must minimally include a description of the project, a declaration of scope, and a list of initial members (project leads and committers) before we make it accessible to the public for _community review_.
 
-[NOTE]
-====
-Keep track of the URL of the proposal. The website does not provide public links to the document until after the proposal is opened for community review. If you do lose trck of the URL, ask mailto:{emoEmail}[the EMO] for assistance.
-====
+When you feel that the proposal is ready, send a note to the Eclipse Management Organization ({emoEmailLink}) requesting that the proposal be made available to the public for review. The EMO will review the proposal and may provide feedback before initiating the _community review_ period.
 
-A proposal must minimally include a description of the project, a declaration of scope, and a list of prospective members (project leads and committers) before we make it accessible to the public for _community review_.
-
-When you feel that the proposal is ready, send a note to the mailto:{emoEmail}[Eclipse Management Organization] (EMO) requesting that the proposal be made available to the public for review. The EMO will review the proposal and may provide feedback before initiating the _community review_ period.
-
-At the beginning of the _community review_ period, the EMO will announce the proposal on several channels (the {activityUrl}[Project Activity News] page, Twitter, the {proposalsForum}[Proposals Forum], blog post, and an email note to the Eclipse Foundation members and committers). The EMO will also open a record in the Eclipse Foundation's issue tracker -- an instance of Bugzilla -- to track the progress of the proposal; the proposal's author and project leads will be copied on that record.
+At the beginning of the _community review_ period, the EMO will announce the proposal on several channels (the {activityUrl}[Project Activity News] page, Twitter, blog post, and an email note to the Eclipse Foundation members and committers). The EMO will also open a record in the Eclipse Foundation's issue tracker -- an instance of GitLab -- to track the progress of the proposal; the proposal's author, and project leads will be copied on that record.
 
 A proposal will be open for community review for a minimum of two weeks.
 
-The Eclipse Foundation holds the _trademark_ for all {forgeName} projects. Trademark assignment is undertaken prior to the creation of any new project. If you already have a trademark on your project name, that trademark must be assigned to the Eclipse Foundation. Be advised that trademark assignment can be a time-consuming process (it can take hours, days, or weeks depending on the circumstances surrounding the name). If you currently hold the trademark, you will be asked to complete a {trademarkTransferUrl}[Trademark Transfer Agreement].
+[[starting-proposal-document]]
+=== Project Proposal Document
 
-The proposal must list at least one mentor from the Eclipse Architecture Council. Members of the Eclipse Architecture Council have considerable experience with Eclipse Foundation practices, and the {edpLink}. The EMO will engage directly with the Architecture Council to identify mentors as necessary. Mentors are assigned to the project through the incubation phase; they are released from their duties when the project <<release-graduation,graduates>>.
+Use the {createUrl}[web form] to create a new project proposal. 
 
-When the project name trademark has been secured, a mentor has been identified, and the proposal contents are finalized, the EMO will schedule a _creation review_. Reviews -- which run for a minimum of one week -- are scheduled twice a month, generally concluding on the first and third Wednesday of each month. The creation review may overlap with the _community review_ period.
+Instructions are provided on the form. All new proposals are created in _draft_ mode, and are accessible only by the original author and anybody designated as a project lead or committer in the proposal. Only those individuals designated as a project lead may edit the proposal.
+
+[NOTE]
+====
+Keep track of the URL of the proposal. The website does not provide public links to the document until after the proposal is opened for community review. If you do lose track of the URL, ask {emoEmailLink} for assistance.
+====
+
+When making the decision to initiate the xref:release-creation[creation review] that will turn the project proposal into {aForgeName} open source project, the EMO will consider the following:
+
+Scope :: Does the project have a technology scope and focus which will have a reasonable likelihood of success? Projects that are too big will definitely fail; projects that are too small are unlikely to be interesting.
++
+[TIP]
+====
+Write the project scope and description in the present tense (refer to the project as though it already exists). Think of the scope and description as timeless: they should be meaningful today and ten years from now. Be concise: start with a single sentence that summarises the intention of the project in broad terms. A scope of three to five sentences in total is ideal.
+====
+
+Clear and Concise Description :: If the community found any aspects of the proposal confusing, unclear, or using unfamiliar jargon, those areas must be clarified. This is a hard and fast requirement: because the Eclipse community must be able to evaluate the proposal. To do that, they must be able to understand the proposal and thus it must be clear and straightforward and free of marketing-speak.
+
+Specifications :: If the project will develop xref:specifications[specifications], then those specifications must be developed under the {efspUrl}[Eclipse Foundation Specification Process]. Specification development requires that the project be aligned with a single working group, designated in the _Is this a specification project?_ field. If you're not sure what working group to select, or the target working group is not in the list, contact the {emoLink}.
++
+[NOTE]
+====
+In their January 2020 meeting, the Eclipse Foundation's Board of Directors passed this resolution:
+
+_RESOLVED, that the Board instructs the EMO to ensure as quickly as practical that all Eclipse Foundation projects which deliver specifications do so under the auspices of the Eclipse Foundation Specification Process (EFSP)._
+====
++
+If the project will implement specifications, indicate this in the scope and description.
+
+Committers :: The xref:release-creation[creation review] serves as the new xref:elections-committer[committer election] for the initial Committers and thus the proposal must contain the same level of nomination justification and background as an election would. The committer biographies don't have to be long or involved, but they should describe each committer's relationship to and history with the incoming code, and/or involvement with the area or technologies covered by the proposal.
++
+[NOTE]
+====
+We require that all committers review the {committerGuidelinesUrl}[Eclipse Committer Due Diligence Guidelines]. Further, all committers must be covered by a xref:paperwork[committer agreement] which requires committers to agree to work under various policies, including the {ipPolicyUrl}[Eclipse Foundation's IP Policy]. The EMO staff will help committers determine what specific agreements need to be signed as part of xref:starting-provisioning[project provisioning].
+====
++
+The project must have sufficient committed developers to achieve its goals. The Eclipse Foundation is not a place to "abandon in public" code; rather, the Eclipse Foundation strives to have active projects with active communities and thus enough developers to move the project along.
+
+Communities :: Does the project have a community of contributors and users, outside the core developers, who are willing to work towards making this a success? This is a bit of a Catch-22 situation because it is sometimes hard to attract a community before any milestones or releases, but it is also true that projects with limited developers and even fewer users tend not to have much technical impact.
+
+Collaborations :: Successful Eclipse projects are those that collaborate with existing Eclipse, or other open source, projects. Again, it can be hard to start a collaboration before demonstrating the technology, but at the same time it is never too early to start discussing collaborations with other projects. Additionally, it never hurts to join and help an existing project to start establishing those social networks that will make future collaborations on the new project possible.
+
+Sufficient Time for the Community :: Project proposals are held in community review for a minimum of two weeks. Anything less than two weeks of general accepted business days does not give the Eclipse membership sufficient notice of new initiatives.
+
+Diversity :: Is this a single company project or a multi-organization effort? If all the committers and contributors are in the same organisation or have financial ties to the same organisation, the project is at a greater risk of being de-staffed. Brand new projects are not required to be diverse, but projects cannot graduate from the xref:incubation[incubation phase] without appropriate diversity.
+
+Trademarks :: The Eclipse Foundation holds the _trademark_ for all {forgeName} projects. Trademark assignment is undertaken prior to the creation of any new project. If you already have a trademark on your project name, that trademark must be assigned to the Eclipse Foundation. Be advised that trademark assignment can be a time-consuming process (it can take hours, days, or weeks depending on the circumstances surrounding the name). If you currently hold the trademark, you will be asked to complete a {trademarkTransferUrl}[Trademark Transfer Agreement].
+
+[#starting-creation-review]
+
+When the project name trademark has been secured and the proposal contents are finalised, the EMO will schedule a xref:release-creation[creation review].
 
 [NOTE]
 ====
@@ -98,30 +148,23 @@ Creation reviews tend to always be successful. They should be considered low str
 
 Following a successful creation review, the EMO will initiate the provisioning process. 
 
-Provisioning starts with an email message being sent to each of the committers listed on the project proposal with instructions on how to engage in the <<paperwork,committer paperwork>> process. The exact nature of that paperwork depends on several factors, including the employment status of the individual and the Eclipse Foundation membership status of their employer.
+Provisioning starts with an email message being sent to each of the committers listed on the project proposal with instructions on how to engage in the xref:paperwork[committer paperwork] process. The exact nature of that paperwork depends on several factors, including the employment status of the individual and the Eclipse Foundation membership status of their employer.
 
 [NOTE]
 ====
-The provisioning process will not start until after the paperwork for at least one project committer is received and processed by the EMO Records Team. If you can be ready with the paperwork in time for the completion of the creation review, then we can move quickly through the provisioning process. 
+The provisioning process will not start until after the xref:paperwork[committer agreement] for at least one project committer is received and processed by the EMO Records Team. If you can be ready with the paperwork in time for the completion of the creation review, then we can move quickly through the provisioning process. 
 
 When we initiate provisioning, committers will be sent an email with instructions; please don't send any paperwork in until after you receive those instructions.
 ====
 
-When the paperwork is received and processed for one committer, the Eclipse Webmaster will begin the resources provisioning process. When that process is complete, the Eclipse Webmaster will provide information regarding the nature and coordinates of the various  <<project-resources-and-services,resources and services>> available to the project.
+When the paperwork is received and processed for one committer, the Eclipse IT Team will begin the resources provisioning process. When that process is complete, the Eclipse IT Team will provide information regarding the nature and coordinates of the various  xref:project-resources-and-services[resources and services] available to the project.
 
 [[starting-after-provisioning]]
 === After Provisioning
 
-Before pushing any code into an official {forgeName} project repository, the project team must submit the project's <<ip-initial-contribution,_initial contribution_>> of project code and wait for the Eclipse Intellectual Property (IP) Team to grant `checkin` of that contribution. 
+Before pushing any code into an official {forgeName} project repository, the project team must submit the project's _xref:ip-initial-contribution[initial contribution]_ of project code and wait for the Eclipse Intellectual Property (IP) Team to grant `checkin` of that contribution. 
 
-Project teams interact with the Eclipse IP Team via the <<ip-ipzilla,IPZilla>> system using <<ip-cq,Contribution Questionnaires>> (CQs). Those members of the project team that are included in the CQ's _CC_ list will be informed of progress via email.
-    
-[WARNING]
-====
-The IP Team will indicate check-in permission by adding the `checkin` keyword and final approval by setting the state of the CQ to `approved`. *Do not* push any code into the project repository until after the Eclipse IP Team has indicated that you are ready to do so.
-====
-
-<<ip-third-party,Third-party content>> that is required by the project code must also be reviewed by the Eclipse IP Team. Project teams that are new to the process should start by raising no more than three CQs for third-party content in order to gain an understanding of the third-party review process before proceeding to enter all requests.
+xref:ip-third-party[third party content] that is required by the project code must also be reviewed by the Eclipse IP Team. 
 
 [graphviz, images/post-creation, svg]
 .Post creation activities
@@ -154,16 +197,16 @@ digraph {
 }
 ----
 
-After the project code is pushed into the project repository, the project team can create and distribute _milestone_ builds for the first release. However, all intellectual property must be approved by the Eclipse IP Team before the project team can issue any official <<release,releases>>.
+After the project code is pushed into the project repository, the project team can create and distribute _milestone_ builds for the first release. However, all intellectual property must be approved by the Eclipse IP Team before the project team can issue any official xref:release[releases].
 
 [[starting-project-phases]]
 === Project Phases
 
-{forgeName} projects move through various phases. Projects in active phases (incubation or mature) engage in all the normal sorts of development activies: project committers write code, run builds, release software, court contribution, and seek to convert contributors into committers. All new projects start in the _incubation phase_. Projects tend to stay in the incubation phase for a few months (varies depending on the nature and composition of the project) and then move into the mature phase. 
+{forgeName} projects move through various phases. Projects in active phases (xref:incubation[incubation] or mature) engage in all the normal sorts of development activities: project committers write code, run builds, release software, court contribution, and seek to convert contributors into committers. All new projects start in the _incubation phase_. Projects tend to stay in the incubation phase for a few months (varies depending on the nature and composition of the project) and then move into the mature phase. 
 
 
 [graphviz, images/phases, svg]
-.An overview of the Project lifecycle Phases
+.An overview of the Project life cycle Phases
 ----
 digraph {
 	// Graph properties
@@ -190,47 +233,25 @@ digraph {
 }
 ----
 
-Key project lifeycle events are gated by reviews; moving from the incubation phase to the mature phase must be, for example, preceded by a <<release-graduation,graduation review>>.
+Key project life cycle events are gated by reviews; moving from the incubation phase to the mature phase must be, for example, preceded by a xref:release-graduation[graduation review].
 
 [[starting-incubation]]
 ==== Incubation Phase
 
-A project in the incubation phase is said to be _incubating_.
+A project in the xref:incubation[incubation phase] is said to be _incubating_.
 
-The classification of a project in the incubation phase is not a statement about the quality of the project's code; rather, the incubation phase is more about the project team's progress in practicing the open and transparent processes described by the {edpLink} to establish the three communities (developers, adopters, and users) around the project.
+The classification of a project in the incubation phase is not a statement about the quality of the project's code; rather, the incubation phase is more about the project team's progress in practising the open and transparent processes described by the {edpLink} to establish the three communities (developers, adopters, and users) around the project.
 
 Incubating projects are encouraged to produce milestone builds, make releases, and grow their community.
 
-When the project code is ready (e.g. stable APIs) and the project team has learned to operate as an open source project according to the {edpLink}, the project may opt to _graduate_ (via <<release-graduation,graduation review>> into the _mature phase_.
-
-[[starting-incubation-branding]]
-===== Incubation branding
-
-In order to alert potential consumers of the incubating nature, projects in the incubation phase must include _incubation branding_. 
-
-.The Incubation Logo
-image::images/incubating.png[width=200px]
-
-The project team must:
-
-* Display the incubation logo on their project web page (if they have one);
-* Display the incubation logo on their project's primary download page;
-* Include the word "incubation" in the filename of all downloadable files (when technically feasible) for builds and milestones; and
-* When technically feasible, include the word "incubation" in features (e.g. about dialogs, feature lists, and installers).
-
-There are no incubation branding requirements for general user interface elements.
-
-[NOTE]
-====
-For projects that produce OSGi artifacts, include the word "incubation" in the _Bundle-Name_, feature names, and p2 repositories. The word "incubation" should not be included in technical namespaces (especially when it may result in confusion when the project leaves incubation). e.g. an OSGi bundle's _Bundle-SymbolicName_, or a Java package name.
-====
+When the project code is ready (e.g. stable APIs) and the project team has learned to operate as an open source project according to the {edpLink}, the project may opt to _graduate_ (via xref:release-graduation[graduation review]) into the _mature phase_.
 
 [[starting-mature]]
 ==== Mature Phase
 
 Most of the lifetime of {aForgeName} project is spent in the mature phase. A mature project is one that:
 
-* Is a good open source citizen with open, transparent, and meritocratic behavior;
+* Is a good open source citizen with open, transparent, and meritocratic behaviour;
 * Regularly and predictably releases IP clean extensible frameworks and exemplary tools; and
 * Actively nurtures the three communities: developers, adopters, and users.
 
@@ -244,24 +265,60 @@ When a project has reached its logical conclusion, its resources are archived. T
 
 [qanda]
 
+Can we keep the project proposal in draft form (private) until a certain date? ::
+
+Yes. You can ask the EMO to keep a proposal private until you a ready.
+
+Can we create the project right now? Do we have to wait? ::
+
+Our process requires that a proposal be made available for community review (and review by our members) for a minimum of two weeks. The required xref:release-creation[creation review] requires one full week. In exceptional circumstances, we can overlap the community review and creation review, meaning that the best we can do for project creation is two weeks. Timely responses to our queries will help: we cannot for example, create a project until after we have transferred applicable trademarks and domains.
+
+Can we delay the creation review? ::
+
+Our practice is to move as quickly as we can, so the EMO will do its best to schedule a xref:release-creation[creation review] as quickly as possible. We can, however, hold off scheduling a creation review until you and the community are ready.
+
+[[starting-component]] Do I have to create an entirely new project? Can I extend an existing project? ::
+
+If new functionality falls within the scope of an existing project, then it may make sense to instead create a component within the project. Components are an informal concept for {forgeName} open source projects; the notion of a component generally manifests as a separate Git repository with access to that repository managed via social convention. 
++
+All project committers have uniform write access to all project resources, which means that when a new component is added to a project everybody who already has push access to the Git repositories already in that project can also push to the new component's Git repository.
++
+Different components within a project can be built separately, but they generally release on a shared schedule with shared release reviews (although there is some precedent for projects releasing different components separately).
++
+A component may be the right choice if the new functionality:
++
+--
+- Is within the scope of the project;
+- Shares the same licensing of the project;
+- Can reasonably share the development schedule of the project; and/or
+- Will be delivered alongside other project functionality.
+--
++
+You might instead choose to create a new project if the new functionality:
++
+--
+- Does not reasonably fall within the scope of an existing project (and an existing scope cannot be reasonably changed to accommodate);
+- Absolutely must be delivered on a separate schedule;
+- Must be delivered independently (i.e. a completely separate downloads area is required);
+- Has different licensing requirements; and/or
+- Would benefit from separate branding.
+--
+
 Why are some committer (but not all) names rendered as links on project proposal pages? ::
 
-When the list of committers provided for a new project proposal are rendered, a link to more information for each individual committer will be included when possible. The link will render, for example, when an individual already has a role on another existing Eclipse open source project (e.g. is a committer, project lead, PMC member, etc.). No link indicates that no existing project relationships exist for that individual.
-
-How do I find Eclipse Architecture Council mentors? ::
-
-You don't have to find them yourself. Focus on the content of the proposal. We can solicit mentors from the Eclipse Architecture Council after the proposal has been opened for community review.
+When the list of committers provided for a new project proposal are rendered, a link to more information for each individual committer will be included when possible. The link will render, for example, when an individual already has a role on another existing Eclipse open source project (e.g. is a xref:roles-cm[committer], xref:roles-pl[project lead], xref:roles-pmc[Project Management Committee] (PMC) member, etc.). No link indicates that no existing project relationships exist for that individual.
 
 What license(s) can I use for my project? ::
-{forgeName} top level projects define the standard licensing for their projects. When a project has nonstandard licensing requirements, they may need to make an appeal to the Eclipse board of directors to request their approval. Connect with mailto:{emoEmail}[EMO] for assistance.
+
+{forgeName} top level projects define the standard licensing for their projects. When a project has nonstandard licensing requirements, they may need to make an appeal to the Eclipse board of directors to request their approval. Connect with {emoEmailLink} for assistance.
 
 Can I change the proposal after it is posted? ::
 
-Yes. The proposal can be changed any time before the start of the creation review.
+Yes. The proposal can be changed any time before the start of the xref:release-creation[creation review].
 
 When do I submit my code for review by the IP team? ::
 
-Submit your code (initial contribution) for review after the project has been provisioned. The Eclipse Webmaster will let you know when provisioning is complete.
+Submit your code (initial contribution) for review after the project has been provisioned. The EMO will let you know when provisioning is complete.
 
 Does the new project have to use Git? ::
 
@@ -269,7 +326,7 @@ Yes. Git is the only source code management system that is currently permitted f
 
 Can I host my project code on GitHub? ::
 
-{forgeName} projects can make use of <<resources-github,GitHub>>. Official project repositories must be hosted under an Eclipse Foundation-managed organization at GitHub. Official repositories are subject to the same intellectual property due diligence rules and processes that all Eclipse project repositories must follow. 
+{forgeName} projects can make use of xref:resources-github[GitHub]. Official project repositories must be hosted under an Eclipse Foundation-managed organisation at GitHub. Official repositories are subject to the same intellectual property due diligence rules and processes that all Eclipse project repositories must follow. 
 
 How long should I let my project incubate? ::
 
@@ -278,7 +335,13 @@ It depends. Community expectations are one factor. Team experience with open sou
 Does the mature project code that I'm bring to {forgeName} need to incubate? ::
 
 Yes. All new projects start in the incubation phase. Remember that incubation is as much about the project team learning about how to operate as an open source project as it is about the project code. Project teams that "get it" can opt to exit incubation quickly (e.g. with their first release) if that makes sense for the team and the community.
-	
-What do all these terms (e.g. EMO) mean? ::
 
-Please see the <<glossary,glossary>>.
+If Eclipse Projects are vendor neutral, then why do code headers assign copyright to various vendors? ::
+
+Eclipse projects are required to follow the xref:preamble-principles[Open Source Rules of Engagement] and operate in a vendor neutral manner. This is different from copyright. Eclipse projects operate using a symmetrical licensing scheme by which contributors (or, very often, their employers) retain the copyright of their contributions, but license them to the Eclipse Foundation who, in turn, licenses those contributions to adopters under the same terms.
++
+Contributors retain their copyright and express that copyright via xref:ip-copyright-headers[file headers].
+
+What do all these terms (e.g., EMO) mean? ::
+
+Please see the xref:glossary[glossary].

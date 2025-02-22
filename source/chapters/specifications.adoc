@@ -16,7 +16,12 @@
 [[specifications]]
 = Specifications
 
-The {efspUrl}[Eclipse Foundation Specification Process] (EFSP) defines a means of creating specifications in open source. The EFSP defines specifications as a “... collection of Application Programming Interface (API) definitions, descriptions of semantic behavior, data formats, protocols, and/or other referenced specifications, along with its TCK, intended to enable the development and testing of independent Compatible Implementations.” 
+The {efspUrl}[Eclipse Foundation Specification Process] (EFSP) defines a means of creating specifications in open source. The EFSP defines specifications as a “... collection of Application Programming Interface (API) definitions, descriptions of semantic behaviour, data formats, protocols, and/or other referenced specifications, along with its TCK, intended to enable the development and testing of independent Compatible Implementations.” 
+
+[TIP]
+====
+For more information about specification development at the Eclipse Foundation, see the {efspOperationsUrl}[Eclipse Foundation Specification Process Operations Guide]. 
+====
 
 Under the EFSP, all specification work must be done in a designated specification project. Specification projects operate according to the {edpLink} (EDP), just like "regular" Eclipse open source projects, but with special consideration for the intellectual property management differences that are inherent in specification development. Specifically, the flow of intellectual property license grants is a critical difference between open source software development and open source specification development that is addressed by the EFSP. Due to these differences in the intellectual property license grants, specification project committers must be covered by additional legal agreements and must engage in additional governance steps. 
 
@@ -29,7 +34,7 @@ Individual working groups may add requirements for specification projects over a
 
 == Specification Project Reviews
 
-The EDP defines a number of lifecycle reviews for Eclipse projects. All projects start with a creation review, but the most common type is the release review. In addition to those reviews defined by the EDP, the EFSP further defines plan reviews. 
+The EDP defines a number of life cycle reviews for Eclipse projects. All projects start with a xref:specifications-creation[creation review], but the most common type is the release review. In addition to those reviews defined by the EDP, the EFSP further defines plan reviews. 
 
 [graphviz, images/spec-release-review, svg]
 .Release review work flow
@@ -40,17 +45,17 @@ digraph {
 	
 	// Nodes that define the key points in the process
 	node [shape=box;style=filled;fillcolor=white;fontsize=12;width=2]
-	doc [label="Review\nDocumentation", group=g1]
+	doc [label="Prepare Review\nDocumentation", group=g1]
 	pmc [label="PMC\nApproval", group=g1]
-	ipteam [label="IP Log Approval\n(IP Team)", group=g2]
+	emo [label="EMO Approval", group=g2]
 	ballot [label="Specification Committee\nBallot", group=g3]
 	start [label="Start\Review", group=g3]
 	end [label="End\nRelease Review", group=g3]
 	publish [label="Publish Release", group=g3]
 	
 	doc -> start
-	pmc -> start
-	ipteam -> start
+	pmc -> end
+	emo -> end
 	ballot -> end
 	start -> end -> publish
 }
@@ -61,20 +66,20 @@ Specification project teams engage in reviews in the same manner as all Eclipse 
 * Prior to starting the release cycle, a specification team must engage in a successful plan review;
 * Specification project teams must engage in a release review prior to every release (including service releases);
 * Following a successful plan review, the project team must engage in either a release review or a progress review within one year; and
-* All creation, plan, release, and progress reviews require super-majority approval from the corresponding working group’s specification committee.
+* All creation, plan, release, and progress reviews require supermajority approval from the corresponding working group’s specification committee.
 
 [NOTE]
 ====
-Individual working groups may have additional requirements for some lifecycle events, and guidance for engaging in working group-specific processes. Those additional requirements will be captured and disseminated by the working group.
+Individual working groups may have additional requirements for some life cycle events, and guidance for engaging in working group-specific processes. Those additional requirements will be captured and disseminated by the working group.
 ====
 
-Super-majority approval of a particular review is obtained via a ballot that is initiated and tallied by the specification committee (typically by the specification committee chair or their designate).
+Supermajority approval of a particular review is obtained via a ballot that is initiated and tallied by the specification committee (typically by the specification committee chair or their designate).
 
-The process described in the <<release-review, Progress and Release Reviews>> section is the same for specification projects.
+The process described in the xref:progress-review[Progress Reviews] (which are the same as release reviews) section is the same for specification projects.
 
 [TIP]
 ====
-In the lead up to a review, it is in the best interests of a specification project team to engage with the specification committee in their designated community/public channel to socialize plans and expectations. You must get super-majority approval from the specification committee before you can make an official release of your specification, so giving them every opportunity to understand and provide feedback on what they’ll be voting on is in your best interests. Besides, operating in an open and transparent manner is a critical success criteria for all open source projects.
+In the lead up to a review, it is in the best interests of a specification project team to engage with the specification committee in their designated community/public channel to socialise plans and expectations. You must get supermajority approval from the specification committee before you can make an official release of your specification, so giving them every opportunity to understand and provide feedback on what they'll be voting on is in your best interests. Besides, operating in an open and transparent manner is a critical success criteria for all open source projects.
 ====
 
 [[specifications-ip]]
@@ -84,14 +89,14 @@ An important part of the specification process is the management of intellectual
 
 Patent grants flow into a specification process through the committers. That is, the project committers (or, more likely, their employers) grant a patent license for any committed essential claim as described in the Eclipse IP Policy.   Those patent grants are “locked in” whenever a specification project engages in a successful progress or release review. So, by virtue of holding committer status on a specification project at the time of successful completion of a progress or release review, license grants for those patents represented by the committer are locked into the specification project.
 
-Those grants flow out of the project to a compatible implementation through the ratified final specification (as defined by the EFSP). That is, when an implementation of a specification is based on a final specification (i.e., the implementation implements all non-optional elements of the final specification, does not extend the API, and fulfills all the requirements of the corresponding TCK), those committed patent grants flow to the implementer.
+Those grants flow out of the project to a compatible implementation through the ratified final specification (as defined by the EFSP). That is, when an implementation of a specification is based on a final specification (i.e., the implementation implements all non-optional elements of the final specification, does not extend the API, and fulfils all the requirements of the corresponding TCK), those committed patent grants flow to the implementer.
 
 To be clear, a compatible implementation must be based on a final specification (not, for example, the specification document source or a milestone build).
 
 [[specifications-participant-committers]]
 == Participant Representative Committers
 
-All participant members of the working group that do not already have committer representation on a specification project may appoint one. The intent behind the notion of a participant representative is to ensure continuity of the flow of intellectual property grants when an participating organization is found to be without representation. 
+All participant members of the working group that do not already have committer representation on a specification project may appoint one. The intent behind the notion of a participant representative is to ensure continuity of the flow of intellectual property grants when an participating organisation is found to be without representation. 
 
 [TIP]
 ====
@@ -100,7 +105,7 @@ There is no specific rule in this regard, but it considered good form to inform 
 
 Following their appointment, participant representatives become indistinguishable from other committers on a specification project. As such, following appointment, participant representative committers are subject to the same rules as any other committer: they do not hold any special status or formal role beyond that of committer once appointed, and they retain their committer status if they change employers. 
 
-An organization’s specification committee representative may send a note to mailto:{emoEmail}[EMO] with a request to appoint a participant representative.
+An organisation’s specification committee representative may send a note to {emoEmailLink} with a request to appoint a participant representative.
 
 [[specifications-contributors]]
 == Contributors
@@ -115,16 +120,16 @@ include::diagrams/specifications-contributors.dot[]
 
 To become a contributor, an individual must:
 
-. Create an <<contributing-account,Eclipse Foundation account>>;
-. Sign the <<contributing-eca,Eclipse Contributor Agreement>> (ECA);
+. Create an xref:contributing-account[Eclipse Foundation account];
+. Sign the xref:contributing-eca[Eclipse Contributor Agreement] (ECA);
 . Contribute! (submit a pull request)
 
 [NOTE]
 ====
-If you are already a committer, your committer agreement includes an ECA; so you’re already covered. If your employer is a member of the Eclipse Foundation and your employer has signed the <<paperwork-mcca,Member Committer and Contributor Agreement>> (MCCA), then you’re already covered. You can check your status on the <<contributing-account, Eclipse Foundation account>> page (your ECA status is in the top-right corner). If you’re not sure contact mailto:{emoRecordsEmail}[EMO Records] for assistance.
+If you are already a committer, your committer agreement includes an ECA; so you’re already covered. If your employer is a member of the Eclipse Foundation and your employer has signed the xref:paperwork-mcca[Member Committer and Contributor Agreement] (MCCA), then you’re already covered. You can check your status on the xref:contributing-account[Eclipse Foundation account] page (your ECA status is in the top-right corner). If you’re not sure contact the {emoRecordsEmailLink} for assistance.
 ====
 
-Regular contributors of high quality content shoul be invited to join the specification project team as a committer (via <<elections-committer, committer election>>).
+Regular contributors of high quality content should be invited to join the specification project team as a committer (via xref:elections-committer[committer election]).
 
 [[specifications-committers]]
 == Committers
@@ -135,13 +140,13 @@ Committer status is assigned on a project-by-project basis. That is, individuals
 
 [TIP]
 ====
-In order to get committer rights on project repositories hosted on GitHub, you need to set your GitHub Id in your <<contributing-account,Eclipse Foundation account>>.
+In order to get committer rights on project repositories hosted on GitHub, you need to set your GitHub Id in your xref:contributing-account[Eclipse Foundation account].
 ====
 
 [[specifications-agreements]]
 === Specification Development Agreements
 
-Due to the nature of specification project work, the <<paperwork, committer agreements>> need to be augmented. For {forgeName} open source software projects (i.e., those projects not engaged in specification development) the committer agreements (Member Committer and Contributor Agreement and Individual Committer Agreement) are sufficient. The complete set of required agreements are described below.
+Due to the nature of specification project work, the xref:paperwork[committer agreements] need to be augmented. For {forgeName} open source software projects (i.e., those projects not engaged in specification development) the committer agreements (Member Committer and Contributor Agreement and Individual Committer Agreement) are sufficient. The complete set of required agreements are described below.
 
 [NOTE]
 ====
@@ -150,16 +155,16 @@ Specific agreements need only be signed once. If you've already signed the agree
 
 A committer who is self-employed, unemployed, or a student needs:
 
-* <<specifications-iwgpa, Individual Working Group Participation Agreement>> (IWGPA), which includes:
+* xref:specifications-iwgpa[Individual Working Group Participation Agreement] (IWGPA), which includes:
 ** Membership Agreement as a Committer Member, no dues
 ** Individual Committer Agreement
 
 A committer whose employer is either not an Eclipse Foundation Member; or is an Eclipse Foundation Member that is not a participant in the working group needs the following agreements:
 
-* <<specifications-iwgpa, Individual Working Group Participation Agreement>> (IWGPA), which includes:
+* xref:specifications-iwgpa[Individual Working Group Participation Agreement] (IWGPA), which includes:
 ** Membership Agreement as a Committer Member, no dues
 ** Individual Committer Agreement
-** <<specifications-consent, Employer Consent Agreement for Eclipse Specification Projects>> (“Consent Agreement”)
+** xref:specifications-consent[Employer Consent Agreement for Eclipse Specification Projects] (“Consent Agreement”)
 
 A committer who works for an Eclipse Foundation Member that is a working group participant needs:
 
@@ -173,11 +178,11 @@ The Eclipse Foundation’s committer provisioning process is automated. As a new
 [[specifications-wgpa]]
 === Working Group Participation Agreement
 
-A Working Group Participation Agreement (WGPA) is signed by an organization that wishes to participate in a particular working group. By signing the Working Group Participation Agreement (WGPA), an organization agrees to become a participant of the working group and to adhere to the terms outlined in by the working group’s charter. 
+A Working Group Participation Agreement (WGPA) is signed by an organisation that wishes to participate in a particular working group. By signing the Working Group Participation Agreement (WGPA), an organisation agrees to become a participant of the working group and to adhere to the terms outlined in by the working group’s charter. 
 
-WGPAs are working group specific; signing the agreement for a particular working group covers the employees of the organization operating in a committer role on one or more specification projects operating under the purview of that working group’s specification committee. 
+WGPAs are working group specific; signing the agreement for a particular working group covers the employees of the organisation operating in a committer role on one or more specification projects operating under the purview of that working group’s specification committee. 
 
-Participation in a working group requires that the organization commit to being a member of the Eclipse Foundation (at a level defined by the working group’s charter) and to commit to the terms of the <<paperwork-mcca, Member Committer and Contributor Agreement>> (MCCA).  Both of these commitments are explicitly made as part of the organization signing the WGPA. 
+Participation in a working group requires that the organisation commit to being a member of the Eclipse Foundation (at a level defined by the working group’s charter) and to commit to the terms of the xref:paperwork-mcca[Member Committer and Contributor Agreement] (MCCA).  Both of these commitments are explicitly made as part of the organisation signing the WGPA. 
 
 [[specifications-iwgpa]]
 === Individual Working Group Participation Agreement
@@ -186,7 +191,7 @@ An Individual Working Group Participation Agreement (IWGPA) is signed by an indi
 
 Like WGPAs, IWGPAs are working group specific; signing the agreement for a particular working group covers the individual to operate in a committer role on one or more specification projects that operate under the purview of that working group’s specification committee. 
 
-Participation in a working group requires that the individual commit to being a committer member (there are no fees associated with being a committer member) of the Eclipse Foundation and to commit to the terms of the <<paperwork-ica, Individual Committer Agreement>> (ICA).  Both of these commitments are explicitly made as part of the individual signing the IWGPA. 
+Participation in a working group requires that the individual commit to being a committer member (there are no fees associated with being a committer member) of the Eclipse Foundation and to commit to the terms of the xref:paperwork-ica[Individual Committer Agreement] (ICA).  Both of these commitments are explicitly made as part of the individual signing the IWGPA. 
 
 [[specifications-consent]]
 === Employer Consent Agreement for Eclipse Specification Projects
@@ -196,16 +201,16 @@ The Employer Consent Agreement for Eclipse Foundation Specification Projects ("E
 [[specifications-efsl]]
 == Eclipse Foundation Specification License
 
-The Eclipse Foundation takes copyright ownership of the specification document of every ratified Final Specification. By asserting copyright ownership on the specification documents, the Eclipse Foundation has the ability to protect the specifications in the event that a third-party fails to follow the terms of the Eclipse Foundation Specification License.
+The Eclipse Foundation takes copyright ownership of the specification document of every ratified Final Specification. By asserting copyright ownership on the specification documents, the Eclipse Foundation has the ability to protect the specifications in the event that a third party fails to follow the terms of the Eclipse Foundation Specification License.
 
 The Eclipse Foundation Specification License is applied to the specification documents for all ratified final specifications. This action  ensures that derivative works of those specification documents cannot be created, thus preventing their use as the basis for incompatible implementations.
 
 [[specifications-lifecycle]]
-== Specification Project Lifecycle
+== Specification Project Life Cycle
 
-Like regular Eclipse open source projects, a specification project starts life as a <<starting-proposal,proposal>> with a description, scope, list of committers, and more; goes through an iterative development cycle that produces one or more milestone builds; and then engages in a release process.
+Like regular Eclipse open source projects, a specification project starts life as a xref:starting-proposal[proposal] with a description, scope, list of committers, and more; goes through an iterative development cycle that produces one or more milestone builds; and then engages in a release process.
 
-[graphviz, images/specifications-lifecycle, svg]
+[graphviz, images/specifications-life-cycle, svg]
 .An overview of the Eclipse Foundation Specification Process
 ----
 include::../efsp/source/diagrams/efsp_lifecycle.dot[]
@@ -214,14 +219,20 @@ include::../efsp/source/diagrams/efsp_lifecycle.dot[]
 [[specifications-committee]]
 === Specification Committee
 
-Unlike a "regular" {forgeName} open source project, a specification project must be aligned with exactly one {wgUrl}[working group]. Each working group designates a _specification committee_ that maintains and manages the specification process on the working group’s behalf. A specification project must get <<specifications-ballots,approval>> from the corresponding specification committee to pass key project lifecycle events. 
+Unlike a "regular" {forgeName} open source project, a specification project must be aligned with exactly one {wgUrl}[working group]. Each working group designates a _specification committee_ that maintains and manages the specification process on the working group’s behalf. A specification project must get xref:specifications-ballots[approval] from the corresponding specification committee to pass key project life cycle events. 
 
-The specification committee is responsible for ensuring that the specification teams keep within their defined scope, and generally ensure that the specification versions created by the specification project are implementable and serve the purposes of the working group.
+The specification committee is ultimately responsible for ensuring that the final specifications produced by their working group’s specification projects make sense. The definition of “makes sense” varies by specification committee and specification committee participant, but is generally understood to mean ensuring that the specification teams keep within their defined scope, that the specifications they produce can be implemented, and that those aspects of the {ipPolicyUrl}[Eclipse Intellectual Property Policy] with regard to _essential claims_ are observed. In practical terms, specification committee participants wield power via the ballots that are required to approve key life cycle events per the EFSP.
+
+The Specification Committee is responsible for producing, publishing, and maintaining operational guidance documentation for specification projects. This includes the minimum requirements and process for producing a {efspRatificationUrl}[_final specification_]. It also includes operational guidance for running a specifications TCK for the purpose of testing for compatibility.
+
+The Specification Chair (or their delegate) is responsible for initiating ballots, tallying their results, disseminating them to the community, and (when appropriate; e.g., in the case a xref:specifications-release-review[release review] ballot) reporting them to the EMO.
+
+The Specification Committee is also responsible for defining and refining how they implement the EFSP for those specification projects under their purview.
 
 [[specifications-ballots]]
 ==== Specification Committee Ballots
 
-The specification committee is required to engage in a formal ballot to approve key milestones in the lifecycle of their specification projects. The exact means by which ballots are run varies by working group. The following lifecycle events require the approval of the working group's specification committee:
+The specification committee is required to engage in a formal ballot to approve key milestones in the life cycle of their specification projects. The exact means by which ballots are run varies by working group. The following life cycle events require the approval of the working group's specification committee:
 
 * Specification project creation;
 * Release plan;
@@ -232,22 +243,22 @@ The specification committee is required to engage in a formal ballot to approve 
 
 By default all ballots require seven days. Some specification committees may increase the length of time for some or all ballots, or add additional constraints.
 
-To succeed, a vote requires positive responses from a super-majority (defined as two-thirds) of the members of the specification committee. Votes to designate a specification as a profile or platform require positive responses from a super-majority of the specification committee members who represent the interests of Strategic Members of the Eclipse Foundation. It’s worth noting that there is no veto.
+To succeed, a vote requires positive responses from a supermajority (defined as two-thirds) of the members of the specification committee. Votes to designate a specification as a profile or platform require positive responses from a supermajority of the specification committee members who represent the interests of Strategic Members of the Eclipse Foundation. It’s worth noting that there is no veto.
 
-The criteria by which representatives decide how they’re going to vote varies by individual and according to the values of the individual and the organization that they represent (if applicable). Minimally, the specification committee is expected to use their vote to ensure that specification projects stay within scope. In the case of a progress review, the voters will need to consider whether or not the project is progressing in a manner that will eventually result in a successful vote on the eventual release review that gates the ratification of the final specification.
+The criteria by which representatives decide how they’re going to vote varies by individual and according to the values of the individual and the organisation that they represent (if applicable). Minimally, the specification committee is expected to use their vote to ensure that specification projects stay within scope. In the case of a progress review, the voters will need to consider whether or not the project is progressing in a manner that will eventually result in a successful vote on the eventual release review that gates the ratification of the final specification.
 
 In the event of a failure, the specification committee will provide feedback regarding the reason for the failure to the project team, who will work to mitigate issues and then re-engage.
 
 [[specifications-creation]]
 === Creation Review
 
-Creation reviews give the community a last opportunity to review and comment on a new project proposal before it is created.
+xref:release-creation[Creation reviews] give the community a last opportunity to review and comment on a new project proposal before it is created.
 
-The specification committee needs to approve of the creation of a specification project from a proposal by taking a role in the creation review. The expectation is that the specification committee members will consider the details of a proposed specification project (with particular focus on the scope) before making their decision. In addition to the requirements defined by the {edpLink} (EDP), a <<specifications-ballots,super-majority ballot>> of the entire specification committee is required to approve a creation review.
+The specification committee needs to approve of the creation of a specification project from a proposal by taking a role in the creation review. The expectation is that the specification committee members will consider the details of a proposed specification project (with particular focus on the scope) before making their decision. In addition to the requirements defined by the {edpLink} (EDP), a xref:specifications-ballots[supermajority ballot] of the entire specification committee is required to approve a creation review.
 
 [TIP]
 ====
-Contact the mailto:{emoEmail}[EMO] to initiate a creation review.
+Contact the {emoEmailLink} to initiate a creation review.
 ====
 
 Following successful creation and provisioning of project resources, a specification project team begins development. 
@@ -259,15 +270,15 @@ During the development cycle, the project team will produce one or more _milesto
 
 [WARNING]
 ====
-A milestone build must never be used to claim compatibility with a specification. An implementation of a specification may only be considered _compatible_ when it is based on a <<specifications-final,_final specification_>>.
+A milestone build must never be used to claim compatibility with a specification. An implementation of a specification may only be considered _compatible_ when it is based on a xref:specifications-final[_final specification_].
 ====
 
-A development cycle begins when a either a creation review or a <<specifications-plan-review,plan review>> is declared successful. A specification project team must engage in a <<specifications-progress-review,_progress review_>> when a development cycle exceeds one year in duration. 
+A development cycle begins when a either a xref:specifications-creation[creation review] or a xref:specifications-plan-review[plan review] is declared successful. A specification project team must engage in a xref:specifications-progress-review[_progress review_] when a development cycle exceeds one year in duration. 
 
 [[specifications-progress-review]]
 === Progress Review
 
-For a progress review, the Project Management Committee (PMC), and Eclipse Management Organization (EMO) validate that the specification project team is following the EDP and EFSP, and that the Eclipse Foundation’s Intellectual Property Policy is being correctly implemented. The EFSP requires that the specification committee approve a progress review by <<specifications-ballots,super-majority ballot>>.
+For a progress review, the xref:roles-pmc[Project Management Committee] (PMC) and Eclipse Management Organization (EMO) validate that the specification project team is following the EDP and EFSP, and that the Eclipse Foundation’s Intellectual Property Policy is being correctly implemented. The EFSP requires that the specification committee approve a progress review by xref:specifications-ballots[supermajority ballot].
 
 [NOTE]
 ====
@@ -279,23 +290,23 @@ The intent of the progress review is to ensure that the specification project is
 
 A specification project team *must* engage in a release review for every release (major, minor, and service).
 
-At the end of every development cycle, the project team must produce a _release candidate_ build that is designated as a _specification version_ and then engage in a _release review_. For a release review, the PMC, EMO, and specification committee all engage in the same sorts of activities that they do for a progress review, but with the understanding that approval results in the _ratification_ of the specification and promotion to an official status. The EFSP requires that the specification committee approve a release review by <<specifications-ballots,super-majority ballot>>.
+At the end of every development cycle, the project team must produce a _release candidate_ build that is designated as a _specification version_ and then engage in a _release review_. For a release review, the PMC, EMO, and specification committee all engage in the same sorts of activities that they do for a progress review, but with the understanding that approval results in the _ratification_ of the specification and promotion to an official status. The EFSP requires that the specification committee approve a release review by xref:specifications-ballots[supermajority ballot].
 
 [TIP]
 ====
-To engage in a release review, create a <<pmi-releases, release record>> (if one has not already been created as part of the planning process) and contact the mailto:{emoEmail}[EMO] to schedule the review. Your PMC and specification committee may provide additional requirements and documentation that must be met to get their approval of the review.
+To engage in a release review, create a xref:pmi-releases[release record] (if one has not already been created as part of the planning process) and contact the {emoEmailLink} to schedule the review. Your PMC and specification committee may provide additional requirements and documentation that must be met to get their approval of the review.
 ====
 
 [[specifications-plan-review]]
 === Plan Review
 
-Following a successful first release (and every subsequent release thereafter), and before engaging in any further development of the specification, the project team must assemble and present their Plan for review by the Specification Committee via Plan Review. The notion of a Plan Review is specific to the EFSP (since Plan Reviews are not part of the EDP, no formal involvement from the PMC is required). A Plan Review provides the Specification Committee with an opportunity to ensure that the plan for the next Specification Version is in-scope, fits within the overall vision of the Working Group, and is otherwise charting a path to eventual ratification and release. The EFSP requires that the Specification Committee approve a Plan Review by Super-majority vote.
+Following a successful first release (and every subsequent release thereafter), and before engaging in any further development of the specification, the project team must assemble and present their Plan for review by the Specification Committee via Plan Review. The notion of a Plan Review is specific to the EFSP (since Plan Reviews are not part of the EDP, no formal involvement from the PMC is required). A Plan Review provides the Specification Committee with an opportunity to ensure that the plan for the next Specification Version is in-scope, fits within the overall vision of the Working Group, and is otherwise charting a path to eventual ratification and release. The EFSP requires that the Specification Committee approve a Plan Review by supermajority vote.
 
 The plan itself must be in-scope (i.e. all new work must fall within the bounds defined by the specification project’s scope) and must be developed in consideration of the concerns of stakeholders. It must, for example, take plans of the PMC or associated working group into consideration . The concerns of the project team must also be taken into consideration when creating a plan. 
 
 [TIP]
 ====
-To engage in a plan review, create a <<pmi-releases, release record>> and contact the mailto:{emoEmail}[EMO] to schedule a review.
+To engage in a plan review, create a xref:pmi-releases[release record] and contact the {emoEmailLink} to schedule a review.
 ====
 
 After the Plan is approved, the Project Team engages in Development as before.
@@ -303,9 +314,9 @@ After the Plan is approved, the Project Team engages in Development as before.
 [[specifications-final]]
 === Final Specification
 
-Following a successful release review, the final release version of the specification artifacts are considered _ratified_ and transmogrifies into what the EFSP refers to as a _final specification_. It is the final specification that must be used to build <<specifications-implementations,compatible implementations>>.
+Following a successful release review, the final release version of the specification artifacts are considered _ratified_ and transmogrifies into what the EFSP refers to as a _final specification_. It is the final specification that must be used to build xref:specifications-implementations[compatible implementations].
 
-All versions of specifications that are referenced by a ratified final specification must themselves be ratified. The <<specifications-release-review,release review>> for related specification versions may be run concurrently.
+All versions of specifications that are referenced by a ratified final specification must themselves be ratified. The xref:specifications-release-review[release review] for related specification versions may be run concurrently.
 
 Final Specifications and their associated artifacts are distributed under specific licenses. The specification document for the final specification must be distributed as read-only text (e.g., PDF) under the {efslLink}. The ratified TCK in composite is distributed under the {eftcklLink}. Other technical artifacts must be distributed under an open source license (normally the specification project’s license).
 
@@ -325,7 +336,7 @@ How do I tell whether or not a project is a specification project? ::
 
 The best way to know, frankly, is it communicate with the project team. Specification project teams should make the nature of the project clear in the `README` files in their repositories.
 +
-We do track this in metadata, which we expose in a number of different locations including the <<pmi-project-page, PMI project page>>. For example:
+We do track this in metadata, which we expose in a number of different locations including the xref:pmi-project-page[PMI project page]. For example:
 +
 image::images/specification-project.png[]
 
@@ -335,11 +346,11 @@ Yes, the specification project team must engage in a successful release review p
 
 Can the specification committee block/veto a release? ::
 
-Yes. The specification committee’s super-majority approval of the release is an absolute requirement. Without their approval, there can be no ratification of the final specification, so there can be no release.
+Yes. The specification committee’s supermajority approval of the release is an absolute requirement. Without their approval, there can be no ratification of the final specification, so there can be no release.
 
 Can you provide more information regarding why these agreements are necessary? ::
 
-Explaining these documents would be a form of legal advice, and we simply cannot provide that. The short version is that we need these agreements and if you want somebody to explain them to you, you’ll need to consult with your lawyer.
+Explaining these documents would be a form of legal advice, and we simply cannot provide that. The short version is that we need these agreements and if you want somebody to explain them to you, you'll need to consult with your lawyer.
 
 Do I need to arrange for my employer to sign the Employer Consent Agreement for Eclipse Specification Projects? ::
 
@@ -355,7 +366,7 @@ If you are a committer on a project you do not need an ECA to contribute to that
 
 How do I know if I’m covered by an Eclipse Contributor Agreement? ::
 
-Visit your Eclipse Account page. Your <<contributing-eca, Eclipse Contributor Agreement>> (ECA) status is shown in the top-right corner.
+Visit your Eclipse Account page. Your xref:contributing-eca[Eclipse Contributor Agreement] (ECA) status is shown in the top-right corner.
 +
 For example, this contributor is covered by the ECA (and is a committer on one or more Eclipse Foundation open source projects).
 +
@@ -367,7 +378,7 @@ If your employer is a member of the Eclipse Foundation, they will be listed on t
 
 How do I know if my employer has signed the Member Committer and Contributor Agreement (MCCA)? ::
 
-If your employer is a participant in the working group, then they must have signed the <<specifications-wgpa, Working Group Participation Agreement>>, which includes the Member Committer and Contributor Agreement.
+If your employer is a participant in the working group, then they must have signed the xref:specifications-wgpa[Working Group Participation Agreement], which includes the Member Committer and Contributor Agreement.
 +
 If you are unsure whether or not your employer has signed a particular document, please contact the EMO Records Team. 
 
@@ -377,4 +388,4 @@ Your status as a committer is not tied to your employment status. Your committer
 
 What if my employer will not sign the Employer Consent Agreement?  ::
 
-If your employer is not a participant of the working group, your employer must sign the <<specifications-consent, Employer Consent Agreement>> to provide the necessary legal coverage for you to be a committer on a specification project operating under the purview of that working group. Without this agreement, you cannot have a committer role on a specification project. You may, however, continue to operate as a (non-committer) contributor on specification projects. You may also assume a committer role on Eclipse open source projects that are not engaged in specification development.
+If your employer is not a participant of the working group, your employer must sign the xref:specifications-consent[Employer Consent Agreement] to provide the necessary legal coverage for you to be a committer on a specification project operating under the purview of that working group. Without this agreement, you cannot have a committer role on a specification project. You may, however, continue to operate as a (non-committer) contributor on specification projects. You may also assume a committer role on Eclipse open source projects that are not engaged in specification development.

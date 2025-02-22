@@ -1,14 +1,11 @@
 ////
- * Copyright (C) 2015 Eclipse Foundation, Inc. and others. 
+ * Copyright (C) 2015,2022 Eclipse Foundation, Inc. and others. 
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
  * http://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-FileType: SOURCE
- *
- * SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
- * SPDX-FileCopyrightText: 2015 Contributors to the Eclipse Foundation
  *
  * SPDX-License-Identifier: EPL-2.0
 ////
@@ -19,13 +16,13 @@ include::config.adoc[]
 :aforgeName: an Eclipse
 :forgeMachineName: eclipse
 :namespace: org.eclipse
-:wwwUrl: https://www.eclipse.org
 :forgeUrl: https://projects.eclipse.org
 :downloadsHost: https://downloads.eclipse.org
-:createUrl: https://projects.eclipse.org/node/add/project-proposal
+:createUrl: https://projects.eclipse.org/create/project-proposal
 :projectListUrl: http://projects.eclipse.org/list-of-projects
 :bugzillaUrl: https://bugs.eclipse.org/bugs
 :gitUrl: https://git.eclipse.org/c
+:gitlabUrl: https://gitlab.eclipse.org
 :gerritUrl: https://git.eclipse.org/r
 :gitHubUrl: https://github.com/eclipse
 :forumsUrl: http://www.eclipse.org/forums
@@ -33,13 +30,22 @@ include::config.adoc[]
 
 :pmiSampleImage: images/pmi-egit25.png
 
+
 = Eclipse Foundation Project Handbook
+
+Current as of {localdate}.
 
 include::chapters/notices.adoc[]
 
 include::chapters/preamble.adoc[]
 
 include::chapters/starting.adoc[]
+
+include::chapters/incubation.adoc[leveloffset=+1]
+
+include::chapters/roles.adoc[leveloffset=+1]
+
+include::chapters/committer_badges.adoc[leveloffset=+1]
 
 include::chapters/resources.adoc[]
 
@@ -53,11 +59,11 @@ include::chapters/paperwork.adoc[]
 
 include::chapters/specifications.adoc[leveloffset=+1]
 
-include::chapters/tlp.adoc[leveloffset=+1]
-
 include::chapters/ip.adoc[]
 
 include::chapters/legaldoc.adoc[leveloffset=+1]
+
+include::chapters/legaldoc-plugins.adoc[leveloffset=+1]
 
 include::chapters/release.adoc[]
 
@@ -77,10 +83,14 @@ include::chapters/glossary.adoc[]
 
 include::chapters/contact.adoc[]
 
-= Appendices
-
-include::chapters/legaldoc-plugins.adoc[leveloffset=+1]
-
 include::efdp/source/development_process.adoc[leveloffset=+1]
 
-include::chapters/dpia.adoc[leveloffset=+1]
+== Guidelines
+
+include::chapters/dpia.adoc[leveloffset=+2]
+
+include::./guidelines/source/content/generative-ai-usage.adoc[leveloffset=+2]
+
+include::./guidelines/source/content/generative-ai-faq.adoc[leveloffset=+3]
+
+include::chapters/document-history.adoc[leveloffset=+1]

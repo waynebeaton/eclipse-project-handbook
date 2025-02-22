@@ -19,13 +19,9 @@
 [glossary]
 Architecture Council ::
 
-The Eclipse Architecture Council (AC) serves the community by identifying and tackling any issues that hinder Eclipse's continued technological success and innovation, widespread adoption, and future growth. This involves technical architecture as well as open source processes and social aspects. Comprising the finest technical leaders from all community stake holders, it is the council's goal to keep the projects successful and healthy, the processes simple and smooth, and the communities vibrant and cohesive.
+The xref:roles-ac[Eclipse Architecture Council] (AC) serves the community by identifying and tackling any issues that hinder Eclipse's continued technological success and innovation, widespread adoption, and future growth. This involves technical architecture as well as open source processes and social aspects. Comprising the finest technical leaders from all community stake holders, it is the council's goal to keep the projects successful and healthy, the processes simple and smooth, and the communities vibrant and cohesive.
 
-Architecture Council Mentor ::
-
-The Eclipse Architecture Council (AC) is a body of battle-hardened Eclipse committers. All new projects are required to have at least one mentor taken from the ranks of the AC. Your project mentors will help you find answers to any questions you may have about the {edpLink} and life-in-general within the Eclipse community. If your mentor doesn't have an answer to your question, they can draw on the wisdom of the full AC and the EMO.
-
-Board of Directors ::	
+Board of Directors ::
 
 The business and technical affairs of the Eclipse Foundation are managed by or under the direction of the Eclipse Board of Directors (or more simply, _The Board_). 
 
@@ -35,11 +31,7 @@ A committer is a software developer who has the necessary rights to write code i
 
 Community ::
 
-Community is a nebulous sort of term. Community is the group of individuals and organizations that gather around your project. In the case of some projects, the community is enormous. Other projects have smaller communities. Developing a community is a very important part of being {aForgeName} project as it is from the community that you get feedback, contributions, fresh ideas, and ultimately new committers to help you implement your shared vision. The _{forgeName} Community_ is formed from the union of the communities that grow around individual projects.
-
-Contribution Questionnaire ::
-
-Prior to committing a significant contribution of content from a non-committer to {aforgeName} project, the committer must fill out a <<ip-cq,contribution questionnaire>> (CQ) and submit it to the IP Team for approval. In addition to the EMO, the relevant PMC must also provide a technical review and approval of the contribution. In general, ongoing development by project committers does not require EMO or PMC approval. When in doubt, consult the xref:ip[Eclipse IP Due Diligence Process].
+Community is a nebulous sort of term. Community is the group of individuals and organisations that gather around your project. In the case of some projects, the community is enormous. Other projects have smaller communities. Developing a community is a very important part of being {aForgeName} project as it is from the community that you get feedback, contributions, fresh ideas, and ultimately new committers to help you implement your shared vision. The _{forgeName} Community_ is formed from the union of the communities that grow around individual projects.
 
 Contributor ::
 
@@ -47,19 +39,19 @@ A contributor is anybody who makes contributions to the project. Contributions g
 
 Dash Process ::
 
-The Dash Process, or simply _Dash_, is a collection of scripts and processes that harvest project data for dissemination in charts, <<ip-iplog,IP Logs>>, and more. 
+The Dash Process, or simply _Dash_, is a collection of scripts and processes that harvest project data for dissemination in charts, and various services.
 
 Dev-list ::
 
-Every project has a _development list_ or _dev-list_. All project committers must subscribe to the list. The _dev-list_ should be the primary means of communication between project committers and is the means through which the Eclipse Foundation's automated systems communicate with the project team.
+Every project has a _development list_ or _dev-list_. All project committers must subscribe to the list. The xref:resources-dev-list[dev-list] should be the primary means of communication between project committers and is the means through which the EMO and Eclipse Foundation's automated systems communicate with the project team.
 
 Ecosystem ::
 
-A commercial ecosystem is a system in which companies, organizations, and individuals all work together for mutual benefit. There already exists a vast ecosystem of companies that base significant parts of their business on {forgeName} technology. This takes the form of including {forgeName} code in products, providing support, and other services. You become part of an ecosystem by filling the needs of commercial interests, being open and transparent, and being responsive to feedback. Ultimately, being part of a commercial ecosystem is a great way to ensure the longevity of your project: companies that build their business around your project are very motivated to contribute to your project.
+A commercial ecosystem is a system in which companies, organisations, and individuals all work together for mutual benefit. There already exists a vast ecosystem of companies that base significant parts of their business on {forgeName} technology. This takes the form of including {forgeName} code in products, providing support, and other services. You become part of an ecosystem by filling the needs of commercial interests, being open and transparent, and being responsive to feedback. Ultimately, being part of a commercial ecosystem is a great way to ensure the longevity of your project: companies that build their business around your project are very motivated to contribute to your project.
 
 Eclipse ::
 
-This is a tough one. For most people in the broader community, _Eclipse_ refers to the _Eclipse Java IDE_ which based on the Java development tools (JDT) project and assembled by the Eclipse Packaging Project. However, the term _Eclipse_ is also used to refer to the Eclipse Foundation, the eclipse.org website, the community, the ecosystem, and -- of course -- The Eclipse Project (which is just one of the top-level projects hosted by the Eclipse Foundation). Confusing? Yes.
+This is a tough one. For a significant number of people in the broader community, _Eclipse_ refers to the _Eclipse Java IDE_ which based on the Java development tools (JDT) project and assembled by the Eclipse Packaging Project. However, the term _Eclipse_ is also used to refer to the Eclipse Foundation, the eclipse.org website, the community, the ecosystem, and -- of course -- The Eclipse Project (which is just one of the top-level projects hosted by the Eclipse Foundation). Confusing? Yes.
 
 Eclipse Contributor Agreement (ECA) ::
 
@@ -67,7 +59,7 @@ The purpose of the Eclipse Contributor Agreement (ECA) is to provide a written r
 
 Eclipse Management Organization (EMO) ::
 
-The Eclipse Management Organization (EMO) consists of the Eclipse Foundation staff, and the Eclipse Architecture Council. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the {edpLink}. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead, mentor, or PMC, ask the EMO.
+The Eclipse Management Organization (EMO) consists of the Eclipse Foundation staff, and the xref:roles-ac[Eclipse Architecture Council]. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the {edpLink}. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead or PMC, ask the EMO.
 
 EMO Executive Director ::
 
@@ -81,48 +73,40 @@ EMO Records ::
 
 The EMO Records Team (commonly referred to as _EMO Records_) is responsible for managing committer paperwork and other records on behalf of the Eclipse Foundation. Contact the EMO Records team via email ({emoRecordsEmail}).
 
-Exempt Prerequisite (Dependency) ::
-
-An <<ip-third-party-exempt,Exempt Prerequisite>> is defined as third-party content which is used by Eclipse project code but is not not subject to review by the IP Team. Content may be considered exempt if it is "is pervasive in nature, expected to be already on the user's machine, and/or an IP review would be either impossible, impractical, or inadvisable."
-
 Genie ::
 
-_Genie_ is the generic term given to automated processes that perform various functions on behalf of project teams, generally focused around builds. The _Eclipse Genie_ performs various tasks (e.g. automated portions of the <<ip, IP Due Diligence Process>>) on behalf of the Eclipse Foundation.
+_Genie_ is the generic term given to automated processes that perform various functions on behalf of project teams, generally focused around builds. The _Eclipse Genie_ performs various tasks (e.g. automated portions of the xref:ip[IP Due Diligence Process]) on behalf of the Eclipse Foundation.
 
 Incubation Phase ::
 
-The purpose of the incubation phase is to establish a fully-functioning open-source project. In this context, incubation is about developing the process, the community, and the technology. Incubation is a phase rather than a place: new projects may be incubated under any existing project.
+The purpose of the xref:incubation[incubation phase] is to establish a fully-functioning open source project. In this context, incubation is about developing the process, the community, and the technology. Incubation is a phase rather than a place: new projects may be incubated under any existing project.
 
 IP Due Diligence Process ::
 
-The <<ip,Intellectual Property Due Diligence Process>> defines the process by which intellectual property is added to a project. All {forgeName} committers must be familiar with this process.
-
-Intellectual Property (IP) Log ::
-
-An <<ip-iplog,Intellectual Property Log>> (commonly referred to as an _IP Log_) is a record of the intellectual property (IP) contributions to a project. This includes such as a list of all committers, past and present, that have worked on the code and (especially) those who have made contributions to the current code base.
+The xref:ip[Intellectual Property Due Diligence Process] defines the process by which intellectual property is added to a project. All {forgeName} committers must be familiar with this process.
 	
 Member Company ::
 
-The Eclipse Foundation and Eclipse community is supported by our {memberUrl}[member organizations]. Through this support, the Eclipse Foundation provides the open source community with IT, intellectual property, and marketing services.
-
-Prerequisite (Dependency)::
-
-A <<ip-third-party-prereq,Prerequisites>> (or _prereqs_) are third-party content that is required by the Eclipse project content to provide core functionality. 
+The Eclipse Foundation and Eclipse community is supported by our {memberUrl}[member organisations]. Through this support, the Eclipse Foundation provides the open source community with IT, intellectual property, and marketing services.
 
 Project::
 
-Projects are where the real work happens. Each project has code, committers, and resources including a web site, source code repositories, space on the build and download server, etc. Projects may act as a parent for one or more child projects. Each child project has its own identity, committers, and resource. Projects may, but do not necessarily, have a dedicated web site. Projects are sometimes referred to as _subprojects_ or as _components_.  The {edpLink}, however, treats the terms _project_, _subproject_, and _component_ as equivalent.
+Projects are where the real work happens. Each project has code, committers, and resources including a website, source code repositories, space on the build and download server, etc. Projects may act as a parent for one or more child projects. Each child project has its own identity, committers, and resource. Projects may, but do not necessarily, have a dedicated website. Projects are sometimes referred to as _subprojects_ or as _components_.  The {edpLink}, however, treats the terms _project_, _subproject_, and _component_ as equivalent.
 
 Project Lead ::
 
-The project lead is more of a position of responsibility than one of power. The project lead is immediately responsible for the overall well-being of the project. They own and manage the project's development process, coordinate development, facilitate discussion among project committers, ensure that the Eclipse IP policy is being observed by the project and more. If you have questions about your project, the {edpLink}, or anything else, ask your project lead.
+The xref:#roles-pl[project lead] is more of a position of responsibility than one of power. The project lead is immediately responsible for the overall well-being of the project. They own and manage the project's development process, coordinate development, facilitate discussion among project committers, ensure that the Eclipse IP policy is being observed by the project and more. If you have questions about your project, the {edpLink}, or anything else, ask your project lead.
 
 Project Management Committee (PMC) ::
-Each top-level project is governed by a Project Management Committee (PMC). The PMC has one or more leads along with several members. The PMC has numerous responsibilities, including the ultimate approval of committer elections, and approval of intellectual property contributions. Effectively, the PMC provides oversight for each of the projects that are part of the top-level project. If you have a question that your project lead cannot answer, ask the PMC.
+Each top-level project is governed by a xref:#roles-pmc[Project Management Committee] (PMC). The PMC has one or more leads along with several members. The PMC has numerous responsibilities, including the ultimate approval of committer elections, and approval of intellectual property contributions. Effectively, the PMC provides oversight for each of the projects that are part of the top-level project. If you have a question that your project lead cannot answer, ask the PMC.
 
 Project Management Infrastructure (PMI) ::
 
-The <<pmi,Project Management Infrastructure>> (PMI) is the system that tracks the state and progress of {forgeName} projects. Project committers can modify the the information represented in the PMI, including the project description, and information about project releases. Automated systems use this information to, for example, generate dashboard and chart information for the project, intellectual property logs, etc.
+The xref:pmi[Project Management Infrastructure] (PMI) is the system that tracks the state and progress of {forgeName} projects. Project committers can modify the the information represented in the PMI, including the project description, and information about project releases. Automated systems use this information to, for example, generate dashboard and chart information for the project, intellectual property logs, etc.
+
+Third party Content (Dependency)::
+
+A xref:ip-third-party[Third party Content] is content that is leveraged by a {forgeName} project that is not produced and/or maintained as an asset of the project.
 	
 Top-Level Project (TLP) ::
 
@@ -134,12 +118,8 @@ This Eclipse Foundation uses the ISO 27005 definition of vulnerability: "A weakn
 
 Webmaster ::
 
-The Webmaster team is responsible for maintaining the IT infrastructure of the Eclipse Foundation and the {forgeName} forge. You can contact the Webmaster team directly via email ({webmasterEmail}).
+Webmaster is often used as an alternative name for the Eclipse IT Team. The Eclipse IT team is responsible for maintaining the IT infrastructure of the Eclipse Foundation and the {forgeName} forge. You can contact the Eclipse IT team directly by opening a {helpdeskUrl}[Help Desk issue] or via email ({webmasterEmail}).
 	
 Working Group ::
 
-Eclipse {wgUrl}[Working Groups] provide a vendor-neutral governance structure that allow organizations to freely collaborate on new technology development. 
-
-Works With Dependency ::
-
-A <<ip-third-party-workswith,Works With Dependency>> is defined as third-party content that Eclipse Project Code will work with when it is available. The fundamental requirement is the Eclipse Project Code must be useful and adoptable without the Works With Dependency. That is, either the Project Code provides useful functionality without the Works With Dependency or the Works With Dependency is a suitable alternative for a <<ip-third-party-prereq,Prerequisite>>.
+Eclipse {wgUrl}[Working Groups] provide a vendor-neutral governance structure that allow organisations to freely collaborate on new technology development. 
