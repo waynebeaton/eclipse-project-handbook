@@ -267,7 +267,7 @@ If you're not sure, check with your PMC or the xref:vulnerability-team[Security 
 +
 If the reporter requests a CVE number, the Eclipse Foundation Security team will assign one if there is a reasonable probability of a real Vulnerability.
 +
-It's a a rite of passage (that should be considered a good for the project and community) for an open source project to disclose their first vulnerability. If in doubt, ask the Eclipse Foundation Security Team for guidance.
+It's a rite of passage (that should be considered a good for the project and community) for an open source project to disclose their first vulnerability. If in doubt, ask the Eclipse Foundation Security Team for guidance.
 
 Do we need a xref:vulnerability-cve[CVE] for versions of software that we released before moving our project to the Eclipse Foundation? ::
 
