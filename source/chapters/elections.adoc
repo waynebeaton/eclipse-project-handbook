@@ -15,15 +15,20 @@
 
 xref:#roles[Roles] in a project are assigned based on merit demonstrated in a publicly-accessible forum, in the form of an election. Elections start with a nomination that contains a statement of merit. The nature of a statement of merit varies widely, but is generally expected to to concisely state the impact that the nominee has had on the project.
 
-[NOTE]
+[WARNING]
 ====
-Employment status has no bearing at whether or not somebody can participate in an open source project at {forgeName}. Employment does not, for example, guarantee committer status; committer status must be earned by everybody.
+While committer and project lead elections are fully automatic, setting up a new committer or project lead's account with the necessary privileges is partly manual. After a successful election, the EMO Records Team checks for required agreements -- which might involve some manual work -- before the IT Team can finish the setup. Any manual processing will occur with 24 hours of the start of the next business day. Plan accordingly.
 ====
 
 [[elections-committer]]
 === Committer Elections
 
 Contributors who have the trust of the project's committers can, through election, be promoted to _committer status_ for that project. The breadth of a committer's influence corresponds to the breadth of their contribution. A development team's contributors and committers may (and should) come from a diverse set of organisations. A committer gains voting rights allowing them to affect the future of the project. Becoming a committer is a privilege that is earned by contributing and showing discipline and good judgement. It is a responsibility that should be neither given nor taken lightly, nor is it a right based on employment by an Eclipse Foundation member company or any company employing existing committers.
+
+[NOTE]
+====
+Employment status has no bearing at whether or not somebody can participate in an open source project at {forgeName}. Employment does not, for example, guarantee committer status; committer status must be earned by everybody.
+====
 
 Being a {forgeName} committer is more than just having write-access to the project resources: there are specific IP due diligence and record keeping activities that committers _must_ follow. New committers must ensure that they are familiar with the {committerGuidelinesUrl}[Committer Due Diligence Guidelines].
 
@@ -332,6 +337,18 @@ If you believe that a project is in a dysfunctional state, contact the PMC via t
 Do we really need to do this? ::
 
 Yes.
+
+We need to make somebody a committer right now. How do we do this? ::
+
+You don't.
+
+Why is it taking a long time to grant a new committer the necessary privileges? ::
+
+The first thing that you need to do is check that the election has run its course: an election will run for a full week before it is complete. Has a full week passed since the election was started?
++
+A successful election requires approval from the PMC. The PMC will be notified automatically via their mailing list when their approval is required. If the PMC has not yet approved the election, connect directly with them for help.
++
+Following a successful election and PMC approval, the provisioning process will be automatically initiated. A new committer will receive an automated email request with instructions regarding next steps (which may include signing a committer agreement). Ask the new committer to check their spam folder.
 
 Can I still be a committer if I change employers? ::
 
