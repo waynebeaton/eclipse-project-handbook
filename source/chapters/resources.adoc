@@ -646,8 +646,8 @@ Yes.
 
 Can an {aForgeName} project accept anonymous code contributions? ::
 
-No. All contributions must be associated with their author using their legal name and a real email address. In pragmatic terms, the contributor must provide their legal name and email address in the Git commit's `Author` field, or an email address that associates with their ECA; the contributor must also have electronically signed the ECA using those same credentials.
+No. All contributions must be associated with their author using their legal name and a real email address. In pragmatic terms, the contributor must provide their legal name and email address in the Git commit's `Author` field, or an email address that associates with their xref:contributing-eca[ECA]; the contributor must also have electronically signed the ECA using those same credentials.
 
-Can special email addresses, such as GitHubUserName@users.noreply.github.com, be used for code contributions?
+Can special email addresses, such as `pass:[GitHubUserName@users.noreply.github.com]`, be used for code contributions? ::
 
-Yes. The GitHub user name can be extracted from that email address and the contributor with the associated user name must have signed the ECA.
+Yes. The GitHub user name can be extracted from that email address and the contributor with the associated user name must have signed the xref:contributing-eca[ECA].
