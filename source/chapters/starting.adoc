@@ -104,7 +104,7 @@ Write the project scope and description in the present tense (refer to the proje
 
 Clear and Concise Description :: If the community found any aspects of the proposal confusing, unclear, or using unfamiliar jargon, those areas must be clarified. This is a hard and fast requirement: because the Eclipse community must be able to evaluate the proposal. To do that, they must be able to understand the proposal and thus it must be clear and straightforward and free of marketing-speak.
 
-Specifications :: If the project will develop xref:specifications[specifications], then those specifications must be developed under the {efspUrl}[Eclipse Foundation Specification Process]. Specification development requires that the project be aligned with a single working group, designated in the _Is this a specification project?_ field. If you're not sure what working group to select, or the target working group is not in the list, contact the {emoLink}.
+Specifications :: If the project will develop xref:specifications[specifications], then those specifications must be developed under the {efspUrl}[Eclipse Foundation Specification Process]. Specification development requires that the project be aligned with a single working group, designated in the _Is this a specification project?_ field. If you're not sure what working group to select, or the target working group is not in the list, contact the {emoEmailLink}.
 +
 [NOTE]
 ====
