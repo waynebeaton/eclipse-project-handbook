@@ -1,0 +1,237 @@
+////
+ * Copyright (C) 2023 Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-FileType: SOURCE
+ *
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+[#sbom]
+= Software Bill of Materials
+
+All {forgeName} open source projects are encouraged to generate Software Bill of Materials (SBOMs) for the software that they produce.
+
+[TIP]
+====
+The https://eclipse-csi.github.io/security-handbook/sbom/introduction.html[Eclipse Foundation Security Handbook] contains a wealth of information regarding SBOMs.
+====
+
+Creating SBOMs is crucial for several reasons:
+
+1. Enhanced Supply Chain Security: SBOMs provide a comprehensive inventory of all components and dependencies within a software application. This transparency allows organisations to identify and address potential vulnerabilities or weak links in their supply chain. By understanding the origins of every piece of software, organisations can make informed decisions about the security of their systems.
+2. Effective Vulnerability Management: SBOMs enable organisations to stay on top of software vulnerabilities and take proactive measures to mitigate risks. With a clear understanding of the software components used, organisations can quickly identify and address vulnerabilities by applying patches or updates. This allows for a faster response time and reduces the chances of exploitation by cybercriminals.
+3. Compliance with Regulations: Many industries, such as health care, finance, and government, have strict regulations regarding software security and privacy. SBOMs help organisations demonstrate compliance by providing an auditable record of the software components used and their associated vulnerabilities. This documentation is crucial during regulatory audits and ensures that organisations meet the necessary standards.
+4. Efficient Software Development: SBOMs provide developers with valuable insights into the software components they are using. This information helps them make informed decisions about which components to integrate into their applications, ensuring they meet security and compliance requirements. Additionally, SBOMs streamline the process of identifying and addressing vulnerabilities, allowing developers to focus on creating secure and robust software.
+5. Improved Incident Response: In the event of a security incident or breach, SBOMs can greatly aid in incident response efforts. By having a clear understanding of the software components in use, organisations can quickly assess the impact of the incident and identify the areas that need immediate attention. This accelerates the incident response process and minimises the potential damage caused by the breach.
+
+In summary, creating SBOMs is crucial for enhancing supply chain security, effective vulnerability management, compliance with regulations, efficient software development, and improved incident response. By having a comprehensive inventory of software components, organisations can ensure the security, integrity, and compliance of their systems, reducing risks and improving overall software quality.
+
+[#sbom-fundamentals]
+== Fundamentals
+
+Generate a correct SBOM in a standard format for products ::
+
+This includes both the files that are contained within the product along with third-party content embedded or referenced by the product. As of this writing, there are two popular standard formats: https://spdx.dev/[SPDX] and https://cyclonedx.org/[CycloneDX].
+
+Must be able to resolve entries to specific content via unambiguous and durable coordinates ::
+
+The https://github.com/package-url/purl-spec[Package URL] (pURL) format (e.g, `pkg:maven/org.glassfish.jersey.inject/jersey-hk2@2.35`) to specify the namespace, name, and version of a library.
+
+Correctly identify the license for each entry ::
+
+For project content (i.e., files) this is the license information for the specific file. For dependencies (whether they are packaged in the product or are referenced/required by it), this is the license of the entire component.
+
+Distribute SBOMs with artifacts ::
+
+Upload SBOMs along with the artifacts they represent. SBOMs should be, for example, uploaded alongside other Maven artifacts.
+
+Be a good open source citizen ::
+
+As good open source citizens, we have a responsibility to make it as easy as possible for others to generate SBOMs using our content. To that end, whether or not it makes sense to create an SBOM for a specific project artifact, we should provide consistent xref:ip-copyright-headers[copyright headers] that correctly express the copyright and licence (using `SPDX-License-Identifier`) and the most complete metadata (e.g., xref:sbom-maven-metadata[Maven metadata]) possible to ensure that adopters are able to create the most accurate SBOMs possible.
+
+[#sbom-maven]
+== Maven-Based Java Projects
+
+The `spdx-maven-plugin` and `cyclonedx-maven-plugin` Maven plugins build, respectively, SPDX and CycloneDX-compliant SBOMs. Both do a good job of capturing information about project content as well as the transitive closure of all dependencies.
+
+The quality of the results of using these plugins depends on the quality of the metadata available to the plugin. For Maven-based builds, metadata is provided primarily via the `pom.xml` file. This includes dependencies, description, identity of the developers, location of source repositories, licenses, and more. The overall completeness and quality of metadata varies greatly: dependencies are generally specified correctly (they may include extra dependencies that are no longer used), but most of the other fields are either not provided, contain inaccurate data, or are specified in inconsistent formats.
+
+License information, for example, tends to be specified by name. When multiple licenses are involved, they tend to be specified as individual entries with no explicit indication of how the licenses are combined. 
+
+[#sbom-maven-metadata]
+=== Maven Metadata Best Practices
+
+The quality of the SBOMs depends on the quality of the metadata provided.
+
+We recommend adopting the following practices.
+
+Ensure that metadata is accurate ::
+
+SBOM generation leverages the metadata provided in the `pom.xml` file, so specifying that information accurately improves the quality of the SBOM. 
+
+Specify license data at the module level ::
+
+If it is truly the case that all modules are distributed under the same license terms, then the license can (and indeed should) be specified at the parent level. When individual modules have different license terms, then those should be specified at the module level.
+
+Specify the license as an SPDX identifier or expression ::
+
+When the content is distributed under a single license, specify that license as an https://spdx.org/licenses/[SPDX identifier]. For example, to express that the content is distributed under the Eclipse Public License 2.0:
++
+[source,xml]
+----
+<licenses>
+	<license>
+		<name>EPL-2.0</name>
+		<url>https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.txt</url>
+	</license>
+</licenses>
+----
++
+When the content is distributed under multiple licenses, specify the license as an https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/[SPDX expression]. For example, to express that content may be consumed under either the Eclipse Public License 2.0 or the GNU Public License 2.0 with the Classpath Exception (`EPL-2.0 or GPL-2.0-only with Classpath-exception-2.0`):
++
+[source,xml]
+----
+<licenses>
+	<license>
+		<name>EPL-2.0 or GPL-2.0-only with Classpath-Exception-2.0</name>
+	</license>
+</licenses>
+----
++
+Note that `url` can be considered optional. Specifying a `url` does not make sense when specifying a license expression.
++
+[TIP]
+====
+SPDX expressions should be written from the consumer's perspective. Use `or` to express that a consumer can choose between licenses. Use `and` to express that a consumer must accept the terms of multiple licenses.
+====
+
+Express only the license of the project content ::
+
+Do not include license information for dependencies.
+
+Specify all of the metadata ::
+
+All of it goes into the SBOM. Specify the `name`, `description`, `organisation`, `scm`, `issueManagement`, ...
+
+Correctly use Maven scope ::
+
+For example, JUnit should be in the `test` scope where it will be ignored by the SBOM generator plugin.
+
+[#sbom-maven-cyclonedx]
+=== CycloneDX SBOMs for Maven
+
+The https://cyclonedx.github.io/cyclonedx-maven-plugin/[CycloneDX Maven plugin] can be used to generate a CycloneDX SBOM directly from a Maven build.
+
+Add the following to the `build/plugins` section of your `pom.xml` file.
+
+[source,xml]
+----
+<build>
+	...
+	<plugins>
+		...
+		<plugin>
+			<groupId>org.cyclonedx</groupId>
+			<artifactId>cyclonedx-maven-plugin</artifactId>
+			<version>2.7.9</version>
+			<configuration>
+				<schemaVersion>1.4</schemaVersion>
+				<projectType>library</projectType>
+			</configuration>
+			<executions>
+				<execution>
+					<phase>package</phase>
+					<goals>
+						<goal>makeAggregateBom</goal>
+					</goals>
+				</execution>
+			</executions>
+		</plugin>
+	</plugins>
+</build>
+----
+
+[TIP]
+====
+Add this to your parent `pom.xml` to generate the SBOM for all modules.
+====
+
+The default configuration will automatically **exclude** dependencies that are declared in the `test` scope, but will include dependencies that are included in the `compile`, `provided`, `runtime`, and `system` scopes. You can tune the configuration to exclude other scopes (or include the `test` scope).
+
+[source,xml]
+----
+<configuration>
+	...
+	<includeCompileScope>true</includeCompileScope>
+	<includeProvidedScope>true</includeProvidedScope>
+	<includeRuntimeScope>true</includeRuntimeScope>
+	<includeSystemScope>true</includeSystemScope>
+	<includeTestScope>false</includeTestScope>
+	...
+</configuration>
+----
+
+The `projectType` value expresses in the nature of the content that's produced by the build. The value `library` (the default) expresses that the content is a library (e.g., a Java JAR file). Other values (e.g., `application`) may also be used depending on the nature of the content . There's more help in the https://cyclonedx.org/docs/1.4/json/#metadata_component_type[CycloneDX documentation].
+
+[#sbom-node]
+== Node-based Projects
+
+[#sbom-node-metadata]
+=== NPM Metadata Best Practices
+
+The quality of the SBOMs generated by tools depends on the quality of the metadata provided by each of the modules.
+
+We recommend adopting the following practices.
+
+Provide basic metadata for your modules ::
+
+At a minimum, specify a name and version in every module's metadata.
+
+Specify the license as an SPDX identifier or expression ::
+
+When the content is distributed under a single license, specify that license as an https://spdx.org/licenses/[SPDX identifier]. When the content is distributed under multiple licenses, specify the license as an https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/[SPDX expression]. 
++
+For example, to express that content may be consumed under either the Eclipse Public License 2.0 or the GNU Public License 2.0 with the Classpath Exception (`EPL-2.0 or GPL-2.0-only with Classpath-exception-2.0`), include the following in the `package.json` file:
++
+[source,json]
+----
+"license" : "EPL-2.0 or GPL-2.0-only with Classpath-exception-2.0"
+----
+
+Keep your dependencies up-to-date ::
+
+Keep your dependencies up-to-date and generate SBOMs regularly to maintain an accurate and comprehensive inventory of your NPM package's components and dependencies.
+
+[#sbom-node-cyclonedx]
+=== CycloneDX SBOMs from Node
+
+To generate an SBOM for your NPM package, you can use tools specifically designed for this purpose, such as CycloneDX. Here are the general steps to generate an SBOM:
+
+1. Add the `@cyclonedx/cyclonedx-npm` module as a _development_ dependency and add an `sbom` script to your `package.json` file:
++
+[source,json]
+----
+{
+  "devDependencies": {
+    "@cyclonedx/cyclonedx-npm": "^1.14.1"
+  },
+  "scripts": {
+    "sbom": "cyclonedx-npm --output-format json --output-file sbom.json"
+  }
+}
+----
++
+This command will generate an SBOM in JSON format and save it as `sbom.json` in the current directory.
+
+2. Install dependencies by running `npm install`, or `yarn`.
+
+3. Run the following command to generate the SBOM: 
++
+[source,bash]
+----
+$ npm run sbom
+----

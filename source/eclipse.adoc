@@ -49,6 +49,8 @@ include::chapters/committer_badges.adoc[leveloffset=+1]
 
 include::chapters/resources.adoc[]
 
+include::chapters/sbom.adoc[leveloffset=+1]
+
 include::chapters/security.adoc[leveloffset=+1]
 
 include::chapters/contributing.adoc[leveloffset=+1]

@@ -48,7 +48,7 @@ The Eclipse Foundation provides the following services (high level) for {forgeNa
 * Specifications
 ** A programme for creating xref:specifications[specifications];
 * Thought leadership
-** Best practices based on industry trends (e.g., SBOMs and AI in open source)
+** Best practices based on industry trends (e.g., xref:sbom[SBOMs] and AI in open source)
 
 [#resources-roe]
 === Open, Transparent, and Meritocratic

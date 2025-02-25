@@ -558,7 +558,7 @@ IP Logs are no longer required in the form previously described in this document
 This section is under construction.
 ====
 
-{forgeName} open source projects are required to maintain a software bill of materials (SBOM). xref:legaldoc-plugins-abouts["About" files] (`about.html`) serve this purpose in Eclipse Platform plug-ins, and xref:legaldoc-notice[`NOTICE`] files or summary files generated using the Eclipse Dash License Tool serve as SBOMs. In the future, the EMO will work with projects to leverage standard SBOM formats such as SPDX or CycloneDX. 
+{forgeName} open source projects are required to maintain a software bill of materials (SBOM). Project teams should leverage standard xref:sbom[SBOM] formats such as SPDX or CycloneDX. xref:legaldoc-plugins-abouts["About" files] (`about.html`) serve this purpose in Eclipse Platform plug-ins, and xref:legaldoc-notice[`NOTICE`] files or summary files generated using the xref:ip-license-tool[Eclipse Dash License Tool] can also serve as SBOMs. 
 
 [TIP]
 ====
