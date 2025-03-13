@@ -20,7 +20,7 @@ Releases and reviews are crucial aspects of the project life cycle within the Ec
 
 Annually (more frequent for specification projects), Eclipse projects undergo a thorough review process in close collaboration with the Eclipse Management Organization (EMO) and the Project Management Committee (PMC). This collaborative effort ensures that each project adheres to high-quality standards and follows the best open source software (OSS) practices and guidelines established by the Eclipse Foundation. Reviews may be associated with a specific release, referred to as a "Release Review", or may not be linked to any particular release, known as a "Progress Review".
 
-Additionally, there are other, less common but equally important types of reviews at the Eclipse Foundation, including Graduation Reviews, Restructuring Reviews, and Termination Reviews.  In the following section, we will go into the specifics of these release and review processes.
+Additionally, there are other, less common but equally important types of reviews at the Eclipse Foundation, including Graduation Reviews, Restructuring Reviews, and xref:reviews-termination[Termination Reviews].  In the following section, we will go into the specifics of these release and review processes.
 
 [[release-releases]]
 === Releases
@@ -95,10 +95,9 @@ Be sure to specify the channels where milestone adopter should provide feedback.
 If you have questions regarding the distribution of milestone builds, contact the {emoEmailLink} for assistance.
 
 [[reviews]]
-=== Reviews
 
 [#release-creation]
-==== Creation Reviews
+=== Creation Reviews
 
 The creation review is only part of the overall project creation process which starts with a project proposal and ends with your code being available for distribution. Please see xref:starting[Starting an Open Source Project at the Eclipse Foundation] for a discussion of the overall process.
 
@@ -126,7 +125,7 @@ Prior to scheduling the creation review, the EMO will check for the following th
 * All questions have been satisfactorily answered in the communication channel.
 
 [[progress-review]]
-==== Release and Progress Reviews
+=== Release and Progress Reviews
 
 Reviews serve as a means for a project to engage in a retrospective of the progress made, discover areas for potential improvement or mitigation, demonstrate that the project is operating according to the open source rules of engagement (open, transparent, and meritocratic), and ensure that the development process and intellectual due diligence processes are being followed.
 
@@ -196,7 +195,7 @@ Finally, a progress review provides the community and the Eclipse Foundation Mem
 ====
 
 [[release-graduation]]
-==== Graduation Reviews
+=== Graduation Reviews
 
 The purpose of a _graduation review_ is to confirm that the project has a working and demonstrable code base of sufficiently high quality active and sufficiently diverse communities; has adopters, developers, and users operating fully in the open following the {edpLink}; and is a credit to {forgeName} and is functioning well within the larger {forgeName} community
 
@@ -217,7 +216,7 @@ Connect with your xref:roles-pmc[PMC] to discuss whether or not the project is r
 ====
 
 [[release-restructuring]]
-==== Restructuring Reviews
+=== Restructuring Reviews
 
 A Restructuring review is a type of Review that is used to notify the community of substantial changes to one or more existing project's structure, governance, or scope.
 
@@ -235,21 +234,22 @@ Restructuring reviews begin with a formal proposal submitted by project leaders 
 
 The EMO uses this https://gitlab.eclipse.org/eclipsefdn/emo-team/emo/-/blob/main/.gitlab/issue_templates/project_restructuring.md?ref_type=heads/[GitLab template] as a starting point to track the status of restructuring reviews. Please note that due to the variety of restructuring cases that may arise, the template will be modified to align with the specific review rationale.
 
-[[release-termination]]
-==== Termination Reviews
-Initiating a termination review is a crucial step in managing projects that have reached the end of their life cycle or are no longer sustainable. This process is typically initiated when project leaders or stakeholders believe that a project should be retired or terminated. 
+[#reviews-termination]
+=== Termination Reviews
 
-To kick-start the termination review, a formal proposal is submitted to the EMO and PMC. This proposal should provide a rationale for the termination, outlining the reasons behind it, such as lack of activity or relevance, and the potential implications for the Eclipse community. Once submitted, the EMO schedules a formal review period, during which the Eclipse community can provide feedback and comments on the termination.
+[[release-termination]]
+Initiating a termination review is a crucial step in managing projects that have reached the end of their life cycle or are no longer sustainable. The EMO will initiate a termination review when requested by the PMC or a project lead, or when the EMO suspects that the project is no longer viable.
+
+As part of a termination review, the EMO will (with assistance from the PMC and project team) provide a rationale for the termination, outlining the reasons behind it, such as lack of activity or relevance, and the potential implications for the Eclipse community. The EMO schedules a formal review period that will run for at least a week, during which the Eclipse community can provide feedback and comments on the termination.
 
 [NOTE]
 ====
 Send an email to {emoEmailLink} to initiate a termination review. 
 ====
 
-Once the termination request is submitted, the EMO will schedule a formal review that will run for at least a week. The project team has the responsibility to inform their community and PMC using the appropriate public channels. During the termination review period the Eclipse community engages in a thorough evaluation, providing feedback and participating in relevant discussions related to the impact of the termination. During this period, there is always the possibility that someone may express interest in taking over the project. In such cases, the termination review is withdrawn, and instead, a restructuring or progress review is scheduled, depending on the specific circumstances.
+During the termination review period the Eclipse community engages in a thorough evaluation, providing feedback and participating in relevant discussions related to the impact of the termination. During this period, there is always the possibility that someone may express interest in taking over the project. In such cases, the termination review is withdrawn, and instead, a restructuring or progress review is scheduled, depending on the specific circumstances.
 
-The EMO uses this https://gitlab.eclipse.org/eclipsefdn/emo-team/emo/-/blob/main/.gitlab/issue_templates/project_termination.md?ref_type=heads/[GitLab template] as a starting point to track the status of termination reviews. The template is always modified to align with the specific review rationale.
-
+The EMO uses this https://gitlab.eclipse.org/eclipsefdn/emo-team/emo/-/blob/main/.gitlab/issue_templates/project_termination.md?ref_type=heads/[GitLab template] as a starting point to track the status of termination reviews. The template is always modified to align with the specific termination rationale.
 
 [[release-faq]]
 === Frequently Asked Questions
