@@ -134,6 +134,25 @@ An `Also-by` (or `Co-authored-by`) entry can be added for each additional author
 
 Authors who are not committers on the project receiving the commit must have an Eclipse Foundation Account and must have a signed xref:contributing-eca[Eclipse Contributor Agreement] (ECA) on file.
 
+[#resources-platform]
+=== GitLab/GitHub Decision Matrix
+
+GitHub and GitLab are the both supported platforms. Each offers a distinct set of capabilities, features, and integration paths. To support projects in making an informed choice, the Foundation has developed a GitHub vs GitLab Decision Matrix that can be found https://eclipse-cbi.github.io/cbi-website/cbi/DecisionMatrixGitHubGitLab/[here]
+
+This matrix outlines key criteria based on Code Management, Continuous Integration, platform features available to help projects assess which platform best fits their requirements.
+
+We encourage all projects, especially new initiatives or those considering a migration, to consult this matrix before making a decision. 
+
+We recommend to use GitHub if these criteria are important to you:
+* GitHub ecosystem integrations (e.g. GitHub Actions, Codespaces, packages, ...)
+* Large community base for contribution
+* GitHub runners usage limits
+
+Or using GitLab if these criteria are important to you:
+* Data sovereignty (EU-based hosting, EF-owned backups)
+* Built-in DevSecOps features (e.g., security scanning, compliance, reports)
+* Agile roadmap planning tools integrated into the platform
+
 [#resources-gitlab]
 === GitLab
 
