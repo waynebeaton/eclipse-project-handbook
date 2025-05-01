@@ -443,10 +443,12 @@ We need to have a source pointer. If you cannot (or do not) provide it, processi
 +
 The source must be one of the following:
 +
+--
 * A URL pointing to an archive (e.g., `pass:[*.zip]`, `pass:[*.tar.gz]`)
 * An xref:ip-request-attachments[attachment];
 * The URL for an Eclipse GitLab merge request (e.g., `pass:[https://gitlab.eclipse.org/eclipse/technology/dash/org.eclipse.dash.handbook/-/merge_requests/1]`); or
 * The URL for a GitHub pull request, (e.g. `pass:[https://github.com/eclipse/dash-licenses/pull/278]`).
+--
 +
 If you're not sure, do not provide source pointer; instead, describe the information you do have and the IP Team will configure the request accordingly.
 +
