@@ -553,13 +553,6 @@ Do not share your access token.
 
 [[ip-iplog]][[ip-iplog-generator]]{forgeName} open source projects are required to track their intellectual property contributions, as well as their use of third party content. We rely on the Git log to track contributors and contributions.
 
-[WARNING]
-====
-IP Logs are no longer required in the form previously described in this document. The IP Log Generator has been deprecated and will be retired. 
-
-This section is under construction.
-====
-
 {forgeName} open source projects are required to maintain a software bill of materials (SBOM). Project teams should leverage standard xref:sbom[SBOM] formats such as SPDX or CycloneDX. xref:legaldoc-plugins-abouts["About" files] (`about.html`) serve this purpose in Eclipse Platform plug-ins, and xref:legaldoc-notice[`NOTICE`] files or summary files generated using the xref:ip-license-tool[Eclipse Dash License Tool] can also serve as SBOMs. 
 
 [TIP]
