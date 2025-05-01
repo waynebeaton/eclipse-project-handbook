@@ -3,7 +3,7 @@
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
- * http://www.eclipse.org/legal/epl-2.0.
+ * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-FileType: SOURCE
  *
@@ -24,7 +24,7 @@ Where possible we adopt standards and conventions in order to be good open sourc
 ====
 This document describes a set of general guidelines for legal documentation. Projects that implement Eclipse Platform Plug-ins and Features under the EPL-2.0 should follow the xref:legaldoc-plugins[Legal Documentation for Eclipse Platform Plug-ins and Features].
 
-Projects that implement Eclipse Platform Plug-ins and Features under the EPL-1.0 should follow the http://www.eclipse.org/legal/guidetolegaldoc-EPL-1.0.php[Guide to the Legal Documentation for Eclipse Plug-ins and Features under the EPL-1.0].
+Projects that implement Eclipse Platform Plug-ins and Features under the EPL-1.0 should follow the https://www.eclipse.org/legal/guidetolegaldoc-EPL-1.0.php[Guide to the Legal Documentation for Eclipse Plug-ins and Features under the EPL-1.0].
 ====
 
 [[legaldoc-repo]]
@@ -118,7 +118,7 @@ Copyright headers can take one of two forms. In the traditional form, the identi
  * 
  * This program and the accompanying materials are made available under the <2>
  * terms of the Eclipse Public License 2.0 which is available at
- * http://www.eclipse.org/legal/epl-2.0.
+ * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0 <3>
  *
@@ -151,7 +151,7 @@ Alternatively, project teams can adopt a more generic copyright header for each 
  *
  * This program and the accompanying materials are made available under the <3>
  * terms of the Eclipse Public License 2.0 which is available at
- * http://www.eclipse.org/legal/epl-2.0
+ * https://www.eclipse.org/legal/epl-2.0
  * 
  * SPDX-License-Identifier: EPL-2.0 <4>
  ********************************************************************************/
@@ -178,7 +178,7 @@ In SPDX, disjunction is used to express dual licensing and conjunction is used t
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License 2.0 which is available at
- * http://www.eclipse.org/legal/epl-2.0, or the Apache Software License 2.0
+ * https://www.eclipse.org/legal/epl-2.0, or the Apache Software License 2.0
  * which is available at https://www.apache.org/licenses/LICENSE-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0 OR Apache-2.0
@@ -201,7 +201,7 @@ The license file must be expressed in a human readable (`plaintext`) form; human
 ----
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0, or the Apache Software License
+https://www.eclipse.org/legal/epl-2.0, or the Apache Software License
 2.0 which is available at https://www.apache.org/licenses/LICENSE-2.0.
 
 ... Text of the Eclipse Public License 2.0 ...
@@ -255,7 +255,7 @@ listed source code repository logs.
 
 This program and the accompanying materials are made available under the terms
 of the Eclipse Public License v. 1.0 which is available at
-http://www.eclipse.org/legal/epl-v10.html.
+https://www.eclipse.org/legal/epl-v10.html.
 
 SPDX-License-Identifier: EPL-1.0
 
@@ -263,20 +263,20 @@ SPDX-License-Identifier: EPL-1.0
 
 The project maintains the following source code repositories:
 
- * http://git.eclipse.org/c/dash/org.eclipse.dash.dashboard.git
- * http://git.eclipse.org/c/dash/org.eclipse.dash.handbook.git
- * http://git.eclipse.org/c/dash/org.eclipse.dash.m4e.tools.git
- * http://git.eclipse.org/c/dash/org.eclipse.dash.maven.git
- * http://git.eclipse.org/c/dash/org.eclipse.dash.repositories.git
- * http://git.eclipse.org/c/dash/org.eclipse.dash.test.git
+ * https://git.eclipse.org/c/dash/org.eclipse.dash.dashboard.git
+ * https://git.eclipse.org/c/dash/org.eclipse.dash.handbook.git
+ * https://git.eclipse.org/c/dash/org.eclipse.dash.m4e.tools.git
+ * https://git.eclipse.org/c/dash/org.eclipse.dash.maven.git
+ * https://git.eclipse.org/c/dash/org.eclipse.dash.repositories.git
+ * https://git.eclipse.org/c/dash/org.eclipse.dash.test.git
 
 ## Third party Content
 
 ckeditor (3.0.1)
 
  * License: MPL 1.1, BSD
- * Project: http://ckeditor.com/
- * Source: http://ckeditor.com/download
+ * Project: https://ckeditor.com/
+ * Source: https://ckeditor.com/download
 
 commons-codec-1.3.jar (1.3)
 
@@ -301,8 +301,8 @@ Google Guava (19.0)
 Services_JSON (1.31)
 
  * License: Modified BSD 
- * Project: http://pear.php.net/pepr/pepr-proposal-show.php?id=198
- * Source: http://mike.teczno.com/JSON/
+ * Project: https://pear.php.net/pepr/pepr-proposal-show.php?id=198
+ * Source: https://mike.teczno.com/JSON/
 
 Yahoo YUI (2.3.1)
 

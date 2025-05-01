@@ -3,7 +3,7 @@
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
- * http://www.eclipse.org/legal/epl-2.0.
+ * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-FileType: SOURCE
  *
@@ -23,8 +23,8 @@ Here are some other links that should help you with the process:
 Phase] - The whole process for proposing a project;
 ** link:#Proposal_Creation_Links[Create a new proposal] on one of the
 Eclipse Foundation Forges;
-** Examples: http://eclipse.org/proposals/technology.aether/[Aether],
-http://eclipse.org/proposals/mpc/[Marketplace Client]
+** Examples: https://eclipse.org/proposals/technology.aether/[Aether],
+https://eclipse.org/proposals/mpc/[Marketplace Client]
 * link:Architecture Council[Architecture Council] - The role of the
 Architecture Council in a new project;
 * xref:release-creation[Creation Reviews] -

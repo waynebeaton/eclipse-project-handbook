@@ -3,7 +3,7 @@
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
- * http://www.eclipse.org/legal/epl-2.0.
+ * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-FileType: SOURCE
  *
@@ -188,11 +188,11 @@ Approved Eclipse logos are available on the https://www.eclipse.org/artwork[Ecli
 
 The following minimal set of links must be included on the footer of all pages in the official xref:resources-website[project website]:
 
-* Main Eclipse Foundation website (http://www.eclipse.org);
-* Privacy policy (http://www.eclipse.org/legal/privacy.php);
-* Website terms of use (http://www.eclipse.org/legal/termsofuse.php);
-* Copyright agent (http://www.eclipse.org/legal/copyright.php); and
-* Legal (http://www.eclipse.org/legal).
+* Main Eclipse Foundation website (`pass:[https://www.eclipse.org]`);
+* Privacy policy (`pass:[https://www.eclipse.org/legal/privacy.php]`);
+* Website terms of use (`pass:[https://www.eclipse.org/legal/termsofuse.php]`);
+* Copyright agent (`pass:[https://www.eclipse.org/legal/copyright.php]`); and
+* Legal (`pass:[https://www.eclipse.org/legal]`).
 
 [NOTE]
 ====
@@ -295,7 +295,7 @@ Nothing in this Eclipse Foundation document shall be interpreted to allow any th
 
 Questions? Project participants who have questions about Eclipse Foundation trademarks either used here or at third party sites should contact the EMO. Other organisations looking for information on how to use or refer to any Eclipse Foundation project trademarks or logos should see the {trademarkGuidelinesLink}.
 
-Thanks and credit to the Apache Software Foundation's http://www.apache.org/foundation/marks/pmcs[Project Branding Requirements] (licensed under the Apache License, v2.0) for parts of this trademark section.
+Thanks and credit to the Apache Software Foundation's https://www.apache.org/foundation/marks/pmcs[Project Branding Requirements] (licensed under the Apache License, v2.0) for parts of this trademark section.
 
 [[trademarks-faq]]
 === Frequently Asked Questions
