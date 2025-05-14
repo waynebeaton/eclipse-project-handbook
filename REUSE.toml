@@ -1,0 +1,56 @@
+#*************************************************************************
+# * Copyright (c) 2025 The Eclipse Foundation and others.
+# *
+# * This program and the accompanying materials are made available under
+# * the terms of the Eclipse Public License 2.0 which accompanies this
+# * distribution, and is available at https://www.eclipse.org/legal/epl-2.0
+# *
+# * SPDX-License-Identifier: EPL-2.0
+# *************************************************************************/
+
+version = 1
+SPDX-PackageName = "Eclipse Project Handbook"
+SPDX-PackageSupplier = "The Eclipse Vhant Project"
+SPDX-PackageDownloadLocation = "https://gitlab.eclipse.org:eclipse/vhant/org.eclipse.dash.handbook.git"
+
+[[annotations]]
+path = "DEPENDENCIES"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 The Eclipse Foundation"
+SPDX-License-Identifier = "EPL-2.0"
+
+[[annotations]]
+path = "CODE_OF_CONDUCT.md"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 The Eclipse Foundation"
+SPDX-License-Identifier = "EPL-2.0"
+
+[[annotations]]
+path = ".settings/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 The Eclipse Foundation"
+SPDX-License-Identifier = "EPL-2.0"
+
+[[annotations]]
+path = ["source/icons/important.png", "source/icons/info.png", "source/icons/note.png", "source/icons/tip.png", "source/icons/warning.png"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Tango Desktop Project"
+SPDX-License-Identifier = "CC-PDDC"
+
+[[annotations]]
+path = "source/icons/callouts/**.png"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Copyright © 2017 The Eclipse Foundation"
+SPDX-License-Identifier = "EPL-2.0"
+
+[[annotations]]
+path = ["source/images/**.png", "source/images/**.jpg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Contributors to The Eclipse Foundation"
+SPDX-License-Identifier = "EPL-2.0"
+
+[[annotations]]
+path = ".project"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Contributors to The Eclipse Foundation"
+SPDX-License-Identifier = "EPL-2.0"
