@@ -137,21 +137,23 @@ Authors who are not committers on the project receiving the commit must have an 
 [#resources-platform]
 === GitLab/GitHub Decision Matrix
 
-GitHub and GitLab are the both supported platforms. Each offers a distinct set of capabilities, features, and integration paths. To support projects in making an informed choice, the Foundation has developed a GitHub vs GitLab Decision Matrix that can be found https://eclipse-cbi.github.io/cbi-website/cbi/DecisionMatrixGitHubGitLab/[here]
+GitHub and GitLab are the both supported platforms. Each offers a distinct set of capabilities, features, and integration paths. To support projects in making an informed choice, the Eclipse Foundation has developed a https://eclipse-cbi.github.io/cbi-website/cbi/DecisionMatrixGitHubGitLab[GitHub vs GitLab Decision Matrix].
 
-This matrix outlines key criteria based on Code Management, Continuous Integration, platform features available to help projects assess which platform best fits their requirements.
+This matrix outlines key criteria based on code management, continuous integration, and platform features available to help Eclipse projects assess which platform best fits their requirements.
 
-We encourage all projects, especially new initiatives or those considering a migration, to consult this matrix before making a decision. 
+We encourage all Eclipse project teams, especially for new initiatives or those considering a migration, to consult this matrix before making a decision. 
 
 We recommend to use GitHub if these criteria are important to you:
-* GitHub ecosystem integrations (e.g. GitHub Actions, Codespaces, packages, ...)
-* Large community base for contribution
-* GitHub runners usage limits
+
+* GitHub ecosystem integrations (e.g. GitHub Actions, Codespaces, packages, ...);
+* Large community base for contribution; or
+* GitHub runners usage limits.
 
 Or using GitLab if these criteria are important to you:
-* Data sovereignty (EU-based hosting, EF-owned backups)
-* Built-in DevSecOps features (e.g., security scanning, compliance, reports)
-* Agile roadmap planning tools integrated into the platform
+
+* Data sovereignty (EU-based hosting with EF-owned backups);
+* Built-in DevSecOps features (e.g., security scanning, compliance, reports); or
+* Agile roadmap planning tools integrated into the platform.
 
 [#resources-gitlab]
 === GitLab
