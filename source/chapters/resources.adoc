@@ -501,7 +501,7 @@ Where technically sensible, all downloadable artifacts should be {jarSigningUrl}
 
 The project is allocated space on the {forgeName} download and archive servers.
 
-Project artifacts (e.g. downloads) can be distributed via third party services (e.g. Maven Central), but -- where technically sensible -- the Eclipse Foundation-provided infrastructure must be considered the primary source of project downloads.
+Project artifacts (e.g. downloads) can be distributed via third party services (e.g. xref:resources-maven[Maven Central]), but -- where technically sensible -- the Eclipse Foundation-provided infrastructure must be considered the primary source of project downloads.
 
 Project committers can {downloadsUrl}[upload project artifacts] to the project's directory on the download server. The short name is used to denote the area available to the project (e.g. `pass:a[{downloadsHost}/dash]` for the `technology.dash` project) via SFTP or SCP, or from a xref:resources-builds[Eclipse Foundation hosted build infrastructure].
 
@@ -567,13 +567,11 @@ Additionally, a PMC may decide to create and manage an organisation for the Top-
 [[resources-maven]]
 ==== Maven Central
 
-The Eclipse Foundation has no formal relationship with Maven Central or staging providers like OSSRH. Eclipse project teams are, however, welcome to use these services as a distribution channel.
+The Eclipse Release Engineering Team has provided some help regarding the use of Maven Central in their https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/wikis/IT_Infrastructure_Doc#publish-to-maven-central[wiki].
 
 By convention, the `groupid` should be of the form `pass:a,c[{namespace}.<shortname>]` (e.g. `{namespace}.dash` for the `technology.dash` project). Project teams should work with their PMC if some exception to this convention is required (and take care to avoid infringing on the namespaces of other projects). The form of the `artifactid` should be determined by the project team. The version number should follow the standard Semantic Versioning pattern. All pre-release builds must be appropriately labelled (e.g. `1.0M3` for pre-release builds of version `1.0`). 
 
-Project teams must engage in the <<release>> process before labelling any software as a release version.
-
-The Eclipse Release Engineering Team has provided some help regarding the use of Maven Central in their https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/wikis/IT_Infrastructure_Doc#publish-to-maven-central[wiki].
+Project teams must engage in the xref:release[release] process before labelling any software as a release version.
 
 [[chat-service]]
 === Chat Service
@@ -638,7 +636,7 @@ If you provide content to your community via any form of click-to-download notio
 
 Can we host pre-release software (e.g. milestone builds) on Maven Central? ::
 
-Reasonable steps must be taken to ensure that the consumer understands the pre-release nature of software. At a minimum, pre-release software must be labelled as such. A milestone build for version 1.0, for example, must be labelled as "1.0M1" (or similar). Pre-release software can be pushed to Maven Central, but due to the permanent nature of content that is pushed there, it will persist there indefinitely. Whether or not this is desirable is a decision that the project team should make with help from their PMC.
+Reasonable steps must be taken to ensure that the consumer understands the pre-release nature of software. At a minimum, pre-release software must be labelled as such. A milestone build for version 1.0, for example, must be labelled as "1.0M1" (or similar). Pre-release software can be pushed to xref:resources-maven[Maven Central], but due to the permanent nature of content that is pushed there, it will persist there indefinitely. Whether or not this is desirable is a decision that the project team should make with help from their PMC.
 
 Can we use external services like OSSRH to stage pre-release builds? ::
 
