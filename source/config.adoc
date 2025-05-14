@@ -79,7 +79,7 @@
 :membershipAgreementUrl: https://www.eclipse.org/org/documents/eclipse_membership_agreement.pdf
 
 :jarSigningUrl: https://github.com/eclipse-cbi/cbi/wiki/Signing
-:downloadsUrl: https://wiki.eclipse.org/IT_Infrastructure_Doc#Downloads
+:downloadsUrl: https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/wikis/IT_Infrastructure_Doc#downloads
 
 :helpdeskUrl: https://gitlab.eclipse.org/eclipsefdn/helpdesk
 

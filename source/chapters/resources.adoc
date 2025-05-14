@@ -573,7 +573,7 @@ By convention, the `groupid` should be of the form `pass:a,c[{namespace}.<shortn
 
 Project teams must engage in the <<release>> process before labelling any software as a release version.
 
-The Eclipse Release Engineering Team has provided some help regarding the use of Maven Central in the https://wiki.eclipse.org/IT_Infrastructure_Doc#Publish_to_Maven_Central[Eclipsepedia Wiki].
+The Eclipse Release Engineering Team has provided some help regarding the use of Maven Central in their https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/wikis/IT_Infrastructure_Doc#publish-to-maven-central[wiki].
 
 [[chat-service]]
 === Chat Service
