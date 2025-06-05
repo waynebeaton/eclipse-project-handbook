@@ -30,7 +30,7 @@ To contribute to {aForgeName} open source project, a contributor must:
 . Read the project's contribution guide to learn about coding style and other guidelines for contributions (contribution guidelines are typically found a `CONTRIBUTING` or `README` file in the root of every source code repository);
 . Create a commit:
  * Ensure that the author credentials on the commit record match the email address associated with their Eclipse Foundation Account
-. Create a pull request (GitHub), merge request (GitLab), or submit a review (Gerrit); and
+. Create a pull request (GitHub) or merge request (GitLab); and
 . Work with the project team to merge the contribution.
 
 Contributors retain ownership of their contributions; the ECA, for example, states in part:

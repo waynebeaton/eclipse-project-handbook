@@ -27,7 +27,7 @@ For most open source projects, these contribution rules aren't formally captured
 +
 Note that it’s also perfectly reasonable for a project team to require that significant contributions come with a promise of continued investment in the form of the contributor becoming a member of the project team.
 +
-Regardless of the rules that define the level playing field for any particular project, any content destined for the project’s code base should have some _public record of contribution_. Otherwise, the project would be operating (at least in part) hidden from community involvement and so counter to the open source rules of engagement. That public record can take the form of a Gerrit review, merged GitHub pull request, GitLab merge request, or (if you’re in a pinch) an attachment on a Bugzilla or GitHub Issue record.
+Regardless of the rules that define the level playing field for any particular project, any content destined for the project’s code base should have some _public record of contribution_. Otherwise, the project would be operating (at least in part) hidden from community involvement and so counter to the open source rules of engagement. That public record can take the form of a merged GitHub pull request, GitLab merge request, or (if you’re in a pinch) an attachment on an issue.
 
 Eclipse Projects are also required to implement the Eclipse Foundation's IP Policy. Tracking intellectual property grants and ensuring that all contributors and committers are covered by agreements that
 

@@ -157,7 +157,7 @@ A project cannot make a xref:release[release] until the due diligence on the IP 
 
 Contributions made by {forgeName} committers **do not** require review by the Eclipse IP Team and can be pushed directly into a project repository. Notwithstanding project-specific rules, project committers can push their own content directly into project repositories. While content produced by other {forgeName} committers _does not_ require review by the Eclipse IP Team, it must still be accepted by project committers. Project committers should engage the {forgeName} IP Team if they have concerns regarding the provenance of any contribution.
 
-Contributions by others (i.e., developers who are not committers) must be received via an Eclipse Foundation channel (e.g., GitHub pull request, GitLab merge request, Gerrit review, or attachment on an issue). 
+Contributions by others (i.e., developers who are not committers) must be received via an Eclipse Foundation channel (e.g., GitHub pull request, GitLab merge request, or attachment on an issue). 
 
 All contributors must sign the xref:contributing-eca[Eclipse Contributor Agreement] (ECA). 
 

@@ -16,7 +16,7 @@
 Open source projects at the Eclipse Foundation are _required_ to make use of certain Eclipse Foundation services:
 
 * All project issues must be tracked in the issue tracker assigned to the project;
-* Source code must be maintained in source code repositories assigned to the project (xref:resources-gitlab[Eclipse Foundation GitLab], xref:resources-github[Eclipse Foundation-managed GitHub], or xref:resources-gerrit[Eclipse Foundation Gerrit]);
+* Source code must be maintained in source code repositories assigned to the project (xref:resources-gitlab[Eclipse Foundation GitLab] or xref:resources-github[Eclipse Foundation-managed GitHub]);
 * All third party content used by the project must be xref:ip-third-party[vetted];
 * Downloads (when provided) must be distributed via xref:resources-downloads[{aForgeName} downloads] server;
 * Developer (committer) communication must occur in the xref:resources-dev-list[dev-list] provided to the project by the Eclipse Foundation; and
@@ -110,14 +110,12 @@ Date:   Wed May 29 16:17:36 2013 +0200
     'Customize View...' items from the local toolbar 
     and the view menu.
     
-    Change-Id: Ia2bd5091303d1b0a738157effc24e4dac5a7d0c7 <3>
-    Also-by: Some Bodyelse <somebodyelse@nowhere.com> <4>
+    Also-by: Some Bodyelse <somebodyelse@nowhere.com> <3>
 ------------------------------------------------------------
 
 <1> The email address of the author must match the email address on the Eclipse Foundation Account, the name "Some Body" must be replaced by the real name of the person.
 <2> Best practice: include the bug id in the commit message summary.
-<3> Gerrit `Change-Id` (only when pushing to Gerrit for review).
-<4> Additional authors can be added using `Also-by` or `Co-authored-by` entries, by replacing the name "Some Bodyelse" by the real name of the person (use one entry per person).
+<3> Additional authors can be added using `Also-by` or `Co-authored-by` entries, by replacing the name "Some Bodyelse" by the real name of the person (use one entry per person).
 
 [IMPORTANT]
 ====
@@ -125,10 +123,6 @@ The email address used in the `Author` field (and, when required, in the `Also-b
 ====
 
 The _summary_ line is used in many places where Git commits are listed, ensure that this line is sensible by itself. The _description_ area should be used to provide more detail about the commit. The footer area is used for extra fields and values.
-
-If the bug id is included in the summary line (using the form "Bug 12345 - xxx" or "[12345] xxx") Gerrit Code Review will automatically add a link in the corresponding Bugzilla record back to the Gerrit record (this, of course, only applies to commits pushed to Gerrit).
-
-The `Change-Id` is used by xref:resources-gerrit[Gerrit Code Review] to associate new versions of a change back to its original review. This field need only be specified if the repository is managed by Gerrit.
 
 An `Also-by` (or `Co-authored-by`) entry can be added for each additional author of a commit (one committer per entry). This might apply, for example, if a commit has been authored via pair-programming, or the commit is the result of collapsing multiple commits authored by multiple developers. To be considered valid the entry must take the form `Also-by: Name <email>`.
 
@@ -394,12 +388,6 @@ image::images/Github-self-service-pull-request-comment.png[]
 The pull request needs to be approved by an Eclipse Foundation staff member and once its merged, the changes will get applied to GitHub.
 
 The baseline configuration used by the Eclipse Foundation can be accessed https://github.com/EclipseFdn/otterdog-defaults/blob/main/otterdog-defaults.libsonnet[here].
-[#resources-gerrit]
-=== Gerrit Code Review
-
-[#resources-git]
-
-https://www.gerritcodereview.com/[Gerrit] provides web based code review and repository management for the Git version control system. Many projects use Gerrit to reduce barriers and encourage contribution to the project. As Gerrit is deprecated, we encourage projects to use GitLab or GitHub for code hosting. 
 
 [#resources-archiving-repositories]
 === Archiving Repositories

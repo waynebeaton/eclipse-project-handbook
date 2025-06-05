@@ -230,87 +230,46 @@ ____
 Other information, as deemed necessary by the project team may also be included.
 
 .Example `NOTICE.md` file
-[source]
+[source,md]
 ----
-# Notices for Dash, Tools for Committers
+# Notices for Eclipse Dash
 
-This content is produced and maintained by the Eclipse Dash, Tools for
-Committers project.
+This content is produced and maintained by the Eclipse Dash project.
 
- * Project home: https://projects.eclipse.org/projects/technology.dash
+* Project home: https://projects.eclipse.org/projects/technology.dash
 
 ## Trademarks
 
-Eclipse Dash, Tools for Committers, and Dash, Tools for Committers are
-trademarks of the Eclipse Foundation. Eclipse, and the Eclipse Logo are
-registered trademarks of the Eclipse Foundation.
+Eclipse Dash is a trademark of the Eclipse Foundation.
 
 ## Copyright
 
-All content is the property of the respective authors or their employers. 
-For more information regarding authorship of content, please consult the 
-listed source code repository logs.
+All content is the property of the respective authors or their employers. For
+more information regarding authorship of content, please consult the listed
+source code repository logs.
 
 ## Declared Project Licenses
 
 This program and the accompanying materials are made available under the terms
-of the Eclipse Public License v. 1.0 which is available at
-https://www.eclipse.org/legal/epl-v10.html.
+of the Eclipse Public License v. 2.0 which is available at
+https://www.eclipse.org/legal/epl-2.0.
 
-SPDX-License-Identifier: EPL-1.0
+SPDX-License-Identifier: EPL-2.0
 
 ## Source Code
 
 The project maintains the following source code repositories:
 
- * https://git.eclipse.org/c/dash/org.eclipse.dash.dashboard.git
- * https://git.eclipse.org/c/dash/org.eclipse.dash.handbook.git
- * https://git.eclipse.org/c/dash/org.eclipse.dash.m4e.tools.git
- * https://git.eclipse.org/c/dash/org.eclipse.dash.maven.git
- * https://git.eclipse.org/c/dash/org.eclipse.dash.repositories.git
- * https://git.eclipse.org/c/dash/org.eclipse.dash.test.git
-
-## Third party Content
-
-ckeditor (3.0.1)
-
- * License: MPL 1.1, BSD
- * Project: https://ckeditor.com/
- * Source: https://ckeditor.com/download
-
-commons-codec-1.3.jar (1.3)
-
- * License: Apache License, 2.0
-
-commons-net (3.3)
-
- * License: Apache License, 2.0
-
-commons-vfs2 (2.1)
-
- * License: Apache License, 2.0
-
-Google Gson (2.2.4)
-
- * License: Apache License, 2.0
-
-Google Guava (19.0)
-
- * License: Apache License, 2.0
-
-Services_JSON (1.31)
-
- * License: Modified BSD 
- * Project: https://pear.php.net/pepr/pepr-proposal-show.php?id=198
- * Source: https://mike.teczno.com/JSON/
-
-Yahoo YUI (2.3.1)
-
- * License: New BSD license
-
-YUI (2.6.0)
-
- * License: New BSD license
+* https://github.com/eclipse-dash/.github
+* https://github.com/eclipse-dash/dash-licenses
+* https://github.com/eclipse-dash/nodejs-wrapper
+* https://github.com/eclipse-dash/quevee
+* https://gitlab.eclipse.org/eclipse/technology/dash/dash.git
+* https://gitlab.eclipse.org/eclipse/technology/dash/eclipse-api-for-java.git
+* https://gitlab.eclipse.org/eclipse/technology/dash/eclipse-project-code.git
+* https://gitlab.eclipse.org/eclipse/technology/dash/ip-check.git
+* https://gitlab.eclipse.org/eclipse/technology/dash/license-tool/nodejs-wrapper.git
+* https://gitlab.eclipse.org/eclipse/technology/dash/org.eclipse.dash.handbook.git
 
 ## Cryptography
 
@@ -367,7 +326,7 @@ The `CONTRIBUTING` file should make it very clear what are the steps a contribut
 It should:
 
 * Include very specific instructions on how contributions are accepted;
-* Describe how to submit contributions (GitHub pull requests, GitLab merge requests, or Gerrit reviews), along with the necessary steps to have the project accept those requests;
+* Describe how to submit contributions (GitHub pull requests or GitLab merge requests), along with the necessary steps to have the project accept those requests;
 * Describe the legal part of the process for accepting contributions, e.g. point to the the {ecaUrl}[Eclipse Contributor Agreement] (ECA) and {dcoUrl}[Developer Certificate of Origin] (DCO); and
 * Describe any project specific rules, which the contributors should know, for example:
 ** preferences on code quality;
@@ -385,6 +344,75 @@ The `CONTRIBUTING` file can optionally provide guidance for developers who want 
 ====
 Keeping a help-wanted list up-to-date can be challenging. Consider including a query (e.g. for `helpwanted` issues) rather than (or in addition to) specific work area recommendations.
 ====
+
+=== CONTRIBUTING file template
+
+----
+# Contributing to <project name>
+
+Thanks for your interest in this project.
+
+## Project description
+
+<description>
+
+* https://projects.eclipse.org/projects/<project id>
+
+## Terms of Use
+
+This repository is subject to the Terms of Use of the Eclipse Foundation
+
+* https://www.eclipse.org/legal/termsofuse.php
+
+## Developer resources
+
+Information regarding source code management, builds, coding standards, and
+more.
+
+* https://projects.eclipse.org/projects/<project id>/developer
+
+## Project License
+
+<licence>
+
+Contributions are received under the terms of the project licence.
+
+## Help Wanted
+
+Describe how contributors can help the project. 
+
+e.g., provide a pointer to "helpwanted" issues
+
+## Eclipse Development Process
+
+This Eclipse Foundation open project is governed by the Eclipse Foundation
+Development Process and operates under the terms of the Eclipse IP Policy.
+
+* https://eclipse.org/projects/dev_process
+* https://www.eclipse.org/org/documents/Eclipse_IP_Policy.pdf
+
+## Eclipse Contributor Agreement
+
+In order to be able to contribute to Eclipse Foundation projects you must
+electronically sign the Eclipse Contributor Agreement (ECA).
+
+* https://www.eclipse.org/legal/ECA.php
+
+The ECA provides the Eclipse Foundation with a permanent record that you agree
+that each of your contributions will comply with the commitments documented in
+the Developer Certificate of Origin (DCO). Having an ECA on file associated with
+the email address matching the "Author" field of your contribution's Git commits
+fulfils the DCO's requirement that you sign-off on your contributions.
+
+For more information, please see the Eclipse Committer Handbook:
+https://www.eclipse.org/projects/handbook/#resources-commit
+
+## Contact
+
+Contact the project developers via the project's "dev" list.
+
+* https://accounts.eclipse.org/mailing-list/<project dev list>
+----
 
 [[legaldoc-security]]
 == SECURITY File
