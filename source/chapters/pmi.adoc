@@ -240,7 +240,28 @@ Company logos automatically appear on the _Overview_ and _Who's Involved_ page u
 The display of company logos is _entirely automatic_ based on the criteria listed above.
 ====
 
-If all of those conditions are met and the logo is still not showing up, then it's possible that a gap exists in our data. Contact the {emoEmailLink} for assistance.
+[[discrete]]
+===== Troubleshooting
+
+A company employee must have a recent commit ::
+
+Has an employee authored a commit within the last three months? 
++
+Note that this computation is based on commit dates; it does not consider merge or pull requests, only commits.
+
+The mapping between a commit and company uses the commit author's email address ::
+
+Does the email that the employee uses for the _Author_ field in the commit record match the email address that they've used for their xref:contributing-account[Eclipse Foundation Account]?
++
+If not, the employee must either change their email address in their account, or start using their Eclipse Foundation account email address for their Git credentials.
+
+The employee must be associated with their member company ::
+
+Does the employee appear in the member portal?
++
+If not, there are two solutions: the company's member representative may reach out to mailto:{emoRecordsEmail}[EMO Records] to add the employee; or the employee may xref:contributing-account-member[align] their Eclipse Foundation account with the member company.
+
+If the logo is still not showing up, {helpdeskUrl}[create a Help Desk Issue] to request assistance.
 
 [[pmi-build-technology]]
 ==== Build Technology
@@ -403,7 +424,7 @@ For a committer to appear on a project's _Who's Involved_ page:
 . The election must complete successfully and be approved by the PMC;
 . The new committer must provide the required xref:paperwork[paperwork];
 . The paperwork must be processed by the EMO Records Team; and
-. The Eclipse IT Team must create the committer account.
+. The Eclipse Infrastructure Team must create the committer account.
 --
 +
 Each piece takes time. If a committer doesn't appear some number of days after the successful completion of a committer election, then contact the committer to confirm that they've followed the provided instructions and have submitted committer paperwork. Then, connect with {emoEmailLink} for assistance.
