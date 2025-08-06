@@ -167,7 +167,7 @@ The provisioning process will not start until after the xref:paperwork[committer
 When we initiate provisioning, committers will be sent an email with instructions; please don't send any paperwork in until after you receive those instructions.
 ====
 
-When the paperwork is received and processed for one committer, the Eclipse IT Team will begin the resources provisioning process. When that process is complete, the Eclipse IT Team will provide information regarding the nature and coordinates of the various  xref:project-resources-and-services[resources and services] available to the project.
+When the paperwork is received and processed for one committer, the Eclipse Infrastructure Team will begin the resources provisioning process. When that process is complete, the Eclipse Infrastructure Team will provide information regarding the nature and coordinates of the various  xref:project-resources-and-services[resources and services] available to the project.
 
 [[starting-after-provisioning]]
 === After Provisioning

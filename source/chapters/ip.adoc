@@ -121,16 +121,16 @@ When an existing project migrates to the Eclipse Foundation, we refer to the exi
 
 [WARNING]
 ====
-All {forgeName} open source project content must be kept in source code repositories that are managed by the Eclipse IT Team. Our current options are xref:resources-gitlab[GitLab] or xref:resources-github[GitHub].
+All {forgeName} open source project content must be kept in source code repositories that are managed by the Eclipse Infrastructure Team. Our current options are xref:resources-gitlab[GitLab] or xref:resources-github[GitHub].
 ====
 
 In the case of an existing repository, the project team has some choices:
 
-**Move the existing repository.** At the project team's request, the Eclipse IT Team can move existing source code repositories on xref:resources-github[GitHub] into an organisation managed by the Eclipse Foundation. This is the best option when a project team wants to preserve their repository's status with existing forks, retain existing issues, stars, etc. If the repository is private, it must be made public before the move. Note that GitHub does a good job of setting up redirects that will ensure that the project's existing community can find them. 
+**Move the existing repository.** At the project team's request, the Eclipse Infrastructure Team can move existing source code repositories on xref:resources-github[GitHub] into an organisation managed by the Eclipse Foundation. This is the best option when a project team wants to preserve their repository's status with existing forks, retain existing issues, stars, etc. If the repository is private, it must be made public before the move. Note that GitHub does a good job of setting up redirects that will ensure that the project's existing community can find them. 
 
-**Push to a new repository.** At the project team's request, the Eclipse IT Team can create new source code repositories on either xref:resources-gitlab[GitLab] or xref:resources-github[GitHub] into which the project team can push existing content. This option is best in the case that there is good reason to leave an existing repository in place, or when a project team needs to move an existing private repository into the open. The project team can decide whether or not to push the entire history or just a snapshot from the existing repository. As a best practice, an existing repository that gets "left behind" should be updated to include a pointer to the new repository and marked as _archived_.
+**Push to a new repository.** At the project team's request, the Eclipse Infrastructure Team can create new source code repositories on either xref:resources-gitlab[GitLab] or xref:resources-github[GitHub] into which the project team can push existing content. This option is best in the case that there is good reason to leave an existing repository in place, or when a project team needs to move an existing private repository into the open. The project team can decide whether or not to push the entire history or just a snapshot from the existing repository. As a best practice, an existing repository that gets "left behind" should be updated to include a pointer to the new repository and marked as _archived_.
 
-Combinations are also possible. As part of the {forgeName} open source xref:starting[project creation process], the EMO asks the project team to capture their requirements and will facilitate discussion between the project team and the Eclipse IT Team to implement those requirements.
+Combinations are also possible. As part of the {forgeName} open source xref:starting[project creation process], the EMO asks the project team to capture their requirements and will facilitate discussion between the project team and the Eclipse Infrastructure Team to implement those requirements.
 
 [NOTE]
 ====
@@ -140,7 +140,7 @@ We must complete the open source xref:starting[project creation process] before 
 The short version of the process is this:
 
 * Complete the xref:starting-proposal[proposal process] and xref:release-creation[creation review];
-* Project team and EMO works with Eclipse IT Team to set up source code repositories;
+* Project team and EMO works with Eclipse Infrastructure Team to set up source code repositories;
 * The EMO initiates the intellectual property review of the default branch of all repositories; and
 * The EMO IP Team will inform the EMO when the reviews are complete
 

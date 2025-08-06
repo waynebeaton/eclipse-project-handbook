@@ -20,7 +20,7 @@
 :emoEmail: emo@eclipse-foundation.org
 :ipTeamEmail: emo-ip-team@eclipse.org
 :emoRecordsEmail: emo-records@eclipse-foundation.org
-:webmasterEmail: webmaster@eclipse-foundation.org
+:webmasterEmail: infrastructure@eclipse-foundation.org
 :legalEmail: license@eclipse-foundation.org
 :licenseEmail: license@eclipse-foundation.org
 :licenseEmailUrl: mailto:{licenseEmail}
@@ -47,7 +47,7 @@
 :licenseToolUrl: https://github.com/eclipse/dash-licenses
 :licenseToolLink: {licenseToolUrl}[Eclipse Dash License Tool]
 
-:webmasterEmailLink: mailto:{webmasterEmail}[Eclipse Webmaster]
+:webmasterEmailLink: mailto:{webmasterEmail}[Eclipse Infrastructure Team]
 :ipTeamEmailLink: mailto:{ipTeamEmail}[EMO IP Team]
 :emoEmailLink: mailto:{emoEmail}[EMO]
 :emoRecordsEmailLink: mailto:{emoRecordsEmail}[EMO Records Team]

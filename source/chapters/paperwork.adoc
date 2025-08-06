@@ -88,7 +88,7 @@ digraph {
 }
 ----
 
-After all required documents have been received, the EMO Records Team will review them, contact the committer to resolve any issues that need to be addressed, and send a request to the Eclipse IT Team to provision a committer account.
+After all required documents have been received, the EMO Records Team will review them, contact the committer to resolve any issues that need to be addressed, and send a request to the Eclipse Infrastructure Team to provision a committer account.
 
 Questions regarding this process should be addressed to the {emoRecordsEmailLink}.
 

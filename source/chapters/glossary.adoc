@@ -77,6 +77,10 @@ Genie ::
 
 _Genie_ is the generic term given to automated processes that perform various functions on behalf of project teams, generally focused around builds. The _Eclipse Genie_ performs various tasks (e.g. automated portions of the xref:ip[IP Due Diligence Process]) on behalf of the Eclipse Foundation.
 
+Infrastructure Team ::
+
+The Eclipse Infrastructure Team is responsible for maintaining the IT infrastructure of the Eclipse Foundation and the {forgeName} forge. You can contact the Eclipse Infrastructure Team directly by opening a {helpdeskUrl}[Help Desk issue] or via email ({webmasterEmail}). "Webmaster" is sometimes used as an alternative name for the Eclipse Infrastructure Team. 
+
 Incubation Phase ::
 
 The purpose of the xref:incubation[incubation phase] is to establish a fully-functioning open source project. In this context, incubation is about developing the process, the community, and the technology. Incubation is a phase rather than a place: new projects may be incubated under any existing project.
@@ -115,10 +119,6 @@ A top-level project (sometimes referred to as a _TLP_) is effectively a containe
 Vulnerability ::
 
 This Eclipse Foundation uses the ISO 27005 definition of vulnerability: "A weakness of an asset or group of assets that can be exploited by one or more threats."
-
-Webmaster ::
-
-Webmaster is often used as an alternative name for the Eclipse IT Team. The Eclipse IT team is responsible for maintaining the IT infrastructure of the Eclipse Foundation and the {forgeName} forge. You can contact the Eclipse IT team directly by opening a {helpdeskUrl}[Help Desk issue] or via email ({webmasterEmail}).
 	
 Working Group ::
 

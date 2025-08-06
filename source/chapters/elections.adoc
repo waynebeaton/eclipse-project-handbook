@@ -17,7 +17,7 @@ xref:#roles[Roles] in a project are assigned based on merit demonstrated in a pu
 
 [WARNING]
 ====
-While committer and project lead elections are fully automatic, setting up a new committer or project lead's account with the necessary privileges is partly manual. After a successful election, the EMO Records Team checks for required agreements -- which might involve some manual work -- before the IT Team can finish the setup. Any manual processing will occur with 24 hours of the start of the next business day. Plan accordingly.
+While committer and project lead elections are fully automatic, setting up a new committer or project lead's account with the necessary privileges is partly manual. After a successful election, the EMO Records Team checks for required agreements -- which might involve some manual work -- before the Eclipse Infrastructure Team can finish the setup. Any manual processing will occur with 24 hours of the start of the next business day. Plan accordingly.
 ====
 
 [[elections-committer]]

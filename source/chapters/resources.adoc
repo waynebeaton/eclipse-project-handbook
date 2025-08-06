@@ -161,7 +161,7 @@ Some of the terms used by GitLab -- _project_ in particular -- have different me
 
 [TIP]
 ====
-Any committer can {helpdeskUrl}[create a Help Desk issue] to request that the Eclipse IT Team create a new repository on, or move an existing repository to, the GitLab instance for their project. Note that the Eclipse IT Team will verify the request with the project leads.
+Any committer can {helpdeskUrl}[create a Help Desk issue] to request that the Eclipse Infrastructure Team create a new repository on, or move an existing repository to, the GitLab instance for their project. Note that the Eclipse Infrastructure Team will verify the request with the project leads.
 ====
 
 On GitLab, the root group for all {forgeName} open source project repositories is `{forgeMachineName}`. Under that root, two nesting options are available: {aForgeName} open source project's group can be nested directly under the root, or can be nested in a group corresponding to the {forgeName} top-level project. In both nesting options, repositories may be arbitrarily nested in subgroups created under the projects' group to organise the repositories. The custom subgroups are cosmetic only, as the same permissions are applied to the nested groups and do not provide any extra functionality.
@@ -275,11 +275,11 @@ Excluded Subgroups have been added to xref:pmi[Project Management Infrastructure
 
 Project teams may opt to host some or all of their canonical source code repositories to an organisation on GitHub that is maintained by the Eclipse Foundation. Both GitHub Issues and Wiki may also be used.
 
-Any committer can {helpdeskUrl}[open a Help Desk issue] to request that the Eclipse IT Team create a new repository for their project on, or move an existing repository to, GitHub. A project may have more than one repository on GitHub. When making the request, the committer should describe--specifically and concisely--what they want to make happen. Note that the Eclipse IT Team will verify the request with the project leads.
+Any committer can {helpdeskUrl}[open a Help Desk issue] to request that the Eclipse Infrastructure Team create a new repository for their project on, or move an existing repository to, GitHub. A project may have more than one repository on GitHub. When making the request, the committer should describe--specifically and concisely--what they want to make happen. Note that the Eclipse Infrastructure Team will verify the request with the project leads.
 
 Repositories can be hosted in the default `{forgeMachineName}` GitHub organisation, or a dedicated organisation can be created. Dedicated organisations use as their name, the conjunction of `{forgeMachineName}` with the project xref:resources-identifiers[short name] (e.g., `{forgeMachineName}-woolsey`).
 
-The Eclipse IT Team installs some _hooks_ onto all {forgeName} project repositories on GitHub.
+The Eclipse Infrastructure Team installs some _hooks_ onto all {forgeName} project repositories on GitHub.
 
 The _Committers hook_ grants designated project committers write access to the GitHub-hosted project repositories. Project committers must add their GitHub id to their xref:contributing-account[Eclipse Foundation account], and must use the email address they provide to the Eclipse Foundation as the email address in the author credentials of all commits. 
 
@@ -394,7 +394,7 @@ The baseline configuration used by the Eclipse Foundation can be accessed https:
 
 If a repository belonging to a project is unmaintained or deprecated and will not receive any further updates, it is good practice to clearly indicate that in the corresponding `README.md` and `SECURITY.md` files of the repository with a migration path if applicable.
 
-Committers shall mark a deprecated repository as being `archived` either by using the xref:resources-github-self-service[Self-Service of GitHub Resources] or by {helpdeskUrl}[opening a Help Desk issue] to request assistance from the Eclipse IT Team.
+Committers shall mark a deprecated repository as being `archived` either by using the xref:resources-github-self-service[Self-Service of GitHub Resources] or by {helpdeskUrl}[opening a Help Desk issue] to request assistance from the Eclipse Infrastructure Team.
 
 [[resources-issues]]
 === Issue Trackers
@@ -436,7 +436,7 @@ The PMC list should be the primary means of communication between PMC members an
 [#resources-committers-mailing-list]
 ==== Committers Mailing List
 
-All xref:roles-cm[committers] are automatically subscribed to the `eclipse.org-committers@eclipse.org` mailing list. This list is used primarily as a means for the EMO and the Eclipse IT Team to communicate important information to all committers. We use this list sparingly.
+All xref:roles-cm[committers] are automatically subscribed to the `eclipse.org-committers@eclipse.org` mailing list. This list is used primarily as a means for the EMO and the Eclipse Infrastructure Team to communicate important information to all committers. We use this list sparingly.
 
 [TIP]
 ====
@@ -459,7 +459,7 @@ Many project teams opt to create a custom main project website: if so-desired, a
 
 [NOTE]
 ====
-If a project website has not already been created for your project, {helpdeskUrl}[open a Help Desk issue] to request that the Eclipse IT Team create one. The Eclipse Webdev team provides a Hugo-based https://gitlab.eclipse.org/eclipsefdn/it/webdev/hugo-eclipsefdn-website-boilerplate[project website template] that you can use.
+If a project website has not already been created for your project, {helpdeskUrl}[open a Help Desk issue] to request that the Eclipse Infrastructure Team create one. The Eclipse Webdev team provides a Hugo-based https://gitlab.eclipse.org/eclipsefdn/it/webdev/hugo-eclipsefdn-website-boilerplate[project website template] that you can use.
 ====
 
 Project websites must implement the xref:trademarks-website[branding guidelines for project websites].
