@@ -35,21 +35,32 @@ Eclipse Projects are also required to implement the Eclipse Foundation's IP Poli
 
 Committers must work day-to-day in the repositories assigned to the {forgeName} project by the Eclipse Foundation ::
 
-Making it so that people who are outside of the development team (that is, the contributors) have the ability to access the most up-to-date version of the project code is an absolute requirement. To that end, committers must push content directly into designated open repositories. {forgeName} project committers must never stage to a private or semi-private repository and then “periodically sync” to the open repository; employing this sort of strategy raises a significant barrier for entry that makes it impossible for anybody else to participate.
+Eclipse open source projects are required to operate in an xref:preamble-principles[open, transparent, and meritocratic manner]. This means that, as an Eclipse open source project, project developers (xref:roles-cm[committers]) are required to do their day-to-day work in the xref:resources-platform[Git repositories] provided by the Eclipse Foundation (either xref:resources-github[GitHub] organisations and repositories managed by the Eclipse Foundation, or the Eclipse Foundation's hosted xref:resources-gitlab[GitLab] instance). 
++
+The project team is expected to review merge/pull requests from the community, confirm that contributors are correctly covered by a valid xref:contributing-eca[contributor agreement], and merge contributions with technical merit that align with the project's goals and scope. Further, the project team is expected to invite regular xref:contributing-contributors[contributors] to the project to join as committers. 
++
+Please see https://blog.waynebeaton.ca/posts/opensource/level-playing-field/[Level Playing Field] and https://blog.waynebeaton.ca/posts/opensource/repository/[Barriers for Entry].
 
 Project-related issues must be tracked via issue trackers assigned to the {forgeName} project by the Eclipse Foundation ::
 
 That is, the issue trackers associated with the project's GitLab and GitHub repositories must be used for all issues related to the open source project.
 
+Commmitters must engage in the Eclipse Foundation's Intellectual Property Due Diligence Process ::
+
+Project committers are required to engage in our xref:ip[Intellectual Property Due Diligence Process] to vet the licence compatibility of the third-party content that the project leverages. Due diligence must be complete before any content is included in a xref:release[release].
+
 Committers must be covered by a Committer Agreement ::
 
-Either an MCCA or an ICA. When you change employers, you may need sign a new agreement.
+Either a xref:paperwork-mcca[Member Committer and Contributor Agreement] (MCCA) or an xref:paperwork-ica[Individual Committer Agreement] (ICA). When you change employers, you may need sign a new agreement.
 
 Contributors must sign the Eclipse Contributor Agreement (ECA) ::
 
 Regardless of how a contribution is presented, the contributor must be listed as the author in the [Git commit record](https://www.eclipse.org/projects/handbook/#resources-commit) and must complete the [Eclipse Contributor Agreement](https://www.eclipse.org/legal/ECA.php) before any contribution can be accepted.
 +
-Note that committers, who must already been covered by either an MCCA or an ICA, are, by virtue of that agreement, considered to have signed the ECA.
+[TIP]
+====
+Committers, who must already been covered by either a  xref:paperwork-mcca[Member Committer and Contributor Agreement] (MCCA) or an xref:paperwork-ica[Individual Committer Agreement] (ICA), are, by virtue of that agreement, considered to have signed the ECA.
+====
 
 Committers must work in a vendor neutral manner ::
 
@@ -73,6 +84,15 @@ As an to this rule, the set of initial committers are specified at the time a ne
 
 Committers must be subscribed to their project's `dev` list ::
 
+Committers must respect the Eclipse Foundation Trademark Usage Policy ::
+
+Your Eclipse open source project's name and the names of any software produced by the project are trademarks (either registered or common-law) of the Eclipse Foundation, and you are required to follow the same {trademarkGuidelinesUrl}[trademark guidelines] as everybody else when you refer to the project. 
++
+[TIP]
+====
+If you were to, for example, contribute the "Woolsey" product to the Eclipse Foundation, you would be required to transfer all rights that you have to the name "Woolsey" to the Eclipse Foundation, and the use of the "Woolsey" name in your products, website, marketing materials, etc. would be then be subject to the trademark guidelines (you would be required to rename your products from "Woolsey" to "[Product Name] for Eclipse Woolsey" or similar; there can be no notion of a "professional" version or similar of the Eclipse project). If the name important to your organisation, consider choosing a different name for the Eclipse open source project.
+====
+
 Ownership of domains that leverage Eclipse Foundation trademarks must be transferred to the Eclipse Foundation ::
 
-including all project names, regardless of whether or not they are registered trademarks.
+Ownership of all domains that are related to your Eclipse open source project must be transferred to the Eclipse Foundation. This includes all project names, regardless of whether or not they are registered trademarks.
