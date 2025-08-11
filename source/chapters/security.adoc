@@ -177,7 +177,7 @@ The request for a publication must provide:
 * A one or two sentence summary of the issue which clearly identifies the Eclipse project/product and impacted versions; and
 * A pointer (URL) to the issue used to track mitigation of the vulnerability.
 
-The request may optionally include additional information, such as a Common Vulnerability Scoring System (CVSS) code, a link to the commit fixing the issue etc.
+The request may optionally include additional information, such as a xref:cvss-scoring[Common Vulnerability Scoring System] (CVSS) code, a link to the commit fixing the issue etc.
 
 Each CVE entry must include at least one public link.
 
@@ -214,18 +214,31 @@ The Eclipse Foundation CNA is currently using Common Vulnerability Scoring Syste
 The final result (score) of CVSS if a value from 0.0 (minimal impact) to 10.0 (critical impact); in addition to the score, the CVSS also includes a more detailed explanation (vectors) of various factors.
 
 The Eclipse Foundation Security Team recommends to fill the following fields:
-* *Attack Vector*: Does the attacker need physical access to the system, a local account, or a local network (e.g., Bluetooth or the same IP subnet), or can the attack be conducted remotely?
-* *Attack Complexity*: is the attack easy to perform with code that will work every time (low complexity), or require work and preparation, or multiple attempts (to generate a race condition, for example) (high complexity)
-* *Attack Requirements*: shows if the attack is possible in all conditions. "None" means there are no specific conditions. However, "Present" means that the attack can take place in a particular configuration; the attacker needs to control the path between the user and the vulnerable system, and so on.
-* *User Interaction*: what is the involvement of the user? The score might be None (no user interaction required), Passive (involuntary actions from the user who is not working with the attacker), and Active (where the user is working with the attacker—for example, placing a file in a specific place or ignored a security warning).
-* *Privileges Required*: Does the attack require no permission at all? Low permissions (for example, a user account)? Or high permissions (for example, an administrator account)?
-* *Product Confidentiality*: There is either no loss of confidentiality, low loss with either a limited amount of confidential information obtained or limited control of what is obtained, or high loss when all confidential information of a system is available to the attacker.
-* *Product Integrity*: There is either no loss of integrity, a low loss with either limited or partial modification by the attacker, or a complete loss of integrity when the attacker can modify any information in the vulnerable component.
-* *Product Availability*: There is either no loss of availability, limited loss when, for example, the component is working slowly, or a high availability loss in case of a complete denial of service.
-* *Subsequent Confidentiality/Integrity/Availability* are scored as the above, but for systems that are not directly attacked, but might be impacted indirectly.
-* *Vulnerability Response Effort*: How much effort does responding to the vulnerability require? Is it a trivial change in a configuration, a simple update, or does a technician have to have physical access to each affected device?
-* *Urgency*: How urgent is it to remediate this vulnerability?
 
+Attack Vector :: Does the attacker need physical access to the system, a local account, or a local network (e.g., Bluetooth or the same IP subnet), or can the attack be conducted remotely?
+
+Attack Complexity :: is the attack easy to perform with code that will work every time (low complexity), or require work and preparation, or multiple attempts (to generate a race condition, for example) (high complexity)
+
+Attack Requirements :: shows if the attack is possible in all conditions. "None" means there are no specific conditions. However, "Present" means that the attack can take place in a particular configuration; the attacker needs to control the path between the user and the vulnerable system, and so on.
+
+User Interaction :: what is the involvement of the user? The score might be None (no user interaction required), Passive (involuntary actions from the user who is not working with the attacker), and Active (where the user is working with the attacker—for example, placing a file in a specific place or ignored a security warning).
+
+Privileges Required :: Does the attack require no permission at all? Low permissions (for example, a user account)? Or high permissions (for example, an administrator account)?
+
+Product Confidentiality :: There is either no loss of confidentiality, low loss with either a limited amount of confidential information obtained or limited control of what is obtained, or high loss when all confidential information of a system is available to the attacker.
+
+Product Integrity :: There is either no loss of integrity, a low loss with either limited or partial modification by the attacker, or a complete loss of integrity when the attacker can modify any information in the vulnerable component.
+
+Product Availability :: There is either no loss of availability, limited loss when, for example, the component is working slowly, or a high availability loss in case of a complete denial of service. 
++
+[NOTE]
+====
+Subsequent Confidentiality/Integrity/Availability are scored as the above, but for systems that are not directly attacked, but might be impacted indirectly.
+====
+
+Vulnerability Response Effort :: How much effort does responding to the vulnerability require? Is it a trivial change in a configuration, a simple update, or does a technician have to have physical access to each affected device?
+
+Urgency :: How urgent is it to remediate this vulnerability?
 
 [[security-faq]]
 == Frequently Asked Questions
