@@ -209,7 +209,7 @@ If unsure on how to fill the form, ask the Eclipse Foundation Security Team for 
 
 === CVSS Scoring
 
-The Eclipse Foundation CNA is currently using Common Vulnerability Scoring System (CVSS) version 4. The CVSS scoring gives an estimation of the impact of the issue. One important thing to know about CVSS is that it describes the situation under a *reasonable worst-case scenario*. This also means there might be differences in the scoring between different people.
+The Eclipse Foundation CNA is currently using https://nvd.nist.gov/vuln-metrics/cvss/v4-calculator[Common Vulnerability Scoring System (CVSS) version 4,window="_blank"]. The CVSS scoring gives an estimation of the impact of the issue. One important thing to know about CVSS is that it describes the situation under a *reasonable worst-case scenario*. This also means there might be differences in the scoring between different people.
 
 The final result (score) of CVSS if a value from 0.0 (minimal impact) to 10.0 (critical impact); in addition to the score, the CVSS also includes a more detailed explanation (vectors) of various factors.
 
