@@ -512,7 +512,7 @@ The project is allocated space on the {forgeName} download and archive servers.
 
 Project artifacts (e.g. downloads) can be distributed via third party services (e.g. xref:resources-maven[Maven Central]), but -- where technically sensible -- the Eclipse Foundation-provided infrastructure must be considered the primary source of project downloads.
 
-Project committers can {downloadsUrl}[upload project artifacts] to the project's directory on the download server. The short name is used to denote the area available to the project (e.g. `pass:a[{downloadsHost}/dash]` for the `technology.dash` project) via SFTP or SCP, or from a xref:resources-builds[Eclipse Foundation hosted build infrastructure].
+Project committers can {downloadsUrl}[upload project artifacts] to the project's directory on the download server using the xref:resources-builds[Eclipse Foundation hosted build infrastructure]. The xref:resources-identifiers[short name] is used to denote the area available to the project (e.g. `pass:a[{downloadsHost}/dash]` for the `technology.dash` project).
 
 [[resources-external]]
 === External Resources
