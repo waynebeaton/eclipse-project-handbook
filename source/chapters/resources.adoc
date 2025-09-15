@@ -619,9 +619,13 @@ Our primary concern is that all decision making and planning (and related discus
 +
 Growing a community and diversifying the project committers is a goal of every {forgeName} open source project. Nothing quite kills a community's enthusiasm like pointers to related issues that they don't have access to, hints that there is a higher level of planning that they do not have access to, or otherwise suggest that the project is not being run in an entirely vendor-neutral manner.
 +
-Care must be taken to ensure that all decisions regarding the direction taken by the project are being driven the committers.
+Care must be taken to ensure that all decisions regarding the direction taken by the project are being driven by the committers in a manner that is consistent with the xref:preamble-principles[Open Source Rules of Engagement].
 +
 If you believe that the {forgeName} project can be run as independent vendor neutral open source with the service attached, that is transparent and open to all comers and that there is a level playing field with a path that community members can follow to demonstrate merit and earn equal access to all project planning (that is, become committers), then you can request that the service be attached by creating a {helpDeskUrl}[Help Desk] issue.
+
+Can we use JIRA with our Eclipse open source project? ::
+
+No. Issues and planning are core content; as such, Eclipse open source projects are required to use xref:resources-issues[issue trackers] provided by the Eclipse Foundation.
 
 Can a project use the _gh-pages_ support from GitHub to host at `<project>.github.io`?::
 
