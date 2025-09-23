@@ -218,12 +218,13 @@ Connect with your xref:roles-pmc[PMC] to discuss whether or not the project is r
 [[release-restructuring]]
 === Restructuring Reviews
 
-A Restructuring review is a type of Review that is used to notify the community of substantial changes to one or more existing project's structure, governance, or scope.
+A Restructuring review is a type of review that is used to notify the community of substantial changes to one or more existing project's structure, governance, or scope.
 
-The purpose of a Restructuring Review is to notify the community of significant changes to one or more Projects. Examples of "significant changes" include:
-* Movement of significant chunks of functionality from one Project to another.
-* Modification of the Project structure, e.g. combining multiple Projects into a single Project, or decomposing a single Project into multiple Projects.
-* Change of Project Scope.
+The purpose of a restructuring review is to notify the community of significant changes to one or more projects. Examples of _significant changes_ include:
+
+- Movement of significant chunks of functionality from one Eclipse open source project to another;
+- Modification of the project structure, e.g. combining multiple projects into a single project, or decomposing a single project into multiple projects; or
+- Change of project scope.
 
 [NOTE]
 ====
