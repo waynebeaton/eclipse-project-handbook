@@ -285,7 +285,7 @@ It's a rite of passage (that should be considered a good for the project and com
 Do we need a xref:vulnerability-cve[CVE] for versions of software that we released before moving our project to the Eclipse Foundation? ::
 
 The answer to this is not obvious, but as a general rule... no. Ultimately, whether or not we should create a CVE is the project team's call.
-
++
 It might be that the previous CNA is more appropriate for releasing the CVE.
 
 Do we release CVEs for end-of-life versions? ::
