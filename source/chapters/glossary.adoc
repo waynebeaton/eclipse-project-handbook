@@ -37,10 +37,6 @@ Contributor ::
 
 A contributor is anybody who makes contributions to the project. Contributions generally take the form of code patches, but may take other forms like comments on issues, additions to the documentation, answers to questions in forums, and more. All contributors must sign the Eclipse Contributor Agreement (ECA).
 
-Dash Process ::
-
-The Dash Process, or simply _Dash_, is a collection of scripts and processes that harvest project data for dissemination in charts, and various services.
-
 Dev-list ::
 
 Every project has a _development list_ or _dev-list_. All project committers must subscribe to the list. The xref:resources-dev-list[dev-list] should be the primary means of communication between project committers and is the means through which the EMO and Eclipse Foundation's automated systems communicate with the project team.
