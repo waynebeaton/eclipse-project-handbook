@@ -49,7 +49,7 @@ The complete listing of all current {projectListUrl}[{forgeName} projects] provi
 
 The PMI provides a website for every project based on the xref:pmi-metadata[project metadata]. This website includes an _Overview_ page that shows basic information about the project, a _Downloads_ page that provides links to downloads, a _Developer Resources_ page that includes links to xref:source-repositories[source code repositories], and more. 
 
-An example project page is shown below. The _Overview_ page includes the name and description of the project, list of project licenses, a table of recent releases, and various charts and other information (note that more charts are displayed on the _Who's Involved_ page. The website also includes links to project-specific xref:pmi-commands-and-tools[commands and tools] when the user is logged in as a project committer.
+An example project page is shown below. The _Overview_ page includes the name and description of the project, list of project licenses, a table of recent releases, and various xref:pmi-charts[charts] and other information (note that more charts are displayed on the _Who's Involved_ page. The website also includes links to project-specific xref:pmi-commands-and-tools[commands and tools] when the user is logged in as a project committer.
 
 .An example project page
 image::images/project-page.png[]
@@ -57,6 +57,16 @@ image::images/project-page.png[]
 A logged in committer can access xref:pmi-commands-and-tools[commands and tools] from the _Committer Tools_ block on the right side of the project page; they can also xref:pmi-editing[edit project metadata] by clicking the _Edit_ link at the far right of the tab list.
 
 The URL for a project page takes the form `pass:c,a[{forgeUrl}/projects/<project id>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`), where `pass:c,a[<project id>]` is the xref:resources-identifiers[project ID].
+
+[[pmi-charts]]
+=== Charts
+
+The charts that are displayed in on the project page are generated nightly based on commit data from the project's source code repositories. The data includes commits that have been merged into any branch (other than the `gh_pages` branch); it excludes merge commits and any commit that has been authored by a bot. It makes no consideration of where commits come from: a commit is a commit. Whether a commit comes via a pull request, or is pushed directly by a committer, it is counted as one commit. 
+
+[NOTE]
+====
+Note that care should be taken to not draw conclusions from any chart in isolation. The manner in which committers engage on a project can have a significant impact on the commit count. It is, for example, entirely reasonable for a project to employ an incremental change strategy that integrates the CI. That is, a project team may (and some of our projects do) implement a strategy of creating many relatively small commits for each issue, pausing to get validation from the CI before proceeding. It's not reasonable or fair to compare the number of commits against a project that may use another strategy.
+====
 
 [[pmi-commands-and-tools]]
 === Commands and Tools
