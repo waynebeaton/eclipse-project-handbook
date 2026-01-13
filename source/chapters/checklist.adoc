@@ -45,8 +45,8 @@ All projects must conform to the xref:trademarks[branding guidelines] before eng
 ** e.g. `{namespace}.<shortname>.<component>[.*]` for Java packages and OSGi Bundles;
 * [ ] Provider information is set to the project's formal name:
 ** e.g. the `Bundle-Vendor` entry set to "Eclipse Foo" in OSGi Bundles; or
-** e.g. the `project` and `organisation` names are set to "{forgeName} Foo" in Maven `pom.xml` files;
-* xref:legaldoc[Legal documentation] is provided:
+** e.g. the `project` and `organization` names are set to "{forgeName} Foo" in Maven `pom.xml` files;
+* [ ] xref:legaldoc[Legal documentation] is provided:
 ** [ ] All source files include a xref:ip-copyright-headers[copyright and license header] (when technically feasible);
 ** [ ] All source code repositories include a xref:legaldoc-license[`LICENSE`] file (or equivalent) in the root; and
 ** [ ] All source code repositories include a xref:legaldoc-notice[`NOTICES`] file (or -- for projects that produce Eclipse Platform plug-ins -- `about.html` files as described by the xref:legaldoc-plugins[]); 
