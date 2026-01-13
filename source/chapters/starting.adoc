@@ -34,7 +34,7 @@ Operating in a vendor-neutral manner is a goal for all Eclipse open source proje
 
 [TIP]
 ====
-Operating in a vendor-neutral manner requires effort. It may require a change in the way that your developers work. As such, it helps regard moving your project to the Eclipse Foundation as a _process_, not an _event_. All Eclipse open source projects start in the xref:incubation[Incubation Phase].
+Operating in a vendor-neutral manner requires effort. It may require a change in the way that your developers work. As such, it helps to regard moving your project to the Eclipse Foundation as a _process_, not an _event_. All Eclipse open source projects start in the xref:incubation[Incubation Phase].
 ====
 
 When you move your project to the Eclipse Foundation, it becomes an _Eclipse_ project. Specifically, it ceases to be _your_ project and becomes a vendor-neutral _community_ project that operates under the governance of the Eclipse Foundation. 
@@ -364,7 +364,7 @@ Yes. All new projects start in the incubation phase. Remember that incubation is
 
 If Eclipse Projects are vendor neutral, then why do code headers assign copyright to various vendors? ::
 
-Eclipse projects are required to follow the xref:preamble-principles[Open Source Rules of Engagement] and operate in a vendor neutral manner. This is different from copyright. Eclipse projects operate using a symmetrical licensing scheme by which contributors (or, very often, their employers) retain the copyright of their contributions, but license them to the Eclipse Foundation who, in turn, licenses those contributions to adopters under the same terms.
+Eclipse projects are required to follow the xref:preamble-principles[Open Source Rules of Engagement] and operate in a vendor-neutral manner. This is different from copyright. Eclipse projects operate using a symmetrical licensing scheme by which contributors (or, very often, their employers) retain the copyright of their contributions, but license them to the Eclipse Foundation who, in turn, licenses those contributions to adopters under the same terms.
 +
 Contributors retain their copyright and express that copyright via xref:ip-copyright-headers[file headers].
 

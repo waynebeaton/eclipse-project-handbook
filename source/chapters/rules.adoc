@@ -62,7 +62,7 @@ Regardless of how a contribution is presented, the contributor must be listed as
 Committers, who must already been covered by either a  xref:paperwork-mcca[Member Committer and Contributor Agreement] (MCCA) or an xref:paperwork-ica[Individual Committer Agreement] (ICA), are, by virtue of that agreement, considered to have signed the ECA.
 ====
 
-Committers must work in a vendor neutral manner ::
+Committers must work in a vendor-neutral manner ::
 
 Contributors must create a public record of high quality contribution before becoming a committer via committer election ::
 

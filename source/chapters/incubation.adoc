@@ -102,7 +102,7 @@ Ensure that all metadata in technical resources (e.g., `pom.xml` and `package.js
 
 Be vendor neutral ::
 
-In order to be truly open, people need to feel welcome to contribute. This is easier if the project is vendor neutral. A vendor neutral project is not dominated by any organisation or organisations; meritocracy should be based on the contributions of an individual, not the goals or hiring practices of any specific organisation. Make growing your xref:incubation-communities[communities] a priority.
+In order to be truly open, people need to feel welcome to contribute. This is easier if the project is vendor neutral. A vendor-neutral project is not dominated by any organisation or organisations; meritocracy should be based on the contributions of an individual, not the goals or hiring practices of any specific organisation. Make growing your xref:incubation-communities[communities] a priority.
 
 [#incubation-communities]
 == Communities

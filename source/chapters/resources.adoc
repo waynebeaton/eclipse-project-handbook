@@ -41,7 +41,7 @@ The Eclipse Foundation provides the following services (high level) for {forgeNa
 * Intellectual Property
 ** xref:ip[Intellectual property due diligence] support;
 ** Legal framework and infrastructure to mitigate the legal risk associated with contribution via the xref:contributing-eca[Eclipse Contributor Agreement] (ECA) and Developer's Certificate of Origin (DCO);
-** Guidance for projects to ensure that xref:legaldoc[legal documentation] and xref:pmi[metadata] is provided in a vendor neutral and consistent manner;
+** Guidance for projects to ensure that xref:legaldoc[legal documentation] and xref:pmi[metadata] is provided in a vendor-neutral and consistent manner;
 * Open source project governance
 ** xref:elections-committer[Committer elections];
 ** Project trademark assistance and management;
@@ -621,7 +621,7 @@ Growing a community and diversifying the project committers is a goal of every {
 +
 Care must be taken to ensure that all decisions regarding the direction taken by the project are being driven by the committers in a manner that is consistent with the xref:preamble-principles[Open Source Rules of Engagement].
 +
-If you believe that the {forgeName} project can be run as independent vendor neutral open source with the service attached, that is transparent and open to all comers and that there is a level playing field with a path that community members can follow to demonstrate merit and earn equal access to all project planning (that is, become committers), then you can request that the service be attached by creating a {helpDeskUrl}[Help Desk] issue.
+If you believe that the {forgeName} project can be run as independent vendor-neutral open source with the service attached, that is transparent and open to all comers and that there is a level playing field with a path that community members can follow to demonstrate merit and earn equal access to all project planning (that is, become committers), then you can request that the service be attached by creating a {helpDeskUrl}[Help Desk] issue.
 
 Can we use JIRA with our Eclipse open source project? ::
 
