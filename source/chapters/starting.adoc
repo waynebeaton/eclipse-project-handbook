@@ -25,6 +25,9 @@ Running a successful open source project requires investment, clear goals, and a
 Please see: https://www.eclipse.org/projects/articles/governance/successful-open-source-project/[Running a Successful Open Source Project]
 ====
 
+[.text-center]
+{createUrl}[Submit a Project Proposal,role="btn btn-primary btn-lg"]
+
 [[starting-vendor-neutrality]]
 === Vendor Neutrality
 
@@ -100,6 +103,9 @@ digraph {
 ----
 
 A proposal must minimally include a description of the project, a declaration of scope, and a list of initial members (project leads and committers) before we make it accessible to the public for _community review_.
+
+[.text-center]
+{createUrl}[Submit a Project Proposal,role="btn btn-primary btn-lg"]
 
 When you feel that the proposal is ready, send a note to the Eclipse Management Organization ({emoEmailLink}) requesting that the proposal be made available to the public for review. The EMO will review the proposal and may provide feedback before initiating the _community review_ period.
 
