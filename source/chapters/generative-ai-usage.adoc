@@ -1,0 +1,64 @@
+////
+ * Copyright (C) 2024 Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-FileType: SOURCE
+ *
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+[#genai]
+= Generative Artificial Intelligence Usage Guidelines for Eclipse Committers
+
+Version 1.0. April 2024 	
+
+[NOTE]
+====
+Some portions of this content were created with the assistance of you.com.
+====
+
+The Eclipse Foundation values the human-centric approach to creativity, where Artificial Intelligence (AI) serves as a tool to enhance efficiency. By embracing the power of AI, we prioritise the empowerment of individuals to fully explore and express their creative potential. We believe in leveraging AI to optimise workflows, streamline processes, and minimise mundane tasks, allowing creators to focus on what truly matters: their imaginative pursuits.
+
+Use of generative AI platforms by Eclipse committers must respect the {roeUrl}[open source rules of engagement] described in the Eclipse Foundation Development Process, and respect the intellectual property rights of others. To that end, we must be transparent in our use of generative AI platforms, take reasonable effort to ensure the accuracy of generated content, be mindful of data privacy and intellectual property, and take care to ensure that we leverage technology in a manner that is consistent with the provider’s terms of use.
+
+These guidelines are intended to provide Eclipse committers with guidance and best practices regarding how they may use generative AI platforms to generate content and code for inclusion in Eclipse open source projects.
+
+[#genai-responsibilities]
+== Responsibilities
+
+As you incorporate AI-generated content into your work, it is your responsibility to:
+Understand your employer’s policy on the use of generative AI. Ensure that any use for Eclipse is completely consistent with your employer’s policy on the use of generative AI platforms.
+
+Understand the technology :: 
+
+Familiarise yourself with the capabilities and limitations of the platforms that you're using. Different generative AI platforms have varying strengths and weaknesses (and some are better than others for certain use cases), and understanding these will help you have realistic expectations. As part of this process, you should understand the sources of information on which the particular technology is trained.
+
+Review the terms of use, privacy policy, and other documents ::
+
+Review the materials associated with the generative AI platforms with which you engage. Ensure that the terms of use align with your intended use. For example, many of the generative AI platforms have terms that preclude use for competitive purposes. Evaluate whether your intended use may run afoul of that limitation. Ensure that the terms of use are consistent with your obligations to Eclipse as a Committer and to your employer as an employee.
+
+Understand what happens to your inputs ::
+
+While most of the major paid generative AI platforms represent that they will not use inputs for training purposes, that is not the case for all generative AI platforms. In any case, be judicious about what input you provide to any generative AI platforms. Avoid putting in any content that you may consider to be confidential. In no event should you put in any personally identifiable information (other than in registering for an account), health information, or other sensitive information.
+
+Use generative AI platforms tools :: 
+
+Many generative AI platforms provide tools designed to spot possible plagiarism or output that is identical to training material, tools that in the context of software may identify known security vulnerabilities, tools that identify possible intellectual property issues, and other tools. When using a generative AI platform to generate content for Eclipse open source projects, please use such available tools to mitigate risk.
+
+Verify accuracy and vet output ::
+
+AI is a powerful tool but it is prone to errors. It is your responsibility to ensure the accuracy of information contained in content that you produce with the help of generative AI platforms. All output should go through your normal vetting processes that you use for Eclipse, including with respect to testing, intellectual property due diligence, and security.
+
+Be transparent ::
+
+Quote your sources. And, to the extent possible, keep track both in your own records and in any content that you create, the generative AI platforms that you used to create that content and other relevant details.
+
+[#genai-copyright]
+== Copyright and Licensing
+
+Be mindful of claims regarding copyright and licensing. Evolving consensus within the legal community is that content that is created solely through a generative AI platform is not subject to copyright protection. If a work combines generated content with human-generated content, the portion of the work that was human-generated might be subject to copyright protection. Regardless of the copyright status, the work can still be licensed in connection with the Eclipse Foundation Development Process.
+
+Many of the paid generative AI platforms agree to indemnify users from copyright claims if the output is alleged to infringe a copyright. This is typically conditioned on the use of all anti-plagiarism tools offered by the generative AI platforms, as well as a requirement not to pose queries in a manner that would encourage infringing output. Please keep those requirements in mind.

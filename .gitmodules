@@ -12,8 +12,3 @@
 	url = git@gitlab.eclipse.org:eclipse/vhant/specification-process.git
 	branch = version_1_3
     ignore = dirty
-[submodule "source/guidelines"]
-	path = source/guidelines
-	url = git@gitlab.eclipse.org:eclipsefdn/emo-team/policies/project-guidelines.git
-	branch = main
-    ignore = dirty
