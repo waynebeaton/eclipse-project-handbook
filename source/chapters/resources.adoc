@@ -69,7 +69,7 @@ The short name is used in various parts of Eclipse Foundation infrastructure (e.
 Project ID ::
 The project's short name is joined with the short name of the parent project(s) to form the _project ID_ for the project that is used as a key on services provided for the project by the Eclipse Foundation. The project ID is composed of between one and three segments, separated by a dot (.); each segment may contain lowercase alphanumeric characters, dashes, and underlines. The segments define a path to the project through the project hierarchy, with the first segment being a top-level project ID.
 
-For example the "{forgeName} Woolsey" project has a _short name_ of "woolsey"; its project ID_ is "technology.dash.woolsey", indicating that it is a subproject of the {aForgeName} _Dash_ project which is itself a subproject of the _Eclipse Technology_ top-level project.
+For example the "{forgeName} Woolsey" project has a _short name_ of "woolsey"; its _project ID_ is "technology.dash.woolsey", indicating that it is a subproject of the {aForgeName} _Dash_ project which is itself a subproject of the _Eclipse Technology_ top-level project.
 
 [[resources-source]]
 === Source Code Management
