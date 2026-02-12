@@ -90,7 +90,7 @@ Project repositories must have certain documentation. All members of the various
 +
 The absolute low bar with regard to xref:incubation-communities[community development] is to provide basic xref:legaldoc[legal documentation] for the project. 
 +
-All source files must, when technical feasible, include a xref:ip-copyright-headers[copyright and licence header].
+All source files must, when technically feasible, must include a xref:ip-copyright-headers[copyright and licence header].
 
 Keep technical metadata up-to-date ::
 
