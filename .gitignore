@@ -14,6 +14,7 @@ target/*
 .settings/*
 source/chapters/images/*
 source/chapters/diagrams/*.png
+*.dll
 
 # Ignore generated content (see /releng/build.sh)
 source/chapters/commits.adoc
