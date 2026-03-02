@@ -274,7 +274,7 @@ The amount of effort varies based on the nature of the team, and expectations of
 
 Do I need to engage in a progress review? ::
 
-If the the project team wants to issue an official major or minor release and has not engaged in a progress review within a year of the planned release date, then a progress review is required.
+If the project team wants to issue an official major or minor release and has not engaged in a progress review within a year of the planned release date, then a progress review is required.
 
 What is the difference between a release review and progress review? ::
 

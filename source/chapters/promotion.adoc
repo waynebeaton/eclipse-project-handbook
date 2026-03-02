@@ -72,7 +72,7 @@ Here are some things to think about:
 
 _Know what kind of community you want to build._ Tailor your efforts to address that community through native channels. Know where the type of people who should be part of your community hang out. Find out where they get their information and take the necessary steps to get your voice heard on those forums.
 
-_Develop an elevator pitch for your project._ An elevator pitch is a thirty second to two-minute “sound bite” that describes your project in a way that be understood by a layperson. When done well, an elevator pitch motivates the listener to spend more time investigating your project. Make sure your developers can recite it. Make sure that the the project provides a means for the listener to go and find more information (e.g., a xref:promotion-website[website]).
+_Develop an elevator pitch for your project._ An elevator pitch is a thirty second to two-minute “sound bite” that describes your project in a way that be understood by a layperson. When done well, an elevator pitch motivates the listener to spend more time investigating your project. Make sure your developers can recite it. Make sure that the project provides a means for the listener to go and find more information (e.g., a xref:promotion-website[website]).
 
 _Establish drum beat of outward communication_ Identify team members who can regularly blog, podcast, host webinars, and otherwise provide outward communication. Coordinate their efforts so that communication is regular: daily, weekly, or monthly. It’s hard to ignore regular communication.
 

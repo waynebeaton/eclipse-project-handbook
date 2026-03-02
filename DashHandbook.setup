@@ -5,7 +5,7 @@
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
- * http://www.eclipse.org/legal/epl-2.0.
+ * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-FileType: DOCUMENTATION
  *
@@ -17,13 +17,13 @@
  
 <setup:Project
     xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:git="http://www.eclipse.org/oomph/setup/git/1.0"
-    xmlns:projects="http://www.eclipse.org/oomph/setup/projects/1.0"
-    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
-    xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
-    xsi:schemaLocation="http://www.eclipse.org/oomph/setup/git/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Git.ecore http://www.eclipse.org/oomph/setup/projects/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Projects.ecore"
+    xmlns:xmi="https://www.omg.org/XMI"
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xmlns:git="https://www.eclipse.org/oomph/setup/git/1.0"
+    xmlns:projects="https://www.eclipse.org/oomph/setup/projects/1.0"
+    xmlns:setup="https://www.eclipse.org/oomph/setup/1.0"
+    xmlns:setup.p2="https://www.eclipse.org/oomph/setup/p2/1.0"
+    xsi:schemaLocation="https://www.eclipse.org/oomph/setup/git/1.0 https://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Git.ecore https://www.eclipse.org/oomph/setup/projects/1.0 https://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Projects.ecore"
     name="dash.handbook"
     label="Dash Handbook">
   <setupTask
@@ -38,7 +38,7 @@
     <requirement
         name="org.eclipse.gef4.dot.sdk.feature.group"/>
     <repository
-        url="http://download.eclipse.org/tools/gef/gef4/updates/releases"/>
+        url="https://download.eclipse.org/tools/gef/gef4/updates/releases"/>
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task">
@@ -49,14 +49,14 @@
     <requirement
         name="org.eclipse.mylyn.docs.epub.feature.group"/>
     <repository
-        url="http://download.eclipse.org/mylyn/snapshots/nightly/docs/"/>
+        url="https://download.eclipse.org/mylyn/snapshots/nightly/docs/"/>
   </setupTask>
   <setupTask
       xsi:type="git:GitCloneTask"
       id="dash.handbook.git.clone"
       remoteURI="dash/org.eclipse.dash.handbook">
     <annotation
-        source="http://www.eclipse.org/oomph/setup/InducedChoices">
+        source="https://www.eclipse.org/oomph/setup/InducedChoices">
       <detail
           key="inherit">
         <value>eclipse.git.gerrit.remoteURIs</value>

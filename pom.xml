@@ -3,7 +3,7 @@
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
- * http://www.eclipse.org/legal/epl-2.0.
+ * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-FileType: DOCUMENTATION
  *
@@ -13,9 +13,9 @@
  * SPDX-License-Identifier: EPL-2.0
 -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0"
+<project xmlns="https://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<name>Eclipse Foundation Project Handbook</name>
@@ -88,7 +88,7 @@
 					<backend>xhtml5</backend>
 					<attributes>
 						<source-highlighter>coderay</source-highlighter>
-						<endpoint-url>http://www.eclipse.org</endpoint-url>
+						<endpoint-url>https://www.eclipse.org</endpoint-url>
 						<project-version>${project.version}</project-version>
 						<doctype>book</doctype>
 						<imagesoutdir>.</imagesoutdir>
