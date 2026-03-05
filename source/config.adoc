@@ -56,7 +56,7 @@
 :memberPortalUrl: https://membership.eclipse.org/portal
 
 // Content specifically for committers
-:committerGuidelinesUrl: https://www.eclipse.org/legal/committerguidelines.php
+:committerGuidelinesUrl: https://www.eclipse.org/legal/committer-guidelines
 :committerTrainingUrl: https://www.eclipse.org/projects/training
 
 :bylawsUrl: https://www.eclipse.org/org/documents/eclipse_foundation-bylaws.pdf
