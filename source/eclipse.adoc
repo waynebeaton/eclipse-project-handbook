@@ -23,7 +23,6 @@ include::config.adoc[]
 :bugzillaUrl: https://bugs.eclipse.org/bugs
 :gitlabUrl: https://gitlab.eclipse.org
 :gitHubUrl: https://github.com/eclipse
-:forumsUrl: http://www.eclipse.org/forums
 :mailingListsUrl: https://www.eclipse.org/mail/
 
 :pmiSampleImage: images/pmi-egit25.png

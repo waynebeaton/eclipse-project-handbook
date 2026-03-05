@@ -443,13 +443,6 @@ All xref:roles-cm[committers] are automatically subscribed to the `eclipse.org-c
 Subscription to the committers mailing list is an obligation that comes with having committer status on {aForgeName} open source project. The only way to remove yourself from this list is to xref:elections-retire-cm[retire yourself] as a committer.
 ====
 
-[[resources-forums]]
-=== Forums and Outbound Communication
-
-All projects are assigned a {forumsUrl}[user forum] as a point of contact between the user and adopter communities, and the project developers.
-
-The EMO strongly encourages the use of alternative communication channels for connecting with the community: project teams know their community and how to best connect with them.
-
 [[resources-website]]
 === Project Websites
 

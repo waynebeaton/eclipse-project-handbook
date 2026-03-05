@@ -18,7 +18,7 @@
 
 The {edpLink} (EDP) is mostly concerned with engaging in activities that grow community involvement. {aForgeName} project is considered successful only if a vibrant community develops around it and the project team grows in diversity.
 
-While the reviews and processes described by the EDP may seem onerous, they are a necessary part of community development. You should anticipate spending a significant amount of time responding to questions posed in various forums ({forumsUrl}[{forgeName} Forums], {mailingListsUrl}[mailing lists], and other places where your community gathers. You should plan on attending conferences, presenting webinars, writing papers, and more to support your project.
+While the reviews and processes described by the EDP may seem onerous, they are a necessary part of community development. You should anticipate spending a significant amount of time responding to questions posed in various forums (GitHub Discussions, {mailingListsUrl}[mailing lists], and other places where your community gathers. You should plan on attending conferences, presenting webinars, writing papers, and more to support your project.
 
 Community and ecosystem development are two things that every committer should spend at least some time thinking about, and -- hopefully -- some time doing something about. Ultimately, it is difficult to call your project a success without these things. It is from the community and ecosystem that you will draw additional contributions and other helpful input to make your open source project a success.
 
@@ -49,14 +49,7 @@ Include support for the website, and regular updates to your project documentati
 [[community-forums]]
 === Forums
 
-It is through {forumsUrl}[{forgeName} Forums] that adopters tend communicate with a project. Very often, it is the only real support channel provided for those adopters.
-
-ifeval::["{forgeName}"=="Eclipse"]
-[NOTE]
-====
-Every project should have at least one committer monitor {forumsUrl}/eclipse.newcomer[eclipse.newcomer] to catch questions posed there and further extend the awareness of the project.
-====
-endif::[]
+Leverage resources for community engagement, such as GitHub Discussions.
 
 When your community asks questions, answer them as soon as possible. No question should go unanswered. Encourage all of the project committers to monitor the project forum(s), or -- at very least -- take turns. When sensible, incorporate the answers into the FAQ or some type of wiki recipe. Repeat this process for as many newsgroups as possible, because Eclipse's overall success will be reflected in your personal success. Your dedication to high-quality service and support is the fuel for your ecosystem and the success of that ecosystem is the most effective way to achieve maximum influence with your limited individual capacity.
 
