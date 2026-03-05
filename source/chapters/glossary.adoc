@@ -19,7 +19,7 @@
 [glossary]
 Architecture Council ::
 
-The xref:roles-ac[Eclipse Architecture Council] (AC) serves the community by identifying and tackling any issues that hinder Eclipse's continued technological success and innovation, widespread adoption, and future growth. This involves technical architecture as well as open source processes and social aspects. Comprising the finest technical leaders from all community stake holders, it is the council's goal to keep the projects successful and healthy, the processes simple and smooth, and the communities vibrant and cohesive.
+The Eclipse Architecture Council has become the xref:glossary-etac[Eclipse Technical Advisory Council].
 
 Board of Directors ::
 
@@ -103,6 +103,11 @@ Each top-level project is governed by a xref:#roles-pmc[Project Management Commi
 Project Management Infrastructure (PMI) ::
 
 The xref:pmi[Project Management Infrastructure] (PMI) is the system that tracks the state and progress of {forgeName} projects. Project committers can modify the  information represented in the PMI, including the project description, and information about project releases. Automated systems use this information to, for example, generate dashboard and chart information for the project, intellectual property logs, etc.
+
+[[glossary-etac]]
+Technical Advisory Council ::
+
+The xref:roles-ac[Eclipse Technical Advisory Council] (ETAC) serves the Community by identifying and tackling any issues that hinder Eclipse's continued technological success and innovation, widespread adoption, and future growth. 
 
 Third party Content (Dependency)::
 

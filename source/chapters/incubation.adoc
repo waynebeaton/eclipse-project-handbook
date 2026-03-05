@@ -57,7 +57,7 @@ For projects that produce OSGi artifacts, include the word "incubation" in the _
 [#incubation-mailinglist]
 == Incubation Mailing List
 
-The {incubationListUrl}[incubation mailing list] exists to facilitate discussions related to the incubation phase, allowing project committers to ask questions about Eclipse Foundation processes, seek guidance from the xref:roles-ac[Eclipse Architecture Council], xref:roles-emo[Eclipse Management Organization], and connect with other community members involved in projects in the incubation phase.
+The {incubationListUrl}[incubation mailing list] exists to facilitate discussions related to the incubation phase, allowing project committers to ask questions about Eclipse Foundation processes, seek guidance from the xref:roles-ac[Eclipse Technical Advisory Council], xref:roles-emo[Eclipse Management Organization], and connect with other community members involved in projects in the incubation phase.
 
 New committers are encouraged to join the incubation mailing list; this list is a good place to ask questions about process, services available, and other aspects of working as a committer.
 
@@ -133,7 +133,7 @@ Projects are expected to make substantial progress on establishing these communi
 [#incubation-graduating]
 == Graduating from Incubation
 
-Incubation Phase projects will eventually graduate, signifying that the project code base has stabilised and that the project team is familiar with the Eclipse Development Process.
+Incubation Phase projects will eventually graduate, signifying that the project code base has stabilised and that the project team is familiar with the Eclipse Foundation Development Process.
 
 Graduation Reviews are generally combined with a release review.
 

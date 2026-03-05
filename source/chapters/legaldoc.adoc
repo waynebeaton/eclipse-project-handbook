@@ -383,7 +383,7 @@ Describe how contributors can help the project.
 
 e.g., provide a pointer to "helpwanted" issues
 
-## Eclipse Development Process
+## Eclipse Foundation Development Process
 
 This Eclipse Foundation open project is governed by the Eclipse Foundation
 Development Process and operates under the terms of the Eclipse IP Policy.

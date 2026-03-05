@@ -160,29 +160,37 @@ The PMC is an important link in the project leadership chain, which is composed 
 [#roles-pmc-representation]
 === PMC Representation
 
-Every PMC is entitled to appoint one representative to the xref:roles-ac[Eclipse Architecture Council].
+Every PMC is entitled to appoint one representative to the xref:roles-ac[Eclipse Technical Advisory Council].
 
-[#roles-ac]
-== Eclipse Architecture Council
+[#roles-etac]
+== Eclipse Technical Advisory Council
 
-The Eclipse Architecture Council serves the community by identifying and tackling any issues that hinder Eclipse’s continued technological success and innovation, widespread adoption, and future growth. This involves technical architecture as well as open source processes and social aspects. Comprising the finest technical leaders from all community stake holders, it is the council’s goal to keep the projects successful and healthy, the processes simple and smooth, and the communities vibrant and cohesive.
+[[roles-ac]]
+The Eclipse Technical Advisory Council (ETAC) serves the Community by identifying and tackling any issues that hinder Eclipse's continued technological success and innovation, widespread adoption, and future growth. The Eclipse Technical Advisory Council is responsible for guiding and influencing the software conventions, standards and architectures used by Projects; it also advises the EMO and executive director in matters of importance to developers, including any proposed changes to the {edpUrl}[Eclipse Foundation Development Process] (EDP).
 
-More concretely, the Eclipse Architecture Council serves four basic purposes:
+[NOTE]
+====
+The Eclipse Technical Advisory Council had previously been referred to as the Eclipse _Architecture_ Council (with slightly modified responsibilities). 
+====
+
+Comprising the finest technical leaders from all community stakeholders, it is the council's goal to keep the projects successful and healthy, the processes simple and smooth, and the communities vibrant and cohesive because this will benefit us all.
+
+More concretely, the Eclipse Technical Advisory Council serves four basic purposes:
 
 - To maintain and interpret the {edpLink};
 - To provide advice to the xref:roles-emo[Eclipse Management Organization];and
 - To contribute best practices and advice to {forgeName} open source projects.
 
-Every xref:roles-pmc[PMC] may appoint a representative to the Architecture Council to represent the interests of the PMC and corresponding Top-level Project. Every Strategic Member of the Eclipse Foundation may also appoint a representative. Other Architecture Council Members are nominated and voted on by the Architecture Council itself, and appointed by the council by the Eclipse Foundation's Executive Director. Appointed members serve a two year renewable term.
+Every xref:roles-pmc[PMC] may appoint a representative to the Technical Advisory Council to represent the interests of the PMC and corresponding Top-level Project. Every Strategic Member of the Eclipse Foundation may also appoint a representative. Other Technical Advisory Council Members are nominated and voted on by the Technical Advisory Council itself, and appointed by the council by the Eclipse Foundation's Executive Director. Appointed members serve a two year renewable term.
 
 [TIP]
 ====
-In practice, the two year renewable term for appointed members of the Architecture Council are automatically renewed with no formal ceremony.
+In practice, the two year renewable term for appointed members of the Technical Advisory Council are automatically renewed with no formal ceremony.
 ====
 
-The Architecture Council interacts primarily via their https://accounts.eclipse.org/mailing-list/eclipse.org-architecture-council[mailing list]. List participation is limited only to Architecture Council members and subscription to the list is automatic. Additionally, the Architecture Council meets (remotely) every month for a one-hour closed discussion (with public minutes).
+The Technical Advisory Council interacts primarily via their https://accounts.eclipse.org/mailing-list/eclipse.org-architecture-council[mailing list]. List participation is limited only to Technical Advisory Council members and subscription to the list is automatic. Additionally, the Technical Advisory Council meets (remotely) every month for a one-hour closed discussion (with public minutes).
 
-xref:roles-cm[Committers] and xref:roles-pl[Project Leads] should connect with the Architecture Council via their PMC.
+xref:roles-cm[Committers] and xref:roles-pl[Project Leads] should connect with the Technical Advisory Council via their PMC.
 
 [#roles-spec-committee]
 === Specification Committee
@@ -199,7 +207,7 @@ For more information about specification committees, please see xref:specificati
 [#roles-emo]
 == Eclipse Management Organization (EMO)
 
-The Eclipse Management Organization (EMO) consists of the Eclipse Foundation staff, and the Eclipse Architecture Council. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the Eclipse Foundation Development Process. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead, or xref:roles-pmc[PMC], ask the EMO.
+The Eclipse Management Organization (EMO) consists of the Eclipse Foundation staff, and the Eclipse Technical Advisory Council. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the Eclipse Foundation Development Process. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead, or xref:roles-pmc[PMC], ask the EMO.
 
 [#roles-other]
 == Other Roles
