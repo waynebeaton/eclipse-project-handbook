@@ -332,7 +332,7 @@ Project teams are not required to engage with the IP Team to review service rele
 
 [WARNING]
 ====
-This section applies specifically to open source libraries and tools only; it does not apply to the use of proprietary tools. Use of proprietary tools is covered by the {proprietaryToolsUrl}[Using Proprietary Tools] Eclipse Board resolution.
+This section applies specifically to open source libraries and tools only; it does not apply to the use of proprietary tools.
 ====
 
 Test and build dependencies are those third party libraries and tools that are considered non-distribution contributions. That is, these libraries are not actively distributed by the project via any generally-accessible `eclipse.org` property. These libraries and tools may, for example, persist on the build server which is accessible only to Eclipse committers; they may not, for example, persist on the `eclipse.org` download or archive servers, web server, or any source code repository. Eclipse project content (e.g., build scripts) distributed via `eclipse.org` source code repositories may contain references to these libraries and tools (but not the libraries/tools themselves). Project documentation should list these dependencies, how they are obtained (either manually or automatically via scripts), and other issues (especially licensing).

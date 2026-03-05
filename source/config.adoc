@@ -10,12 +10,12 @@
  * SPDX-License-Identifier: EPL-2.0
 ////
 
-:privacyPolicyUrl: https://www.eclipse.org/legal/privacy.php
-:termsOfUse: https://www.eclipse.org/legal/termsofuse.php
-:codeOfConductUrl: https://www.eclipse.org/org/documents/Community_Code_of_Conduct.php
+:privacyPolicyUrl: https://www.eclipse.org/legal/privacy
+:termsOfUse: https://www.eclipse.org/legal/terms-of-use/
+:codeOfConductUrl: https://www.eclipse.org/org/documents/community-code-of-conduct
 :codeOfConductMdUrl: https://raw.githubusercontent.com/eclipse/.github/master/CODE_OF_CONDUCT.md
-:communicationChannelGuidelinesUrl: https://www.eclipse.org/org/documents/communication-channel-guidelines/
-:socialMediaGuidelinesUrl: https://www.eclipse.org/org/documents/social_media_guidelines.php
+:communicationChannelGuidelinesUrl: https://www.eclipse.org/org/documents/communication-channel-guidelines
+:socialMediaGuidelinesUrl: https://www.eclipse.org/org/documents/social-media-guidelines
 
 :emoEmail: emo@eclipse-foundation.org
 :ipTeamEmail: emo-ip-team@eclipse.org
@@ -33,19 +33,21 @@
 :efspUrl: https://www.eclipse.org/projects/efsp/
 :efspOperationsUrl: {efspUrl}operations.php
 :efspRatificationUrl: {efspUrl}#efsp-ratification
-:efslUrl: https://www.eclipse.org/legal/efsl.php
-:eftcklUrl: https://www.eclipse.org/legal/tck.php
+:efslUrl: https://www.eclipse.org/legal/efsl/
+:eftcklUrl: https://www.eclipse.org/legal/tck/
+:effspUrl: https://www.eclipse.org/projects/effsp/
 :trademarkTransferUrl: https://eclipse.org/legal/Trademark_Transfer_Agreement.pdf
-:trademarkGuidelinesUrl: https://eclipse.org/legal/logo_guidelines.php
+:trademarkGuidelinesUrl: https://www.eclipse.org/legal/logo-guidelines
 :copyrightUrl: https://www.eclipse.org/legal/copyrightandlicensenotice.php
 :accountUrl: https://accounts.eclipse.org/
 :memberUrl: https://www.eclipse.org/membership/
 :wgUrl: https://www.eclipse.org/org/workinggroups/
+:ewgpUrl: https://www.eclipse.org/collaborations/working-groups/process/
 :approvedLicensesUrl: https://www.eclipse.org/legal/licenses.php#approved
-:proprietaryToolsUrl: https://www.eclipse.org/org/documents/Eclipse_Using_Proprietary_Tools_Final.php
 :clearlyDefinedUrl: https://clearlydefined.io/
 :licenseToolUrl: https://github.com/eclipse/dash-licenses
 :licenseToolLink: {licenseToolUrl}[Eclipse Dash License Tool]
+:nonCodeLicencesUrl: https://www.eclipse.org/legal/non-code-licenses
 
 :webmasterEmailLink: mailto:{webmasterEmail}[Eclipse Infrastructure Team]
 :ipTeamEmailLink: mailto:{ipTeamEmail}[EMO IP Team]
@@ -68,7 +70,7 @@
 :mccaUrl: https://www.eclipse.org/legal/committer_process/EclipseMemberCommitterAgreementFinal.pdf
 :icaUrl: https://www.eclipse.org/legal/committer_process/EclipseIndividualCommitterAgreementFinal.pdf
 :ipzillaUrl: https://dev.eclipse.org/ipzilla
-
+:genaiUrl: xref:genai
 :cbiUrl: https://github.com/eclipse-cbi/cbi/wiki
 :emoApprovalsUrl: https://gitlab.eclipse.org/eclipsefdn/emo-team/emo/-/issues/new?issue
 :ecaUrl: https://www.eclipse.org/legal/ECA.php
@@ -84,12 +86,13 @@
 :helpdeskUrl: https://gitlab.eclipse.org/eclipsefdn/helpdesk
 
 :epl20Url: https://www.eclipse.org/legal/epl-2.0
+:edl10Url: https://www.eclipse.org/org/documents/edl-v10/
 :suaUrl: https://www.eclipse.org/legal/epl/notice.php
 :suaHtmlUrl: https://www.eclipse.org/legal/epl/notice.html
 :suaTxtUrl: https://www.eclipse.org/legal/epl/notice.txt
 :suaPropertiesUrl: https://www.eclipse.org/legal/epl/feature.properties.txt
 
-:securityPolicyUrl: https://www.eclipse.org/security/policy.php
+:securityPolicyUrl: https://www.eclipse.org/security/policy/
 :securityTeamEmail: security@eclipse-foundation.org
 :vulnerabilityReportUrl: https://gitlab.eclipse.org/security/vulnerability-reports/-/issues/new?issuable_template=new_vulnerability
 :knownVulnerabilitiesUrl: https://www.eclipse.org/security/known.php

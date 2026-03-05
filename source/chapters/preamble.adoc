@@ -45,3 +45,46 @@ _Quality_ means extensible frameworks and exemplary tools developed in an open, 
 _xref:ip[Intellectual property]_ (IP) is any artifact that is made available from an Eclipse server (this includes source code management systems, the website, and the downloads server). Artifacts include (but are not limited to) such things as source code, images, XML and configuration files, documentation, and more. Strict rules govern the way that we manage IP and your responsibilities as a committer.
 
 Code produced by an Eclipse project is used by organisations to build products. These adopters of Eclipse technology need to have some assurance that the IP they're basing their products on is _clean_: the organisation or individuals who claim copyright of the code are the legitimate copyright holders, and the copyright holders legitimately agree to make the code available under the license(s) that the project works under. As a committer, you must be careful that you do not copy code and inadvertently claim it as your own.
+
+[#preamble-policies]
+=== Governing Documents and Policies
+
+The Eclipse Foundation's governing documents and policies form the foundation upon which our open source project processes and practices are built. 
+
+Committers should be aware of the following governance documents:
+
+* {bylawsUrl}[Eclipse Foundation Bylaws];
+* {antitrustPolicyUrl}[Eclipse Foundation Antitrust Compliance Policy];
+* {privacyPolicyUrl}[Eclipse Foundation Website Privacy Policy];
+* {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy];
+* {securityPolicyUrl}[Eclipse Foundation Security Policy];
+* {termsOfUse}[Eclipse Website Terms of Use];
+* {codeOfConductUrl}[Eclipse Foundation Community Code of Conduct];
+* {communicationChannelGuidelinesUrl}[Eclipse Foundation Communication Channel Guidelines];
+* {socialMediaGuidelinesUrl}[Eclipse Foundation Social Media Guidelines];
+* {edpUrl}[Eclipse Foundation Development Process];
+* {efspUrl}[Eclipse Foundation Specification Process] (when engaged in specification development);
+* {effspUrl}[Eclipse Foundation Functional Safety Process] (when engaged in safe software development);
+* {committerGuidelinesUrl}[Eclipse Committer Due Diligence Guidelines];
+* {genaiUrl}[Generative Artificial Intelligence Usage Guidelines for Eclipse Committers]; and
+* {trademarkGuidelinesUrl}[Eclipse Foundation Trademark Usage Policy].
+
+Governing documents and policies are amended from time-to-time. 
+
+////
+[#preamble-policies-licences]
+=== Licences
+
+* {epl20Url}[Eclipse Public License 2.0];
+* {edl10Url}[Eclipse Distribution License 1.0];
+* {efslUrl}[Eclipse Foundation Specification License];
+* {eftcklUrl}[Eclipse Foundation TCK License];
+* {approvedLicensesUrl}[Third Party Content Licenses]; and
+* {nonCodeLicencesUrl}[Approved Licenses for Non-Code, Example, and Other Content].
+
+[#preamble-policies-related]
+=== Related Governance Documents
+
+* https://www.eclipse.org/org/documents/eclipse_membership_agreement.pdf#[Eclipse Foundation Membership Agreement]
+* {ewgpUrl}[Eclipse Foundation Working Group Process]
+////
