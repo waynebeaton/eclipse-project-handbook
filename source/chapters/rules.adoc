@@ -45,13 +45,13 @@ Project-related issues must be tracked via issue trackers assigned to the {forge
 
 That is, the issue trackers associated with the project's GitLab and GitHub repositories must be used for all issues related to the open source project.
 
-Commmitters must engage in the Eclipse Foundation's Intellectual Property Due Diligence Process ::
+Committers must engage in the Eclipse Foundation's Intellectual Property Due Diligence Process ::
 
 Project committers are required to engage in our xref:ip[Intellectual Property Due Diligence Process] to vet the licence compatibility of the third-party content that the project leverages. Due diligence must be complete before any content is included in a xref:release[release].
 
 Committers must be covered by a Committer Agreement ::
 
-Either a xref:paperwork-mcca[Member Committer and Contributor Agreement] (MCCA) or an xref:paperwork-ica[Individual Committer Agreement] (ICA). When you change employers, you may need sign a new agreement.
+Either a xref:paperwork-mcca[Member Committer and Contributor Agreement] (MCCA) or an xref:paperwork-ica[Individual Committer Agreement] (ICA). When you change employers, you may need to sign a new agreement.
 
 Contributors must sign the Eclipse Contributor Agreement (ECA) ::
 
@@ -80,7 +80,7 @@ If you really believe that somebody that does not have a visible record of contr
 +
 I'll admit that I tend to think of committer status in practical terms: when somebody _needs_ to have the powers and responsibilities of a committer in an open source project that is operating in an open and transparent manner, demonstrating merit shouldn't be too onerous.
 +
-As an to this rule, the set of initial committers are specified at the time a new project is proposed and created. 
+As an exception to this rule, the set of initial committers are specified at the time a new project is proposed and created. 
 
 Committers must be subscribed to their project's `dev` list ::
 
