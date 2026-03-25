@@ -569,8 +569,6 @@ As part of a xref:progress-review[progress or release review], the EMO validates
 
 [NOTE]
 ====
-The EMO  list of projects that we consider to be in https://www.eclipse.org/projects/tools/goodstanding-releases.php[good standing] with regard to implementing the Eclipse Foundation Development Process and Intellectual Property Due Diligence Process, and -- by extension -- are regarded as OpenChain conformant. Eclipse projects in good standing can claim ISO/IEC 5230:2000 conformance.
-
 Eclipse projects that are in good standing may opt to display an https://openchainproject.org/news/2023/05/17/updated-openchain-conformance-badges[OpenChain ISO/IEC 5230:2020 Conformance Badge] on their website.
 ====
 
