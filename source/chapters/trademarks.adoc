@@ -191,8 +191,8 @@ The following minimal set of links must be included on the footer of all pages i
 * Main Eclipse Foundation website (`pass:[https://www.eclipse.org]`);
 * Privacy policy (`pass:[https://www.eclipse.org/legal/privacy.php]`);
 * Website terms of use (`pass:[https://www.eclipse.org/legal/termsofuse.php]`);
-* Copyright agent (`pass:[https://www.eclipse.org/legal/copyright.php]`); and
-* Legal (`pass:[https://www.eclipse.org/legal]`).
+* Compliance (`pass:[https://www.eclipse.org/legal/compliance/]`); and
+* Legal Resources (`pass:[https://www.eclipse.org/legal]`).
 
 [NOTE]
 ====
