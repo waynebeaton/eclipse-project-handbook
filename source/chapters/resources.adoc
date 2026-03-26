@@ -473,7 +473,7 @@ Organisations who are investing in an open source project may want to provide li
 
 Including links to vendor-specific services related to an Eclipse open source project is completely consistent with the Eclipse Foundation Development Process.
 
-Vendor-neutrality must be observed. Care needs to be taken to make sure that there is no confusion that the project itself is an Eclipse open source project, and not a _Vendor X_ open source project. In that context, including references and links to vendors who provide services for an open source project is fine, so long as others can participate via the same set of rules.
+Vendor neutrality must be observed. Care needs to be taken to make sure that there is no confusion that the project itself is an Eclipse open source project, and not a _Vendor X_ open source project. In that context, including references and links to vendors who provide services for an open source project is fine, so long as others can participate via the same set of rules.
 
 [NOTE]
 ====
