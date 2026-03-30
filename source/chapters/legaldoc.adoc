@@ -421,7 +421,7 @@ The `SECURITY` file describes products and product versions that for which secur
 
 It should:
 
-* Provide a pointer to the Eclipse Foundation's Vulnerability Reporting landing page;
+* Provide a pointer to the Eclipse Foundation's {securityUrl}[security landing page];
 * Describe supported versions (with regard to security patches); and
 * Provide a communication channel for reporting vulnerabilities.
 
