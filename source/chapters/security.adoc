@@ -124,24 +124,6 @@ When working with GitLab confidential issues, be careful. Only the author of the
 Adding new assignees who are not members of the project has no effect when the issue is already confidential. When in doubt, verify with the concerned person if they receive notifications by other communication means.
 ====
 
-The _Tracking_ section of the request issue includes some checkboxes for the project team and for the Security Team. The Security Team will assign the CVE upon receipt of the request, but will not escalate (that is, they will not report the assignment of the CVE to the central authority) until after a project committer clearly indicates that they are ready to disclose the vulnerability.
-
-****
-...
-
-*This section will completed by the project team*.
-
-* [ ] Reserve an entry only
-* [ ] We're ready for this issue to be reported to the central authority (that is, make this public now)
-* [ ] (when applicable) The GitHub Security Advisory is ready to be published now
-
-...
-****
-
-Check the second checkbox when you're ready for the Eclipse Foundation Security Team to submit the request to the central authority (that is, when you're ready for the issue to be disclosed publicly).
-
-If the project is using a {githubSecurityAdvisoryInfoUrl}[GitHub Security Advisory] to track mitigation of the vulnerability, the Security Team intervention may be required to submit the advisory. Click the third checkbox to indicate that you're ready for the Security Team to submit the advisory on the project team's behalf.
-
 === Projects Using Exclusively GitHub Security Advisories
 
 If the project receives reports exclusively by private reporting with GitHub Security Advisories, the procedure is as follows:
