@@ -126,7 +126,7 @@ An active and engaged user community is proof-positive that the project's work i
 
 Adopters ::
 
-An active and engaged adopter community is only way to prove that an Eclipse project is providing extensible frameworks and extensible tools accessible via documented APIs. Reuse of the project's content within the companies that are contributing to the project is necessary, but not sufficient to demonstrate an adopter community. Again, creating, encouraging, and nurturing an adopter community outside of the project's developers takes time, energy, and creativity by the project leadership, but is essential to the project's long-term open source success.
+Reuse of the project's content within the companies that are contributing to the project is necessary, but not sufficient to demonstrate an adopter community. Creating, encouraging, and nurturing an adopter community outside of the project's developers takes time, energy, and creativity by the project leadership, but is essential to the project's long-term open source success.
 
 Projects are expected to make substantial progress on establishing these communities during their Incubation Phase.
 

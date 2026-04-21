@@ -40,7 +40,7 @@ The Open Source Rules of Engagement define a foundation for _vendor-neutral_ ope
 
 Quality and intellectual property cleanliness are also important principles.
  
-_Quality_ means extensible frameworks and exemplary tools developed in an open, inclusive, and predictable process involving the entire community. From the consumption perspective, Eclipse quality means good for users (exemplary tools are cool/compelling to use, indicative of what is possible) and ready for use by adopters. From the creation perspective, Eclipse quality means working with a transparent and open process, open and welcoming to participation from technical leaders, regardless of affiliation.
+From the consumption perspective, Eclipse quality means good for users and ready for use by adopters. From the creation perspective, Eclipse quality means working with a transparent and open process, open and welcoming to participation from technical leaders, regardless of affiliation.
 
 _xref:ip[Intellectual property]_ (IP) is any artifact that is made available from an Eclipse server (this includes source code management systems, the website, and the downloads server). Artifacts include (but are not limited to) such things as source code, images, XML and configuration files, documentation, and more. Strict rules govern the way that we manage IP and your responsibilities as a committer.
 
