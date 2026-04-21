@@ -565,7 +565,13 @@ Please ensure that any merge/pull requests that come to you project correctly id
 
 https://openchainproject.org/license-compliance[OpenChain ISO/IEC 5230:2020] defines the key requirements of a quality open source license compliance program. The Eclipse Foundation xref:ip[IP Due Diligence Process] is self-certified as OpenChain ISO/IEC 5230:2020 conformant.
 
-As part of a xref:progress-review[progress or release review], the EMO validates that the project is correctly implementing the Eclipse Foundation intellectual property due diligence process. Upon successful completion of the review, the project can claim OpenChain conformance for a year (after which the project team need to engage with in another review).
+As part of a xref:progress-review[progress or release review], the EMO validates that the project is correctly implementing the Eclipse Foundation intellectual property due diligence process. 
+
+A project can claim OpenChain licence compliance when the project:
+
+- Is in the Mature Phase;
+- Engages in regular progress or release reviews; and
+- Produces SBOMs.
 
 [NOTE]
 ====
