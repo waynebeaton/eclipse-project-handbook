@@ -15,6 +15,8 @@
 
 Summary of "the rules" based on the fundamental principles defined in the Eclipse Foundation Development Process
 
+
+
 For many open source organisations, open means the same thing as _transparent_: open as in _open_ book. At the Eclipse Foundation, we regard being _transparent_ as the practice of making sure that the community can see and understand what the project is doing; and being _open_ as the act of giving up absolute control and welcoming the community to participate as an equal player on a _level playing field_ (i.e. being _open_ to participation by the others).
 +
 At the Eclipse Foundation, we take the _open_ part of open source very seriously. It’s codified in the Open Source Rules of Engagement found in the [Eclipse Foundation Development Process](https://www.eclipse.org/projects/dev_process/).
@@ -43,19 +45,35 @@ Please see https://blog.waynebeaton.ca/posts/opensource/level-playing-field/[Lev
 
 Project-related issues must be tracked via issue trackers assigned to the {forgeName} project by the Eclipse Foundation ::
 
-That is, the issue trackers associated with the project's GitLab and GitHub repositories must be used for all issues related to the open source project.
+That is, you must use the issue trackers associated with the project's GitLab and GitHub repositories for all issues related to the open source project.
 
 Committers must engage in the Eclipse Foundation's Intellectual Property Due Diligence Process ::
 
 Project committers are required to engage in our xref:ip[Intellectual Property Due Diligence Process] to vet the licence compatibility of the third-party content that the project leverages. Due diligence must be complete before any content is included in a xref:release[release].
++
+The Eclipse Foundation provides some tools to help you implement the IP Due Diligence Process. The [Eclipse Dash License Tool](https://github.com/eclipse-dash/dash-licenses) can help you vet third-party content. It's especially helpful when you're using technology that has robust dependency management and a standard software repository. 
++
+> The Eclipse Dash License Tool is intended to assist with the process of determining the licenses of third party content and help committers identify intellectual property that require further scrutiny. The tool, like any tool, is only as good as the input provided. This documentation provides examples of how input into the tool can be tuned; these examples should be regarded as such: examples. Ultimately, is the responsibility of committers to understand the nature of their project and the third party content it requires.
+
+Committers must implement the Eclipse Foundation Security Policy ::
+
+The Eclipse Foundation provides support and clear procedures, documented in the Eclipse Foundation Security Policy, to assist open source project teams in taking security seriously. This service includes managing vulnerability disclosures, outlining procedures for reporting and fixing security issues, and coordinating active participation in security-related audits or initiatives.
 
 Committers must be covered by a Committer Agreement ::
 
-Either a xref:paperwork-mcca[Member Committer and Contributor Agreement] (MCCA) or an xref:paperwork-ica[Individual Committer Agreement] (ICA). When you change employers, you may need to sign a new agreement.
+Your work as a committer must be covered by a committer agreements. Committer agreements come in two forms: a xref:paperwork-mcca[Member Committer and Contributor Agreement] (MCCA) that's signed by your employer on your (and your colleague's) behalf, or an xref:paperwork-ica[Individual Committer Agreement] (ICA) that you sign yourself. 
++
+When you change employers, you may need to sign a new agreement.
+
+Contributions must be received through official channels ::
+
+Contributions must be received as pull or merge requests. The authors of the contributions (or somebody with the necessary legal permission to contribute on their behalf) must create the pull/merge requests. 
 
 Contributors must sign the Eclipse Contributor Agreement (ECA) ::
 
-Regardless of how a contribution is presented, the contributor must be listed as the author in the [Git commit record](https://www.eclipse.org/projects/handbook/#resources-commit) and must complete the [Eclipse Contributor Agreement](https://www.eclipse.org/legal/ECA.php) before any contribution can be accepted.
+As a committer, you must ensure that all contributions that you receive are covered by an Eclipse Contributor Agreement (ECA). Regardless of how a contribution is presented, the contributor must be listed as the author in the [Git commit record](https://www.eclipse.org/projects/handbook/#resources-commit) and must complete the [Eclipse Contributor Agreement](https://www.eclipse.org/legal/ECA.php) before any contribution can be accepted.
++
+Contributors who are already covered by a committer agreement (either an MCCA or ICA) are not required to also sign the ECA. All other contributors must sign the {ecaUrl}[Eclipse Contributor Agreements] (ECA) to ensure that the necessary xref:ip[intellectual property] (IP) rights to the contribution are granted.
 +
 [TIP]
 ====
@@ -63,6 +81,22 @@ Committers, who must already been covered by either a  xref:paperwork-mcca[Membe
 ====
 
 Committers must work in a vendor-neutral manner ::
+
+When you move the project to the Eclipse Foundation, it ceases to be yours alone. Sharing control with the other developers who “show up” is an important part of growing a community around the project.
++
+But why do we care about vendor neutrality?
++
+The reasons are many and varied. Here are some of the more important ones:
++
+Sustainability and Longevity: A vendor-neutral project can survive, thrive, and remain active even if one group shifts its priorities, reduces investment, or exits entirely.
++
+Trust and Adoption: Users and contributors are more likely to adopt and contribute to an open source project if they trust that their investments will be welcome and accepted under stable terms.
++
+Balanced Innovation: Vendor neutrality encourages diverse contributions, ensuring that features and improvements reflect a broad set of use cases rather than the requirements of a single in-group.
++
+Brand Protection: Vendor neutrality ensures that the project’s branding and trademark remain distinct, mitigating against legal risks associated with blurring the lines between a community project and a company product. 
++
+Vendor neutrality is not automatic and does not come for free. To realise the benefits of vendor neutrality, Eclipse open source project teams need to live the fundamental principles described in the Open Source Rules of Engagement, and invest in implementing the practices that support those principles. 
 
 Contributors must create a public record of high quality contribution before becoming a committer via committer election ::
 
@@ -83,6 +117,8 @@ I'll admit that I tend to think of committer status in practical terms: when som
 As an exception to this rule, the set of initial committers are specified at the time a new project is proposed and created. 
 
 Committers must be subscribed to their project's `dev` list ::
+
+Every project has a development list or dev-list. All project committers must subscribe to the list. The dev-list should be the primary means of communication between project committers and is the means through which the EMO and Eclipse Foundation’s automated systems communicate with the project team.
 
 Committers must respect the Eclipse Foundation Trademark Usage Policy ::
 
