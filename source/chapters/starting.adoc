@@ -268,30 +268,36 @@ digraph {
 
 Key project life cycle events are gated by reviews; moving from the incubation phase to the mature phase must be, for example, preceded by a xref:release-graduation[graduation review].
 
+[[starting-proposal-phase]]
+==== Proposal Phase
+
+During the proposal phase, the EMO works with your project team and community to provide feedback and gather all of the information that we need to create the project. When the project team is ready, we create the new open source project, engage with your committers to make sure that we have agreements in place, provision resources, and work with the project team to transfer their existing code and practices over to the Eclipse Foundation. At this point, your open source project enters the incubation phase.
+
 [[starting-incubation]]
 ==== Incubation Phase
 
-A project in the xref:incubation[incubation phase] is said to be _incubating_.
+The xref:incubation[incubation phase] serves as an onboarding period where your project team learns and adopts the principles and practices of the {edpUrl}[Eclipse Foundation Development Process]. Note that the incubation phase is concerned with project teams adopting open source practices that are consistent with the Eclipse Foundation Development Process; the concept of incubation is _unrelated to code quality or stability_: a project that has stable code base starts in incubation when it is moved to the Eclipse Foundation.
 
-The classification of a project in the incubation phase is not a statement about the quality of the project's code; rather, the incubation phase is more about the project team's progress in practising the open and transparent processes described by the {edpLink} to establish the three communities (developers, adopters, and users) around the project.
+[TIP]
+====
+Onboarding the project as an Eclipse open source project is a process not an event. Everyone knows that your project team won’t get everything right on day one. Steady progress is the name of the game.
+====
 
-Incubating projects are encouraged to produce milestone builds, make releases, and grow their community.
+A project in the incubation phase is said to be _incubating_. Incubating projects are encouraged to produce builds, make releases, and grow their community.
 
-When the project code is ready (e.g. stable APIs) and the project team has learned to operate as an open source project according to the {edpLink}, the project may opt to _graduate_ (via xref:release-graduation[graduation review]) into the _mature phase_.
+After establishing itself as a functioning Eclipse open source project, the project _graduates_ (via xref:release-graduation[graduation review]) into the mature phase. The project is probably ready for graduation when your project team has demonstrated that they’re working in an open, transparent, and meritocratic manner; are otherwise engaged in activities that foster vendor neutrality; are faithfully engaging in the IP due diligence process and healthy security/vulnerability management; have engaged in a progress review; and are distributing software.
 
 [[starting-mature]]
 ==== Mature Phase
 
-Most of the lifetime of {aForgeName} project is spent in the mature phase. A mature project is one that:
+Most of an Eclipse open source project's lifetime is spent in the mature phase, which a project enters after successfully adopting open source practices that are consistent with the {edpUrl}[Eclipse Foundation Development Process] during its incubation period. Reaching this phase provides formal recognition that the project team has demonstrated an open, transparent, and meritocratic process, and has cultivated an actively involved and growing community. In this active state, project committers engage in standard development activities like writing code, running builds, releasing software, and converting active contributors into new committers.
 
-* Is a good open source citizen with open, transparent, and meritocratic behaviour;
-* Regularly and predictably releases IP clean extensible frameworks and exemplary tools; and
-* Actively nurtures the three communities: developers, adopters, and users.
+To maintain their standing, mature projects regularly and predictably release high-quality content and actively nurture their communities. As they evolve, projects engage in xref:progress-review[progress reviews] to ensure they continue to operate according to the Eclipse Foundation's principles. 
 
 [[starting-archived]]
-==== Archived
+==== Archived Phase
 
-When a project has reached its logical conclusion, its resources are archived. Transition in the Archived (phase) is preceded by a termination review.
+When a project has reached its logical conclusion, its resources are archived. Transition in the archived phase is preceded by a xref:reviews-termination[termination review].
 
 [[starting-faq]]
 === Frequently Asked Questions
