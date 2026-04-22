@@ -43,7 +43,7 @@ The https://github.com/package-url/purl-spec[Package URL] (pURL) format (e.g, `p
 
 Correctly identify the license for each entry ::
 
-For project content (i.e., files) this is the license information for the specific file. For dependencies (whether they are packaged in the product or are referenced/required by it), this is the license of the entire component.
+For project content (that is, files) this is the license information for the specific file. For dependencies (whether they are packaged in the product or are referenced/required by it), this is the license of the entire component.
 
 Distribute SBOMs with artifacts ::
 

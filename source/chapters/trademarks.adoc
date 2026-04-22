@@ -83,7 +83,7 @@ A project team should start this process:
 
 [NOTE]
 ====
-Renaming projects (i.e. after a project has been created and provisioned) requires significant work on the part of the infrastructure team, and can be disruptive and confusing for consumers. Project teams should start the process as early as possible once they have a candidate name.
+Renaming projects (that is, after a project has been created and provisioned) requires significant work on the part of the infrastructure team, and can be disruptive and confusing for consumers. Project teams should start the process as early as possible once they have a candidate name.
 ====
 
 [[trademarks-project]]
@@ -116,7 +116,7 @@ Descriptive names tend to be challenging to register as a trademark and so are g
 
 Descriptive names can, however, be helpful as an informal secondary name for a project.
 
-The best names do not include the word _Project_, and are--in formal contexts--prepended by the <<trademarks-brands,brand name>>. Descriptive names may optionally include the words _Framework_, _Platform_, or _Tools_ if the project has a specific emphasis on extensible frameworks, a platform, or obvious development tooling technology. {forgeName} projects always provide both but may be tailored more toward one or the other. When choosing to use these words, the team should consider that _Framework_, _Platform_, and _Tools_ mean different things to different people and are becoming overused.
+The best names do not include the word _Project_, and are -- in formal contexts -- prepended by the <<trademarks-brands,brand name>>. Descriptive names may optionally include the words _Framework_, _Platform_, or _Tools_ if the project has a specific emphasis on extensible frameworks, a platform, or obvious development tooling technology. {forgeName} projects always provide both but may be tailored more toward one or the other. When choosing to use these words, the team should consider that _Framework_, _Platform_, and _Tools_ mean different things to different people and are becoming overused.
 
 [[trademarks-project-nick]]
 ==== Nicknames
@@ -136,7 +136,7 @@ Acronyms often become brand names.
 [[trademarks-project-existing]]
 ==== Existing Software Product Names
 
-To avoid confusion between {forgeName} projects and commercial products, {forgeName} projects may not be named after commercial products and vice versa. To ensure that users understand the source of software products--i.e. from {aForgeName} project, or from a third party vendor--the brand for {aForgeName} project must not include or be directly reminiscent of a commercial product.
+To avoid confusion between {forgeName} projects and commercial products, {forgeName} projects may not be named after commercial products and vice versa. To ensure that users understand the source of software products (that is, from {aForgeName} project, or from a third party vendor) the brand for {aForgeName} project must not include or be directly reminiscent of a commercial product.
 
 [[trademarks-project-product]]
 ==== Product Names
@@ -163,7 +163,7 @@ ____
 
 The complete description can certainly include much more information, but starting with a short paragraph is a great service for new readers to the project’s website, and is important for the Eclipse Foundation to maintain an overall list of project trademarks for software products. While this trademark description style may sometimes seem clumsy in technical documentation, it is a critical way that the Eclipse Foundation enforces trademarks.
 
-Project teams may seek guidance from the PMC and EMO to ensure that the text is a proper trademark goods description; i.e. one that describes the specific functionality of the software available for download and use.
+Project teams may seek guidance from the PMC and EMO to ensure that the text is a proper trademark goods description; that is, one that describes the specific functionality of the software available for download and use.
 
 [[trademarks-website]]
 === Project Website Branding
@@ -177,7 +177,7 @@ All primary links to the project (including, for example, the project’s contri
 [[trademarks-website-name]]
 ==== Name References
 
-The first reference to a project or product on every web page--especially in page titles or headers--must use the <<trademarks-project-formal,formal name>> and must include the relevant trademark (™) or registered trademark (®) symbol (e.g. _{forgeName} Woolsey Intellectual Property Tools™_). When a web page features an otherwise prominent reference to the project or product (e.g. in a callout), that reference should also use the formal name. Other references may use  the nickname or acronym (e.g. _{forgeName} Woolsey_ or _Woolsey_) as appropriate.
+The first reference to a project or product on every web page -- especially in page titles or headers -- must use the <<trademarks-project-formal,formal name>> and must include the relevant trademark (™) or registered trademark (®) symbol (e.g. _{forgeName} Woolsey Intellectual Property Tools™_). When a web page features an otherwise prominent reference to the project or product (e.g. in a callout), that reference should also use the formal name. Other references may use  the nickname or acronym (e.g. _{forgeName} Woolsey_ or _Woolsey_) as appropriate.
 
 [[trademarks-website-footer]]
 ==== Footers

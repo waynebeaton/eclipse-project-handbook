@@ -132,7 +132,7 @@ The _Tracking_ section of the request issue includes some checkboxes for the pro
 *This section will completed by the project team*.
 
 * [ ] Reserve an entry only
-* [ ] We're ready for this issue to be reported to the central authority (i.e., make this public now)
+* [ ] We're ready for this issue to be reported to the central authority (that is, make this public now)
 * [ ] (when applicable) The GitHub Security Advisory is ready to be published now
 
 ...
@@ -249,7 +249,7 @@ In what form should a disclosure be published? Is publishing the bug on the {kno
 
 Publishing on the Known Vulnerabilities page will happen automatically. This is minimal disclosure. Whether or not you should do more is a project team decision. If you  need help with that decision, connect with your xref:roles-pmc[Project Management Committee] (PMC) or the Eclipse Foundation Security Team.
 +
-If the vulnerability real and is in release software (i.e., it's likely to have been adopted), you should xref:vulnerability-cve[request a CVE].
+If the vulnerability real and is in release software (that is, it's likely to have been adopted), you should xref:vulnerability-cve[request a CVE].
 +
 You should let your community know about the vulnerability though your usual communication channels.
  

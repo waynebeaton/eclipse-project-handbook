@@ -33,7 +33,7 @@ The ease with which software can be copied and combined makes it challenging to 
 The Eclipse Foundation's IP Team **does not (and cannot) give legal advice**. Rather, the team leverages their experience, along with various resources, to identify licenses in content, and make judgement calls as to whether or not licenses be being used in a consistent and compatible manner.
 ====
 
-There are different kinds of content (e.g., source code, documentation, and images) to consider. For the purposes of the Eclipse Foundation's IP Due Diligence Process, we consider all types of content, not just code, to be intellectual property that is subject to the process (even when we say _code_--especially in the context of IP due diligence--you should assume that we mean _content_).
+There are different kinds of content (e.g., source code, documentation, and images) to consider. For the purposes of the Eclipse Foundation's IP Due Diligence Process, we consider all types of content, not just code, to be intellectual property that is subject to the process (even when we say _code_ -- especially in the context of IP due diligence -- you should assume that we mean _content_).
 
 xref:ip-project-content[Project content] is content (typically source code) that is produced and maintained by the open source project committers and contributors. Most of the _project content_ produced by committers can be pushed into a project repository without any sort of legal review. However, at least in some cases, the IP Team needs to be engaged to review project content that comes from contributors (who are not committers); and there are some cases where even the work of committers needs to be reviewed.
 
@@ -148,7 +148,7 @@ As a general rule third party content should not be included in project reposito
 
 In the case where third party content must be represented in a project repository, we would consider that a project code. Whether or not the content is modified, it would effectively be considered a fork.
 
-A project cannot make a xref:release[release] until the due diligence on the IP contained in that release--including xref:ip-project-content[project content] contributions and xref:ip-third-party[third party content]--is complete. 
+A project cannot make a xref:release[release] until the due diligence on the IP contained in that release -- including xref:ip-project-content[project content] contributions and xref:ip-third-party[third party content] -- is complete. 
 
 [#ip-project-content]
 === Project Content
@@ -157,7 +157,7 @@ A project cannot make a xref:release[release] until the due diligence on the IP 
 
 Contributions made by {forgeName} committers **do not** require review by the Eclipse IP Team and can be pushed directly into a project repository. Notwithstanding project-specific rules, project committers can push their own content directly into project repositories. While content produced by other {forgeName} committers _does not_ require review by the Eclipse IP Team, it must still be accepted by project committers. Project committers should engage the {forgeName} IP Team if they have concerns regarding the provenance of any contribution.
 
-Contributions by others (i.e., developers who are not committers) must be received via an Eclipse Foundation channel (e.g., GitHub pull request, GitLab merge request, or attachment on an issue). 
+Contributions by others (that is, developers who are not committers) must be received via an Eclipse Foundation channel (e.g., GitHub pull request, GitLab merge request, or attachment on an issue). 
 
 All contributors must sign the xref:contributing-eca[Eclipse Contributor Agreement] (ECA). 
 
@@ -488,7 +488,7 @@ FWIW, it also handles the case when just drop the attachment as the URL (this is
 [#ip-license-tool]
 === Eclipse Dash License Tool
 
-The {licenseToolUrl}[Eclipse Dash License Tool] takes a list of dependencies as input, matches content to license information obtained from trusted sources, and identifies the content that needs further scrutiny (i.e., it lists all content for which license information cannot be found in one of the approved sources). It is available as both a xref:ip-license-tool-cli[command-line interface] and a xref:ip-license-tool-mvn[Maven plugin].
+The {licenseToolUrl}[Eclipse Dash License Tool] takes a list of dependencies as input, matches content to license information obtained from trusted sources, and identifies the content that needs further scrutiny (that is, it lists all content for which license information cannot be found in one of the approved sources). It is available as both a xref:ip-license-tool-cli[command-line interface] and a xref:ip-license-tool-mvn[Maven plugin].
 
 [WARNING]
 ====
@@ -641,7 +641,7 @@ Can xref:ip-third-party[third party content]  be included in an Eclipse project'
 
 Yes. Third party content can be included in binary form (e.g. source and binary JAR files) in a project's source code repository if that makes technical sense for the project.
 +
-Third party content that is stored in the project repository as source code is effectively a _fork_ of that third party content. This is a bit of a fuzzy area in that it is _third party content_ that will be ultimately treated as xref:ip-project-content[_project content_] (i.e. contributors may potentially modify it). 
+Third party content that is stored in the project repository as source code is effectively a _fork_ of that third party content. This is a bit of a fuzzy area in that it is _third party content_ that will be ultimately treated as xref:ip-project-content[_project content_] (that is, contributors may potentially modify it). 
 +
 Third party _source code_ must be reviewed by the IP Team (that is, open a xref:ip-request[Content Review Request]) before it may be included in a project repository.
 

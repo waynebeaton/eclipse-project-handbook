@@ -17,7 +17,7 @@ Summary of "the rules" based on the fundamental principles defined in the Eclips
 
 
 
-For many open source organisations, open means the same thing as _transparent_: open as in _open_ book. At the Eclipse Foundation, we regard being _transparent_ as the practice of making sure that the community can see and understand what the project is doing; and being _open_ as the act of giving up absolute control and welcoming the community to participate as an equal player on a _level playing field_ (i.e. being _open_ to participation by the others).
+For many open source organisations, open means the same thing as _transparent_: open as in _open_ book. At the Eclipse Foundation, we regard being _transparent_ as the practice of making sure that the community can see and understand what the project is doing; and being _open_ as the act of giving up absolute control and welcoming the community to participate as an equal player on a _level playing field_ (that is, being _open_ to participation by the others).
 +
 At the Eclipse Foundation, we take the _open_ part of open source very seriously. It’s codified in the Open Source Rules of Engagement found in the [Eclipse Foundation Development Process](https://www.eclipse.org/projects/dev_process/).
 +
@@ -102,7 +102,7 @@ Contributors must create a public record of high quality contribution before bec
 
 To be considered for committer status a candidate must demonstrate _merit_. Generally, this takes the form of making high-quality contributions to a project in the form of patches or new code, but can manifest in other ways. It may make sense, for example, to nominate a committer based on a history of helping users and adopters.
 +
-The demonstration of merit must be something that everybody can see. That is, the demonstration of merit must be _transparent_ to the general public. Again, code contributions are an obvious example of this as the commit record is open for all. This is one of the reasons that commits must be correctly attributed (i.e., the `Author` field in a Git commit must include the author's name and credentials); another reason being that implementing an effective intellectual property regime requires it. With the tools available today, it's pretty easy to point to a pattern of contribution.
+The demonstration of merit must be something that everybody can see. That is, the demonstration of merit must be _transparent_ to the general public. Again, code contributions are an obvious example of this as the commit record is open for all. This is one of the reasons that commits must be correctly attributed (that is, the `Author` field in a Git commit must include the author's name and credentials); another reason being that implementing an effective intellectual property regime requires it. With the tools available today, it's pretty easy to point to a pattern of contribution.
 +
 The entire process must be _open_. That is in the sense that it is open to all comers; as I like to say (in one form or another), that the _playing field must be level_. That means that the means by which an Eclipse project team decides to make somebody a committer must not be biased by who that individual works for, or any criteria other than the the quality of the contributions they've made to the project and their demonstration that they understand their role and responsibilities as a committer.
 +

@@ -338,7 +338,7 @@ You might instead choose to create a new project if the new functionality:
 --
 - Does not reasonably fall within the scope of an existing project (and an existing scope cannot be reasonably changed to accommodate);
 - Absolutely must be delivered on a separate schedule;
-- Must be delivered independently (i.e. a completely separate downloads area is required);
+- Must be delivered independently (that is, a completely separate downloads area is required);
 - Has different licensing requirements; and/or
 - Would benefit from separate branding.
 --

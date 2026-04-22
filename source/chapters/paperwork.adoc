@@ -47,7 +47,7 @@ If you have questions or concerns, contact the {emoRecordsEmailLink}.
 [[paperwork-documents]]
 === Documents
 
-The specific agreements required depends on the nature of the project and the employment status of the individual. For committers on an open source _software_ project (i.e., most {forgeName} projects), the agreements described below are required. 
+The specific agreements required depends on the nature of the project and the employment status of the individual. For committers on an open source _software_ project (that is, most {forgeName} projects), the agreements described below are required. 
 
 For committers on an open source _specification_ project, additional xref:specifications-agreements[working group agreements] are required.
 

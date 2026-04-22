@@ -275,7 +275,7 @@ Excluded Subgroups have been added to xref:pmi[Project Management Infrastructure
 
 Project teams may opt to host some or all of their canonical source code repositories to an organisation on GitHub that is maintained by the Eclipse Foundation. Both GitHub Issues and Wiki may also be used.
 
-Any committer can {helpdeskUrl}[open a Help Desk issue] to request that the Eclipse Infrastructure Team create a new repository for their project on, or move an existing repository to, GitHub. A project may have more than one repository on GitHub. When making the request, the committer should describe--specifically and concisely--what they want to make happen. Note that the Eclipse Infrastructure Team will verify the request with the project leads.
+Any committer can {helpdeskUrl}[open a Help Desk issue] to request that the Eclipse Infrastructure Team create a new repository for their project on, or move an existing repository to, GitHub. A project may have more than one repository on GitHub. When making the request, the committer should describe -- specifically and concisely -- what they want to make happen. Note that the Eclipse Infrastructure Team will verify the request with the project leads.
 
 Repositories can be hosted in the default `{forgeMachineName}` GitHub organisation, or a dedicated organisation can be created. Dedicated organisations use as their name, the conjunction of `{forgeMachineName}` with the project xref:resources-identifiers[short name] (e.g., `{forgeMachineName}-woolsey`).
 
@@ -548,7 +548,7 @@ External resources must, where possible, include links to:
 * The Eclipse Foundation's {codeOfConductUrl}[Community Code of Conduct]; and
 * The Eclipse Foundation's {communicationChannelGuidelinesUrl}[Communication Channel Guidelines].
 
-These links can be provided in a field, a README, or on directly accessible (i.e., linked) web page.
+These links can be provided in a field, a README, or on directly accessible (that is, linked) web page.
 
 [[resources-dockerhub]]
 ==== DockerHub

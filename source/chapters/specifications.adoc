@@ -89,7 +89,7 @@ An important part of the specification process is the management of intellectual
 
 Patent grants flow into a specification process through the committers. That is, the project committers (or, more likely, their employers) grant a patent license for any committed essential claim as described in the Eclipse IP Policy.   Those patent grants are “locked in” whenever a specification project engages in a successful progress or release review. So, by virtue of holding committer status on a specification project at the time of successful completion of a progress or release review, license grants for those patents represented by the committer are locked into the specification project.
 
-Those grants flow out of the project to a compatible implementation through the ratified final specification (as defined by the EFSP). That is, when an implementation of a specification is based on a final specification (i.e., the implementation implements all non-optional elements of the final specification, does not extend the API, and fulfils all the requirements of the corresponding TCK), those committed patent grants flow to the implementer.
+Those grants flow out of the project to a compatible implementation through the ratified final specification (as defined by the EFSP). That is, when an implementation of a specification is based on a final specification (that is, the implementation implements all non-optional elements of the final specification, does not extend the API, and fulfils all the requirements of the corresponding TCK), those committed patent grants flow to the implementer.
 
 To be clear, a compatible implementation must be based on a final specification (not, for example, the specification document source or a milestone build).
 
@@ -134,7 +134,7 @@ Regular contributors of high quality content should be invited to join the speci
 [[specifications-committers]]
 == Committers
 
-Committers are developers who have the ability to directly push (i.e., they have write access) their own contributions to the project’s Git repositories, and have the responsibility to review and merge the contributions of others. Committers are responsible for implementing the {edpLink} and abiding by the Eclipse Intellectual Property Due Diligence Process.
+Committers are developers who have the ability to directly push (that is, they have write access) their own contributions to the project’s Git repositories, and have the responsibility to review and merge the contributions of others. Committers are responsible for implementing the {edpLink} and abiding by the Eclipse Intellectual Property Due Diligence Process.
 
 Committer status is assigned on a project-by-project basis. That is, individuals have committer rights only on those projects for which they hold committer status. For all other projects, they are contributors.
 
@@ -146,7 +146,7 @@ In order to get committer rights on project repositories hosted on GitHub, you n
 [[specifications-agreements]]
 === Specification Development Agreements
 
-Due to the nature of specification project work, the xref:paperwork[committer agreements] need to be augmented. For {forgeName} open source software projects (i.e., those projects not engaged in specification development) the committer agreements (Member Committer and Contributor Agreement and Individual Committer Agreement) are sufficient. The complete set of required agreements are described below.
+Due to the nature of specification project work, the xref:paperwork[committer agreements] need to be augmented. For {forgeName} open source software projects (that is, those projects not engaged in specification development) the committer agreements (Member Committer and Contributor Agreement and Individual Committer Agreement) are sufficient. The complete set of required agreements are described below.
 
 [NOTE]
 ====
@@ -302,7 +302,7 @@ To engage in a release review, create a xref:pmi-releases[release record] (if on
 
 Following a successful first release (and every subsequent release thereafter), and before engaging in any further development of the specification, the project team must assemble and present their Plan for review by the Specification Committee via Plan Review. The notion of a Plan Review is specific to the EFSP (since Plan Reviews are not part of the EDP, no formal involvement from the PMC is required). A Plan Review provides the Specification Committee with an opportunity to ensure that the plan for the next Specification Version is in-scope, fits within the overall vision of the Working Group, and is otherwise charting a path to eventual ratification and release. The EFSP requires that the Specification Committee approve a Plan Review by supermajority vote.
 
-The plan itself must be in-scope (i.e. all new work must fall within the bounds defined by the specification project’s scope) and must be developed in consideration of the concerns of stakeholders. It must, for example, take plans of the PMC or associated working group into consideration . The concerns of the project team must also be taken into consideration when creating a plan. 
+The plan itself must be in-scope (that is, all new work must fall within the bounds defined by the specification project’s scope) and must be developed in consideration of the concerns of stakeholders. It must, for example, take plans of the PMC or associated working group into consideration . The concerns of the project team must also be taken into consideration when creating a plan. 
 
 [TIP]
 ====

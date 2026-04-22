@@ -117,7 +117,7 @@ Company logos may optionally be included on a xref:resources-website[project web
 
 * The company is a {memberUrl}[member] of the Eclipse Foundation;
 * At least one project committer is an employee of the company in question; and
-* The committer is active (i.e. they have made at least one commit in the last three months).
+* The committer is active (that is, they have made at least one commit in the last three months).
 
 [discrete]
 == Community Portals and Related Websites
@@ -130,7 +130,7 @@ xref:trademark-external-community[Community portals], regardless of who owns and
 * [ ] Trademark and registered trademark symbols are used appropriately;
 * [ ] Developers are directed to the official xref:resources-website[project website] for information regarding contribution or related development activities;
 * [ ] Ownership of the domain name (especially if it includes the project name) has been transferred to the Eclipse Foundation; and
-* [ ] The domain is regarded and used exclusively as a community portal (i.e. is is not presented as the official project website).
+* [ ] The domain is regarded and used exclusively as a community portal (that is, it is not presented as the official project website).
 
 [discrete]
 == Announcements, News items, Blog posts, ...

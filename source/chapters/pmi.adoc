@@ -462,7 +462,7 @@ If you are aware of any member company that meets this criteria and are not list
 
 What is the difference between a _Committer_ and an _Historic Committer_? ::
 
-The _Who's Involved_ page lists committers and (in many cases) historic committers. Committers are those individuals who currently hold committer status (i.e., they can write to project resources). Historic committers are retired former committers. While they hold a special place in our hearts, they have no official status on the project. To turn an historic committer back into a committer, they must be xref:elections-committer[re-elected] to the project.
+The _Who's Involved_ page lists committers and (in many cases) historic committers. Committers are those individuals who currently hold committer status (that is, they can write to project resources). Historic committers are retired former committers. While they hold a special place in our hearts, they have no official status on the project. To turn an historic committer back into a committer, they must be xref:elections-committer[re-elected] to the project.
 
 [[pmi-release-issues]] Where did the _Issues_ Tab go? ::
 
