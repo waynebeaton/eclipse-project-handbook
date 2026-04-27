@@ -94,74 +94,33 @@ A CVE number related to a bugfix release gives users a clear sign that an update
 Think of a first CVE for your open source project as a rite of passage. Alerting your adopters of a vulnerability is a signal of maturity and responsibility to the open source community.
 ====
 
-Project can request CVE numbers in different ways depending on the project setup.
+=== CVE Reservation and Publication Process
 
-=== General case
-
-For most projects the process looks as follows:
-
-* *Request the number*: When you know that there is a security issue (the fix is not yet needed at this point), go to {cveRequestUrl}[the CVE Request form] and fill it. Make sure to keep the issue confidential for now. If you want to make the issue visible to multiple project members, add them as assignees when creating the ticket (it will be hard later on).
-
-* *Receive the number*: The Eclipse Foundation Security Team will come back to you with the assigned number. You can start using it internally when preparing documentation of the release containing the fix.
-
-* *Prepare the fix* (with backports to all supported branches) and the release: The common practice is to avoid using the CVE number in the fix commit message or the fix itself. Use generic terms instead. The goal is to allow time for all users to upgrade without giving potential attackers too much information. See also the next step (you can do them in parallel).
-
-* *Ask for publication of the issue*: When you have the fix ready and published, update the ticket. Make sure that you specify the version (or versions) where the bug is fixed, including all stable branches. Fill in the description of the issue. You may also consider removing some of the comments (for example containing sensitive or incorrect information). At this stage you may decide to publish only partial information (for example without the link to the commit with the fix). Then ask the security team to make the CVE and the discussion of the CVE assignment public. Ideally your release and the publication happen at the same time. You can ask for a publication at your specific date, for example at your planned release date.
-
-* *See it publicly*: The ticket becomes public and the Eclipse Foundation Security Team publishes the CVE entry.
-
-* (Optional, a few days later) *Update the entry* with all additional information that might be helpful. That includes, for example, the link to the fix commit.
-
-[NOTE]
-====
-Project committers should make it clear if their request is a reservation of a CVE number, or a publication.
-====
-
-[TIP]
-====
-When working with GitLab confidential issues, be careful. Only the author of the ticket, all committers in the project containing the issue tracker, and assigned people will see the issue and receive notifications.
-
-Adding new assignees who are not members of the project has no effect when the issue is already confidential. When in doubt, verify with the concerned person if they receive notifications by other communication means.
-====
-
-The _Tracking_ section of the request issue includes some checkboxes for the project team and for the Security Team. The Security Team will assign the CVE upon receipt of the request, but will not escalate (that is, they will not report the assignment of the CVE to the central authority) until after a project committer clearly indicates that they are ready to disclose the vulnerability.
-
-****
-...
-
-*This section will completed by the project team*.
-
-* [ ] Reserve an entry only
-* [ ] We're ready for this issue to be reported to the central authority (that is, make this public now)
-* [ ] (when applicable) The GitHub Security Advisory is ready to be published now
-
-...
-****
-
-Check the second checkbox when you're ready for the Eclipse Foundation Security Team to submit the request to the central authority (that is, when you're ready for the issue to be disclosed publicly).
-
-If the project is using a {githubSecurityAdvisoryInfoUrl}[GitHub Security Advisory] to track mitigation of the vulnerability, the Security Team intervention may be required to submit the advisory. Click the third checkbox to indicate that you're ready for the Security Team to submit the advisory on the project team's behalf.
-
-=== Projects Using Exclusively GitHub Security Advisories
-
-If the project receives reports exclusively by private reporting with GitHub Security Advisories, the procedure is as follows:
-
-* *Prepare the initial data*: The project receives initial data in the report and assesses that it is a real vulnerability.
-
-* *Request the number*: When you know that there is a security issue (the fix is not yet needed at this point), go to {cveRequestUrl}[the CVE Request form] to request the number. You do not need to fill the complete form if all the information is available in your advisory - in this case just submit the link to the advisory in your CVE request.
-
+* *Request the CVE number*: Create a {cveRequestUrl}[CVE Reservation Request] ticket to start the process. A fix is not needed at this point. You also don't have to fill in all the required information to create the issue. You can add it piece by piece until you are ready to publish the CVE (see below). If the information is already available in a GitHub Security Advisory, you can just add a link to the advisory and skip filling in the form.
++
 [WARNING]
 ====
-GitHub will reject CVE number requests from Eclipse Foundation projects. Fill the {cveRequestUrl}[the CVE Request form] instead. Both teams are working on a solution to make this process more streamlined.
+The issue is confidential by default, please make sure to keep it that way! If you want to include other project members on the ticket, please assign them while creating the ticket. Once the confidential ticket is created, only a ticket admin add assignments.
 ====
 
-* *Receive the number*: The Eclipse Foundation Security Team will assign one (or ask for more information in the report). You can start using it internally when preparing documentation of the release containing the fix.
+* *Receive the number*: The Eclipse Foundation Security Team will come back to you with the assigned number. You can start using it internally when preparing documentation of the release containing the fix.
++
+[NOTE]
+====
+If you are working with a GitHub Security Advisory, choose "I have an existing CVE ID" in the "CVE identifier" drop-down menu and enter this number. Please do not request a CVE number from GitHub.
+====
 
 * *Prepare the fix* (with backports to all supported branches) and the release: The common practice is to avoid using the CVE number in the fix commit message or the fix itself. Use generic terms instead. The goal is to allow time for all users to upgrade without giving potential attackers too much information. See also the next step (you can do them in parallel).
 
-* *Ask for publication of the issue*: When you have the fix ready and published, ask the Eclipse Foundation Security team to publish the advisory. Update your CVE request. Make sure that you specify the version (or versions) where the bug is fixed, including all stable branches. Fill in the description of the issue. You may also consider removing some of the comments (for example containing sensitive or incorrect information). At this stage you may decide to publish only partial information (for example without the link to the commit with the fix). Ideally your release happens earlier or at the same time as the publication. You can ask for a publication at your specific date, for example at your planned release date.
+* *Ask for publication*: When you have the fix ready and published, open a {cvePublishUrl}[CVE Publication Request] ticket to indicate that you are ready to also publish the CVE and related tickets. The ticket only needs to include a link to the related CVE Reservation Request ticket. At this point, all the information required for the CVE must be available on the reservation ticket.
+Ideally your release and the publication happen at the same time. You can ask for a publication at your specific date, for example at your planned release date.
++
+[WARNING]
+====
+Creating a CVE Publication Request is a clear signal that you are ready to publish the CVE and related GitLab tickets and GitHub Security Advisories. *Please do not create this request, if you are not ready!* Also, be aware of differing privacy when publishing security tickets: GitLab makes all comments public, but GitHub only publishes the initial description. Adjust content (remove comments on GitLab or add crucial comments to the GitHub description) before publication as needed.
+====
 
-* *See it publicly*: The advisory becomes public, so is the CVE entry.
+* *See it publicly*: The ticket becomes public and the Eclipse Foundation Security Team publishes the CVE entry.
 
 * (Optional, a few days later) *Update the entry* with all additional information that might be helpful. That includes, for example, the link to the fix commit.
 

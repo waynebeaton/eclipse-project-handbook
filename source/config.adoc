@@ -97,7 +97,8 @@
 :securityTeamEmail: security@eclipse-foundation.org
 :vulnerabilityReportUrl: https://gitlab.eclipse.org/security/vulnerability-reports/-/issues/new?issuable_template=new_vulnerability
 :knownVulnerabilitiesUrl: https://www.eclipse.org/security/known.php
-:cveRequestUrl: https://gitlab.eclipse.org/security/cve-assignement/-/issues/new?issuable_template=cve
+:cveRequestUrl: https://gitlab.eclipse.org/security/cve-assignment/-/issues/new?issuable_template=CVE%20Reservation%20Request
+:cvePublishUrl: https://gitlab.eclipse.org/security/cve-assignment/-/issues/new?issuable_template=CVE%20Publication%20Request
 :cveUrl: https://cve.mitre.org/
 :cweUrl: https://cwe.mitre.org/
 
