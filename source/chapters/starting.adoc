@@ -197,7 +197,7 @@ When the paperwork is received and processed for one committer, the Eclipse Infr
 
 Push your code into an official {forgeName} project repository provided by the Eclipse Infrastructure Team. An automated process will initiate an _xref:ip-initial-contribution[initial contribution]_ review of your content. While the EMO IP Team is engaged in the IP reviews, they may reach out to you and the project team (committers) if they have any questions or concerns.
 
-xref:ip-third-party[third party content] that is required by the project code must also be reviewed by the Eclipse IP Team. 
+xref:ip-third-party[Third party content] that is required by the project code must also be reviewed by the Eclipse IP Team. 
 
 After the project code is pushed into the project repository, the project team can create and distribute builds for the first release. However, all intellectual property should be approved by the Eclipse IP Team before the project team can issue any official xref:release[releases].
 
