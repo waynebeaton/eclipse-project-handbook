@@ -23,11 +23,11 @@ The {securityPolicyUrl}[Eclipse Foundation Security Policy] contains information
 
 The Eclipse Foundation Security Team provides help and advice to Eclipse projects on security issues and is the first point of contact for handling security vulnerabilities. Members of the Security Team are selected from the Eclipse Foundation staff.
 
-You can contact the Eclipse Foundation Security Team by sending email to {securityTeamEmail} or by open an issue in the {vulnerabilityReportUrl}[general vulnerability issue tracker].
+You can contact the Eclipse Foundation Security Team by sending email to {securityTeamEmail} or by opening an issue in the {vulnerabilityReportUrl}[general vulnerability issue tracker].
 
 == Project's Security Team
 
-All project contributors are responsible for ensuring best security practices and following of the {securityPolicyUrl}[Eclipse Foundation Security Policy]. However, a specific group called the Project's Security Team is responsible for handling undisclosed vulnerabilities. It is up to the project and project's leadership chain to organise the Project's Security Team. In the absence of other decisions, the Project's Security Team includes all committers.
+All project contributors are responsible for ensuring best security practices and following the {securityPolicyUrl}[Eclipse Foundation Security Policy]. However, a specific group called the Project's Security Team is responsible for handling undisclosed vulnerabilities. It is up to the project and project's leadership chain to organise the Project's Security Team. In the absence of other decisions, the Project's Security Team includes all committers.
 
 The project might decide to include a subset of the committers in the team, for example based on their security experience. Any project committer can propose a creation of a separate Project's Security Team. This is discussed by the project leadership and might be submitted to a vote of all committers. The same procedure applies to bringing the responsibility back to the complete group of committers.
 
@@ -77,7 +77,7 @@ Disclosure is initially limited to the reporter, the project team and the Eclips
 Publicly disclosed issues are listed on the {knownVulnerabilitiesUrl}[Known Eclipse Security Vulnerabilities] page.
 
 [[vulnerability-cve]]
-== Common Vulnerabilities and Exposure (CVE)
+== Common Vulnerabilities and Exposures (CVE)
 
 The Eclipse Foundation is a {cveUrl}[Common Vulnerabilities and Exposures] (CVE) Numbering Authority and does assign CVE numbers to projects hosted by the Foundation.
 
@@ -100,7 +100,7 @@ Think of a first CVE for your open source project as a rite of passage. Alerting
 +
 [WARNING]
 ====
-The issue is confidential by default, please make sure to keep it that way! If you want to include other project members on the ticket, please assign them while creating the ticket. Once the confidential ticket is created, only a ticket admin add assignments.
+The issue is confidential by default, please make sure to keep it that way! If you want to include other project members on the ticket, please assign them while creating the ticket. Once the confidential ticket is created, only a ticket admin can add assignments.
 ====
 
 * *Receive the number*: The Eclipse Foundation Security Team will come back to you with the assigned number. You can start using it internally when preparing documentation of the release containing the fix.
@@ -156,7 +156,7 @@ Summary:
 
 In Eclipse Vert.x version 3.0 to 3.5.1, the HttpServer response
 headers and HttpClient request headers do not filter carriage return and
-line feed characters from the header value. This allow unfiltered values
+line feed characters from the header value. This allows unfiltered values
 to inject a new header in the client request or server response.
 
 Links:
@@ -170,7 +170,7 @@ If unsure on how to fill the form, ask the Eclipse Foundation Security Team for 
 
 The Eclipse Foundation CNA is currently using https://nvd.nist.gov/vuln-metrics/cvss/v4-calculator[Common Vulnerability Scoring System (CVSS) version 4,window="_blank"]. The CVSS scoring gives an estimation of the impact of the issue. One important thing to know about CVSS is that it describes the situation under a *reasonable worst-case scenario*. This also means there might be differences in the scoring between different people.
 
-The final result (score) of CVSS if a value from 0.0 (minimal impact) to 10.0 (critical impact); in addition to the score, the CVSS also includes a more detailed explanation (vectors) of various factors.
+The final result (score) of CVSS is a value from 0.0 (minimal impact) to 10.0 (critical impact); in addition to the score, the CVSS also includes a more detailed explanation (vectors) of various factors.
 
 The Eclipse Foundation Security Team recommends to fill the following fields:
 
@@ -180,7 +180,7 @@ Attack Complexity :: is the attack easy to perform with code that will work ever
 
 Attack Requirements :: shows if the attack is possible in all conditions. "None" means there are no specific conditions. However, "Present" means that the attack can take place in a particular configuration; the attacker needs to control the path between the user and the vulnerable system, and so on.
 
-User Interaction :: what is the involvement of the user? The score might be None (no user interaction required), Passive (involuntary actions from the user who is not working with the attacker), and Active (where the user is working with the attacker—for example, placing a file in a specific place or ignored a security warning).
+User Interaction :: what is the involvement of the user? The score might be None (no user interaction required), Passive (involuntary actions from the user who is not working with the attacker), and Active (where the user is working with the attacker—for example, placing a file in a specific place or ignoring a security warning).
 
 Privileges Required :: Does the attack require no permission at all? Low permissions (for example, a user account)? Or high permissions (for example, an administrator account)?
 
@@ -208,9 +208,9 @@ In what form should a disclosure be published? Is publishing the bug on the {kno
 
 Publishing on the Known Vulnerabilities page will happen automatically. This is minimal disclosure. Whether or not you should do more is a project team decision. If you  need help with that decision, connect with your xref:roles-pmc[Project Management Committee] (PMC) or the Eclipse Foundation Security Team.
 +
-If the vulnerability real and is in release software (that is, it's likely to have been adopted), you should xref:vulnerability-cve[request a CVE].
+If the vulnerability is real and is in release software (that is, it's likely to have been adopted), you should xref:vulnerability-cve[request a CVE].
 +
-You should let your community know about the vulnerability though your usual communication channels.
+You should let your community know about the vulnerability through your usual communication channels.
  
 Can I already commit the fixes to our repository and provide a service release, or shall I wait for some part of the disclosure process first? ::
 
@@ -239,7 +239,7 @@ If you're not sure, check with your PMC or the xref:vulnerability-team[Security 
 +
 If the reporter requests a CVE number, the Eclipse Foundation Security team will assign one if there is a reasonable probability of a real Vulnerability.
 +
-It's a rite of passage (that should be considered a good for the project and community) for an open source project to disclose their first vulnerability. If in doubt, ask the Eclipse Foundation Security Team for guidance.
+It's a rite of passage (that should be considered a good thing for the project and community) for an open source project to disclose their first vulnerability. If in doubt, ask the Eclipse Foundation Security Team for guidance.
 
 Do we need a xref:vulnerability-cve[CVE] for versions of software that we released before moving our project to the Eclipse Foundation? ::
 
@@ -261,7 +261,7 @@ If you have received a notification of a confidential issue by email, make sure 
 +
 If you are following a link, verify with the person managing the issue (for example the reporter) if you have been added to the issue. Currently, in the general issue tracker, each person needs to be added manually. In case of difficulties, ask the Eclipse Foundation Security Team for assistance.
 +
-Also please note that we need an activated GitLab account to add a user to a confidential issue. In practice, the user needs to log in into the Eclipse Foundation GitLab instance at least once.
+Also please note that we need an activated GitLab account to add a user to a confidential issue. In practice, the user needs to log in to the Eclipse Foundation GitLab instance at least once.
 
 Confidential issues are not visible to all members of the Project's Security Team ::
 
