@@ -1,10 +1,10 @@
 ////
- * Copyright (C) Eclipse Foundation, Inc. and others. 
- * 
+ * Copyright (C) Eclipse Foundation, Inc. and others.
+ *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- * 
+ *
  * SPDX-FileType: SOURCE
  *
  * SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
@@ -36,7 +36,7 @@ To contribute to {aForgeName} open source project, a contributor must:
 Contributors retain ownership of their contributions; the ECA, for example, states in part:
 
 ____
-This ECA, and the license(s) associated with the particular Eclipse Foundation projects You are contributing to, provides a license to Your Contributions to the Eclipse Foundation and downstream consumers, but *You still own Your Contributions*, and except for the licenses provided for in this ECA, You reserve all right, title and interest in Your Contributions. 
+This ECA, and the license(s) associated with the particular Eclipse Foundation projects You are contributing to, provides a license to Your Contributions to the Eclipse Foundation and downstream consumers, but *You still own Your Contributions*, and except for the licenses provided for in this ECA, You reserve all right, title and interest in Your Contributions.
 ____
 
 That is, the contributor owns their contributions, but grants a license to the Eclipse Foundation and downstream consumers to use them under the terms of the project license.
@@ -47,21 +47,21 @@ That is, the contributor owns their contributions, but grants a license to the E
 digraph {
 	// Graph properties
 	bgcolor=transparent
-	
+
     graph [ranksep="0.25", nodesep="0.25"]
-    
+
 	// Nodes that define the key points in the process
 	node [shape=box;style=filled;fillcolor=white;fontsize=12;group=g1]
-	
+
 	start [label="You want to be\na contributor"; style="filled,bold"];
 	eca [label=<<b>You</b> sign<br/>the ECA>];
 	contribute [label=<Create pull requests>];
 	committer [label="Project Team elects\nyou as a committer"; style="filled,bold"];
-	
+
 	node [shape=diamond;style=filled;fillcolor=white;fontsize=10;group=g1];
-	
+
 	merit [label="Significant\ncontributor?"];
-		
+
 	start -> eca -> contribute;
 	contribute:e -> merit:e;
 	merit -> committer [label="Yes"];
@@ -86,7 +86,7 @@ In order to grant the ability to assign issues and merge/pull requests to a non-
 
 For {forgeName} projects (and the open source world in general), committers are the ones who hold the keys. Committers decide what code goes into the code base, they decide how a project builds, and they ultimately decide what gets delivered to the adopter community. With awesome power, comes awesome responsibility, and so the Open Source Rules of Engagement described by the {edpLink}, puts _meritocracy_ on equal footing with _transparency_ and _openness_: becoming a committer isn't necessarily hard, but it does require a demonstration of merit.
 
-In practical terms, there are two ways to become {aForgeName} Committer. 
+In practical terms, there are two ways to become {aForgeName} Committer.
 
 The first way is to be listed as an initial committer on a new xref:starting-proposal[project proposal]. When projects come to the Eclipse Foundation we need them to actually start with committers, and so we include this as part of the bootstrapping. As part of the process of community vetting a new project proposal, the committers listed are themselves vetted by the community. In effect, the project proposal process also acts as a committer election that’s open to the entire community.
 
@@ -102,7 +102,7 @@ When a contributor becomes a committer, they must be covered by a committer agre
 [[contributing-account]]
 == Eclipse Foundation Account
 
-Eclipse Foundation project resources are accessible without an account. That is, members of the community may browse code, documentation, issues, help, etc. without creating an Eclipse Foundation Account. 
+Eclipse Foundation project resources are accessible without an account. That is, members of the community may browse code, documentation, issues, help, etc. without creating an Eclipse Foundation Account.
 
 Those members of the community that wish to contribute code patches, open issues, add content to wikis, etc. must create an {accountUrl}[Eclipse Foundation Account].
 
@@ -120,7 +120,7 @@ If you are employed by an {memberUrl}[Eclipse Foundation Member Company] when yo
 
 In the field where it asks "What is your employment status?":
 
-* Highlight "Work for an Eclipse Member Organisation"; and 
+* Highlight "Work for an Eclipse Member Organisation"; and
 * Pick your employer from the list.
 
 .Specify that you work for a member organisation.
@@ -144,8 +144,8 @@ Contributors who are already covered by a committer agreement (either an MCCA or
 
 [TIP]
 ====
-You can determine your ECA status from your {accountUrl}[Eclipse Foundation Account page]. Your ECA status is shown in the top-right corner. 
-==== 
+You can determine your ECA status from your {accountUrl}[Eclipse Foundation Account page]. Your ECA status is shown in the top-right corner.
+====
 
 [#contributing-genai]
 == Contributing Content Generated by an AI
@@ -168,7 +168,7 @@ Do I need to sign the Eclipse Contributor Agreement (ECA)? ::
 
 If you are not a committer on a particular Eclipse open source project, to contribute (e.g., make pull requests) to that project, you need to be covered by an ECA. If you are already a committer on any Eclipse open source project, then you are already covered by an ECA through your committer agreement and do not need to sign the ECA separately. If your employer has signed the xref:paperwork-mcca[Member Committer and Contributor Agreement], then you are already covered by an ECA and you do not need to sign the ECA separately.
 +
-If you are a committer on a project you do not need an ECA to contribute to that project. 
+If you are a committer on a project you do not need an ECA to contribute to that project.
 +
 Assuming that you are empowered to do so, you can individually sign the ECA even if you are already covered by another agreement.
 
@@ -182,7 +182,7 @@ image::images/accounts-status.png[]
 
 How do I know if somebody else is covered by an Eclipse Contributor Agreement (ECA)? ::
 
-Visit your xref:contributing-account[Eclipse Foundation Account] page and click on "Eclipse Contributor Agreement" in the _Status_ block. Use the ECA Validation Tool on _My Eclipse Contributor Agreement_ page to verify the ECA status of an individual using their email address.
+Visit your xref:contributing-account[Eclipse Foundation Account] page and use the _ECA Validation_ block in the sidebar to verify the ECA status of an individual using their email address.
 +
 image::images/eca_validation_tool.png[]
 
