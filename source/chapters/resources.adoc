@@ -152,6 +152,8 @@ Or using GitLab if these criteria are important to you:
 [#resources-gitlab]
 === GitLab
 
+indexterm:[GitLab]
+
 The Eclipse Foundation maintains an instance of GitLab for use by {forgeName} open source projects. Project teams may opt to host some or all of their canonical source code repositories on our GitLab instance.
 
 [TIP]
@@ -168,6 +170,8 @@ On GitLab, the root group for all {forgeName} open source project repositories i
 
 [#resources-gitlab-project-group]
 ==== Project Group
+
+indexterm:[GitLab,Project Group]
 
 A group can be configured as the immediate descendant of the root group, using the {forgeName} open source project's xref:resources-identifiers[short name].
 
@@ -215,8 +219,8 @@ Configuring GitLab in this manner requires approval from the corresponding {forg
  |   ├── <short name B>
  |   │   ├── <repository 1>
  |   │   ├── <repository 2>
- │   │   ├── <custom group 1>
- │   │   │   ├── <repository 3>
+ |   │   ├── <custom group 1>
+ │   |   │   ├── <repository 3>
  |   │   └── ...
  │   └── ...
  └── ...
@@ -239,7 +243,7 @@ For information regarding the privileges available to each of the Maintainer, De
 
 Project Leads ::
 
-All project leads are automatically granted the _Maintainer_ role on their project resources hosted on GitLab. When an individual is xref:elections-pl[elected] into the role of project lead, they are automatically granted these permissions within the group. When a project lead is xref:elections-retire-pl[retired], they are automatically removed from the group.
+indexterm:[Project Lead]All project leads are automatically granted the _Maintainer_ role on their project resources hosted on GitLab. When an individual is xref:elections-pl[elected] into the role of project lead, they are automatically granted these permissions within the group. When a project lead is xref:elections-retire-pl[retired], they are automatically removed from the group.
 +
 [WARNING]
 ====
@@ -252,11 +256,11 @@ Project leads must also not use their privileges to create private repositories,
 
 Committers ::
 
-All committers are automatically granted the _Developer_ role on their {forgeName} open source project resources hosted on GitLab. When an individual is xref:elections-committer[elected] into the role of committer, they are automatically added to the as a _Developer_ to the {forgeName} open source project's group. When a project lead is xref:elections-retire-cm[retired], they are automatically removed from the group.
+indexterm:[Committer]All committers are automatically granted the _Developer_ role on their {forgeName} open source project resources hosted on GitLab. When an individual is xref:elections-committer[elected] into the role of committer, they are automatically added to the as a _Developer_ to the {forgeName} open source project's group. When a project lead is xref:elections-retire-cm[retired], they are automatically removed from the group.
 
 Contributors ::
 
-All contributors are automatically granted _Reporter_ level access to {forgeName} open source project resources hosted on GitLab. When an individual is added to the xref:pmi-contributors[contributors] list, they are automatically added as a _Reporter_ in the {forgeName} open source project's group. When they are removed from the contributors list, they are automatically removed from the group.
+indexterm:[Contributor]All contributors are automatically granted _Reporter_ level access to {forgeName} open source project resources hosted on GitLab. When an individual is added to the xref:pmi-contributors[contributors] list, they are automatically added as a _Reporter_ in the {forgeName} open source project's group. When they are removed from the contributors list, they are automatically removed from the group.
 +
 The xref:contributing-eca[Eclipse Contributor Agreement] (ECA) hook inspects incoming merge requests to ensure that the contributor has a valid ECA on file, and flags those that do not. {forgeName} open source project committers should only accept merge requests that pass this validation.
 
@@ -272,6 +276,8 @@ Excluded Subgroups have been added to xref:pmi[Project Management Infrastructure
 
 [[resources-github]]
 === GitHub
+
+indexterm:[GitHub] 
 
 Project teams may opt to host some or all of their canonical source code repositories to an organisation on GitHub that is maintained by the Eclipse Foundation. Both GitHub Issues and Wiki may also be used.
 
@@ -315,7 +321,7 @@ GitHub's https://docs.github.com/en/organizations/managing-access-to-your-organi
 
 Project Leads Team ::
 
-All project leads are automatically added to the _project leads team_. All members of the _project leads team_ are granted the _Maintain_ role on their project's GitHub repositories. When an individual is xref:elections-pl[elected] into the role of project lead, they are automatically added to the _project leads team_. When a project lead is xref:elections-retire-pl[retired], they are automatically removed from the team.
+indexterm:[Project Lead]All project leads are automatically added to the _project leads team_. All members of the _project leads team_ are granted the _Maintain_ role on their project's GitHub repositories. When an individual is xref:elections-pl[elected] into the role of project lead, they are automatically added to the _project leads team_. When a project lead is xref:elections-retire-pl[retired], they are automatically removed from the team.
 +
 A project lead may request temporary _Admin_ level access to their project's repositories by {helpdeskUrl}[creating a Help Desk issue] with their request. The issue must describe what will be done using this new level of access and how long it will be needed. 
 +
@@ -330,13 +336,13 @@ Project leads must provide their GitHub Id in their xref:contributing-account[Ec
 
 Committers Team ::
 
-All committers are automatically added to the _committers team_. All members of the _committers team_ are granted the _Write_ role on their project resources hosted on GitHub. When an individual is xref:elections-committer[elected] into the role of committer, they are automatically added to the _committers team_. When a project lead is xref:elections-retire-cm[retired], they are automatically removed from the team.
+indexterm:[Committer]All committers are automatically added to the _committers team_. All members of the _committers team_ are granted the _Write_ role on their project resources hosted on GitHub. When an individual is xref:elections-committer[elected] into the role of committer, they are automatically added to the _committers team_. When a project lead is xref:elections-retire-cm[retired], they are automatically removed from the team.
 +
 Committers must provide their GitHub Id in their xref:contributing-account[Eclipse Foundation Account].
 
 Contributors Team ::
 
-All contributors are automatically added to the _contributors team_. All members of the _contributors team_ are granted _Triage_ level access to project resources hosted on GitHub. When an individual is added to the project's xref:pmi-contributors[Contributors] list, they are automatically added to the _contributors team_. When they are removed from the Contributors list, they are automatically removed from the team.
+indexterm:[Contributor]All contributors are automatically added to the _contributors team_. All members of the _contributors team_ are granted _Triage_ level access to project resources hosted on GitHub. When an individual is added to the project's xref:pmi-contributors[Contributors] list, they are automatically added to the _contributors team_. When they are removed from the Contributors list, they are automatically removed from the team.
 +
 Contributors must provide their GitHub Id in their xref:contributing-account[Eclipse Foundation Account].
 
@@ -399,10 +405,14 @@ Committers shall mark a deprecated repository as being `archived` either by usin
 [[resources-issues]]
 === Issue Trackers
 
+indexterm:[Issue Tracker]
+
 {forgeName} projects must use an Eclipse Foundation-provided issue tracker. Project teams may opt to use either the xref:resources-gitlab[Eclipse Foundation GitLab] instance or -- for projects that use xref:resources-github[GitHub] -- GitHub Issues instances associated with Eclipse Foundation-managed GitHub project repositories. 
 
 [#resources-mailing-list]
 === Mailing Lists
+
+indexterm:[Mailing List]
 
 {forgeName} projects have one or more mailing lists.
 
@@ -419,6 +429,8 @@ Mailing list subscriptions are managed via your xref:contributing-account[Eclips
 
 [#resources-dev-list]
 ==== Project Dev Lists
+
+indexterm:[Mailing List, Dev List]
 
 All projects are assigned a _development list_ or _dev-list_ that takes the form `<shortname>-dev@eclipse.org` (e.g., `woolsey-dev@eclipse.org`). 
 
@@ -446,9 +458,11 @@ Subscription to the committers mailing list is an obligation that comes with hav
 [[resources-website]]
 === Project Websites
 
+indexterm:[Website]
+
 Project websites are an excellent way to connect an open source project with the community. Many projects opt to use the xref:pmi[Project Management Infrastructure] (PMI) xref:pmi-project-page[project page] as their website.  PMI-based website URLs take the form of `pass:c,a[{forgeUrl}/projects/<project id>]` (e.g. `pass:c,a[{forgeUrl}/projects/technology.foo]`). 
 
-Many project teams opt to create a custom main project website: if so-desired, a project may host a website on Eclipse Foundation-hosted servers. Project website URLs generally take the form `https://eclipse.dev/<shortname>` (e.g. `https://eclipse.dev/foo`). Custom project website content is maintained in Git repositories hosted on Eclipse Foundation infrastructure. A background job moves content from the Git repository to the website; content pushed to the repository will appear on the live website within five minutes.
+Many project teams opt to create a custom main project website: if so-desired, a project may host a website on Eclipse Foundation-hosted servers. Project website URLs generally take the form `pass:[https://eclipse.dev/&lt;shortname&gt;]` (e.g. `pass:[https://eclipse.dev/foo]`). Custom project website content is maintained in Git repositories hosted on Eclipse Foundation infrastructure. A background job moves content from the Git repository to the website; content pushed to the repository will appear on the live website within five minutes.
 
 [NOTE]
 ====

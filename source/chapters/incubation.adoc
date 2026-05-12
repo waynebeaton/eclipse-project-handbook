@@ -16,6 +16,9 @@
 [#incubation]
 = Incubation
 
+indexterm:[Phase, Incubation]
+indexterm:[Incubation]
+
 The {edpUrl}[Eclipse Foundation Development Process] (EDP) has a notion of phases. Two of those phases are _incubation_ and _mature_.
 
 All Eclipse open source projects start in the incubation phase, and are expected to xref:incubation-graduating[graduate] into the mature phase. Eclipse open source projects will spend most of their existence in the mature phase. The intention of the incubation phase in the EDP is to establish a fully-functioning Eclipse open source project by focusing on developing the process, the community, and the technology. This phase is not about the quality of the project's content, but rather about the project team's progress in practising the open processes necessary to establish communities of developers, adopters, and users around the project.
@@ -34,11 +37,13 @@ The xref:ip[intellectual property due diligence process] provides some additiona
 [#incubation-branding]
 == Incubation Branding
 
+indexterm:[Incubation, Branding]
+
 [[starting-incubation-branding]]
 
-To highlight that a project is in the incubation phase, it must implement incubation branding. Primarily, this takes the form of displaying the incubation logo in prominent locations, including the project’s major web properties and including the word "incubation" or warning that products shipped as part of a release _may include incubating components_.
+image::images/incubating.png[The Incubation Logo,width=150px,float="right",pdfwidth=20%]
 
-image::images/incubating.png[width=150px,float="right"]
+To highlight that a project is in the incubation phase, it must implement incubation branding. Primarily, this takes the form of displaying the incubation logo in prominent locations, including the project’s major web properties and including the word "incubation" or warning that products shipped as part of a release _may include incubating components_.
 
 Incubating branding includes:
 

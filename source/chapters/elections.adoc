@@ -70,7 +70,7 @@ A committer nomination should explain the candidate's contributions to the proje
 [#elections-contribution]
 ==== How Much Contribution is Enough?
 
-The project team and xref:roles-pmc[PMC] decide how much contribution is enough. Ideally, a project team should have the standards by which they grant committer responsibility publicly documented (e.g., in the project's xref:legaldoc-contributor[contributor guide] or the top level project's charter). It is natural that these standards will change over the life of the project.
+The project team and xref:roles-pmc[PMC] decide how much contribution is enough. Ideally, a project team should have the standards by which they grant committer responsibility publicly documented (e.g., in the project's xref:legaldoc-contributor[contributor guide] or the top-level project's charter). It is natural that these standards will change over the life of the project.
 
 Here are some guidelines:
 
@@ -103,7 +103,7 @@ Rule of thumb: how much of a demonstration of contribution would you like to see
 +
 No matter how rigorously documented the project's standard is, there will always be room for judgement. 
 
-Check the Top Level Project Charter ::
+Check the Top-Level Project Charter ::
 
 The Top-Level Project Charter may have something to say about the standards for nominating committers, and committers should expect the PMC to apply these standards when approving an election.
 

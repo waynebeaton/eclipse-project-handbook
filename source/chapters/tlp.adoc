@@ -9,13 +9,13 @@
 ////
 
 [[tlp]]
-== Top Level Projects
+== Top-Level Projects
 
-Creating a new Top Level Project (TLP) at the Eclipse Foundation usually happens when a group of projects gather some momentum. A new TLP usually has a strategic member sponsor, but it’s not a hard requirement.
+Creating a new Top-Level Project (TLP) at the Eclipse Foundation usually happens when a group of projects gather some momentum. A new TLP usually has a strategic member sponsor, but it’s not a hard requirement.
  
-A TLP is defined through a charter. There is not a dedicated web form, or any special file format for TPL charters. All charters start from the https://www.eclipse.org/projects/dev_process/Eclipse_Standard_TopLevel_Charter_v1.2.php[standard charter] and extend it with information specific to the particular top level project, e.g. a TLP charter can specify what kind of merit a contributor needs to be elected.
+A TLP is defined through a charter. There is not a dedicated web form, or any special file format for TPL charters. All charters start from the https://www.eclipse.org/projects/dev_process/Eclipse_Standard_TopLevel_Charter_v1.2.php[standard charter] and extend it with information specific to the particular top-level project, e.g. a TLP charter can specify what kind of merit a contributor needs to be elected.
  
-Top level projects have a xref:roles-pmc[Project Management Committee] (PMC) which usually includes the participation of an EDP expert to help with the bootstrapping and then drops off once the project is up and running
+Top-level projects have a xref:roles-pmc[Project Management Committee] (PMC) which usually includes the participation of an EDP expert to help with the bootstrapping and then drops off once the project is up and running
  
 In order to be created, a TLP needs the Eclipse Foundation’s Board of Directors approval. For this, it’s necessary to have both the charter and the names of the PMC Lead and Members defined. 
  

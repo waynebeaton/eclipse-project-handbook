@@ -36,7 +36,7 @@ Committers:
 [#roles-pl]
 == Project Lead
 
-{forgeName} projects must have at least one project lead, and may have more than one. The project leads are the primary liaison between the project team and the xref:roles-emo[Eclipse Management Organization](EMO). As the first link in the project leadership chain, project leads have responsibility to ensure that the project team is able to successfully implement the goals of the project in accordance with the {edpLink} and {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy]. 
+{forgeName} projects must have at least one project lead, and may have more than one. The project leads are the primary liaison between the project team and the xref:roles-emo[Eclipse Management Organization] (EMO). As the first link in the project leadership chain, project leads have responsibility to ensure that the project team is able to successfully implement the goals of the project in accordance with the {edpLink} and {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy]. 
 
 The EMO considers it a good practice to have more than one person in that role to ensure that there is continuity. There is no artificial maximum number of project leads for {aForgeName} project: the main thing that the EMO is concerned with is that project leads are elected in a vendor-neutral manner following public demonstrations of leadership (documented as comments on issues, contributions to mailing list discussions, etc.) that are cited in the nomination statement. The EMO specifically watches elections to ensure that vendor neutrality is observed.
 
@@ -76,15 +76,15 @@ Project leads can also request the EMO to initiate a xref:release-restructuring[
 
 A project management committee (PMC) is responsible for the operation of exactly one top-level project as defined by the {edpLink}. Per the EDP, top-level projects sit at the top of the open source project hierarchy. 
 
-The PMC’s role is, fundamentally, to maintain the overall vision and operation of the top level project and all of the projects that fall within their purview. Very often (though it really depends on the nature of the top level project), the PMC will take a very active role in determining how their projects fit together, and how they communicate and interoperate. In pragmatic terms, the PMC ensures that projects are following the rules, set the standards over and above the basic requirements for releases and corresponding documentation, approves intellectual property contributions, and approves committer and project lead elections. 
+The PMC’s role is, fundamentally, to maintain the overall vision and operation of the top-level project and all of the projects that fall within their purview. Very often (though it really depends on the nature of the top-level project), the PMC will take a very active role in determining how their projects fit together, and how they communicate and interoperate. In pragmatic terms, the PMC ensures that projects are following the rules, set the standards over and above the basic requirements for releases and corresponding documentation, approves intellectual property contributions, and approves committer and project lead elections. 
 
 Top-level projects do not generally maintain open source content of their own, but rather provide oversight and guidance to those open source projects that fall under them in the project hierarchy. All projects that fall under a particular top-level project must fit within the mission and scope defined by the top-level project’s charter. In addition to mission and scope, the charter may further define other requirements or establish guidelines for practices by the project that fall under its purview.
 
 The primary role of the PMC is to ensure that project teams are implementing the EDP and operating within the terms outlined by the top-level project's charter. In particular, the PMC monitors project activity to ensure that project teams are operating in an open and transparent manner. 
 
-The PMC is responsible for defining and managing the structure of the top level project and the organisation of the open source (software and specification) projects contained within.
+The PMC is responsible for defining and managing the structure of the top-level project and the organisation of the open source (software and specification) projects contained within.
 
-The PMC provides other oversight regarding the operation of open source projects. They review and approve xref:progress-review[progress reviews], and facilitate cross-project communication within the top level project.
+The PMC provides other oversight regarding the operation of open source projects. They review and approve xref:progress-review[progress reviews], and facilitate cross-project communication within the top-level project.
 
 [#roles-pmc-composition]
 === Composition

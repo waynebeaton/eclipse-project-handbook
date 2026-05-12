@@ -193,7 +193,7 @@ The _applicable license_ is typically the project license. Contributions may, ho
 
 This includes (for example):
 
-* References in a Java&reg;/OSGi manifest that makes a direct reference to third party content (either a bundle or package);
+* References in a Java(R)/OSGi manifest that makes a direct reference to third party content (either a bundle or package);
 * Imports of packages in Java source;
 * Includes of header files in C/C++;
 * References to NPM modules via a `package.json`, `package-lock.json`, or `yarn.lock` file;
