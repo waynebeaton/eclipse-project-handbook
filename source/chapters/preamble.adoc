@@ -36,7 +36,7 @@ Meritocratic :: Eclipse is a meritocracy. The more you contribute the more respo
 Employment status has no bearing at whether or not somebody can participate in an open source project at Eclipse. Employment does not guarantee committer status; committer status must be earned by everybody. Committers and project leads are added to a project via xref:elections[election].
 ====
 
-The Open Source Rules of Engagement define a foundation for _vendor-neutral_ open source development. _Vendor neutrality_ is concerned with maintaining a level playing field that is open to all comers: no vendor is permitted to dominate a project, and nobody can be excluded from participating in a project based on their employment status.
+indexterm:[Vendor Neutrality]The Open Source Rules of Engagement define a foundation for _vendor-neutral_ open source development. _Vendor neutrality_ is concerned with maintaining a level playing field that is open to all comers: no vendor is permitted to dominate a project, and nobody can be excluded from participating in a project based on their employment status.
 
 Quality and intellectual property cleanliness are also important principles.
  

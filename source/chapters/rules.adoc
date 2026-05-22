@@ -82,7 +82,7 @@ Committers, who must already been covered by either a  xref:paperwork-mcca[Membe
 
 Committers must work in a vendor-neutral manner ::
 
-When you move the project to the Eclipse Foundation, it ceases to be yours alone. Sharing control with the other developers who “show up” is an important part of growing a community around the project.
+indexterm:[Vendor Neutrality]When you move the project to the Eclipse Foundation, it ceases to be yours alone. Sharing control with the other developers who “show up” is an important part of growing a community around the project.
 +
 But why do we care about vendor neutrality?
 +
