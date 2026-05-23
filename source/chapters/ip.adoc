@@ -117,38 +117,26 @@ Note that when the ClearlyDefined record shows any of the following, a project c
 [#ip-initial-contribution]
 === Initial Contribution
 
-When an existing project migrates to the Eclipse Foundation, we refer to the existing code (when one exists) as the {forgeName} open source project's _initial contribution_. An initial contribution is basically the first set of xref:ip-project-code[project code] contributions to the new {forgeName} project. An initial contribution typically takes the form of an entire existing source code repository or some snapshot of an existing code base.
+When an existing project migrates to the Eclipse Foundation, we refer to the existing code as the {forgeName} open source project's _initial contribution_. An initial contribution is basically the first set of xref:ip-project-code[project code] contributions to the new {forgeName} project. An initial contribution typically takes the form of one or more entire existing source code repositories or some snapshot of an existing code base.
 
 [WARNING]
 ====
 All {forgeName} open source project content must be kept in source code repositories that are managed by the Eclipse Infrastructure Team. Our current options are xref:resources-gitlab[GitLab] or xref:resources-github[GitHub].
 ====
 
-In the case of an existing repository, the project team has some choices:
-
-**Move the existing repository.** At the project team's request, the Eclipse Infrastructure Team can move existing source code repositories on xref:resources-github[GitHub] into an organisation managed by the Eclipse Foundation. This is the best option when a project team wants to preserve their repository's status with existing forks, retain existing issues, stars, etc. If the repository is private, it must be made public before the move. Note that GitHub does a good job of setting up redirects that will ensure that the project's existing community can find them. 
-
-**Push to a new repository.** At the project team's request, the Eclipse Infrastructure Team can create new source code repositories on either xref:resources-gitlab[GitLab] or xref:resources-github[GitHub] into which the project team can push existing content. This option is best in the case that there is good reason to leave an existing repository in place, or when a project team needs to move an existing private repository into the open. The project team can decide whether or not to push the entire history or just a snapshot from the existing repository. As a best practice, an existing repository that gets "left behind" should be updated to include a pointer to the new repository and marked as _archived_.
-
-Combinations are also possible. As part of the {forgeName} open source xref:starting[project creation process], the EMO asks the project team to capture their requirements and will facilitate discussion between the project team and the Eclipse Infrastructure Team to implement those requirements.
-
-[NOTE]
-====
-We must complete the open source xref:starting[project creation process] before we move any existing source code repositories or create new ones. Following a successful xref:release-creation[Creation Review], the EMO will initiate the xref:starting-provisioning[provisioning] process. It is during the provisioning process that we activate project committers, move/create source code repositories, and create other project resources.
-====
+We must complete the open source xref:starting[project creation process] before we move any existing source code repositories or create new ones. Following a successful xref:release-creation[Creation Review], the EMO will initiate the xref:starting-provisioning[provisioning] process. It is during the provisioning process that we activate project committers, move/create source code repositories, and create other project resources. 
 
 The short version of the process is this:
 
 * Complete the xref:starting-proposal[proposal process] and xref:release-creation[creation review];
 * Project team and EMO works with Eclipse Infrastructure Team to set up source code repositories;
 * The EMO initiates the intellectual property review of the default branch of all repositories; and
-* The EMO IP Team will inform the EMO when the reviews are complete
+* The EMO IP Team will inform the EMO when the reviews are complete.
 
-As a general rule third party content should not be included in project repositories. Typically, third party content is pulled in by some form of build process after developers have cloned the repository (for example, developers might pull in required NPM modules via a `package-lock.json` file).
-
-In the case where third party content must be represented in a project repository, we would consider that a project code. Whether or not the content is modified, it would effectively be considered a fork.
-
-A project cannot make a xref:release[release] until the due diligence on the IP contained in that release -- including xref:ip-project-content[project content] contributions and xref:ip-third-party[third party content] -- is complete. 
+[TIP]
+====
+The xref:ip-existing-repository[] section describes options available for moving an existing repository.
+====
 
 [#ip-project-content]
 === Project Content
@@ -174,7 +162,25 @@ When further investigation is required, a project committer must xref:ip-request
 ====
 Do not change the licence of content that you copy or fork.
 ====
+
 Any project committer can xref:ip-request[engage with the IP Team] to review a project content contribution. A project cannot make a release that includes the content under review until the due diligence process ​is complete and the content has been approved.
+
+[#ip-existing-repository]
+==== Moving an Existing Repository
+
+When you need to move an entire existing repository (for example, an xref:ip-initial-contribution[initial contribution]) into your Eclipse open source project the project team has some choices:
+
+Move the existing repository :: At the project team's request, the Eclipse Infrastructure Team can move existing source code repositories on xref:resources-github[GitHub] into an organisation managed by the Eclipse Foundation. This is the best option when a project team wants to preserve their repository's status with existing forks, retain existing issues, stars, etc. If the repository is private, it must be made public before the move. Note that GitHub does a good job of setting up redirects that will ensure that the project's existing community can find them. 
+
+Push to a new repository :: At the project team's request, the Eclipse Infrastructure Team can create new source code repositories on either xref:resources-gitlab[GitLab] or xref:resources-github[GitHub] into which the project team can push existing content. This option is best in the case that there is good reason to leave an existing repository in place, or when a project team needs to move an existing private repository into the open. The project team can decide whether or not to push the entire history or just a snapshot from the existing repository. As a best practice, an existing repository that gets "left behind" should be updated to include a pointer to the new repository and marked as _archived_.
+
+Combinations are also possible. 
+
+As a general rule xref:ip-third-party[third party content] should not be included in project repositories. The common practice is that third party content is pulled in by some form of build process after developers have cloned the repository (for example, developers might pull in required _Node_ modules via `npm install`).
+
+In the case where third party content must be represented in a project repository, we would consider that as project code. Whether or not the content is modified, it would effectively be considered a fork.
+
+A project cannot make a xref:release[release] until the due diligence on the IP contained in that release -- including xref:ip-project-content[project content] contributions and xref:ip-third-party[third party content] -- is complete. 
 
 [#ip-ownership]
 ==== Copyright
