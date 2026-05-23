@@ -50,7 +50,7 @@ that the code is correct.
 SPDX-License-Identifier: EPL-2.0 and CC0-1.0 <4>
 Assisted-by: Google gemini-2.5-pro (rev-1) <5>
 ----
-<1> The identity of a legal entity (or entities) responsbile for modifying or curating the content (for more information, see xref:ip-copyright-headers[Copyright Headers]).
+<1> The identity of a legal entity (or entities) responsible for modifying or curating the content (for more information, see xref:ip-copyright-headers[Copyright Headers]).
 <2> The project licence.
 <3> "No rights reserved" dedication.
 <4> SPDX expression that combines project licence and dedication (in an SPDX identifier expression, `and` means that the adopter must accept the terms of both sides of the expression).
