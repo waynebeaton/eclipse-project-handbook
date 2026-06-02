@@ -171,13 +171,13 @@ Contributors can be designed by adding their email address to the _Contributors_
 To gain the _triage_ role on {aForgeName} project's GitHub repositories, contributors must provide their GitHub ID in their xref:contributing-account[Eclipse Foundation Account].
 ====
 
-Any committer or project lead can add or remove contributors for their own project. To set the add or remove contributors: 
+Any committer or project lead can add or remove contributors for their own project. To add or remove contributors: 
 
 * Log into the PMI;
 * Navigate to the xref:pmi-project-page[project page];
 * Click btn:[Edit];
-* Open the section labelled _Source Code and Issues/Bugzilla_;
-* Add/remove email addresses to/from the _Contributors_ field;
+* Open the section labelled _Source Code_;
+* Add/remove names to/from the _Contributors_ field (Contributors must already have an xref:contributing-account[]);
 * Click btn:[Save].
 
 [NOTE]
@@ -188,7 +188,7 @@ The _sync script_ that propagates contributor information into teams on our GitL
 [[source-repositories]]
 ==== Source Repositories
 
-Source repositories are listed on the _Developer Resources_ page.
+xref:resources-gitlab[] groups, xref:resources-github[] organisations, and other source repositories are listed on the _Developer Resources_ page.
 
 Metadata regarding source repositories is maintained by EMO staff.
 
@@ -204,7 +204,7 @@ To edit information about contribution and provide pointers to information about
 * Log into the PMI;
 * Navigate to the xref:pmi-project-page[project page];
 * Click btn:[Edit];
-* Open the section labelled _Source Code and Issues/Bugzilla_;
+* Open the section labelled _Source Code_;
 * Update the fields as required;
 * Click btn:[Save].
 

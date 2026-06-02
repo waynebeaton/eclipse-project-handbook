@@ -50,6 +50,7 @@ This means, for example, that the open source project name and the names of any 
 The duration of the relationship between the project and the Eclipse Foundation is _forever_: when we create the project, it will be an Eclipse project that the Eclipse Foundation manages in a vendor-neutral manner on behalf of the community. If your team chooses to walk away from the project, the community will be able to pick up and continue the work.
 
 Eclipse open source projects are required to operate in an xref:preamble-principles[open, transparent, and meritocratic manner]. This means that, as an Eclipse open source project, project developers (xref:roles-cm[committers]) are required to do their day-to-day work in the xref:resources-platform[Git repositories] provided by the Eclipse Foundation (either xref:resources-github[GitHub] organisations and repositories managed by the Eclipse Foundation, or the Eclipse Foundation's hosted xref:resources-gitlab[GitLab] instance). This includes issue trackers: the project team is required to track the addition of new features, and mitigation of bugs using xref:resources-issues[issue trackers] provided by the Eclipse Foundation (GitHub or GitLab Issues). The project team is expected to review merge/pull requests from the community, confirm that contributors are correctly covered by a valid xref:contributing-eca[contributor agreement], and merge contributions with technical merit that align with the project's goals and scope. Further, the project team is expected to invite regular xref:contributing-contributors[contributors] to the project to join as committers. 
+
 ifdef::backend-html5[]
 Please see https://blog.waynebeaton.ca/posts/opensource/level-playing-field/[Level Playing Field] and https://blog.waynebeaton.ca/posts/opensource/repository/[Barriers for Entry].
 endif::[]
@@ -124,7 +125,7 @@ A proposal will be open for community review for a minimum of two weeks.
 [[starting-proposal-document]]
 === Project Proposal Document
 
-Use the {createUrl}[web form]{createProposalFootnote} to create a new project proposal. 
+Use the {createUrl}[web form]{createProposalFootnote} indexterm:[Proposal,Web Form] to create a new project proposal. 
 
 Instructions are provided on the form. All new proposals are created in _draft_ mode, and are accessible only by the original author and anybody designated as a project lead or committer in the proposal. Only those individuals designated as a project lead may edit the proposal.
 

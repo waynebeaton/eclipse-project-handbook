@@ -20,7 +20,6 @@ include::config.adoc[]
 :downloadsHost: https://downloads.eclipse.org
 :createUrl: https://projects.eclipse.org/create/project-proposal
 :projectListUrl: http://projects.eclipse.org/list-of-projects
-:bugzillaUrl: https://bugs.eclipse.org/bugs
 :gitlabUrl: https://gitlab.eclipse.org
 :gitHubUrl: https://github.com/eclipse
 :mailingListsUrl: https://www.eclipse.org/mail/
