@@ -57,7 +57,7 @@ endif::[]
 
 The indexterm:[Security Team]Eclipse Foundation Security Team will likely receive xref:vulnerability[vulnerability] reports for the project content. We regard this as a fundamentally good thing (vulnerability reports are an indicator that people care about the project). The security team will contact the project's xref:projects-security-team[security team] to disclose vulnerabilities, but these will be reported publicly after a period of time, whether they are addressed or not.
 
-Project committers are required to engage in our xref:ip[Intellectual Property Due Diligence Process] to vet the licence compatibility of the third-party content that the project leverages. Due diligence must be complete before any content is included in a xref:release[release].
+Project committers are required to engage in our xref:ip[Intellectual Property Due Diligence Process] to vet the licence compatibility of the third party content that the project leverages. Due diligence must be complete before any content is included in a xref:release[release].
 
 Eclipse open source projects operate entirely in the open. The Git repositories are entirely public. Every commit that project developers create must be immediately available to the community.
 

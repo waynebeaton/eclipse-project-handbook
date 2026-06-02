@@ -35,7 +35,7 @@ In summary, creating SBOMs is crucial for enhancing supply chain security, effec
 
 Generate a correct SBOM in a standard format for products ::
 
-This includes both the files that are contained within the product along with third-party content embedded or referenced by the product. As of this writing, there are two popular standard formats: https://spdx.dev/[SPDX] and https://cyclonedx.org/[CycloneDX].
+This includes both the files that are contained within the product along with third party content embedded or referenced by the product. As of this writing, there are two popular standard formats: https://spdx.dev/[SPDX] and https://cyclonedx.org/[CycloneDX].
 
 Must be able to resolve entries to specific content via unambiguous and durable coordinates ::
 

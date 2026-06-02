@@ -105,12 +105,12 @@ Use blocks to render NOTE/WARNING callouts.
 ====
 ....
 
-We use pseudo legal capitalization form for defined terms. The first occurance of a defined term in every chapter should be italicised. We use quotes sparringly (generally only for actual quotes).
+We use pseudo legal capitalisation form for defined terms. The first occurrence of a defined term in every chapter should be italicised. We use quotes sparingly (generally only for actual quotes).
 
 ....
 * _Eclipse Project_ is a defined term;
 * _Top-Level Project_ is also a defined term; we always hyphenate "Top-Level";
-* We prefer the use of _Third-party content_  rather than, e.g., "library"
+* We prefer the use of _Third party content_  rather than, e.g., "library"
 ....
 
 == Converting Existing Content
