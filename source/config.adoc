@@ -61,6 +61,14 @@
 :committerGuidelinesUrl: https://www.eclipse.org/legal/committer-guidelines
 :committerTrainingUrl: https://www.eclipse.org/projects/training
 
+// Optional identity verification
+:idenfyUrl: https://www.idenfy.com/
+:idenfyLink: {idenfyUrl}[iDenfy]
+:idenfySupportedDocumentsUrl: https://idenfy.com/supported-documents/
+:idenfySupportedCountriesUrl: https://documentation.idenfy.com/resources/supported-documents
+:idVerificationDiscussionsUrl: https://github.com/orgs/eclipse-csi/discussions
+:idVerificationAnnouncementUrl: https://blogs.eclipse.org/post/mika%C3%ABl-barbero/optional-identity-verification-eclipse-foundation-committers-launches-june-2
+
 :bylawsUrl: https://www.eclipse.org/org/documents/eclipse_foundation-bylaws.pdf
 :legalDocumentationUrl: https://www.eclipse.org/legal/guidetolegaldoc.php
 :ipThirdParty: https://www.eclipse.org/org/documents/Eclipse_Policy_and_Procedure_for_3rd_Party_Dependencies_Final.pdf
