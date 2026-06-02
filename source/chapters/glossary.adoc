@@ -55,7 +55,7 @@ The purpose of the Eclipse Contributor Agreement (ECA) is to provide a written r
 
 Eclipse Management Organization (EMO) ::
 
-The Eclipse Management Organization (EMO) consists of the Eclipse Foundation staff, and the xref:roles-ac[Eclipse Architecture Council]. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the {edpLink}. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead or PMC, ask the EMO.
+The Eclipse Management Organization (EMO) is the operational arm of the Eclipse Foundation, responsible for overseeing the day-to-day execution of the Eclipse Foundation Development Process. It provides essential governance and administrative support, including intellectual property due diligence, security audits, and project life cycle management. By acting as a neutral mediator, the EMO ensures that all projects operate with the transparency, meritocracy, and "vendor-neutrality" required for a healthy open source ecosystem.
 
 EMO Executive Director ::
 
