@@ -37,7 +37,7 @@ There are different kinds of content (e.g., source code, documentation, and imag
 
 xref:ip-project-content[Project content] is content (typically source code) that is produced and maintained by the open source project committers and contributors. Most of the _project content_ produced by committers can be pushed into a project repository without any sort of legal review. However, at least in some cases, the IP Team needs to be engaged to review project content that comes from contributors (who are not committers); and there are some cases where even the work of committers needs to be reviewed.
 
-xref:ip-third-party[Third party content] generally takes the form of libraries (e.g. modules, or components), source files, images, or other forms of IP that are produced and maintained outside of the scope of the open source project. To mitigate the risk associated with adopting open source in products, the _project content_ and the _third party content_ that it leverages need to be vetted to ensure that the copyrights expressed are correct, licensing is valid and compatible, and that other issues have been uncovered and properly investigated.
+xref:ip-third-party[Third party content] generally takes the form of libraries (e.g., modules, or components), source files, images, or other forms of IP that are produced and maintained outside of the scope of the open source project. To mitigate the risk associated with adopting open source in products, the _project content_ and the _third party content_ that it leverages need to be vetted to ensure that the copyrights expressed are correct, licensing is valid and compatible, and that other issues have been uncovered and properly investigated.
 
 [WARNING]
 ====
@@ -46,7 +46,7 @@ If you've been around for a while, you may be looking for things that no longer 
 
 The IP Due Diligence Process focuses on source content. For the purposes of the IP Due Diligence Process, the term _source code_ (or _source content_) refers to the pre-compiled content, including programming language source, configuration and property files, as well as binary things that don't have a pre-compiled form like images or icons. The IP Due Diligence Process is concerned with reviewing the IP that is either consumed (third party content) or produced (project content) by the Eclipse open source project. The process doesn't generally focus on compiled content (e.g., the IP Team looks at source code, not JAR files).
 
-The IP Due Diligence Process does not dictate how source code repositories are structured. Project teams should organise content in their source code repositories in whatever structure makes the most sense. Similarly, the IP Due Diligence Process is not concerned with how third party content is represented (e.g. how it is integrated into builds) or how it is disseminated.
+The IP Due Diligence Process does not dictate how source code repositories are structured. Project teams should organise content in their source code repositories in whatever structure makes the most sense. Similarly, the IP Due Diligence Process is not concerned with how third party content is represented (e.g., how it is integrated into builds) or how it is disseminated.
 
 [NOTE] 
 ====
@@ -77,7 +77,7 @@ Data collected in IPLab is used as a source for the xref:ip-dash-db[Eclipse Dash
 [#ip-clearlydefined]
 === ClearlyDefined
 
-{clearlyDefinedUrl}[ClearlyDefined] is an OSI project that combines automated harvesting of copyright and license information from software repositories and curation thereof by trusted members of the community to produce a massive database of information about content. The Eclipse Foundation's IP Team works with the ClearlyDefined team, providing input into their processes and helping to curate their data.
+indexterm:[ClearlyDefined] {clearlyDefinedUrl}[ClearlyDefined] is an OSI project that combines automated harvesting of copyright and license information from software repositories and curation thereof by trusted members of the community to produce a massive database of information about content. The Eclipse Foundation's IP Team works with the ClearlyDefined team, providing input into their processes and helping to curate their data.
 
 In rough terms, if the license information for third party content can be validated by the Eclipse Foundation's xref:ip-prereq-diligence[due diligence process] using ClearlyDefined data, then no further action is required. The xref:ip-license-tool[Eclipse Dash License Tool] uses ClearlyDefined as a source of license information (and is the easiest way for {forgeName} committers to leverage ClearlyDefined).
 
@@ -91,7 +91,7 @@ In order to facilitate the use of automation in the IP due diligence process, th
 In the time since we made this decision, https://github.com/package-url[Package URL] has emerged as a superior choice. We will update our services to use Package URLs by early 2025.
 ====
 
-The notion of an identifier for content is pretty natural for developers who are familiar with technologies like Apache Maven which has well defined means of uniquely identifying content in a well-defined software repository. Maven coordinates -- which combine `groupid`, `artifactid`, and `version` (often referred to as a “GAV”) -- identify a very specific bit of content (especially when combined with a specific source, e.g. Maven Central). For example, `org.junit.jupiter:junit-jupiter:5.5.2` unambiguously identifies content on indexterm:[Maven, Maven Central] Maven Central that is known to be under the Eclipse Public License version 2.0 (EPL-2.0). Other systems use different means of identifying content: `node.js`, for example, uses a pURL-like identifier for content in the NPM repository (e.g., `@babel/generator@7.62`).
+The notion of an identifier for content is pretty natural for developers who are familiar with technologies like Apache Maven which has well defined means of uniquely identifying content in a well-defined software repository. Maven coordinates -- which combine `groupid`, `artifactid`, and `version` (often referred to as a “GAV”) -- identify a very specific bit of content (especially when combined with a specific source, e.g., indexterm:[Maven,Maven Central] Maven Central). For example, `org.junit.jupiter:junit-jupiter:5.5.2` unambiguously identifies content on Maven Central that is known to be under the Eclipse Public License version 2.0 (EPL-2.0). Other systems use different means of identifying content: `node.js`, for example, uses a pURL-like identifier for content in the NPM repository (e.g., `@babel/generator@7.62`).
 
 To bridge the gap between the different means of identifying content (and fill in some of the blanks), we've adopted the ClearlyDefined project’s five part identifiers which includes the type of content, its software repository source, its namespace and name, and version/revision. ClearlyDefined coordinates are roughly analogous to Maven coordinates, but -- by including the type and source -- provide a greater degree of precision. ClearlyDefined uses slashes to separate the parts of the identifier, so the Maven GAV `org.junit.jupiter:junit-jupiter:5.5.2` maps to `maven/mavencentral/org.junit.jupiter/junit-jupiter/5.5.2` and the NPM identifier `@babel/generator@7.62` maps to `npm/npmjs/@babel/generator/7.6.2`.
 
@@ -436,7 +436,7 @@ The _Source_ field is the important one. The scanner looks for content of the fo
 +
 `[Source](<url>)`
 +
-We need pointers to specific versions of content, ideally in an archive format (e.g. a `ZIP` file). That is, please do not provide a pointer to a repository on GitHub; rather, provide a pointer to a specific downloadable ZIP archive associated with the particular release.
+We need pointers to specific versions of content, ideally in an archive format (e.g., a `ZIP` file). That is, please do not provide a pointer to a repository on GitHub; rather, provide a pointer to a specific downloadable ZIP archive associated with the particular release.
 +
 For example:
 +
@@ -453,7 +453,7 @@ The source must be one of the following:
 * A URL pointing to an archive (e.g., `pass:[*.zip]`, `pass:[*.tar.gz]`)
 * An xref:ip-request-attachments[attachment];
 * The URL for an Eclipse GitLab merge request (e.g., `pass:[https://gitlab.eclipse.org/eclipse/technology/dash/org.eclipse.dash.handbook/-/merge_requests/1]`); or
-* The URL for a GitHub pull request, (e.g. `pass:[https://github.com/eclipse/dash-licenses/pull/278]`).
+* The URL for a GitHub pull request, (e.g., `pass:[https://github.com/eclipse/dash-licenses/pull/278]`).
 --
 +
 If you're not sure, do not provide source pointer; instead, describe the information you do have and the IP Team will configure the request accordingly.
@@ -645,7 +645,7 @@ The due diligence process for project content is unchanged.
 
 Can xref:ip-third-party[third party content]  be included in an Eclipse project's source code repository? ::
 
-Yes. Third party content can be included in binary form (e.g. source and binary JAR files) in a project's source code repository if that makes technical sense for the project.
+Yes. Third party content can be included in binary form (e.g., source and binary JAR files) in a project's source code repository if that makes technical sense for the project.
 +
 Third party content that is stored in the project repository as source code is effectively a _fork_ of that third party content. This is a bit of a fuzzy area in that it is _third party content_ that will be ultimately treated as xref:ip-project-content[_project content_] (that is, contributors may potentially modify it). 
 +

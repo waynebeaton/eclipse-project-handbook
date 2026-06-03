@@ -31,7 +31,7 @@ A committer is a software developer who has the necessary rights to write code i
 
 Community ::
 
-Community is a nebulous sort of term. Community is the group of individuals and organisations that gather around your project. In the case of some projects, the community is enormous. Other projects have smaller communities. Developing a community is a very important part of being {aForgeName} project as it is from the community that you get feedback, contributions, fresh ideas, and ultimately new committers to help you implement your shared vision. The _{forgeName} Community_ is formed from the union of the communities that grow around individual projects.
+indexterm:[Community] Community is a nebulous sort of term. Community is the group of individuals and organisations that gather around your project. In the case of some projects, the community is enormous. Other projects have smaller communities. Developing a community is a very important part of being {aForgeName} project as it is from the community that you get feedback, contributions, fresh ideas, and ultimately new committers to help you implement your shared vision. The _{forgeName} Community_ is formed from the union of the communities that grow around individual projects.
 
 Contributor ::
 
@@ -71,7 +71,7 @@ The EMO Records Team (commonly referred to as _EMO Records_) is responsible for 
 
 Genie ::
 
-_Genie_ is the generic term given to automated processes that perform various functions on behalf of project teams, generally focused around builds. The _Eclipse Genie_ performs various tasks (e.g. automated portions of the xref:ip[IP Due Diligence Process]) on behalf of the Eclipse Foundation.
+_Genie_ is the generic term given to automated processes that perform various functions on behalf of project teams, generally focused around builds. The _Eclipse Genie_ performs various tasks (e.g., automated portions of the xref:ip[IP Due Diligence Process]) on behalf of the Eclipse Foundation.
 
 Infrastructure Team ::
 

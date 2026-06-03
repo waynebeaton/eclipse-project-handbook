@@ -16,7 +16,7 @@
 [[trademarks]]
 == Project Branding
 
-This section defines how {forgeName} projects must use and display all Eclipse Foundation trademarks as well as how they showcase their project's website within the community and ecosystem. The requirements described here are a complement to the {trademarkGuidelinesLink}, targeting {forgeName} open source project leads and committers specifically.
+This section defines how {forgeName} projects must use and display all Eclipse Foundation trademarks as well as how they showcase their project's website within the community and ecosystem. The requirements described here are a complement to the {trademarkGuidelinesLink}{trademarkGuidelinesFootnote}, targeting {forgeName} open source project leads and committers specifically.
 
 These requirements are meant to promote and improve the image of all projects that are part of the {forgeName} community, as well as to show that all {forgeName} projects are part of our community of developers, adopters and users that we believe is an important factor in our mutual success. While every project manages their own development within the broader {edpLink}, a consistent public branding and web presence that ties all of our projects together benefits all of us.
 
@@ -39,7 +39,7 @@ The <<trademarks-project-formal,formal name>> of all {forgeName} open source pro
 [[trademarks-background]]
 === Naming and Trademarks
 
-Naming and branding are important issues for project teams to consider: both for the project’s future success as well as to help support and share the good values from the brand itself. Not only can a memorable name help new users and contributors find a project, having a distinctive and unique name makes the Trademark much stronger and enforceable, and ensures that third parties will respect it.
+Naming and branding are important issues for project teams to consider: both for the project’s future success as well as to help support and share the good values from the brand itself. Not only can a memorable name help new users and contributors find a project, having a distinctive and unique name makes the indexterm:[Trademark] trademark much stronger and enforceable, and ensures that third parties will respect it.
 
 To ensure that future trademarks conflicts don’t arise, all Eclipse Foundation trademarks go through a rigorous search and clearance procedure before they are approved for use. The Eclipse Foundation values its intellectual property rights and the rights of others and these procedures are followed to ensure that there are no infringement allegations.
 
@@ -66,7 +66,7 @@ Project teams may request legal trademark registration for their project or prod
 [[trademarks-background-orgs]]
 ==== Other Organisations' Trademarks
 
-Project teams must ensure that product names that include other organisations’ Trademarks in names must conform to those organisations’ trademark usage guidelines. For example, "{forgeName} Foo Perl" is not appropriate, since it improperly uses the trademark "Perl" (which is a trademark of The Perl Foundation); a better project name would likely be "{forgeName} Foo for Perl" (assuming that is permitted by the Perl Foundation). Use of another organisation’s trademark should be limited and approved on a case by case basis.
+Project teams must ensure that product names that include other organisations’ Trademarks in names must conform to those organisations’ trademark usage guidelines. For example, "Eclipse Woolsey Perl" is not appropriate, since it improperly uses the trademark "Perl" (which is a trademark of The Perl Foundation); a better project name would likely be "Eclipse Woolsey for Perl" (assuming that is permitted by the Perl Foundation). Use of another organisation’s trademark should be limited and approved on a case by case basis.
 
 [[trademarks-background-name]]
 ==== Choosing a Name
@@ -116,7 +116,7 @@ Descriptive names tend to be challenging to register as a trademark and so are g
 
 Descriptive names can, however, be helpful as an informal secondary name for a project.
 
-The best names do not include the word _Project_, and are -- in formal contexts -- prepended by the <<trademarks-brands,brand name>>. Descriptive names may optionally include the words _Framework_, _Platform_, or _Tools_ if the project has a specific emphasis on extensible frameworks, a platform, or obvious development tooling technology. {forgeName} projects always provide both but may be tailored more toward one or the other. When choosing to use these words, the team should consider that _Framework_, _Platform_, and _Tools_ mean different things to different people and are becoming overused.
+The best names do not include the word _Project_, and are -- in formal contexts -- prepended by the xref:trademarks-brands[brand name]. Descriptive names may optionally include the words _Framework_, _Platform_, or _Tools_ if the project has a specific emphasis on extensible frameworks, a platform, or obvious development tooling technology. {forgeName} projects always provide both but may be tailored more toward one or the other. When choosing to use these words, the team should consider that _Framework_, _Platform_, and _Tools_ mean different things to different people and are becoming overused.
 
 [[trademarks-project-nick]]
 ==== Nicknames
@@ -204,7 +204,7 @@ An appropriate footer is included automatically by the default website infrastru
 
 Where applicable and supported by the programming languages and style used by the project, code namespaces must include the project’s xref:resources-identifiers[short name].
 
-[[trademarks-code-java]] In Java, for example, package names must start with `{namespace}` and use their short name in the third-segment  (that is, follow the pattern `{namespace}.<shortname>.<component>`), for example `{namespace}.foo.core`, `{namespace}.foo.ui`, and `{namespace}.foo.connector`. Component names are left to the discretion of the project team.
+[[trademarks-code-java]] In Java, for example, package names must start with `{namespace}` and use their short name in the third-segment  (that is, follow the pattern `{namespace}.<shortname>.<component>`), for example `{namespace}.woolsey.core`, `{namespace}.woolsey.ui`, and `{namespace}.woolsey.connector`. Component names are left to the discretion of the project team.
 
 [[trademarks-code-maven]] Per Maven naming conventions, the Maven `groupId` must follow the standard reverse DNS naming convention, qualified with the project's short name by following the pattern `org.{namespace}.<shortname>`. The use of a more specific `groupId` extended with a component identifier is also possible by following the pattern `org.{namespace}.<shortname>.<component>.*`. 
 
@@ -261,7 +261,7 @@ Naming exceptions may be granted for names that follow established conventions (
 [[trademarks-domains]]
 ==== Domains
 
-Websites on external domains that use a project name trademark (e.g. `www.mosquitto.com`) that point to servers that are not hosted by the Eclipse Foundation, may be employed as community portals. External domains may be appropriate for some forms of documentation, community-generated content, and pointers to community forums. 
+Websites on external indexterm:[Domain] domains that use a project name trademark (e.g. `www.mosquitto.com`) that point to servers that are not hosted by the Eclipse Foundation, may be employed as community portals. External domains may be appropriate for some forms of documentation, community-generated content, and pointers to community forums. 
 
 Ownership of domains that leverage Eclipse Foundation trademarks (including all project names, regardless of whether or not they are registered trademarks) must be transferred to the Eclipse Foundation.
 

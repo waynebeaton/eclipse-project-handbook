@@ -16,7 +16,7 @@
 [[community]]
 == Community
 
-The {edpLink} (EDP) is mostly concerned with engaging in activities that grow community involvement. {aForgeName} project is considered successful only if a vibrant community develops around it and the project team grows in diversity.
+The {edpLink} (EDP) is mostly concerned with engaging in activities that grow indexterm:[Community] community involvement. {aForgeName} project is considered successful only if a vibrant community develops around it and the project team grows in diversity.
 
 While the reviews and processes described by the EDP may seem onerous, they are a necessary part of community development. You should anticipate spending a significant amount of time responding to questions posed in various forums (GitHub Discussions, {mailingListsUrl}[mailing lists], and other places where your community gathers. You should plan on attending conferences, presenting webinars, writing papers, and more to support your project.
 
@@ -41,7 +41,7 @@ To attract and support users:
 
 * Maintain a concise and clear description of the project on the website;
 * Provide a five minute tutorial to help users understand what the project does and why they should care;
-* Make sure that they know where they can go to get answers to their questions (e.g. a project forum); and
+* Make sure that they know where they can go to get answers to their questions; and
 * Provide great documentation, with a lot of ready-to-go examples.
 
 Include support for the website, and regular updates to your project documentation and tutorials as part of your project planning.

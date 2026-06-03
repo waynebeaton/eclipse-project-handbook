@@ -13,7 +13,7 @@
 [[promotion]]
 = Promoting your Project
 
-It’s certainly true that great technology is an important part of what makes {forgeName} open source projects great. However, technology alone isn't enough. Technology needs to have a xref:community[community]. Open source projects need to bring the community together to do great things.
+It’s certainly true that great technology is an important part of what makes {forgeName} open source projects great. However, technology alone isn't enough. Technology needs to have a indexterm:[Community] xref:community[community]. Open source projects need to bring the community together to do great things.
 
 Developing a community is an important part of being an open source project. It is from a community of users, adopters, and contributors that a project draws strength and longevity. Without a community, an open source project is just a bunch of code that might as well buried on a server behind a firewall somewhere in parts unknown.
 
@@ -49,7 +49,7 @@ Developing a community is an important part of being {aForgeName} open source pr
 
 == Engage the Community
 
-Community development is an important part of life as {aForgeName} open source project. Project teams must plan to spend some significant amount of their time courting and informing the community. At least part of that effort involves keeping the project xref:promotion-website[website] up-to-date. 
+indexterm:[Community] Community development is an important part of life as {aForgeName} open source project. Project teams must plan to spend some significant amount of their time courting and informing the community. At least part of that effort involves keeping the project xref:promotion-website[website] up-to-date. 
 
 Some projects are luckier than others: sometimes a technology is just so compelling that minimal effort returns huge dividends. More often, the overnight success of an open source project comes after weeks, months, and years of a combination of long work and hard work.
 
@@ -90,7 +90,7 @@ While the reviews and processes described by the EDP may seem onerous, they are 
 [#promotion-website]
 === Project Website
 
-If your project does not already have an official xref:resources-website[project website], create one.
+If your project does not already have an official indexterm:[Project, Website] xref:resources-website[project website], create one.
  
 Website developers must put themselves into the mindset of the project's target community. You must plan to iterate; you’re not going to get it right the first time. Too many of our project sites are old, contain stale information, and assume too much prior knowledge to be useful tools for growing a vibrant community of users, adopters, and developers.
 
@@ -99,7 +99,7 @@ Website developers must put themselves into the mindset of the project's target 
 
 [#trademarks-project-logo]
 
-All {forgeName} projects are encouraged to create a unique logo to identify their project. 
+All {forgeName} projects are encouraged to create a unique indexterm:[Project, Logo] logo to identify their project. 
 
 [TIP]
 ====
@@ -123,7 +123,7 @@ Project teams can engage a graphic design crowdsourcing site or similar service 
 [#promotion-adopters]
 === Adopters Programme
 
-The {adoptersProgrammeUrl}[Eclipse Project Adopters Programme] provides a means for projects to highlight the various organisations, groups, and other open source projects that leverage their content. 
+The indexterm:[Adopters Programme] {adoptersProgrammeUrl}[Eclipse Project Adopters Programme] provides a means for projects to highlight the various organisations, groups, and other open source projects that leverage their content. 
 
 The Eclipse Project Adopters Programme provides:
 
@@ -139,7 +139,7 @@ An important aspect of the Eclipse Project Adopters Programme is that adopter or
 [#promoting-marketing]
 === Eclipse Marketing Team
 
-The Eclipse Foundation has various {marketingServicesUrl}[Marketing Services] that they can bring to bear to help you market your project. 
+The Eclipse Foundation has various indexterm:[Marketing Services] {marketingServicesUrl}[Marketing Services] that they can bring to bear to help you market your project. 
 
 Project teams can, for example, request help with:
 

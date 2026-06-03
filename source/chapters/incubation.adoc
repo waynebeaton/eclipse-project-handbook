@@ -28,9 +28,9 @@ All Eclipse open source projects start in the incubation phase, and are expected
 The timing of graduation depends on a number of factors and so varies widely. Project teams should regularly connect with their xref:roles-pmc[project management committee] (PMC) to seek guidance with regard to their readiness to graduate (and other concerns regarding their obligations as an Eclipse open source project).
 ====
 
-While in both the incubation and mature phases, an Eclipse open source project operates in basically the same manner: only xref:contributing-committers[committers] can push content, committers are brought on board by xref:elections-committer[election], committers accept merge and pull requests from xref:contributing-contributors[contributors], and issue major, minor, and service releases. In fact, we strongly encourage all new project teams to engage in at least one xref:release[release] while in the incubation phase as part of learning Eclipse Foundation processes. Traditionally, a project in the incubation phase numbers their releases `< 1.0` (e.g. `0.7`), but there is no requirement to do so.
+While in both the incubation and mature phases, an Eclipse open source project operates in basically the same manner: only xref:contributing-committers[committers] can push content, committers are brought on board by xref:elections-committer[election], committers accept merge and pull requests from xref:contributing-contributors[contributors], and issue major, minor, and service releases. In fact, we strongly encourage all new project teams to engage in at least one xref:release[release] while in the incubation phase as part of learning Eclipse Foundation processes. Traditionally, a project in the incubation phase numbers their releases `< 1.0` (e.g., `0.7`), but there is no requirement to do so.
 
-Incubation is a phase, or state, for a project. That a project is in the incubation phase (we oftentimes refer to a project in this phase as “incubating”) is a xref:incubation-branding[flag] for adopters and the community at large that the project team are still learning the various processes that Eclipse project teams follow, or that the content produced is either unstable or volatile (e.g., APIs are more likely to change while a project is in the incubation phase, than while it is in the mature phase). 
+Incubation is a phase, or state, for a project. That a project is in the incubation phase (we oftentimes refer to a project in this phase as “incubating”) is a xref:incubation-branding[flag] for adopters and the indexterm:[Community  community at large that the project team are still learning the various processes that Eclipse project teams follow, or that the content produced is either unstable or volatile (e.g., APIs are more likely to change while a project is in the incubation phase, than while it is in the mature phase). 
 
 The xref:ip[intellectual property due diligence process] provides some additional flexibility for projects in incubation; the implication being that there may be some modest increase in intellectual property-related risk while the development team learns to engage in the due diligence process.
 
@@ -50,7 +50,7 @@ Incubating branding includes:
 * Display the incubation logo on their project web page (if they have one);
 * Display the incubation logo on their project's primary download page;
 * Include the word "incubation" in the filename of all downloadable files (when technically feasible) for builds; and
-* When technically feasible, include the word "incubation" in features (e.g. about dialogs, feature lists, and installers).
+* When technically feasible, include the word "incubation" in features (e.g., about dialogs, feature lists, and installers).
 
 There are no incubation branding requirements for any user-facing elements.
 

@@ -42,10 +42,10 @@ All projects must conform to the xref:trademarks[branding guidelines] before eng
 
 * [ ] All project code is managed in source code repositories provided by The Eclipse Foundation;
 * [ ] Naming conventions followed:
-** e.g. `{namespace}.<shortname>.<component>[.*]` for Java packages and OSGi Bundles;
+** e.g., `{namespace}.<shortname>.<component>[.*]` for Java packages and OSGi Bundles;
 * [ ] Provider information is set to the project's formal name:
-** e.g. the `Bundle-Vendor` entry set to "Eclipse Foo" in OSGi Bundles; or
-** e.g. the `project` and `organization` names are set to "{forgeName} Foo" in Maven `pom.xml` files;
+** e.g., the `Bundle-Vendor` entry set to the project name (e.g., "Eclipse Woolsey") in OSGi Bundles; or
+** e.g., the `project` and `organization` names are set to the project name (e.g., "Eclipse Woolsey") in Maven `pom.xml` files;
 * [ ] xref:legaldoc[Legal documentation] is provided:
 ** [ ] All source files include a xref:ip-copyright-headers[copyright and license header] (when technically feasible);
 ** [ ] All source code repositories include a xref:legaldoc-license[`LICENSE`] file (or equivalent) in the root; and
@@ -75,7 +75,7 @@ Many projects provide binary/compiled _downloads_ of their software, intended fo
 
 Project metadata is specified and maintained using the xref:pmi[Project Management Infrastructure].
 
-* [ ] The formal name, e.g. _{forgeName} Foo_, is used in the project title; 
+* [ ] The formal name (e.g., "Eclipse Woolsey") is used in the project title; 
 * [ ] The formal name including appropriate marks is used in the first mention in the text of the project description, and scope;
 * [ ] The project description starts with a single paragraph that can serve as an _executive summary_;
 * [ ] Source code repository references are up-to-date; and
@@ -100,7 +100,7 @@ Use the xref:pmi-commands-release[Create a new release] command on a specific xr
 The xref:resources-website[Project Website]:
 
 * [ ] Is hosted on Eclipse Foundation-provided infrastructure;
-* [ ] Uses the formal name including appropriate marks, e.g. _{forgeName} Foo(TM)_, on the page title, first mention in the text, and on all prominent references to the project;
+* [ ] Uses the formal name including appropriate marks, (e.g., "Eclipse Woolsey(TM)"), on the page title, first mention in the text, and on all prominent references to the project;
 * [ ] xref:starting-incubation-branding[Incubation branding] (when the project is in the xref:starting-incubation[incubation phase]) is displayed; 
 * [ ] Includes a concise description of the project (with all necessary marks); and
 * [ ] The xref:trademarks-website-footer[standard navigation] links are included in the website footer.
@@ -122,21 +122,21 @@ Company logos may optionally be included on a xref:resources-website[project web
 [discrete]
 == Community Portals and Related Websites
 
-xref:trademark-external-community[Community portals], regardless of who owns and maintains them must conform to the branding guidelines. If you discover a website that does not conform to these guidelines (and it is not within your power to effect the changes yourself), send a note to mailto:{emoEmail}[EMO] to request assistance.
+indexterm:[Community] xref:trademark-external-community[Community portals], regardless of who owns and maintains them must conform to the branding guidelines. If you discover a website that does not conform to these guidelines (and it is not within your power to effect the changes yourself), send a note to mailto:{emoEmail}[EMO] to request assistance.
 
-* [ ] The formal name including appropriate marks, e.g. _{forgeName} Foo(TM)_, is used on the page title, first mention in the text, and on all prominent references to the project;
+* [ ] The formal name including appropriate marks (e.g., "Eclipse Woolsey(TM)") is used on the page title, first mention in the text, and on all prominent references to the project;
 * [ ] xref:trademarks-external-attribution[Attributions] are provided for all Eclipse Foundation marks;
 * [ ] All references to {forgeName} open source projects use the formal name with appropriate marks;
 * [ ] Trademark and registered trademark symbols are used appropriately;
 * [ ] Developers are directed to the official xref:resources-website[project website] for information regarding contribution or related development activities;
-* [ ] Ownership of the domain name (especially if it includes the project name) has been transferred to the Eclipse Foundation; and
-* [ ] The domain is regarded and used exclusively as a community portal (that is, it is not presented as the official project website).
+* [ ] Ownership of the domain (especially if it includes the project name) has been transferred to the Eclipse Foundation; and
+* [ ] The indexterm:[Domain] domain is regarded and used exclusively as a community portal (that is, it is not presented as the official project website).
 
 [discrete]
 == Announcements, News items, Blog posts, ...
 
 All announcements regarding project milestones issued by the project must conform to the branding guidelines.
 
-* [ ] The formal name including appropriate marks, e.g. _{forgeName} Foo(TM)_, is used in the title, first mention in the text, and on all prominent references to the project;
+* [ ] The formal name including appropriate marks (e.g., "Eclipse Woolsey(TM)") is used in the title, first mention in the text, and on all prominent references to the project;
 * [ ] xref:trademarks-external-attribution[Attributions] are provided for all Eclipse Foundation marks; and
 * [ ] All references to {forgeName} open source projects use the formal name with appropriate marks.

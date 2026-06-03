@@ -152,5 +152,6 @@
 :figure-caption!:
 
 :createProposalFootnote:
+:trademarkGuidelinesFootnote:
 
 :experimental:

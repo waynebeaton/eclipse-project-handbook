@@ -50,7 +50,7 @@ As described below, legal and other metadata files must be included in the root 
 
 The distribution form of software artifacts (often in a compiled form) generated from a project’s source code repositories must also include legal information.
 
-_License_ and _notice_ files, as described below, must be included in the root of every unit-level distribution artifact (e.g. `JAR` file). In the most general case, these files will appear in the root of distribution unit, but the exact location varies by technology type.
+_License_ and _notice_ files, as described below, must be included in the root of every unit-level distribution artifact (e.g.,`JAR` file). In the most general case, these files will appear in the root of distribution unit, but the exact location varies by technology type.
 
 For content delivered as Java archive (`JAR`) files, for example, the legal files should be placed in the `META-INF` directory.
 
@@ -68,7 +68,7 @@ MyFile.jar
 This structure need not necessarily be reflected in the source tree. How a project’s build process includes this information is determined by the project team.
 ====
 
-When the unit level of distribution is an individual file (e.g. JavaScript), the file must contain a header with copyright and license information, and the best effort must be undertaken to associate the file with the notices (e.g. a link to the source repository in the header).
+When the unit level of distribution is an individual file (e.g.,JavaScript), the file must contain a header with copyright and license information, and the best effort must be undertaken to associate the file with the notices (e.g.,a link to the source repository in the header).
 
 Project teams should consult with their xref:#roles-pmc[Project Management Committee] (PMC) for input and advice regarding alternate names and locations for legal documentation.
 
@@ -104,9 +104,9 @@ An Eclipse Foundation open source project is _not_ a legal entity. Further, the 
 
 _Copyright statements_ take the form `Copyright (c) \{year} \{owner}`. 
 
-The `\{year}` is the year in which the content was created (e.g. "`2004`"). 
+The `\{year}` is the year in which the content was created (e.g.,"`2004`"). 
 
-The `\{owner}` is the name of the copyright holder. If the content is subsequently modified and appended to by other copyright owners, the words "and others" are typically appended. So for example: "XYZ Corp." or "XYZ Corp. and others". The words "and others" are used to avoid having to list every copyright owner and because often, most of the content in the file was contributed by the initial copyright owner with subsequent modifications by others being smaller. However, especially if the number of copyright owners is small (e.g. two), they may all be listed in a single copyright statement (for example: "XYZ Corp., John Smith, and ABC Enterprises."). Alternatively, additional copyright holders may be added by including multiple copyright statements.
+The `\{owner}` is the name of the copyright holder. If the content is subsequently modified and appended to by other copyright owners, the words "and others" are typically appended. So for example: "XYZ Corp." or "XYZ Corp. and others". The words "and others" are used to avoid having to list every copyright owner and because often, most of the content in the file was contributed by the initial copyright owner with subsequent modifications by others being smaller. However, especially if the number of copyright owners is small (e.g.,two), they may all be listed in a single copyright statement (for example: "XYZ Corp., John Smith, and ABC Enterprises."). Alternatively, additional copyright holders may be added by including multiple copyright statements.
 
 Copyright headers can take one of two forms. In the traditional form, the identities of the copyright holders must be indicated in the copyright statement on the first line of the header.
 
@@ -131,7 +131,7 @@ Copyright headers can take one of two forms. In the traditional form, the identi
 <3> Declared project licenses indicated using SPDX codes and expressions.
 <4> The names of the contributors and the nature of their contribution (this section may be excluded).
 
-Contributors should be consistent when expressing copyright on a particular file. In some legal circles, the exact form of the copyright message must be used in summaries, including punctuation (e.g. the "Copyright (c) 2017 My Company, Inc" and "Copyright (c) 2017 My Company, Inc." may be considered different and distinct because of the period).
+Contributors should be consistent when expressing copyright on a particular file. In some legal circles, the exact form of the copyright message must be used in summaries, including punctuation (e.g.,the "Copyright (c) 2017 My Company, Inc" and "Copyright (c) 2017 My Company, Inc." may be considered different and distinct because of the period).
 
 [NOTE]
 ====
@@ -192,9 +192,9 @@ The license file contains the exact text of the project’s declared licenses in
 
 If the project code is distributed under multiple licenses then the text of those licenses must be included. The file should start with a short paragraph that describes how the licenses are combined. This statement should in most cases, be exactly the same as the license statement in the file xref:ip-copyright-headers[copyright and license headers] (see the example below).
 
-Use inclusive disjunction (`OR`) when talking about dual licenses (e.g. "choose one or the other (or both)").
+Use inclusive disjunction (`OR`) when talking about dual licenses (e.g.,"choose one or the other (or both)").
 
-The license file must be expressed in a human readable (`plaintext`) form; human readable markup languages may be used. The file is conventionally named `LICENSE` and may include a suffix (e.g. `LICENSE.md`).
+The license file must be expressed in a human readable (`plaintext`) form; human readable markup languages may be used. The file is conventionally named `LICENSE` and may include a suffix (e.g.,`LICENSE.md`).
 
 .Example License File (dual-licensed EPL-2.0 or Apache-2.0).
 [%nowrap]
@@ -212,7 +212,7 @@ https://www.eclipse.org/legal/epl-2.0, or the Apache Software License
 [[legaldoc-notice]]
 == Notice Files
 
-Notice files are expressed in human-readable plain text format; human readable markup languages may be used. The file is conventionally named `NOTICE` and may include a suffix (e.g. `NOTICE.md`).
+Notice files are expressed in human-readable plain text format; human readable markup languages may be used. The file is conventionally named `NOTICE` and may include a suffix (e.g.,`NOTICE.md`).
 
 The notice file must include basic project metadata, an expression of the declared project licenses, information regarding the licensing of any third party content, and a statement regarding the use of cryptography in cases where either the project code or third party content implements cryptography.
 
@@ -283,13 +283,13 @@ permitted.
 
 [NOTE]
 ====
-The actual text of the project's declared licenses should not be included in the notice file (they are provided in the _license_ file). The terms of the other licenses included in the content, including third party licenses, must be observed (e.g. some licenses require that the text of the license be included with the distribution; in this case, position the license text either in the _notice_ file or as close to the corresponding content as possible).
+The actual text of the project's declared licenses should not be included in the notice file (they are provided in the _license_ file). The terms of the other licenses included in the content, including third party licenses, must be observed (e.g.,some licenses require that the text of the license be included with the distribution; in this case, position the license text either in the _notice_ file or as close to the corresponding content as possible).
 ====
 
 [[legaldoc-contributor]]
 == Contributor Guide
 
-While not strictly _legal documentation_, having concise and clear information how to get involved in a project is very important for building the community around a project. Therefore, to simplify adoption and encourage contributions it is recommended that projects maintain a _Contributor Guide_.  The file is conventionally named `CONTRIBUTING` (or `README`) and may include a suffix (e.g. `CONTRIBUTING.md`).
+While not strictly _legal documentation_, having concise and clear information how to get involved in a project is very important for building the indexterm:[Community] community around a project. Therefore, to simplify adoption and encourage contributions it is recommended that projects maintain a _Contributor Guide_.  The file is conventionally named `CONTRIBUTING` (or `README`) and may include a suffix (e.g.,`CONTRIBUTING.md`).
 
 Like legal documentation, a `CONTRIBUTING` file should be placed in the root of each repository. Keep the guide as concise as possible: it should contain a few words and a link to other documents for details and more information. Use plain text that can be easily consumed without being formally rendered.
 
@@ -306,7 +306,7 @@ Minimally, the `CONTRIBUTING` file should include:
 Additionally, the guide might include:
 
 * Link to downloads; and
-* Link to a more comprehensive project contribution guide (e.g. a website).
+* Link to a more comprehensive project contribution guide (e.g.,a website).
 
 [[legaldoc-contributor-setup]]
 === Setting up the Development Environment
@@ -316,7 +316,7 @@ The `CONTRIBUTING` file should make it easy for people who got interested in the
 * Instructions for obtaining the sources;
 * Clear instructions for setting up any additional tools needed for the development;
 * A description of the dependencies of the project, or even better how to easily get all the necessary content the project depends on; and
-* A list of necessary steps to build the artifacts of the project (e.g. bundles, features, stand-alone products). 
+* A list of necessary steps to build the artifacts of the project (e.g.,bundles, features, stand-alone products). 
 
 [[legaldoc-contributor-contributing]]
 === Contributing Code
@@ -327,7 +327,7 @@ It should:
 
 * Include very specific instructions on how contributions are accepted;
 * Describe how to submit contributions (GitHub pull requests or GitLab merge requests), along with the necessary steps to have the project accept those requests;
-* Describe the legal part of the process for accepting contributions, e.g. point to the the {ecaUrl}[Eclipse Contributor Agreement] (ECA) and {dcoUrl}[Developer Certificate of Origin] (DCO); and
+* Describe the legal part of the process for accepting contributions, e.g.,point to the the {ecaUrl}[Eclipse Contributor Agreement] (ECA) and {dcoUrl}[Developer Certificate of Origin] (DCO); and
 * Describe any project specific rules, which the contributors should know, for example:
 ** preferences on code quality;
 ** code formatting; and
@@ -342,7 +342,7 @@ The `CONTRIBUTING` file can optionally provide guidance for developers who want 
 
 [NOTE]
 ====
-Keeping a help-wanted list up-to-date can be challenging. Consider including a query (e.g. for `helpwanted` issues) rather than (or in addition to) specific work area recommendations.
+Keeping a help-wanted list up-to-date can be challenging. Consider including a query (e.g.,for `helpwanted` issues) rather than (or in addition to) specific work area recommendations.
 ====
 
 === CONTRIBUTING file template
@@ -482,7 +482,7 @@ Both options are acceptable, so you can pick whichever works best for the situat
 
 Do the _license_ and _notice_ files need to be named `LICENSE` and `NOTICE`?::
 
-No. If there are technical limitations, for example, that require that you select different names, you can do so. But for the sake of consistency for our communities we prefer that this convention be followed. Format-specific file extensions (e.g. `.md` as in `NOTICE.md`) can be used.
+No. If there are technical limitations, for example, that require that you select different names, you can do so. But for the sake of consistency for our communities we prefer that this convention be followed. Format-specific file extensions (e.g.,`.md` as in `NOTICE.md`) can be used.
 
 Can the _license_ and _notice_ files use Markdown?::
 
@@ -492,7 +492,7 @@ Is the cryptography statement required?::
 
 The cryptography statement is only required if the project code includes cryptography algorithms or other cryptographic content.
 
-What licenses should be listed in a build script (e.g. Maven `pom.xml` file)?::
+What licenses should be listed in a build script (e.g.,Maven `pom.xml` file)?::
 
 The license(s) in the build should reflect what is being built, but typically not the license(s) of referenced third party content. The `pom.xml` file for project code, for example, should list the project license(s).
 
