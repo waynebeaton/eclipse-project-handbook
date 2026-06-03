@@ -19,7 +19,7 @@
 [[contributing-contributors]]
 == Contributors
 
-Anybody can be a contributor. To be a contributor, you just need to contribute. Contributions typically take the form of code or documentation submitted to the project's source code repository, but may also take the form of answering questions in project and community forums, and more.
+Anybody can be a indexterm:[Contributor] contributor. To be a contributor, you just need to contribute. Contributions typically take the form of code or documentation submitted to the project's source code repository, but may also take the form of answering questions in project and community forums, and more.
 
 For contributions that contain intellectual property (e.g., source code or documentation), some formal documentation is required to ensure that the rights associated with the intellectual property are properly managed and licensed.
 
@@ -33,7 +33,7 @@ To contribute to {aForgeName} open source project, a contributor must:
 . Create a pull request (GitHub) or merge request (GitLab); and
 . Work with the project team to merge the contribution.
 
-Contributors retain ownership of their contributions; the ECA, for example, states in part:
+Contributors retain ownership of their contributions; the indexterm:[ECA] ECA, for example, states in part:
 
 ____
 This ECA, and the license(s) associated with the particular Eclipse Foundation projects You are contributing to, provides a license to Your Contributions to the Eclipse Foundation and downstream consumers, but *You still own Your Contributions*, and except for the licenses provided for in this ECA, You reserve all right, title and interest in Your Contributions.
@@ -138,7 +138,7 @@ If you change employers, contact the {emoRecordsEmailLink} to request that they 
 [[contributing-eca]]
 == Eclipse Contributor Agreement
 
-[[resources-eca]]The purpose of the Eclipse Contributor Agreement (ECA) is to provide a written record that contributors have agreed to provide their contributions of code and documentation under the licenses used by the Eclipse project(s) they’re contributing to. It also makes it clear that contributors are promising that what they are contributing to Eclipse is code that they wrote, and that they have the necessary rights to contribute it to Eclipse projects. And finally, it documents a commitment from the contributor that their open source contributions will be permanently on the public record.
+[[resources-eca]]The purpose of the indexterm:[ECA]  Eclipse Contributor Agreement (ECA) is to provide a written record that contributors have agreed to provide their contributions of code and documentation under the licenses used by the Eclipse project(s) they’re contributing to. It also makes it clear that contributors are promising that what they are contributing to Eclipse is code that they wrote, and that they have the necessary rights to contribute it to Eclipse projects. And finally, it documents a commitment from the contributor that their open source contributions will be permanently on the public record.
 
 Contributors who are already covered by a committer agreement (either an MCCA or ICA) are not required to also sign the ECA. All other contributors must sign the {ecaUrl}[Eclipse Contributor Agreements] (ECA) to ensure that the necessary xref:ip[intellectual property] (IP) rights to the contribution are granted.
 

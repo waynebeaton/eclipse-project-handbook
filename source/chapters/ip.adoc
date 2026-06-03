@@ -91,7 +91,7 @@ In order to facilitate the use of automation in the IP due diligence process, th
 In the time since we made this decision, https://github.com/package-url[Package URL] has emerged as a superior choice. We will update our services to use Package URLs by early 2025.
 ====
 
-The notion of an identifier for content is pretty natural for developers who are familiar with technologies like Apache Maven which has well defined means of uniquely identifying content in a well-defined software repository. Maven coordinates -- which combine `groupid`, `artifactid`, and `version` (often referred to as a “GAV”) -- identify a very specific bit of content (especially when combined with a specific source, e.g. Maven Central). For example, `org.junit.jupiter:junit-jupiter:5.5.2` unambiguously identifies content on Maven Central that is known to be under the Eclipse Public License version 2.0 (EPL-2.0). Other systems use different means of identifying content: `node.js`, for example, uses a pURL-like identifier for content in the NPM repository (e.g., `@babel/generator@7.62`).
+The notion of an identifier for content is pretty natural for developers who are familiar with technologies like Apache Maven which has well defined means of uniquely identifying content in a well-defined software repository. Maven coordinates -- which combine `groupid`, `artifactid`, and `version` (often referred to as a “GAV”) -- identify a very specific bit of content (especially when combined with a specific source, e.g. Maven Central). For example, `org.junit.jupiter:junit-jupiter:5.5.2` unambiguously identifies content on indexterm:[Maven, Maven Central] Maven Central that is known to be under the Eclipse Public License version 2.0 (EPL-2.0). Other systems use different means of identifying content: `node.js`, for example, uses a pURL-like identifier for content in the NPM repository (e.g., `@babel/generator@7.62`).
 
 To bridge the gap between the different means of identifying content (and fill in some of the blanks), we've adopted the ClearlyDefined project’s five part identifiers which includes the type of content, its software repository source, its namespace and name, and version/revision. ClearlyDefined coordinates are roughly analogous to Maven coordinates, but -- by including the type and source -- provide a greater degree of precision. ClearlyDefined uses slashes to separate the parts of the identifier, so the Maven GAV `org.junit.jupiter:junit-jupiter:5.5.2` maps to `maven/mavencentral/org.junit.jupiter/junit-jupiter/5.5.2` and the NPM identifier `@babel/generator@7.62` maps to `npm/npmjs/@babel/generator/7.6.2`.
 
@@ -147,7 +147,7 @@ Contributions made by {forgeName} committers **do not** require review by the Ec
 
 Contributions by others (that is, developers who are not committers) must be received via an Eclipse Foundation channel (e.g., GitHub pull request, GitLab merge request, or attachment on an issue). 
 
-All contributors must sign the xref:contributing-eca[Eclipse Contributor Agreement] (ECA). 
+All contributors must sign the indexterm:[ECA] xref:contributing-eca[Eclipse Contributor Agreement] (ECA). 
 
 Further investigation is _required_ when any of the following conditions are met:
 
@@ -185,7 +185,7 @@ A project cannot make a xref:release[release] until the due diligence on the IP 
 [#ip-ownership]
 ==== Copyright
 
-The author of a contribution (or their employer) retains copyright of the intellectual property contained in the contribution. As part of the contribution process, the contributor licenses their contribution under the applicable license(s).
+The author of a contribution (or their employer) retains indexterm:[Copyright] copyright of the intellectual property contained in the contribution. As part of the contribution process, the contributor licenses their contribution under the applicable license(s).
 
 [TIP]
 ====
@@ -364,7 +364,7 @@ When in doubt, check with the {ipTeamEmailLink}.
 [#ip-request]
 === Requesting a Review
 
-[[ip-project-content-cq]][[ip-third-party-due-diligence]][[ip-prereq-diligence]]If your project leverages build technology that pulls third party content from well-defined software repositories (e.g., Apache Maven pulling from Maven Central, a `yarn.lock` or `package-lock.json` file), consider using the https://github.com/eclipse/dash-licenses[Eclipse Dash License Tool] to {licenseToolUrl}#automatic-ip-team-review-requests[automatically create] IPLab issues for you.
+[[ip-project-content-cq]][[ip-third-party-due-diligence]][[ip-prereq-diligence]]If your project leverages build technology that pulls third party content from well-defined software repositories (e.g., Apache Maven pulling from indexterm:[Maven, Maven Central] Maven Central, a `yarn.lock` or `package-lock.json` file), consider using the https://github.com/eclipse/dash-licenses[Eclipse Dash License Tool] to {licenseToolUrl}#automatic-ip-team-review-requests[automatically create] IPLab issues for you.
 
 [NOTE]
 ====
@@ -380,7 +380,7 @@ xref:ip-project-content[Project Content] is any content that will be maintained 
 
 Note our careful use of the term _content_. This includes source code, documentation, configuration, etc.
 
-xref:ip-third-party[Third party Content] is defined as content that is leveraged or otherwise referenced by project code. Third party content is typically (although not necessarily) acquired from software repositories (e.g., Maven Central or NPMJS) during builds.
+xref:ip-third-party[Third party Content] is defined as content that is leveraged or otherwise referenced by project code. Third party content is typically (although not necessarily) acquired from software repositories (e.g., indexterm:[Maven, Maven Central] Maven Central or indexterm:[Node, NPMJS] NPMJS) during builds.
 
 When creating a review request issue, please provide as much information as you can. If information is missing, or you are not certain how information should be provided, provide what you can and the IP Team will work with you to sort it out.
 

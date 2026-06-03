@@ -18,7 +18,7 @@ The {edpLink} defines multiple formal open source project roles. Primary among t
 [#roles-cm]
 == Committers
 
-indexterm:[Committer]For {forgeName} projects (and the open source world in general), xref:contributing-committers[committers] are the ones who hold the keys. Committers are either appointed at the time of project creation, or indexterm:[Election, Committer]xref:elections-committer[elected] by the existing project team.
+indexterm:[Committer] For {forgeName} projects (and the open source world in general), xref:contributing-committers[committers] are the ones who hold the keys. Committers are either appointed at the time of project creation, or indexterm:[Election, Committer]xref:elections-committer[elected] by the existing project team.
 
 Committers decide what code goes into the code base, they decide how a project builds, and they ultimately decide what gets delivered to the adopter community. With awesome power, comes awesome responsibility, and so the Open Source Rules of Engagement described by the {edpLink}, puts _meritocracy_ on equal footing with _transparency_ and _openness_: becoming a committer isn't necessarily hard, but it does require a demonstration of merit.
 
@@ -32,11 +32,10 @@ Committers:
 * Engage in the project planning process; and
 * Otherwise represent the interests of the open source project.
 
-
 [#roles-pl]
 == Project Lead
 
-indexterm:[Project Lead]{forgeName} projects must have at least one project lead, and may have more than one. The project leads are the primary liaison between the project team and the xref:roles-emo[Eclipse Management Organization] (EMO). As the first link in the project leadership chain, project leads have responsibility to ensure that the project team is able to successfully implement the goals of the project in accordance with the {edpLink} and {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy]. 
+indexterm:[Project Lead] {forgeName} projects must have at least one project lead, and may have more than one. The project leads are the primary liaison between the project team and the xref:roles-emo[Eclipse Management Organization] (EMO). As the first link in the project leadership chain, project leads have responsibility to ensure that the project team is able to successfully implement the goals of the project in accordance with the {edpLink} and {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy]. 
 
 The EMO considers it a good practice to have more than one person in that role to ensure that there is continuity. There is no artificial maximum number of project leads for {aForgeName} project: the main thing that the EMO is concerned with is that project leads are elected in a vendor-neutral manner following public demonstrations of leadership (documented as comments on issues, contributions to mailing list discussions, etc.) that are cited in the nomination statement. The EMO specifically watches elections to ensure that vendor neutrality is observed.
 

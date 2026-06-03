@@ -75,7 +75,7 @@ Use the resources assigned to the {forgeName} project by the Eclipse Foundation 
 
 Making it so that people who are outside of the development team (that is, the contributors) have the ability to access the most up-to-date version of the project code is an absolute requirement. To that end, committers must push content directly into designated open repositories. {forgeName} project committers must never stage to a private or semi-private repository and then _periodically sync_ to the open repository; employing this sort of strategy raises a significant barrier for entry that makes it impossible for anybody else to participate.
 +
-Likewise, the issue trackers associated with the project's GitLab and GitHub repositories must be used for all issues related to the open source project.
+Likewise, the issue trackers associated with the project's indexterm:[GitLab] GitLab and indexterm:[GitHub] GitHub repositories must be used for all issues related to the open source project.
 
 Engage in the IP due diligence process ::
 
@@ -85,13 +85,13 @@ The xref:ip[intellectual property due diligence process] is available to assist 
 
 Ensure that contributors have signed Eclipse Contributor Agreement ::
 
-Contributors to your project who are not committers are required to electronically sign the xref:contributing-eca[Eclipse Contributor Agreement] (ECA). Systems are in place to help you know when a contribution is or is not covered by an ECA (e.g., hooks are added to xref:resources-gitlab[GitLab] and xref:resources-github[GitHub] projects to ensure that the authors of commits included in merge and pull requests are covered by the ECA).
+Contributors to your project who are not committers are required to electronically sign the indexterm:[ECA] xref:contributing-eca[Eclipse Contributor Agreement] (ECA). Systems are in place to help you know when a contribution is or is not covered by an ECA (e.g., hooks are added to xref:resources-gitlab[GitLab] and xref:resources-github[GitHub] projects to ensure that the authors of commits included in merge and pull requests are covered by the ECA).
 +
 Your project's committers are all covered by a xref:paperwork[committer agreement]; committers who are already covered by a committer agreement are _not_ required to also sign the ECA. 
 
 Provide legal documentation ::
 
-Project repositories must have certain documentation. All members of the various communities that grow around your project expect to find a README file in the repository root with information about the project. We require that all projects have a CONTRIBUTING file that describes how to contribute to the project (e.g., what branches are active, how to build, that an ECA is required by contributors, etc.). It’s also become standard to expect that Git repositories a LICENSE file in the root that contains the full text of the project license.
+Project repositories must have certain documentation. All members of the various communities that grow around your project expect to find a `README` file in the repository root with information about the project. We require that all projects have a `CONTRIBUTING` file that describes how to contribute to the project (e.g., what branches are active, how to build, that an ECA is required by contributors, etc.). It’s also become standard to expect that Git repositories a `LICENSE` file in the root that contains the full text of the project license.
 +
 The absolute low bar with regard to xref:incubation-communities[community development] is to provide basic xref:legaldoc[legal documentation] for the project. 
 +

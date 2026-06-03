@@ -126,7 +126,7 @@ The _summary_ line is used in many places where Git commits are listed, ensure t
 
 An `Also-by` (or `Co-authored-by`) entry can be added for each additional author of a commit (one committer per entry). This might apply, for example, if a commit has been authored via pair-programming, or the commit is the result of collapsing multiple commits authored by multiple developers. To be considered valid the entry must take the form `Also-by: Name <email>`.
 
-Authors who are not committers on the project receiving the commit must have an Eclipse Foundation Account and must have a signed xref:contributing-eca[Eclipse Contributor Agreement] (ECA) on file.
+Authors who are not committers on the project receiving the commit must have an Eclipse Foundation Account and must have a signed indexterm:[ECA] xref:contributing-eca[Eclipse Contributor Agreement] (ECA) on file.
 
 [#resources-platform]
 === GitLab/GitHub Decision Matrix
@@ -243,7 +243,7 @@ For information regarding the privileges available to each of the Maintainer, De
 
 Project Leads ::
 
-indexterm:[Project Lead]All project leads are automatically granted the _Maintainer_ role on their project resources hosted on GitLab. When an individual is xref:elections-pl[elected] into the role of project lead, they are automatically granted these permissions within the group. When a project lead is xref:elections-retire-pl[retired], they are automatically removed from the group.
+indexterm:[Project Lead]All project leads are automatically granted the indexterm:[GitLab, Maintainer] _Maintainer_ role on their project resources hosted on GitLab. When an individual is xref:elections-pl[elected] into the role of project lead, they are automatically granted these permissions within the group. When a project lead is xref:elections-retire-pl[retired], they are automatically removed from the group.
 +
 [WARNING]
 ====
@@ -256,11 +256,11 @@ Project leads must also not use their privileges to create private repositories,
 
 Committers ::
 
-indexterm:[Committer]All committers are automatically granted the _Developer_ role on their {forgeName} open source project resources hosted on GitLab. When an individual is xref:elections-committer[elected] into the role of committer, they are automatically added to the as a _Developer_ to the {forgeName} open source project's group. When a project lead is xref:elections-retire-cm[retired], they are automatically removed from the group.
+indexterm:[Committer]All committers are automatically granted the indexterm:[GitLab, Developer] _Developer_ role on their {forgeName} open source project resources hosted on GitLab. When an individual is xref:elections-committer[elected] into the role of committer, they are automatically added to the as a _Developer_ to the {forgeName} open source project's group. When a project lead is xref:elections-retire-cm[retired], they are automatically removed from the group.
 
 Contributors ::
 
-indexterm:[Contributor]All contributors are automatically granted _Reporter_ level access to {forgeName} open source project resources hosted on GitLab. When an individual is added to the xref:pmi-contributors[contributors] list, they are automatically added as a _Reporter_ in the {forgeName} open source project's group. When they are removed from the contributors list, they are automatically removed from the group.
+indexterm:[Contributor]All contributors are automatically granted indexterm:[GitLab, Reporter] _Reporter_ level access to {forgeName} open source project resources hosted on GitLab. When an individual is added to the xref:pmi-contributors[contributors] list, they are automatically added as a _Reporter_ in the {forgeName} open source project's group. When they are removed from the contributors list, they are automatically removed from the group.
 +
 The xref:contributing-eca[Eclipse Contributor Agreement] (ECA) hook inspects incoming merge requests to ensure that the contributor has a valid ECA on file, and flags those that do not. {forgeName} open source project committers should only accept merge requests that pass this validation.
 
@@ -283,13 +283,13 @@ Project teams may opt to host some or all of their canonical source code reposit
 
 Any committer can {helpdeskUrl}[open a Help Desk issue] to request that the Eclipse Infrastructure Team create a new repository for their project on, or move an existing repository to, GitHub. A project may have more than one repository on GitHub. When making the request, the committer should describe -- specifically and concisely -- what they want to make happen. Note that the Eclipse Infrastructure Team will verify the request with the project leads.
 
-Repositories can be hosted in the default `{forgeMachineName}` GitHub organisation, or a dedicated organisation can be created. Dedicated organisations use as their name, the conjunction of `{forgeMachineName}` with the project xref:resources-identifiers[short name] (e.g., `{forgeMachineName}-woolsey`).
+A dedicated organisation can be created for your project. By default, the conjunction of `{forgeMachineName}-` and the project's xref:resources-identifiers[short name] is used as the organisation name (e.g., `{forgeMachineName}-woolsey`). Other configurations are possible; if you have specific requirements for your project, connect with the {emoEmailLink}.
 
 The Eclipse Infrastructure Team installs some _hooks_ onto all {forgeName} project repositories on GitHub.
 
 The _Committers hook_ grants designated project committers write access to the GitHub-hosted project repositories. Project committers must add their GitHub id to their xref:contributing-account[Eclipse Foundation account], and must use the email address they provide to the Eclipse Foundation as the email address in the author credentials of all commits. 
 
-The xref:contributing-eca[Eclipse Contributor Agreement] (ECA) hook will inspect incoming GitHub pull requests to ensure that the contributor has a valid ECA on file. Project committers should only merge _green_ pull requests:
+The indexterm:[ECA] xref:contributing-eca[Eclipse Contributor Agreement] (ECA) hook will inspect incoming GitHub pull requests to ensure that the contributor has a valid ECA on file. Project committers should only merge _green_ pull requests:
 
 .Notification that the commit is properly structured and permissions are in place.
 image::images/Github-cla-success.png[]
@@ -321,7 +321,7 @@ GitHub's https://docs.github.com/en/organizations/managing-access-to-your-organi
 
 Project Leads Team ::
 
-indexterm:[Project Lead]All project leads are automatically added to the _project leads team_. All members of the _project leads team_ are granted the _Maintain_ role on their project's GitHub repositories. When an individual is xref:elections-pl[elected] into the role of project lead, they are automatically added to the _project leads team_. When a project lead is xref:elections-retire-pl[retired], they are automatically removed from the team.
+indexterm:[Project Lead]All project leads are automatically added to the _project leads team_. All members of the _project leads team_ are granted the indexterm:[GitHub, Maintain] _Maintain_ role on their project's GitHub repositories. When an individual is xref:elections-pl[elected] into the role of project lead, they are automatically added to the _project leads team_. When a project lead is xref:elections-retire-pl[retired], they are automatically removed from the team.
 +
 A project lead may request temporary _Admin_ level access to their project's repositories by {helpdeskUrl}[creating a Help Desk issue] with their request. The issue must describe what will be done using this new level of access and how long it will be needed. 
 +
@@ -336,13 +336,13 @@ Project leads must provide their GitHub Id in their xref:contributing-account[Ec
 
 Committers Team ::
 
-indexterm:[Committer]All committers are automatically added to the _committers team_. All members of the _committers team_ are granted the _Write_ role on their project resources hosted on GitHub. When an individual is xref:elections-committer[elected] into the role of committer, they are automatically added to the _committers team_. When a project lead is xref:elections-retire-cm[retired], they are automatically removed from the team.
+indexterm:[Committer]All committers are automatically added to the _committers team_. All members of the _committers team_ are granted the indexterm:[GitHub, Write] _Write_ role on their project resources hosted on GitHub. When an individual is xref:elections-committer[elected] into the role of committer, they are automatically added to the _committers team_. When a project lead is xref:elections-retire-cm[retired], they are automatically removed from the team.
 +
 Committers must provide their GitHub Id in their xref:contributing-account[Eclipse Foundation Account].
 
 Contributors Team ::
 
-indexterm:[Contributor]All contributors are automatically added to the _contributors team_. All members of the _contributors team_ are granted _Triage_ level access to project resources hosted on GitHub. When an individual is added to the project's xref:pmi-contributors[Contributors] list, they are automatically added to the _contributors team_. When they are removed from the Contributors list, they are automatically removed from the team.
+indexterm:[Contributor]All contributors are automatically added to the _contributors team_. All members of the _contributors team_ are granted indexterm:[GitHub, Triage] _Triage_ level access to project resources hosted on GitHub. When an individual is added to the project's xref:pmi-contributors[Contributors] list, they are automatically added to the _contributors team_. When they are removed from the Contributors list, they are automatically removed from the team.
 +
 Contributors must provide their GitHub Id in their xref:contributing-account[Eclipse Foundation Account].
 
@@ -351,7 +351,7 @@ The xref:contributing-eca[Eclipse Contributor Agreement] (ECA) hook inspects inc
 [[resources-github-self-service]]
 ==== Self-Service of GitHub Resources
 
-The Eclipse Foundation offers self-service of GitHub resources via a tool named https://github.com/eclipse-csi/otterdog[Otterdog].
+The Eclipse Foundation offers self-service of GitHub resources via a tool named indexterm:[Otterdog] https://github.com/eclipse-csi/otterdog[Otterdog].
 
 Upon opting-in, a new repository _.eclipsefdn_ will be created that hosts the GitHub configuration as code.
 
@@ -583,7 +583,7 @@ Additionally, a PMC may decide to create and manage an organisation for the Top-
 [[resources-maven]]
 ==== Maven Central
 
-The Eclipse Release Engineering Team has provided some help regarding the use of Maven Central in their https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/wikis/IT_Infrastructure_Doc#publish-to-maven-central[wiki].
+The Eclipse Release Engineering Team has provided some help regarding the use of indexterm:[Maven, Maven Central] Maven Central in their https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/wikis/IT_Infrastructure_Doc#publish-to-maven-central[wiki].
 
 By convention, the `groupid` should be of the form `pass:a,c[{namespace}.<shortname>]` (e.g. `{namespace}.dash` for the `technology.dash` project). Project teams should work with their PMC if some exception to this convention is required (and take care to avoid infringing on the namespaces of other projects). The form of the `artifactid` should be determined by the project team. The version number should follow the standard Semantic Versioning pattern. All pre-release builds must be appropriately labelled (e.g. `1.0M3` for pre-release builds of version `1.0`). 
 
@@ -656,7 +656,7 @@ If you provide content to your community via any form of click-to-download notio
 
 Can we host pre-release software (e.g. milestone builds) on Maven Central? ::
 
-Reasonable steps must be taken to ensure that the consumer understands the pre-release nature of software. At a minimum, pre-release software must be labelled as such. A milestone build for version 1.0, for example, must be labelled as "1.0M1" (or similar). Pre-release software can be pushed to xref:resources-maven[Maven Central], but due to the permanent nature of content that is pushed there, it will persist there indefinitely. Whether or not this is desirable is a decision that the project team should make with help from their PMC.
+Reasonable steps must be taken to ensure that the consumer understands the pre-release nature of software. At a minimum, pre-release software must be labelled as such. A milestone build for version 1.0, for example, must be labelled as "1.0M1" (or similar). Pre-release software can be pushed to indexterm:[Maven, Maven Central] xref:resources-maven[Maven Central], but due to the permanent nature of content that is pushed there, it will persist there indefinitely. Whether or not this is desirable is a decision that the project team should make with help from their PMC.
 
 Can we use external services like OSSRH to stage pre-release builds? ::
 

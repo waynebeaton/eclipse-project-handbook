@@ -55,7 +55,7 @@ ifdef::backend-html5[]
 Please see https://blog.waynebeaton.ca/posts/opensource/level-playing-field/[Level Playing Field] and https://blog.waynebeaton.ca/posts/opensource/repository/[Barriers for Entry].
 endif::[]
 
-The indexterm:[Security Team]Eclipse Foundation Security Team will likely receive xref:vulnerability[vulnerability] reports for the project content. We regard this as a fundamentally good thing (vulnerability reports are an indicator that people care about the project). The security team will contact the project's xref:projects-security-team[security team] to disclose vulnerabilities, but these will be reported publicly after a period of time, whether they are addressed or not.
+The indexterm:[Security Team, Foundation] Eclipse Foundation Security Team will likely receive indexterm:[Vulnerabilities] xref:vulnerability[vulnerability] reports for the project content. We regard this as a fundamentally good thing (vulnerability reports are an indicator that people care about the project). The security team will contact the project's xref:projects-security-team[security team] to disclose vulnerabilities, but these will be reported publicly after a period of time, whether they are addressed or not.
 
 Project committers are required to engage in our xref:ip[Intellectual Property Due Diligence Process] to vet the licence compatibility of the third party content that the project leverages. Due diligence must be complete before any content is included in a xref:release[release].
 

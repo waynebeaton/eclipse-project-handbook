@@ -71,7 +71,7 @@ Contributions must be received as pull or merge requests. The authors of the con
 
 Contributors must sign the Eclipse Contributor Agreement (ECA) ::
 
-As a committer, you must ensure that all contributions that you receive are covered by an Eclipse Contributor Agreement (ECA). Regardless of how a contribution is presented, the contributor must be listed as the author in the [Git commit record](https://www.eclipse.org/projects/handbook/#resources-commit) and must complete the [Eclipse Contributor Agreement](https://www.eclipse.org/legal/ECA.php) before any contribution can be accepted.
+As a committer, you must ensure that all contributions that you receive are covered by an indexterm:[ECA] Eclipse Contributor Agreement (ECA). Regardless of how a contribution is presented, the contributor must be listed as the author in the [Git commit record](https://www.eclipse.org/projects/handbook/#resources-commit) and must complete the [Eclipse Contributor Agreement](https://www.eclipse.org/legal/ECA.php) before any contribution can be accepted.
 +
 Contributors who are already covered by a committer agreement (either an MCCA or ICA) are not required to also sign the ECA. All other contributors must sign the {ecaUrl}[Eclipse Contributor Agreements] (ECA) to ensure that the necessary xref:ip[intellectual property] (IP) rights to the contribution are granted.
 +

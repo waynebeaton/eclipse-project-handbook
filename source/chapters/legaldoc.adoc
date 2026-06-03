@@ -291,17 +291,17 @@ The actual text of the project's declared licenses should not be included in the
 
 While not strictly _legal documentation_, having concise and clear information how to get involved in a project is very important for building the community around a project. Therefore, to simplify adoption and encourage contributions it is recommended that projects maintain a _Contributor Guide_.  The file is conventionally named `CONTRIBUTING` (or `README`) and may include a suffix (e.g. `CONTRIBUTING.md`).
 
-Like legal documentation, a CONTRIBUTING file should be placed in the root of each repository. Keep the guide as concise as possible: it should contain a few words and a link to other documents for details and more information. Use plain text that can be easily consumed without being formally rendered.
+Like legal documentation, a `CONTRIBUTING` file should be placed in the root of each repository. Keep the guide as concise as possible: it should contain a few words and a link to other documents for details and more information. Use plain text that can be easily consumed without being formally rendered.
 
-Minimally, the CONTRIBUTING file should include:
+Minimally, the `CONTRIBUTING` file should include:
 
 * The name and brief description of the project;
 * A link to the project's website and documentation;
-* A pointer to the Eclipse Foundation's Terms of Use (https://www.eclipse.org/legal/termsofuse.php);
+* A pointer to the Eclipse Foundation's Terms of Use (`pass:[https://www.eclipse.org/legal/termsofuse.php]`);
 * A link to the primary Communication channel (how do potential contributors contact the project team?);
 * A pointer to the canonical source code repositories;
 * Mechanics of how to actually contribute (e.g., merge/pull requests);
-* Link to sign the ECA (https://www.eclipse.org/legal/ECA.php)
+* Link to sign the indexterm:[ECA] ECA (`pass:[https://www.eclipse.org/legal/ECA.php]`)
 
 Additionally, the guide might include:
 
@@ -311,7 +311,7 @@ Additionally, the guide might include:
 [[legaldoc-contributor-setup]]
 === Setting up the Development Environment
 
-The CONTRIBUTING file should make it easy for people who got interested in the project to start working with it. It should include:
+The `CONTRIBUTING` file should make it easy for people who got interested in the project to start working with it. It should include:
 
 * Instructions for obtaining the sources;
 * Clear instructions for setting up any additional tools needed for the development;

@@ -51,7 +51,7 @@ This is a tough one. For a significant number of people in the broader community
 
 Eclipse Contributor Agreement (ECA) ::
 
-The purpose of the Eclipse Contributor Agreement (ECA) is to provide a written record that a contributor has agreed to provide their contributions of code and documentation under the licenses used by the Eclipse Project(s) to which they are contributing. All contributors who are not already committers on the Eclipse Project to which they are contributing must {ecaUrl}[digitally sign the ECA].
+The purpose of the indexterm:[ECA] Eclipse Contributor Agreement (ECA) is to provide a written record that a contributor has agreed to provide their contributions of code and documentation under the licenses used by the Eclipse Project(s) to which they are contributing. All contributors who are not already committers on the Eclipse Project to which they are contributing must {ecaUrl}[digitally sign the ECA].
 
 Eclipse Management Organization (EMO) ::
 

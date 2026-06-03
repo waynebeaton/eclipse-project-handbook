@@ -121,7 +121,7 @@ include::diagrams/specifications-contributors.dot[]
 To become a contributor, an individual must:
 
 . Create an xref:contributing-account[Eclipse Foundation account];
-. Sign the xref:contributing-eca[Eclipse Contributor Agreement] (ECA);
+. Sign the indexterm:[ECA] xref:contributing-eca[Eclipse Contributor Agreement] (ECA);
 . Contribute! (submit a pull request)
 
 [NOTE]
