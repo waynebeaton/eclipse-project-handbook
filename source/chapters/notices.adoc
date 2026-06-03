@@ -21,3 +21,28 @@ Copyright (C) Eclipse Foundation, Inc. and others.
 Made available under the {epl20Url}[Eclipse Public License v 2.0].
 
 This document includes content originally authored on the Eclipsepedia wiki by Wayne Beaton, Fabian Steeg, Denis Roy, Dave Carver, Ed Merks, Bjorn Freeman-Benson, Anne Jacko, Ian Skerrett, Mike Milinkovich, and John Arthorne.
+
+// git log --format='%an' | sort -u
+
+This document includes content contributed by 
+Boris Baldassari,
+Christopher Guindon,
+Denis Roy,
+Eric Poirier,
+Frederic Gurr,
+Jeremie Bresson,
+Jonah Graham,
+Lukas Puehringer,
+Manideepika Pasarthi,
+Maria Teresa Delgado,
+Marta Rybczynska,
+Martin Lowe,
+Matt Ward,
+Mikaël Barbero,
+Sakshi Chavan,
+Sanjeev Uppu,
+Sebastien Heurtematte,
+Shawn Kilpatrick,
+Thomas Neidhart,
+Torkild U. Resheim, and
+Wayne Beaton.
