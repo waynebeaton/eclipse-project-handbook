@@ -13,7 +13,7 @@
 [[elections]]
 == Elections
 
-xref:#roles[Roles] in a project are assigned based on merit demonstrated in a publicly-accessible forum, in the form of an election. Elections start with a nomination that contains a statement of merit. The nature of a statement of merit varies widely, but is generally expected to to concisely state the impact that the nominee has had on the project.
+xref:#roles[Roles] in a project are assigned based on merit demonstrated in a publicly-accessible forum, in the form of an indexterm:[Election] election. Elections start with a nomination that contains a statement of merit. The nature of a statement of merit varies widely, but is generally expected to to concisely state the impact that the nominee has had on the project.
 
 [WARNING]
 ====
@@ -23,7 +23,7 @@ While committer and project lead elections are fully automatic, setting up a new
 [[elections-committer]]
 === Committer Elections
 
-Contributors who have the trust of the project's committers can, through election, be promoted to _committer status_ for that project. The breadth of a committer's influence corresponds to the breadth of their contribution. A development team's contributors and committers may (and should) come from a diverse set of organisations. A committer gains voting rights allowing them to affect the future of the project. Becoming a committer is a privilege that is earned by contributing and showing discipline and good judgement. It is a responsibility that should be neither given nor taken lightly, nor is it a right based on employment by an Eclipse Foundation member company or any company employing existing committers.
+indexterm:[Committer, Election] Contributors who have the trust of the project's committers can, through election, be promoted to _committer status_ for that project. The breadth of a committer's influence corresponds to the breadth of their contribution. A development team's contributors and committers may (and should) come from a diverse set of organisations. A committer gains voting rights allowing them to affect the future of the project. Becoming a committer is a privilege that is earned by contributing and showing discipline and good judgement. It is a responsibility that should be neither given nor taken lightly, nor is it a right based on employment by an Eclipse Foundation member company or any company employing existing committers.
 
 [NOTE]
 ====
@@ -241,7 +241,7 @@ The <<paperwork, paperwork>> process will automatically be initiated following P
 [[elections-pl]]
 === Project Lead Elections
 
-Similar to a committer election, a xref:roles-pl[project lead] election starts with a statement of merit. The merit statement should, rather than focus on specific code contributions, focus instead on the leadership qualities expressed by the individual.
+indexterm:[Project Lead, Election] Similar to a committer election, a xref:roles-pl[project lead] election starts with a statement of merit. The merit statement should, rather than focus on specific code contributions, focus instead on the leadership qualities expressed by the individual.
 
 .Project Lead merit statement
 ====

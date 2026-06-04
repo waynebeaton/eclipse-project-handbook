@@ -70,7 +70,7 @@ The Eclipse Dash License Database (or, more simply, the _Dash Database_) is a da
 [#ip-iplab]
 ==== IPLab
 
-{iplabUrl}[_IPLab_] is a repository on the Eclipse Foundation's GitLab infrastructure that is dedicated to tracking the due diligence review process and conclusions for {forgeName} project and third party content. Issues on that repository are used to xref:ip-request[request reviews], and track the review process and results.
+indexterm:[IPLab] {iplabUrl}[_IPLab_] is a repository on the Eclipse Foundation's GitLab infrastructure that is dedicated to tracking the due diligence review process and conclusions for {forgeName} project and third party content. Issues on that repository are used to xref:ip-request[request reviews], and track the review process and results.
 
 Data collected in IPLab is used as a source for the xref:ip-dash-db[Eclipse Dash License Database].
 
@@ -117,7 +117,7 @@ Note that when the ClearlyDefined record shows any of the following, a project c
 [#ip-initial-contribution]
 === Initial Contribution
 
-When an existing project migrates to the Eclipse Foundation, we refer to the existing code as the {forgeName} open source project's _initial contribution_. An initial contribution is basically the first set of xref:ip-project-code[project code] contributions to the new {forgeName} project. An initial contribution typically takes the form of one or more entire existing source code repositories or some snapshot of an existing code base.
+When an existing project migrates to the Eclipse Foundation, we refer to the existing code as the {forgeName} open source project's indexterm:[Initial Contribution] _initial contribution_. An initial contribution is basically the first set of xref:ip-project-code[project code] contributions to the new {forgeName} project. An initial contribution typically takes the form of one or more entire existing source code repositories or some snapshot of an existing code base.
 
 [WARNING]
 ====
@@ -170,9 +170,9 @@ Any project committer can xref:ip-request[engage with the IP Team] to review a p
 
 When you need to move an entire existing repository (for example, an xref:ip-initial-contribution[initial contribution]) into your Eclipse open source project the project team has some choices:
 
-Move the existing repository :: At the project team's request, the Eclipse Infrastructure Team can move existing source code repositories on xref:resources-github[GitHub] into an organisation managed by the Eclipse Foundation. This is the best option when a project team wants to preserve their repository's status with existing forks, retain existing issues, stars, etc. If the repository is private, it must be made public before the move. Note that GitHub does a good job of setting up redirects that will ensure that the project's existing community can find them. 
+Move the existing repository :: At the project team's request, the Eclipse Infrastructure Team can move existing source code repositories on indexterm:[GitHub] xref:resources-github[GitHub] into an organisation managed by the Eclipse Foundation. This is the best option when a project team wants to preserve their repository's status with existing forks, retain existing issues, stars, etc. If the repository is private, it must be made public before the move. Note that GitHub does a good job of setting up redirects that will ensure that the project's existing community can find them. 
 
-Push to a new repository :: At the project team's request, the Eclipse Infrastructure Team can create new source code repositories on either xref:resources-gitlab[GitLab] or xref:resources-github[GitHub] into which the project team can push existing content. This option is best in the case that there is good reason to leave an existing repository in place, or when a project team needs to move an existing private repository into the open. The project team can decide whether or not to push the entire history or just a snapshot from the existing repository. As a best practice, an existing repository that gets "left behind" should be updated to include a pointer to the new repository and marked as _archived_.
+Push to a new repository :: At the project team's request, the Eclipse Infrastructure Team can create new source code repositories on either indexterm:[GitLab] xref:resources-gitlab[GitLab] or xref:resources-github[GitHub] into which the project team can push existing content. This option is best in the case that there is good reason to leave an existing repository in place, or when a project team needs to move an existing private repository into the open. The project team can decide whether or not to push the entire history or just a snapshot from the existing repository. As a best practice, an existing repository that gets "left behind" should be updated to include a pointer to the new repository and marked as _archived_.
 
 Combinations are also possible. 
 
@@ -362,6 +362,7 @@ Licenses that are not included on this list are not necessary prohibited. Rather
 When in doubt, check with the {ipTeamEmailLink}.
 
 [#ip-request]
+[reftext="Content Review Request"]
 === Requesting a Review
 
 [[ip-project-content-cq]][[ip-third-party-due-diligence]][[ip-prereq-diligence]]If your project leverages build technology that pulls third party content from well-defined software repositories (e.g., Apache Maven pulling from indexterm:[Maven, Maven Central] Maven Central, a `yarn.lock` or `package-lock.json` file), consider using the https://github.com/eclipse/dash-licenses[Eclipse Dash License Tool] to {licenseToolUrl}#automatic-ip-team-review-requests[automatically create] IPLab issues for you.
@@ -494,7 +495,7 @@ FWIW, it also handles the case when just drop the attachment as the URL (this is
 [#ip-license-tool]
 === Eclipse Dash License Tool
 
-The {licenseToolUrl}[Eclipse Dash License Tool] takes a list of dependencies as input, matches content to license information obtained from trusted sources, and identifies the content that needs further scrutiny (that is, it lists all content for which license information cannot be found in one of the approved sources). It is available as both a xref:ip-license-tool-cli[command-line interface] and a xref:ip-license-tool-mvn[Maven plugin].
+indexterm:[Dash License Tool] The {licenseToolUrl}[Eclipse Dash License Tool] takes a list of dependencies as input, matches content to license information obtained from trusted sources, and identifies the content that needs further scrutiny (that is, it lists all content for which license information cannot be found in one of the approved sources). It is available as both a xref:ip-license-tool-cli[command-line interface] and a xref:ip-license-tool-mvn[Maven plugin].
 
 [WARNING]
 ====
@@ -514,7 +515,7 @@ The License Tool lists all content that ended up marked as `restricted` as requi
 
 [#ip-license-tool-mvn]
 ==== Maven Plugin
-An {licenseToolUrl}#example-maven-plugin[Maven plugin] is provided that can be used by project teams that leverage Maven `pom.xml` files for build.
+A indexterm:[Maven] {licenseToolUrl}#example-maven-plugin[Maven plugin] is provided that can be used by project teams that leverage Maven `pom.xml` files for build.
 
 .The Eclipse Dash License Tool's Maven plugin in action
 image::images/licenseTool-mvn.png[]
@@ -559,17 +560,21 @@ Do not share your access token.
 
 [[ip-iplog]][[ip-iplog-generator]]{forgeName} open source projects are required to track their intellectual property contributions, as well as their use of third party content. We rely on the Git log to track contributors and contributions.
 
-{forgeName} open source projects are required to maintain a software bill of materials (SBOM). Project teams should leverage standard xref:sbom[SBOM] formats such as SPDX or CycloneDX. xref:legaldoc-plugins-abouts["About" files] (`about.html`) serve this purpose in Eclipse Platform plug-ins, and xref:legaldoc-notice[`NOTICE`] files or summary files generated using the xref:ip-license-tool[Eclipse Dash License Tool] can also serve as SBOMs. 
+{forgeName} open source projects are required to maintain a indexterm:[SBOM] software bill of materials (SBOM). Project teams should leverage standard xref:sbom[SBOM] formats such as SPDX or CycloneDX. xref:legaldoc-plugins-abouts["About" files] (`about.html`) serve this purpose in Eclipse Platform plug-ins, and xref:legaldoc-notice[`NOTICE`] files or summary files generated using the xref:ip-license-tool[Eclipse Dash License Tool] can also serve as SBOMs. 
 
 [TIP]
 ====
 Please ensure that any merge/pull requests that come to you project correctly identify the contributor and that the contributor is covered by the xref:contributing-eca[Eclipse Contributor Agreement]. Further, ensure that your project's third party content is accounted for in either a xref:legaldoc-notice[notice] file (consider using the _summary_ output from the xref:ip-license-tool[Eclipse Dash License Tool] to generate this).
 ====
 
+ifndef::backend-html5[]
+Please see xref:sbom[xrefstyle=full].
+endif::[]
+
 [#ip-openchain]
 === OpenChain
 
-https://openchainproject.org/license-compliance[OpenChain ISO/IEC 5230:2020] defines the key requirements of a quality open source license compliance program. The Eclipse Foundation xref:ip[IP Due Diligence Process] is self-certified as OpenChain ISO/IEC 5230:2020 conformant.
+indexterm:[OpenChain, Licence Compliance] https://openchainproject.org/license-compliance[OpenChain ISO/IEC 5230:2020] defines the key requirements of a quality open source license compliance program. The Eclipse Foundation xref:ip[IP Due Diligence Process] is self-certified as OpenChain ISO/IEC 5230:2020 conformant.
 
 As part of a xref:progress-review[progress or release review], the EMO validates that the project team is correctly implementing the Eclipse Foundation intellectual property due diligence process (and, by so-doing, is implementing the necessary practices to claim to be OpenChain ISO/IEC 5230:2020 conformant). 
 
@@ -577,7 +582,7 @@ A project can claim OpenChain licence compliance when the project:
 
 - Is in the xref:starting-mature[Mature Phase];
 - Engages in regular xref:progress-review[progress or release reviews]; and
-- Produces xref:sbom[SBOMs].
+- Produces indexterm:[SBOM] xref:sbom[SBOMs].
 
 [NOTE]
 ====
@@ -657,7 +662,18 @@ The short version is that the Eclipse Foundation trusts the judgement of Eclipse
 +
 If a contribution contains significant new functionality, or if you are not certain of the provenance or are otherwise concerned that there may be intellectual property issues with a contribution (of any size), then the IP Team needs to be engaged.
 +
-If you're not sure, create a xref:ip-request[Content Review Request].
+If you're not sure, create a xref:ip-request[].
+
+Can I accept contributions that were generated by an AI? ::
+
+The short answer is yes.
++
+ifdef::backend-html5[]
+For a longer answer, see xref:ai[].
+endif::[]
+ifndef::backend-html5[]
+Please see xref:ai[xrefstyle=full].
+endif::[]
 
 Can my release use unreleased content from another Eclipse open source project? ::
 No. A release may only use released content from other projects. A project may disseminate milestone builds that include unreleased content, but the upstream content must be released before a downstream project can include the content in their own release.
@@ -678,7 +694,13 @@ No. The xref:ip-license-tool[Eclipse Dash License Tool] is provided as a conveni
 
 Can I count on the Eclipse Dash License Tool to detect all of my third party dependencies? ::
 
-No. In fact, the Eclipse Dash License Tool doesn't actually detect any dependencies. The Maven plugin uses the dependency resolution mechanism that is built into Maven, so the Maven plugin only knows what Maven knows. If your Maven-based build does funky things like grab code from random URLs, the tool won't detect that. For other technologies, the command-line version of the Dash License Tool only knows about the dependencies that you send to it.
+No. In fact, the Eclipse Dash License Tool doesn't actually detect any dependencies. 
++
+The Maven plugin uses the dependency resolution mechanism that is built into Maven, so the Maven plugin only knows what Maven knows. If your Maven-based build does funky things like grab code from random URLs, the tool won't detect that. 
++
+The command-line version of the Eclipse Dash License Tool can read some file formats (e.g., a Node `package-lock.json`), but only detects dependencies that it finds in those files. It cannot, for example, resolve and detect dependencies of dependencies from a Node `package.json` file.
++
+For other technologies, the command-line version of the Dash License Tool only knows about the dependencies that you send to it.
 
 What happened to IPZilla and Contribution Questionnaires (CQs)? ::
 

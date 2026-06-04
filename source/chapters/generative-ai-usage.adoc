@@ -20,7 +20,7 @@ Version 1.0. April 2024
 Some portions of this content were created with the assistance of you.com.
 ====
 
-The Eclipse Foundation values the human-centric approach to creativity, where Artificial Intelligence (AI) serves as a tool to enhance efficiency. By embracing the power of AI, we prioritise the empowerment of individuals to fully explore and express their creative potential. We believe in leveraging AI to optimise workflows, streamline processes, and minimise mundane tasks, allowing creators to focus on what truly matters: their imaginative pursuits.
+The Eclipse Foundation values the human-centric approach to creativity, where indexterm:[Artificial Intelligence] Artificial Intelligence (AI) serves as a tool to enhance efficiency. By embracing the power of AI, we prioritise the empowerment of individuals to fully explore and express their creative potential. We believe in leveraging AI to optimise workflows, streamline processes, and minimise mundane tasks, allowing creators to focus on what truly matters: their imaginative pursuits.
 
 Use of generative AI platforms by Eclipse committers must respect the {roeUrl}[open source rules of engagement] described in the Eclipse Foundation Development Process, and respect the intellectual property rights of others. To that end, we must be transparent in our use of generative AI platforms, take reasonable effort to ensure the accuracy of generated content, be mindful of data privacy and intellectual property, and take care to ensure that we leverage technology in a manner that is consistent with the provider’s terms of use.
 

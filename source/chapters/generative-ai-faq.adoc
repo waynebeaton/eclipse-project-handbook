@@ -103,7 +103,7 @@ If providing all of this information is especially onerous or impossible, specif
 [#genai-github-extensions]
 = GitHub Extensions
 
-We can approve the installation of GitHub extensions, with some considerations. 
+We can approve the installation of indexterm:[GitHub, Extensions] GitHub extensions, with some considerations. 
 
 As a committer, you are responsible for ensuring that all content added to the repository, especially content that is generated via automation, is vetted for technical correctness, reviewed for security issues, is properly vetted via the IP Due Diligence Process, and is correctly attributed.
 

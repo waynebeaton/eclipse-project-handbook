@@ -13,7 +13,7 @@
 [#sbom]
 = Software Bill of Materials
 
-All {forgeName} open source projects are encouraged to generate Software Bill of Materials (SBOMs) for the software that they produce.
+All {forgeName} open source projects are encouraged to generate indexterm:[SBOM] Software Bill of Materials (SBOMs) for the software that they produce.
 
 [TIP]
 ====
