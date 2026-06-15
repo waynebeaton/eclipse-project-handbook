@@ -1,0 +1,134 @@
+////
+ * Copyright (C) 2023 Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * https://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-FileType: SOURCE
+ *
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+[#rules]
+= The Rules
+
+Summary of "the rules" based on the fundamental principles defined in the Eclipse Foundation Development Process
+
+
+
+For many open source organisations, open means the same thing as _transparent_: open as in _open_ book. At the Eclipse Foundation, we regard being _transparent_ as the practice of making sure that the community can see and understand what the project is doing; and being _open_ as the act of giving up absolute control and welcoming the community to participate as an equal player on a _level playing field_ (that is, being _open_ to participation by the others).
++
+At the Eclipse Foundation, we take the _open_ part of open source very seriously. It’s codified in the Open Source Rules of Engagement found in the [Eclipse Foundation Development Process](https://www.eclipse.org/projects/dev_process/).
++
+Everybody needs to play by the same set of rules. A level playing field doesn't necessarily mean that a project team needs to accept every single contribution that comes their way. Rather, it means that the project team needs to have a set of rules by which _everybody_ participates; and these rules can’t include things like for whom the contributor works.
++
+Contribution rules can require that contributions fall within the project’s scope and current release plan. The rules can require that all code contributions be accompanied by unit tests and documentation; or that contributions implement a solution for an issue that’s been discussed by the project team in their issue tracker. Some sort of quality bar is a reasonable part of any set of contribution rules.
++
+For most open source projects, these contribution rules aren't formally captured. However, most of the rules that I've listed so far collectively form a pretty reasonable default set of participation rules. A quality bar is (obviously) hard to quantify, but for many project teams it’s enough that any committer feels that the contribution should be accepted (some projects require that two committers _sign off_ on a contribution before it can be accepted).
++
+Note that it’s also perfectly reasonable for a project team to require that significant contributions come with a promise of continued investment in the form of the contributor becoming a member of the project team.
++
+Regardless of the rules that define the level playing field for any particular project, any content destined for the project’s code base should have some _public record of contribution_. Otherwise, the project would be operating (at least in part) hidden from community involvement and so counter to the open source rules of engagement. That public record can take the form of a merged GitHub pull request, GitLab merge request, or (if you’re in a pinch) an attachment on an issue.
+
+Eclipse Projects are also required to implement the Eclipse Foundation's IP Policy. Tracking intellectual property grants and ensuring that all contributors and committers are covered by agreements that
+
+[qanda]
+
+Committers must work day-to-day in the repositories assigned to the {forgeName} project by the Eclipse Foundation ::
+
+Eclipse open source projects are required to operate in an xref:preamble-principles[open, transparent, and meritocratic manner]. This means that, as an Eclipse open source project, project developers (xref:roles-cm[committers]) are required to do their day-to-day work in the xref:resources-platform[Git repositories] provided by the Eclipse Foundation (either xref:resources-github[GitHub] organisations and repositories managed by the Eclipse Foundation, or the Eclipse Foundation's hosted xref:resources-gitlab[GitLab] instance). 
++
+The project team is expected to review merge/pull requests from the community, confirm that contributors are correctly covered by a valid xref:contributing-eca[contributor agreement], and merge contributions with technical merit that align with the project's goals and scope. Further, the project team is expected to invite regular xref:contributing-contributors[contributors] to the project to join as committers. 
++
+Please see https://blog.waynebeaton.ca/posts/opensource/level-playing-field/[Level Playing Field] and https://blog.waynebeaton.ca/posts/opensource/repository/[Barriers for Entry].
+
+Project-related issues must be tracked via issue trackers assigned to the {forgeName} project by the Eclipse Foundation ::
+
+That is, you must use the issue trackers associated with the project's GitLab and GitHub repositories for all issues related to the open source project.
+
+Committers must engage in the Eclipse Foundation's Intellectual Property Due Diligence Process ::
+
+Project committers are required to engage in our xref:ip[Intellectual Property Due Diligence Process] to vet the licence compatibility of the xref:ip-third-party[third party] content that the project leverages. Due diligence must be complete before any content is included in a xref:release[release].
++
+The Eclipse Foundation provides some tools to help you implement the IP Due Diligence Process. The [Eclipse Dash License Tool](https://github.com/eclipse-dash/dash-licenses) can help you vet third party content. It's especially helpful when you're using technology that has robust dependency management and a standard software repository. 
++
+> The Eclipse Dash License Tool is intended to assist with the process of determining the licenses of third party content and help committers identify intellectual property that require further scrutiny. The tool, like any tool, is only as good as the input provided. This documentation provides examples of how input into the tool can be tuned; these examples should be regarded as such: examples. Ultimately, is the responsibility of committers to understand the nature of their project and the third party content it requires.
+
+Committers must implement the Eclipse Foundation Security Policy ::
+
+The Eclipse Foundation provides support and clear procedures, documented in the Eclipse Foundation Security Policy, to assist open source project teams in taking security seriously. This service includes managing vulnerability disclosures, outlining procedures for reporting and fixing security issues, and coordinating active participation in security-related audits or initiatives.
+
+Committers must be covered by a Committer Agreement ::
+
+Your work as a committer must be covered by a committer agreements. Committer agreements come in two forms: a xref:paperwork-mcca[Member Committer and Contributor Agreement] (MCCA) that's signed by your employer on your (and your colleague's) behalf, or an xref:paperwork-ica[Individual Committer Agreement] (ICA) that you sign yourself. 
++
+When you change employers, you may need to sign a new agreement.
+
+Contributions must be received through official channels ::
+
+Contributions must be received as pull or merge requests. The authors of the contributions (or somebody with the necessary legal permission to contribute on their behalf) must create the pull/merge requests. 
+
+Contributors must sign the Eclipse Contributor Agreement (ECA) ::
+
+As a committer, you must ensure that all contributions that you receive are covered by an indexterm:[ECA] Eclipse Contributor Agreement (ECA). Regardless of how a contribution is presented, the contributor must be listed as the author in the [Git commit record](https://www.eclipse.org/projects/handbook/#resources-commit) and must complete the [Eclipse Contributor Agreement](https://www.eclipse.org/legal/ECA.php) before any contribution can be accepted.
++
+Contributors who are already covered by a committer agreement (either an MCCA or ICA) are not required to also sign the ECA. All other contributors must sign the {ecaUrl}[Eclipse Contributor Agreements] (ECA) to ensure that the necessary xref:ip[intellectual property] (IP) rights to the contribution are granted.
++
+[TIP]
+====
+Committers, who must already been covered by either a  xref:paperwork-mcca[Member Committer and Contributor Agreement] (MCCA) or an xref:paperwork-ica[Individual Committer Agreement] (ICA), are, by virtue of that agreement, considered to have signed the ECA.
+====
+
+Committers must work in a vendor-neutral manner ::
+
+indexterm:[Vendor Neutrality]When you move the project to the Eclipse Foundation, it ceases to be yours alone. Sharing control with the other developers who “show up” is an important part of growing a community around the project.
++
+But why do we care about vendor neutrality?
++
+The reasons are many and varied. Here are some of the more important ones:
++
+Sustainability and Longevity: A vendor-neutral project can survive, thrive, and remain active even if one group shifts its priorities, reduces investment, or exits entirely.
++
+Trust and Adoption: Users and contributors are more likely to adopt and contribute to an open source project if they trust that their investments will be welcome and accepted under stable terms.
++
+Balanced Innovation: Vendor neutrality encourages diverse contributions, ensuring that features and improvements reflect a broad set of use cases rather than the requirements of a single in-group.
++
+Brand Protection: Vendor neutrality ensures that the project’s branding and trademark remain distinct, mitigating against legal risks associated with blurring the lines between a community project and a company product. 
++
+Vendor neutrality is not automatic and does not come for free. To realise the benefits of vendor neutrality, Eclipse open source project teams need to live the fundamental principles described in the Open Source Rules of Engagement, and invest in implementing the practices that support those principles. 
+
+Contributors must create a public record of high quality contribution before becoming a committer via committer election ::
+
+To be considered for committer status a candidate must demonstrate _merit_. Generally, this takes the form of making high-quality contributions to a project in the form of patches or new code, but can manifest in other ways. It may make sense, for example, to nominate a committer based on a history of helping users and adopters.
++
+The demonstration of merit must be something that everybody can see. That is, the demonstration of merit must be _transparent_ to the general public. Again, code contributions are an obvious example of this as the commit record is open for all. This is one of the reasons that commits must be correctly attributed (that is, the `Author` field in a Git commit must include the author's name and credentials); another reason being that implementing an effective intellectual property regime requires it. With the tools available today, it's pretty easy to point to a pattern of contribution.
++
+The entire process must be _open_. That is in the sense that it is open to all comers; as I like to say (in one form or another), that the _playing field must be level_. That means that the means by which an Eclipse project team decides to make somebody a committer must not be biased by who that individual works for, or any criteria other than the the quality of the contributions they've made to the project and their demonstration that they understand their role and responsibilities as a committer.
++
+> To earn committer status, a candidate must demonstrate that they understand their responsibilities under the Eclipse Foundation Development Process as well as the project code.
++
+If you believe that somebody is _ready to go_ and all this public demonstration of merit is just plain silly, remember that it's not you that you need to convince: it's that developer that you don't know who is watching your project, trying to figure out what they need to do to participate, and getting hired by your company can't be the answer.
++
+If you really believe that somebody that does not have a visible record of contribution is ready to be a committer, get them to contribute a few pull requests to prove it to everybody else. If they're ready to be a committer, then they should be able to do this without much trouble (if making pull requests against your project is hard for some reason, then we should address that). If they don't have anything to contribute, then why do they need to be a committer at all?
++
+I'll admit that I tend to think of committer status in practical terms: when somebody _needs_ to have the powers and responsibilities of a committer in an open source project that is operating in an open and transparent manner, demonstrating merit shouldn't be too onerous.
++
+As an exception to this rule, the set of initial committers are specified at the time a new project is proposed and created. 
+
+Committers must be subscribed to their project's `dev` list ::
+
+Every project has a development list or dev-list. All project committers must subscribe to the list. The dev-list should be the primary means of communication between project committers and is the means through which the EMO and Eclipse Foundation’s automated systems communicate with the project team.
+
+Committers must respect the Eclipse Foundation Trademark Usage Policy ::
+
+Your Eclipse open source project's name and the names of any software produced by the project are trademarks (either registered or common-law) of the Eclipse Foundation, and you are required to follow the same {trademarkGuidelinesUrl}[trademark guidelines] as everybody else when you refer to the project. 
++
+[TIP]
+====
+If you were to, for example, contribute the "Woolsey" product to the Eclipse Foundation, you would be required to transfer all rights that you have to the name "Woolsey" to the Eclipse Foundation, and the use of the "Woolsey" name in your products, website, marketing materials, etc. would be then be subject to the trademark guidelines (you would be required to rename your products from "Woolsey" to "[Product Name] for Eclipse Woolsey" or similar; there can be no notion of a "professional" version or similar of the Eclipse project). If the name important to your organisation, consider choosing a different name for the Eclipse open source project.
+====
+
+Ownership of domains that leverage Eclipse Foundation trademarks must be transferred to the Eclipse Foundation ::
+
+Ownership of all domains that are related to your Eclipse open source project must be transferred to the Eclipse Foundation. This includes all project names, regardless of whether or not they are registered trademarks.

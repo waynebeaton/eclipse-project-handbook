@@ -1,0 +1,54 @@
+////
+ * Copyright (C) Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * https://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-FileType: SOURCE
+ *
+ * SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
+ * SPDX-FileCopyrightText: 2015 Contributors to the Eclipse Foundation
+ *
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+[[ip-tools]]
+= Intellectual Property Tools
+
+[graphviz, images/starting_overview, svg]
+.An overview of the Project Creation Process
+----
+digraph {
+	// Graph properties
+	bgcolor=transparent;
+	rankdir=BT;
+	
+	// Nodes that define the key points in the process
+	node [shape=box;style=filled;fillcolor=white;fontsize=12];
+	subgraph bits {
+		dash[style="filled,bold",label="Eclipse Dash\nLicense Tool"];
+		clearlyDefined[label="ClearlyDefined"];
+		ipteam[shape=plaintext,fillcolor=none,label="IP Team"];
+	}
+	
+	subgraph cluster_backend {
+		foundationAPI[label="Foundation\nIP API"];
+		foundationDB[label="Dash\nDatabase", shape=cylinder];
+		iplab[label="IPLab\non GitLab"];
+		genie[label="Eclipse\nGenie"];
+	}
+	
+	
+	edge [fontsize=12]
+	foundationAPI -> dash[label="license\ndata"];
+	clearlyDefined -> dash[label="license\ndata"];
+	dash -> iplab:e[label="request for\nreview"];
+	foundationDB -> foundationAPI;
+	iplab -> genie[];
+	genie -> iplab[xlabel="curates"];
+	iplab:w -> foundationDB[xlabel="updates"];
+	iplab -> ipteam[];
+	ipteam -> iplab[label="curates"];
+}
+----

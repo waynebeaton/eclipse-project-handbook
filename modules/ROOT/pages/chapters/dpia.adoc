@@ -1,0 +1,66 @@
+////
+ * Copyright (C) 2019 Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * https://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-FileType: SOURCE
+ *
+ * SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
+ * SPDX-FileCopyrightText: 2015 Contributors to the Eclipse Foundation
+ *
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+[[dpia]]
+= Data Protection Impact Assessment Guidelines
+Version 1.0
+Last updated: September 11, 2019
+
+This document is meant to provide advice to the Eclipse Foundation projects and community, in order to help determine where and when a data protection impact assessment (DPIA) is required and what it should contain.
+
+This document is maintained by the Eclipse Foundation and the following individuals are responsible for it:
+
+* Paul White, Data Protection Officer
+* Matt Ward, IT Manager 
+* Denis Roy, IT Director 
+
+The General Data Protection Regulation (GDPR) requires a DPIA be completed when there is a “high risk to the rights and freedoms of natural persons” due to the collection and processing of data.  Some examples of this would be things like:
+
+* Combining data sets in order to profile users;
+* Where the collected data can be used to make automated decisions about a person or to deny them access to services; or
+* The data is personally sensitive.
+
+When considering the risk you should adopt the perspective of the person providing this information.  Would you feel comfortable providing this information to someone else, what concerns would you have about the handling or management of the data?  
+
+[[dpia-contents]]
+== What should a DPIA include?
+
+At a minimum a good DPIA includes:
+
+* A description of the planned processing operations; 
+* An explanation of why you are collecting this data, and how you plan to use it;
+* An assessment of the risks to individuals; and
+* How do you plan to protect this data (technologically or procedurally).
+
+As a best practice the results from creating a DPIA should be published, in order to promote transparency and trust in the people performing the assessment.  However you may wish to produce a slightly ‘pared down’ version for publication if the original version would cause security of the data to be compromised
+
+.Example Data Protection Impact Assessment
+====
+**Fish Data Protection Impact Assessment**
+
+The Fish IoT project is looking to start combining data from a family of IoT devices (PetFinder Plus series) that are produced by a third party, and to combine that with data from our public management server in order to produce a contact list of people.  
+
+We will do this by using cloud based virtual servers and cross referencing the email addresses stored in our management server with the registration email stored by the PetFinder plus devices and provided by the device when it is contacted by the registration server.
+
+There is a moderate risk to individuals as they may be using email addresses that are not published elsewhere, and the data returned from the remote devices can contain GPS coordinates which could allow a specific individual to be identified.
+
+In order to reduce the risks we:
+
+* Use SSL/TLS to protect the data in transit between our server and the remote device;
+* Ensure that the data storage area is encrypted using commercially available tools;
+* Limit access to the information to only those identified in our Data retention policy;
+* Keep the data only as long as needed, in keeping with out Data retention policy; and
+* Engage in active monitoring of the server and associated access requests.
+====

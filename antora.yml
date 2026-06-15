@@ -1,0 +1,30 @@
+# Copyright (C) 2015 Eclipse Foundation, Inc. and others.
+#
+# This program and the accompanying materials are made available under the
+# terms of the Eclipse Public License v. 2.0 which is available at
+# https://www.eclipse.org/legal/epl-2.0.
+#
+# SPDX-FileType: SOURCE
+#
+# SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
+#
+# SPDX-License-Identifier: EPL-2.0
+
+name: handbook
+title: Eclipse Project Handbook
+version: ~
+start_page: ROOT:index.adoc
+nav:
+  - modules/ROOT/nav.adoc
+
+asciidoc:
+  attributes:
+    source-highlighter: highlight.js
+    endpoint-url: https://www.eclipse.org
+    doctype: book
+    toc: left
+    sectanchors: true
+    idprefix: ''
+    idseparator: '-'
+    experimental: true
+    figure-caption: ''

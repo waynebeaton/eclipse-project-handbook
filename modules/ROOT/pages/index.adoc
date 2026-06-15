@@ -1,0 +1,98 @@
+////
+ * Copyright (C) 2015,2022 Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-FileType: SOURCE
+ *
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+include::config.adoc[]
+
+:forgeName: Eclipse
+:aforgeName: an Eclipse
+:forgeMachineName: eclipse
+:namespace: org.eclipse
+:forgeUrl: https://projects.eclipse.org
+:downloadsHost: https://downloads.eclipse.org
+:createUrl: https://projects.eclipse.org/create/project-proposal
+:projectListUrl: http://projects.eclipse.org/list-of-projects
+:gitlabUrl: https://gitlab.eclipse.org
+:gitHubUrl: https://github.com/eclipse
+:mailingListsUrl: https://www.eclipse.org/mail/
+
+
+= Eclipse Foundation Project Handbook
+
+Current as of {localdate}.
+
+include::chapters/notices.adoc[]
+
+include::chapters/preamble.adoc[]
+
+include::chapters/starting.adoc[]
+
+include::chapters/incubation.adoc[leveloffset=+1]
+
+include::chapters/roles.adoc[leveloffset=+1]
+
+include::chapters/committer_badges.adoc[leveloffset=+1]
+
+include::chapters/identity-verification.adoc[leveloffset=+1]
+
+include::chapters/resources.adoc[]
+
+include::chapters/sbom.adoc[leveloffset=+1]
+
+include::chapters/security.adoc[leveloffset=+1]
+
+include::chapters/contributing.adoc[leveloffset=+1]
+
+include::chapters/elections.adoc[]
+
+include::chapters/paperwork.adoc[]
+
+include::chapters/specifications.adoc[leveloffset=+1]
+
+include::chapters/ip.adoc[]
+
+[#ai]
+== Using Artificial Intelligence
+
+include::chapters/generative-ai-usage.adoc[leveloffset=+2]
+
+include::chapters/generative-ai-faq.adoc[leveloffset=+2]
+
+include::chapters/legaldoc.adoc[leveloffset=+1]
+
+include::chapters/legaldoc-plugins.adoc[leveloffset=+1]
+
+include::chapters/release.adoc[]
+
+include::chapters/pmi.adoc[]
+
+include::chapters/trademarks.adoc[]
+
+include::chapters/promotion.adoc[leveloffset=+1]
+
+include::chapters/community.adoc[]
+
+include::chapters/checklist.adoc[leveloffset=+1]
+
+// include::chapters/links.adoc[]
+
+include::chapters/glossary.adoc[]
+
+include::chapters/contact.adoc[]
+
+// NOTE: The Eclipse Development Process is maintained in a separate repository (efdp submodule).
+// To include it, initialize the submodule with: git submodule update --init source/efdp
+// Then reference it as a separate Antora component in antora-playbook.yml.
+// include::efdp/source/development_process.adoc[leveloffset=+1]
+
+include::chapters/dpia.adoc[leveloffset=+1]
+
+include::chapters/document-history.adoc[leveloffset=+1]

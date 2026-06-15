@@ -1,0 +1,81 @@
+////
+ * Copyright (C) 2015 Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * https://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-FileType: SOURCE
+ *
+ * SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
+ * SPDX-FileCopyrightText: 2015 Contributors to the Eclipse Foundation
+ *
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+[[community]]
+== Community
+
+The {edpLink} (EDP) is mostly concerned with engaging in activities that grow indexterm:[Community] community involvement. {aForgeName} project is considered successful only if a vibrant community develops around it and the project team grows in diversity.
+
+While the reviews and processes described by the EDP may seem onerous, they are a necessary part of community development. You should anticipate spending a significant amount of time responding to questions posed in various forums (GitHub Discussions, {mailingListsUrl}[mailing lists], and other places where your community gathers. You should plan on attending conferences, presenting webinars, writing papers, and more to support your project.
+
+Community and ecosystem development are two things that every committer should spend at least some time thinking about, and -- hopefully -- some time doing something about. Ultimately, it is difficult to call your project a success without these things. It is from the community and ecosystem that you will draw additional contributions and other helpful input to make your open source project a success.
+
+[[community-barriers]]
+=== Lower the Barriers
+
+One of the most critical aspects of running an open source project is to grow user and adopter communities, invite contributions, and increase committer diversity. All {forgeName} projects must work to _lower the barrier of entry_.
+
+To attract and support contributors:
+
+* Make it easy for contributors to find is the code, build it, and run tests;
+* Describe and disseminate the contribution process;
+* Maintain an open and transparent schedule of builds, milestones, releases, etc.;
+* Capture important decisions in public channels and invite participation (be transparent and open); and
+* Consider implementing a weekly phone call where you can discuss the schedule, the on-going work, and also the more complex/controversial technical things which would have not been easy to take care of by email.
+
+When somebody does show up to do some work on your project, help them be successful. 
+
+To attract and support users:
+
+* Maintain a concise and clear description of the project on the website;
+* Provide a five minute tutorial to help users understand what the project does and why they should care;
+* Make sure that they know where they can go to get answers to their questions; and
+* Provide great documentation, with a lot of ready-to-go examples.
+
+Include support for the website, and regular updates to your project documentation and tutorials as part of your project planning.
+
+[[community-forums]]
+=== Forums
+
+Leverage resources for community engagement, such as GitHub Discussions.
+
+When your community asks questions, answer them as soon as possible. No question should go unanswered. Encourage all of the project committers to monitor the project forum(s), or -- at very least -- take turns. When sensible, incorporate the answers into the FAQ or some type of wiki recipe. Repeat this process for as many newsgroups as possible, because Eclipse's overall success will be reflected in your personal success. Your dedication to high-quality service and support is the fuel for your ecosystem and the success of that ecosystem is the most effective way to achieve maximum influence with your limited individual capacity.
+
+Adopter questions posed in developer mailing lists (and other _inappropriate_ forums such as personal e-mail) should be answered politely. It is reasonable to recommend that the question (or future questions) be posed in the forum where it can be _viewed by a larger audience as is more likely to receive a timely answer_.
+
+Avoid negativity, swearing, belittling, or other disparaging behaviour in your responses.
+
+All of the answers don't need to necessarily come from project committers: empower your community to answer questions in the newsgroup. When community members do provide answers that require further clarification (either they are not complete, or are not 100% correct), do so politely.
+
+The more welcome you make your community feel, the more likely it is that your project will be successful.
+
+[[community-issues]]
+=== Issues
+
+When your community reports a problem, fix it as soon as possible. Be sure to make a distinction between wish list items ("I want more goodness") and actual defects ("it's broken because it's not working the way it was designed to work"). A list of 1,000 issue reports that looks to the community like a list of 1,000 defects rather than like a list of 1,000 wishes is bad publicity. Having _no responses_ in most of those reports, is also bad news. Your community will interpret it as a lack of respect, and no pleas about your lack of resource will help offset that negative perception.
+
+Provide linkage between commits and issue records in the commit comment so that somebody browsing the history of your code can follow the links to find any discussion, or other useful information related to that commit. Consider including issue numbers directly in comments in the source code when the discussion contained in that bug is particularly useful. This will help your community and committers better understand why your code is implemented the way it is and give them a pre-existing place (that is, the issue report) to pose further questions.
+
+[[signs-of-success]]
+=== Signs of success
+
+Ultimately, everything above is about making it possible for a community to find out about your project and provide opportunity to get involved. Providing that opportunity is one thing, actually attracting a community is another.
+
+You are successful if (not an exclusive list):
+
+* A significant number of bugs raised against your project come from non-committers;
+* Non-committers are blogging about your project;
+* Articles, presentations, podcasts, webinars, etc. are being developed and presented by non-committers; and/or
+* You cease to be the centre of the universe for your project.

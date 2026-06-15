@@ -1,0 +1,505 @@
+////
+ * Copyright (C) 2015 Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * https://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-FileType: SOURCE
+ *
+ * SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
+ * SPDX-FileCopyrightText: 2015 Contributors to the Eclipse Foundation
+ *
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+[[legaldoc]]
+= Legal Documentation Requirements
+
+The content developed and maintained by Eclipse Foundation open source projects is distributed via multiple channels, including distributed source code management systems, download servers, and software repositories. Further, open source project content is -- by design -- integrated into and distributed as part of the products of adopters. The legal obligations of the content must be observed in all forms of which the content is available.
+
+Where possible we adopt standards and conventions in order to be good open source citizens. We use the Software Package Data Exchange(R) (https://spdx.org[SPDX](R)) specification for communicating the licenses associated with software packages.
+
+[NOTE]
+====
+This document describes a set of general guidelines for legal documentation. Projects that implement Eclipse Platform Plug-ins and Features under the EPL-2.0 should follow the xref:legaldoc-plugins[Legal Documentation for Eclipse Platform Plug-ins and Features].
+
+Projects that implement Eclipse Platform Plug-ins and Features under the EPL-1.0 should follow the https://www.eclipse.org/legal/guidetolegaldoc-EPL-1.0.php[Guide to the Legal Documentation for Eclipse Plug-ins and Features under the EPL-1.0].
+====
+
+[[legaldoc-repo]]
+== Source Code Repositories
+
+{forgeName} projects may have one or more source code repositories. Since it is possible for source code repositories to be cloned and rehosted, it is important that legal information is captured directly in the root of every repository.
+
+As described below, legal and other metadata files must be included in the root of every source code repository.
+
+[%nowrap,subs="verbatim,attributes"]
+----
+../project.git
+ ├── CODE_OF_CONDUCT.md
+ ├── CONTRIBUTING.md
+ ├── LICENSE.md
+ ├── NOTICE.md
+ ├── README.md
+ └── ...
+----
+
+[[legaldoc-distribution]]
+== Distribution
+
+The distribution form of software artifacts (often in a compiled form) generated from a project’s source code repositories must also include legal information.
+
+_License_ and _notice_ files, as described below, must be included in the root of every unit-level distribution artifact (e.g.,`JAR` file). In the most general case, these files will appear in the root of distribution unit, but the exact location varies by technology type.
+
+For content delivered as Java archive (`JAR`) files, for example, the legal files should be placed in the `META-INF` directory.
+
+[%nowrap]
+----
+MyFile.jar
+ ├── META-INF
+ │   ├── NOTICE
+ │   └── LICENSE
+ └── ...
+----
+
+[NOTE]
+====
+This structure need not necessarily be reflected in the source tree. How a project’s build process includes this information is determined by the project team.
+====
+
+When the unit level of distribution is an individual file (e.g.,JavaScript), the file must contain a header with copyright and license information, and the best effort must be undertaken to associate the file with the notices (e.g.,a link to the source repository in the header).
+
+Project teams should consult with their xref:#roles-pmc[Project Management Committee] (PMC) for input and advice regarding alternate names and locations for legal documentation.
+
+[[legaldoc-end-user]]
+== End User Content
+
+All products delivered by the project—including executables, websites, documentation, and help must include certain notices. An executable might, for example, provide this information in an _About Dialog_; documentation might include a notice in either the pre- or post-amble, or a website might provide this information in a common footer, or a dedicated page.
+
+The notices must include one or more copyright statement, the assertion of trademarks owned by the Eclipse Foundation on behalf of the project, indication of third party trademarks in use, and -- when applicable -- a cryptography notice.
+
+.Example website notices
+____
+All material on this website is Copyright (c) 2017, Contributors to the Eclipse Foundation
+
+{forgeName} Dash and the {forgeName} Dash project logo are trademarks of the Eclipse Foundation. Eclipse and the Eclipse logo are registered trademarks of The Eclipse Foundation.
+
+Java and all Java-based trademarks are trademarks of Oracle Corporation in the United States, other countries, or both.
+
+Content may contain encryption software. The country in which you are currently may have restrictions on the import, possession, and use, and/or re-export to another country, of encryption software. BEFORE using any encryption software, please check the country's laws, regulations and policies concerning the import, possession, or use, and re-export of encryption software, to see if this is permitted.
+____
+
+[[ip-copyright-headers]]
+== Copyright Headers
+
+Where possible, all source code, property files, and metadata files (including application, test, and generated source code as well as other types of files such as `XML`, `HTML`, etc.) should contain appropriate copyright and license notices as well as information on each contribution.
+
+Copyright holders are legal entities: either individuals or companies. Note that employment contracts very often stipulate that the intellectual property developed by an employee is the property of the company (in this case, the company should be listed as the copyright holder, not the individual; the individual should still be listed as an author).
+
+[NOTE]
+====
+An Eclipse Foundation open source project is _not_ a legal entity. Further, the Eclipse Foundation does not assume ownership of contributions (the Eclipse Foundation is only a copyright holder in those cases where an employee of the Eclipse Foundation has authored the contribution).
+====
+
+_Copyright statements_ take the form `Copyright (c) \{year} \{owner}`. 
+
+The `\{year}` is the year in which the content was created (e.g.,"`2004`"). 
+
+The `\{owner}` is the name of the copyright holder. If the content is subsequently modified and appended to by other copyright owners, the words "and others" are typically appended. So for example: "XYZ Corp." or "XYZ Corp. and others". The words "and others" are used to avoid having to list every copyright owner and because often, most of the content in the file was contributed by the initial copyright owner with subsequent modifications by others being smaller. However, especially if the number of copyright owners is small (e.g.,two), they may all be listed in a single copyright statement (for example: "XYZ Corp., John Smith, and ABC Enterprises."). Alternatively, additional copyright holders may be added by including multiple copyright statements.
+
+Copyright headers can take one of two forms. In the traditional form, the identities of the copyright holders must be indicated in the copyright statement on the first line of the header.
+
+.Eclipse Public License 2.0 Copyright and License Header template
+[%nowrap]
+----
+/********************************************************************************
+ * Copyright (c) {year} {owner}[ and others] <1>
+ * 
+ * This program and the accompanying materials are made available under the <2>
+ * terms of the Eclipse Public License 2.0 which is available at
+ * https://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-License-Identifier: EPL-2.0 <3>
+ *
+ * Contributors: <4>
+ *   {name} - initial API and implementation
+ ********************************************************************************/
+----
+<1> Name of the initial copyright owner (this must be a legal entity); other organisations that have contributed are either listed individually or grouped together by appending "and others". The \{year} is the year of the initial creation.
+<2> Declared project licenses described in human readable form.
+<3> Declared project licenses indicated using SPDX codes and expressions.
+<4> The names of the contributors and the nature of their contribution (this section may be excluded).
+
+Contributors should be consistent when expressing copyright on a particular file. In some legal circles, the exact form of the copyright message must be used in summaries, including punctuation (e.g.,the "Copyright (c) 2017 My Company, Inc" and "Copyright (c) 2017 My Company, Inc." may be considered different and distinct because of the period).
+
+[NOTE]
+====
+Older versions of this template included the sentence "All rights reserved." It is not wrong for this sentence to be included in the header; it is just not necessary. File headers that include this sentence do not need to be changed.
+====
+
+Alternatively, project teams can adopt a more generic copyright header for each file and include the identities of the copyright holders in the _notice_ file.
+
+.Alternative Eclipse Public License 2.0 Copyright and License Header template
+[%nowrap]
+----
+/********************************************************************************
+ * Copyright (c) {year} Contributors to the Eclipse Foundation <1>
+ *
+ * See the NOTICE file(s) distributed with this work for additional <2>
+ * information regarding copyright ownership.
+ *
+ * This program and the accompanying materials are made available under the <3>
+ * terms of the Eclipse Public License 2.0 which is available at
+ * https://www.eclipse.org/legal/epl-2.0
+ * 
+ * SPDX-License-Identifier: EPL-2.0 <4>
+ ********************************************************************************/
+----
+<1> The \{year} is the year of the initial creation
+<2> Statement that indicates where the actual copyright information is located.
+<3> Declared project licenses described in human readable form.
+<4> Declared project licenses indicated using SPDX codes and expressions.
+
+[NOTE]
+====
+The border, line breaks, etc. are not mandated in either form.
+====
+
+Incorporating the `SPDX-License-Identifier` tag in the header makes it easy for automated tools to discover and report the license of the content. More usefully, the SPDX expression syntax can be used to make it very explicit to automated tools how multiple licenses are combined.
+
+In SPDX, disjunction is used to express dual licensing and conjunction is used to express that the content contains content that is distributed simultaneously under multiple licenses. For example, `EPL-2.0 OR MIT` expresses that the consumer may choose to accept the content under one of the licenses listed; and `EPL-2.0 AND MIT` indicates that the consumer must accept the content under both licenses (it may be the case that parts of the content are under one license and other parts are under the other).
+
+.Example Copyright and License Header for Dual-licensed Content
+[%nowrap]
+----
+/********************************************************************************
+ * Copyright (c) {year} {owner}[ and others]
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License 2.0 which is available at
+ * https://www.eclipse.org/legal/epl-2.0, or the Apache Software License 2.0
+ * which is available at https://www.apache.org/licenses/LICENSE-2.0.
+ * 
+ * SPDX-License-Identifier: EPL-2.0 OR Apache-2.0
+ ********************************************************************************/
+----
+
+[[legaldoc-license]]
+== License File
+
+The license file contains the exact text of the project’s declared licenses in human readable form. The declared licenses are those that the project team’s content is distributed under. This does not, for example, include the licenses of third party content or incidental fragments of code that is incorporated into the project content (the license of any such content should be indicated in the source file itself and the notice file that accompanies it).
+
+If the project code is distributed under multiple licenses then the text of those licenses must be included. The file should start with a short paragraph that describes how the licenses are combined. This statement should in most cases, be exactly the same as the license statement in the file xref:ip-copyright-headers[copyright and license headers] (see the example below).
+
+Use inclusive disjunction (`OR`) when talking about dual licenses (e.g.,"choose one or the other (or both)").
+
+The license file must be expressed in a human readable (`plaintext`) form; human readable markup languages may be used. The file is conventionally named `LICENSE` and may include a suffix (e.g.,`LICENSE.md`).
+
+.Example License File (dual-licensed EPL-2.0 or Apache-2.0).
+[%nowrap]
+----
+This program and the accompanying materials are made available under the
+terms of the Eclipse Public License 2.0 which is available at
+https://www.eclipse.org/legal/epl-2.0, or the Apache Software License
+2.0 which is available at https://www.apache.org/licenses/LICENSE-2.0.
+
+... Text of the Eclipse Public License 2.0 ...
+
+... Text of the Apache Software License 2.0 ...
+----
+
+[[legaldoc-notice]]
+== Notice Files
+
+Notice files are expressed in human-readable plain text format; human readable markup languages may be used. The file is conventionally named `NOTICE` and may include a suffix (e.g.,`NOTICE.md`).
+
+The notice file must include basic project metadata, an expression of the declared project licenses, information regarding the licensing of any third party content, and a statement regarding the use of cryptography in cases where either the project code or third party content implements cryptography.
+
+Project metadata provides the identity of the originating project, along with pointers to the project’s website and canonical source code repositories.
+
+The declared licenses statement should in most case, be exactly the same as the license statement in the file xref:ip-copyright-headers[copyright and license headers].
+
+If cryptography is included with the content, then the following statement must be included in a comment in the _notice_ file:
+
+.Cryptography Statement
+____
+Content may contain encryption software. The country in which you are currently may have restrictions on the import, possession, and use, and/or re-export to another country, of encryption software. BEFORE using any encryption software, please check the country's laws, regulations and policies concerning the import, possession, or use, and re-export of encryption software, to see if this is permitted.
+____
+
+Other information, as deemed necessary by the project team may also be included.
+
+.Example `NOTICE.md` file
+[%nowrap]
+----
+# Notices for Eclipse Dash
+
+This content is produced and maintained by the Eclipse Dash project.
+
+* Project home: https://projects.eclipse.org/projects/technology.dash
+
+## Trademarks
+
+Eclipse Dash is a trademark of the Eclipse Foundation.
+
+## Copyright
+
+All content is the property of the respective authors or their employers. For
+more information regarding authorship of content, please consult the listed
+source code repository logs.
+
+## Declared Project Licenses
+
+This program and the accompanying materials are made available under the terms
+of the Eclipse Public License v. 2.0 which is available at
+https://www.eclipse.org/legal/epl-2.0.
+
+SPDX-License-Identifier: EPL-2.0
+
+## Source Code
+
+The project maintains the following source code repositories:
+
+* https://github.com/eclipse-dash/.github
+* https://github.com/eclipse-dash/dash-licenses
+* https://github.com/eclipse-dash/nodejs-wrapper
+* https://github.com/eclipse-dash/quevee
+* https://gitlab.eclipse.org/eclipse/technology/dash/dash.git
+* https://gitlab.eclipse.org/eclipse/technology/dash/eclipse-api-for-java.git
+* https://gitlab.eclipse.org/eclipse/technology/dash/eclipse-project-code.git
+* https://gitlab.eclipse.org/eclipse/technology/dash/ip-check.git
+* https://gitlab.eclipse.org/eclipse/technology/dash/license-tool/nodejs-wrapper.git
+* https://gitlab.eclipse.org/eclipse/technology/dash/org.eclipse.dash.handbook.git
+
+## Cryptography
+
+Content may contain encryption software. The country in which you are currently
+may have restrictions on the import, possession, and use, and/or re-export to
+another country, of encryption software. BEFORE using any encryption software,
+please check the country's laws, regulations and policies concerning the import,
+possession, or use, and re-export of encryption software, to see if this is
+permitted.
+----
+
+[NOTE]
+====
+The actual text of the project's declared licenses should not be included in the notice file (they are provided in the _license_ file). The terms of the other licenses included in the content, including third party licenses, must be observed (e.g.,some licenses require that the text of the license be included with the distribution; in this case, position the license text either in the _notice_ file or as close to the corresponding content as possible).
+====
+
+[[legaldoc-contributor]]
+== Contributor Guide
+
+While not strictly _legal documentation_, having concise and clear information how to get involved in a project is very important for building the indexterm:[Community] community around a project. Therefore, to simplify adoption and encourage contributions it is recommended that projects maintain a _Contributor Guide_.  The file is conventionally named `CONTRIBUTING` (or `README`) and may include a suffix (e.g.,`CONTRIBUTING.md`).
+
+Like legal documentation, a `CONTRIBUTING` file should be placed in the root of each repository. Keep the guide as concise as possible: it should contain a few words and a link to other documents for details and more information. Use plain text that can be easily consumed without being formally rendered.
+
+Minimally, the `CONTRIBUTING` file should include:
+
+* The name and brief description of the project;
+* A link to the project's website and documentation;
+* A pointer to the Eclipse Foundation's Terms of Use (`pass:[https://www.eclipse.org/legal/termsofuse.php]`);
+* A link to the primary Communication channel (how do potential contributors contact the project team?);
+* A pointer to the canonical source code repositories;
+* Mechanics of how to actually contribute (e.g., merge/pull requests);
+* Link to sign the indexterm:[ECA] ECA (`pass:[https://www.eclipse.org/legal/ECA.php]`)
+
+Additionally, the guide might include:
+
+* Link to downloads; and
+* Link to a more comprehensive project contribution guide (e.g.,a website).
+
+[[legaldoc-contributor-setup]]
+=== Setting up the Development Environment
+
+The `CONTRIBUTING` file should make it easy for people who got interested in the project to start working with it. It should include:
+
+* Instructions for obtaining the sources;
+* Clear instructions for setting up any additional tools needed for the development;
+* A description of the dependencies of the project, or even better how to easily get all the necessary content the project depends on; and
+* A list of necessary steps to build the artifacts of the project (e.g.,bundles, features, stand-alone products). 
+
+[[legaldoc-contributor-contributing]]
+=== Contributing Code
+
+The `CONTRIBUTING` file should make it very clear what are the steps a contributor needs to follow, so that their contribution reaches the project and may be accepted. 
+
+It should:
+
+* Include very specific instructions on how contributions are accepted;
+* Describe how to submit contributions (GitHub pull requests or GitLab merge requests), along with the necessary steps to have the project accept those requests;
+* Describe the legal part of the process for accepting contributions, e.g.,point to the the {ecaUrl}[Eclipse Contributor Agreement] (ECA) and {dcoUrl}[Developer Certificate of Origin] (DCO); and
+* Describe any project specific rules, which the contributors should know, for example:
+** preferences on code quality;
+** code formatting; and
+** processes for code review.
+
+Projects may slightly different rules for contributing to different repositories. Make this clear to the contributors.
+
+[[legaldoc-contributor-ideas]]
+=== Help Wanted
+
+The `CONTRIBUTING` file can optionally provide guidance for developers who want to help, but don't have their own agenda. To help these developers, the guide may list ideas for improvements which the team already knows, or areas where help is needed.
+
+[NOTE]
+====
+Keeping a help-wanted list up-to-date can be challenging. Consider including a query (e.g.,for `helpwanted` issues) rather than (or in addition to) specific work area recommendations.
+====
+
+=== CONTRIBUTING file template
+
+[%nowrap]
+----
+# Contributing to <project name>
+
+Thanks for your interest in this project.
+
+## Project description
+
+<description>
+
+* https://projects.eclipse.org/projects/<project id>
+
+## Terms of Use
+
+This repository is subject to the Terms of Use of the Eclipse Foundation
+
+* https://www.eclipse.org/legal/termsofuse.php
+
+## Developer resources
+
+Information regarding source code management, builds, coding standards, and
+more.
+
+* https://projects.eclipse.org/projects/<project id>/developer
+
+## Project License
+
+<licence>
+
+Contributions are received under the terms of the project licence.
+
+## Help Wanted
+
+Describe how contributors can help the project. 
+
+e.g., provide a pointer to "helpwanted" issues
+
+## Eclipse Foundation Development Process
+
+This Eclipse Foundation open project is governed by the Eclipse Foundation
+Development Process and operates under the terms of the Eclipse IP Policy.
+
+* https://eclipse.org/projects/dev_process
+* https://www.eclipse.org/org/documents/Eclipse_IP_Policy.pdf
+
+## Eclipse Contributor Agreement
+
+In order to be able to contribute to Eclipse Foundation projects you must
+electronically sign the Eclipse Contributor Agreement (ECA).
+
+* https://www.eclipse.org/legal/ECA.php
+
+The ECA provides the Eclipse Foundation with a permanent record that you agree
+that each of your contributions will comply with the commitments documented in
+the Developer Certificate of Origin (DCO). Having an ECA on file associated with
+the email address matching the "Author" field of your contribution's Git commits
+fulfils the DCO's requirement that you sign-off on your contributions.
+
+For more information, please see the Eclipse Committer Handbook:
+https://www.eclipse.org/projects/handbook/#resources-commit
+
+## Contact
+
+Contact the project developers via the project's "dev" list.
+
+* https://accounts.eclipse.org/mailing-list/<project dev list>
+----
+
+[[legaldoc-security]]
+== SECURITY File
+
+The `SECURITY` file describes products and product versions that for which security updates may be applied and the means by which vulnerabilities are reported. The `SECURITY` file may have an extension, and should be placed in the root of all project repositories.
+
+It should:
+
+* Provide a pointer to the Eclipse Foundation's {securityUrl}[security landing page];
+* Describe supported versions (with regard to security patches); and
+* Provide a communication channel for reporting vulnerabilities.
+
+The Eclipse Security Team provides a https://github.com/eclipse-csi/security-handbook/blob/main/templates/SECURITY.md?plain=1[template] (that you must modify).
+
+[[legaldoc-codeOfConduct]]
+== Community Code of Conduct
+
+The `CODE_OF_CONDUCT` file should provide a copy of the Eclipse Foundation's {codeOfConductUrl}[Community Code of Conduct]. The `CODE_OF_CONDUCT` file may have an extension, and should be placed in the root of all project repositories. 
+
+The Community Code of Conduct is provided in ({codeOfConductMdUrl}[markdown]) format.
+
+[[legaldoc-faq]]
+== Frequently Asked Questions
+
+[qanda]
+How do file headers change when content is refactored?::
+
+When you split a file during a refactoring exercise, any new files that you create must automatically inherit the header of the original. If even fragment of text from a single line of the original content survives the refactoring (whether generated, rote, or otherwise), then the original copyright statement and author information should be retained.
++
+Even a refactoring exercise that does not change behaviour, may add intellectual property. When refactoring adds content, copyright statements should be updated to reflect the addition. In concrete terms, you can either add the new copyright holders to the existing copyright statement or append "and others" (especially when the list of copyright holders gets long). 
+
+Do we need to specify a range of years in the copyright statement? ::
+
+No. In the past, legal advice was that the year of the initial creation of the content and the year of the last change should be reflected in the copyright header. This is no longer the case. Specify the year that the content was initially created in the copyright statement.
+
+Do I need to update the year in the copyright statement when I make changes to the file? ::
+
+No. The year in the copyright header should be the year that the content was created.
+
+How does the copyright header change when we accept a change to an existing file? ::
+
+You have some options. 
++
+If the current copyright statement indicates copyright of a single entity, and the contribution comes from a different entity, then you can generally append "and others" to the existing copyright statement.
++
+[%nowrap]
+----
+/********************************************************************************
+ * Copyright (c) 2007 Milo Bloom and others
+ * 
+ ...
+----
++
+Or, you can add a separate line for the new copyright holder (with the year of the new contribution).
++
+[%nowrap]
+----
+/********************************************************************************
+ * Copyright (c) 2007 Milo Bloom
+ * Copyright (c) 2023 Mike Binkley
+ * 
+ ...
+----
++
+Both options are acceptable, so you can pick whichever works best for the situation.
+
+Do the _license_ and _notice_ files need to be named `LICENSE` and `NOTICE`?::
+
+No. If there are technical limitations, for example, that require that you select different names, you can do so. But for the sake of consistency for our communities we prefer that this convention be followed. Format-specific file extensions (e.g.,`.md` as in `NOTICE.md`) can be used.
+
+Can the _license_ and _notice_ files use Markdown?::
+
+Yes. Any human-readable markup format may be used.
+
+Is the cryptography statement required?::
+
+The cryptography statement is only required if the project code includes cryptography algorithms or other cryptographic content.
+
+What licenses should be listed in a build script (e.g.,Maven `pom.xml` file)?::
+
+The license(s) in the build should reflect what is being built, but typically not the license(s) of referenced third party content. The `pom.xml` file for project code, for example, should list the project license(s).
+
+In a multiple license scenario, do we use conjunction (`AND`) or disjunction (`OR`)?::
+
+We follow the lead of the https://spdx.org/[SPDX community] with regard to the way in which we express the combination of licenses, and use inclusive disjunction. In the example of a dual licensing scenario, we make the content available under the terms of licenses A *AND* B, but the consumer accepts it under the terms of license A *OR* B or both. Think of it from the perspective of the consumer.
+
+How do I get help?::
+
+If you have any questions or concerns, contact {legalEmail}.

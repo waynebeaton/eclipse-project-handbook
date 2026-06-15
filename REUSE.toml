@@ -44,7 +44,7 @@ SPDX-FileCopyrightText = "Copyright © 2017 The Eclipse Foundation"
 SPDX-License-Identifier = "EPL-2.0"
 
 [[annotations]]
-path = ["source/images/**.png", "source/images/**.jpg"]
+path = ["source/images/**.png", "source/images/**.jpg", "modules/ROOT/images/**.png", "modules/ROOT/images/**.jpg"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2015 Contributors to The Eclipse Foundation"
 SPDX-License-Identifier = "EPL-2.0"

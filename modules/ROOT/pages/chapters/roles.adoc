@@ -1,0 +1,245 @@
+////
+ * Copyright (C) 2020,2022 Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * https://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-FileType: SOURCE
+ *
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+[#roles]
+= Project Roles
+
+The {edpLink} defines multiple formal open source project roles. Primary among the roles are those of xref:roles-cm[Committer], xref:roles-pl[Project Lead], and xref:roles-pmc[Project Management Committee].
+
+[#roles-cm]
+== Committers
+
+indexterm:[Committer] For {forgeName} projects (and the open source world in general), xref:contributing-committers[committers] are the ones who hold the keys. Committers are either appointed at the time of project creation, or indexterm:[Committer, Election]xref:elections-committer[elected] by the existing project team.
+
+Committers decide what code goes into the code base, they decide how a project builds, and they ultimately decide what gets delivered to the adopter community. With awesome power, comes awesome responsibility, and so the Open Source Rules of Engagement described by the {edpLink}, puts _meritocracy_ on equal footing with _transparency_ and _openness_: becoming a committer isn't necessarily hard, but it does require a demonstration of merit.
+
+Committers:
+
+* Operate in an open, transparent, and meritocratic manner;
+* Write code (and other project content) and push it directly into the project's source code repository;
+* Review contributions (merge and pull requests) from contributors;
+* Engage in the xref:ip[Intellectual Property Due Diligence Process];
+* Vote in xref:elections-committer[committer] and xref:elections-pl[project lead elections];
+* Engage in the project planning process; and
+* Otherwise represent the interests of the open source project.
+
+[#roles-pl]
+== Project Lead
+
+indexterm:[Project Lead] {forgeName} projects must have at least one project lead, and may have more than one. The project leads are the primary liaison between the project team and the xref:roles-emo[Eclipse Management Organization] (EMO). As the first link in the project leadership chain, project leads have responsibility to ensure that the project team is able to successfully implement the goals of the project in accordance with the {edpLink} and {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy]. 
+
+The EMO considers it a good practice to have more than one person in that role to ensure that there is continuity. There is no artificial maximum number of project leads for {aForgeName} project: the main thing that the EMO is concerned with is that project leads are elected in a vendor-neutral manner following public demonstrations of leadership (documented as comments on issues, contributions to mailing list discussions, etc.) that are cited in the nomination statement. The EMO specifically watches elections to ensure that vendor neutrality is observed.
+
+Project leads are either appointed at the time of project creation or indexterm:[Project Lead, Election]xref:elections-pl[elected] by their xref:roles-cm[committer] peers (an individual is generally expected to have served as a committer before being nominated for the project lead role). Project leads must also be committers, but the two roles are distinct.
+
+Project leads are responsible for ensuring that project committers are following the rules. At the most basic level, _the rules_ are the open source rules of engagement defined in the {edpLink} (openness, transparency, and meritocracy), and we depend on them to make sure that team members understand their obligations under the IP Policy and are correctly implementing the xref:ip[Intellectual Property Due Diligence Process].
+
+[TIP]
+====
+Project leads should seek help/advice from the xref:roles-pmc[PMC] and xref:roles-emo[EMO] when they need assistance.
+====
+
+Project leads have the ability to xref:elections-retire-cm[retire committers]: this is a power that must be used responsibly. A project lead needs to be able to support their decision to retire a committer. As a best practice, the project lead should give committers reasonable opportunity to retrain their status, and -- should the decision be made to retire -- committer retirements should be announced on the project's primary communication channels including the xref:resources-dev-list[dev-list]. 
+
+When committers are disruptive or otherwise behaving in a manner that is detrimental to the project, the project lead should work with the PMC and the EMO to resolve the issue.  
+
+[TIP]
+====
+The six months of inactivity is more of a suggested period of time for considering retirement of committers; we defer to the judgement of the project lead to determine when and if somebody who is inactive should be retired.
+====
+
+Project leads have some extra privileges on xref:resources-gitlab-access[GitLab] and xref:resources-github-access[GitHub].
+
+The project lead is not the technical lead. So it's not strictly their responsibility to develop things like coding standards, project policies, and such. They are responsible, however, for making sure that those sorts of things get created and for making sure that the project team is working to complete shared goals. 
+
+[NOTE]
+====
+A project lead is not necessary a technical lead. We have no formal designation of technical lead; this tends to occur organically.
+====
+
+Any committer can initiate a xref:progress-review[review] with the EMO, but the EMO will always copy the project lead(s) in related communication to ensure that they are aware that the committer is acting as their delegate. 
+
+Project leads can also request the EMO to initiate a xref:release-restructuring[restructuring review] in case a project needs to change the meaning of the scope or make any other significant changes to one or more Projects. 
+
+[#roles-pmc]
+== Project Management Committee
+
+indexterm:[Project Management Committee]A project management committee (PMC) is responsible for the operation of exactly one top-level project as defined by the {edpLink}. Per the EDP, top-level projects sit at the top of the open source project hierarchy. 
+
+The PMC’s role is, fundamentally, to maintain the overall vision and operation of the top-level project and all of the projects that fall within their purview. Very often (though it really depends on the nature of the top-level project), the PMC will take a very active role in determining how their projects fit together, and how they communicate and interoperate. In pragmatic terms, the PMC ensures that projects are following the rules, set the standards over and above the basic requirements for releases and corresponding documentation, approves intellectual property contributions, and approves committer and project lead elections. 
+
+Top-level projects do not generally maintain open source content of their own, but rather provide oversight and guidance to those open source projects that fall under them in the project hierarchy. All projects that fall under a particular top-level project must fit within the mission and scope defined by the top-level project’s charter. In addition to mission and scope, the charter may further define other requirements or establish guidelines for practices by the project that fall under its purview.
+
+The primary role of the PMC is to ensure that project teams are implementing the EDP and operating within the terms outlined by the top-level project's charter. In particular, the PMC monitors project activity to ensure that project teams are operating in an open and transparent manner. 
+
+The PMC is responsible for defining and managing the structure of the top-level project and the organisation of the open source (software and specification) projects contained within.
+
+The PMC provides other oversight regarding the operation of open source projects. They review and approve xref:progress-review[progress reviews], and facilitate cross-project communication within the top-level project.
+
+[#roles-pmc-composition]
+=== Composition
+
+A PMC has one or more PMC leads and zero or more PMC Members. 
+
+The PMC Lead is appointed by the Eclipse Foundation's Board of Directors. When an existing PMC Lead retires, the EMO will work with the PMC to identify a replacement and then with the EMO(ED) to have that individual ratified by the board of directors.
+
+PMC Members are appointed by the EMO(ED). The criteria by which PMC members are identified varies by PMC, but is generally by nomination and election within the existing PMC. Some PMCs are designed to be composed of representatives from some subset of the projects that operate under their purview. In such a case, the means of identifying members should be documented in the corresponding top-level project charter.
+
+In the unlikely event that a member of the PMC becomes disruptive to the process or ceases to contribute for an extended period, the member may be removed by the unanimous vote of the remaining PMC members, subject to approval by the EMO. Removal of a PMC Lead requires approval of the Board.
+
+[#roles-pmc-ip]
+=== PMC Role in the Intellectual Property Due Diligence Process
+
+The Eclipse IP Team has limited technical knowledge and so relies on the PMC to use their relationship with the open source projects operating under their purview, their knowledge and experience with the community and related technology to provide technical insight. Specifically, the IP Team depends on the PMC to use their knowledge and experience with their community and technology to flag any potential issues that may not be obvious.
+
+The PMC might, for example, know that the license for some content had been, at some point in the past, changed; or that some particular piece of content links in some non-obvious manner to other intellectual property that should also be vetted.
+
+[TIP]
+====
+The PMC should not perform any detailed intellectual property analysis of content. The IP Team will engage in detailed analysis, identify license compatibility issues, and determine whether or not license headers have been appropriately applied, for example.
+====
+
+The EMO IP Team will connect with the PMC when their assistance is required.
+
+[#roles-pmc-elections]
+=== PMC Role in Elections
+
+The PMC reviews and approves (or vetoes) xref:elections-committer[committer] and xref:elections-pl[project lead] elections. The role of the PMC is validate that the election was run according to the open source rules of engagement and election process described in the {edpLink}, and consistent with the Top-Level Project Charter. 
+
+In practical terms, the EMO depends on the PMC to validate that elections provide (either via the nomination statement, or by statements made by committers during the voting period) a transparent record of relevant contribution by the nominee and maintain vendor/employer neutrality.
+
+From the EMO's perspective, any single PMC member can review the election and -- if they feel that the election was correctly run -- approve it. Any single member can do this on behalf of the PMC. PMCs tend to do this opportunistically: the first PMC member who receives notice of the completed election does a quick review and approves (or not). In the general case, a PMC member will independently review and approve an election; in specific individual cases, the PMC member may decide that further investigation is required and engage with the rest of the PMC for guidance.
+
+[NOTE]
+====
+The PMC may, at its discretion, add requirements for elections involving projects that operate under its purview. The PMC must capture additional requirements (ideally in the Top-Level Project Charter or in a companion document) and apply them consistently. 
+====
+
+The xref:resources-pmc-list[PMC list] is notified when elections require the PMC's attention. Alternatively, PMC members can review elections that require their attention on the _Notifications_ page. 
+
+[TIP]
+====
+Click the drop-down next to "Welcome, <name>" to access the Notifications page.
+
+image::notifications.png[]
+====
+
+[#roles-pmc-reviews]
+=== PMC Role in Reviews
+
+As part of the project leadership chain, the PMC is tasked with approving progress, release, and graduation reviews.
+
+The criteria by which the PMC determines whether or not to approve a review, and the process that they follow to grant approval varies by PMC. In general, with this request for approval, the EMO seeks the advice of the PMC regarding whether or not projects under its purview are operating according to the open source rules of engagement. That is, the EMO expects that the PMC has some insight into the operation of the projects operating under their purview, and know whether or not project teams have what they need to be successful.
+
+A project lead or committer must request PMC approval via email to the xref:resources-pmc-list[PMC's mailing list]. Any member of the PMC may approve the review by responding directly to the request with a `pass:[+1]` (that is, the EMO will interpret any single PMC member's `pass:[+1]` as the PMC's affirmative response).
+
+[NOTE]
+====
+The EMO monitors all PMC mailing lists and so will likely observe the PMC's approval response. The EMO will acknowledge the approval via the issue being used to track the review.
+
+Since any single member of the PMC may approve a review on behalf of the entire PMC, the EMO purposely delays recording the approval in order to give other PMC members an opportunity to challenge their colleague.
+====
+
+[#roles-pmc-grievance-handling]
+=== PMC Role in Grievance Handling
+
+indexterm:[Grievance Handling]The PMC is a link in the project leadership chain. As such, the PMC has a role in the grievance handling process: they identify and document project dysfunction (with the responsibility to remove or replace disruptive committers).
+
+The PMC is an important link in the project leadership chain, which is composed of the project's project lead(s), the leadership of the parent project (if any), the PMC leads and PMC members, the EMO, and the Executive Director of the Eclipse Foundation. In exceptional situations—such as projects with zero active committers, disruptive committers, or no effective project leads—the project leadership chain has the authority to make changes (add, remove) to the set of committers and/or project leads of that project, and otherwise act on behalf of the project lead.
+
+[#roles-pmc-representation]
+=== PMC Representation
+
+Every PMC is entitled to appoint one representative to the xref:roles-ac[Eclipse Technical Advisory Council].
+
+[#roles-etac]
+== Eclipse Technical Advisory Council
+
+[[roles-ac]]
+indexterm:[Technical Advisory Council]The Eclipse Technical Advisory Council (ETAC) serves the community by identifying and tackling any issues that hinder Eclipse's continued technological success and innovation, widespread adoption, and future growth. The Eclipse Technical Advisory Council is responsible for guiding and influencing governance structures and advises the EMO and executive director in matters of importance to developers (including, but not limited to, proposing changes to the {edpUrl}[Eclipse Foundation Development Process] (EDP)).
+
+[NOTE]
+====
+The Eclipse Technical Advisory Council had previously been referred to as the Eclipse _Architecture_ Council (with slightly modified responsibilities). 
+====
+
+Comprising technical leaders from Eclipse open source projects and the community, it is the council's goal to keep the projects successful and healthy, the processes simple and smooth, and the communities vibrant and cohesive.
+
+More concretely, the Eclipse Technical Advisory Council serves three basic purposes:
+
+- To maintain and interpret the {edpLink};
+- To provide advice to the xref:roles-emo[Eclipse Management Organization];and
+- To contribute best practices and advice to {forgeName} open source projects.
+
+Every xref:roles-pmc[PMC] may appoint a representative to the Technical Advisory Council to represent the interests of the PMC and corresponding Top-level Project. Every Strategic Member of the Eclipse Foundation may also appoint a representative. Other Technical Advisory Council Members are nominated and voted on by the Technical Advisory Council itself, and appointed to the council by the Eclipse Foundation's Executive Director. Appointed members serve a two year renewable term.
+
+The Technical Advisory Council interacts primarily via their https://accounts.eclipse.org/mailing-list/eclipse.org-architecture-council[mailing list]. List participation is limited only to Technical Advisory Council members and subscription to the list is automatic. Additionally, the Technical Advisory Council meets (remotely) every month for a one-hour closed discussion (with public minutes).
+
+xref:roles-cm[Committers] and xref:roles-pl[Project Leads] should connect with the Technical Advisory Council via their PMC.
+
+[#roles-spec-committee]
+=== Specification Committee
+
+indexterm:[Specification Committee]Specification committees are a feature of indexterm:[Working Group]{wgUrl}[working groups] and operate under the terms defined in the corresponding working group's charter. 
+
+A specification committee plays an important role in the governance of xref:specifications[specification projects] that operate under their purview according to the {efspUrl}[Eclipse Foundation Specification Process] (EFSP). For completeness, specification committees have _no role_ in the governance of _regular_ (technology) open source projects (that is, projects that are not engaged in the process of creating specifications).
+
+[TIP]
+====
+For more information about specification committees, please see xref:specifications-committee[Specification Committee] in the Specifications section of this document.
+====
+
+[#roles-emo]
+== Eclipse Management Organization (EMO)
+
+indexterm:[Eclipse Management Organization]The Eclipse Management Organization (EMO) consists of the Eclipse Foundation staff, and the Eclipse Technical Advisory Council. The EMO is responsible for providing services to the projects, facilitating project reviews, resolving issues, and more. The EMO is the maintainer of the Eclipse Foundation Development Process. The best method of contact with the EMO is by email ({emoEmail}). If you have a question that cannot be answered by project lead, or xref:roles-pmc[PMC], ask the EMO.
+
+[#roles-other]
+== Other Roles
+
+While it is natural to have one or more committers become technical leaders in the project team, there is no formal technical lead role defined in the Eclipse Foundation Development Process (EDP). Likewise, while it is natural for certain members of a xref:specifications[specification] project team to become leaders in the specification process, there is no formal notion of specification lead (or "spec lead") defined in the Eclipse Foundation Specification Process (EFSP). Any de facto technical or specification lead does not have any special authority beyond that which is granted to them by the other project committers.
+
+The committers in a project team have some say over who their leaders are and what powers they grant to those leaders. While the role is not specifically defined for this sort of thing, the xref:roles-pl[project lead] role could be granted decision making powers. It is completely reasonable for a project team to decide, for example, that somebody in the project lead role must approve of all commits and anybody with that role can mitigate potential rogue actions by rolling back commits. One of the key benefits of organising in this manner is that project lead is an elected position, so project committers have a build-in process for capturing the decision to grant those extra powers.
+
+For many open source projects, the committers follow the natural leaders. But when a more formal relationship is desired, it must be arrived at by consensus of the project team (via public channels) and documented clearly so that everybody can understand how the project team works (making it very clear how a project team works is a critically important aspect of growing diversity in an open, transparent, and meritocratic open source project team). If the project team decides, for example, that all committers must contribute their updates as pull requests that may only be merged by a project lead, then that must be documented (it's fairly common for project teams to require that pull requests from one committer be merged by a different committer). When the role is formally defined, it's also important to document how a committer ascends to into that role (to be clear, in the spirit of vendor neutrality, this criteria cannot be based on employment status).
+
+[NOTE]
+====
+Any rules that a project team decides to adopt don’t have to apply homogeneously across the entire project; a specification project team could decide, for example, that all contributions of text to a specification document must be approved by project lead before they can be merged, but that all committers can just merge their contributions to an API.
+====
+
+[#roles-faq]
+== Frequently Asked Questions
+
+[qanda]
+
+Is the Project Lead a super-committer? ::
+
+Sort of. The project lead role does not automatically grant the individual committer privileges, but all project leads must also be committers. In practice, a project lead has all of the privileges of a committer plus the privileges of a project lead, and so are effectively _super-committers_.
++
+There is no specific requirement for project leads to wear capes.
+
+Is there a Project Manager role? ::
+
+The {edpLink} **does not define** a project manager role. The role of a project manager is not typically defined  in open source governance models. Rather the focus is on clearly defining various roles and responsibilities within the community to ensure effective management and contribution.
++
+Vendor neutrality is one of the main drivers for bringing an open source project to the Eclipse Foundation, and when the project is doing open source right (according to our {roeUrl}[rules of engagement]), the project team will have a diversity of interests represented. That is, the project team will have committers on the team that come from a variety of different employers (including self-employed).
++
+In that ideal state where committers represent diverse interests, having a designated manager assigning tasks to specific individuals doesn't actually work. There’s no notion of centralised authority.
++
+The Eclipse Foundation Development Process does not formally define a project manager role. We can think of the project lead role as having project management sorts of responsibilities, but the responsibilities of a project lead are more concerned with ensuring the project team understands their responsibilities and are engaging in practices that are consistent with the {edpLink}, the intellectual property policy, and the goals of the project.
++
+Generally, open source projects are managed though collaboration, consensus building, and compromise. 
+
+Can the PMC push content into subproject repositories? ::
+
+No. PMC Members do not automatically have commit privileges. They must earn their place as a committer on subprojects just like any other contributor.

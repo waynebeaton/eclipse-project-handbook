@@ -1,0 +1,159 @@
+////
+ * Copyright (C) 2015 Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * https://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-FileType: SOURCE
+ *
+ * SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
+ * SPDX-FileCopyrightText: 2015 Contributors to the Eclipse Foundation
+ *
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+[[legaldoc-plugins]]
+= Legal Documentation for Eclipse Platform Plug-ins and Fragments
+
+Eclipse Platform Plug-ins and Fragments are highly modularised to facilitate ease of delivery, extensibility, and upgradeability. A typical Eclipse Platform-based product may potentially include plug-ins and features authored and/or distributed by many different parties including Eclipse Foundation open source projects, other open source organisations, and commercial vendors.
+
+== Software User Agreement
+
+The top-level umbrella agreement is the {suaUrl}[_Eclipse Foundation Software User Agreement_] (SUA). The SUA is not actually a license: it does not grant any rights to use the software and that is why it must reference other legal notices and agreements. The main purpose of the SUA is to describe the potential layout of the legal documentation in the accompanying content.
+
+The most important wording is that which says that the Eclipse Public License (EPL) applies to all the content unless otherwise indicated. 
+
+The rest of the text describes the other kinds of notices or licenses that _may_ be found in the content. There is also a short paragraph under the heading _Cryptography_ which lets consumers know that the content may contain cryptography.
+
+[NOTE]
+====
+You will also often see on many of the download pages at Eclipse.org, text that says: "All downloads are provided under the terms and conditions of the Eclipse Foundation Software User Agreement unless otherwise specified."
+====
+
+The SUA usually appears in place of an actual license in the <<legaldoc-plugins-features,metadata for features>>.
+
+[[legaldoc-plugins-abouts]]
+== Plug-ins and About Files
+
+Any directory containing content that is licensed under different terms than the project license(s), should be detailed in a file named `about.html`. We call these files _Abouts_. _Abouts_ usually contain licensing terms as well as other information such as whether content contains cryptographic functionality that may be subject to export controls.
+
+Most plug-ins will contain a default _About_ that simply confirms that all the content in that plug-in is made available under the project license, typically the Eclipse Public License (EPL). There are other plug-ins, however, that will contain content licensed under licenses other than or in addition to the EPL and/or third party content provided under other licenses. If you are the maintainer of a plug-in for an Eclipse project, please see the <<legal-doc-plugins-about-templates,About templates for plug-ins>>.
+
+Since most plug-ins do *not* contain specially-licensed content, most plug-ins will contain only the default _About_. The plug-ins with the special _Abouts_ are the interesting ones that most users will want to read.
+
+[NOTE]
+====
+All plug-ins and fragments should contain an _About_ file. All Eclipse project plug-ins and fragments must contain either one of the default _Abouts_ or a special _About_ written and/or approved by the Eclipse Foundation. In `JAR`’ed plug-ins, any local files linked from the _About_ such as copies of licenses, must be located in a directory called `about_files`.
+====
+
+Although _Abouts_ may be found potentially in any directory, they should always be found in plug-ins and fragments. Previously, plug-ins and fragments were usually packaged as sub-directories of a directory named `plugins`. Currently, plug-ins and fragments may also be packaged as `JAR` files (Java™ ARchives). For `JAR`’ed plug-ins, any local files linked from an _About_ such as copies of licenses, must be located in a directory called `about_files`. The contents of the `about_files` directory are handled specially so that links resolve correctly when the _About_ in a `JAR`’ed plug-in is viewed in an external browser spawned from the _About dialog_.
+
+.Example file layout
+[source,subs="verbatim,attributes"]
+----
+eclipse
+ ├── LICENSE - Text of the project license(s)
+ ├── plugins
+ │   ├── org.eclipse.core.runtime_3.13.0.v20170207-1030.jar - Plug-in packaged as a JAR
+ │   │   ├── about.html - Standard _About_ file
+ │   │   └── ...
+ │   ├──org.apache.ant_1.10.1.v20170504-0840 - Third party content packaged as a directory
+ │   │   ├── about.html
+ │   │   ├── about_files - Licenses and notices related to the content
+ │   │   │   ├── DOM-LICENSE.html
+ │   │   │   ├── LICENSE
+ │   │   │   ├── NOTICE
+ │   │   │   ├── SAX-LICENSE.html
+ │   │   │   └── APACHE-2.0.txt
+ │   │   └── ...
+ │   └── ...
+ └── ...
+----
+
+Users looking for legal documentation may find the _Abouts_ by browsing the directory structure of an Eclipse installation; but the files are also viewable from the _About plug-ins_ dialog in the Eclipse workbench. To view the _Abouts_, go to the menu item menu:Help[About Eclipse Platform], click on the btn:[Plug-in Details] button, select a plug-in, and click on the btn:[More Info] button.
+
+=== The Abouts Checklist
+
+* Every plug-in has an `about.html`, usually the standard one;
+* Every plug-in with a non-standard `about.html` contains the additional referenced license files; and
+* Every `JAR`’ed plug-in stores linked files in `about_files`.
+
+image::About_plugins_dialog.png[]
+
+[[legaldoc-plugins-features]]
+== Features Licenses and Feature Update Licenses
+
+A feature is a set of one or more related plug-ins and/or fragments that can be installed and upgraded together. There are three important legal documentation files for features, the _Feature License_ (`license.html`), the _Feature Update License_ (the `license` property in `feature.properties`) and the _Feature Blurb_ (the `blurb` property in `about.properties`).
+
+Each feature has a file named `license.html`, called a _Feature License_, that contains the text of the {suaHtmlUrl}[SUA in HTML format]. Each feature includes additional files containing the actual text of the project license(s) in HTML format (e.g. the {epl20Url}[Eclipse Public License 2.0] in file named `epl-2.0.html`).
+
+Each feature has a file named `feature.properties`. In that file is a property named `license`, which is known as the _Feature Update License_. The _Feature Update License_ must contain a copy of {suaPropertiesUrl}[SUA in `plaintext` format].
+
+Each feature has at least one plug-in associated with it which is the _feature plug-in_ for that feature. Not surprisingly, this plug-in usually has the same name as the feature. The property named `blurb` contains text that appears in the _About features_ dialog in the Eclipse workbench. This is known as a _Feature Blurb_. Blurbs often contain copyright notices and any other statements of attribution that may be required by licenses.
+
+[NOTE]
+====
+The difference between the _Feature License_ and _Feature Update License_ is when they are shown to the user. The _Feature License_ is only available once a feature has been installed. The _Feature Update License_ is seen when a user is using the _Install Dialog_ to install or upgrade a feature and must agree to an agreement before proceeding with the installation. 
+
+One thing that is important to note is that with the distributed licensing model used by plug-ins, unless a _Feature Update License_ contains an aggregation of all the notices from the plug-ins for a feature, a user will not be able to see these notices before installing the feature. It is for this reason that the maintainer of a feature may choose to have different text for the _Feature License_ and _Feature Update License_.
+====
+
+All features must contain a _Feature License_ and a _Feature Update License_ in the directory for that feature. The feature’s plug-in must contain a _Feature Blurb_.
+
+The _Feature License_ is found in the feature directory which is usually a sub-directory of the directory named `features`. Any referenced files (for example, the EPL) are located in the same location.
+
+The _Feature Update License_ is found in the feature directory which is usually a sub-directory of the directory named `features`. Any referenced files (for example, the EPL) are located in the same location.
+
+The _Feature Blurb_ resides in the `plugins` directory as either a sub-directory or a `JAR`. In the feature plug-in there is a file named `about.properties`., the _Feature Blurb_ is the property named `blurb`. To view the blurb for each installed feature, go to the menu item menu:Help[About Eclipse Platform > Feature Details] and then select a feature. The blurb will appear in the bottom half of the dialog.
+
+=== The Feature Checklist
+
+* Every feature has the text of the SUA in HTML in `license.html`;
+* Every feature has the project license(s) in HTML (e.g., typically the EPL in `epl-2.0.html`);
+* Every feature has the text of the SUA in `plaintext` in the `license` section of `feature.xml` or the `license` property of `feature.properties`; and 
+* Every feature plug-in has copyright notices, etc. in the `blurb` property of `about.properties`
+
+.The About Eclipse Platform Features Dialog
+image::About_features_dialog.png[]
+
+.An example directory structure corresponding to the above description
+[source,subs="verbatim,attributes"]
+----
+eclipse
+ ├── features
+ │   ├── org.eclipse.rcp_4.7.1.v20171009-0410 - Feature directory
+ │   │   ├── license.html - Feature License (SUA)
+ │   │   ├── epl-2.0.html - The project’s primary licenses(s) referenced by the SUA/Feature License
+ │   │   ├── feature.properties - Feature Update License (SUA) in `license` property
+ │   │   └── ...
+ │   └── ...
+ ├── plugins
+ │   ├── org.eclipse.rcp_4.7.1.v20171009-0410.jar - Plug-in packaged as a directory
+ │   │   ├── about.properties - Feature Blurb in `blurb` property
+ │   │   └── ...
+ │   └── ...
+ └── ...
+----
+ 
+[[legaldoc-plugins-source-code]]
+== Notices in source code
+
+Where practical, all source code (which includes Java source as well other types of files such as `XML`, `HTML`, etc.) should contain appropriate <<ip-copyright-headers,copyright and license>> notices as well information on each contribution.
+
+If the source is to be licensed under a license other than or in addition to the EPL, you must ensure that the Eclipse Foundation has approved the notice.
+
+[[legaldoc-plugins-notices-in-documentation]]
+== Notices in documentation
+
+The _Legal_ page has a copyright notice and a link to the _About_ in the plug-in that contains the book.
+
+.Example legal notice in documentation
+image::Help_legal_page.jpg[]
+
+Documentation books usually contain a _Legal_ page as the last page in the book.
+
+[[legal-doc-plugins-about-templates]]
+== About Templates for Plug-ins
+
+See link:https://www.eclipse.org/legal/epl/about.php[About File Templates].
