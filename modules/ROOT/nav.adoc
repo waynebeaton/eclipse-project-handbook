@@ -1,0 +1,44 @@
+////
+ * Copyright (C) 2015 Eclipse Foundation, Inc. and others.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * https://www.eclipse.org/legal/epl-2.0.
+ *
+ * SPDX-FileType: SOURCE
+ *
+ * SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
+ *
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+* xref:index.adoc[Eclipse Project Handbook]
+** xref:index.adoc#preamble[Overview]
+** xref:index.adoc#starting[Starting a New Project]
+*** xref:index.adoc#starting-incubation[Incubation]
+*** xref:index.adoc#roles[Project Roles]
+*** xref:index.adoc#committer-badges[Committer Badges]
+*** xref:index.adoc#identity-verification[Identity Verification]
+** xref:index.adoc#resources[Infrastructure and Resources]
+*** xref:index.adoc#sbom[Software Bill of Materials]
+*** xref:index.adoc#security[Security]
+*** xref:index.adoc#contributing[Contributing]
+** xref:index.adoc#elections[Elections]
+** xref:index.adoc#paperwork[Committer Paperwork]
+** xref:index.adoc#specifications[Specification Projects]
+** xref:index.adoc#ip[Intellectual Property]
+** xref:index.adoc#ai[Using Artificial Intelligence]
+*** xref:index.adoc#genai[Generative AI Usage]
+*** xref:index.adoc#genai-faq[Generative AI FAQ]
+** xref:index.adoc#legaldoc[Legal Documentation]
+** xref:index.adoc#release[Releases and Reviews]
+** xref:index.adoc#pmi[Project Management Infrastructure]
+** xref:index.adoc#trademarks[Trademarks]
+** xref:index.adoc#promotion[Promotion and Publicity]
+** xref:index.adoc#community[Community]
+*** xref:index.adoc#checklist[Committer Checklist]
+** xref:index.adoc#glossary[Glossary]
+** xref:index.adoc#contact[Contact]
+** xref:index.adoc#edp[Eclipse Development Process]
+** xref:index.adoc#dpia[Data Protection Impact Assessment]
+** xref:index.adoc#document-history[Document History]

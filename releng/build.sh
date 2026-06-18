@@ -12,8 +12,16 @@
 # This script likely only runs on Wayne's desktop.
 
 cd "${BASH_SOURCE%/*}"
+
+# Generate the commits file for document history
+# Output to the Antora content location
 git log --no-merges --pretty=format:"- %cs %s" --since "$(date --date='-3 month')" \
 	| sed -e 's|#\([0-9]\+\)|https://gitlab.eclipse.org/eclipse/technology/dash/org.eclipse.dash.handbook/-/issues/\1[#\1]|g' \
-	> ../source/chapters/commits.adoc
+	> ../modules/ROOT/pages/chapters/commits.adoc
+
+# Also keep the legacy source location for Maven backward compatibility
+cp ../modules/ROOT/pages/chapters/commits.adoc ../source/chapters/commits.adoc
+
+# Legacy Maven build
 mvn -f ../pom.xml clean process-resources
 cp ../target/generated-docs/eclipse.html /gitroot/www.eclipse.org/projects/handbook/.

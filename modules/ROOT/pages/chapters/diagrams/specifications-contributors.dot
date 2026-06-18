@@ -1,0 +1,36 @@
+// Copyright (C) Eclipse Foundation, Inc. and others. 
+// 
+// This program and the accompanying materials are made available under the
+// terms of the Eclipse Public License v. 2.0 which is available at
+// https://www.eclipse.org/legal/epl-2.0.
+// 
+// SPDX-FileType: SOURCE
+//
+// SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
+// SPDX-FileCopyrightText: 2015 Contributors to the Eclipse Foundation
+//
+// SPDX-License-Identifier: EPL-2.0
+
+digraph {
+	// Graph properties
+	bgcolor=transparent
+	
+    graph [ranksep="0.25", nodesep="0.25"]
+    
+	// Nodes that define the key points in the process
+	node [shape=box;style=filled;fillcolor=white;fontsize=12;group=g1]
+	
+	start [label="You want to be\na contributor"; style="filled,bold"];
+	eca [label=<<b>You</b> sign<br/>the ECA>];
+	contribute [label=<Create pull requests>];
+	committer [label="Project Team elects\nyou as a committer"; style="filled,bold"];
+	
+	node [shape=diamond;style=filled;fillcolor=white;fontsize=10;group=g1];
+	
+	merit [label="Significant\ncontributor?"];
+		
+	start -> eca -> contribute;
+	contribute:e -> merit:e;
+	merit -> committer [label="Yes"];
+	merit:w -> contribute:w [xlabel="No"];
+}

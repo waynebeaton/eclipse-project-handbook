@@ -1,0 +1,142 @@
+////
+ * Copyright (C) Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * https://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-FileType: SOURCE
+ *
+ * SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
+ * SPDX-FileCopyrightText: 2015 Contributors to the Eclipse Foundation
+ *
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+[[checklist]]
+= Project Checklist
+
+This checklist is provided as a convenience and is included primarily as a guideline or tool to ensure that {forgeName} projects are doing the right sorts of things to attract community and grow. 
+
+[TIP]
+====
+With this checklist, we've tried to strike a balance between being concise while being as comprehensive as possible. Many of the entries apply for specific technologies only. If an entry on the list doesn't make sense for some particular type of technology in your project, skip it (e.g., file headers do not make sense for JSON content).
+====
+
+The xref:roles-emo[EMO] and xref:roles-pmc[Project Management Committee] will use this checklist as part of their evaluation during a xref:progress-review[Progress Review].
+
+All projects must conform to the xref:trademarks[branding guidelines] before engaging in any xref:release[release] (specific examples are described below).
+
+[discrete]
+== General
+
+* [ ] Project is operating within the mission and scope defined in its top-level project's charter; 
+* [ ] Project is operating within the bounds of its own scope;
+* [ ] Project is operating in an open and transparent manner;
+* [ ] All distributed xref:ip-third-party[third party] content has been approved by the IP Team;
+* [ ] Project content correctly uses Eclipse Foundation trademarks; and
+* [ ] Project content (code and documentation) does not violate trademarks owned by other organisations.
+
+[discrete]
+== Code
+
+* [ ] All project code is managed in source code repositories provided by The Eclipse Foundation;
+* [ ] Naming conventions followed:
+** e.g., `{namespace}.<shortname>.<component>[.*]` for Java packages and OSGi Bundles;
+* [ ] Provider information is set to the project's formal name:
+** e.g., the `Bundle-Vendor` entry set to the project name (e.g., "Eclipse Woolsey") in OSGi Bundles; or
+** e.g., the `project` and `organization` names are set to the project name (e.g., "Eclipse Woolsey") in Maven `pom.xml` files;
+* [ ] xref:legaldoc[Legal documentation] is provided:
+** [ ] All source files include a xref:ip-copyright-headers[copyright and license header] (when technically feasible);
+** [ ] All source code repositories include a xref:legaldoc-license[`LICENSE`] file (or equivalent) in the root; and
+** [ ] All source code repositories include a xref:legaldoc-notice[`NOTICES`] file (or -- for projects that produce Eclipse Platform plug-ins -- `about.html` files as described by the xref:legaldoc-plugins[]); 
+* [ ] All source code repositories include a xref:legaldoc-contributor[`CONTRIBUTING`] file (or equivalent) in the root; 
+* [ ] All source code repositories include a xref:legaldoc-security[`SECURITY`] file (or equivalent) in the root; and
+* [ ] All feature names and descriptions are captured, are spelled correctly, use proper grammar, and contain content that is actually useful for the intended audience.
+
+[TIP]
+====
+Consider adopting https://reuse.software[REUSE] for your Eclipse open source project.
+====
+
+[discrete]
+== Downloads
+
+Many projects provide binary/compiled _downloads_ of their software, intended for consumption by their various communities. 
+ 
+* [ ] All generated artifacts include only intellectual property that has been subject to the xref:ip[IP Due Diligence Process];
+* [ ] The xref:resources-website[project website] and xref:pmi-project-page[project page] includes links for artifacts;
+* [ ] xref:starting-incubation-branding[Incubation branding] (when applicable) is included on distributed artifacts; 
+* [ ] All download artifacts are (if technical feasible) {jarSigningUrl}[signed]; and
+* [ ] Subject to limitations of specific technologies, the https://semver.org/[Semantic Versioning] rules are followed.
+
+[discrete]
+== Project Metadata
+
+Project metadata is specified and maintained using the xref:pmi[Project Management Infrastructure].
+
+* [ ] The formal name (e.g., "Eclipse Woolsey") is used in the project title; 
+* [ ] The formal name including appropriate marks is used in the first mention in the text of the project description, and scope;
+* [ ] The project description starts with a single paragraph that can serve as an _executive summary_;
+* [ ] Source code repository references are up-to-date; and
+* [ ] Download links and information are up-to-date.
+
+[discrete]
+== Release Metadata
+
+Release metadata is specified and maintained using the xref:pmi[Project Management Infrastructure]. Project teams are required to create a metadata entry for every official release (including major, minor, and service releases).
+
+* [ ] At least one release record describes a future release; and
+* [ ] The release record includes a description that starts with a single paragraph that can serve as an _executive summary_.
+
+[TIP]
+====
+Use the xref:pmi-commands-release[Create a new release] command on a specific xref:pmi-project-page[project page] in the xref:pmi[Project Management Interface (PMI)] to create a new release record.
+==== 
+
+[discrete]
+== Project Website
+
+The xref:resources-website[Project Website]:
+
+* [ ] Is hosted on Eclipse Foundation-provided infrastructure;
+* [ ] Uses the formal name including appropriate marks, (e.g., "Eclipse Woolsey(TM)"), on the page title, first mention in the text, and on all prominent references to the project;
+* [ ] xref:starting-incubation-branding[Incubation branding] (when the project is in the xref:starting-incubation[incubation phase]) is displayed; 
+* [ ] Includes a concise description of the project (with all necessary marks); and
+* [ ] The xref:trademarks-website-footer[standard navigation] links are included in the website footer.
+
+[discrete]
+== Logos and graphics
+* [ ] xref:trademarks-project-logo[Project logo] includes the trademark symbol; and
+* [ ] Project logo is used consistently.
+
+[discrete]
+== Company Logos
+
+Company logos may optionally be included on a xref:resources-website[project website], but only if the following conditions are met.
+
+* The company is a {memberUrl}[member] of the Eclipse Foundation;
+* At least one project committer is an employee of the company in question; and
+* The committer is active (that is, they have made at least one commit in the last three months).
+
+[discrete]
+== Community Portals and Related Websites
+
+indexterm:[Community] xref:trademark-external-community[Community portals], regardless of who owns and maintains them must conform to the branding guidelines. If you discover a website that does not conform to these guidelines (and it is not within your power to effect the changes yourself), send a note to mailto:{emoEmail}[EMO] to request assistance.
+
+* [ ] The formal name including appropriate marks (e.g., "Eclipse Woolsey(TM)") is used on the page title, first mention in the text, and on all prominent references to the project;
+* [ ] xref:trademarks-external-attribution[Attributions] are provided for all Eclipse Foundation marks;
+* [ ] All references to {forgeName} open source projects use the formal name with appropriate marks;
+* [ ] Trademark and registered trademark symbols are used appropriately;
+* [ ] Developers are directed to the official xref:resources-website[project website] for information regarding contribution or related development activities;
+* [ ] Ownership of the domain (especially if it includes the project name) has been transferred to the Eclipse Foundation; and
+* [ ] The indexterm:[Domain] domain is regarded and used exclusively as a community portal (that is, it is not presented as the official project website).
+
+[discrete]
+== Announcements, News items, Blog posts, ...
+
+All announcements regarding project milestones issued by the project must conform to the branding guidelines.
+
+* [ ] The formal name including appropriate marks (e.g., "Eclipse Woolsey(TM)") is used in the title, first mention in the text, and on all prominent references to the project;
+* [ ] xref:trademarks-external-attribution[Attributions] are provided for all Eclipse Foundation marks; and
+* [ ] All references to {forgeName} open source projects use the formal name with appropriate marks.

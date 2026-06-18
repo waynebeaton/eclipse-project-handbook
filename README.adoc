@@ -128,20 +128,74 @@ sed -E -e 's/https:\/\/www\.google\.com\/url\?q=([^%[&]+)(%23([^&]+))?\&[^[]+/\1
 ....
 == Building the Handbook Locally
 
-To build the Eclipse Project Handbook locally you need:
+The Eclipse Project Handbook uses https://antora.org/[Antora] as its documentation site generator.
 
-* Java (JDK 11 or newer)
-* Maven
+=== Prerequisites
 
-Steps:
+* https://nodejs.org/[Node.js] (version 18 or newer)
+* npm (included with Node.js)
 
-1. Clone the repository
-2. Navigate to the project directory
-3. Run the following command:
+=== Steps
+
+1. Clone the repository:
++
+[source,bash]
+----
+git clone https://github.com/waynebeaton/eclipse-project-handbook.git
+cd eclipse-project-handbook
+----
+
+2. Install dependencies:
++
+[source,bash]
+----
+npm install
+----
+
+3. Build the documentation site:
++
+[source,bash]
+----
+npm run build
+----
+
+The generated site is placed in the `build/site/` directory. Open `build/site/index.html` in a browser to view it locally.
+
+=== Directory Structure
+
+The documentation content follows the https://docs.antora.org/antora/latest/standard-directories/[Antora standard directory structure]:
+
+----
+antora.yml                       # Component descriptor
+antora-playbook.yml              # Site playbook
+modules/
+  ROOT/
+    nav.adoc                     # Navigation definition
+    pages/
+      index.adoc                 # Main handbook document
+      config.adoc                # Shared attribute definitions
+      chapters/                  # Chapter content files
+        *.adoc
+        diagrams/                # Graphviz diagram source files
+          *.dot
+    images/                      # Images referenced in content
+      *.png, *.jpg
+----
+
+=== Legacy Maven Build
+
+A `pom.xml` is retained for reference. The Antora-based build is now the recommended approach.
+
+=== Git Submodules
+
+This repository references two git submodules for related documents:
+
+* `source/efdp` — Eclipse Foundation Development Process
+* `source/efsp` — Eclipse Foundation Specification Process
+
+These are referenced in the content but not required for the basic Antora build. To initialize them:
 
 [source,bash]
 ----
-mvn clean package
+git submodule update --init
 ----
-
-This command generates the HTML and PDF versions of the handbook.

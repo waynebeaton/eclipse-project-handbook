@@ -1,0 +1,90 @@
+////
+ * Copyright (C) 2015 Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * https://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-FileType: SOURCE
+ *
+ * SPDX-FileCopyrightText: 2015 Eclipse Foundation, Inc.
+ * SPDX-FileCopyrightText: 2015 Contributors to the Eclipse Foundation
+ *
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+[[preamble]]
+== Overview
+
+This document provides you with the information that you need to create a new Eclipse open source project or become a committer on an existing one.
+
+The _{edpLink}_ (EDP) is the foundational document for Eclipse projects and committers. It describes the manner in which we do open source software. The EDP does not prescribe any particular development methodology; it is more concerned with the larger-scale aspects of open source project life cycle, including such things as reviews, processes for running votes and elections, bringing new committers onto a project, etc. This document elaborates on some key points of the EDP.
+
+[[preamble-principles]]
+=== Principles
+
+The _Open Source Rules of Engagement_ lie at the heart of the EDP:
+
+Open :: Eclipse is open to all; Eclipse provides the same opportunity to all. Everyone participates with the same rules; there are no rules to exclude any potential Contributors which include, of course, direct competitors in the marketplace.
+
+Transparent :: Project discussions, minutes, deliberations, Project plans, plans for new features, and other artifacts are open, public, and easily accessible.
+
+Meritocratic :: Eclipse is a meritocracy. The more you contribute the more responsibility you will earn. Leadership roles in Eclipse are also merit-based and earned by peer acclaim.
+
+[NOTE]
+====
+Employment status has no bearing at whether or not somebody can participate in an open source project at Eclipse. Employment does not guarantee committer status; committer status must be earned by everybody. Committers and project leads are added to a project via xref:elections[election].
+====
+
+indexterm:[Vendor Neutrality]The Open Source Rules of Engagement define a foundation for _vendor-neutral_ open source development. _Vendor neutrality_ is concerned with maintaining a level playing field that is open to all comers: no vendor is permitted to dominate a project, and nobody can be excluded from participating in a project based on their employment status.
+
+Quality and intellectual property cleanliness are also important principles.
+ 
+From the consumption perspective, Eclipse quality means good for users and ready for use by adopters. From the creation perspective, Eclipse quality means working with a transparent and open process, open and welcoming to participation from technical leaders, regardless of affiliation.
+
+_xref:ip[Intellectual property]_ (IP) is any artifact that is made available from an Eclipse server (this includes source code management systems, the website, and the downloads server). Artifacts include (but are not limited to) such things as source code, images, XML and configuration files, documentation, and more. Strict rules govern the way that we manage IP and your responsibilities as a committer.
+
+Code produced by an Eclipse project is used by organisations to build products. These adopters of Eclipse technology need to have some assurance that the IP they're basing their products on is _clean_: the organisation or individuals who claim copyright of the code are the legitimate copyright holders, and the copyright holders legitimately agree to make the code available under the license(s) that the project works under. As a committer, you must be careful that you do not copy code and inadvertently claim it as your own.
+
+[#preamble-policies]
+=== Governing Documents and Policies
+
+The Eclipse Foundation's governing documents and policies form the foundation upon which our open source project processes and practices are built. 
+
+Committers should be aware of the following governance documents:
+
+* {bylawsUrl}[Eclipse Foundation Bylaws];
+* {antitrustPolicyUrl}[Eclipse Foundation Antitrust Compliance Policy];
+* {privacyPolicyUrl}[Eclipse Foundation Website Privacy Policy];
+* {ipPolicyUrl}[Eclipse Foundation Intellectual Property Policy];
+* {securityPolicyUrl}[Eclipse Foundation Security Policy];
+* {termsOfUse}[Eclipse Website Terms of Use];
+* {codeOfConductUrl}[Eclipse Foundation Community Code of Conduct];
+* {communicationChannelGuidelinesUrl}[Eclipse Foundation Communication Channel Guidelines];
+* {socialMediaGuidelinesUrl}[Eclipse Foundation Social Media Guidelines];
+* {edpUrl}[Eclipse Foundation Development Process];
+* {efspUrl}[Eclipse Foundation Specification Process] (when engaged in specification development);
+* {effspUrl}[Eclipse Foundation Functional Safety Process] (when engaged in safe software development);
+* {committerGuidelinesUrl}[Eclipse Committer Due Diligence Guidelines];
+* {genaiUrl}[Generative Artificial Intelligence Usage Guidelines for Eclipse Committers]; and
+* {trademarkGuidelinesUrl}[Eclipse Foundation Trademark Usage Policy].
+
+Governing documents and policies are amended from time-to-time. 
+
+////
+[#preamble-policies-licences]
+=== Licences
+
+* {epl20Url}[Eclipse Public License 2.0];
+* {edl10Url}[Eclipse Distribution License 1.0];
+* {efslUrl}[Eclipse Foundation Specification License];
+* {eftcklUrl}[Eclipse Foundation TCK License];
+* {approvedLicensesUrl}[Third Party Content Licenses]; and
+* {nonCodeLicencesUrl}[Approved Licenses for Non-Code, Example, and Other Content].
+
+[#preamble-policies-related]
+=== Related Governance Documents
+
+* https://www.eclipse.org/org/documents/eclipse_membership_agreement.pdf#[Eclipse Foundation Membership Agreement]
+* {ewgpUrl}[Eclipse Foundation Working Group Process]
+////

@@ -1,0 +1,381 @@
+////
+ * Copyright (C) 2015,2022 Eclipse Foundation, Inc. and others. 
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * https://www.eclipse.org/legal/epl-2.0.
+ * 
+ * SPDX-FileType: SOURCE
+ *
+ * SPDX-License-Identifier: EPL-2.0
+////
+
+[[elections]]
+== Elections
+
+xref:#roles[Roles] in a project are assigned based on merit demonstrated in a publicly-accessible forum, in the form of an indexterm:[Election] election. Elections start with a nomination that contains a statement of merit. The nature of a statement of merit varies widely, but is generally expected to to concisely state the impact that the nominee has had on the project.
+
+[WARNING]
+====
+While committer and project lead elections are fully automatic, setting up a new committer or project lead's account with the necessary privileges is partly manual. After a successful election, the EMO Records Team checks for required agreements -- which might involve some manual work -- before the Eclipse Infrastructure Team can finish the setup. Any manual processing will occur with 24 hours of the start of the next business day. Plan accordingly.
+====
+
+[[elections-committer]]
+=== Committer Elections
+
+indexterm:[Committer, Election] Contributors who have the trust of the project's committers can, through election, be promoted to _committer status_ for that project. The breadth of a committer's influence corresponds to the breadth of their contribution. A development team's contributors and committers may (and should) come from a diverse set of organisations. A committer gains voting rights allowing them to affect the future of the project. Becoming a committer is a privilege that is earned by contributing and showing discipline and good judgement. It is a responsibility that should be neither given nor taken lightly, nor is it a right based on employment by an Eclipse Foundation member company or any company employing existing committers.
+
+[NOTE]
+====
+Employment status has no bearing at whether or not somebody can participate in an open source project at {forgeName}. Employment does not, for example, guarantee committer status; committer status must be earned by everybody.
+====
+
+Being a {forgeName} committer is more than just having write-access to the project resources: there are specific IP due diligence and record keeping activities that committers _must_ follow. New committers must ensure that they are familiar with the {committerGuidelinesUrl}[Committer Due Diligence Guidelines].
+
+New committers should be encouraged to join the xref:incubation-mailinglist[incubation mailing list]; this list is a good place to ask questions about process, services available, and other aspects of working as a committer.
+
+[[elections-requirements]]
+==== What are the Requirements?
+
+There are only three requirements around nominating and electing new committers (note that there are additional <<paperwork, committer paperwork>> requirements for the new committer):
+
+* Define trust;
+* Maintain vendor/employer neutrality; and
+* Operate transparently (public and archived election).
+
+Each project is entitled to define how it evaluates "[people] who have the trust of the Project's Committers ... [through] contributing and showing discipline and good judgement". This definition must be consistent with the top-level project charter, and must be transparent and public document on the project's website. It is extremely important to publish these criteria to avoid any issues around cliques or "the in-crowd" preventing others from joining a project. 
+
+Committer status is independent of employment: there must not be any hint of "we (company W) hired person X to work on project Y thus person X should elected a committer".
+
+[NOTE]
+====
+Nominations such as "we all know Bob, vote for Bob" may work within the team, but actually harm the project's reputation in the larger {forgeName} community: that larger community does not know Bob and does not understand why the project team _trusts_ them with committer responsibilities.
+
+Like everything else we do, our process for bringing new committers onto a project is open, transparent, and meritocratic. Once a project is up and running, committers always start as xref:contributing-contributors[contributors]. Committer elections provide an opportunity to highlight the contribution record of a candidate and demonstrate to the community that the project is following the open source practices that we value. Committer elections require a nomination statement that provides this demonstration.
+
+What constitutes significant contribution is difficult to quantify. The level of commitment of a candidate to the goals of the project is difficult to quantify. A contributor's understanding of the Eclipse Foundation Development Process and Intellectual Property Due Diligence process is difficult to quantify.
+
+For all of the above reasons, we depend heavily on committers to make a judgement call regarding the contribution record and behaviour of committer candidates, and summarise that judgement in a manner that can be consumed as easily as possible. We're not looking for a dissertation. Rather, we need a few pointers to actual significant contributions that demonstrate that the candidate is ready to take on committer responsibilities (contributions do not necessarily need to be code contributions).
+
+The xref:roles-emo[EMO] depends heavily on xref:roles-pmc[PMCs] to validate that committer elections are operated according to our principles and in good faith. To that end, providing very specific pointers to very specific contributions that demonstrate merit are very helpful, and improve the odds of getting the PMC's approval in a timely manner.
+====
+
+The nomination and election process for a new committer is for more than just the project team - it is also for the entire {forgeName} community, current and future. The larger community uses the artifacts of elections as (one of many pieces of) evidence about the maturity of the project team, and thus quality of the frameworks.
+
+[[elections-nomination]]
+==== What Should a Nomination Look Like?
+
+A committer nomination should explain the candidate's contributions to the project and thus why they should be elected as a committer. Cite the issues they have fixed via patches; cite the community forum postings they have answered; cite the xref:resources-dev-list[dev-list] design discussions to which they have contributed; etc. In all cases, provide URLs to source material.
+
+[#elections-contribution]
+==== How Much Contribution is Enough?
+
+The project team and xref:roles-pmc[PMC] decide how much contribution is enough. Ideally, a project team should have the standards by which they grant committer responsibility publicly documented (e.g., in the project's xref:legaldoc-contributor[contributor guide] or the top-level project's charter). It is natural that these standards will change over the life of the project.
+
+Here are some guidelines:
+
+It's about what they have done, not what they may do ::
+
+Committer elections should be based on actual contribution to the project, not the potential for future contribution.
+
+Contribution is project-specific ::
+
+Contributors should be nominated to join the project team based on their contributions to the specific project.
++
+It is _generally_ inappropriate to nominate a committer for contributions that they've made to some other project.
++
+It may make sense in certain cases to nominate a committer for contributions made to a tightly coupled related project.
+
+At least some form of visible, public contribution is required ::
+
+At least one contribution on a public channel must be cited in the xref:elections-nomination[nomination]. The actual quantity of contributions required varies by project, should be included in the overall standard for the project, and documented by the project team and PMC. 
++
+All contributions in public channels are valid. 
+
+It's always going to be subjective ::
+
+A large number of high-quality small contributions may, in the aggregate, form a solid basis for nomination. Likewise for a smaller number of high-quality large contributions. 
++
+[TIP]
+====
+Rule of thumb: how much of a demonstration of contribution would you like to see from a contributor that you don't know or have never met before? That’s how much of a demonstration you should provide for candidates that you do know.
+====
++
+No matter how rigorously documented the project's standard is, there will always be room for judgement. 
+
+Check the Top-Level Project Charter ::
+
+The Top-Level Project Charter may have something to say about the standards for nominating committers, and committers should expect the PMC to apply these standards when approving an election.
+
+Git makes this easy ::
+
+If somebody is ready to be a committer, then they should be able to create merge or pull requests, or participate in discussions on issues and forums.
++
+If a candidate is not prepared to engage with the project in this manner, they may not be ready to take on committer responsibility.
++
+[TIP]
+====
+If project committers get to the point where a particular contributor's merge and pull requests are regularly merged with limited discussion and no modification, it might be time to elect that contributor to be a committer.
+====
+
+It's not just about Git ::
+
+It’s easy to think that the only contributions that matter are Git commits. Committers also participate in committer elections, and in the decision making process.
++
+Contributors contribute in other ways as well: they may contribute to discussion about your project, or answer questions in your project’s communication channels. These contributions can be cited in a committer xref:elections-nomination[nomination].
+
+Significant single contribution ::
+
+Committer status is granted based on a record of contribution. When a project team decides to adopt an entire repository, that repository is a contribution. It would be no different conceptually than when the project team decides to merge a large pull request. 
++
+When a project accepts a significant contribution, it is natural to make the developers who built that contribution committers at the same time (citing the contribution as the merit statement in the xref:elections-nomination[nomination]).
++
+[TIP]
+====
+The definition of _significant_ is subjective. If you're not sure, check with your PMC.
+====
++
+Another way to think about it is that accepting a significant contribution represents a burden/liability for the project and it is actually irresponsible to accept a significant contribution without requiring that an appropriate number of developers of the contribution also commit to joining the project to support it.
+
+Speciality committers ::
+
+The {edpLink} has no notion of committers with different roles or privileges: all committers have the same responsibility and privileges.
++
+It may be unnatural for a build engineer who is concerned with managing a Jenkins build to contribute content to a project via Git. Likewise, it may be difficult for a security expert who is concerned with creating security advisories and filing CVEs on behalf of the project team to contribute content in a public manner.
++
+A potential candidate in a speciality field, may:
++
+- Answer questions related to their speciality from developers via the project's open communication channels;
+- Conduct reviews of the project's current practices and engage in discussions;
+- Create merge and pull requests, and issues for assessments related to their speciality, and actively contribute to their resolution; or
+- Contribute to the development and integration of related tools through merge and pull requests, and participate in related discussions.
+
+Precedent serves as documentation ::
+
+Every committer election becomes part of the public record. That record serves in part as a template for future elections. Every committer election also serves as a reference for other contributors, who are forging their own path to committer status. 
+
+Be mindful of the privileges being granted ::
+
+xref:roles-cm[Committers] get to nominate other committers and project leads, and vote in elections; they can push directly to project repositories, accept merge and pull requests, and more. These are awesome responsibilities that should not be granted lightly.
++
+[TIP]
+====
+All committer candidates should be encouraged to review the {committerTrainingUrl}[Committer Training] content.
+====
++
+The nomination of a new committer has to be weighed against the risk of granting committer privileges to somebody who you only know through the contribution. The committer team still has to have confidence that the nominee knows how to operate as a committer. The team would, for example, have to have some confidence that the new committer won't mess with content that they don't understand, won't violate the IP policy, will respect the open source rules of engagement, etc.
+
+[[elections-how]]
+==== How does an Election work?
+
+Use the menu:Committer Tools[Nominate a Committer] link on the corresponding <<pmi-project-page,project page>> and follow the workflow to start a committer election.
+
+.The New Committer Nomination Form
+image::committer-election2.png[]
+
+Project committers will be notified to participate in the election via the project's xref:resources-dev-list[dev-list].
+
+[NOTE]
+====
+Your project must have a _dev-list_ specified in the project's <<pmi,metadata>> and existing project team members must be subscribed to the list.
+====
+
+An election starts with a nomination by an existing committer.
+
+[graphviz, images/elections-overview, svg]
+.An overview of the Election Process
+----
+digraph {
+	// Graph properties
+	bgcolor=transparent
+	rank=same
+	rankdir=TB
+	
+	// Decisions
+	node [shape=diamond;style=filled;fillcolor=white;fontsize=10];
+	time [label="", group=g1];
+	approval [label="PMC\nAudits", group=g1];
+	
+	// Notes
+	node [shape=plaintext;fillcolor=transparent;fontsize=10]
+	oneweek [label="One week passes or\nall committers\nhave voted"];
+	
+	node [shape=box;style=filled;fillcolor=white;fontsize=12];
+	start [label="Nominate", group=g1];
+	ongoing [label="Vote", group=g1];
+	timedout [label="Timed out"];
+	complete [label="Complete", group=g1];
+	approved [label="Approved"];
+	vetoed [label="Vetoed"];
+	rejected[label="Rejected"];
+	
+	{rank=same timedout, approved, vetoed, rejected}
+	
+	edge [fontsize=10];
+	start->ongoing
+	ongoing->ongoing [label="Committers Vote"];
+	ongoing->time
+	time->timedout [xlabel="Not\nenough\nvotes"]
+	time->complete
+	time->rejected [xlabel="Vetoed\nby\ncommitter"]
+	complete->approval
+	approval->approved [xlabel="Yes"]
+	approval->vetoed [xlabel="No"]
+	
+	edge [color=grey]
+	oneweek->time
+}
+----
+
+Only project committers may nominate a new committer or vote in a committer election. To be successful, the election must receive a minimum of three positive `pass:[+1]` votes. Any committer can veto the election by casting a `pass:[-1]` vote, or indicate their participation in the process but with no opinion with a `pass:[+0]` vote. For projects with three or fewer committers all committers must vote. Committer elections run for one week, but will end prematurely if all project committers vote `pass:[+1]`.
+
+[TIP]
+====
+Committers can change their vote while the election is in progress. Committers may post questions about the committer or ask for clarification of the merit statement in the project's xref:resources-dev-list[dev-list], and change their vote based on what they discover. The merit statement itself cannot be changed after the election has started.
+====
+
+Following a successful committer vote, the project's xref:roles-pmc[Project Management Committee] (PMC) will xref:roles-pmc-elections[review the election results] and then either approve or veto the election. An election may be vetoed, for example, if the PMC feels that the merit statement is not strong enough.
+
+The <<paperwork, paperwork>> process will automatically be initiated following PMC approval of an election. 
+
+[[elections-pl]]
+=== Project Lead Elections
+
+indexterm:[Project Lead, Election] Similar to a committer election, a xref:roles-pl[project lead] election starts with a statement of merit. The merit statement should, rather than focus on specific code contributions, focus instead on the leadership qualities expressed by the individual.
+
+.Project Lead merit statement
+====
+Robert Smith has been part of the Eclipse Dash development since before the initial contribution. He played an important role ever since, as he is one of the key developers. With regards to the number of commits Robert is currently the top committer of Eclipse Dash:
+
+++https://github.com/eclipse/dash-licenses/commits?author=RobertSmith++
+
+Apart from that Robert took care of the project page and the build. He also handed the governance aspects of the 0.6 release. 
+
+Finally I would like to mention a blog post he did at thecure.com: 
+
+++https://thecure.com/dash++
+====
+
+Project leads are normally also committers. A project may have more than one project lead (so-called _co-leads_).
+
+Use the menu:Committer Tools[Nominate a Project Lead] link on the corresponding <<pmi-project-page,project page>> to start a project lead election.
+
+Only project committers can nominate a new project lead or vote in a project lead election. To be successful, a project lead election must receive a minimum of three positive `pass:[+1]` votes. Any committer can veto the election by casting a `pass:[-1]` vote. For projects with three or fewer committers all committers must vote. Committer elections run for one week, but will end prematurely if all project committers vote `pass:[+1]`.
+
+Following a successful committer vote, the project's PMC will review the election results and then either approve or veto the election.  A PMC-approved election will be referred to the EMO/ED as a recommendation for appointment. The final decision rests with the EMO/ED.
+
+[[elections-pmc-member]]
+=== PMC Member Elections
+
+xref:#roles-pmc[Project Management Committee] (PMC) members are elected by the existing PMC leads and members, and approved by the EMO/ED. The criteria by which a PMC _Member_ is selected varies by PMC. Some PMCs are set up to have a representative from each of the projects in the top-level project. Other PMCs are more exclusive and require a demonstration of merit.
+
+In all cases, the PMC Lead makes a recommendation to the EMO/ED to appoint a PMC Member. The final decision rests with the EMO/ED.
+
+[TIP]
+====
+No specific infrastructure is exists for PMC Member elections. PMCs must use their PMC mailing list to nominate and elect new members, and report the results to the {emoEmailLink}. The EMO will get approval from the EMO/ED and make the appointment.
+====
+
+[[elections-pmc-lead]]
+=== PMC Lead Appointments
+
+xref:#roles-pmc[Project Management Committee] (PMC) _Leads_ are not elected. They are vetted by the EMO, approved by the Eclipse Board of Directors, and appointed by the EMO/ED.
+
+[[elections-retire-cm]]
+=== Committer Retirement
+
+A committer can retire themselves from a project. Retirement cannot be undone: to rejoin a project as a committer after being retired, a contributor must again be <<elections-committer,nominated and elected>> into the role.
+
+[TIP]
+====
+To retire from a project, navigate to the <<pmi-project-page, project page>>, open the _Who's Involved_ tab, and click on your image in the committer list. Then, in the "Retire Committer Status" box on the on the project role page, check the checkbox and click the btn:[Submit] button.
+
+image::elections_retire_self.png[]
+====
+
+A project lead may also retire a committer. A project lead might, for example, retire a committer that has been inactive for an extended period of time (e.g., longer than a year). Before retiring a committer, the project's community should be informed of the change and the committer must be given a chance to defend retaining their status via the project's xref:resources-dev-list[dev-list]. 
+
+Retired committers are listed as _Historic Committers_ on a project's _Who's Involved_ page. To restore an historic committer to committer status, they must be <<elections-committer,re-elected>> into the role.
+
+[NOTE]
+====
+A common practice is for the project lead to use the project's xref:resources-dev-list[dev-list] to announce generically that they're going to retire committers that have been inactive for some designated period of time and give the committers a chance to speak up before a deadline.
+====
+
+There is no means by which a committer can be forced out of a project if they have not done anything wrong (there is no notion of "voting a committer out" of a project). Leaving the company that sponsors the project, for example, is not a valid reason for retirement. On the other hand, that a committer has changed jobs or roles and can no longer continue to contribute the project is a completely valid reason for retirement.
+
+[[elections-retire-pl]]
+=== Project Lead Retirement
+
+A project lead can retire themselves from a project. Prior to retiring, a project lead should work with the project team to ensure the continuity of the role (e.g., in the case where a project's sole project lead plans retirement, they should engage with the team to identify and <<elections-pl,elect>> a replacement). In the spirit of open source transparency, a retiring project lead should announce their retirement on the project's xref:resources-dev-list[dev-list].
+
+[TIP]
+====
+To retire from a project, navigate to the <<pmi-project-page, project page>>, open the _Who's Involved_ tab, and click on your image in the project lead list. Then, in the "Retire Project Lead Status" box on the on the project role page, check the checkbox and click the btn:[Submit] button.
+
+image::elections_retire_pl.png[]
+====
+
+[[elections-retire-other]]
+=== Retiring Other Roles
+
+Connect with the PMC or {emoEmailLink} for assistance.
+
+=== Troubleshooting
+
+In the case where the project is dysfunctional (e.g., there is no active project lead and an insufficient number of active committers to offset inactive committers), options are available to the PMC to add and/or remove committers. 
+
+[TIP]
+====
+If you believe that a project is in a dysfunctional state, contact the PMC via their mailing list to request assistance.
+====
+
+[[elections-faq]]
+=== Frequently Asked Questions
+
+[qanda]
+Do we really need to do this? ::
+
+Yes.
+
+We need to make somebody a committer right now. How do we do this? ::
+
+You don't.
+
+Why is it taking a long time to grant a new committer the necessary privileges? ::
+
+The first thing that you need to do is check that the election has run its course: an election will run for a full week before it is complete. Has a full week passed since the election was started?
++
+A successful election requires approval from the PMC. The PMC will be notified automatically via their mailing list when their approval is required. If the PMC has not yet approved the election, connect directly with them for help.
++
+Following a successful election and PMC approval, the provisioning process will be automatically initiated. A new committer will receive an automated email request with instructions regarding next steps (which may include signing a committer agreement). Ask the new committer to check their spam folder.
+
+Can I still be a committer if I change employers? ::
+
+Yes. Your status as a committer is not tied to your employment status. You may, however, require xref:paperwork[paperwork] from your new employer (or if you become self-employed). If you change employers, please contact the mailto:{emoRecordsEmail}[EMO Records Team] for help regarding paperwork requirements.
+	
+What happens if committers don't vote? ::
+
+If a project has three or fewer committers, then all committers must vote. If even one out of the three does not vote, then the election will end in failure. If the non-voting committer is also not active, then they can, perhaps, be <<elections-retire-cm,retired>> by the project lead.
+
+Can we change a merit statement? ::
+
+The election infrastructure doesn't permit changing a merit statement after an election has begun (the principle being that changing the question after you start a vote is considered bad form).
++
+In cases where the merit statement is omitted or considered inadequate, or committers have additional questions about a candidate, it's completely reasonable to discuss it on the mailing list, and for committers to then use that discussion as the basis for their vote. Committers who have already voted, can return to the election record and change their vote.
++
+Committers can also add information via the comment that accompanies their vote on an election.
+
+Can a committer change their vote on an election? ::
+
+Yes. A committer can change their vote while an election is still in progress.
+
+How do we transfer committers from one project to another? ::
+
+Short answer: you don't.
++
+We have no concept of transferring committers. if committers need to move from one project to another, then they must be elected as committers to the new project and retire themselves from the old one.
+
+Can a project lead retire a _disruptive_ committer? ::
+
+The EDP allows a project lead to retire a disruptive committer. This is basically the "nuclear" option and so should be used sparingly; we have only retired a few committers in this manner. Should a project lead decide to take this step, they should be prepared to provide evidence to back up the claim of disruption. The project lead should work with the PMC and EMO to determine how (or if) that evidence is tracked and disseminated.
